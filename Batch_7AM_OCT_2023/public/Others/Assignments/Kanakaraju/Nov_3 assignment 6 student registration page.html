@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating student registration page</title>
+    <style>
+       h1{
+        text-align: center;
+        border: solid 3px black;
+        padding: 4px;
+        margin: 0px;
+       }
+       .parent1{
+          border: solid 3px black;
+          height:1170px;
+          margin-bottom: -3px;
+          margin-top: 5px;
+       }
+       .child1{
+        border: solid 1px;
+        height: 200px;
+        margin-top: 35px;
+        margin-left: 10px;
+        margin-right: 10px; 
+       }
+       .personal{
+        width: 215px;
+        border: solid 1px;
+        padding:5px;
+        font-size:30px;
+        text-decoration: underline;
+        margin-left:120px;
+        margin-top: -22px;
+        background-color: white;
+       }
+       .child2{
+        border: solid 1px;
+        height: 200px;
+        margin-top: 35px;
+        margin-left: 10px;
+        margin-right: 10px; 
+       }
+       #name1{
+         
+         font-size:7mm;
+         margin-left: 10px;
+        text-decoration: underline;
+       }
+       #text1{
+        box-sizing: border-box;
+            height: 30px;
+            font-size: 20px;
+            margin-top: 20px;
+       }
+       #age1{
+          font-size: 7mm;
+          position: sticky;
+         margin-left: 150px;
+          text-decoration: underline;
+       }
+       #text2{
+         box-sizing: border-box;
+            height: 30px;
+            font-size: 20px;
+           position: sticky;         
+       }
+       #male{
+         font-size: 7mm;
+         position: sticky;
+       }
+       #female{
+         font-size: 7mm;
+         
+       }
+       #gender{
+         font-size: 7mm;
+         margin-left: 10px;
+         text-decoration: underline;
+         
+         
+       }
+       .radio{
+         height: 20px;
+         width: 30px;
+         margin-top: 15px;
+         
+       }
+       #radio{
+         height: 20px;
+         width: 30px;
+         
+       }
+       #class{
+         font-size:7mm;
+         margin-left: 10px;
+         text-decoration: underline;
+       }
+       #option{
+         font-size: 5mm ;
+         margin-top:25px;
+       }
+       #country{
+         position: static;
+         margin-left:165px;
+         font-size: 7mm;
+       }
+       #countryoption{
+        position: sticky;
+        font-size:5mm;
+        
+       }
+       .education{
+        width: 215px;
+        border: solid 1px;
+        padding:5px;
+        font-size:30px;
+        text-decoration: underline;
+        margin-left:120px;
+        margin-top: -22px;
+        background-color: white;
+       }
+       #language{
+        font-size: 7mm;
+      
+        margin-left: 10px;
+
+       }
+       .box{
+        width: 20px;height: 20px;
+        margin-top:40px;
+      
+       }
+       #qualification{
+        font-size: 7mm;
+        margin-left: 10px;
+       }
+       .box1{
+        width: 20px; height: 20px;
+        margin-top:50px;
+       }
+       .child3{
+        border: solid 1px;
+        height: 200px;
+        margin-top: 35px;
+        margin-left: 10px;
+        margin-right: 10px; 
+       }
+       .course{
+        width: 215px;
+        border: solid 1px;
+        padding:5px;
+        font-size:30px;
+        text-decoration: underline;
+        margin-left:120px;
+        margin-top: -22px;
+        background-color: white;
+       }
+       .courseoption{
+        font-size:5mm;
+        margin-top:40px;
+       }
+       .optionfor{
+        font-size:7mm;
+         margin-left: 10px;
+         
+       }
+       .Language{
+        font-size:7mm;
+         margin-left: 10px;
+        
+       }
+       .selectlanguage{
+          font-size: 5mm;
+          margin-top:50px;
+       }
+       .child4{
+        border: solid 1px;
+        height:350px;
+        margin-top: 35px;
+        margin-left: 10px;
+        margin-right: 10px; 
+       }
+       .about{
+        width: 215px;
+        border: solid 1px;
+        padding:5px;
+        font-size:30px;
+        text-decoration: underline;
+        margin-left:120px;
+        margin-top: -22px;
+        background-color: white;
+       }
+        .fewwords{
+          font-size:7mm;
+         margin: 10px;  
+        }
+        .textarea1{
+          margin-left:330px;
+          height: 230px;width: 925px;
+          margin-top: -26px;
+        
+        }
+        #button{
+           font-size:7mm;
+           height: 50px;width:200px;
+           float: right;
+           margin-right: 30px;
+           margin-top:12px;
+        }
+        .footer{
+          border: 3px solid;
+            text-align: center;
+            font-size: 20px;
+            padding:10px;
+            margin-top: 9px;
+        
+        }
+       
+     
+    </style>
+</head>
+<body>
+      <h1><span style="font-weight: lighter;">Student Registration Page</span></h1>
+      <div class="parent1">
+         <div class="child1">
+         <div class="personal"><span style="margin-left: 9px;">personal Details</span></div>
+           <label for="name" id="name1">Name:</label>
+           <input type="text" name="name" id="text1">
+           <label for="age" id="age1">Age:</label>
+           <input type="text" name="age" id="text2"><br>
+           <label for="gender" id="gender">Gender:</label>
+           <input type="radio" class="radio"  name="radio">
+           <label for="male" id="male">Male</label>
+           <input type="radio" id="radio" name="radio">
+           <label for="female" id="female">Female</label>
+           <label for="country" id="country">Country Name:</label>
+           <select name="country" id="countryoption">
+            <option>India</option>
+            <option>Srilanka</option>
+            <option>Australia</option>
+            <option>Newziland</option>
+            <option>Southafrica</option>
+            <option>Afghanisthan</option>
+            <option>Nepal</option>
+            <option>Bangladesh</option>
+            <option>Bhutan</option>
+            <option>Nedarland</option>
+           </select>
+           <br>
+           <label for="class" id="class">Class:</label>
+             <select name="class" id="option">
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+                <option>5th</option>
+                <option>6th</option>
+                <option>7th</option>
+                <option>8th</option>
+                <option>9th</option>
+                <option>10th</option>
+             </select>
+           
+         </div>
+         <div class="child2">
+           <div class="education">Education Details</div>
+           <label for="language" id="language" >Languages Known:</label>
+           <input type="checkbox" class="box" name="checkbox">
+           <label for="english" id="language">English</label>
+           <input type="checkbox" name="checkbox" class="box">
+           <label for="hindi" id="language">Hindi</label>
+           <input type="checkbox" class="box" name="checkbox">
+           <label for="telugu" id="language">Telugu</label><br>
+           <label for="qualification" id="qualification">Qualification:</label>
+           <input type="checkbox" class="box1" name="checkbox">
+           <label for="mca" id="qualification">MCA</label>
+           <input type="checkbox" class="box1" name="checkbox">
+           <label for="mba" id="qualification">MBA</label>
+           <input type="checkbox" class="box1" name="checkbox">
+           <label for="btech" id="qualification" >Btech</label>
+           <input type="checkbox" class="box1" name="checkbox">
+           <label for="graduation" id="qualification">Graduation</label>
+         </div>
+         <div class="child3">
+            <div class="course"><span style="margin-left:15px;">Course Details</span></div>
+            <label for="course option" class="optionfor">Course Option For:</label>
+            <select class="courseoption">
+             <option>UI Full stack</option>
+             <option>Java Full stack</option>
+             <option>AWS</option>
+             <option>devops</option>
+             <option>Python Full stack</option>
+             <option>Data science</option>
+             <option>.Net Full stack</option>
+             <option>Hadoop</option>
+             <option>ReactJS</option>
+             <option>NodeJS</option>
+             <option>power BI</option>
+            </select><br>
+            <label for="language" class="Language" >Language:</label>
+            <select class="selectlanguage">
+                  <option>Hindi</option>
+                  <option>English</option>
+                  <option>Telugu</option>
+            </select>
+            
+         </div>
+         <div class="child4">
+            <div class="about"><span style="margin-left: 15px;">About Yourself</span></div>
+            <label for="few words" class="fewwords"><span style="float:right;margin-top:
+             30px;margin-right:944px;">Few Words About Yourself:</span></label>
+             <div> <textarea name="textarea"  class="textarea1"></textarea></div>
+         </div>
+         <div>
+          <input type="submit" id="button" value="Save Details">
+         </div>
+      </div>
+      <div class="footer">@CopyRight 2023</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+var empdetails = {};
+empdetails.Name = prompt("Enter Employee name: ");
+empdetails.Age = parseInt(prompt("Enter Employee Age: "));
+empdetails.Gender = prompt("Enter Employee Gender: ");
+empdetails.Dept = prompt("Enter Employee Dept: ");
+empdetails.Salary = parseInt(prompt("Enter Employee Salary: "));
+empdetails.pf = (12 / 100) * empdetails.Salary;
+empdetails.hra = (24 / 100) * empdetails.Salary;
+empdetails.Total = empdetails.pf + empdetails.hra + empdetails.Salary;
+empdetails.tax;
+
+console.log("Employee Name is: " + empdetails.Name);
+console.log("Employee Age is: " + empdetails.Age);
+console.log("Employee Gender is: " + empdetails.Gender);
+console.log("Employee Dept is: " + empdetails.Dept);
+console.log("Employee Salary is: " + empdetails.Salary);
+console.log("Employee pf is: " + empdetails.pf);
+console.log("Employee hra is: " + empdetails.hra);
+console.log("Employee Total is: " + empdetails.Total);
+
+if(empdetails.Gender == "male" || empdetails.Gender == "Male") {
+    if(empdetails.Total >= 300000) {
+        empdetails.tax = (15 / 100) * empdetails.Total;
+        console.log("Tax Paid is " + empdetails.tax);
+        empdetails.Total = empdetails.Total - empdetails.tax;
+        console.log("After Paid Tax Totalsal is " + empdetails.Total);
+    } else if(empdetails.Total >= 200000) {
+        empdetails.tax = (10 / 100) * empdetails.Total;
+        console.log("Tax Paid is " + empdetails.tax);
+        empdetails.Total = empdetails.Total - tax;
+        console.log("fter Paid Tax Totalsal is " + empdetails.Total);
+    } else if(empdetails.Total >= 100000) {
+        empdetails.tax = (5 / 100) * empdetails.Total;
+        console.log("Tax Paid is " + empdetails.tax);
+        empdetails.Total = empdetails.Total - empdetails.tax;
+        console.log("After Paid Tax Totalsal is " + empdetails.Total);
+    } else{
+        empdetails = 0;
+        console.log("Tax Paid is " + empdetails.tax);
+        empdetails.Total = empdetails.Total - empdetails;
+        console.log("After paid Tax Totalsal is " + empdetails.Total);
+    }
+} else if(empdetails.Gender == "female" || empdetails.Gender == "Female") {
+    if(empdetails.Total >= 300000) {
+        empdetails.tax = (10 / 100) * empdetails.Total;
+        console.log("Tax Paid is " + empdetails.tax);
+        empdetails.Total = empdetails.Total - empdetails.tax;
+        console.log("After Paid Tax Totalsal is " + empdetails.Total);
+    } else if(empdetails.Total >= 200000) {
+        empdetails.tax = (5 / 100) * empdetails.Total;
+        console.log("Tax Paid is " + empdetails.tax);
+        empdetails.Total = empdetails.Total - empdetails.tax;
+        console.log("After Paid Tax Totalsal is " + empdetails.Total);
+    } else{
+        empdetails.tax = 0;
+        console.log("Tax Paid is "+ empdetails.tax);
+        empdetails.Total = empdetails.Total - empdetails.tax;
+        console.log("After Paid Tax Totalsal is " + empdetails.Total);
+    }
+} else{
+    console.log("Zero tax");
+}        

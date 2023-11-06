@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layouts</title>
+    <style>
+        .mainBlock {
+            background-color: darkslategray;
+        }
+        .headerBlock {
+            display: grid;
+            grid-template-columns: 150px auto;
+        }
+        .circle {
+            border: 1px solid;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+        .menu {
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .one {
+            background-color: rgb(255, 68, 0);
+        }
+        .two {
+            background-color: rgb(244, 138, 0);
+        }
+        .three {
+            background-color: rgb(7, 197, 131);
+        }
+        .header {
+            background-color: white;
+            border: 1px solid;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: darkslategray;
+            justify-content: space-around;
+        }
+        .container div {
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+            width: 175px;
+            height: 136px;
+        }
+        .green {
+            background-color: rgb(52, 134, 52);
+        }
+        .yellow {
+            background-color: rgb(244, 138, 0);
+        }
+        .orange {
+            background-color: rgb(255, 68, 0);
+        }
+        .aqua {
+            background-color: rgb(7, 197, 131);
+        }
+    </style>
+</head>
+<body>
+    <div class="mainBlock">
+        <div class="headerBlock">
+            <div class="menu">
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+                <div class="circle three"></div>
+            </div>
+            <div class="header"></div>
+        </div>
+        <div class="container">
+            <div class="item1 green"></div>
+            <div class="item2 yellow"></div>
+            <div class="item3 aqua"></div>
+            <div class="item4 orange"></div> 
+            <div class="item5 aqua"></div>
+            <div class="item6 yellow"></div>
+            <div class="item7 yellow"></div>
+            <div class="item8 green"></div>
+            <div class="item9 yellow"></div> 
+            <div class="item10 aqua"></div>
+            <div class="item11 yellow"></div>
+            <div class="item12 orange"></div>
+            <div class="item13 green"></div>
+            <div class="item14 orange"></div> 
+            <div class="item15 aqua"></div>
+            <div class="item16 yellow"></div>
+            <div class="item17 green"></div>
+            <div class="item18 aqua"></div>
+            
+        </div>
+    </div>
+</body>
+</html>

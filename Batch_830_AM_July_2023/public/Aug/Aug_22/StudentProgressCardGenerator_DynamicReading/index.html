@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+
+        <span>hello</span>
+        <h3>Student Progress Card Generator</h3>
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter Student name" id="studentName">
+            </li>
+            <li>
+                <input type="text" placeholder="Age" id="sAge">
+            </li>
+            <li>
+                Gender:
+                <input type="radio" value="Male" name="gender" checked> Male 
+                <input type="radio" value="Female" name="gender"> Female
+            </li>
+            <li>
+                Class: 
+                <select name="" id="studentClass">
+                    <option value="Class I">Class I</option>
+                    <option value="Class II">Class II</option>
+                    <option value="Class III">Class III</option>
+                    <option value="Class IV">Class IV</option>
+                    <option value="Class V">Class V</option>
+                </select>
+            </li>
+            <li class="marksList">
+                Sub Marks:
+                <input type="text" id="m1" placeholder="Maths">
+                <input type="text" id="m2" placeholder="Social">
+                <input type="text" id="m3" placeholder="Science">
+                <input type="text" id="m4" placeholder="Drawing"> 
+                <input type="text" id="m5" placeholder="Computers">
+            </li>
+            <li>
+                Languages Opted:
+                <input type="checkbox" value="Telugu"> Telugu
+                <input type="checkbox" value="Hindi"> Hindi
+                <input type="checkbox" value="English"> English
+            </li>
+            <li>
+                <input type="button" value="Generate Progress Card" onclick="readStudentData()">
+            </li>
+        </ul>
+
+        <ul class="progressCardBlock">
+            <li>
+                STudent Progress Card
+            </li>
+            <li>
+                STudent Name: <span id="dsname"></span>
+            </li>
+            <li>
+                Student age: <span id="dage"></span>
+            </li>
+            <li>
+                Gender: <span id="dgender"></span>
+            </li>
+            <li>
+                Languages Known: <span id="dlangues"></span>
+            </li>
+            <li>
+                Total: <span id="dtotal"></span>
+            </li>
+            
+            <li>
+                Avg: <span id="davg"></span>
+            </li>
+            <li>
+                Grade: <span id="dgrade"></span>
+            </li>
+        </ul>
+    </body>
+</html>

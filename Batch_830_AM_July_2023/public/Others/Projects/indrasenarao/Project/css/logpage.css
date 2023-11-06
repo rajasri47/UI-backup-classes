@@ -1,0 +1,60 @@
+.maincontent {
+    border: 1px solid #12a218;
+    width: 500px;
+}
+
+.titel {
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 900;
+    margin-left: 1em;
+}
+
+.userFrofileLog {
+    border: 1px solid #12a218;
+    border-radius: 50%;
+    margin-left: 25%;
+}
+
+.container {
+    padding: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    padding: 12px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #12a218;
+    color: #FFFFFF;
+    padding: 12px 8px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.cancelbtn {
+    width: 15%;
+    background-color: rgba(255, 0, 0, 0.731);
+    color: #FFFFFF;
+    padding: 12px 8px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}

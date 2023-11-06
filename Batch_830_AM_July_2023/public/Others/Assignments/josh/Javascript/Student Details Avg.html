@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student marks</title>
+    </head>
+    <body>
+        <script>
+            var Name = prompt('Enter Student Name:');
+            var Age = prompt('Enter Age:');
+            var Gender = prompt('Enter Gender:');
+            var Subjects = prompt('Enter Total Subjects:');
+            var Telugu = prompt('Enter Telugu Marks:');
+            var English = prompt('Enter English Marks:');
+            var Hindi = prompt('Enter Hindi Marks:');
+            var Mathematics = prompt('Enter Mathematics Marks:');
+            var Science = prompt('Enter Sciene Marks:');
+            var Social = prompt('Enter Social Marks:');
+            Telugu = parseInt(Telugu);
+            English = parseInt(English);
+            Hindi = parseInt(Hindi);
+            Mathematics = parseInt(Mathematics);
+            Science = parseInt(Science);
+            Social = parseInt(Social);
+            var Total = Telugu + English + Hindi + Mathematics + Science + Social;
+            var Average = Total / 6;
+            var TotalMarks = Total + Average; 
+            console.log('Student Details:')
+            console.log('Name is: ' + Name);
+            console.log('Age is: ' + Age);
+            console.log('Gender is: ' + Gender);
+            console.log('Total Subjects is: ' + Subjects);
+            console.log('Total Marks is: ' + Total);
+            console.log('Average is: ' + Average);
+            console.log('TotalMarks is: ' + TotalMarks);
+        </script>
+    </body>
+</html>

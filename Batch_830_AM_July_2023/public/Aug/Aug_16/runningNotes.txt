@@ -1,0 +1,36 @@
+ename
+age
+gender
+dep
+contactnumbers
+bsal
+
+var empData = {
+    name: 'Raj',
+    age: 20,
+    gender: 'Male',
+    contactNo: [2423423, 234234,234234],
+    bsal: 234,
+    tempkey: ... 
+}
+
+empData.name 
+
+var tempkey = 'name';
+empData[tempkey] -> empdata['name'] -> value
+
+
+
+MemoryStructure of a json object 
+
+
+
+for , while , dowhile 
+
+for in looping CS 
+
+Syntax:
+
+    for (var tmepkey in objname) {
+
+    }

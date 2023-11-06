@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var userName = 'Kevin';
+            var age = 20;
+            var m1 = 41;
+            var m2 = 99;
+            var m3 = 89, m4 = 52, m5 = 44;
+
+            var total = m1 + m2 + m3 + m4 + m5;
+            var avg = total / 5;
+
+            console.log("name is " + userName);
+            console.log("age is " + age);
+            console.log("total is " + total);
+            console.log("Avg is " + avg);
+
+            /*if (avg >= 40) {
+                console.log("Student got passed");
+            }
+            if (avg < 40) {
+                console.log("student got failed");
+            } */ 
+
+            if (avg >= 40) { // 52
+                console.log("Student got passed");
+                if (avg >= 90) {
+                    console.log("Student got distinction");
+                } else if (avg >= 60) {
+                    console.log("Student got first class");
+                } else {
+                    console.log("You got second class")
+                }
+            } else {
+                console.log('Student got failed');
+            }
+            console.log("done")
+        </script>
+    </body>
+</html>

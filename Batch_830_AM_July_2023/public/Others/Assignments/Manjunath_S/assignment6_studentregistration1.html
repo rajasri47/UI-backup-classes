@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+       
+        .banner {
+            background-color: aquamarine;
+            text-align: center;
+            border: 2px solid;
+            margin: 20px;
+            padding: 10px;
+            font-size: 24px;
+           }
+        .body {
+            margin: 20px;
+            padding: 5px;
+        }
+        
+        .user_details, .education_details, .tmoy {
+            border: 2px solid;
+            font-size: 18px;
+            padding:10px;
+            margin: 40px 20px;
+            background-color: bisque;
+            clear: right;
+           
+        }
+    
+        #title {
+            border: 2px solid;
+            font-size: 20px;
+            padding:5px;
+            position: relative;left: 100px; bottom: 20px;
+            background-color: bisque;
+            margin: 20px;
+        }
+        li {
+            font-size: 20px;
+            list-style: none;
+            padding: 0px 10px ;
+       
+        }
+        input, select, textarea{
+            font-size: 18px;
+        }
+        .align_left {
+            float: left;
+            position: relative; left: 30px;
+        }
+        .align_right {
+            float: right;
+            position:relative; right: 100px;          
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <span>Student Details Registration Page</span>
+    </div>
+    <div class="user_details">
+            <div><span id="title">User Details</span>
+            </div>    
+            <div class="align_left">
+                <ul> 
+                    <li>Name:&nbsp;<input type="text" placeholder="Enter Student Name"></li>
+                    <li>Age: &nbsp;<input type="text" placeholder="Enter Student Age"></li>
+                    <li>Gender: &nbsp; Male<input type="radio" name="gender" id="male"> Female <input type="radio" name="gender" id="female"></li>
+                </ul>
+            </div>
+            <div class="align_right">
+                <ul>
+                <li>Address:&nbsp;<textarea name="address" rows=6 cols = 50></textarea></li>
+                </ul>
+            </div>
+    
+    </div>
+    <div class="education_details">
+        <div>
+            <span id="title">Education Details</span>
+        </div>
+        <div class="align_left">
+            <ul>
+                <li>Qualification: &nbsp;
+                    MCA <input type="checkbox" name="Q_MCA" value="checked">  
+                    MBA <input type="checkbox" name="Q_MBA">
+                    BTech. <input type="checkbox" name="Q_Btech">
+                </li>
+            </ul>
+        </div>
+        <div class="align_right">
+            <ul>
+                <li>Courses Opted for:&nbsp;
+                    <select name="course">
+                        <option value="Angular" class="data">Angular</option>
+                        <option value="NodeJS" class="data">NodeJS</option>
+                        <option value="HTML" class="data">HTML</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class ="tmoy">
+        <div>
+            <span id="title">Tell Me About Yourself</span>
+        </div>
+        <ul>
+            <li>
+                Tell us a few words about yourself: &nbsp;
+                <textarea name="tmoy" id="" cols="80" rows="6"></textarea>
+            </li>
+        </ul>
+    </div>
+    <div class="banner">
+        <span>Copyrights@2023</span>
+    </div>
+    
+</body>
+</html>

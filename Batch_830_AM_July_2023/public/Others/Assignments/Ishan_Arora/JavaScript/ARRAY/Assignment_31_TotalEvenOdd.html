@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 31
+        </title>
+    </head>
+    <body>
+        <h1>
+            Total Number Of Even and Odd Numbers in an Array
+        </h1>
+        <script>
+            var takingInput = () => {
+                var lengthOfArray = prompt("Enter the number of elements: ");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0; i < lengthOfArray; i++) {
+                    a[i] = prompt("Enter " + i + " Value: ");
+                    a[i] = parseInt(a[i]);
+                }
+                TotalNos(a);
+            }
+
+            var TotalNos = (a) => {
+                var EvenNos = 0;
+                var OddNos = 0;
+                var len = a.length;
+                for (var i = 0; i < len; i++) {
+                    if (a[i] % 2 == 0) {
+                        EvenNos += 1;
+                    } else {
+                        OddNos += 1;
+                    }
+                }
+                console.log("Total Number Of Even Numbers are " + EvenNos);
+                console.log("Total Number Of Odd Numbers are " + OddNos);
+            }
+
+            takingInput();
+        </script>
+    </body>
+</html>

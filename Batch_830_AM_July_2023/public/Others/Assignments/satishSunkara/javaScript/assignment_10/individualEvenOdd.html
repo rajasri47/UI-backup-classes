@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Individual even & odd</title>
+    </head>
+    <body>
+        <h2>QUESTION :</h2>
+        <h4>Write a program to find the sum of all the odd numbers individually and all the even individually between user given range ?? </h4>
+        <p>ANSWER: Inspect >> console 😊</p>
+        <script>
+            let sum = 0;
+            var maxRange = prompt('Enter range....');
+
+            maxRange = parseInt(maxRange);
+             for( let i = 2; i <=maxRange; i = 2+i){
+                sum += i;
+             }
+             console.log('sum of even num = ' + sum);
+
+             let sum1 = 0;
+
+             for( let n = 1; n <=maxRange; n = 2+n){
+                sum1 += n;
+             }
+             console.log('sum of odd num = ' + sum1)
+
+
+
+
+        </script>
+    </body>
+</html>

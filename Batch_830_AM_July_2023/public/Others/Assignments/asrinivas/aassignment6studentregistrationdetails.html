@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>assignment6 student regostration details</title>
+        <style>
+            .header {
+                height: 50px;
+                width: 1500px;
+                border: 1px solid;
+                font-size: 40px;
+                text-align: center;
+            }
+            .container {
+                height: 750px;
+                width: 1500px;
+                border: 1px solid;
+                margin-top: 10px;
+            }
+            .subcontainer {
+                height: 250px;
+                width: 1480px;
+                border: 1px solid;
+                margin-top: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .user {
+                height: 45px;
+                width: 180px;
+                border: 1px solid;
+                font-size: 20px;
+                text-align: center;
+                line-height: 45px;
+                position: absolute;
+                left: 90px;
+                top: 75px;
+                background-color: white;
+            }
+            li {
+               
+                list-style: none;
+                font-size: larger;
+            }
+            .name {
+                position: absolute;
+                top: 160px;
+
+            }
+            .age {
+                position: absolute;
+                top: 220px;
+                left: 75px;
+            }
+            .gender {
+                position: absolute;
+                top: 280px;
+            }
+            .address {
+                position: absolute;
+                right: 550px;
+                top: 110px;
+            }
+            .box {
+               position: absolute;
+               right: 100px;
+            }
+            .subcontainer1 {
+                height: 200px;
+                width: 1480px;
+                border: 1px solid;
+                margin-top: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .education {
+                height: 45px;
+                width: 180px;
+                border: 1px solid;
+                font-size: 20px;
+                text-align: center;
+                line-height: 45px;
+                position: absolute;
+                left: 90px;
+                top: 340px;
+                background-color: white;
+            }
+            .qualification {
+                position: absolute;
+                top: 420px;
+            }
+            .language {
+                position: absolute;
+                top: 470px;
+            }
+            .course {
+                position: absolute;
+                right: 200px;
+                top: 450px;
+            }
+            .subcontainer2 {
+                height: 200px;
+                width: 1480px;
+                border: 1px solid;
+                margin-top: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .about {
+                height: 45px;
+                width: 180px;
+                border: 1px solid;
+                font-size: 20px;
+                text-align: center;
+                line-height: 45px;
+                position: absolute;
+                left: 90px;
+                top: 560px;
+                background-color: white;
+            }
+            .yourself {
+                position: absolute;
+                bottom: 15px;
+                left: 120px;
+            }
+            .register {
+                position: absolute;
+                right: 40px;
+                bottom: -60px;
+            }
+            .footer {
+                height: 50px;
+                width: 1500px;
+                border: 1px solid;
+                font-size: 40px;
+                text-align: center;
+            }
+        </style>
+    </head>
+<body>
+    <div class="header">
+        student details registration page
+    </div>
+    <div class="container">
+        <div class="subcontainer">
+            <div class="user">
+                user details
+            </div>
+            <ul>
+                <li class="name">
+                    name:<input type="text" text="text">
+                    
+                </li>
+                <li class="age">
+                    age:<input type="text" text="text">
+                </li>
+                <li class="gender">
+                    gender:
+                    <input type="radio" name="gender" checked value="male">male
+                    <input type="radio" name="gender" checked value="female">female
+                </li>
+                <li class="address">
+                    address:
+                </li>
+                <li class="box">
+                    <textarea name="abouturslf" id="" cols="50" rows="5"></textarea>
+                </li>
+            </ul>
+           
+
+        </div>
+        <div class="subcontainer1">
+            <UL>
+                <li class="education">
+                    education details
+                </li>
+                <li class="qualification">
+                    qualification:
+                   mca <input type="checkbox" name="mca">
+                   mba <input type="checkbox" name="mba">
+                   btech <input type="checkbox"name=btech>
+                   mtech <input type="checkbox" name="mtech">
+                </li>
+                <li class="language">
+                    languages:
+                    telugu <input type="checkbox" name="telugu">
+                    english <input type="checkbox" name="english">
+                    hindhi <input type="checkbox" name="hindhi">
+                    urdhu <input type="checkbox" name="uedhu">
+                </li>
+                <li class="course">
+                    course opted for:
+                    <select>
+                        <option value="">select course</option>
+                        <option value="degree">degree</option>
+                        <option value="poltechnic">poltechnic</option>
+                        <option value="ssc">ssc</option>
+                    </select>
+                </li>
+            </UL>
+
+        </div>
+        <div class="subcontainer2">
+                <ul>
+                    <li class="about">
+                        about yourself
+                        
+                    </li>
+                    <li class="yourself">
+                        <label>
+                            Tell few words about urself
+                        </label>
+                        <textarea name="abouturslf" id="" cols="50" rows="5"></textarea>
+                    </li>
+
+                </ul>
+
+        </div>
+        <div class="register">
+            <input type="submit" value="register details">
+        </div>
+
+    </div>
+    <div class="footer">
+        @copyrights 2023
+    </div>
+    
+</body>
+</html>

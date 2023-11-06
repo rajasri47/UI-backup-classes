@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 10</title>
+</head>
+<body>
+    <script>
+        var name,gender,age,department,basicSalary,totalsalary;
+        function details(){
+     name=prompt("enter the name")
+     gender=prompt("enter the gender")
+     age=prompt("enter the age")
+     department=prompt("enter the department")
+     basicSalary=prompt("enter the basicSalary")
+        // age=parseInt(age)
+        salary()
+        }
+        function salary(){
+        basicSalary=parseInt(basicSalary)
+        pf=(basicSalary*12)/100
+        hra=(basicSalary*24)/100
+        totalsalary=pf+hra+basicSalary;
+        information();
+        }
+        function information(){
+        console.log("Name is:"+name )
+        console.log(" gender is:"+gender)
+        console.log("department is:"+department )
+        console.log("basicSalary is:"+basicSalary )
+        console.log("pf is:"+pf)
+        console.log("hra is:"+hra)
+        console.log("totalsalary is:"+totalsalary)
+        }
+        function gender(){
+            details();
+        if(gender =='male'){
+        if(totalsalary>=300000){
+            console.log("tax percent is 15")
+        }
+       else if(totalsalary>=200000){
+            console.log("tax percent is 10")
+        }
+       else if(totalsalary>=100000){
+          console.log("tax percent is 5")  
+        }
+        else{
+            console.log("tax percent is 0")
+        }
+    }
+    if(gender =='female'){
+        if(totalsalary>=300000){
+            console.log("tax percent is 10")
+        }
+        else if(totalsalary>=200000){
+            console.log("tax percent is 5")
+        }
+        else{
+            console.log("tax percent is 0")
+        }
+    }
+}
+gender();
+    </script> 
+</body>
+</html>

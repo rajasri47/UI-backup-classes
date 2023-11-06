@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var age = 10;
+            var mypromise = new Promise((resolved, rejected) => {
+                if (age >= 21) {
+                    resolved('Age is valid')
+                } else {
+                    rejected ("AGe is invalid")
+                }
+            })
+
+            mypromise.then((response)=> {
+                console.log(response);
+            }).catch((error) => {
+                console.log(error)
+            });
+
+            var serverurl = 'http://abc.com/data/'
+            //fetch(url: 'server url').then().catch()
+
+
+            function checkforuserage(resolved, rejected) {
+                if (age >= 21) {
+                    resolved();
+                } else {
+                    rejected();
+                }
+            }
+            checkforuserage(() => {
+                if (uuser is male) {
+                    malejob()
+                } else {
+                    femalejob()
+                }
+            }, () => {
+
+            })
+
+        </script>
+    </body>
+</html>

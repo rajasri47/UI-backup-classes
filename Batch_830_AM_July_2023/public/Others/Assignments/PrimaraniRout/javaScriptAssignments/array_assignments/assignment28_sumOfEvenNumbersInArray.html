@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Sum of all even numbers
+        </title>
+    </head>
+    <body>
+        
+        <script>
+            var data = () => {
+                var length = prompt("Enter the number of elements");
+                length = parseInt(length);
+                var a= [];
+                for (var i = 0 ; i < length ; i++) {
+                    a[i] = prompt("Enter " + i + " Value ");
+                    a[i] = parseInt(a[i]);
+                }
+                evenSum(a);
+            }
+
+            var evenSum = (a) => {
+                var sum = 0;
+                var len = a.length;
+                for (var i = 0 ; i < len ; i++) {
+                    if (a[i] % 2 == 0) {
+                        sum += a[i];
+                    } else {
+                        continue;
+                    }
+                }
+                console.log("Sum of all the even numbers = " + sum);
+            }
+
+            data();
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re arrange the values within given array in both Ascending & Descending order</title>
+</head>
+<body>
+    <script>
+        var array = [24,56,78,98,21,12,2,3,50,87,57,908,456,7656,235,9876,674,347,1];
+        for(var i = 0; i < array.length; i++) {
+            for(var j = i; j < array.length; j++) {
+                if(array[i] > array[j]) {
+                    var temp = array[i];
+                    array[i] = array[j]
+                    array[j] = temp;
+                }
+            }
+
+        }
+        console.log(array);
+        for(var i = 0; i < array.length; i++) {
+            for(var j = i; j < array.length; j++) {
+                if(array[i] < array[j]) {
+                    var temp = array[i];
+                    array[i] = array[j]
+                    array[j] = temp;
+                }
+            }
+
+        }
+        console.log(array);
+    </script>
+    
+</body>
+</html>

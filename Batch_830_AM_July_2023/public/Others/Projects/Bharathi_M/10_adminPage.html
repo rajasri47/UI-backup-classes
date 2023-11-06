@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        .backgroundImage{
+            background-image: url('images/image2.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-weight: bold; 
+        }
+
+        .container1{
+            border: 1px solid;
+            height: 350px;
+            width: 600px;
+            margin: 50px auto;
+        }
+        li{
+            list-style: none;
+            margin: 30px;
+            font-size: 20px;
+        }
+        .userName{
+            margin-left: 80px;
+            height: 30px;
+            width: 200px;
+        }
+        .password{
+            margin-left: 95px;
+            height: 30px;
+            width: 200px;
+        }
+        .login{
+          padding: 10px;
+          width: 80px;
+          position: relative;
+          left: 200px;
+          font-size: large;
+        }
+        .login a{
+            text-decoration: none;
+        }
+        .signUp,.forgotPassword{
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="backgroundImage">
+        <div class="mainContainer">
+            <div class="container1">
+             <ul>
+                 <li>
+                <label>User Name:</label>
+                <input type="text" class="userName">
+                </li>
+                <li>
+                <label>Password:</label>
+                <input type="password" class="password">
+                 </li>
+                 <li>
+                    <button class="login"><a href="11_addVendor.html">Login</a></button>
+                 </li>
+                 <li class="signUp">
+                    <a href="2_signUpPage.html">Sign Up</a>
+                </li>
+                <li class="forgotPassword">
+                    <a href="3_forgotPasswordPage.html">Forgot Password</a>
+                </li>
+              </ul>
+            </div>
+        
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6</title>
+    <style>
+        .mainHeading{
+                margin: 10px;
+                border: 2px solid;
+                padding: 10PX;
+                text-align: center;
+            }
+            li{
+                list-style-type: none;
+            }
+            .mainContainer{
+                height: 600px;
+                width: 100%;
+                border: 2px solid;
+            }
+            .userDetailsFieldset{
+                border: 2px solid;
+                height: 30px;
+                width: 150px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 5px;
+                position: relative;
+                top: -15px;
+                left: 10px;
+                background-color: white;
+            }
+            .userContent{
+                padding: 15px;
+                margin-left: 30px;
+            }
+            .addressContent{
+                position: absolute;
+                top: 125px;
+                right: 170px;
+            }
+            .address{
+                position: absolute;
+                top: 15px;
+                right: 270px;
+            }
+            .userDetails{
+                height: auto;
+                border: 2px solid;
+                margin: 25px ;
+            }
+            .educationDetails{
+                border: 2px solid black;
+                margin: 15px;
+                padding: 7px;
+            }
+            .course{
+                position: absolute;
+                top: 337px;
+                right: 15%;
+            }
+            .userDetailsFieldset{
+                border: 2px solid;
+            }
+            .education{
+                border: 2px solid;
+                height: 30px;
+                width: 200px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 5px;
+                position: relative;
+                top: -25px;
+                left: 10px;
+                background-color: white;
+            }
+            .language{
+                margin-top: 10px;
+            }
+            .aboutYourself{
+                border: 2px solid;
+                margin: 20px;
+                padding: 10px;
+            }
+            .about{
+                border: 2px solid;
+                height: 35px;
+                box-sizing: border-box;
+                padding: 5px;
+                width: 200px;
+                position: relative;
+                top: -23px;
+                left: 10px;
+                background-color: white;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+        <h2 class="mainHeading">
+            Student Registration Page
+        </h2>
+        <div class="mainContainer">
+            <div class="userDetails">
+                <li class="userDetailsFieldset"> User Details
+                </li>
+                <li class="userContent"><label for="name">Name:</label>
+                    <input type="text" name="name">
+                </li>
+                <li class="userContent"><label for="age">Age:</label>
+                    <input type="number" name="age">
+                </li>
+                <li class="userContent"><label for="gender">Gender :</label>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </li>
+                <li class="addressContent">
+                    <label class="address" for="">Address:</label> 
+                        <textarea name="address" id="" cols="30" rows="5"></textarea>
+                </li>
+            </div>
+
+            <div class="educationDetails">
+                <div class="education">
+                    Education Details
+                </div>
+                    <li class="study"><label for="qualification">Qualification</label>
+                        <input type="checkbox">BSC
+                        <input type="checkbox">BA
+                        <input type="checkbox">BCOM
+                    </li>
+                <span class="course">
+                    <label for="course"> Courses Opted For:
+                    </label>
+                    <select name="course">
+                        <option value="">Select Course</option>
+                        <option value="">MBA</option>
+                        <option value="">MCA</option>
+                        <option value="">B-tech</option>
+                    </select>
+                </span>
+                <li class="language">
+                    <label for="">Language </label>
+                        <input type="checkbox">English
+                        <input type="checkbox">Hindi
+                        <input type="checkbox">Odia
+                </li>
+            </div>
+
+            <div class="aboutYourself">
+                <li class="about">About Yourself
+                </li>
+                <li>
+                    <label for="">Tell something about yourself :</label><br>
+                    <textarea name="aboutYourself"  cols="40" rows="7"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Register">
+                </li>
+            </div>
+        </div>
+               <h2 class="mainHeading">@copyright2023 </h2>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students registration form</title>
+    <style>
+        ul{
+            width: 600px;
+            background-color: rgb(59, 73, 144);
+            border: 2px solid;
+            margin: 10px auto;
+            padding: 10px;
+
+        }
+        h3{
+            margin: 10px;
+            text-align: center;
+            color: indigo;
+            font-size: 30px;
+        }
+        li{
+            list-style: none;
+            border: 1px solid gray;
+            margin: 8px;
+            padding: 10px;
+            background-color: rgb(219, 204, 218);
+        }
+    </style>
+</head>
+<body>
+    <h3>Students registration</h3>
+    <form action="http://www.serverlocation.in.com" method="post">
+        <ul>
+            <li>
+                <label for="username"> User first name:</label>
+                <input type="text" name="username" placeholder="maximum length is 15" maxlength="15" required>
+
+            </li>
+            <li>
+                <label for="username">Last name:</label>
+                <input type="text" name="username" placeholder="maximum length is 15" maxlength="15" required>
+            </li>
+            <li>
+                <label for="psw">Enter your password</label>
+                <input type="password" name="psw" placeholder="maximum length is 10" maxilength="10" title="password should contain 1 upper case and lower case and special symbol and number" required>
+            </li>
+            <li>
+                <label for="date">Enter the Date Of Birth</label>
+                <input type="date" name="date" required>
+            </li>
+            <li>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email">
+            </li>
+            <li>
+                <label for="gender">Select Gender</label>
+                <input type="radio" name="gender" checked>Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others
+            </li>
+            <li>
+                <label for="country"> Select Country</label>
+                <select name="country" title="Click to get country name">
+                    <option value="australia">Australia</option>
+                    <option value="India" selected>India</option>
+                    <option value="China">China</option>
+                    <option value="America">America</option>
+                    <option value="England">England</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Dubai">Dubai</option>
+                </select>
+                  
+            </li>
+            <li>
+                <label for="lang">Language</label>
+                <input type="checkbox" name="lang" checked>English
+                <input type="checkbox" name="lang">Hindi
+                <input type="checkbox" name="lang">Telugu
+                <input type="checkbox" name="lang">Urdu
+            </li>
+            <li>
+                <label for="text">Write about yourself</label><br>
+                <textarea name="text" cols="60" rows="3"></textarea>
+            </li>
+            <div style="margin: 8px; "><input type="submit" value="Submit"></div>
+                
+            
+        </ul>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+body{
+    background-color: greenyellow;
+}
+.blockbox1{
+    border: 3px solid;
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    
+}
+.block2{
+    border: 3px solid;
+    height: 1400px;
+    color: red;
+    
+}
+.block3{
+    border: 2px solid;
+    height: 1366px;
+    width: 300px;
+    margin: 10px;
+    color: rgb(15, 15, 15);
+    
+    
+}
+.name1{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+
+}
+.name2{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name3{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name4{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name5{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name6{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name7{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name8{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name9{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name10{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.name11{
+    border: 2px solid;
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+    text-align: justify; 
+    list-style-position: inside;
+}
+.Details{
+    float: right;
+    padding-top: 3px;
+    border: 2px solid;
+    margin: 10px;
+    height: 100px;
+    width: 1150px; 
+    text-align: justify ;
+    
+    
+    
+}
+img{
+    float: left;
+    padding-left: 5px;
+    height: 97px;
+    width: 90px;
+    
+}
+.bottom{
+    border: 3px solid;
+    margin: 5px;
+    text-align: center;
+}
+

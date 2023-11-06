@@ -1,0 +1,6 @@
+Path of resources
+    absolute Path
+    relative path 
+
+
+    

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;   
+        }
+        .backgroundImage{
+            background-image: url('images/image2.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-weight: bold; 
+        }
+        .header,.footer{
+            border: 1px solid;
+            height: 50px;
+            background-color: seagreen;
+            text-align: center;
+           
+        }
+        .container1{
+            border: 1px solid;
+            height: 500px;
+        }
+        .mainContainer{
+            margin: 50px 400px;
+           
+        }
+        .container2{
+            border: 1px solid;
+            height: 350px;
+            margin: 75px 70px;
+        }
+        li{
+            list-style: none;
+            margin: 30px 85px;
+            font-size: 20px;
+        }
+        .userName{
+            margin-left: 35px;
+            height: 30px;
+            width: 200px;
+        }
+        .password{
+            margin-left: 95px;
+            height: 30px;
+            width: 200px;
+        }
+        .login{
+          padding: 10px;
+          width: 80px;
+          position: relative;
+          left: 170px;
+        }
+        .login a{
+            text-decoration: none;
+        }
+        .signUp,.forgotPassword{
+            text-align: center;
+
+        }
+        
+
+    </style>
+</head>
+<body class="backgroundImage">
+    <div class="mainContainer">
+        <div class="header"><h2>Login Here</h2></div>
+        <div class="container1">
+            <div class="container2">
+             <ul>
+                 <li>
+                <label>Enter User Name:</label>
+                <input type="text" class="userName">
+                </li>
+                <li>
+                <label>Password:</label>
+                <input type="password" class="password">
+                 </li>
+                 <li>
+                    <button class="login"><a href="4_productPage.html">Login</a></button>
+                 </li>
+                 <li class="signUp">
+                    <a href="2_signUpPage.html">Sign Up</a>
+                </li>
+                <li class="forgotPassword">
+                    <a href="3_forgotPasswordPage.html">Forgot Password</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="footer"><h2>Enjoy The Shopping</h2></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Holiday 2Travel</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/keyframe.css" />
+    <link rel="stylesheet" type="text/css" href="./css/form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/90b784a215.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="all">
+      <nav>
+        <div class="logo">
+          <h1 class="animated infinite heartBeat">2Travel</h1>
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#pack">Packages</a>
+          <a href="#pp">Destinations</a>
+          <a href="#about">About Us</a>
+        </div>
+      </nav>
+      <main>
+        <section class="tour">
+          <h3>Holiday Tour Package</h3>
+          <h1>DO COME & VISIT<span class="change_content"> </span></h1>
+          <div class="learn">
+            <a href="#about" class="btnone">About more</a>
+            <a href="#divTwo" class="btntwo">Sign Up Here</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- overlay form -->
+
+      <div class="overlay" id="divOne">
+        <div class="wrapper">
+          <h1>Login</h1>
+          <h2>Hey,Enter your details to get sign in</h2>
+          <a href="#" class="close">&times;</a>
+          <div class="content">
+            <div class="container">
+              <form>
+                <input type="email" placeholder="Enter Email " required />
+                <span class="validity"></span>
+                <input type="password" placeholder="Password" required />
+                <div class="btn">
+                  <button type="reset" class="btn-empty">Clear</button>
+                  <button type="submit" class="btn-filled">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <h5>Don't have an account?</h5>
+          <h6><a href="#divTwo">Make Now</a></h6>
+        </div>
+      </div>
+      <div class="overlay" id="divTwo">
+        <div class="wrapper two">
+          <h1>Sign Up</h1>
+          <h2>Create new account</h2>
+          <a href="#" class="close">&times;</a>
+          <div class="content">
+            <div class="container two">
+              <form>
+                <input type="text" placeholder=" Enter First Name " required />
+                <input type="text" placeholder=" Enter Last Name " />
+                <input type="email" placeholder="Enter Email " required />
+                <span class="validity"></span>
+                <input
+                  type="tel"
+                  placeholder="Enter Phone No. "
+                  required
+                  pattern="[0-9]{10}"
+                />
+                <span class="validity"></span>
+                <input type="password" placeholder="Password" required />
+                <div class="btn">
+                  <button type="reset" class="btn-empty">Clear Content</button>
+                  <button type="submit" class="btn-filled">
+                    Create account
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <h5>Already A Member?</h5>
+          <h6><a href="#divOne">Log In</a></h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- popuplar place -->
+
+    <section id="pp">
+      <div class="place">
+        <div class="row">
+          <h4 class="center">
+            <span style="color: blueviolet">Popular</span> Places
+          </h4>
+          <div class="col_pp">
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/goa.jpg" alt="" />
+                <span class="card-title">Goa</span>
+              </div>
+              <div class="card-content">
+                <p>Beaches , Sunset</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/var.jpg" alt="" />
+                <span class="card-title">Varanasi</span>
+              </div>
+              <div class="card-content">
+                <p>Temples , Ghats</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/dar.jpg" alt="" />
+                <span class="card-title">Darjeeling</span>
+              </div>
+              <div class="card-content">
+                <p>Hills , Sunrise</p>
+              </div>
+            </div>
+          </div>
+          <div class="bcenter">
+            <a href="#divTwo" class="btn-con">
+              <i class="fas fa-arrow-circle-right" style="font-size: 20px"></i>
+              Login For Booking
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  
+    about -->
+
+    <section id="about">
+      <div class="title-text">
+        <h4 class="center"><span style="color: blueviolet">About</span> us</h4>
+      </div>
+      <div class="about-box">
+        <div class="about">
+          <h1>Travel With Experts</h1>
+          <div class="about-brief">
+            <div class="about-spr o1"></div>
+            <div class="about-text">
+              <p>10000+ Happy Customers</p>
+            </div>
+          </div>
+          <h1>Travel Safety Assurance</h1>
+          <div class="about-brief">
+            <div class="about-spr o2"></div>
+            <div class="about-text">
+              <p>Safe holidays with assured stays, clean cabs & 24x7 support</p>
+            </div>
+          </div>
+          <h1>Flexible Cancellation</h1>
+          <div class="about-brief">
+            <div class="about-spr o3"></div>
+            <div class="about-text">
+              <p>Cancel or reschedule your holiday to suit your needs.</p>
+            </div>
+          </div>
+          <h1>Unmatched Pricing</h1>
+          <div class="about-brief">
+            <div class="about-spr o4"></div>
+            <div class="about-text">
+              <p>Best deals and offers in the industry</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="./image/about.png" alt="pic" />
+        </div>
+      </div>
+      <div class="bcenter">
+        <a href="#divTwo" class="btn-con">
+          <i class="fas fa-arrow-circle-right" style="font-size: 20px"></i>
+          Login For Booking
+        </a>
+      </div>
+    </section>
+
+    <!-- packages -->
+
+    <section id="pack">
+      <div class="place">
+        <div class="row">
+          <h4 class="center">
+            <span style="color: blueviolet">Group</span> Packages
+          </h4>
+          <div class="col_pp">
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/leh.jpg" alt="" />
+                <span class="card-title">Leh Ladakh</span>
+              </div>
+              <div class="card-content">
+                <p>Starting from ₹24799</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/lad.jpg" alt="" />
+                <span class="card-title">Amazing Ladakh with nubra </span>
+              </div>
+              <div class="card-content">
+                <p>Starting from ₹33999</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/char.jpg" alt="" />
+                <span class="card-title">Char Dham Yatra</span>
+              </div>
+              <div class="card-content">
+                <p>Starting from ₹38000</p>
+              </div>
+            </div>
+          </div>
+          <div class="bcenter">
+            <a href="#divTwo" class="btn-con">
+              <i class="fas fa-arrow-circle-right" style="font-size: 20px"></i>
+              Login For Booking
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer of page -->
+
+    <footer>
+      <div class="col">
+        <h3>2Travel</h3>
+        <p>1007 , Balmon <br />Mountain Drive , Gotham , USA</p>
+        <p>&copy;2023 All rights reserved.</p>
+      </div>
+      <div class="col">
+        <h3>About us</h3>
+        <p>Our story</p>
+        <p>Sustainability</p>
+        <p>Customers</p>
+      </div>
+      <div class="col">
+        <h3>Support</h3>
+        <p>FAQ's</p>
+        <p>Call Us</p>
+        <p>Mail Us</p>
+      </div>
+      <div class="col">
+        <h3>Contact us</h3>
+        <p>
+          <i class="fa fa-phone" aria-hidden="true"></i
+          ><a href="tel:+919155090242" target="_blank">+91-9876543210</a>
+        </p>
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i
+          ><a href="mailto:mehulrajpnbe@gmail.com" target="_blank"
+            >send24@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

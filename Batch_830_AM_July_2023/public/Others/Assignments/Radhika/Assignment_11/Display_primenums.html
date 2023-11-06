@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>demonstrating forloop control structure</title>
+    </head>
+    <body>
+        <h3>Display all Prime Number B/w 1-1000</h3>
+        <script>
+    
+            var i,j;
+            var count=0;
+            for(var j=1;j<=1000;j++){
+            for(var i=1; i<=j; i++){
+                if(j%i == 0){
+                  count++;
+                }
+                }
+                if(count==2){
+                    console.log(j); 
+                }
+                count=0;
+            }
+                
+                
+            
+    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>total o of charactor in a string</title>
+    </head>
+    <body>
+        <script>
+            var str = prompt("Enter The String");
+            console.log(str);
+
+            var val = str.length;
+            var sum = 0;
+
+            for(var i = 0 ; i < val ; i++){
+                var k = str.charCodeAt(i);
+                if(k >= 48 && k <= 57){
+                    var sum = sum + 1;
+                }
+            }
+            console.log(sum);
+        </script>
+    </body>
+</html>

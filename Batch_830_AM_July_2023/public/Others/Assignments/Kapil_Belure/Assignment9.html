@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>To View The Even & Odd Numbers Enter Between Given Numbers Enter Two NUmbers and open the Console to view</h2>
+    <Script>
+
+        var Num1 = prompt("Enter the 1st number");
+        Num1 = parseInt(Num1);
+        var Num2 = prompt("Enter the 2nd number");
+        Num2 = parseInt(Num2);
+        var sumEven = 0;
+        var sumOdd = 0;
+        var odd = 0;
+        if (Num1 <= Num2) {
+            console.log("All the Even Numbers between " + Num1 + "to" + Num2 + " = ");
+            for (k = Num1; k <= Num2; k++) {
+                if (k % 2 == 0) {
+                    // sumEven = sumEven + k;
+                    sumEven += k;
+                    console.log(k);
+                }
+                else {
+                    odd = k;
+                    sumOdd += k;
+                    console.log(odd)
+                }
+            }
+            console.log("Sum of all the Even Numbers between " + Num1 + "to" + Num2 + " = " + sumEven);
+            console.log("Sum of all the Odd Numbers between " + Num1 + "to" + Num2 + " = " + sumOdd);
+            console.log("All the Odd Numbers between " + Num1 + "to" + Num2 + " = ");
+            console.log(odd);
+        }
+        else {
+            for (k = Num1; k >= Num2; k--) {
+                if (k % 2 == 0) {
+                    sumEven = sumEven + k;
+                }
+                else {
+                    console.log(k);
+                    sumOdd = sumOdd + k;
+                }
+            }
+            console.log("Sum of all the Even Numbers between " + Num1 + "to" + Num2 + " = " + sumEven);
+            console.log("Sum of all the Odd Numbers between " + Num1 + "to" + Num2 + " = " + sumOdd);
+        }
+
+
+    </Script>
+</body>
+
+</html>

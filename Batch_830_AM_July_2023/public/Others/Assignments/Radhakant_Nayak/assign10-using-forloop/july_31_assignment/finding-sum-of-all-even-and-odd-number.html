@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           finding sum of all eve and odd number
+        </title>
+    </head>
+    <body>
+        <center><h1>go to the console tab</h1></center>
+        <script>
+            var start = prompt('enter start number');
+            start = parseInt(start);
+            var end = prompt('enter the end number');
+            end = parseInt(end);
+            oddSum = 0;
+            evenSum = 0;
+            for(var i = start ; i <= end ; i ++){
+                if(i % 2 == 0){
+                    evenSum = (evenSum + i);
+                }else{
+                    oddSum = (oddSum + i);
+                }
+            }
+            console.log(" even sum is " + evenSum);
+            console.log(" odd sum is " + oddSum);
+        </script>
+    </body>
+</html>

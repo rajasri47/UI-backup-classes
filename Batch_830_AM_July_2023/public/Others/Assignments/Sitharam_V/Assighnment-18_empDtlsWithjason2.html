@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var empDetails = { 
+                readData () {           
+                    empDetails.name = prompt("Enter the user Name");
+                    empDetails.age = prompt("Enter age");
+                    empDetails.gender = prompt("Enter your gender");
+                    empDetails.bsalary = parseInt(prompt("Enter your basic salary"));
+                    empDetails.skills = [ ];
+                    var length = parseInt(prompt("Enter num of skills you learned "));
+                    for (i = 0; i < length; i++) {
+                        empDetails.skills[i] = prompt("Enter skill you learned");
+                    }
+                },
+                totalSalary () {
+                    this.readData();
+                    this.pf = (this.bsalary * 12) / 100;
+                    this.hra = (this.bsalary * 24) / 100;
+                    this.totalSal = this.pf + this.hra + this.bsalary;
+                },
+                Tax () {
+                    this.totalSalary();
+                    switch (this.gender) {
+                        case "male" : 
+                            if (this.bsalary > 300000) {
+                                this.tax = ( this.totalSal * 15) / 100;
+                            }
+                            else if (this.bsalary > 200000) {
+                                this.tax = ( this.totalSal * 10) / 100;
+                            }
+                            else if ( this.bsalary > 100000) {
+                                this.tax = ( this.totalSal * 5) / 100;
+                            }
+                        
+                        case "female" : 
+                        
+                            if (this.bsalary > 300000) {
+                                this.tax = ( this.totalSal * 10) / 100;
+                            }
+                            else if (this.bsalary > 200000) {
+                                this.tax = ( this.totalSal * 5) / 100;
+                            }
+                    }
+                },
+                display () {
+                    this.Tax();
+                    console.log("Employe Details of " + this.name);
+                    console.log(" Basic Salary            : " + " ₹ " + this.bsalary);
+                    console.log(" Employe PF is           : " + " ₹ " + this.pf);
+                    console.log(" Employe HRA is          : " + " ₹ " + this.hra);
+                    console.log(" Employe Total Salary is : " + " ₹ " + this.totalSal);
+                    console.log(" Employe Tax is          : " + " ₹ " + this.tax);
+                }
+            };
+            empDetails.display();
+           
+        </script>
+    </body>
+</html>

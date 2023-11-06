@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Keyframes
+        </title>
+        <style>
+
+            @keyframes mystyles {
+                20% {
+                    background-color: green;
+                    left: 100px;
+                    top: 100px;
+                }
+                32% {
+                    background-image: linear-gradient(red, green, yellow);
+                    width: 120px;
+                    border-radius: 50%;
+                    left: 160px;
+                    top: 10px;
+                    transform: rotate(190deg);
+                }
+                44%  {
+                    border-radius: 30%;
+                    background-image: linear-gradient(gold, blue, pink);
+
+                    top: 200px;
+                }
+                53% {
+                    background-color: aquamarine;
+                    left: 60px;
+                    top: 70px;
+                    transform: rotate(19deg);
+                }
+                67% {
+                    background-color: blue;
+                    left: 260px;
+                    top: 400px;
+                    transform: rotate(290deg);
+                }
+                90% {
+                    right: 40px;
+                    left: 10px;
+                    background-color: black;
+                    color: #fff;
+                    top: 10px;
+                }
+            }
+
+            .container1 {
+                border: 1px solid;
+                width: 50px;
+                text-align: center;
+                background-color: aquamarine;
+                padding: 50px;
+
+                position: absolute;
+                left: 290px;
+                top : 300px;
+                animation: 15s mystyles infinite;
+            }
+            .container2 {
+                border: 1px solid;
+                width: 150px;
+                text-align: center;
+                background-color: aquamarine;
+                padding: 150px;
+
+                position: absolute;
+                left: 990px;
+                top : 600px;
+                animation: 10s mystyles infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            Hello1
+        </div>
+        <!-- <div class="container2">
+            Hello2
+        </div> -->
+    </body>
+</html>

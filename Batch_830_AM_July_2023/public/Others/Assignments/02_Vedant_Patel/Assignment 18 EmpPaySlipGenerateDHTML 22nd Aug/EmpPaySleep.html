@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpPaySlip</title>
+    <script src="EmpPaySleep.js"></script>
+    <link rel="stylesheet" href="EmpPaySleep.css">
+</head>
+
+<body>
+    <h3 class="heading">EMP PAY SLIP GENERATOR</h3>
+
+    <ul>
+        <li>
+            <input type="text" id="empname" value="VEDANT PATEL" placeholder="Enter Employee Name" >
+        </li>
+        <li>
+            <input type="text" value="IT" placeholder="Department" id="edep">
+        </li>
+        <li>
+            <input type="text" value="HYDRABAD" placeholder="Location" id="location">
+        </li>
+        <li>
+            <input type="text" value="30000" placeholder="Basic Salary" id="bsalary">
+        </li>
+        <li>
+            Gender:
+            <input type="radio" value="Male" name="gender" checked> Male
+            <input type="radio" value="Female" name="gender" > Female
+        </li>
+        <li class="btn">
+            <input type="button" value="Generate Pay Slip" onclick="getPaySlip()">
+            <!-- <button class="butn" value="" onclick="getPaySlip()">Generate Pay Slip</button> -->
+        </li>
+    </ul>
+    <div class="main">
+        <h3 class="heading2">SALARY SLIP OF EMPLOYEE</h3>
+        <ul class="ul2">
+            <li class="empid">
+                Emp id : 1234
+            </li>
+            <li class="name">
+                Name : <span class="username"></span>
+            </li>
+            <li class="bank">
+                Bank : HDFC
+            </li>
+            <li class="ac">
+                Bank A/c No. 25487635485
+            </li>
+            <li class="loc">
+                Location : <span class="location"></span>
+            </li>
+            <li class="gend">
+                Gender : <span class="gender"></span>
+            </li>
+            <li class="dept">
+                Department : <span class="department"></span>
+            </li>
+            <li class="designation">
+                Designation : S/W ENGINEER</li>
+            </li>
+            <li class="bSal">
+                Basic Salary : <span class="sal"></span>
+            </li>
+            <li class="hra">
+                HRA : <span class="hra1"></span>
+            </li>
+            <li class="pf">
+                PF : <span class="pf2"></span>
+            </li>
+            <li class="netsal">
+                Net Salary : <span class="netsalary"></span>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

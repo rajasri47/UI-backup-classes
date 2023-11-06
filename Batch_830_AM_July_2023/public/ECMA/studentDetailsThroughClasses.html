@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class StudentDetails { // class definition
+            constructor(data) {
+                console.log("frm constructr")
+                var location = '';
+                this.name = data.sname;
+                this.gender = data.sgender;
+                this.age = data.sage;
+                this.marks = data.smarks;
+            }
+           
+            displayStudentdetails() {
+
+                console.log("STudent name is " + this.name);
+                console.log("STudent age is " + this.name);
+                console.log("STudent gender is " + this.gender);
+                this.getTotalAndAvg()
+            }
+            getTotalAndAvg() {
+               this.total = 0;
+               for (var i = 0 ; i < this.marks.length; i++) {
+                   this.total += this.marks[i];
+               }
+               this.total += 20;
+           }
+        }
+
+        var s1 = new StudentDetails({sname: 'Raj', sage: 20, sgender: 'Male', smarks: [34, 55, 66, 78]}); // Creating an object for a class
+        // s1.displayStudentdetails();
+        console.log(s1);
+        var obj2 = {sname: 'Teena', sage: 10, sgender: 'Female', smarks: [88, 55, 99, 78]}
+        var s2 = new StudentDetails(obj2); // Creating an object for a class
+        // s2.displayStudentdetails();
+        console.log(s2)
+
+        var obj3 = {sname: 'Krish', sage: 11, sgender: 'Male', smarks: [88, 99, 99, 78]}
+        var s3 = new StudentDetails(obj3); // Creating an object for a class
+        // s3.displayStudentdetails();
+        console.log(s3)
+
+    </script>
+</body>
+</html>

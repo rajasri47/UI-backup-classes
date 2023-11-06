@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Studetn details - object - dynamic data
+        </title>
+    </head>
+    <body>
+        <script>
+            var sdetails = {
+                
+            };
+            sdetails.name = prompt("enter sutent name");
+            sdetails.age = prompt("enter age");
+            sdetails.marks = [];
+
+            for (var i = 0 ; i < 5; i++) {
+                sdetails.marks[i] = prompt("enter marks for " + i);
+                sdetails.marks[i] = parseInt(sdetails.marks[i]);
+            }
+
+            sdetails.total = 0;
+            for (var i = 0 ; i < sdetails.marks.length; i++) {
+                sdetails.total += sdetails.marks[i];
+            }
+            sdetails.avg = sdetails.total / sdetails.marks.length;
+
+            if (sdetails.avg >= 40) {
+                sdetails.grade = 'You passed'; 
+            } else {
+                sdetails.grade = 'YUou have a surprise';
+                
+            }
+
+            console.log("Name is " + sdetails.name);
+            console.log("age " + sdetails.age);
+            console.log("Total is " + sdetails.total);
+            console.log("Avg is " + sdetails.avg);
+            console.log("Grade is " + sdetails.grade);
+
+        </script>
+    </body>
+</html>

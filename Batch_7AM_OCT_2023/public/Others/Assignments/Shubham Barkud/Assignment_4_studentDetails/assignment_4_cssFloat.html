@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css Float</title>
+        <style>
+            h2 {
+                border: 1px solid;
+                padding: 5px;
+                text-align: center;
+                text-decoration: underline;
+            }
+            .container {
+                border: 1px solid;
+                width: 1210px;
+                height: 470px;
+                margin: 2px auto;
+                padding: 10px;
+
+            }
+            .c1 {
+                border: 1px solid;
+                width: 400px;
+                height: 450px;
+                margin: 15px;
+                overflow: auto;
+                float: left;
+            }
+            .r1 {
+                border: 1px solid;
+                font-size: 25px;
+                text-align: center;
+                margin: 5px;
+                padding: 8px;
+            }
+            .c2 {
+                border: 1px solid;
+                height: 450px;
+                width: 730px;
+                float: right;
+                margin: 20px;
+                overflow: auto;
+            }
+            .r2 {
+                border: 1px solid;
+                width: 650px;
+                height: 180px;
+                margin: 10px;
+                padding: 5px;
+            }
+            .img
+         {
+            border:1px solid;
+            height: 170px;
+            width: 150px;
+            margin: 3px;
+            float: left;
+
+         }
+         .det
+         {
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+
+         }
+         .lh {
+            border: 1px solid;
+            text-align: center;
+            margin: 5px;
+            padding: 3px;
+            clear: both;
+         }
+        </style>
+    </head>
+    <body>
+        <h2>
+            Student Details
+        </h2>
+        <div class="container">
+            <div class="c1">
+                <div class="r1">1.Rohit Sharma</div>
+                <div class="r1">2.Shubman Gill</div>
+                <div class="r1">3.Virat Kohli</div>
+                <div class="r1">4.Shreyas Iyer</div>
+                <div class="r1">5.KL Rahul</div>
+                <div class="r1">6.Hardik Pandya</div>
+                <div class="r1">7.Ravindra Jadeja</div>
+                <div class="r1">8.Shardul Thakur</div>
+                <div class="r1">9.Jasprit Bumrah</div>
+                <div class="r1">10.Mohammad Siraj</div>
+                <div class="r1">11.Kuldeep Yadav</div>
+            </div>
+            <div class="c2">
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/rohit.jpg" alt="">
+                    <div class="det">Name:Rohit Sharma</div>
+                    <div class="det">Age:36</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Maharastra</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/Shubman.jpg" alt="">
+                    <div class="det">Name:Shubman Gill</div>
+                    <div class="det">Age:24</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Punjab</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/virat.jpg" alt="">
+                    <div class="det">Name:Virat Kohli</div>
+                    <div class="det">Age:34</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:New Delhi</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/Shreyas.jpg" alt="">
+                    <div class="det">Name:Shreyas Iyer</div>
+                    <div class="det">Age:28</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Maharastra</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/KL.jpg" alt="">
+                    <div class="det">Name:KL Rahul</div>
+                    <div class="det">Age:31</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Karnataka</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/Hardik.jpg" alt="">
+                    <div class="det">Name:Hardik Pandya</div>
+                    <div class="det">Age:30</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Gujarat</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/Ravindra.jpg" alt="">
+                    <div class="det">Name:Ravindra Jadeja</div>
+                    <div class="det">Age:34</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Gujarat</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/Shardul.jpg" alt="">
+                    <div class="det">Name:Shardul Thakur</div>
+                    <div class="det">Age:32</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Maharastra</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/Jaspreet.jpg" alt="">
+                    <div class="det">Name:Jasprit Bumrah</div>
+                    <div class="det">Age:29</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Gujarat</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/Siraj.jpg" alt="">
+                    <div class="det">Name:Mohammad Siraj</div>
+                    <div class="det">Age:29</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Telangana</div>
+                </div>
+                <div class="r2">
+                    <img class="img" src="../Assignment_4_studentDetails/Kuldeep.jpg" alt="">
+                    <div class="det">Name:Kuldeep Yadav</div>
+                    <div class="det">Age:28</div>
+                    <div class="det">Gender:Male</div>
+                    <div class="det">Location:Uttar Pradesh</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="lh"> @Copyrights 2023</div>
+    </body>
+</html>

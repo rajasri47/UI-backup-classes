@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>total o of charactor in a string</title>
+    </head>
+    <body>
+        <script>
+            var p = prompt("enter the value");
+            var s = p.length;
+            var f=0;
+           for(var i=0; i<s; i++){
+            if(p[i]=='a' || p[i]=='e'|| p[i]=='i' || p[i]=='o' || p[i]=='u' || p[i]=='A' || p[i]=='E'|| p[i]=='I' || p[i]=='O' || p[i]=='U' ){
+                f = f+1;
+            }
+           }
+            console.log(f);
+        </script>
+    </body>
+</html>

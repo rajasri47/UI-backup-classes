@@ -1,0 +1,17 @@
+Inline and block level elements
+
+    2 types 
+
+    Block level element
+        best example - div tag 
+
+        1. by default every block level element will try to render in the new line, the element which is following the block level element, also comes to new line
+        2. By defualt every block level element occupies 100% widht of the container
+        3. we can control the dimentions of any block level element by css prop (width, height)
+
+
+    Inline elements:
+
+        best examle - span
+        1. The inline elements never come to new line, they occupy within the same line. 
+        2. The width/height of an inline element always depends on the content what it is holding, we cannont control the dimentions of an inline element 

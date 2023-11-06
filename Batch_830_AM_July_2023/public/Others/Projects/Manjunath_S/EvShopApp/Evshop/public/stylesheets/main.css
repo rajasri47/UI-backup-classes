@@ -1,0 +1,19 @@
+body {
+  padding: 10px;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  --bs-body-color: rgb(98, 96, 96);
+  --bs-border-color: gold;
+  --bs-body-bg: #ffffff;
+
+}
+
+#header, #footer { background-color: rgb(206, 234, 194);
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+

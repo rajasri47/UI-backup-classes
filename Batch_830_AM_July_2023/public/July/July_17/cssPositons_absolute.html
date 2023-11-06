@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating css positions - static
+        </title>
+        <style>
+            .block {
+                border: 1px solid;
+                width: 150px;
+                height: 120px;
+                text-align: center;
+
+            }
+            .block1 {
+                background-color: gray;
+            }
+            .block2 {
+                background-color: green;
+            }
+            .block3 {
+                background-color: orangered;
+                left: 330px;
+                top: 50px;
+                position: absolute;
+
+                
+            }
+            .block4 {
+                background-color: aqua;
+            }
+            .parentElement {
+                border: 1px solid;
+                margin: 20px;
+                padding: 20px;
+                
+                width: 90%;
+            }
+            .grandParent {
+                border: 2px solid;
+                margin: 40px;
+                padding: 40px;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block block1">Block 1</div>
+        <div class="block block2">Block 2</div>
+        <div style="position: relative;">TEST</div>
+        <div class="grandParent">
+            <div class="parentElement">
+                <div class="block block3">Block 3</div>
+            </div>
+        </div>
+        <div class="block block4">Block 4</div>
+    </body>
+</html>

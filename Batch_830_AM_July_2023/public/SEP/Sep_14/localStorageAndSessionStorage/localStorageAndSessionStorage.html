@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../jquery.js"> </script>
+        <title>
+            Demonstrating HTML5 - localStorage and sessionStorage objects
+        </title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="themeChooser">
+            Select Theme:
+            <!-- <select name="" id="userTheme" onchange="applyTheme()">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+
+                <option value="green">Green</option>
+
+                <option value="blue">Blue</option>
+
+            </select> -->
+            <input id="userTheme" type="color" onchange="applyTheme()">
+        </div>
+        <ul class="loginBlock">
+            <li>
+                
+                <div class="label">Account ID: </div>
+                <div class="inputElement"><input type="text" id="userAccountId"></div>
+            </li>
+            <li>
+                <div class="label">Account Password: </div>
+                <div class="inputElement"> <input type="password" id="accountPwd"></div>
+            </li>
+            <li>
+                <input type="checkbox" id="useroption"> Remember my Credentials
+            </li>
+            <li>
+                <input type="button" value="login" onclick="loginUser()">
+            </li>
+            <li class="invalidCredentials">
+                Invalid Credentials
+            </li>
+        </ul>
+        <div class="detailsBlock">
+            Detail will be shown here...
+        </div>
+    </body>
+</html>

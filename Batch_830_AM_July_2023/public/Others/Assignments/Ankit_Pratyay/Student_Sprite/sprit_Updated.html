@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details Page</title>
+    <style>
+      .header {
+        border: 1px solid black;
+        text-align: center;
+        background-color: blanchedalmond;
+      }
+      .body {
+        margin: 3px auto;
+        border: 1px solid black;
+        height: 480px;
+        clear: both;
+      }
+      .empname {
+        border: 1px solid black;
+        float: left;
+        height: 460px;
+        overflow: auto;
+        padding: 3px 3px;
+        margin: 5px 5px;
+      }
+
+      .empname li {
+        list-style-position: inside;
+        border: 1px solid black;
+        margin: 5px auto;
+        width: 300px;
+        text-align: center;
+        height: 50px;
+      }
+      .empdetails {
+        border: 1px solid black;
+        float: left;
+        height: 460px;
+        width: 880px;
+        padding: 3px 3px;
+        margin: 5px 5px;
+        overflow: auto;
+      }
+      .empdetailblock {
+        height: 190px;
+        border: 1px solid black;
+        margin: 5px 5px;
+        padding: 5px 5px;
+        clear: both;
+      }
+      .footer {
+        border: 1px solid black;
+        text-align: center;
+        background-color: azure;
+        clear: both;
+      }
+
+      .imgBlock {
+        float: left;
+        height: 180px;
+        width: 180px;
+        border: 1px solid black;
+        margin-right: 10px;
+        background-image: url("./students.png");
+      }
+      .empdetailblock > li {
+        list-style: none;
+        margin: 10px;
+        padding: 2px;
+      }
+      .emp1 {
+        background-position: -50px -23px;
+      }
+      .emp2 {
+        background-position: -373px 1px;
+      }
+      .emp3 {
+        background-position: -689px -17px;
+      }
+      .emp4 {
+        background-position: -51px -300px;
+      }
+      .emp5 {
+        background-position: -363px -326px;
+      }
+      .emp6 {
+        background-position: -668px -304px;
+      }
+      .emp7 {
+        background-position: -87px -620px;
+      }
+      .emp8 {
+        background-position: -501px -683px;
+      }
+      .emp9 {
+        background-position: -891px -659px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h3>EMPLOYEE DETAILS DEMONSTRATING IMAGE SPRITING</h3>
+    </div>
+    <div class="body">
+      <ol class="empname">
+        <li>Salman Khan</li>
+        <li>Akshay Kumar</li>
+        <li>Manoj Bajpayee</li>
+        <li>Pankaj Tripathi</li>
+        <li>Rajini kant</li>
+        <li>N.T. Rama Rao Jr</li>
+        <li>Rampal Yadav</li>
+        <li>Amitabh bachhan</li>
+        <li>Shatrughan Sinha</li>
+      </ol>
+      <div class="empdetails">
+        <ul id="stud1" class="empdetailblock">
+          <div class="imgBlock emp1"></div>
+          <li>Name: Salman Khan</li>
+          <li>Age: 50</li>
+          <li>Gender: Male</li>
+          <li>Location: Banglore</li>
+        </ul>
+        <ul class="empdetailblock">
+          <div class="imgBlock emp2"></div>
+          <li>Name: Akshay Kumar</li>
+          <li>Age: 48</li>
+          <li>Gender: Male</li>
+          <li>Location: Mumbai</li>
+        </ul>
+        <ul class="empdetailblock">
+          <div class="imgBlock emp3"></div>
+          <li>Name: Manoj Bajpayee</li>
+          <li>Age: 48</li>
+          <li>Gender: Male</li>
+          <li>Location: Bihar</li>
+        </ul>
+        <ul class="empdetailblock">
+          <div class="imgBlock emp4"></div>
+          <li>Name: Pankaj Tripathi</li>
+          <li>Age: 50</li>
+          <li>Gender: Male</li>
+          <li>Location: Banglore</li>
+        </ul>
+        <ul class="empdetailblock">
+          <div class="imgBlock emp5"></div>
+          <li>Name: Rajini kant</li>
+          <li>Age: 60</li>
+          <li>Gender: Male</li>
+          <li>Location: Hyderabad</li>
+        </ul>
+        <ul class="empdetailblock">
+          <div class="imgBlock emp6"></div>
+          <li>Name: N.T. Rama Rao Jr</li>
+          <li>Age: 40</li>
+          <li>Gender: Male</li>
+          <li>Location: Banglore</li>
+        </ul>
+        <ul class="empdetailblock">
+          <div class="imgBlock emp7"></div>
+          <li>Name: Rampal Yadav</li>
+          <li>Age: 54</li>
+          <li>Gender: Male</li>
+          <li>Location: Lacknow</li>
+        </ul>
+        <ul class="empdetailblock">
+          <div class="imgBlock emp8"></div>
+          <li>Name: Amitabh bachhan</li>
+          <li>Age: 70</li>
+          <li>Gender: Male</li>
+          <li>Location: Mumbai</li>
+        </ul>
+        <ul class="empdetailblock">
+          <div class="imgBlock emp9"></div>
+          <li>Name: Shatrughan Sinha</li>
+          <li>Age: 65</li>
+          <li>Gender: Male</li>
+          <li>Location: Patna</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <u>copyrigt @2023</u>
+    </div>
+  </body>
+</html>

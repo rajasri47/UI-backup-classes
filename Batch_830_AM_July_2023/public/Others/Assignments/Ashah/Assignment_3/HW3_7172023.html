@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main > h3 {
+            margin: 5px;
+            padding: 10px;
+            border: 3px solid;
+        }
+        .header{
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .footer{
+            text-align: center;
+            font-size: 16px;
+        }
+        .copyrightimg{
+            width: 97px;
+            height: 20px;
+            padding-top: 6px;
+            border: 2px snow;       
+        }
+
+        .outerBlock{
+            border: 2px solid darkgoldenrod;
+            height: 600px;
+            margin: 5px;
+            padding:5px;
+        }
+        .mainContent{
+            height: 590px;
+        }
+        .lBlock, .rBlock{
+            border: 2px solid blue;
+            margin: 15px;
+            padding: 5px;
+            float: left;
+            height: 570px;
+            overflow: auto;          
+        }
+        .lBlock{
+            width: 30%;      
+        }
+        .rBlock{
+            width: 62%;           
+        }
+
+        .lBlock li {
+            border: 2px solid green;
+            margin: 15px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+        ol, ul{
+            margin: 5px;
+            padding: 5px;
+        }
+        .detailsBlock > li{
+            list-style: none;
+            height: 120px;
+            border: 2px solid green;
+            margin: 2px;
+            padding: 10px;
+        }
+        .imgBlock, .detailBlock {
+            float: left;
+        }
+        .detailBlock li{
+            list-style: none;
+            padding: 5px;
+        }
+       
+        .imgBlock{
+            border: 1px solid blueviolet;
+            width: 120px;
+            height: 120px;
+            background-image: url("./images/empImages.png");
+        }       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3 class="header">
+            Student Details
+        </h3>
+    <div class="outerBlock">
+        <div class="mainContent">
+            <div class="lBlock">
+                <ol>
+                    <li>Jacky Chen</li>
+                    <li>Tina Shroff</li>
+                    <li>Tracy Tran</li>
+                    <li>Samuel Lin</li>
+                    <li>Leena Yin</li>
+                    <li>Preeti Royce</li>
+                    <li>Anita Joshi</li>
+                    <li>Jay Parle</li>
+                    <li>Jolly Garcia</li>
+                    <li>Emily Williams</li>
+                    <li>Sujit Singh</li>
+                </ol>
+            </div>
+            <div class="rBlock">
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock emp1">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Jacky Chen</li>
+                                <li>Age: 20</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: -250px -193px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Tina Shroff</li>
+                                <li>Age: 21</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: -646px -27px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Tracy Tran</li>
+                                <li>Age: 29</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Vadodara</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: -529px 527px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Samuel Lin</li>
+                                <li>Age: 24</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Amritsar</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: -387px -348px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Leena Yin</li>
+                                <li>Age: 23</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Visakhapatnam</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: -124px -194px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Preeti Royce</li>
+                                <li>Age: 27</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Bhubaneswar</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: -125px -346px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Anita Joshi</li>
+                                <li>Age: 27</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Pune</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: -376px -184px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Jay Parle</li>
+                                <li>Age: 25</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Delhi</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: 2px -348px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Jolly Garcia</li>
+                                <li>Age: 28</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Mumbai</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style="background-position: -335px -6px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Emily Williams</li>
+                                <li>Age: 26</li>
+                                <li>Gender: Female</li>
+                                <li>Location: Gurgaon</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="detailsBlock">
+                    <li><div class="imgBlock" style=" background-position: -492px -17px;">
+                        </div>
+                        <div class="detailBlock">
+                            <ul>
+                                <li>Name: Sujit Singh</li>
+                                <li>Age: 30</li>
+                                <li>Gender: Male</li>
+                                <li>Location: Hyderabad</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <h3 class="footer">
+            <img class= "copyrightimg" src="Images/copyrightImg.png">
+        </h3>
+    </div>
+</body>
+</html>

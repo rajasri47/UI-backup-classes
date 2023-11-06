@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Different Types Of Examples Using For Loops </title>
+        <style>
+            h1{
+                color: maroon;
+                font-size: xx-large;
+                font-style: oblique;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Different Types Of Examples Using For Loops </h1>
+        <script>
+            //Finding The Sum Of Values Between 1-100
+            console.log("Sum Of The Values 1-100");
+            var i,sum=0;
+            for(i=1;i<=100;i++){
+                sum = sum+i;
+                console.log(sum);
+            }
+
+            //Finding The Sum Of Values Between 99-61
+            console.log("Sum Of The Values 99-61");
+            var i,sum=0;
+            for(i=99;i>=61;i--){
+                sum = sum+i;
+                console.log(sum);
+            }
+            console.log(" ");
+
+            //All The Even Numbers Between 1-1000
+            console.log("All The Even Numbers Between 1-1000");
+            var i,j;
+            for(i=1;i<=1000;i++){
+                if(i%2==0)
+                console.log(i);
+            }
+
+            //All The Odd Numbers Between 1000-100
+            console.log("All The Even Numbers Between 1000-100");
+            var i,j;
+            for(i=1000;i>=100;i--){
+                if(i%2==1)
+                console.log(i);
+            }
+        </script>
+    </body>
+</html>

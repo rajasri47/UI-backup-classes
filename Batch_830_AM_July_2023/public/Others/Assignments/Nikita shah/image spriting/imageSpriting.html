@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image spriting</title>
+    <style>
+        .heading{
+            border: 3px solid;
+            text-align: center;
+            height: 50px;
+            font-size: 40px;
+            padding: 10px;
+            font-weight: bold;
+            margin: 2px;
+        }
+        .mainBorders{
+            border: 2px solid;
+            padding: 5px;
+            margin: 2px;
+            height: 200px;
+            
+        }
+        .allImages{
+            border: 2px solid;
+            width: 140px;
+            height: 110px;
+            background-image: url(images/fullimage.png);
+            float: right;
+            margin: 10px;
+            padding: 10px;
+        }
+        .stu1{
+            background-position: -123px -15px;
+        }
+        .stu2{
+            background-position: -47px -208px
+        }
+        .stu3{
+            background-position: 205px -21px
+        }
+        .stu4{
+            background-position: -378px -215px
+        }
+        .detailBorder{
+           
+            width: 900px;
+            height: 110px;
+            float: left;
+            font-size: 30px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 class="heading">list of students</h3>
+    <div class="mainBorders">
+        <div class="detailBorder">
+        <div>Name: shubh yadav</div>
+        <div>class: 10th</div>
+        <div>place: delhi</div>
+        </div>
+        <div class="allImages stu1 "></div>
+        
+    </div>
+    <div class="mainBorders">
+        <div class="detailBorder">
+        <div>Name: krishna</div>
+        <div>class: 5th</div>
+        <div>place: delhi</div>
+        </div>
+        <div class="allImages stu2 "></div>
+    </div>
+    <div class="mainBorders">
+        <div class="detailBorder">
+        <div>Name: payal</div>
+        <div>class: 10th</div>
+        <div>place: delhi</div>
+        </div>
+        <div class="allImages stu3 "></div>
+    </div>
+    <div class="mainBorders">
+        <div class="detailBorder">
+        <div>Name: ragini</div>
+        <div>class: 7th</div>
+        <div>place: delhi</div>
+        </div>
+        <div class="allImages stu4 "></div>
+    </div>
+    
+    
+</body>
+</html>

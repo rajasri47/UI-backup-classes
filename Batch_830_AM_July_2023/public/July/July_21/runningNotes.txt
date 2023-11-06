@@ -1,0 +1,32 @@
+Input elements:
+    text 
+    dropdowns
+    textareas
+    buttons
+    radio 
+    checkboxs
+    ..
+
+To send info/data to server, there are two options 
+    1. manually reading and validating, sending data to server through js 
+    2. through form tag automatically
+        <form></form>
+            two mandate  attributes
+                action  -> using which we could give the server url, to which data has to be sent 
+                method -> through which we could specify the type how data has to be sent to server (GET/POST)
+
+
+                url 
+
+                http://localhost:8081
+                http://www.google.com/
+                http://sample.com/data/sample/abc 
+                ... 
+                ... 
+                ..
+
+
+
+            Mandate part for form elemnts is :
+
+                every input element under form tag should have name attribute with value.

@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Dress1",
+        "price": 25,
+        "rating": 3.5,
+        "discountPercent": 10,
+        "manu": "Jamboree",
+        "image": "/images/kidsItemImgs/img_kItem1.png",
+        "imageFlip": "/images/kidsItemImgs/img_kItem1Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress2",
+        "price": 45000,
+        "rating": 2.5,
+        "discountPercent": 10,
+        "manu": "OshKosh",
+        "image": "/images/kidsItemImgs/img_kItem2.png",
+        "imageFlip": "/images/kidsItemImgs/img_kItem2Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress4",
+        "price": 40,
+        "rating": 4.5,
+        "discountPercent": 5,
+        "manu": "SweetiePie",
+        "image": "../images/kidsItemImgs/img_kItem3.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem3Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress5",
+        "price": 35,
+        "rating": 5,
+        "discountPercent": 15,
+        "manu": "OshKosh",
+        "image": "../images/kidsItemImgs/img_kItem11.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem11Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress6",
+        "price": 35,
+        "rating": 5,
+        "discountPercent": 15,
+        "manu": "OshKosh",
+        "image": "../images/kidsItemImgs/img_kItem6.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem6Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress3",
+        "price": 15,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "Gap Kids",
+        "image": "../images/kidsItemImgs/img_kItem3.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem3Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress4",
+        "price": 24,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "Carter\"s",
+        "image": "../images/kidsItemImgs/img_kItem4.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem4Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress8",
+        "price": 30,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "Gap Kids",
+        "image": "../images/kidsItemImgs/img_kItem5.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem5Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress9",
+        "price": 35,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "Lululemon",
+        "image": "../images/kidsItemImgs/img_kItem7.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem7Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress10",
+        "price": 35,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "OshKosh",
+        "image": "../images/kidsItemImgs/img_kItem9.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem9Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "Dress11",
+        "price": 45,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "Lululemon",
+        "image": "../images/kidsItemImgs/img_kItem8.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem8Flip.png",
+        "category": "kids"
+    },
+    {
+        "name": "3-pack Joggers",
+        "price": 45,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "Lululemon",
+        "image": "../images/kidsItemImgs/img_kItem10.png",
+        "imageFlip": "../images/kidsItemImgs/img_kItem10Flip.png",
+        "category": "kids"
+    }
+]

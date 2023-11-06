@@ -1,0 +1,9 @@
+CSs Float property: 
+    float: left/right 
+
+    when continues multiple dom elements gets changed there default rendering direction using the float property, all the elements will try to render within the same line
+
+    When an element changes its direction using the float prop (left/right), the element which is following the float element, will also try to change its default direction 
+
+
+    clear: left/right/both 

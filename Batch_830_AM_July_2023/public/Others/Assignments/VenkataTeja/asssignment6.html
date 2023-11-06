@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            border: 1px solid;
+            height: 25px;
+            text-align: center;
+        }
+        .copy{
+            border: 1px solid;
+            height: 25px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .blocka{
+            border: 1px solid;
+            position: relative;
+            bottom: 10px;
+            background-color: aqua;
+        }
+        .block1{
+            border: 1px solid;
+            height: 200px;
+        }
+        .blockb{
+            border: 1px solid;
+            position: relative;
+            bottom: 10px;
+            background-color: aqua;
+        }
+        .block2{
+            border: 1px solid;
+            height: 130px;
+        }
+        .blockc{
+            border: 1px solid;
+            position: relative;
+            bottom: 10px;
+            background-color: aqua;
+        }
+        .block3{
+            border: 1px solid;
+            height: 150px;
+        }
+        .blockd{
+            position: relative;
+            left: 80%;
+        }
+        .none{
+            list-style: none;
+        }
+        .blocke , .blocke2{
+            position: relative;
+            left: 20%;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h3> STUDENT DETAILS:</h3>
+    <div>
+    <ul class="block1"><span class="blocka">USER DETAILS</span>
+        <li>
+            <label>Name</label>
+            <input type="text" name="name">
+        </li>
+        <li>
+            <label>Age:</label>
+            <input type="text" name="age">
+        </li>
+        <li>
+        <label>Gender:</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+    </li>
+    <li class="blocke">
+        <label class="blocke2"> ADDRESS:</label>
+<textarea name="" id="" cols="60" rows="5" class="blocke"></textarea>
+    </li>
+    </ul>
+    <ul class="block2"><span class="blockb">Education Details</span>
+    <li>
+        <label>Qualification:</label>
+        MBA<input type="checkbox">
+        MCA<input type="checkbox">
+        B.tech<input type="checkbox">
+        M.tech<input type="checkbox">
+        Bcom<input type="checkbox">
+        DEGREE<input type="checkbox">
+    </li>
+    <LI>
+        <label>Languages Known:</label>
+        Telugu<input type="checkbox" class="space3">
+        Tamil<input type="checkbox" class="space3">
+        Hindi<input type="checkbox" class="space3">
+        English<input type="checkbox" class="space3">
+    </LI>
+    <li>
+        <label>Course option for:</label>
+        <select>
+            <option value="SELECT">SELECT</option>
+            <option value="MATHS">MATHS</option>
+            <option value="COMMERCE">COMMERCE</option>
+            <option value="SCIENCE">SCIENCE</option>
+        </select>
+    </li>
+</ul>
+<ul class="block3"><span class="blockc">TELL ABOUT YOUR SELF</span>
+<label class="blockd2"> about your self:</label>
+<textarea name="" id="" cols="90" rows="5"></textarea>
+<li class="none">
+    <input type="submit" name="submit" class="blockd">
+</li>
+</ul>
+</div>
+<div class="copy">@ copyrights 2023</div>
+</body>
+</html>

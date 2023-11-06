@@ -1,0 +1,63 @@
+Attributes:
+    id -> To identify elements uniquly 
+
+    <tagname attrname="value" attrname2="value2" ... . . . .>
+        ...
+    </tagnam>
+
+    eg:
+
+        <p id="test" name="sample">
+            ... 
+        </p>
+
+        id="news_content"
+
+        id="news-content"
+
+        id="newscontent"
+
+        id="newsContentWord" - Recommended
+
+        style="" -> we could able to add/inject multiple/single css property
+
+            css property:
+
+                cssporpname:value;
+        Syntax:
+            <tagname style="cssporpname1:value;csspropname2:value2;....">
+                ....
+            </tagname>
+
+        eg:
+            <div style='background-color:green;color:blue;font-size:20px;'>
+                .... 
+                .....
+                ......
+            </div>
+
+            units: 
+                px 
+                in
+                cm 
+                em 
+                rem 
+                pt 
+---------------------------
+
+Working with colors:
+
+    color:  direct color name -> red, blue, yellow, pink, 
+            hashcode -> #01 2a b2
+            rgb -> rgb(20, 30, 14)
+
+            range - 0 - 255
+
+            rgba 
+            hsl
+
+ASCII 
+
+# a1 -- --
+# ac 12 b3
+    

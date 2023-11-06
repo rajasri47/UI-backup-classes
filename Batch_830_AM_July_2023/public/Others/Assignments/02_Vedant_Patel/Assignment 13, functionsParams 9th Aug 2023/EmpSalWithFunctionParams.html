@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+    <style>
+        .h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE SALARY STRUCTURE OF EMP OPEN DEBUGGER TOOL </h1>
+    <script>
+
+
+
+        function EmpGivenSalary() {
+            var ename, age, dept, gender, Bsalary, PF, HRA, TotalSalary, AnualSalary;
+            ename = prompt("Enter Emp Name ");
+            age = prompt("Enter Emp  age ");
+            dept = prompt("Enter Emp  Department ");
+            gender = prompt("Enter Emp  Gender ");
+            Bsalary = prompt("Enter Emp  Basic Salary ");
+            Bsalary = parseInt(Bsalary);
+            PF = 12 / 100 * Bsalary;
+            HRA = 24 / 100 * Bsalary;
+            TotalSalary = PF + HRA + Bsalary;
+            AnualSalary = TotalSalary * 12;
+            EmpDisplayData(ename, age, dept, gender, Bsalary, PF, HRA, TotalSalary, AnualSalary)
+        }
+
+
+        function EmpDisplayData(ename, age, dept, gender, Bsalary, PF, HRA, TotalSalary, AnualSalary) {
+            console.log("Emp Name is " + ename);
+            console.log("Emp Age is " + age);
+            console.log("Emp Department is " + dept);
+            console.log("Basic Salary of " + ename + " is " + Bsalary);
+            console.log("PF of " + ename + " is " + PF);
+            console.log("HRA of " + ename + " is " + HRA);
+            console.log("Total Salary of " + ename + " is " + TotalSalary);
+            console.log("Anual Salary of " + ename + " is " + AnualSalary);
+        }
+        EmpGivenSalary()
+    </script>
+</body>
+
+</html>

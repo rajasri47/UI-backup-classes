@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            height: 100vh;
+        }
+        li{
+            list-style: none;
+            margin: 20px 0px;
+        }
+        button{
+            background-color: #ff735c;
+            color: white;
+            padding: 8px 15px;
+            border: 0px;
+            border-radius: 4px;
+        }
+        button{
+            width: 372px;
+            border-radius: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+        
+        input{
+            padding: 8px 12px;
+            width: 95%;
+            border-radius: 20px;
+            font-size: medium;
+        }
+        .left{
+            height: 100;
+            width: 360px;
+            margin: auto;
+            /* position: relative; */
+        }
+        .signUp_form{
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;    
+        }
+
+        .right{
+            background-image: url("../images/SignUp.jpg");
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            /* display: block; */
+            /* margin-top: 100px; */
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            height: 100vh;
+        }
+        .fa-user{
+            position: absolute;
+            top: 87px;
+            left: 340px;
+        }
+
+        .key1{
+            position: absolute;
+            top: 163px;
+            left: 336px;
+        }
+
+        .key2{
+            position: absolute;
+            top: 238px;
+            left: 336px;
+        }
+        .fa-mobile{
+            position: absolute;
+            top: 315px;
+            left: 341px;
+        }
+        .fa-envelope{
+            position: absolute;
+            top: 390px;
+            left: 336px;
+        }
+        .form{
+            position: relative;
+            height: auto;
+            width: 360px;
+            margin: auto;
+            margin-top: 80px;
+            position: relative;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="signUp_form">
+        <div class="left">
+            <div class="form">
+                <h1>Sign Up</h1>
+                <li><label for="User_name">User Name</label><br>
+                    <i class="fa fa-user icon"></i><input type="text"></li>
+                <li><label for="Password">Password</label><br>
+                    <i class="fa fa-key icon key1"></i><input type="password"></li>
+                <li><label for="ConfPassword">Confirm Password</label><br>
+                    <i class="fa fa-key icon key2"></i><input type="password"></li>
+                <li><label for="MobNo">Mobile No.</label><br>
+                    <i class="fa fa-mobile icon"></i><input type="text" maxlength="10"></li>
+                <li><label for="Email">Email</label><br>
+                    <i class="fa fa-envelope icon"></i><input type="password"></li>
+                <li><button type="submit">Submit</button></li>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

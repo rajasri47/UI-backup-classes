@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating css positions - Static
+        </title>
+        <style>
+            .block {
+                border: 1px solid;
+                width: 120px;
+                height: 130px;
+                text-align: center;
+            }
+            .block1 {
+                background-color: gainsboro;
+            }
+            .block2 {
+                background-color: aqua;
+            }
+            .block3 {
+                background-color: aquamarine;
+                left: 50px;
+                /* top: 50px; */
+                position: absolute;
+                
+            }
+            .block4 {
+                background-color: rebeccapurple;
+            }
+            .block5 {
+                background-color: #ddd;
+            }
+            .parentElement {
+                border: 1px solid;
+                padding: 50px;
+                height: 150px;
+                /* position: relative; */
+                
+            }
+            .grandParent {
+                padding: 50px;
+                border: 1px solid;
+                height: 200px;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div class="block block1">Block 1</div>
+        <div class="block block2">Block 2</div>
+        <div class="grandParent">
+            <div class="parentElement">
+                <div class="block block3">Block 3</div>
+            
+            </div>
+        </div>
+        <div class="block block4">Block 4</div>
+        <div class="block block5">Block 5</div>
+    </body>
+</html>

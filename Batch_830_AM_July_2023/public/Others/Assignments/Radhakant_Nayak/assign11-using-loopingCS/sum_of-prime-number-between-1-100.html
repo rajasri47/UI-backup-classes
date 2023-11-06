@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Displayingsum of prime no between 1 to 100
+        </title>
+    </head>
+    <body>
+        <script>
+            var start = 1;
+            var end = 100 ;
+            var sum = 0;
+            var count = 0 ;
+            for(var i = start ; i < end  ; i ++){
+                count = 0;
+                for(j = i ; j >= 1 ; j--){
+                    if(i % j == 0){
+                        count = (count + 1);
+                    }
+                    }
+                    if( count == 2){
+                        console.log("prime no is " + i);
+                        sum = (sum + i);
+                    }
+            }
+            console.log("sum  of the prime no is " + sum );
+        </script>
+    </body>
+</html>

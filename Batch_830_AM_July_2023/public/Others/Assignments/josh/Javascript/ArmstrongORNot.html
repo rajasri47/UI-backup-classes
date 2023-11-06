@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Armstrong or Not</title>
+    </head>
+    <body>
+        <h2>Given Number is Armstrong or Not</h2>
+        <script>
+            var n, sum, rem, count, temp, finalNumber;
+            n = prompt('Enter the n value:');
+            sum = 0;
+            temp = n;
+            finalNumber = 0;
+            count = n.toString().length;
+            for(i = 1; i <= n; i++){
+                rem = temp % 10;
+                sum = sum + rem ** count;
+                n = n / 10;
+                n = parseInt(n);
+                finalNumber = finalNumber + n;
+            }
+            if(n = finalNumber){
+                console.log('Number is Armstrong');
+            }else{
+                console.log('Number is not Armstrong');
+            }
+        </script>
+    </body>
+</html>

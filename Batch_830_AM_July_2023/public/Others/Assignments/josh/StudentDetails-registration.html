@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student-Registration</title>
+        <style>
+            body{
+                margin: 40px 200px;
+            }
+            h1{
+                border: 1px solid black;
+                text-align: center;
+                text-decoration: underline;
+                background-color: aqua;
+            }
+            .enter{
+                border: 1px solid black;
+                width: auto;
+                height: 500px;
+                padding: 10px;
+                background-color: antiquewhite;
+            }
+            .back{
+                border: 1px solid black;
+                width: auto;
+                height: 106px;
+                padding: 10px;
+                margin: 21px;
+                background-color: greenyellow;
+            }
+            .title{
+                border: 1px solid;
+                width: 86px;
+                position: absolute;
+                left:279px;
+                top: 103px;
+                height: 17px;
+                background-color: white;
+                padding: 3px;
+                margin: 17px;
+                background-color: cadetblue;
+            }
+            .text{
+                border: 1px solid;
+                width: 117px;
+                position: absolute;
+                left:279px;
+                top: 252px;
+                height: 17px;
+                background-color: white;
+                padding: 3px;
+                margin: 17px;
+                background-color: cadetblue;
+            }
+            .step{
+                border: 1px solid;
+                width: 87px;
+                position: absolute;
+                left: 279px;
+                top: 401px;
+                height: 17px;
+                background-color: white;
+                padding: 3px;
+                margin: 17px;
+                background-color: cadetblue;
+            }
+            .in{
+                position: relative;
+                left: 20px;
+                margin: 10px;
+            }
+            .is{
+                left: 542px;
+                position: absolute;
+                top: 150px;
+            }
+            .of{
+                margin: 20px;
+            }
+            .to{
+                position: relative;
+                left: 440px;
+                top: -83px;
+            }
+            .are{
+                float: right;
+            }
+            .for{
+                position: relative;
+                top: 10px;
+            }
+            .about{
+                position: relative;
+                left: 211px;
+                top: -6px;
+            }
+            .inter{
+                position: relative;
+                left: 59px;
+                bottom: 14px;
+            }
+            .tab{
+                position: relative;
+                right: 58px;
+                top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="http://lenovo:8081/login.html" method="post">
+        <h1>Student Details Registration Page </h1>
+        <legend class="title">user Details</legend>
+        <div class="enter">
+            <div class="back">
+                    <div class="in">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name">
+                </div>
+                    <div class="in">
+                    <label for="Age">Age:</label>
+                    <input type="text" name="Age">
+                </div> 
+                    <div class="in">
+                    <label for="Gender">Gender:</label>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                </div>
+                    <div class="is">
+                    <div class="inter">
+                <div class="tab"><label for="Address">Address:</label></div>
+                </div>
+                <div class="inter">
+                    <textarea name="Address" rows="5" cols="50"></textarea></div>
+                </div>
+            </div>
+            <legend class="text">Education Details</legend>
+            <div class="back">
+            <div class="of">
+              <label for="Qualification">Qualification</label>
+              <input type="checkbox" name="Qualification">MCA
+              <input type="checkbox" name="Qualification">MBA
+              <input type="checkbox" name="Qualification">Btech
+            </div>
+            <div class="of">
+                <label for="language">language:</label>
+                <input type="checkbox" name="lang">English
+                <input type="checkbox" name="lang">Hindi
+                <input type="checkbox" name="lang">Telugu
+                <input type="checkbox" name="lang">Urdu
+            </div>
+            <div class="to"> 
+                <label for="course">Course Opted For:</label>
+                <select name="Course" style="font-size: 18px; width: 180px;">
+                    <option></option>
+                    <option>UI Full Stack</option>
+                    <option>Java Full Stack</option>
+                    <option >AWS</option>
+                    <option>Devops</option>
+                    <option>Python Full Stack</option>
+                    <option>Data Science</option>
+                    <option>.Net Full Stack</option>
+                </select>
+            </div>  
+            </div>
+            <legend class="step">About Urself</legend>
+            <div class="back">
+                <div class="for">
+                 <label for="urself"> Tell Few Words About Yourself:</label>
+                </div>
+                <div class="about">
+                 <textarea name="urself" rows="5" cols="50"></textarea>
+                </div>
+            </div>
+            <div class="are">
+                <input type="submit" value="Register" style="background-color: grey;">
+            </div>
+        </div>
+        <h1>@copyrights 2023</h1>
+    </form>
+    </body>
+</html>

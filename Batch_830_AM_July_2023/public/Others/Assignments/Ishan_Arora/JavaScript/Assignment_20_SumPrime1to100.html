@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 20
+        </title>
+    </head>
+    <body>
+        <h1>
+            Display sum of prime numbers 1 to 100
+        </h1>
+        <script>
+            var PrimeSum = 0;
+            var rem = 0;
+            for (var i = 2; i <= 100; i++) {
+                for (var j = 1; j <= i; j++) {
+                    if (i % j == 0) {
+                        rem += 1;
+                    }
+                }
+                if (rem == 2) {
+                PrimeSum += i;
+                }
+                rem = 0;
+            }
+            console.log("Sum of Prime Numbers from 1 to 100 is " + PrimeSum)
+        </script>
+    </body>
+</html>

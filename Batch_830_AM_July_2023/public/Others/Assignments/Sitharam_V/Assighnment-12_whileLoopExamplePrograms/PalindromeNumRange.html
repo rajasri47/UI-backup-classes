@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Numbers in user given range</title>
+    </head>
+    <body>
+        <script>
+                var minRange = parseInt(prompt("Enter minimum range value"));
+                var maxRange = parseInt(prompt("Enter the Maximum range value"));
+                var n = 0;
+                var count = 0;
+                console.log(" Palindrome numbers between " + minRange + " - " + maxRange + " are: ");
+                var input = minRange;
+                while ( input <= maxRange ) {
+                    var copy = input;
+                    while(input != 0) {
+                        var rem =  input % 10;
+                        input = parseInt( input / 10);
+                        n = (n * 10) + rem;
+                    }
+                    if ( n == copy) {
+                        count++;
+                        console.log(n);
+                    }
+                    input = copy; 
+                    input++;
+                    n = 0;
+                }
+                if (count == 0){
+                       console.log(" There are no Palindrome numbers between " + minRange + " - " + maxRange );
+                  }
+
+            
+
+        </script>
+    </body>
+</html>

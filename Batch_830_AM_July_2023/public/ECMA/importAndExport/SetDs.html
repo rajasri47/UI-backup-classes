@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="checkbox" id="isfeepaid">
+        <input type="text" id="uname">
+        <script>
+
+            var a = new Array();
+
+            var a2 = [];
+
+            a2.push(20)
+            a2.push(20)
+            a2.push(210)
+            a2.push(230)
+
+            console.log(a2)
+
+
+            var s1 = new Set();
+            s1.add(20);
+            s1.add(200);
+            s1.add(200);
+            s1.add(200);
+            s1.add(200);
+            s1.add(300);
+            s1.add(50);
+
+            // s1.clear();
+
+            console.log(s1.size)
+            s1.delete(200)
+
+            console.log(s1);
+
+            //Predefined methods
+            // clear()  - to delete / empty the set 
+            // size - to find the total no. of values witin the set 
+            // .add() - To insert a value to set 
+            console.log(s1.has(3000))
+            console.log(s1.values())
+
+            // for of 
+
+            for (var value of s1) {
+                console.log(value)
+            }
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('name');
+            const age = urlParams.get('age');
+            const gender = urlParams.get('gender');
+            const isfeepaid = urlParams.get("isfeepaid");
+            
+            console.log(myParam)
+            console.log(age)
+            console.log(gender)
+            if (isfeepaid == 'true') {
+                document.querySelector("#isfeepaid").checked = true;
+            }
+            
+            document.querySelector("#uname").value = myParam;
+        </script>
+    </body>
+</html>

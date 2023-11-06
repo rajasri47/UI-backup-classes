@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Std Details  Registration Page</title>
+
+        <style>
+            .heading,.footer{
+                background-color: aqua;
+                border: 2px solid;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            form{
+                background-color: bisque;
+                border: 2px solid;
+                height: 700px;
+                margin: 10px 0;
+                padding: 10px;
+            }
+
+            .userDetails,.eduDetails,.about{
+                border: 2px solid;
+                margin: 20px;
+                height: 180px;
+                position: relative;
+            }
+
+            li{
+                list-style: none;
+                padding: 10px;
+            }
+
+            .address{
+                list-style: none;
+                position: absolute;
+                top: 10px;
+                right: 100px;
+            }
+
+            .course{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .box1,.box2,.box3{
+                background-color: rgb(255, 255, 0);
+                border: 2px solid;
+                border-radius: 20px;
+                padding: 10px;
+                width: 120px;
+                position: absolute;
+                top: -10px;
+                left: 60px;
+            }
+
+            ul{
+                margin-top: 30px;
+            }
+
+            .box{
+                margin: 40px;
+            }
+            
+            .reg{
+                float: right;
+                border: 2px solid;
+                border-radius: 50px;
+
+                background-color: yellow;
+                padding:5px 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="heading">Student Details  Registration Page</div>
+
+        <form>
+
+            <div class="userDetails">
+
+                <div class="box1">User Details</div>
+                <ul class="l1">
+                    <li>
+                    <label for="name">Name: </label><input type="text" name="name">   
+                    </li>
+
+                    <li>
+                        <label for="age">Age: </label> <input type="text" name="age">
+                    </li>
+
+                    <li>
+                        <label for="name">Gender: </label>  <input type="radio" name="gender" checked value="male">Male <input type="radio" name="gender" checked value="female">Female
+                    </li>
+                    
+                    <div class="address">
+                        <li>
+                            <label for="name" class="address"> Address:  <textarea name="Address" id="" cols="5" rows="5" ></textarea>   </label>
+                        </li>             
+                    </div>
+                </ul>
+
+            </div>
+
+            <div class="eduDetails">
+                <div class="box2">Education Details</div>
+
+                <ul>
+                    <li>
+                        Qualification:
+                        MCA <input type="checkbox" name="mca" required>
+                        MBA <input type="checkbox" name="mba">
+                        Btech <input type="checkbox" name="btech">             
+                    </li>
+                    
+                    <li>
+                        Languages:
+                        English <input type="checkbox" name="lng_eng" required>
+                        Telugu <input type="checkbox" name="lng_tel">
+                        Hindi <input type="checkbox" name="lng_hin">
+                        URdu <input type="checkbox" name="lng_urd">             
+                    </li>
+
+                    <div class="course">
+                        <li>
+                            Course Opted For:
+                            <select name="uCourse">
+                                <option value="" selected>Select Course</option>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                            </select>
+                        </li>
+                    </div> 
+
+                </ul>        
+
+            </div>
+
+            <div class="about">
+                <div class="box3">About Urself</div>
+                <div class="box">
+                    <label for="urself">Tell few words about urself: </label>
+                    <textarea name="urself" id="" cols="50" rows="5"></textarea>
+                </div>
+            </div>
+
+            <div class="reg">Register</div>
+
+        </form>
+
+        <div class="footer">@copyRights 2023</div>
+
+    </body>
+</html>

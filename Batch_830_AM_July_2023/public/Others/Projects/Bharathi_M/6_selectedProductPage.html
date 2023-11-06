@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Selected Product Details</title>
+        <style>
+            .backgroundImage {
+               background-image: url('images/image2.jpeg');
+               background-repeat: no-repeat;
+               background-size: cover;
+               color: white;
+               font-weight: bold; 
+            }
+            .mainContainer{
+                border: 1px solid;
+                height: 600px;
+                width: 850px;
+                margin: 30px auto;
+            }
+            
+            .top ol li{
+                list-style: none;
+                display: inline;
+                margin-right: 10px;
+                position: relative;
+                left: 500px;
+                font-size: 18px;
+                
+            } 
+            .productImage{
+                border: 1px solid grey;
+                height: 120px;
+                width: 150px;
+                text-align: center;
+                position: relative;
+                left: 90px;
+            }
+            .image{
+                border: 1px solid grey;
+                height: 70px;
+                width: 70px;
+                display: inline-block;
+                margin-top: 20px;
+                margin-left: 30px;
+            }
+            .productDetails{
+                border: 1px solid grey;
+                height: 300px;
+                width: 400px;
+                position: absolute;
+                left: 740px;
+                top: 80px;
+                
+            }
+            .productDetails ol li{
+                list-style: none;
+                margin-bottom: 10px;
+            }
+            .bottom{
+                border: 1px solid grey;
+                width: 770px;
+                margin-left: 30px;
+                height: 65px;
+                position: absolute;
+                top: 450px;
+            }
+            .bottom ol li{
+                list-style: none;
+            }
+            
+        .button{
+                height: 25px;
+                width: 120px;
+                position: absolute;
+                top: 550px;
+                left: 1000px;
+            }
+            .button a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body class="backgroundImage">
+        <div class="mainContainer">
+            <div class="top">
+                <ol>
+                    <li>View Product</li>
+                    <li>View Cart</li>    
+                </ol>
+            </div>
+            <div class="productImage"><img src="images/watch_men.jpg" height="120px" width="120px"></div>
+            <div class="image"><img src="images/watch1.jpg" height="70px" width="70px"></div>
+            <div class="image"><img src="images/watch2.jpg" height="70px" width="70px"></div>
+            <div class="image"><img src="images/watch3.jpg" height="70px" width="70px"></div>
+            <div class="productDetails">
+                <ol>
+                    <li>Product Name:</li>
+                    <li>Category:</li>
+                    <li>Price:</li>
+                    <li>Vendor:</li>
+                    <li>Manufacturer:</li>
+                    <li>In Stock:</li>
+                    <li>Color:</li>
+                    <li>Size:</li>
+                    <li>Description:</li>
+                </ol>
+            </div>
+            <div class="bottom">
+                <ol>
+                    <li>Rating:</li>
+                    <li>Reviews:</li>
+                </ol>   
+            </div>
+            <button class="button"><a href="7_addToCart.html">ADD TO CART</a></button>
+            
+        </div>
+        
+    </body>
+</html>

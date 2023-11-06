@@ -1,0 +1,36 @@
+Datatypes been supported in js 
+
+    number 
+    string 
+    boolean 
+    undefined
+    null 
+    function 
+    Object 
+
+
+
+    int a;
+    float avg;
+
+var a = 60 //number 
+
+var avg = 3.4
+
+var isfeepaid = true
+
+var abc; 
+
+alert()
+------------------------------------
+
+Type Casting: 
+
+    var a = "90"
+
+    parseInt() 
+
+
+Dynamic Typecasting 
+
+    Concept of auto converstion of datatype of a variable based on the value its holding 

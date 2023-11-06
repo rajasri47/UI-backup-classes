@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To check wheather given string is part of main string or not?</title>
+</head>
+<body>
+    <script>
+        var mainString = prompt('enter a main string');
+        var subString = prompt('enter the sub string');
+        mainString.toLowerCase();
+        subString.toLowerCase();
+        var array = mainString.split(' ');
+        var arraySize = array.length;
+        var count = 0;
+        for(var i = 0; i < arraySize; i++) {
+            if(array[i] == subString) {
+                count ++ ;
+                break;
+            } 
+        }
+            if(count == 1) {
+                console.log('the sub string is present in main string');
+            }
+            else {
+                console.log('the sub string is not present in main string');  
+            }       
+    </script>  
+</body>
+</html>

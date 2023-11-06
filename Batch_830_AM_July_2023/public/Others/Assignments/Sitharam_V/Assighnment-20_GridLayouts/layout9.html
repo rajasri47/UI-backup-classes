@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Layouts</title>
+        <style>
+            .mainBlock {
+                background-color: darkslategray;
+            }
+            .headerBlock {
+                display: grid;
+                grid-template-columns: 150px auto;
+            }
+            .circle {
+                border: 1px solid;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+            }
+            .menu {
+                margin: 10px;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            .one {
+                background-color: rgb(255, 68, 0);
+            }
+            .two {
+                background-color: rgb(244, 138, 0);
+            }
+            .three {
+                background-color: rgb(7, 197, 131);
+            }
+            .header {
+                background-color: white;
+                border: 1px solid;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+            }
+            .container {
+                display: grid;
+                height: 570px;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto 200px 200px;
+                
+            }
+            .container div {
+                margin: 10px;
+                padding: 10px;
+            }
+            .item1{
+                background-color: rgb(244, 138, 0);
+                grid-column: 1/4;
+            }
+            .item2{
+                background-color: rgb(52, 134, 52);
+                grid-row: 2/4;
+            }
+            .item3{
+                grid-column: 2/4;
+                background-color: rgb(7, 197, 131);
+            }
+            .item4{
+                background-color: rgb(255, 68, 0);
+                
+            }
+            .item5 {
+                background-color: rgb(244, 138, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainBlock">
+            <div class="headerBlock">
+                <div class="menu">
+                    <div class="circle one"></div>
+                    <div class="circle two"></div>
+                    <div class="circle three"></div>
+                </div>
+                <div class="header"></div>
+            </div>
+            <div class="container">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+                <div class="item4"></div> 
+                <div class="item5"></div> 
+            </div>
+        </div>
+    </body>
+</html>

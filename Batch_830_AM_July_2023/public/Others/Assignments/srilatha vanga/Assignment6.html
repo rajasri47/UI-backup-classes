@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details page</title>
+    <style>
+        .block{
+            border:2px solid black;
+            text-align:center;
+            font-size: xx-large;
+        }
+        .block1{
+            border:2px solid;
+            height:800px;
+        }
+        .block2{
+            border:2px solid;
+            margin:30px;
+            height:250px;
+            width:1350px;
+            list-style: none;
+        }
+        .block3{
+            border:2px solid;
+            font-size: xx-large;
+            background-color: white;
+            z-index: 1;
+            position:relative;
+            left:20px;
+            bottom:20px;
+        }
+        .block4{
+            font-size: larger;
+            margin:30px;
+        }
+        .block5{
+            float:right;
+            position: relative;
+            bottom: 200px;
+            right: 60px;
+            font-size: larger;
+        }
+        .block6{
+            font-size:x-large;
+        }
+        .block7{
+            border:2px solid;
+            font-size: xx-large;
+            background-color: white;
+            z-index: 1; 
+            position:relative;
+            left:20px;
+            bottom:20px;
+        }
+        .block8{
+            border:2px solid;
+            margin:30px;
+            height:200px;
+            width:1350px;
+            list-style: none; 
+        }
+        .block9{
+            float:right;
+            position: relative;
+            bottom: 100px;
+            right: 350px;
+            font-size: larger;
+        }
+        .block10{
+            margin:40px;
+            font-size: larger;
+        }
+        .block11{
+            list-style: none;
+        }
+        .block12{
+        float: right;
+        font-size: x-large;
+        position: relative;
+        right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Student Details Registration Page</div><br>
+    <div class="block1">
+    <ul>
+        <li class="block2">
+            <span class="block3">User Details</span><br>
+            <label for="name" class="block4">Name:</label>
+            <input type="text" name="name"><br><br><br>
+            <label for="age" class="block4">Age:</label>
+            <input type="text" name="age"><br><br><br>
+            <label for="gender" class="block4">Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female<br><br><br>
+            <textarea class="block5"name="adress" cols="60" rows="8" maxlength="200"></textarea>
+            <label class="block5" class="hop6" for="adress">Address: </label>
+        </li>
+    </ul>
+    <ul>
+        <li class="block8">
+            <span class="block7">Education Details</span><br><br>
+            <label class="block4">Qualification:</label>
+            <input type="checkbox">MCA
+            <input type="checkbox">MBA
+            <input type="checkbox">B-TECH<br><br><br>
+            <label class="block4">Languages</label>
+            <input type="checkbox">Telugu
+            <input type="checkbox">English
+            <input type="checkbox">Hindi<br><br>
+            <select class="block9" required>
+                <option name="list5">Select Course</option>
+                <option name="list5">Core java</option>
+                <option name="list5">Ui full stack</option>
+                <option name="list5">Selenium</option>
+            </select>
+            <label for="list5" class="block9">Course opted for:</label>
+        </li>
+    </ul>
+    <ul>
+        <li class="block8">
+            <span class="block7">About Yourself</span><br><br> 
+            <label  class="block10" for="adress">Tell About Yourself</label> 
+            <textarea name="adress" cols="120" rows="8" maxlength="200"></textarea>
+        </li>
+    </ul>
+    <ul>
+        <li class="block11">
+            <label for="register"></label>
+            <input class="block12" type="button" value="Register" name="register">
+        </li>
+    </ul>
+    </div><br>
+    <div class="block">@copyrights2023</div>
+</body>
+</html>

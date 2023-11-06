@@ -1,0 +1,62 @@
+control Structures
+    conditional CS 
+        if C CS
+        if else 
+
+
+
+a = 90
+b = 99
+a >  b  -> true/false 
+
+usename == 'raj'
+
+Syntax:
+
+    .... 
+    .... 
+    ....
+    if (<condition>) {
+        .... 
+        ....
+    }
+    ...
+    ...
+0------------------------------
+
+    if (gender == male) {
+
+    } else {
+
+    }
+--------------
+
+if with multiple conditions
+
+    if (condition1 && condition2 && condition3) {
+        ... 
+        ...
+    }
+
+    if (condition1 || condition2 || condition3) {
+        ... 
+        ...
+    }
+
+    if (avg >= 40 && avg >= 60) {
+        first class
+    }
+
+    if (gender == 'Male' || gender == 'Female') {
+        .... 
+    }
+------------------------
+
+Nested if - > adding and if statement under another if statement is called nested if 
+
+if (condition) {
+    ...
+    if(condition) {
+
+    }
+}

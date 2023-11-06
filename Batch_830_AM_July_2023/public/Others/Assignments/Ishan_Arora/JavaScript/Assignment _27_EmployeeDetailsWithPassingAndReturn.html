@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 26
+        </title>
+        
+    </head>
+    <body>
+        <h1>
+            Eployee Salary Tax Using JavaScript Functions <br>
+            By Passing Values and Returning Values
+        </h1>
+        <script>
+
+            function GetData() {
+                var name, gender, age, department, basicSal;
+                name = prompt("Enter Employee Name:");
+                gender = prompt("Enter Gender:")
+                age = prompt("Enter Age:");
+                department = prompt("Enter Department:");
+                basicSal = prompt("Enter Basic Salary:");
+                var totalSal = total(basicSal);
+                getDetails(name, gender, age, department, basicSal, totalSal);
+                employee(gender, totalSal);
+            }
+            
+
+            function total(basicSal) {
+                var pf, hra, totalSal;
+                basicSal = parseFloat(basicSal);
+                pf = (12 * basicSal) / 100;
+                hra = (24 * basicSal) / 100;
+                totalSal = pf + hra + basicSal;
+                return totalSal;
+            }
+
+            function getDetails(name, gender, age, department, basicSal, totalSal) {
+                console.log("Employee Name: " + name);
+                console.log("Employee Gender: " + gender);
+                console.log("Employee Age: " + age);
+                console.log("Employee Department: " + department);
+                console.log("Employee Basic Salary: " + basicSal);
+                console.log("Employee Total Salary: " + totalSal);
+            }
+
+            function employee(gender, totalSal) {
+                if(gender == "Male") {
+                    if(totalSal >= 300000) {
+                        tax = (15 * totalSal) / 100;
+                        console.log("Tax at 15%: " + tax);
+                    }else if(totalSal >= 200000) {
+                        tax = (10 * totalSal) / 100;
+                        console.log("Tax at 10%: " + tax);
+                    }else if(totalSal >= 100000) {
+                        tax = (5 * totalSal) / 100;
+                        console.log("Tax at 5%: " + tax);
+                    }else {
+                        console.log("Tax: 0");
+                    }
+                }else if(gender == "Female") {
+                    if(totalSal >= 300000) {
+                        tax = (10 * totalSal) / 100;
+                        console.log("Tax at 10%: " + tax);
+                    }else if(totalSal >= 200000) {
+                        tax = (5 * totalSal) / 100;
+                        console.log("Tax at 5%: " + tax);
+                    }else {
+                        console.log("Tax: 0");
+                    }
+                }
+            }
+
+            GetData();
+        </script>
+    </body>
+</html>

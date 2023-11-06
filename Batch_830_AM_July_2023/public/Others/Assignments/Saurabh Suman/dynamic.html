@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Students Data--</h1>
+</body>
+</html>
+<script>
+    var name = prompt("Enter your name");
+    var roll_no = prompt("Enter your Roll No.");
+    var class_name = prompt("Enter your Class ")
+    var science = prompt("Enter your science marks")
+    var maths = prompt("Enter your maths marks")
+    var english = prompt("Enter your english marks")
+   
+    science = parseInt(science)
+    english = parseInt(english)
+    maths = parseInt(maths)
+
+var total = science + maths + english ;
+var avg = total / 3
+  var totalMarks = total +avg  ;
+  console.log("student details")
+  console.log("name is :" +name)
+  console.log("Roll No:" + roll_no)
+  console.log("Class :"+class_name)
+  console.log("Science Marks :"+science)
+  console.log("Maths marks "+ maths)
+  console.log("English marks "+ english)
+  console.log("Total marks "+ total)
+  console.log("Average marks :"+ avg)
+  if(avg >=50){
+    console.log("You are passed")
+}else{
+    console.log("You failed")
+}
+
+
+</script>

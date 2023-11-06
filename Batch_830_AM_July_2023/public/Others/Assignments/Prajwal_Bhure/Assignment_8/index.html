@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var stuName = prompt("Enter student name");
+        var total_marks;
+        var total_percentage;
+        var maths = prompt("enter maths marks");
+        maths = parseInt(maths);
+        
+        var english = prompt("enter english marks");
+        english = parseInt(english);
+
+        var science = prompt("enter science marks");
+        science = parseInt(science);
+
+        var SST = prompt("enter SST marks");
+        SST = parseInt(SST);
+
+        total_marks = maths + english + science + SST;
+        console.log("total marks obtained : "+ total_marks);
+
+        total_percentage = 100* (total_marks/400);
+        console.log("total percentage : "+ total_percentage);
+    </script>
+</body>
+</html>

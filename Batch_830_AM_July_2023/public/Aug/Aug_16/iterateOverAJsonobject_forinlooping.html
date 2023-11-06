@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Iterating overjson object - for in looping
+        </title>
+    </head>
+    <body>
+        <script>
+            var empData = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+                contactNo: [2423423, 234234,234234],
+                bsal: 234
+            }
+
+            console.log(Object.keys(empData))
+            console.log(Object.values(empData))
+            var data = [
+                'krish', 
+                30, 
+                'Male', 
+                [3453, 345, 345], 
+                4000
+            ];
+            
+            // for (var i = 0 ; i < data.length; i++) {
+            //     console.log(data[i]);
+            // }
+
+            for (var tempkey in empData) {
+                console.log(tempkey); // tempkey -> 'name'
+                console.log(empData[tempkey]);
+            }
+        </script>
+    </body>
+</html>

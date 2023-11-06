@@ -1,0 +1,41 @@
+#header {
+  width: 10px;
+  height: 20px;
+}
+body {
+  background-color: yellow;
+}
+div {
+  width: 560px;
+}
+ul {
+  height: 570px;
+}
+.box {
+  width: 20px;
+  background-color: green;
+  border: 2px solid;
+}
+.container1 {
+  height: 200px;
+  font-size: 30px;
+  width: 20px;
+  background-color: green;
+  border: 2px solid;
+}
+.container2 {
+  color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20px;
+  background-color: green;
+  border: 2px solid;
+}
+#heder {
+  background-color: yellow;
+}
+#heder .abc {
+  font-size: 20px;
+}
+#heder .sample {
+  border: 2px solid;
+}

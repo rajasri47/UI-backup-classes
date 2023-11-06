@@ -1,0 +1,129 @@
+
+.mainContaint{
+    height: 50px;
+    width: 1300px;
+    border: solid black 3px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.mainContaint2{
+    height: 50px;
+    width: 1300px;
+    border: solid black 3px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.block{
+    border: solid 1px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+
+    margin: 05px;
+    
+    
+}
+
+.block1{
+    background-color: red;
+    float: right;
+    
+}
+
+.block2{
+    background-color: rgb(36, 156, 11);
+    float: right;
+    
+    
+}
+
+.block3{
+    background-color: rgb(238, 142, 142);
+    
+    
+}
+
+.block4{
+    background-color: rgb(111, 216, 70);
+    float: right;
+    
+}
+
+.block5{
+    background-color: rgb(171, 206, 15);
+    
+    
+}
+
+.block6{
+    background-color: rgb(214, 135, 208);
+    
+    
+}
+
+.block7{
+    background-color: rgb(241, 209, 27);
+    float: right;
+    
+}
+
+.block8{
+    background-color: rgb(17, 223, 79);
+    float: right;
+    
+}
+
+.block9{
+    background-color: rgb(10, 211, 218);
+    float: right;
+    
+}
+
+.block10{
+    background-color: rgb(53, 50, 235);
+    
+    
+}
+
+.block11{
+    background-color: rgb(205, 92, 240);
+    float: left;
+    
+}
+
+.block12{
+    background-color: rgb(30, 240, 58);
+    float: left;
+    
+    
+}
+
+.block13{
+    background-color: rgb(158, 238, 30);
+    float: left;
+    
+    
+}
+
+.block14{
+    background-color: rgb(136, 233, 149);
+    float:left;
+    
+}
+
+.block15{
+    background-color: rgb(88, 240, 82);
+    clear: both;
+
+    
+
+    
+}

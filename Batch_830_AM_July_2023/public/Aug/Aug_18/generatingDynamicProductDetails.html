@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul > li {
+                border: 1px solid;
+                list-style: none;
+                margin: 10px;
+                padding: 10px;
+                width: 250px;
+                height: 350px;
+                background-color: #ccc;
+                overflow: auto;
+            }
+            ol > li {
+                list-style: none;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                background-color: #fff;
+            }
+            ol {
+                margin: 5px;
+                padding: 5px;
+            }
+            .aprice {
+                color: red;
+                font-weight: bold;
+                text-decoration: underline;
+                text-decoration-line: line-through;
+            }
+            .dprice {
+                font-weight: bold;
+                color: green;
+                font-size: 15px;
+            }
+            img {
+                width: 200px;
+                height: 130px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="block">
+                <ol>
+                    <li>
+                        Product name: Laptop
+                    </li>
+                    <li>
+                        Product Price: 
+                        <span class="aprice">$400</span>
+                        <span class="dprice">$300</span>
+                    </li>
+                    <li>
+                        Manufacturer: Dell Systems
+                    </li>
+                    <li>
+                        Rating: 4.5
+                    </li>
+                    <li>
+                        <img src="https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg" alt="">
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </body>
+</html>

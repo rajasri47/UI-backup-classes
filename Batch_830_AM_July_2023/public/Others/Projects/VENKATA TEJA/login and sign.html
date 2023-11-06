@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+           display: flex;
+           align-items: center;
+           padding: 20px;
+        }
+        .menu{
+           flex: 1;
+           text-align: right;
+        }
+        .menu ul li{
+           display: inline-block;
+           margin-right: 20px;
+   
+        }
+        a{
+           text-decoration: none;
+           color: #4d2525;
+        }
+        .container{
+           max-width: 1300px;
+           margin: auto;
+           padding-left: 25px;
+           padding-right: 25px;
+        }
+        .header{
+        background-color: radial-gradient(#fff,#ffd6d6);
+     }
+     .col2 img{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 50px 0;
+     }
+     .accountpage{
+        padding: 50px 0;
+        background-color: radial-gradient(#fff,#ffd6d6);
+     }
+     .formcontainer{
+        background-color: rgb(221, 247, 238);
+        width: 300px;
+        height: 400px;
+        position: relative;
+        bottom: 650px;
+        right: 250px;
+        text-align: center;
+        padding: 20px 0;
+        margin: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+     }
+     .btn{
+        color: crimson;
+        position: relative;
+        bottom: 650px;
+        right: 100px;
+     }
+     .bnn{
+        display: inline-block;
+        background-color: rgb(160, 9, 9);
+        color: #fff;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        transition: background 0.5s;
+     }
+     </style>
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="IMAGES/LOGO.webp" alt="" width="100px">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </div>
+        <img src="IMAGES/cart.png" width="30px" height="30px">
+    </div>
+    
+        <!------------------acount page--------------->
+        <div class="accountpage">
+         <div class="container">
+            <div class="row">
+                <div class="col2">
+                    <img src="IMAGES/background2.jpg">
+                    </div>
+                    <div class="col2">
+                        <div class="formbtn">
+                        <div class="formcontainer">
+                             <span>Login</span>
+                             <span>Register</span>
+                        </div>
+                        <form class="btn">
+                            <input type="text" placeholder="User name">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="bnn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                       <form class="btn">
+                            <input type="text" placeholder="User name">
+                            <input type="Email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="bnn">Register</button>
+                        </form>
+                    </div>
+
+                    </div>
+            </div>
+         </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

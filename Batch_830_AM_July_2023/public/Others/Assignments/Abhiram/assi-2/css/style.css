@@ -1,0 +1,117 @@
+/* float assignment styles */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color: aqua;
+}
+.main{
+    width:98%;
+    margin:auto;
+}
+
+.header,.footer{
+    background-color: red;
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    border:5px solid black;
+    padding: 10px;
+    width:98%;
+    margin:auto;
+    overflow: hidden;
+}
+.block{
+    width: 10%;
+    height: 130px;
+    background-color: green;
+    margin:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: larger;
+}
+.block1{
+    background-color: red;
+    float: right;
+    
+}
+.block2{
+    float: right;
+    background-color: pink;  
+}
+.block3{
+    float:right;
+    clear:both;
+    background-color: rgb(68, 44, 44);
+}
+.block4{
+    background-color: orange;
+}
+.block5,
+.block6,
+.block7{
+    background-color: blueviolet;
+}
+
+.block8,
+.block9,
+.block10{ 
+    float: right; 
+    clear:left;
+    background-color:blue;
+}
+.block11{
+    float: left;  
+    }
+.block12
+{
+    clear: both;
+
+}
+.block13,
+.block14,
+.block15{
+    background-color: blanchedalmond;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

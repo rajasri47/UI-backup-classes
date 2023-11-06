@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(/Img/grafty.jpg);
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+ul {
+    background-color: rgb(255, 255, 157);
+    border: 2px solid;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    list-style: none;
+    text-align: center;
+    border-radius: 3%;
+}
+
+li {
+    margin: 5%;
+    font-size: 2vw;
+    font-weight: 600;
+    
+}
+
+#username,
+#password {
+    border: 2px solid;
+    box-sizing: 5%;
+    padding: 2%;
+    margin-left: 1%;
+    font-size: 1vw;
+}
+
+#submitebtn {
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    text-decoration: none;
+    border: 2px solid;
+   }

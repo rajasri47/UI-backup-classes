@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sumofevennumbers</title>
+    </head>
+        <body>
+            <script>
+                function readdata(){
+                var data = [];
+                var sum = 0;
+                
+                
+                for(i = 0; i <= 6;i++){
+                    data[i] = prompt("enter the number"+ i);
+                    data[i] = parseInt(data[i]);
+                    if( data[i] % 2 ==0){
+                         
+                        sum = sum +data [i];
+                       
+                         
+                    }
+                }
+                   
+                console.log("the even sum is"+ sum)
+
+               
+            }
+            readdata();
+                
+
+
+            </script>
+
+            
+        </body>
+        </html>

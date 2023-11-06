@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            font-size: 25px;
+            text-align: center;
+            border:1px solid black;
+            font-weight: bold;
+            text-decoration: underline;}
+        .li{font-size: 20px;
+            padding-top: 10px;
+        }
+        .footer{
+            font-size: 25px;
+        }
+    </style>
+ </head>
+ <body>
+    <!-- html code start from here  -->
+<h2 class="header">
+    For watch result please follow following steps
+</h2>
+<ol>
+    <li class="li"><b><u>Right Click </u></b>on this page</li>
+    <li class="li">Click <b><u>Inspect </u></b> Option</li>
+    <li class="li">Click <b><u>Console</u></b></li>
+</ol>
+ <p class="footer">
+    Thanks for watching my Assignment
+ </p>
+    <!-- html code ends here  -->
+
+<script>
+    var studentName,Class, Physics , Chemistry, Mathematics;
+    studentName         = prompt("Enter Your Name");
+    Class               = prompt("Enter Your Class");
+    Class               = parseInt(Class);
+    Physics             = prompt("Enter the marks of Physics");
+    Physics             = parseInt(Physics);
+    Chemistry           = prompt("Enter the marks of Chemistry");
+    Chemistry           = parseInt(Chemistry);
+    Mathematics         = prompt("Enter the marks of Mathematics");
+    Mathematics         = parseInt(Mathematics);
+
+    var totalObtainMarks, percentage;
+    totalObtainMarks    = Physics + Chemistry +Mathematics;
+    percentage          = totalObtainMarks/300*100;
+
+    console.log("Student Name= " + studentName);
+    console.log("Class= " + Class + 'th');
+    console.log("Physics= " + Physics);
+    console.log("Chemistry= " + Chemistry );
+    console.log("Mathematics= " + Mathematics);
+    console.log("Total obtain Marks is " + totalObtainMarks);
+    console.log('Total Percentage= ' + percentage + '%   + '+ "That is super fine" );
+    console.log("Result=  pass");
+</script>
+</body>
+ </html>

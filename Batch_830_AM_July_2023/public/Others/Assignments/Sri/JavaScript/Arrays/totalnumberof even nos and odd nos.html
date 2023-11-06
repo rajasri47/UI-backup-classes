@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>even and odd</title>
+    </head>
+         <body>
+            <h3> total no of even and odd numbers</h3>
+            <script>
+                
+                
+
+
+                var data = [];
+                var size = prompt(" enter the size");
+                size = parseInt(size);
+                var evensum = 0;
+                var oddsum = 0;
+
+                for(var i = 0;i < size; i++){
+                    data[i] = prompt("enter the value"  + i);
+                    data[i] = parseInt(data[i]);
+                    console.log(data);
+                    
+                    if(data[i] % 2 == 0){
+                        evensum = evensum + data[i];
+                        console.log( " evensum is"+evensum);
+
+                    }
+
+                    else{
+                        oddsum = oddsum + data[i];
+                        console.log( " oddsum is"+oddsum);
+
+
+                    }
+            
+                    
+                   
+
+                }
+               
+                    
+                
+            
+
+            </script>
+            
+        </body>
+        </html>

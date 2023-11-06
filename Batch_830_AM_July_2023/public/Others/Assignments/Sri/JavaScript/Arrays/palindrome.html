@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            <h3> print palindrome number</h3>
+            <script>
+                var data = [];
+                var revnum = 0;
+                
+                
+                for(var i = 0; i< 1000;i++){
+                    data [i] = data.push(i) ;
+                    //console.log("print numbers" +data[i]);//
+                    var a = data[i];
+
+                 while (a!= 0){
+                    var rem = a % 10;
+                    a =parseInt(a /10);
+                     revnum = (revnum*10) + rem;
+                }
+
+                if(revnum == data[i]){
+                    
+                    console.log("its a palindrome no" + data[i]);
+                }
+                    revnum =0;
+                
+                
+            }
+            </script>
+        </body>
+        </html>

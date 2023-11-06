@@ -1,0 +1,23 @@
+Navigator Object
+    window, document, localstorage,
+    navigator 
+
+geolocation 
+
+
+---
+Drawing objects on page using canvas and SVG tags
+
+
+doctype 
+localstorage and sessonstorage - userpreferences 
+semantic tags 
+new input elemnts
+drag drop new events 
+navigator
+geolocation
+canvas
+svg 
+Audio and video tags 
+appcache 
+webworkers 

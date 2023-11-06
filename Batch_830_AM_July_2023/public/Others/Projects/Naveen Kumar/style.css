@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  background-image: url(./image/homeco.avif);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar {
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+.logo {
+  color: #ffffff;
+  font-size: 25px;
+  font-family:Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10PX;
+}
+
+.menu {
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  
+  
+}
+ul li {
+  
+  margin-left: 62px;
+  margin-top: 28px;
+  font-size: 14px;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li:hover {
+  color: orange;
+}
+
+.search {
+  width: 330px;
+  float: left;
+  margin-left: 270px;
+}
+
+.srch {
+  font-family:'Times New Roman';
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid orange;
+  margin-top: 13px;
+  color: black;
+  border-right: none;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background: orange;
+  border: 2px solid orange;
+  margin-top: 13px;
+  color: white;
+  font-size: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+.btn:focus {
+  outline: none;
+
+}
+
+.srch:focus {
+  outline: none;
+}
+  
+.form {
+  width: 250px;
+  height: 380px;
+  background-color: rgb(148, 148, 148);
+  position: absolute;
+  top: 110px;
+  left: 481px;
+  border-radius: 10px;
+  padding: 25px;
+
+}
+
+.form h2 {
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: orange;
+  font-size: 22px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transperant;
+  border-bottom: 1px solid orange;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: black;
+  font-family: Arial;
+}
+
+.btnn {
+  width: 238px;
+  height: 40px;
+  background: orange;
+  border: none;
+  margin-top: 13px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+
+
+.btnn:hover {
+  background: white;
+  color: orange;
+}
+
+.btnn a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.form.link {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.form .link >a {
+  text-decoration: none;
+  color: rgb(30, 0, 255);
+
+}
+
+.liw {
+  padding-top: 15px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+input:invalid + span::after {
+  position: absolute;
+  content: "\2716";
+  color: #8b0000;
+  padding: 12px;
+  top: 36%;
+  
+}
+
+input:valid + span::after {
+  position: absolute;
+  content: "\2713";
+  color: #009000;
+  padding: 12px;
+  top: 36%;
+}
+
+.icons a {
+  text-decoration: none;
+  color:orange;
+}
+
+.icon ion-icon {
+  color: blue;
+  font-size: 20px;
+  padding-left: 14px;
+  padding-top: -2px;
+}
+
+.signup{
+  margin-left: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+ 

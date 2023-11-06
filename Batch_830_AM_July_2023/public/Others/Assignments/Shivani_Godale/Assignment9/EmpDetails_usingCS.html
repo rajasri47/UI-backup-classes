@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var name=prompt("Enter Name");
+            var gender=prompt("Enter Gender");
+            var age=prompt("Enter age");
+            var department = prompt("Enter department");
+            var basicsal=prompt("Basic sal ");
+
+            basicsal=parseInt(basicsal);
+
+            var emppf = (basicsal *12)/100;
+            var emphra =(basicsal *24)/100;
+
+           
+           
+            var totalsal= emppf + emphra + basicsal ;
+
+
+            console.log("Employee Details" );
+            console.log("Name: "+ name);
+            console.log("Gender: "+ gender);
+            console.log("Age: "+ age);
+            console.log("Department: "+ department);
+            console.log("Basic sal: " +basicsal);
+            console.log("Total Salary: "+ totalsal);
+        
+
+
+      
+                //for male emp
+               
+                if(gender=='Male' && totalsal>=300000) 
+                {
+
+               var tax=(totalsal * 15)/100;
+               console.log("Tax Payable: " +tax);
+
+               }
+
+               if (gender== 'Male' && totalsal>=200000 && totalsal<300000 )
+                {
+                                        
+                 var tax =(totalsal*10)/100;
+                 console.log("Tax Payable: " +tax);
+                                        }
+
+                if(gender== 'Male' && totalsal>=100000 && totalsal<200000 )
+                 {
+                                            
+                  var tax=(totalsal *5)/100;
+                    console.log("Tax Payable: " +tax);
+                                        }
+                if(gender=='Male' && totalsal<100000)
+                {
+                     
+                        console.log("Tax Payable: Zero tax");
+                }
+
+            //for female emp    
+            
+            if(gender== 'Female' && totalsal>=300000)
+                     {
+            
+                     var tax= (10*totalsal)/100;
+                     console.log("Tax Payable: " + tax);
+                    }
+
+            if(gender=='Female' && totalsal>=200000 && totalsal<300000)
+                    {
+
+                    var tax = (5*totalsal)/100;
+                    console.log("Tax Payable: " + tax);
+                    }
+
+            if(gender=='Female' && totalsal<20000)
+                {
+                   
+                    console.log("Tax Payable: Zero tax");
+                    
+                }
+
+            
+
+           
+           
+             
+
+        </script>
+    </body>
+</html>

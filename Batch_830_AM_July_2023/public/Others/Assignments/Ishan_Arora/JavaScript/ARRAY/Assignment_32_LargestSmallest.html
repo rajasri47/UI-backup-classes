@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 32
+        </title>
+    </head>
+    <body>
+        <h1>
+            Largest and smallest Number in the Array
+        </h1>
+        <script>
+            var takingInput = () => {
+                var lengthOfArray = prompt("Enter the number of elements: ");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0; i < lengthOfArray; i++) {
+                    a[i] = prompt("Enter " + i + " Value: ");
+                    a[i] = parseInt(a[i]);
+                }
+                console.log(a);
+                Largest(a);
+                Smallest(a);
+            }
+
+            var Largest = (a) => {
+                var large = a[0], len;
+                len = a.length;
+                for (var i = 1; i < len; i++) {
+                    if (large < a[i]) {
+                        large = a[i];
+                    }
+                }
+                console.log("Largest Number: " + large);
+            }
+
+            var Smallest = (a) => {
+                var small = a[0], len;
+                len = a.length;
+                for (var i = 1; i < len; i++) {
+                    if (small > a[i]) {
+                        small = a[i];
+                    }
+                }
+                console.log("Smallest Number: " + small);
+            }
+
+            takingInput();
+        </script>
+    </body>
+</html>

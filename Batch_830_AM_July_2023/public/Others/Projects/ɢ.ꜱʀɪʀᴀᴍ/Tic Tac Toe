@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="board" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div id="result"></div>
+    <button id="restart">Restart</button>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    padding-left: 40%;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    cursor: pointer;
+}
+#result {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#restart {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+    </style>
+    <script>
+      const board = document.getElementById('board');
+const cells = document.querySelectorAll('.cell');
+const resultDisplay = document.getElementById('result');
+const restartButton = document.getElementById('restart');
+let currentPlayer = 'X';
+let gameWon = false;
+function checkWinner() {
+    const winningCombos = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+        [0, 4, 8], [2, 4, 6] // Diagonals
+    ];
+    for (const combo of winningCombos) {
+        const [a, b, c] = combo;
+        if (cells[a].textContent && cells[a].textContent === cells[b].textContent && cells[a].textContent === cells[c].textContent) {
+            gameWon = true;
+            resultDisplay.textContent = `${currentPlayer} wins!`;
+            break;
+        }
+    }
+    if (!gameWon && Array.from(cells).every(cell => cell.textContent !== '')) {
+        resultDisplay.textContent = "It's a tie!";
+    }
+}
+function handleCellClick(event) {
+    const cell = event.target;
+    if (!cell.textContent && !gameWon) {
+        cell.textContent = currentPlayer;
+        checkWinner();
+        if (!gameWon) {
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        }
+    }
+}
+function restartGame() {
+    cells.forEach(cell => cell.textContent = '');
+    resultDisplay.textContent = '';
+    currentPlayer = 'X';
+    gameWon = false;
+}
+cells.forEach(cell => cell.addEventListener('click', handleCellClick));
+restartButton.addEventListener('click', restartGame);
+    </script>
+</body>
+</html>

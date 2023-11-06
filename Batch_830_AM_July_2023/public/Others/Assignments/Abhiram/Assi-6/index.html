@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Calculate the PF and HRA Using javaScri</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>for results click inspect and go into the console tab</h1>
+        </div>
+        <div class="main">
+            <div class="empDatails">
+                <form>
+                    <header>
+                        Register Employee
+                    </header>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="EmpName">Employe Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="EmpName" id="empName" autofocus required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="EmpAge">Employe Age:</label>
+                            </td>
+                            <td>
+                                <input type="Date" name="EmpAge" id="empAge" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="EmpGender">Employe Gender:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="EmpGender" id="empGender" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="EmpSalary">Employe Salary:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="EmpSalary" id="empSalary" required />
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="field">
+                        <!-- href="asset/empDetails.html" target="_blank" -->
+                        <button type="get" class="get-btn"><a  href="asset/empDetails.html" class="get">get</a></button> 
+                        <button type="submit" class="sub-btn"><a href="#" onclick="getData();" class="sub">submit</a></button>
+                        <button type="clear" class="clr-btn"><a href="#" onclick="clearData();" class="clr">clear</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script>
+
+    </script>
+    
+        <script src="js/app.js">app.js</script>
+</body>
+
+</html>

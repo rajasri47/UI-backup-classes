@@ -1,0 +1,222 @@
+<html>
+    <head>
+     <title> Assignment_5</title>
+     <style>
+        .center{
+            width:1500px;
+            margin: auto;
+        }
+        .header{
+            border:2px solid black;
+            background-color: aquamarine;
+            margin:10px;
+            padding:10px;
+            text-align: center;
+        }
+        .container{
+            width:1450px;
+            height:720px;
+            margin: 15px;
+            padding: 10px;
+            border:2px solid black;
+        }
+        .container1{
+            border:2px solid black;
+            width:1420px;
+            height:200px;
+            margin:10px;
+            padding:5px;
+        }
+        .Pdetails,.Edetails,.AboutY{
+            border:2px solid black;
+            width:120px;
+            height:20px;
+            margin:10px;
+            padding:5px;
+            position: absolute;
+        }
+        .Pdetails{
+            background-color: white;
+            left:90px;
+            top:75px;
+            text-align: center;
+        }
+        .Edetails{
+            background-color: white;
+            left:90px;
+            top:305px;
+            text-align: center;
+        }
+        .AboutY{
+            background-color: white;
+            left:90px;
+            top:528px;
+            text-align: center;
+
+        }
+        .personaldetails{
+            margin-top: 25px;
+        }
+        ul{
+            list-style: none;
+        }
+        .spacetitle{
+            padding:15px;
+        }
+        .address{
+            left:50%;
+            top:18%;
+            position: absolute;
+           
+        }
+        .textarea{
+            border: 1px solid;
+            width:350px;
+            height:150px;
+            left:90%;
+            top:15%;
+            position: absolute;
+        }
+        .checkbox{
+            width:30px;
+        }
+        .coursedetails{
+            left:50%;
+            top:50%;
+            position: absolute;
+        }
+        .courseopted{
+            left:58%;
+            top:50%;
+            position: absolute;
+        }
+        .textcontent{
+            border: 2px solid;
+            width:1000px;
+            height:150px;
+            left:18%;
+            top:78%;
+            position: absolute;
+
+        }
+        #button{
+            margin:5px;
+            padding:5px;
+            text-align: center;
+            width:150px;
+            font-size: 20px;
+        }
+        .button{
+            left:85%;
+            position: absolute;
+            top:104%;
+        }
+        .footer{
+            border: 2px solid black;
+            background-color: aquamarine;
+            text-align: center;
+            margin:5px;
+            padding:5px;
+        }
+       </style>
+   </head>
+   <body  class="center">
+        <h2 class="header">Student Details Registration</h2>
+        <div class="container">
+            <div class="container1">
+                <div class="pdetails">User Details</div>
+                <ul>
+                    <li class="personaldetails">
+                        <div class="spacetitle">
+                        <label for="username">Name:</label>
+                        <input type="text" name="name" id="textbox">
+                        </div>
+
+                    </li>
+                    <div class="spacetitle">
+                        <label for="Age">Age:</label>
+                        <input type="text" name="age" >
+                    </div>
+                    <div class="spacetitle">
+                        <label for="Gender">Gender:</label>
+                        <input type="radio" name="gender" class="radio">Male
+                        <input type="radio" name="gender" class="radio">Female
+
+                    </div>
+                    <div class="spacetitle address">
+                        <li>
+                        <label for="Address">Address:</label>
+                        <textarea class="textarea" name="address"></textarea>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="container1">
+                <div class="Edetails">Education Details</div>
+                <ul>
+                        <div class="spacetitle">
+                            <li class="personaldetails">
+                            <label for="qualification">Qualification:</label>
+                            <input type="checkbox" name="qualification" class="checkbox">
+                            <label for="qualification">MCA</label>
+                            <input type="checkbox" name="qualification" class="checkbox">
+                            <label for="qualification">MBA</label>
+                            <input type="checkbox" name="qualification" class="checkbox">
+                            <label for="qualification">BTech</label>
+                            <input type="checkbox" name="qualification" class="checkbox">
+                            <label for="qualification">Mtech</label>
+                            </li>
+                        </div>
+                        <div class="spacetitle">
+                            <li class="personaldetails">
+                                <label for="langauges">Languages:</label>
+                                <input type="checkbox" name="langauges" class="checkbox">
+                                <label for="langauges">Telugu</label>
+                                <input type="checkbox" name="langauges" class="checkbox">
+                                <label for="langauges">English</label>
+                                <input type="checkbox" name="langauges" class="checkbox">
+                                <label for="langauges">Hindi</label>
+                                <input type="checkbox" name="langauges" class="checkbox">
+                                <label for="langauges">Urdu</label>
+                            </li>
+                        </div>
+                        <div class="spacetitle">
+                            <li class="personaldetails">
+                                <li class="coursedetails">
+                                <label for="course">Course opted For:</label>
+                                </li>
+                                <li class="courseopted">
+                                <select name="course">
+                                    <option>FullStack webDevelopment</option>
+                                    <option>FullStack Java</option>
+                                    <option>PowerBI</option>
+                                    <option>Devops</option>
+                                    <option>Python</option>
+                                    <option>Data Science</option>
+                                    <option>Data Analytics</option>
+                                </select>
+                                </li>
+                            </li>
+                        </div>
+                </ul>
+            </div>
+            <div class="container1">
+                <div class="AboutY">About Yourself</div>
+             <ul>
+                <div class="spacetitle"></div>
+
+                    <li>
+                        <label for="aboutYourself">Tell Me About Yourself:</label>
+                        <textarea class="textcontent" name="aboutYourself"></textarea>
+                    </li>
+                </div>
+             </ul>
+            </div>
+            <div class="button">
+                <label for="submit"></label>
+                <input type="button" id="button" value="save details">
+            </div>
+        </div>
+        <h2 class="footer">@CopyRights 2023</h2>
+    </body>
+</html>

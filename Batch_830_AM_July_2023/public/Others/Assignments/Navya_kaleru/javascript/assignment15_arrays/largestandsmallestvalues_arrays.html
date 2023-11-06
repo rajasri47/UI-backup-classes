@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demostrating largest and smallest values using arrays</title>
+    </head>
+    <body>
+        <script>
+            //largest number
+            var data = [22 , 44, 66 , 33 , 99 , 23];
+            var maxvalue = data[0];
+            /*for( var i = 1 ; i < data.length ; i++){
+                if(maxvalue < data[i]){
+                    maxvalue = data[i];
+                }   
+            }
+            console.log(maxvalue);*/
+            //samllest number 
+            for(i = 1 ; i < data.length ; i++){
+                if(maxvalue>data[i]){
+                    maxvalue = data[i];
+                }
+            }
+            console.log(maxvalue);
+           
+        </script>
+    </body>
+</html>

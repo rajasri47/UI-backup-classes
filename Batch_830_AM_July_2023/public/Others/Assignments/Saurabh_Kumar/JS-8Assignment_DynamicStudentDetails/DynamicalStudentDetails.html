@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form -JS</title>
+    <!--<style>
+        title{
+            background-image: url("https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/38a9cafe-c53e-47f2-f431-428120462000/public");
+            background-position: center;
+        }
+        .JS{
+            background-color:yellowgreen ;
+            color: aquamarine;
+        }
+
+    </style>-->
+</head>
+<body>
+    <script class="JS">
+
+        var studentName= prompt("Enter Your Name");
+        var studentAge= prompt("Enter Your Age");
+        var studentGender= prompt("Enter Your Gender");
+        var Mark1 = prompt("Enter your MATH's Number");
+        var Mark2 = prompt("Enter your ENGLISH's Number");
+        var Mark3 = prompt("Enter your HINDI's Number");
+        var Mark4 = prompt("Enter your SCIENCE's Number");
+        var Mark5 = prompt("Enter your PT's Number");
+
+        Mark1 = parseInt(Mark1)
+        Mark2 = parseInt(Mark2)
+        Mark3 = parseInt(Mark3)
+        Mark4 = parseInt(Mark4)
+        Mark5 = parseInt(Mark5)
+        
+        var totalMark = Mark1+Mark2+Mark3+Mark4+Mark5;
+
+        var Avg = totalMark/500*100;
+
+        console.log("Name "+ studentName);
+        console.log("Age "+ studentAge);
+        console.log("Gender "+ studentGender);
+        console.log("Total Marks Gain "+ totalMark);
+        console.log("Average "+ Avg);
+    </script>
+    
+</body>
+</html>

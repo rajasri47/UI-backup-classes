@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Display the palindrome numbers b/w 1-1000</title>
+    </head>
+    <body>
+        <h3>Display the palindrome numbers b/w 1-1000</h3>
+        <script>
+            var rem;
+            var num='';
+            var i;
+            var temp;
+            for (i = 1; i <= 1000; i++) {
+                temp = i;
+                num='';
+                while (temp > 0) {
+                    rem = temp % 10;
+                    rem = rem.toString();
+                    num += rem;
+                    temp = temp / 10;
+                    temp = parseInt(temp);
+                }
+                if (i == num) {
+                    console.log(i);
+                } else {
+                    continue;
+                }
+            }
+            
+        </script>
+    </body>
+</html>

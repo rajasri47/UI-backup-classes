@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+            }
+            .mainblock{
+                border: 1px solid gray;
+                
+                
+            }
+            li{ 
+                list-style: none;
+                margin: 30px 40px;
+                font-size: 20px;
+            }
+            .foruser{
+                margin-left: 80px;
+                height: 35px;
+                width: 270px;
+            }
+            .forPassword{
+                margin-left: 93px;
+                height: 35px;
+                width: 270px;
+            }
+            .forConfirmPassword{
+                margin-left: 19px;
+                height: 35px;
+                width: 270px;
+            }
+            .forMobileNo{
+                margin-left: 79px;
+                height: 35px;
+                width: 270px;
+            }
+            .forEmail{
+                margin-left: 93px;
+                height: 35px;
+                width: 270px;
+            }
+            .forSubmit{
+                position: relative;
+                left: 195px;
+                height: 35px;
+                width: 120px;
+                font-size: large;
+            }
+            .forSubmit:hover{
+                background-color: lightgreen;
+            }
+            .head,.foot{ 
+                border: 1px solid grey;
+                height: 60px;
+                background-color: lightgrey;
+
+                
+            }
+            .mainContainer{
+                height: 500px;
+                width: 700px;
+                margin: 100px auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="head"><h3>Header Part</h3></div>
+            <div class="mainblock"> 
+                <ul> 
+                    <li>
+                        <label for="username">User Name:</label>
+                        <input type="text" name="username" class="foruser">
+                    </li>
+                    <li>
+                        <label for="userPassword">Password:</label>
+                        <input type="password" name="userPassword" class="forPassword">
+                    </li>
+                    <li> 
+                        <label for="userConfirmPassword">Confirm Password:</label>
+                        <input type="password" name="userConfirmPassword" class="forConfirmPassword">
+                    </li>
+                    <li>
+                        <label for="userMobileNo">Mobile No:</label>
+                        <input type="text" name="userMobileNo" class="forMobileNo">
+                    </li>
+                    <li>
+                        <label for="userEmail">Email ID:</label>
+                        <input type="text" name="userEmail" class="forEmail">
+                    </li>
+                    <li>
+                        <button class="forSubmit",type="button" onclick="location.href='1_MainPage.html'">Submit</button> 
+                    </li>      
+                </ul>
+            </div>
+
+            <div class="foot"><h3>Footer Part</h3></div>
+            
+        </div>
+    </body>
+    
+</html>

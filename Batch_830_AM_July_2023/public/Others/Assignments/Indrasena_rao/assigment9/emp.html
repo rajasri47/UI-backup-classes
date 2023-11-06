@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var name = prompt('Enter Name');
+        var gender = prompt('Enter Gender');
+        var age = prompt('Enter Age');
+        var dep = prompt('Enter Department');
+        var bsc = prompt('Enter Basic Salary');
+        bsc = parseInt(bsc)
+        var pf = (bsc * 12) / 100;
+        var hrs = (bsc * 24) / 100;
+        var tsc = pf + hrs + bsc;
+        var ys = tsc * 12;
+        // var tax = (ys *)
+        console.log("EMP Name :" + name);
+        console.log("EMP Gender : " + gender);
+        console.log("EMP Age :" + age);
+        console.log("EMP Department :" + dep);
+        console.log("EMP Total Salary: " + tsc);
+        // console.log("EMP Name" + name);
+        if (gender == 'male' || gender == 'Male') {
+          
+            if(ys >= 300000){
+                var tax = (tsc * 15)/100;
+                console.log('Tatol Tax : ' + tax);
+            }else  if(ys >= 200000){
+                var tax = (tsc * 10)/100;
+                console.log('Tatol Tax : ' + tax);
+            }else  if(ys >= 100000){
+                var tax = (tsc * 5)/100;
+                console.log('Tatol Tax : ' + tax);
+            }else {
+                console.log('Tatol Tax : 0');
+            }
+
+        } else if (gender == 'female' || gender == 'Female') {
+             if(ys >= 300000){
+                var tax = (tsc * 10)/100;
+                console.log('Tatol Tax : ' + tax);
+            }else  if(ys >= 200000){
+                var tax = (tsc * 5)/100;
+                console.log('Tatol Tax : ' + tax);
+            }else {
+                console.log('Tatol Tax : 0');
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

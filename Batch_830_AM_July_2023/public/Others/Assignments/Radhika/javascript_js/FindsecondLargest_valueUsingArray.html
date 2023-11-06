@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>demonstrate second largest value</title>
+    </head>
+    <body>
+        <h3> To Find second largest value wthout using Sorting....!</h3>
+        <script>
+            //static array
+            var num=[34,56,78,98,52,100,99];
+            var secondmax=num[0];
+            var max=num[0];
+            for(var i=1;i<num.length;i++){
+                if(max<num[i]){
+                    if(secondmax<max) {
+                        secondmax=max;
+                    }
+                    max=num[i];
+                }else if(secondmax<num[i]){
+                   secondmax=num[i] ;
+                }
+            }
+            console.log("max is " + max);
+            console.log("secondmax is " + secondmax);
+            
+        </script>
+    </body>
+</html>

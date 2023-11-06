@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Report Card</title>
+        <style>
+            h2{
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><b>Student Report Card</b></h2>
+        <h3>Open console tab for result!</h3>
+        <script>
+            var student_name = prompt("Enter Student Name : ");
+            var student_age  = prompt("Enter Student Age : ");
+            var Student_Gender = prompt("Gender : ");
+
+            var Physics_marks = prompt("Enter Physics Marks : ");
+            Physics_marks = parseInt(Physics_marks);
+            var Maths_marks = prompt("Enter Maths Marks : ");
+            Maths_marks = parseInt(Maths_marks);
+            var Chemistry_marks = prompt("Enter Chemistry Marks : ");
+            Chemistry_marks = parseInt(Chemistry_marks);
+
+            var total= Physics_marks + Chemistry_marks + Maths_marks;
+            var avg= (total/3);
+            var percent = (total/300) * 100;
+
+            console.log("Student Name :" +student_name);
+            console.log("Student Age : " +student_age);
+            console.log("Gender : " + Student_Gender);
+            console.log("Total : "+ total);
+            console.log("Average : " + avg);
+            console.log("Percentage : " + percent.toFixed(2));
+
+            if (Physics_marks > 35 && Maths_marks > 35 && Chemistry_marks  > 35) {
+              console.log("Result is : Pass")
+             }
+
+            else {
+                console.log("Result is Fail")
+            }
+
+
+            
+        </script>
+    </body>
+</html>

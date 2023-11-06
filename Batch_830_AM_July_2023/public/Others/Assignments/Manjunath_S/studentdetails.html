@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Student Details</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        var student_name = prompt("Enter Student Name");
+        var marks_english = prompt("Enter marks for English");
+        var marks_hindi = prompt("Enter marks for hindi");
+        var marks_computerscience = prompt("Enter marks for computer science");
+        marks_english = parseFloat(marks_english);
+        marks_hindi = parseFloat(marks_hindi);
+        marks_computerscience = parseFloat(marks_computerscience);
+        var total = marks_english + marks_hindi + marks_computerscience;
+        var average = total/3;
+        console.log("Student name: " + student_name);
+        console.log("Total = " + total);
+        console.log("Average = " + average);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

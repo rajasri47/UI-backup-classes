@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predefined String Methods</title>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE STRING PROGRAM OPEN DEBUGGER TOOL </h1>
+    <h2> Write a program to find out total number of vovels.</h2>
+    <script>
+        // function countVowels() {
+        //     let msg = prompt("Enter a string", "Hello, world!");
+        //     var count = msg.match(/[aeiou]/gi);
+        //     return count === null ? 0 : count.length;
+        // }
+        // console.log(countVowels());
+
+        function vowelCount() {
+            str = 0;
+            str = prompt("Enter a string", "Hello, world!");
+            console.log(str);
+            return str.replace(/[^aeiou]/gi, "").length;
+        }
+        // vowelCount()
+        console.log(vowelCount());
+    </script>
+
+</body>
+
+</html>

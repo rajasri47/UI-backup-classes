@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Project
+        </title>
+        <style>
+            .header, .footer {
+                border: 2px solid;
+                background-color: aquamarine;
+                height: 80px;
+            }
+            .heading {
+                display: inline;
+                position: absolute;
+                left: 43%;
+            }
+            .logo {
+                height: 80px;
+                width: 120px;
+            }
+            .main {
+                border: 2px solid;
+                background-color: bisque;
+                height: 500px;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                margin: 15px 0px;
+            }
+            .signup_block {
+                border: 3px solid;
+                border-radius: 4%;
+                width: 550px;
+                height: 265px;
+                text-align: center;
+                position: absolute;
+                left: 31%;
+                top: 29%;
+            }
+            .footer {
+                text-align: center;
+
+            }
+            .newUser:visited, .newUser:link {
+                text-decoration: none;
+                color: black;
+            }
+            .submit {
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img class="logo" src="Images/logo_2.png" alt="">
+            <h1 class="heading">
+                Fashion Store
+            </h1>
+        </div>
+        <div class="main">
+            <div class="signup_block">
+                <form action="HomePage.html" method="get">
+                <ol>
+                    <li>
+                        <br>
+                        <label for="uname">User Name: </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="uname">
+                    </li>
+                    <li>
+                        <label for="pass">Password: </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="password" name="pass" id="">
+                    </li>
+                    <li>
+                        <label for="confirm">Confirm Password: </label>
+                        <input type="password" name="confirm">
+                    </li>
+                    <li>
+                        <label for="mobile">Mobile No: </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="number" name="mobile" id="">
+                    </li>
+                    <li>
+                        <label for="email">Email ID: </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="email">
+                    </li>
+                    <li>
+                        <input class="submit" type="submit" value="Submit">
+                    </li>
+                </ol>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <br>
+            Copyrights @2023
+        </div>
+    </body>
+</html>

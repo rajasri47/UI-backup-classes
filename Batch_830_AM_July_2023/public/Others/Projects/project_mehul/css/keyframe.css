@@ -1,0 +1,27 @@
+/* keyframes */
+
+@keyframes changetext {
+  0% {
+    content: "ANDAMAN";
+  }
+
+  20% {
+    content: "GOA";
+  }
+
+  35% {
+    content: "KASHMIR ";
+  }
+
+  60% {
+    content: "DARJEELING ";
+  }
+
+  80% {
+    content: "MANALI";
+  }
+
+  100% {
+    content: "BANGALORE";
+  }
+}

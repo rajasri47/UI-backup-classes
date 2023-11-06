@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating AJAX
+        </title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="../jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <table border="1px solid green" cellpadding="10px" cellspacing="10px">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Country</td>
+                    <td>Launch Date</td>
+                    <td>Mass</td>
+                    <td>Launcher</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <input type="button" value="Get Data" onclick="getSatiliteInfo()">
+
+        <script>
+            var getSatiliteInfo = () => {
+                var dataAPI = 'https://isro.vercel.app/api/customer_satellites';
+
+                // XMLHttpRequest
+                /*fetch(dataAPI).then((response) => response.json()).then((data) => {
+                    console.log(data)
+                })
+
+                
+                fetch("https://fakestoreapi.com/products").then((pdata) => pdata.json()).then((response) => {
+                    console.log(response)
+                })*/
+
+                /*$.ajax({
+                    url: 'https://isro.vercel.app/api/customer_satellites',
+                    method: 'GET',
+                    dataType: 'JSON',
+                    data: {}, 
+                    success: (response) => {
+                        console.log("its success")
+                        console.log(response);
+                    },
+                    error: () => {
+                        console.log("eror while communcating")
+                    }
+                }) */ 
+
+                // axios.post
+                axios.get('https://isro.vercel.app/api/customer_satellites')
+                .then(function (response) {
+                    // handle success
+                    console.log(response);
+                    renderDataToTable(response.data.customer_satellites)
+                })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+                .finally(function () {
+                    // always executed
+                });
+            }
+
+            var renderDataToTable = (data) => {
+                data.forEach((item) => {
+                    var trTag = $("<tr/>");
+                    var td1 = $("<td/>").text(item.id);
+                    trTag.append(td1);
+
+                    var td2 = $("<td/>").text(item.country);
+                    trTag.append(td2);
+
+                    var td3 = $("<td/>").text(item.launch_date);
+                    trTag.append(td3);
+
+                    
+                    
+                    var td4 = $("<td/>").text(item.mass);
+                    trTag.append(td4);
+
+                    var td5 = $("<td/>").text(item.launcher);
+                    trTag.append(td5);
+
+                    $("tbody").append(trTag);
+                });
+                
+            }
+        </script>
+    </body>
+</html>

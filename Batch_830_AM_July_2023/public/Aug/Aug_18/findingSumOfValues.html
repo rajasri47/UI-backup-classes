@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            The sum of values is <span class="result">...</span>
+        </div>
+        <script>
+
+            var p1 = prompt("enter a value");
+            var p2 = prompt("enter second value");
+            p1 = parseInt(p1);
+            p2 = parseInt(p2);
+            var sum = p1 + p2;
+            // console.log("the sum is " + sum)
+
+            // find a span element and add the sum value within it
+
+            // document.getElementById('result').innerText = sum;
+            document.querySelector('.result').innerText = sum;
+
+        </script>
+    </body>
+</html>

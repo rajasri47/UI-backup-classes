@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Code in Console</h2>
+    <script>
+        var num = prompt("Enter Number");
+        num = parseInt(num);
+        var sum = 0;
+        var temp = num;
+
+        num = num.toString();
+        //var dim = num.lenght;
+        //var Sim =num.toString().length;
+        //console.log(dim);
+
+        console.log(typeof (num));
+
+        while (num > 0) {
+            var rem = num % 10;
+            sum = sum + (rem * rem * rem);
+            num = num / 10;
+        }
+        if (temp == sum) {
+            console.log(temp + " Is a Armstrong Number");
+        } else {
+            console.log(temp + " Is not Armstrong Number");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

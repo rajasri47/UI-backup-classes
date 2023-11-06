@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp_Salary_Taxes</title>
+</head>
+
+<body>
+    <script>
+        var ename, Gender, salary;
+
+        ename = prompt("Enter ename");
+        salary = prompt("Enter salary");
+        Gender = prompt("Enter Gender");
+        if (Gender == "Male" || Gender == "male") {
+            if (salary >= 100000) {
+                console.log("TaxPercentage(15% of Male Salary): " + ((salary * 15) / 100));
+                console.log("The Remaining Salary of " + (ename) + " is : " + (salary - ((salary * 15) / 100)));
+            }
+            else if (salary >= 50000) {
+                console.log("TaxPercentage(10% of Male Salary): " + ((salary * 10) / 100));
+                console.log("the Remaining Salary of " + (ename) + " is : " + (salary - ((salary * 10) / 100)));
+            }
+            else if (salary >= 30000) {
+                console.log("TextPercentage(5% of Male Salary): " + ((salary * 5) / 100));
+                console.log("The Remaining Salary of " + (ename) + " is : " + (salary - ((salary * 5) / 100)));
+            }
+            else {
+                console.log("TextPercentage(0% of  Male Salary): " + (salary - (salary * 0) / 100));
+
+            }
+        }
+
+        if (Gender == "Female" || Gender == "female") {
+            if (salary >= 100000) {
+                console.log("TaxPercentage(10% of Female Salary): " + ((salary * 10) / 100));
+                console.log("The Remaining Salary of " + (ename) + " is : " + (salary - ((salary * 5) / 100)));
+            }
+            if (salary >= 50000) {
+                console.log("TaxPercentage(5% of Female Salary): " + ((salary * 5) / 100));
+                console.log("The Remaining Salary of " + (ename) + " is : " + (salary - ((salary * 5) / 100)));
+            }
+            else {
+                console.log("TextPercentage(0% of Salary): " + (salary - ((salary * 0) / 100)));
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

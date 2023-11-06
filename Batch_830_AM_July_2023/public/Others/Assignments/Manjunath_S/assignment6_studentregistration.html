@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Student Registration Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            margin: 20px;
+            background-color: gainsboro;
+            padding: 10px;
+        }
+        .header, .footer {
+            text-align: center;
+            border: 3px solid;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        .footer {
+            padding: none;
+        }
+        .section {
+            border: 1px solid;
+            border-radius: 15px;
+            margin:10px;
+            list-style: none;
+            font-size: 24px;
+            background-color: cornsilk;
+            padding: 5px;
+            
+        }
+        .data,#data {
+            list-style: none;
+            font-size: 20px;
+        }
+        ul {
+            margin: 20px;
+            padding: 30px;
+            border: 1px solid;
+            border-radius: 15px;
+            background-image: linear-gradient(to left, yellow,pink, cyan);
+
+        }
+        .heading {
+            border: 1px solid;
+            border-radius: 15px;
+            position: relative; left:100px;
+            background-color: cadetblue;  
+        }
+        
+        label {
+            text-align: left;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3> Student Details Registration Page</h3>
+    </div>
+    <form>
+        <ul>
+        <div class="section"><span class="heading">&nbsp;User Details&nbsp;</span>
+            <li class="data"> 
+                <label>Name:&nbsp;</label>
+                <input type="text" name="Name" id="data" placeholder="Enter Student Name ">
+            </li>
+            <li class="data"> 
+                <label>Age:&nbsp;</label>
+                <input type="text" name="Age" id="data" placeholder="Enter Student Age " maxlength="3">
+            </li>
+            <li class="data"> 
+                <label>Gender:&nbsp;</label>
+                <input type="radio" name="Gender" checked value="Male" id="data">Male
+                <input type="radio" name="Gender" value="Female" id="data">Female
+            </li>
+            <li class="data"> 
+                <label>Address:&nbsp;</label>
+                <textarea name="Address" id="data"rows="6" cols="40"></textarea>
+            </li>
+        </div>
+        <div  class="section"><span class="heading">&nbsp;Education Details&nbsp;</span>
+            <li class="data">
+                <label>Qualification:&nbsp;</label>
+                MCA <input type="checkbox" name="Q_MCA" value="checked">  
+                MBA <input type="checkbox" name="Q_MBA">
+                BTech. <input type="checkbox" name="Q_Btech">
+            </li>
+            <li class="data" float:right>
+                <label name="course">Course Opted For:&nbsp;</label>
+                <select name="course">
+                    <option value="Angular" class="data">Angular</option>
+                    <option value="NodeJS" class="data">NodeJS</option>
+                    <option value="HTML" class="data">HTML</option>
+                </select>
+            </li>
+            <li class="data">
+                <label>Languages:&nbsp;</label>
+                Hindi <input type="checkbox" name="L_Hindi" value="checked">
+                English <input type="checkbox" name="L_Engilish">
+                Telugu <input type="checkbox" name="L_Telugu">
+                Urdu <input type ="checkbox" name="L_Urdu">
+
+            </li>
+        </div>
+        <div  class="section"><span class="heading">&nbsp;About Yourself&nbsp;</span></li>
+            <li>
+                <label name="tmoy">Tell me few words about yourself:&nbsp;</label>
+                <textarea name="tmoy" rows="6" cols="40"></textarea>
+            </div>
+        <li class="data">
+            <input type="submit" value="Register" position:relative; right: 20px;>
+        </li>
+    </ul>
+    </form>
+    <div class="footer">Copyrights@2023
+    </div>
+</body>
+</html>

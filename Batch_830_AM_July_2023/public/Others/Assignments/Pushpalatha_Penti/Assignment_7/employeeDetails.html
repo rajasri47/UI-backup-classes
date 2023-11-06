@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Employee details using var </title>
+    </head>
+    <body>
+        <p style="text-align: center; font-style: italic;"> for output, right click and select Inspect and go to console tab  </p>
+        <script>
+            var name, age, department, gender, basicSalary;
+            var name = 'Raj';
+            var age = 25;
+            var department = 'softwareDevelopper';
+            var gender = 'male';
+            var basicSalary = 50000;
+            var emppf, emphra, totalSalary;
+            var emppf = (basicSalary * 12)/100;
+            var emphra = (basicSalary * 24)/100;
+            var totalSalary = emppf + emphra + basicSalary;
+            console.log("Employee pf = " +emppf);
+            console.log("Employee hra = " +emphra);
+            console.log("Employee TotalSalary = " +totalSalary);
+        </script>
+    </body>
+</html>

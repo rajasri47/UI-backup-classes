@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var empdetails = {};
+            empdetails.name = prompt("enter name");
+            empdetails.age = prompt("enter age");
+            empdetails.gender = prompt("enter gender");
+            empdetails.department = prompt("enter department");
+            empdetails.sal = prompt("enter emp sal");
+            empdetails.sal = parseInt(empdetails.sal);
+            empdetails.pf = 12/100*empdetails.sal;
+            empdetails.pf = parseInt(empdetails.pf);
+
+            empdetails.hra = 24/100*empdetails.sal;
+            empdetails.hra = parseInt(empdetails.hra);
+            empdetails.total = empdetails.sal + empdetails.pf + empdetails.hra;
+            if (empdetails.total > 30000)
+            {
+                empdetails.tax = empdetails.total / 15;
+            }
+            else {
+                empdetails.tax = 0;
+            }
+            console.log("name" + empdetails.name);
+            console.log("age " + empdetails.age);
+            console.log("gender" + empdetails.gender);
+            console.log("department" + empdetails.department);
+            console.log("sal " + empdetails.sal);
+            console.log("pf " + empdetails.pf);
+            console.log("hra" + empdetails.hra);
+            console.log("total " + empdetails.total);
+            console.log("tax is" + empdetails.tax);
+        </script>
+    </body>
+</html>

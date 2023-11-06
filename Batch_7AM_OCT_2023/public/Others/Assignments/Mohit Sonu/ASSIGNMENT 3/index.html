@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .header {
+        color: red;
+        text-align: center;
+        border: solid red;
+        padding: 10px;
+      }
+      .block {
+        border: 2px solid blueviolet;
+        text-align: center;
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+      }
+      .col {
+        border-color: rgb(226, 116, 20);
+      }
+      .floatleft {
+        float: left;
+      }
+      .four {
+        float: right;
+      }
+      .five {
+        float: right;
+      }
+      .nextline {
+        clear: both;
+      }
+      .right {
+        float: right;
+      }
+      .footer {
+        color: aqua;
+        text-align: center;
+        border: solid aqua;
+        padding: 10px;
+      }
+    </style>
+
+    <title>float</title>
+  </head>
+  <body>
+    <div class="header">Blocks Rendering</div>
+
+    <div class="block floatleft col">1</div>
+    <div class="block floatleft">2</div>
+    <div class="block floatleft">3</div>
+    <div class="block four right nextline">5</div>
+    <div class="block five right">4</div>
+    <div class="block six nextline">6</div>
+    <div class="block seven">7</div>
+    <div class="block right nextline">8</div>
+    <div class="block right nextline">9</div>
+    <div class="block right nextline">10</div>
+    <div class="block floatleft nextline">11</div>
+    <div class="block floatleft">12</div>
+    <div class="block floatleft">13</div>
+
+    <div class="footer nextline">&copy;copyrights 2023</div>
+  </body>
+</html>

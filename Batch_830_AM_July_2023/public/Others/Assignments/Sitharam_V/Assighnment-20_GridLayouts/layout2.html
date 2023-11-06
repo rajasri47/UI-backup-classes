@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Layouts</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 299px 299px;
+                background-color: darkslategray;
+                
+            }
+            .container div {
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+            }
+            .item1{
+                background-color: rgb(255, 68, 0);
+                grid-column: 1/3;
+            }
+            .item2{
+                background-color: rgb(244, 138, 0);
+                grid-column: 3 ;
+                grid-row: 1/3;
+            }
+            .item3{
+                background-color: rgb(52, 134, 52);
+                
+            }
+            .item4{
+                background-color: rgb(7, 197, 131);
+            
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+            
+            
+        </div>
+    </body>
+</html>

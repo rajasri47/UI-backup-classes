@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Details</title>
+  </head>
+  <body>
+    <script>
+      var book = {
+        bookname: "Let us C",
+        bookprice: 310,
+        discount: 10,
+        Authors: ["Yashavant Kanetkar"],
+        publisher: "BPB Publications",
+        bookActualPrice() {
+          console.log("Price after discount : ₹" + (this.bookprice-(this.bookprice/this.discount)));
+        },
+        bookwriters() {
+          for (let i = 0; i < this.Authors.length; i++) {
+            console.log("Author of this book is : " + this.Authors[i]);
+          }
+          console.log("Publisher of the book is " + this.publisher);
+        },
+        bookDetails() {
+          
+          console.log("Book Name :" + this.bookname);
+          console.log("Publisher" + this.publisher);
+          console.log("Actual Price of Book is : ₹" + this.bookprice);
+          console.log("Discount on this book is : " + this.discount + "%");
+          this.bookActualPrice();
+          this.bookwriters();
+        },
+        
+      };
+      book.bookDetails();
+    </script>
+  </body>
+</html>

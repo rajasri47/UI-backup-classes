@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Displaying  table of a given number
+        </title>
+    </head>
+    <body>
+        <center><h1>go to the console tab</h1></center>
+        <script>
+            var number = prompt("enter a number");
+            number = parseInt(number);
+            var range = prompt('enter the range');
+            range = parseInt(range);
+            for(i = 1 ; i <= range ; i++)
+            {
+                result = (number * i);
+                console.log(number +  "*"  +  i +  '='  +  result);
+            }
+        </script>
+    </body>
+</html>

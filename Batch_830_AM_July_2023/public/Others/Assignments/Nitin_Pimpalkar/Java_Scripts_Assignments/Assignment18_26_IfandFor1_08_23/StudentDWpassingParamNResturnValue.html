@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details using function by passing parameters</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Code in console</h2>
+
+    <script>
+        var readDataFromUser = () => {
+            var studentName, sAge, sGender, m1, m2, m3, total, avg;
+            studentName = prompt("Enter Name of Student ");
+            sAge = prompt("Enter age of student ");
+            sGender = prompt("Enter gender of Student ");
+            m1 = prompt("Enter subject 1 Marks");
+            m1 = parseInt(m1);
+            m2 = prompt("Enter subject 2 Marks");
+            m2 = parseInt(m2);
+            m3 = prompt("Enter subject 3 Marks");
+            m3 = parseInt(m3);
+            total = m1 + m2 + m3;
+            avg = total / 3;
+            displayStudentDetails(studentName, sAge, sGender, total, avg);
+        }
+
+        var displayStudentDetails = (studentName, sAge, sGender, total, avg) => {
+            //On console
+            console.log("Student Details..... ");
+            console.log("Student Name :- " + studentName);
+            console.log("Student age is :- " + sAge);
+            console.log("Student gender :-" + sGender);
+            console.log("Total marks is :- " + total);
+            console.log("Average marks is :- " + avg);
+            var passStatus = getStudentGrade(avg);
+            console.log("student Got " + passStatus);
+
+            //On the Data web Page
+
+            document.write("Student Details..... ");
+            document.write("Student Name :- " + studentName);
+            document.write("Student age is :- " + sAge);
+            document.write("Student gender :-" + sGender);
+            document.write("Total marks is :- " + total);
+            document.write("Average marks is :- " + avg);
+            var passStatus = getStudentGrade(avg);
+            document.write("student Got " + passStatus);
+        }
+
+        var getStudentGrade = (avg) => {
+            var passStatus;
+            if (avg > 40) {
+                passStatus = "Passed in";
+                if (avg >= 90) {
+                    passStatus = "Distinction :)";
+                } else if (avg >= 60) {
+                    passStatus = "First Class :)";
+                } else {
+                    passStatus = "Second Class :)";
+                }
+            } else {
+                passStatus = "Failed :(";
+            }
+            return passStatus;
+        }
+
+        readDataFromUser();
+
+    </script>
+</body>
+
+</html>

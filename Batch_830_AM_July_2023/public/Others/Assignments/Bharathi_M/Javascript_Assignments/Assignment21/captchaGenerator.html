@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Captcha Generator</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+        <style>
+            .captchaBlock {
+                border: 1px solid;
+                width: 100px;
+                font-weight: bold;
+                color: green;
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Generate Capthca" onclick="getCapchaValue()">
+        <div class="captchaBlock">
+            <img src="" alt="" id="captchaImage"/>
+        </div>
+        <div id="captchaText"></div>
+        <script>
+            var getRandomNumber = () => {
+                var randomNumber = Math.random() * 9;
+                randomNumber = Math.floor(randomNumber);
+                return randomNumber;
+            }
+
+            var getRandomNumberBetweenGivenRange = (min, max) => {
+                var randomNumber = Math.floor(Math.random() * (max - min)) + min;
+                return randomNumber;
+                
+            }
+
+            var getRandomUpperCaseChar = () => {
+                var randomNumber = getRandomNumberBetweenGivenRange(65, 90);
+                var randomUpperCaseChar = String.fromCharCode(randomNumber);
+                return randomUpperCaseChar;
+            }
+
+            var getRandomLowerCaseChar = () => {
+                var randomNumber = getRandomNumberBetweenGivenRange(97, 122);
+                var randomLowerCaseChar = String.fromCharCode(randomNumber);
+                return randomLowerCaseChar;
+            }
+
+            var getCapchaValue = () => {
+                var captchaValue = '';
+                captchaValue = getRandomUpperCaseChar() + getRandomUpperCaseChar() + getRandomNumber() + getRandomLowerCaseChar() + getRandomNumber();
+                document.querySelector("#captchaText").innerHTML = captchaValue;
+
+
+                html2canvas(document.getElementById('captchaText'), {
+                    onrendered: function (canvas) {
+                    var screenshot = canvas.toDataURL('image/png');
+                    document.getElementById('captchaImage').setAttribute('src', screenshot);
+                    document.querySelector("#captchaText").innerHTML = '';
+                },   
+            });
+            }  
+        </script>
+    </body>
+</html>

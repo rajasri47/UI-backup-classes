@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 22
+        </title>
+    </head>
+    <body>
+        <h1>
+            Palindrome Number
+        </h1>
+        <script>
+            //can use formula result = (result * 10) + rem
+            var n = prompt("Enter Number: ");
+            n = parseInt(n);
+            var temp = n;
+            var newNum = '';
+            var len = n.toString().length;
+            var rem;
+
+            while (n > 0) {
+                rem = n % 10;
+                rem = rem.toString();
+                newNum += rem;
+                n = n / 10;
+                n = parseInt(n);
+            }
+            
+            if (temp == newNum) {
+                console.log(temp + " is a Palindrome Number");
+            } else {
+                console.log(temp + " is not a Palindrome Number");
+            }
+        </script>
+    </body>
+</html>

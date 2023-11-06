@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+           // looping from 1 to 1000
+            for (let i = 1; i <= 1000; i++) {
+            let isPrime = true;
+            // looping through 2 to square root of i
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j === 0) {
+                isPrime = false;
+                break;
+                }
+            }
+            
+            // if number is greater than 1 and isPrime is true, print it
+            if (i > 1 && isPrime) {
+                
+                console.log(i);
+               
+            }
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details With Json</title>
+</head>
+
+<body>
+    <script>
+        var bookDetails = {
+            Name: "Java",
+            AuthorsList: ["Bharathi", "Chitti"],
+            Price: 200,
+            Discount: "10%",
+            Publisher: "Venky",
+
+            displayBookDetails() {
+                console.log(bookDetails);
+                console.log("Book Name is " + this.Name);
+                console.log("Book Author is " + this.AuthorsList);
+                console.log("Book Price is " + this.Price);
+                console.log("Book ISBN is " + this.Discount);
+                console.log("Book Publisher is " + this.Publisher);
+
+            }
+        }
+        bookDetails.displayBookDetails();
+    </script>
+</body>
+
+</html>

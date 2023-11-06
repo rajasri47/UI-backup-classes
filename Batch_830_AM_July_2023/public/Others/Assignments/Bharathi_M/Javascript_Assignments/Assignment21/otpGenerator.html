@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <style>
+      .otpBlock{
+        border: 1px solid;
+        width: 120px;
+        font-weight: bold;
+        color: blue;
+        text-align: center;
+        margin: 20px auto;
+        padding: 20px;
+        font-size: 20px;
+      }  
+
+    </style>
+</head>
+<body>
+    <input type="button" value="Genarate OTP" onclick="getRandomNumber()">
+    <div class="otpBlock"></div>
+    <script>
+         var maxlength = 9;
+         var otpLength = 5;
+         var otpValue = "";
+        var getRandomNumber = () => {
+            var randomNumber = Math.random() * maxlength;
+            randomNumber = Math.floor(randomNumber);
+            otpValue += randomNumber;
+            if(otpValue.length < otpLength) {
+                getRandomNumber();
+            }
+            else {
+                document.querySelector(".otpBlock").innerText = otpValue;
+                otpValue = '';
+            }
+        }
+    </script> 
+</body>
+</html>

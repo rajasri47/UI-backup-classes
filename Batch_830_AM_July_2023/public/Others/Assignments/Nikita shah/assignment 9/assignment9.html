@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employees Details</h1>
+    <script>
+        var ename = prompt("Enter Employee name:");
+        var eage = prompt("Employee age:");
+        var egender = prompt("Employee's gender:");
+        var ebasicSal = prompt("Employee's basic salary:");
+        ebasicSal = parseInt(ebasicSal);
+        var hrf, pf, totalsalary, annualsal;
+        hrf = 12/100 * ebasicSal;
+        pf = 10/100 * ebasicSal;
+        totalsalary = ebasicSal + hrf + pf;
+        annualsal = 12 * totalsalary;
+
+        console.log("Employee Details");
+        console.log("Employee name:" + ename);
+        console.log("Employee age:" + eage);
+        console.log("Employee's gender:" + egender);
+        console.log("Employee's basic salary:" + ebasicSal);
+        console.log("hrf:" + hrf);
+        console.log("pf:" + pf);
+        console.log("totalsalary:" + totalsalary);
+        console.log("Employee Annual salary:" + annualsal);
+
+        if(egender == 'Male'){
+            if(annualsal >= 300000){
+                console.log("Your annual salary is more than 300000 so you have to pay 15% of your annual salary as tax.");
+                var tax = 15/100 * annualsal;
+                console.log("tax paid by emp:" + tax);
+                var ttsal = annualsal - tax;
+                console.log("salary after deduction of tax:" + ttsal);
+            }
+            else if(annualsal<300000 && annualsal>200000){
+                console.log("Your annual salary is more than 200000 and less than 300000 so you have to pay 10% of your annual salary as tax.");
+                var tax = 10/100 * annualsal;
+                console.log("tax paid by emp:" + tax);
+                var ttsal = annualsal - tax;
+                console.log("salary after deduction of tax:" + ttsal);
+            }
+            else if(annualsal<200000 && annualsal>100000){
+                console.log("Your annual salary is more than 100000 and less than 200000 so you have to pay 5% of your annual salary as tax.");
+                var tax = 5/100 * annualsal;
+                console.log("tax paid by emp:" + tax);
+                var ttsal = annualsal - tax;
+                console.log("salary after deduction of tax:" + ttsal);
+            }
+            else {
+                console.log("As your annualsal is less than 100000 so you no need to pay taxes");
+            }
+
+        }
+        else if (egender == 'Female'){
+            if(annualsal >= 300000){
+                console.log("Your annual salary is more than 300000 so you have to pay 10 % of your annual salary as tax.");
+                var tax = 10/100 * annualsal;
+                console.log("tax paid by emp:" + tax);
+                var ttsal = annualsal - tax;
+                console.log("salary after deduction of tax:" + ttsal);
+            }
+            else if(annualsal<300000 && annualsal>200000){
+                console.log("Your annual salary is more than 200000 and less than 300000 so you have to pay 5% of your annual salary as tax.");
+                var tax = 5/100 * annualsal;
+                console.log("tax paid by emp:" + tax);
+                var ttsal = annualsal - tax;
+                console.log("salary after deduction of tax:" + ttsal);
+            }
+            
+            else {
+                console.log("As your annualsal is less than 200000 so you no need to pay taxes");
+            }
+        }
+        
+           
+        
+        
+
+    </script>
+</body>
+</html>

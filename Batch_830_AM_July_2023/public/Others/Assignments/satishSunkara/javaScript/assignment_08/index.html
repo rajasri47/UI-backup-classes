@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body style="margin: 10px auto;">
+        <h3>After enter your details </h3>
+        <p>Go to " INPECT "</p>
+        <script>
+            var userName = prompt('Enter student name');
+            var age = prompt('enter age ');
+            var gender = prompt('Enter gender ');
+
+            var m1 = prompt('Enter sub-1 marks');
+            var m2 = prompt('Enter sub-2 marks');
+            var m3 = prompt('Enter sub-3 marks');
+            var m4 = prompt('Enter sub-4 marks');
+            
+            m1 = parseInt(m1);
+            m2 = parseInt(m2);
+            m3 = parseInt(m3);
+            m4 = parseInt(m4);
+
+            var totalM = m1 + m2 + m3 + m4;
+            var avg = totalM/5;
+
+            console.log('Student name is ' + userName);
+            console.log('Student age ' + age);
+            console.log('Student gender ' + gender);
+            console.log('Total marks ' + totalM);
+            console.log('Total avg ' + avg);
+
+        </script>
+        
+    </body>
+</html>

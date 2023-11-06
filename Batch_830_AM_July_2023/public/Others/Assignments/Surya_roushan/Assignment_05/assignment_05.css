@@ -1,0 +1,126 @@
+.header, .footer{
+    height: 25px;
+    width: 1300px;
+    border: 01px solid black;
+    position: relative;
+    left: 2%;
+    margin: 10px;
+    text-align:center;
+
+}
+
+.grandparent{
+    height: 1000px;
+    width: 1300px;
+    border: 01px solid black;
+    position: relative;
+    left: 2%;
+    margin: 10px;
+}
+
+
+.block{
+    width: 80px;
+    height: 80px;
+    border: solid black 01px;
+    margin: 05px;
+}
+
+.block1{
+    background-color: silver;
+    
+}
+
+.block2{
+    background-color: rgb(238, 206, 63);
+    position: absolute;
+    left: 02%;
+    top: 03%;
+}
+
+.block3{
+    background-color: green;
+    position: absolute;
+    left: 88%;
+    top: 0%;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.block4{
+    background-color: red;
+    position: absolute;
+    left: 86%;
+    top: 03%;
+    
+}
+
+.block5{
+    background-color: violet;
+    position: absolute;
+    left: 43%;
+    top: 30%;
+}
+
+.block6{
+    background-color: yellow;
+    position: absolute;
+    left: 53%;
+    top: 30%;
+}
+
+.block7{
+    background-color: greenyellow;
+    position: absolute;
+    left: 48%;
+    top: 37%;
+    z-index: 50;
+    opacity: .50;
+
+    
+}
+
+.block8{
+    background-color: orange;
+    position: absolute;
+    left: 43%;
+    top: 43%;
+}
+
+.block9{
+    background-color: pink;
+    position: absolute;
+    left: 53%;
+    top: 43%;
+}
+
+
+
+.block10{
+    background-color: darkgreen;
+    position: absolute;
+    left: 0%;
+    top: 69%;
+}
+
+.block11{
+    background-color: skyblue;
+    position: absolute;
+    left: 02%;
+    top: 65%;
+    opacity: 0.5;
+}
+
+.block12{
+    background-color: purple;
+    position: absolute;
+    top: 65%;
+    left: 85%;
+}
+
+.block13{
+    background-color: goldenrod;
+    position: absolute;
+    top: 69%;
+    left: 88%;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container">
+            
+        </div>
+        <script>
+            var tagname = prompt("enter the tagname which u wanted")
+            var msg = prompt("ener msg");
+            var spantag = document.createElement(tagname);
+            spantag.innerText = msg;
+            spantag.setAttribute("id", "test");
+            spantag.setAttribute("class", 'sample');
+            spantag.style.color = 'green';
+            console.log(spantag);
+
+            document.getElementById("container").append(spantag);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Iterating over json object
+        </title>
+    </head>
+    <body>
+        <script>
+            var contactDetails = {
+                name: 'Raj',
+                age: 20,
+                lastname: 'Hero',
+                gender: 'male',
+                contactDetails: {
+                    office: '040-234234',
+                    prsnl: [985345, 98234234,23423423]
+                },
+                email: {
+                    office: 'abc@compnay.com',
+                    prsnl: ['abc@gmail.com', 'pqr@htomail.com']
+                },
+                address: {
+                    office: {
+                        countryname: 'India',
+                        sateInfo: 'TS',
+                        buildingNo: '56A'
+                    },
+                    prsnl: {
+                        hno: '123A',
+                        stateInfo: {
+                            name: 'TS',
+                            code: 'TS1'
+                        }
+                    }
+                },
+                relation: 'Friend',
+                dob: {
+                    date: '09',
+                    month: '01'
+                },
+                socialId: {
+                    fb: 'abc34',
+                    twitter: 'test'
+                }
+            };
+
+            for (var temp in contactDetails) {
+                console.log(temp);
+                console.log(contactDetails[temp])
+            }
+        </script>
+    </body>
+</html>

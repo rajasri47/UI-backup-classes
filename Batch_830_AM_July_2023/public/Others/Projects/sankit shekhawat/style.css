@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  
+}
+#navbar{
+background-color: rgb(48, 40, 40);
+height: 60px;
+color: aliceblue;
+
+position: sticky;
+}
+a{
+margin-right:200px ;
+color: white;
+text-decoration: none;
+}
+button{
+background-color: yellow;
+}
+
+#logo{
+
+color: yellow;
+font-size: 25px;
+}
+
+
+html,body{
+    height: 100%;
+    margin: 0%;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400px;
+    line-height:1.8em;
+    color: #666;
+   
+
+}
+#liname{
+    font-size: medium;
+    color: aliceblue;
+}
+header{
+    color: white;
+   
+}
+li{
+    list-style-type: none;
+}
+input{
+    margin: 10px;
+}
+.pimg1,.pimg2,.pimg3{
+
+
+
+position: relative;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.pimg1{
+    background-image:url("pexels-todd-trapani-1198817.jpg");
+    min-height: 100%;
+  
+}
+.pimg2{
+    background-image:url("118.jpg");
+    min-height:400px;
+}
+
+.pimg3{
+    background-image:url("R3.jpg");
+    min-height: 400px;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+    border: 1px soild;
+    letter-spacing: 8px;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+     text-transform: uppercase;
+}
+.textbg{
+    background-color: #666;
+    
+}
+.section{
+    padding:50px 80px;
+    text-align: center;
+}
+.section-light{
+    background-color: #666;
+    color: #ddd ;
+}
+.section-dark{
+    opacity: 1;
+    background-color: gray;
+    color: #ddd;
+    
+}
+
+
+
+
+

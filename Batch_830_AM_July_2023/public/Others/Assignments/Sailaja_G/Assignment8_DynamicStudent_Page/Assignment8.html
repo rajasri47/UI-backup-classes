@@ -1,0 +1,68 @@
+<html> 
+    <head>
+        <title>Student Marklist</title>
+        <style>
+            div {
+                text-align: center;
+                color: rgb(75, 42, 165);
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Dynamic Method</div>
+        <div>To view the Student Details </div>
+        <div>Mark And Percentage</div>
+        <div>Go To Inspect</div>
+        <div>Go To Console</div>
+        <script>
+            var name = prompt("Enter Student Name");
+            var age = prompt("Enter Student Age");
+            var clas = prompt("Enter Class");
+            var english = prompt("Enter English Marks");
+            var telugu = prompt("Enter Telugu Marks");           
+            var hindi = prompt("Enter Hindi Marks");           
+            var maths = prompt("Enter Maths Marks");
+            var science = prompt("Enter Science Marks");          
+            var social = prompt("Enter Social Marks");
+            
+
+            english = parseInt(english);
+            telugu = parseInt(telugu);
+            hindi = parseInt(hindi);
+            maths = parseInt(maths);
+            science = parseInt(science);
+            social = parseInt(social);
+
+            var total = english+telugu+hindi+maths+science+social;
+           // total= parseInt(total);
+
+            var avg = total/6;
+           // avg= parseInt(avg);
+            
+
+            console.log("Student Name is "  + name);
+            console.log("Student Age is " + age);
+            console.log("Student Class is " + clas);
+            console.log("English Marks is " + english);
+            console.log("Telugu Marks is " + telugu);
+            console.log("Hindi Marks is " + hindi);
+            console.log("Maths Marks is " + maths);
+            console.log("Science Marks is " + science);
+            console.log("Social Marks is " + social );
+            console.log("Total is " + total);
+            console.log("Percentage is " + avg);
+            if(avg<40){
+                console.log("Student is Failed");
+            }
+            else if(avg<90){
+                console.log("Student is Passed");
+            }
+            else {
+                console.log("Student Passed in Distinction");
+            }
+
+        </script>
+
+    </body>
+</html>

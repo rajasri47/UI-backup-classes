@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Demonstarate prime numbers</title>
+    </head>
+    <body>
+        <h3>To Find All Prime numbers.......!</h3>
+        <script>
+            var readData = () => {
+            var data=[];
+            var num=parseInt(prompt("enter a value"));
+            for(var i=0;i<num;i++){
+                data[i]=parseInt(prompt("enter a value"));
+                } 
+                call(data,num) ;
+            }  
+            var call = (data,num) => {
+                var sum=0;
+            for( var i=0;i<num;i++){
+                var n=0;
+                var temp = data[i] ;
+            while(data[i] != 0){
+                    var rem =data[i] % 10;
+                    data[i]=parseInt(data[i] / 10);
+                    n= (n * 10) + rem;
+                }if(n==temp){
+                    console.log( n + " is an palindrome number");
+                    sum++;
+                }
+            }   
+            
+        }
+        readData();
+          
+        </script>
+    </body>
+</html>

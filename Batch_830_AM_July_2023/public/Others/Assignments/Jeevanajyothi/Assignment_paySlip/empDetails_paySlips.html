@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payslips</title>
+    <link rel="stylesheet" href="app2.css">
+</head>
+<body>
+    <h3>Employee Details</h3>
+    <ul>
+        <li>
+            <input type="text" placeholder="Enter Emp Name" id="name">
+        </li>
+        <li>
+            <input type="text" placeholder="Enter Age" id="age">
+        </li>
+        <li>
+            gender:
+            <input type="radio" value="Male" name="gender" checked>Male
+            <input type="radio" value="Female" name="gender">Female
+        </li>
+        <li>
+            department:
+            <select name="" id="department">
+                <option value="it">IT</option>
+                <option value="froentend">Froentend</option>
+                <option value="backend">Backend</option>
+                <option value="analyst">Analyst</option>
+                <option value="designer">Designer</option>
+            </select>
+        </li>
+        <li>
+            salary:
+            <input type="text" placeholder="Enter Salary" id="salary">
+        </li>
+        <li>
+            <input type="button" value="generate payslip" onclick="empdetails()">
+        </li>
+    </ul>
+    <ul class="hide">
+        <li>employee payslip</li>
+        <li>Bank Of India</li>
+        <li>
+            employee name : <span id = "dname"></span>
+        </li>
+        <li>
+            employee age : <span id = "dage"></span>
+        </li>
+        <li>
+            gender : <span id="dgender"></span>
+        </li>
+        <li>
+            department: <span id="ddepartment"></span>
+        </li>
+        <li>
+            salary: <span id="dsal"></span>
+        </li>
+        <li>
+            pf : <span id="dpf"></span>
+        </li>
+        <li>
+            hra : <span id="dhra"></span>
+        </li>
+        <li>
+            total sal: <span id="dtotalsal"></span>
+        </li>
+        <li>
+            tax: <span id="dtax"></span>
+        </li>
+    </ul>
+    <script src="app2.js"></script>
+    
+</body>
+</html>

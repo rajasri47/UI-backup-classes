@@ -1,0 +1,95 @@
+Reading data from user
+
+    through  - Prompt() method
+
+-----------------------
+
+Variable Hoisiting
+
+
+---
+C clanguage 
+
+int a, b;
+
+... 
+..
+... 
+... 
+int c; // ERROR
+...
+
+if its Javascript
+
+var a, b;
+
+... 
+..
+... 
+... 
+......
+var c = 90; // It works
+....
+-----------------
+
+variable Hoisiting in js 
+
+    INPUT code:
+
+        var a = 90;
+        ...
+         ...
+        var c;
+        ....
+        ..
+        var z = 99;
+        ...
+        c= 100;
+        var abc = "RAJ";
+        ....
+
+
+    OUTPUT:
+    
+
+        var a
+        var c 
+        var z 
+        var abc;
+        ...
+        a = 90
+        ...
+        z = 99;
+        ....
+        c  =100
+        ... 
+        abc = "RAJ"
+
+
+-------------------
+    
+    Compiler
+    Interpreter 
+---------------
+
+CONTROL Structures:
+
+
+    Conditional CS
+        if 
+        if else 
+        else if 
+        nested if 
+        nested if else 
+
+    Looping CS 
+        for 
+        while 
+        do while 
+        for in 
+        for of 
+        for each
+
+    Case CS 
+        Switch case
+    

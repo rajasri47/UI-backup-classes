@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+             div {
+                text-align: center;
+                font-size: large;
+                color: blue;
+            }
+        </style>
+    </head>
+        <body>
+            <div>To View The</div>
+            <div>Sum Of 1 To 50 Even Numbers</div>
+            <div>And</div>
+            <div>Sum Of 1 To 50 Odd Numbers</div>
+            <div>Answer Be Displayed In Console</div>
+            <script>
+                var evenNsum=0;oddNsum=0;
+                for(var a=1;a<=50;a++){
+                    var remainder = a%2;
+                    if(remainder == 0){
+                    evenNsum=evenNsum+a;
+                    }  
+                    else {
+                        oddNsum=oddNsum+a;
+                    }  
+                }
+                console.log("Sum of 1 to 50 even numbers is " + evenNsum);
+                
+                console.log("Sum of 1 to 50 odd numbers is " + oddNsum);
+
+
+                /*var remainder = 1;
+                for(var a=1;a<=1000;a++){
+                    remainder=a%2;
+                    if(remainder==1){
+                        console.log(a+" is odd number")
+                    }
+                 }*/
+            </script>
+        </body>
+</html>

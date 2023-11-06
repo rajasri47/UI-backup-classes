@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            New Input elements
+        </title>
+        <style>
+            ul {
+                width: 500px;
+                margin: 20px auto;
+                border: 1px solid;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Name: <input type="text">
+            </li>
+            <li>
+                Age: <input type="number" min="10" max="21">
+            </li>
+            <li>
+                Fav color:
+                <input type="color">
+            </li>
+            <li>
+                Price range:
+                <input id="priceRange" type="range" min="1000" max="10000" onchange="setValue()" value="9000">
+                <span id="priceValue"></span>
+            </li>
+            <li>
+                DOB: <input type="date">
+                intervie Date and time: <input type="datetime-local">
+                Time : <input type="time">
+            </li>
+            <li>
+                Phone id:
+                <input type="tel">
+            </li>
+            <li>
+                Email id:
+                <input type="email">
+            </li>
+            <li>
+                
+                <input type="button" value="Click">
+                <button class="test" id="sample" onclick="test()">
+                    <b>hello</b>
+                    Click
+
+                </button>
+            </li>
+        </ul>
+        <script>
+            var setValue = () => {
+                var price = document.querySelector("#priceRange").value;
+                document.querySelector("#priceValue").innerText = price;
+                console.log(price)
+            }
+        </script>
+    </body>
+</html>

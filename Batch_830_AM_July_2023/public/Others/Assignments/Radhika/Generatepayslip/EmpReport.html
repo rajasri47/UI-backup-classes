@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Employee report...!</title>
+    <link rel="stylesheet" href="app.css">
+   
+    <script src="app.js"></script>      
+</head>
+    <body>
+        <h3 class="Title">Employee PaySlip Generator</h3>
+        <div class="container">
+            <ul>
+                <li>
+                    <input type="text" placeholder="EmployeeName" id="ename">
+                </li>
+                <li>
+                
+                    <input type="number" placeholder="EmployeeAge" id="eage">
+                </li>
+                <li>
+                    Gender:
+                    <input type="radio" name="gender" value="Male" checked>Male
+                    <input type="radio" name="gender" value="Female">Female
+                </li>
+                <li>
+                    Dept:
+                    <select id="eDept">
+                        <option value="HR" selected>HR</option>
+                        <option value="Manager">Manager</option>
+                        <option value="client">client</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="General Manager">General Manager</option>
+                        <option value="Asst Manager">Asst Manager</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="number" placeholder="Basicsal" id="esal">
+                </li>
+                <li>
+                    <div>
+                        <input type="button" value="Generate Payslip" id="generatePayslip" onclick="generatePayslip()">
+                        <input type="button" value="Reset" id="resetFields" onclick="clearFields()">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="resultContainer">
+            <ul>
+                <li>
+                    Employee Name: <span id="rName"></span>
+                </li>
+                <li>
+                    Employee Age: <span id="rAge"></span>
+                </li>
+                <li>
+                    Employee Gender: <span id="rGender"></span>
+                </li>
+                <li>
+                    Department : <span id="rDept"></span>
+                </li>
+                <li>
+                    Basic Salary: <span id="rBasicSal"></span>
+                </li>
+                <li>
+                    PF : <span id="rPF"></span>
+                </li>
+                <li>
+                    HRA : <span id="rHRA"></span>
+                </li>
+                <li>
+                    Total Tax : <span id="rTotalTax"></span>
+                </li>
+                <li>
+                    Tax Slab : <span id="rTaxSlab"></span><span>%</span>
+                </li>
+                <li>
+                    Total Salary After Tax : <span id="rSalAftTax"></span>
+                </li>
+            </ul>
+        </div>
+    </body>
+
+</html>

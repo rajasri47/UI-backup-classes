@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3> different time formats </h3>
+        <script>
+        
+        var userdata = prompt("please choose the format you want \n 1.11/08/2023 \n 2.aug/11/2023 \n 3.friday,august11th2023 9h:11min:2s\n 4.friday,august11th2023\n 5.august,11th 2023\n 6.fri,11th Aug 2023,\n 7.11/aug/2023 \n 8.11-08-2023\n 9.11-08-2023 09:34:4");
+        var currentDate = new Date();
+        var monthNames = ['January','February','March','April','May','June','July','August','September','Octobr','November','December']
+        var monNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        var dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Sunday'];
+        var Dnames = ['sun','mon','tues','wed','thur','fri','sat'];
+
+        switch(userdata){
+            case '1':
+                var userdata1 =  currentDate.getMonth() + '/' +   monthNames[currentDate.getDate()]+'/'+currentDate.getFullYear();
+                console.log(userdata1);
+                break;
+
+            case '2':
+                var userdata2 = monNames[currentDate.getMonth()] + '/' +currentDate.getDate() + '/' + currentDate.getFullYear();
+                console.log(userdata2);
+                break;
+            
+            case '4':
+               var userdata3 = dayNames[currentDate.getDay()] + ',' + monthNames[currentDate.getMonth()] +currentDate.getFullYear();
+               console.log(userdata3);
+               break;
+            case '3':
+               var userdata4 = dayNames[currentDate.getDay()] + ',' + monthNames[currentDate.getMonth()] +currentDate.getFullYear() + currentDate.getHours() + 'h'+ currentDate.getMinutes() + 'min' + currentDate.getSeconds() +'s';
+               console.log(userdata4);
+               break;
+            case '5':
+                var userdata5 = dayNames[currentDate.getDay()] + ',' + monthNames[currentDate.getMonth()] +currentDate.getFullYear();
+        
+                console.log(userdata5);
+                break;
+            case '6':
+                var userdata6 = Dnames[currentDate.getDay()] + ',' + currentDate.getDate()  + 'th' + monNames[currentDate.getMonth()] + currentDate.getFullYear();
+
+                console.log(userdata6);
+                break; 
+            case '7':
+                var userdata7 = currentDate.getDate() + '/' + monNames[currentDate.getMonth()] +'/' +currentDate.getFullYear();
+
+                console.log(userdata7);
+                break;
+            case '8':
+                var userdata8 = currentDate.getDate() + '-' + currentDate.getMonth() + '-' + currentDate.getFullYear();
+
+                console.log(userdata8);
+                break;
+            case '9':
+                var userdata9 = currentDate.getDate()+'-' +currentDate.getMonth()+ '-' + currentDate.getFullYear() + currentDate.getHours() + ':'+currentDate.getMinutes() + ':' + currentDate.getSeconds();
+                console.log(userdata9);
+
+              break;
+                default:
+                alert('enter correct input');
+                break;
+        }
+        
+      
+       </script>
+    </body>
+    </html>

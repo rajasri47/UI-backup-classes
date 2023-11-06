@@ -1,0 +1,32 @@
+<!--
+    write a program  to work with a employee details using json object
+-->
+<html>
+    <head>
+        <title>Employee details using JSON Object</title>
+    </head>
+    <body>
+        <script>
+            var EmployeeDetails = {
+                name :'saketh',
+                age :20,
+                gender :'male',
+                salary :100000,
+                
+            };
+            var pf = (EmployeeDetails.salary * 12)/100
+            var hrf = (EmployeeDetails.salary * 24)/100
+            var total =EmployeeDetails.salary + pf + hrf
+            console.log(" Name = " + EmployeeDetails.name);
+            console.log(" Age = " + EmployeeDetails.age);
+            console.log(" Gender = " + EmployeeDetails.gender);
+            console.log(" Salary = " + total);
+        </script>
+    </body>
+</html>
+
+<!--
+    pf : (salary * 12)/100,
+    hrf : (salary * 24)/100,
+    total :salary + pf + hrf
+-->

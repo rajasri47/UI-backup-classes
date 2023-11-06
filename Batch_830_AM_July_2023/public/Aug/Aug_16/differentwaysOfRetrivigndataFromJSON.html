@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrting - differentw ways of retriving data from json object</title>
+    </head>
+    <body>
+        <script>
+            var empData = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+                contactNo: [2423423, 234234,234234],
+                bsal: 234,
+                address: {
+                    office: {
+                        buildingno: '5A'
+                    }
+                }
+            }
+
+            // empData['name'] || emoData.name 
+            // var tempkey = 'name'
+            // empData['tempkey'] - Wrong
+            // empData[tempkey] -> empData['name']
+
+            console.log(empData)
+            // console.log(empData.gender)
+            console.log(empData['gender']);
+
+
+            // console.log(empData.contactNo[2])
+            console.log(empData['contactNo'][2])
+            // console.log(empData.address.office.buildingno)
+            console.log(empData['address']['office']['buildingno'])
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .mainContainer {
+                background-color: #fff;
+                display: flex; /* inline, block , table, inline-block, none flex grid*/
+                /* flex-direction: row;
+                flex-wrap: wrap; nowrap, wrap, wrap-reverse */
+                /*flex-flow: row wrap;*/
+                height: 500px;
+                background-color: yellowgreen;
+                /* justify-content: space-between; */
+                /* align-items: center; */
+                align-content: space-between;
+            }
+            .mainContainer div {
+                border: 1px solid blue;
+                margin: 5px;
+                padding: 10px;
+                text-align: center;
+                width: 150px;
+                height: 100px;
+                background-color: yellow;
+                
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div style="order: 4;">Item 1</div>
+            <div style="order: 3;flex-shrink: 2;flex-basis: 200px;">Item 2</div>
+            <div style="order: 2;">Item 3</div>
+            <div style="order: 1;">Item 4</div>
+
+            
+           
+        </div>
+    </body>
+</html>

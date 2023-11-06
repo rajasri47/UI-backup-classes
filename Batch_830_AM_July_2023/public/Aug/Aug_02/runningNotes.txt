@@ -1,0 +1,39 @@
+Looping
+
+    while 
+
+    Syntax:
+
+        while(<signle / multiple conditions>) {
+
+        }
+
+    ----------------
+
+    for (intialization ; condition check ; inc / dec ) {
+
+    }
+
+    ---------------------
+
+    var plateoffood = .... ;
+
+    for (var i = 1; plateoffood != empty; i++)
+    {
+        take the spoon, lift the food 
+        put in mouth
+        chew it 
+        if (i == 5) {
+            // take some water 
+        }
+        if (i == 10) {
+            have a small walk
+        }
+    }
+
+    
+    while (plateoffood != empty) {
+        take the spoon, lift the food 
+        put in mouth
+        chew it 
+    }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tax calculation by gender</title>
+    </head>
+    <body>
+        <h1>Page shows the Total salary of employe by paying tax..</h1>
+        <script>
+            alert("Enter details carefully..")
+            var name = prompt("enter name of employe");
+            var age = prompt("enter age");
+            var gender = prompt("enter gender");
+            var basicSalary = prompt("enter basic salary");
+            basicSalary = parseInt(basicSalary);
+
+            var pf = (basicSalary * 12) / 100;
+            var hra = (basicSalary * 24) /100;
+            var total = basicSalary + pf + hra;
+
+            if(gender == "male" || gender == "Male" || gender == "m" || gender == "M" )
+            {
+                if(total >= 300000)
+                {
+                    var tax = (total * 15) / 100;
+                    total = total - tax;
+                    console.log("Name:  " +name);
+                    console.log("Gender:  " +gender);
+                    console.log("Age:  " +age);
+                    console.log("Basic Salary of Employe is:  " +basicSalary);
+                    console.log("tax of male employee is  " +tax);
+                    console.log("total salary of male employee afetr paying tax is  " +total);
+                }
+                else if(total >= 200000)
+                {
+                    var tax = (total * 10) / 100;
+                    total = total - tax;
+                    console.log("Name:  " +name);
+                    console.log("Gender:  " +gender);
+                    console.log("Age:  " +age);
+                    console.log("Basic Salary of Employe is:  " +basicSalary);
+                    console.log("tax of male employee is  " +tax);
+                    console.log("total salary of male employee afetr paying tax is  " +total);
+                }
+                else if(total >= 100000)
+                {
+                    var tax = (total * 5) / 100;
+                    total = total - tax;
+                    console.log("Name:  " +name);
+                    console.log("Gender:  " +gender);
+                    console.log("Age:  " +age);
+                    console.log("Basic Salary of Employe is:  " +basicSalary);
+                    console.log("tax of male employee is  0");
+                    console.log("total salary of male employee afetr paying tax is  " +total);
+                }
+                else
+                {
+                    console.log("Enter correct details..");
+                }
+            }
+            else if(gender == "female" || gender == "Female" || gender == "f" ||gender == "F")
+            {
+                if(total >= 300000)
+                {
+                    var tax = (total * 10) / 100;
+                    total = total - tax;
+                    console.log("Name:  " +name);
+                    console.log("Gender:  " +gender);
+                    console.log("Age:  " +age);
+                    console.log("Basic Salary of Employe is:  " +basicSalary);
+                    console.log("tax of female employee is  " +tax);
+                    console.log("total salary of female employee afetr paying tax is  " +total);
+                }
+                else if(total >=200000)
+                {
+                    var tax = (total * 5) / 100;
+                    total = total - tax;
+                    console.log("Name:  " +name);
+                    console.log("Gender:  " +gender);
+                    console.log("Age:  " +age);
+                    console.log("Basic Salary of Employe is:  " +basicSalary);
+                    console.log("tax of female employee is  " +tax);
+                    console.log("total salary of female employee afetr paying tax is  " +total);
+                }
+                else if(total >= 100000)
+                {
+                    console.log("Name:  " +name);
+                    console.log("Gender:  " +gender);
+                    console.log("Age:  " +age);
+                    console.log("Basic Salary of Employe is:  " +basicSalary);
+                    console.log("tax of female employee is  " +tax);
+                    console.log("total salary of female employee afetr paying tax is  " +total);
+                }
+                else
+                {
+                    console.log("Enter correct details..");
+                }
+            }
+            else
+            {
+                console.log("Enter correct details..");
+            }
+        </script>
+    </body>
+</html>

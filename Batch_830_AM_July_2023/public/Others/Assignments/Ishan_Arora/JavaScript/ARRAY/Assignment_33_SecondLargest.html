@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 33
+        </title>
+    </head>
+    <body>
+        <h1>
+            Second Largest Number
+        </h1>
+        <script>
+            var takingInput = () => {
+                var lengthOfArray = prompt("Enter the number of elements: ");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0; i < lengthOfArray; i++) {
+                    a[i] = prompt("Enter " + i + " Value: ");
+                    a[i] = parseInt(a[i]);
+                }
+                SecondLargest(a);
+            }
+
+            var SecondLargest = (a) => {
+                var len = a.length;
+                var max = a[0];
+                var second = 0;
+                for (var i = 1; i < len; i++) {
+                    if (max < a[i]) {
+                        if (second < max) {
+                            second = max;
+                        }
+                        max = a[i];
+                    } else if (second < a[i] && a[i] != max) {
+                        second = a[i];
+                    }
+                }
+                console.log(a);
+                console.log("Second Largest Number in the Array is " + second);
+            }
+
+            takingInput();
+        </script>
+    </body>
+</html>

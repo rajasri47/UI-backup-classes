@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating objects with both properties and behaviours
+        </title>
+    </head>
+    <body>
+        <script>
+
+            // this operator/keyword
+          var empdata = {
+            empname :'Teena',
+            displayempdetails() {
+                console.log(this.empname)
+            }
+          }
+           
+            var sDetails = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+                marks: [55, 77, 88, 90],
+                total: 0,
+                readStudentData() {
+                    
+                },
+                getTotalAndAvg() {
+                    sDetails.total = 0;
+                    for (var i = 0 ; i < this.marks.length; i++) {
+                        this.total += this.marks[i];
+                    }
+                    this.avg = this.total/sDetails.marks.length;
+                },
+                getGrade() {
+                    this.getTotalAndAvg();
+                    this.grade = '';
+                    if (sDetails.avg >= 40) {
+                        this.grade = 'You passed';
+                    } else {
+                        this.grade = "You have a surprise";
+                    }
+                },
+                dispalyDetails() {
+                    this.getGrade();
+                    console.log("Student details");
+                    console.log("Name is " + this.name);
+                    console.log("Geder is " + this.gender);
+                    console.log("Total is " + sDetails.total);
+                    console.log("Avg is " + this.avg);
+                    console.log("Grade is " + this.grade);
+                }
+            };
+
+            sDetails.dispalyDetails();
+         
+        </script>
+    </body>
+</html>

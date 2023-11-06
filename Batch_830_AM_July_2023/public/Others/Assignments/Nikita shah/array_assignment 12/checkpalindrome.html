@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var data = [11,23,34,323,121,435,654,456,767,787,909,43,54,76,870];
+        for(var i= 0; i<data.length; i++){
+            var temp = data[i];
+            var rev =0;
+
+            while(temp>0){
+                rev = (rev*10)+ (temp%10);
+                temp = parseInt(temp/10);
+            }
+            if(rev ==data[i]){
+                console.log(data[i] +":palindrom no.")
+            }  
+        }
+       
+    </script>
+</body>
+</html>

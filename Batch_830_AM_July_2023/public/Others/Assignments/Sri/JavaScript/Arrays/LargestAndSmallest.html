@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> largest and smallest value of array </h3>
+    <script>
+        var data = [];
+        var size = prompt( " enter the size ");
+        size = parseInt(size);
+        var max = 0;
+        var min = 0;
+        for (var i = 0; i < size; i++){
+            data[i] = prompt(" enter the value" + i);
+            data[i] = parseInt(data[i]);
+            if( data[i] > max){
+                max = data[i];                  
+            }
+           
+            }
+            console.log(data);
+            console.log("Largest value is"+ max);
+            min = data[0];
+            for (var i = 0; i < size; i++){
+            if( data[i] < min){
+                min = data[i];                  
+            }
+           
+            }
+            console.log("smallest value is"+ min);
+
+
+            
+        
+        
+    </script>
+    
+</body>
+</html>

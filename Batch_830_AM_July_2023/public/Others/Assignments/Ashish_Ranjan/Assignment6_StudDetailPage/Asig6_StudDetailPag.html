@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentDetailsPage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        h2{
+            text-align: center;
+            border: 1px solid;
+            height: 35px;
+            margin: 5px;
+            padding: 5px ;
+            border-radius: 5px;
+            background-color: rgba(215, 178, 162, 0.904);
+        }
+
+        .container{
+            border: 1px solid;
+            height: 88vh;
+            width:100%;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            background: rgb(205, 199, 199);
+
+        }
+       
+        #mark{
+            color: red;
+
+        }
+
+        li{
+            margin-left: 20px;
+            list-style-type:none;
+            padding: 20px 30px;
+        }
+
+        span{
+            position: inherit;
+           
+        }
+
+        .border{
+            border: 1px solid;
+        }
+
+       .describe{
+         height: 20px;
+         width: 2px;
+         margin-left: 200px;
+
+        }
+
+        .line{
+        border: 1px solid;
+        width: 100%;
+        }
+
+        legend{
+            border: 1px solid;
+            border-radius: 6px;
+            margin: 10px;
+            padding: 5px;
+
+        }
+
+        .firstindex{
+            margin: 0px 30px 20px 30px;
+            padding: 5px;
+            float: right;
+            position: relative;
+        }
+
+        .secindex{
+            margin: 0px 30px 20px 30px;
+            padding: 5px;
+            float: right;
+            position: relative; 
+        }
+
+        .thirdindex{
+            margin: 0px 30px 20px 30px;
+            padding: 5px;
+            position: relative;
+        }
+        button{
+            position:relative;
+            margin-left: 15%;
+            margin-bottom: 15px;
+            padding: 5px;
+                  
+        }
+        button:hover{
+            background: rgb(203, 194, 194);
+        }
+        
+
+        
+        
+    </style>
+
+
+</head>
+<body>
+
+    <h2>Students Registration Form</h2>
+
+    <form action="http:www.sample.com" method="get" class="container">
+
+        <!-- -------------------------USer Details-------------------------------------- -->
+        <fieldset>
+            <legend>User Details</legend>
+    
+
+        <li>
+            <label for="fname" >
+                Name 
+                <span id="mark">*</span>
+                <input type="text" name="fname" required >  
+            </label>
+        </li>
+
+        <li  class="firstindex">
+            <label for="address">
+                Address 
+            </label>
+            <div>
+            <textarea name="address" cols="30" rows="5"></textarea>
+            </div>
+        </li>
+
+        <li>
+            <label for="age">
+                Age 
+                <span id="mark">*</span>
+                <input type="text" name="age" required>
+            </label>
+        </li>
+
+        <li>
+            Gender
+            <span id="mark">*</span >
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female" >Female
+        </li>
+
+        
+    </fieldset>
+
+        <!-- ------------------Education Details Section------------------------------- -->
+
+        <fieldset>
+            <legend>Education Details</legend>
+
+        
+            <li >Qualification 
+                <span id="mark">*</span>
+                M.C.A<input type="checkbox" name="lng_eng" >
+                B.Tech<input type="checkbox" name="lng_eng" >
+                B.Sc<input type="checkbox" name="lng_eng" >
+                M.Tech<input type="checkbox" name="lng_eng" >
+
+
+                <div  class="secindex">
+                <span id="course">Course offered</span>
+                <span id="mark">*</span>
+                <select name="course offered">
+                <option value="Computer Application" selected>Computer Application </option>
+                <option value="Machine Learning" selected>Machine Learning</option>
+                <option value="Artificial Intelligence" selected>Artificial Intelligence</option>
+                <option value="Computer Architecture" selected>Computer Architecture</option>
+                <option value="Date Base" selected>Date Base</option>
+                <option value="Data Mining" selected>Data Mining</option>
+                <option value="web Development" selected>web Development</option>
+            </select>
+        </div>
+            </li>
+
+            <li>
+                Languages
+                <span id="mark">*</span> 
+                    Hindi <input type="checkbox" name="lng_eng" >
+                    English <input type="checkbox" name="lng_eng" >
+                    Marathi <input type="checkbox" name="lng_eng" >
+                    French <input type="checkbox" name="lng_eng" >
+                    Chinese <input type="checkbox" name="lng_eng"> 
+            </li>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>About YourSelf</legend>
+    
+        <label for="about yourself">
+            Tell few words about yourself 
+            </label>
+            <div class="thirdindex">
+            <textarea name="address" cols="45" rows="4"></textarea>
+        </div>
+        </li>
+
+        <button>
+            Register
+        </button>
+
+    </fieldset>
+    <div>
+         <h2>Copyrights @2023</h2>
+    </div>
+   
+    </form>
+    
+</body>
+</html>

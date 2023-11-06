@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            var data = [  100, 100, 100];
+            console.log(data);
+            // Code to find largest
+            /*var maxValue = data[0];
+
+            for (var i = 1; i < data.length; i++) {
+                if (maxValue < data[i]) {
+                    maxValue = data[i];
+                }
+            }
+            console.log(maxValue); */
+
+            /*
+            // Sorting 
+            for (var i = 0 ; i < data.length; i++) {
+                for (var j = i; j < data.length; j++) {
+                    if (data[i] > data[j]) {
+                        var temp = data[i];
+                        data[i] = data[j]
+                        data[j] = temp;
+                    }
+                }
+            }
+            console.log(data); */ 
+
+            var max = data[0];
+            var secondLarg = 0;
+
+            for (var i = 1; i < data.length; i++) {
+                if (max < data[i]) {
+                    if (secondLarg < max) {
+                        secondLarg = max;
+                    }
+                    max = data[i];
+                } else if (secondLarg < data[i] && data[i] != max) {
+                    secondLarg = data[i];
+                }
+            }
+            console.log("max is " + max)
+            console.log("secondLarg is " + secondLarg)
+        </script>
+    </body>
+</html>

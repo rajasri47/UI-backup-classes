@@ -1,0 +1,56 @@
+.block {
+    float: left;
+}
+
+ul > li {
+    border: 1px solid;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 350px;
+    background-color: #ccc;
+    overflow: auto;
+}
+ol > li {
+    list-style: none;
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+}
+ol {
+    margin: 5px;
+    padding: 5px;
+}
+.aprice {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-line: line-through;
+}
+.dprice {
+    font-weight: bold;
+    color: green;
+    font-size: 15px;
+}
+img {
+    width: 200px;
+    height: 130px;
+}
+.ratingContainer {
+    height: 36px;
+}
+.ratingContainer div {
+    float: left;
+    background-image: url(images/rating.PNG);
+    width: 33px;
+    height: 36px;
+    background-repeat: no-repeat;
+}
+.halfStar {
+    background-position: -32px 0px;
+}
+.disableStar {
+    background-position: -64px 0px;
+}

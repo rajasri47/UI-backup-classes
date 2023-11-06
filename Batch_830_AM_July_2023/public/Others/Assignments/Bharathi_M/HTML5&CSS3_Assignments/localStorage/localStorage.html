@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="localStorage.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="themeChooser">
+        Select Theme:
+        <input type="color" id="userTheme" onchange="applyTheme()">
+    </div>
+    <ul class="loginBlock">
+        <li>
+            <div class="label">Account Id:</div>
+            <div class="inputElement"><input type="text" id="userAccountId"></div>
+        </li>
+        <li>
+            <div class="label">Account Password:</div>
+            <div class="inputElement"><input type="password" id="accountPwd"></div>
+        </li>
+        <li>
+            <input type="checkbox" id="userOption">Remember my credentials
+        </li>
+        <li>
+            <input type="button" value="Login" onclick="loginUser()">
+        </li>
+        <li class="invalidCredentials">
+            Invalid Credentials
+        </li>
+    </ul>
+    <div class="detailsBlock">Details will be shown here ...</div>
+ <script src="localStorage.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating css positions - Fixed
+        </title>
+        <style>
+            .block {
+                border: 1px solid;
+                width: 80px;
+                height: 80px;
+                margin: 10px;
+                text-align: center;
+            }
+            .block1 {
+                background-color: gainsboro;
+            }
+            .block2 {
+                background-color: aqua;
+            }
+            .block3 {
+                background-color: aquamarine;
+                position: fixed;
+                left: 150px;
+            }
+            .block4 {
+                background-color: rebeccapurple;
+            }
+            .block5 {
+                background-color: #ddd;
+            }
+            .container {
+                border: 1px solid;
+                width: 400px;
+                height: 350px;
+                /* margin: 20px auto; */
+                padding: 10px;
+                overflow: auto;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="block block1">Block 1</div>
+            <div class="block block2">Block 2</div>
+            <div class="block block3">Block 3</div>
+            <div class="block block4">Block 4</div>
+            <div class="block block5">Block 5</div>
+            <div class="block block1">Block 1</div>
+            <div class="block block2">Block 2</div>
+        </div>
+    </body>
+</html>

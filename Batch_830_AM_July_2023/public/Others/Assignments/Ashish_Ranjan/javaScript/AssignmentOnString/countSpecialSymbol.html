@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string</title>
+  </head>
+  <body>
+    <!-- ------------find out the total number of special symbol or not------- -->
+    <script>
+      
+      var count = 0;
+      var getString = prompt("Enter String");
+      var temp = [];
+      temp = getString;
+      console.log(temp);
+
+      for (var i = 0; i < temp.length; i++) {
+        if (
+          temp[i] == "@" ||
+          temp[i] == "$" ||
+          temp[i] == "&" ||
+          temp[i] == "#" ||
+          temp[i] == "!" ||
+          temp[i] == "%" ||
+          temp[i] == "^" ||
+          temp[i] == "*"
+        ) {
+          count++;
+        }
+      }
+
+      console.log("Number of special symbol in given string : " + count);
+    </script>
+  </body>
+</html>

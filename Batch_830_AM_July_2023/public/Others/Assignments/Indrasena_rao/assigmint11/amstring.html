@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = prompt('enter the number');
+        var p = n.length;
+        var n2 = parseInt(n)
+        var sum = 0;
+        for (var i = 1; i <= p; i++) {
+            var rem = n2 % 10;
+            sum += n2 ** p;
+            n2 = n2 / 10
+
+        }
+        if (sum == n) {
+            console.log('Armstrong number');
+        } else {
+            console.log('not a Armstrong number');
+        }
+    </script>
+</body>
+
+</html>

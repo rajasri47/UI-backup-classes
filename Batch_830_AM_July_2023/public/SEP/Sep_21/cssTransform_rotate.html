@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS3 - transform
+        </title>
+        <style>
+            .container {
+                width: 200px;
+                padding: 50px;
+                text-align: center;
+                font-weight: bold;
+                margin: 120px auto;
+                border-radius: 10px;
+                border: 1px solid;
+                background-color: aquamarine;
+                /* transform: rotate(140deg); */
+                /* transform: rotateX(140deg); */
+                transform: rotate3d(1,2,3, 20deg)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            CONTENT
+        </div>
+        <script>
+            var degValue = 0;
+            var animateElement_rotate = () => {
+                degValue+= 5;
+                if (degValue == 360) {
+                    degValue = 0;
+                }
+                var degValueWithMs = degValue + 'deg';
+                document.querySelector(".container").style.transform = 'rotateY(' + degValueWithMs+ ')';
+            }
+            setInterval(() => {
+                //animateElement_rotate();
+            }, 100)
+            
+
+        </script>
+    </body>
+</html>

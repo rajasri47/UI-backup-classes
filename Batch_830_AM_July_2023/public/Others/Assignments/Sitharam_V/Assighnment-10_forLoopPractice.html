@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performing Logical Operations by using (for) loop</title>
+</head>
+<body>
+    <script>
+//To find sum of values between 1 to 100
+        var res = 0;
+        for (var i = 1; i <= 100; i++) {
+            res+=i;
+        }
+        console.log(" Sum of values between 1 to 100 numbers is " + res);
+
+//To find sum of values between 99 to 61
+        var res2 = 0;
+        for (var i = 99; i >= 61; i--) {
+            res2+=i;
+        }
+        console.log(" Sum of values between 1 to 100 numbers is " + res2);
+        
+//To list out all the even numbers between 1 to 1000
+        for ( i = 1; i <=1000; i++) {
+            if ( i % 2 == 0){
+                console.log(" Even number between 1-1000 is " + i);  
+            }
+        }
+
+//To list out all the odd num between 1000 to 100
+        for ( i = 1000; i >=100; i--) {
+            if ( i % 2 != 0){
+                console.log(" Odd number between 1000-100 is " + i);  
+            }
+        }
+
+//To find the sum of all even numbers between user given range
+        var res3 = 0;
+        var minRangeE = prompt( " Enter minimum range of number value for sum of EVEN num ");
+        minRangeE = parseInt(minRangeE);
+        var maxRangeE = prompt( " Enter maximum range of number value  for sum of EVEN num ");
+        maxRangeE = parseInt(maxRangeE);
+        for (minRangeE ; minRangeE <= maxRangeE; minRangeE++) {
+            if (minRangeE % 2 == 0){
+            res3 += minRangeE;
+            }
+        }
+        console.log(" The sum of Even numbers in user given range is: " + res3);
+        
+        
+//To find the sum of all odd numbers between user given range
+        var res4 = 0;
+        var minRangeO = prompt( " Enter minimum range of number value for sum of ODD num ");
+        minRangeO = parseInt(minRangeO);
+        var maxRangeO = prompt( " Enter maximum range of number value  for sum of ODD num ");
+        maxRangeO = parseInt(maxRangeO);
+        for (minRangeO ; minRangeO <= maxRangeO; minRangeO++) {
+            if (minRangeO % 2 != 0){
+            res4 += minRangeO;
+            }
+        }
+        console.log(" The sum of Odd numbers in user given range is: " + res4);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var name = prompt("enter name");
+            var age = prompt("enter age");
+            var gender = prompt("enter gender");
+            var department = prompt("enter department");
+            var sal = prompt("enter sal");
+            sal = parseInt(sal);
+            
+           
+            var pf = 12/100*sal;
+            var hra = 24/100*sal;
+            var totalsal = pf + hra + sal;
+           var tax;
+
+            console.log("emp details");
+            console.log("the emp name is " + name);
+            console.log("the emp age is " + age);
+            console.log("the gender is " + gender);
+            console.log("the emp department is " + department);
+            console.log("the emp sal is " + sal);
+            console.log("the emp pf is " + pf);
+            console.log("the emp hra is " + hra);
+            console.log("the emp total sal is " + totalsal);
+
+            if(gender == "male") {
+                if(sal >= 300000)
+                {
+                    tax = totalsal*15/100;
+                    console.log("the tax is" + tax);
+                }
+                else if (sal >= 200000)
+                {
+                    tax = totalsal*10/100;
+                    console.log("the tax is " + tax);
+                }
+                else if (sal >= 100000)
+                {
+                    tax = totalsal*5/100;
+                    console.log("the tax is " + tax)
+                }
+                else {
+                    console.log("the tax is zero")
+                }
+
+            }
+
+            if (gender == "female")
+            {
+                if (sal >= 200000)
+                {
+                    tax = totalsal*10/100;
+                    console.log("the tax is " + tax);
+                }
+                else if (sal >= 100000)
+                {
+                    tax = totalsal*5/100;
+                    console.log("the tax is " + tax);
+
+                }
+                else {
+                    console.log("the tax is zero");
+                }
+            }
+            
+
+        </script>
+        
+    </body>
+</html>

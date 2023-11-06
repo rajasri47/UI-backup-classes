@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding the second largest value
+        </title>
+    </head>
+    <body>
+        <script>
+            var elements = () => {
+                var lengthOfArray = prompt("Enter the number of elements");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0 ; i < lengthOfArray ; i++) {
+                    a[i] = prompt("Enter " + i + " value");
+                    a[i] = parseInt(a[i]);
+                }
+                secondLargest(a);
+            }
+
+            var secondLargest = (a) => {
+                var len = a.length;
+                var max = a[0];
+                var secLargest = 0;
+                for (var i = 1 ; i < len ; i++) {
+                    if (max < a[i]) {
+                        if (secLargest < max) {
+                            secLargest = max;
+                        }
+                        max = a[i];
+                    } 
+                    else if (secLargest < a[i] && a[i] != max) {
+                        secLargest = a[i];
+                    }
+                }
+                console.log(a);
+                console.log("The second largest value = " + secLargest);
+            }
+
+            elements();
+
+        </script>
+    </body>
+</html>

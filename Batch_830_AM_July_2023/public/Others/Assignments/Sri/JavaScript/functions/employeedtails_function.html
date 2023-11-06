@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>employeedetails</title>
+    </head>
+    <body>
+        <script>
+            var EmpName,EmpAge,EmpGender,EmpBasicSalary;
+             function usersdata(){
+                EmpName = prompt("Enter employee name");
+                EmpAge = prompt("Enter employee age");
+                EmpGender = prompt(" Enter employee gender");
+                BasicSalary = prompt(" Enter employee basicsalary ");
+                BasicSalary = parseInt(BasicSalary);
+                getHraAndPf();
+            }
+             function getHraAndPf(){
+                Hra = (BasicSalary*24)/100;
+                Pf =  (BasicSalary*12)/100;
+                TotalSalary = Hra + Pf + BasicSalary;
+ 
+             }
+
+             function Tax(){
+                if(EmpGender == "male" && TotalSalary >= 300000 ){
+                TotalTax = (TotalSalary*15)/100;
+               }
+                else if( EmpGender == "male "&& TotalSalary >= 200000){
+                    TotalTax = (TotalSalary*10)/100 ;
+                }
+                else if( EmpGender == "male" && TotalSalary >= 100000){
+                    TotalTax = (TotalSalary*5)/100 ;
+                }
+                if(EmpGender == "female" && TotalSalary >= 300000 ){
+                TotalTax = (TotalSalary*10)/100;
+                }
+                else if (EmpGender == "female" && TotalSalary >= 200000 ){
+                TotalTax = (TotalSalary*5)/100;
+                }
+                else if (EmpGender == "female" && TotalSalary >= 100000 ){
+                 TotalTax = 0;
+                
+                }
+
+             }
+              function SalaryAfterTax(){
+                SalaryAfterTax = TotalSalary - TotalTax;
+              }
+              function DisplayEmpDetails(){
+                usersdata();
+                Tax();
+                SalaryAfterTax();
+                console.log("Employee Details");
+                console.log(" Emp name is " + EmpName);
+                console.log(" Emp age is " + EmpAge);
+                console.log(" Emp Gender is " + EmpGender);
+                console.log(" Emp salary is " + BasicSalary);
+                console.log(" Emp hra is " + Hra);
+                console.log(" Emp Pf is " + Pf);
+                console.log(" Emp totalsalary is " + TotalSalary);
+                console.log(" Emp tax is " + TotalTax);
+                console.log(" Emp salaryAfterTax is " + SalaryAfterTax);
+                
+                
+              }
+              DisplayEmpDetails();
+                
+                
+                
+
+              
+ 
+        </script>
+        
+    </body>
+    </html>

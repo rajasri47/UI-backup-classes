@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block game using css positions</title>
+    <style>
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        border: 1px solid red;
+      }
+
+      .box {
+        height: 572px;
+        padding: 15px 0;
+      }
+
+      .block {
+        height: 90px;
+        width: 90px;
+        border: 1px solid;
+      }
+
+      #block1 {
+        background-color: yellow;
+      }
+
+      #block2 {
+        position: relative;
+        top: -47px;
+        left: 49px;
+        background-color: blue;
+        opacity: 0.8;
+      }
+
+      #block3 {
+        position: absolute;
+        right: 8px;
+        top: 75px;
+        background-color: green;
+      }
+
+      #block4 {
+        position: absolute;
+        right: 57px;
+        top: 120px;
+        background-color: aquamarine;
+        opacity: 0.8;
+      }
+
+      #block5 {
+        position: relative;
+        left: 549px;
+        background-color: #afb42b;
+      }
+
+      #block6 {
+        position: absolute;
+        top: 259px;
+        right: 574px;
+        background-color: brown;
+      }
+
+      #block7 {
+        position: relative;
+        top: -43px;
+        left: 612px;
+        background-color: coral;
+        opacity: 0.8;
+        z-index: 1;
+      }
+
+      #block8 {
+        position: relative;
+        left: 549px;
+        top: -82px;
+        background-color: cornsilk;
+      }
+
+      #block9 {
+        position: absolute;
+        right: 574px;
+        top: 361px;
+        background-color: chocolate;
+      }
+
+      #block10 {
+        position: absolute;
+        bottom: 71px;
+        left: 49px;
+        background-color: blueviolet;
+        opacity: 0.8;
+      }
+
+      #block11 {
+        background-color: burlywood;
+      }
+
+      #block12 {
+        position: absolute;
+        right: 8px;
+        bottom: 30px;
+        background-color: chartreuse;
+      }
+
+      #block13 {
+        position: absolute;
+        right: 49px;
+        bottom: 71px;
+        background-color: #e53935;
+        opacity: 0.8;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <h2>Blocks Game</h2>
+    </div>
+    <div class="box">
+      <div class="block" id="block1"></div>
+      <div class="block" id="block2"></div>
+      <div class="block" id="block3"></div>
+      <div class="block" id="block4"></div>
+      <div class="block" id="block5"></div>
+      <div class="block" id="block6"></div>
+      <div class="block" id="block7"></div>
+      <div class="block" id="block8"></div>
+      <div class="block" id="block9"></div>
+      <div class="block" id="block10"></div>
+      <div class="block" id="block11"></div>
+      <div class="block" id="block12"></div>
+      <div class="block" id="block13"></div>
+    </div>
+    <div class="footer">
+      <b>Copyright @ 2023</b>
+    </div>
+  </body>
+</html>

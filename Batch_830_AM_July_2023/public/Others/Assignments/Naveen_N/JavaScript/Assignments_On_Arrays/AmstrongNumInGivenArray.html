@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Amstrong numbers in given Array</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows the Amstrong  numbers in given array of elements.. <br>
+            Go to console tab for result...
+        </h1>
+        <script>
+
+             var a = [];
+              var index = prompt("enter index value of Array..");
+              index = parseInt(index);
+
+              for(var i=0; i < index; i++){
+                   a[i] = prompt("enter the values"+i+" th position of array");
+                  a[i] = parseInt(a[i]);
+                  console.log(a[i]);
+              }
+
+               
+              for(var i = 0; i < a.length; i++){
+
+                var rem = 0,sum = 0,temp = 0;
+                temp = a[i];
+
+                while(temp > 0){
+                    rem = temp % 10;
+                    sum = sum  + rem ** 3;
+                    temp = parseInt(temp / 10);
+                }
+                if(sum == a[i]){
+                    console.log(sum);
+                }
+                }
+
+        </script>
+    </body>
+</html>

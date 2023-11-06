@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6</title>
+</head>
+<style>
+    .heading{
+        font-size: 25px;
+        border: 2px solid;
+        padding: 10px;
+        margin:3px;
+        text-align: center;
+    }
+    .body{
+        border:2px solid;
+        padding:10px;
+        margin: 3px;
+
+    }
+    .userdetails , .educationdetails,.About {
+        font-size: 20px;
+        border:2px solid;
+        padding:10px;
+        margin:2px;
+   }
+   .box{
+    border: 2px solid;
+    height: 30px;
+    width: 180px; 
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 68px;
+    background-color: aliceblue;
+   }
+   .box1{
+    position: absolute;
+    top: 330px;
+   }
+   .box2{
+    position: absolute;
+    top: 500px;
+   }
+   button{
+    float: right;
+    clear:right;
+    font-size: 15px;
+    padding: 5px;
+   margin: 5px;position: absolute;
+   right: 120px;
+    
+   }
+</style>
+<body>
+    <div>
+        <div class="heading">
+            Student Details Registered Page
+        </div>
+        <div class="body">
+                <div class="userdetails">
+                    <div class="box">User Details</div><br><br>
+                    <label for="username">Name:</label>
+                    <input type="text"><br><br>
+                    <label for="username">Age:</label>
+                    <input type="text"><br><br>
+                    <label for="username">Gender:</label>
+                    Male <input type="radio" value="male">
+                    Female<input type="radio" value="male">
+                    <br><br>
+                    <label for="username">Address:</label>
+                    <textarea rows="2" cols="5"></textarea>
+                </div><br>
+                <div class="educationdetails">
+                <div class="box box1">Education Details</div><br><br>
+                <label for="qualification">Qualification:</label>
+                B A<input type="checkbox" name="qualification">
+                BSC<input type="checkbox" name="qualification">
+                BTECH<input type="checkbox" name="qualification">
+                BCOM<input type="checkbox" name="qualification">
+               <div style="float:right;position:absolute;right:550px">
+                course opted for:
+                <select name="course">
+                    <option value="">select</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JVASCRIPT">JAVASCRIPT</option>
+                    <option value="REACTJS">REACTJS</option>
+                </select>
+                </div>
+                <br><br>
+                <label for="langauge">Langauges:</label>
+                Telugu<input type="checkbox" name="langauge">
+                Tamil<input type="checkbox" name="langauge">
+                Kannada<input type="checkbox" name="langauge">
+                English<input type="checkbox" name="langauge">
+                </div><br>
+                <div class="About">
+                    <div class="box box2">About yourself</div><br><br>
+                Tell About Yourself:
+                <textarea name="" cols="20" rows="3"></textarea>
+            </div><br>
+             <button>Register</button> <br><br>
+        </div>
+        <div class="heading">Copyright@2023</div>
+
+</div>
+</body>
+</html>

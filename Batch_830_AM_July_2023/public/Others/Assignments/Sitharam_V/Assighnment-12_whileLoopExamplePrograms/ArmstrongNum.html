@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking of given value is armstrong num or not</title>
+</head>
+<body>
+    <script>
+        var x = prompt("Enter a number");
+        var len = x.length;
+        x = parseInt(x);
+        var copy = x;
+        var sum = 0;
+        while( x > 0) {
+            var rem = x % 10;
+            x = parseInt( x / 10 );
+            sum += (rem ** len);
+            
+        }
+        if ( sum == copy){
+            console.log("It is a Armstrong number");
+        } else {
+            console.log(" It is a Armstrong number");
+        }
+        
+    </script>
+</body>
+</html>

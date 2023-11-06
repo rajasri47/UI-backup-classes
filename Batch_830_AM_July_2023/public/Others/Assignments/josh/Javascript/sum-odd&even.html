@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even</title>
+    </head>
+    <body>
+        <h2>Adding of Even Numbers and odd Numbers individually</h2>
+        <script>
+            var firstNum = prompt("Enter the number from which sum starts:")
+            var lastNum = prompt("Enter the number to which the sum ends:")
+            var sum = 0;
+            firstNum = parseInt(firstNum);
+            lastNum = parseInt(lastNum);
+            for(var i = firstNum; i <= lastNum; i++){
+                if(i % 2 == 0){
+                    sum = sum + i;
+                }
+            }
+            console.log("The sum of Even Numbers" + firstNum + " to " + lastNum + " is " + sum);
+
+            var firstNum = prompt("Enter the number from which sum starts:")
+            var lastNum = prompt("Enter the number to which the sum ends:")
+            var sum = 0;
+            firstNum = parseInt(firstNum);
+            lastNum = parseInt(lastNum);
+            for(var i = firstNum; i <= lastNum; i++){
+                if(i % 2 == 1){
+                    sum = sum + i;
+                }
+            }
+            console.log("The sum of Odd Numbers" + firstNum + " to " + lastNum + " is " + sum);
+        </script>
+    </body>
+</html>

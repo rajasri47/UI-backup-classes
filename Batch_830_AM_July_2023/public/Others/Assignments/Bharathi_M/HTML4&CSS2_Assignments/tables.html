@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+       
+        th{
+            background-color: antiquewhite;
+        }
+        td{
+            background-color: lightgreen;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <table border="2px solid" cellspacing="10px" cellpadding="10px">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Qualification</th>
+                <th>Current Location</th>
+                <th>Permanent Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bharathi</td>
+                <td>28</td>
+                <td>B.tech</td>
+                <td rowspan="2">HYD</td>
+                <td>Banglore</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Navya</td>
+                <td>30</td>
+                <td>MCA</td>
+                <td>Vizag</td>
+               
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Harika</td>
+                <td>20</td>
+                <td>M.tech</td>
+                <td>Chennai</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hari</td>
+                <td>22</td>
+                <td>B.tech</td>
+                <td colspan="4">Banglore</td>
+                
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pranvitha</td>
+                <td>17</td>
+                <td>Bsc</td>
+                <td>Banglore</td>
+                <td>Gurgaon</td>   
+            </tr>
+        </tbody>
+    </table>   
+</body>
+</html>

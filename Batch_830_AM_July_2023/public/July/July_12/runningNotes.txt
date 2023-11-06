@@ -1,0 +1,67 @@
+ul
+
+ol
+
+
+dt
+dd
+dl
+
+#abc, .pqr, div, span {
+    ... 
+    .... // will applied for all the selectors
+}
+
+.abc #pqr {
+    .... 
+    .... 
+    // properties will be only applied to an element having id as pqr,which is a children for an element with class abc
+}
+
+.abc div .pqr #abc p {
+    ...
+    ...
+}
+
+<div>
+    <span>
+        <p>First one</p>
+    </span>
+</div>
+
+<div class="abc">
+    <div>
+        <div class="pqr">
+            <p class="abc">
+                <p>Second one</p>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="abc">
+    <div>
+        <div class="pqr">
+            <p id="abc">
+                <p>Third one</p>
+            </p>
+        </div>
+    </div>
+</div>
+-------------
+
+ol 
+    <ol>
+        <li>
+            ....    
+            ... 
+            ... 
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+    </ol>
+ul 

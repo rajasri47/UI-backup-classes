@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic student details</title>
+</head>
+<body>
+    <div>dynamic student details</div>
+    <script>
+         name="saikumar"
+        var Name = prompt("Enter student name");
+        var age = prompt("Enter student age");
+        var rollno =prompt("Enter student rollno");
+        var english = prompt("Enter english marks");
+        var maths = prompt("Enter maths marks");
+        var telugu =prompt("Enter telugu marks");
+        
+
+       
+        english=parseInt(english);
+        maths=parseInt(maths);
+        telugu=parseInt(telugu);
+        
+        var totalmarks = english + maths + telugu;
+        var avgmarks=totalmarks /3;
+        console.log("student details ");
+        console.log("student name is " + name);
+        console.log("student age is " + age);
+        console.log("student roll no is " + rollno);
+        console.log("student english marks is " + english);
+        console.log("student maths marks is " + maths); 
+        console.log("student telugu marks is " + telugu);
+        console.log("student total marks is " + totalmarks);
+        console.log("student avg marks is " + avgmarks);
+
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var empName = prompt("Enter user name");
+       var empAge = prompt("Enter user age");
+       var empDept = prompt("Enter user department");
+       var empGender = prompt("Enter user gender");
+       var empBasicSalary = prompt("Enter user basic salary per anum");
+       empBasicSalary = parseInt(empBasicSalary);
+       var empPF = (empBasicSalary * 12) / 100;
+       var empHRA = (empBasicSalary * 24) / 100;
+       var empTotalSalary = (empPF + empHRA + empBasicSalary);
+       console.log("Total salary of the " + empName + " is ₹" + empTotalSalary);
+
+       if(empGender == "male") {
+        if(empTotalSalary >= 300000) {
+            console.log("Payable tax is ₹" + ((empTotalSalary * 15)/100));
+        } else if(empTotalSalary >= 200000){
+            console.log("Payable tax is ₹" + ((empTotalSalary * 10)/100));  
+        } else if(empTotalSalary >= 100000) {
+            console.log("Payable tax is ₹" + ((empTotalSalary * 5)/100));
+        }
+        }
+
+        if(empGender == "female") {
+        if(empTotalSalary >= 300000) {
+            console.log("Payable tax is ₹" + ((empTotalSalary * 10)/100));
+        } else if(empTotalSalary >= 100000) {
+            console.log("Payable tax is ₹" + ((empTotalSalary * 5)/100));  
+        } 
+        }
+        console.log("Done");
+
+    </script>
+</body>
+</html>

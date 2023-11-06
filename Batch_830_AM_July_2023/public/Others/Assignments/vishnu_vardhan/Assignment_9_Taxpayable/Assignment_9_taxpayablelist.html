@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+             Tax payable by male and female
+        </title></head>
+        <body>
+         <script>
+        var emp = prompt("enter employee name");
+        var gender = prompt("enter your gender");
+        var basicSal = prompt("enter basic salary");
+        basicSal=parseInt(basicSal);
+        pf = (basicSal*12)/100;
+        hra = (basicSal*24)/100;
+        totalSal = basicSal + pf + hra;
+        console.log("Name is :" +emp);
+        console.log("gender is :" +gender);
+        console.log("basic salary is :" +basicSal);
+        console.log("pf is :" +pf);
+        console.log(" Hra is :" +hra);
+        console.log("Total sal is :" + totalSal);
+
+
+        if (gender == 'male'){
+            console.log("Your tax as below");
+        
+        
+            if (totalSal>=30000){
+                console.log("tax payable is:" +(basicSal*15)/100);
+
+            }else if (totalSal>=20000){
+                console.log("tax payable is:" +(basicSal*10)/100);
+
+            }else if (totalSal>=10000){
+                console.log("tax payable is:" +(basicSal*5)/100);
+
+            }else{
+                console.log("Zero tax" );
+            }
+        }
+
+        if (gender == 'female'){
+            console.log("Your tax as below");        
+        
+            if (totalSal>=30000){
+                console.log("tax payable is:" +(basicSal*10)/100);
+
+            }else if (totalSal>=20000){
+                console.log("tax payable is:" +(basicSal*5)/100);
+
+            }else{
+                console.log("Zero tax" );
+            }
+        }    
+
+    </script>
+        </body>
+        </html>

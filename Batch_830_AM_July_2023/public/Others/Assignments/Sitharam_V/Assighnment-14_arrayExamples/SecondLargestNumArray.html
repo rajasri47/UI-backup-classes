@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding second largest num in given Array</title>
+    </head>
+    <body>
+        <script>
+            var readData = () => {
+                var data = [];
+                var len = parseInt(prompt("Enter the no of values "));
+                for (i = 0; i < len; i++) {
+                    data[i] =  parseInt(prompt("Enter the value "));
+                }
+                calc(data,len);
+            }
+
+            var calc = (data, len) => {
+                var max = data[0];
+                var secLarg = 0;
+                for (i = 1; i < len; i++) {
+                    if (max < data[i]) {
+                        if (secLarg < max) {
+                            secLarg = max;
+                        }
+                        max = data[i];
+                    } else if ( secLarg < data[i] ){
+                        secLarg = data[i];
+                    }
+                    
+                }
+                console.log("max value = " +max);
+                console.log("SecLarge value = " + secLarg);
+            }
+            readData();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic Employee Details
+        </title>
+    </head>
+    <body>
+        <script>
+            function readUserData(){
+
+            }
+            name = "RAj"
+            var name = prompt("Enter user name");
+            var empAGe = prompt("enter user age");
+            var gender = prompt('Enter user gender');
+            var basicSal = prompt("enter basic sal");
+            basicSal = parseInt(basicSal);
+            var pf = (basicSal * 12) / 100;
+            var hra = (basicSal * 24) / 100;
+            var totalSal = pf + hra + basicSal;
+    function displayemployeeDetails(){
+            console.log('Employee details');
+            console.log("NAme is " + name);
+            console.log("pf is " + pf);
+            console.log("HRA is " + hra);
+            console.log("Total sal is " + totalSal);
+    }
+    displayemployeeDetails();
+        </script>
+    </body>
+</html>

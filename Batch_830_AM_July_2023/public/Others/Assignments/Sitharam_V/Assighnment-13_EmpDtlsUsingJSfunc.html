@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee details using JavaScript fuctions </title>
+    </head>
+    <body>
+        <script>
+            var empName,empAge,empGender,empSalary,empTsal,empPf,empHRA;
+            function intial() {
+                empName = prompt(" Enter user name");
+                empAge = prompt(" Enter user age");
+                empGender = prompt(" Enter user gender");
+                empSalary = parseInt(prompt(" Enter user basic salary"));
+                calc();
+            }
+
+            function calc(){
+                switch (empGender) {
+                    case "male" :
+                        if ( empSalary > 300000) {
+                            empPf = (empSalary * 15 ) / 100;
+                            empHRA = (empSalary * 20) / 100;
+                            empTsal = ( empPf + empHRA + empSalary );
+                        } else if ( empSalary > 200000) {
+                            empPf = (empSalary * 10 ) / 100;
+                            empHRA = (empSalary * 15) / 100;
+                            empTsal = ( empPf + empHRA + empSalary );
+                        } else if ( empSalary > 100000) {
+                            empPf = (empSalary * 5 ) / 100;
+                            empHRA = (empSalary * 10) / 100;
+                            empTsal = ( empPf + empHRA + empSalary );
+                        }
+                }
+                switch ( empGender) {
+                    case "female" :
+                        if ( empSalary > 300000) {
+                            empPf = (empSalary * 10 ) / 100;
+                            empHRA = (empSalary * 15) / 100;
+                            empTsal = ( empPf + empHRA + empSalary );
+                        } else if ( empSalary > 100000) {
+                            empPf = (empSalary * 5 ) / 100;
+                            empHRA = (empSalary * 10) / 100;
+                            empTsal = ( empPf + empHRA + empSalary );
+                        }
+                }
+            }
+
+            function display() {
+                intial();
+                console.log(empName + "'s Salary Details: ");
+                console.log(" Basic Salary:       ₹" + empSalary);
+                console.log(" Proficient fund is: ₹" + empPf);
+                console.log(" HRA is:             ₹" + empHRA);
+                console.log(" Total Salary is:    ₹" + empTsal);
+            } 
+
+            display();
+        </script>
+    </body>
+</html>

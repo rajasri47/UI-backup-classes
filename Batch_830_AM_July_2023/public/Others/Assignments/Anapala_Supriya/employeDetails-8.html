@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>employeDetails</title>
+</head>
+<body>
+    <script>
+        var name=prompt("enter the name")
+        var gender=prompt("enter the gender")
+        var age=prompt("enter the age")
+        var department=prompt("enter the department")
+        var basicSalary=prompt("enter the basicSalary")
+        age=parseInt(age)
+        basicSalary=parseInt(basicSalary)
+        pf=(basicSalary*12)/100
+        hra=(basicSalary*24)/100
+        totalsalary=pf+hra+basicSalary
+        console.log("Name is:"+name )
+        console.log(" gender is:"+gender)
+        console.log("department is:"+department )
+        console.log("basicSalary is:"+basicSalary )
+        console.log("pf is:"+pf)
+        console.log("hra is:"+hra)
+        console.log("totalsalary is:"+totalsalary)
+        if(gender =='male'){
+        if(totalsalary>=300000){
+            console.log("tax percent is 15")
+        }
+       else if(totalsalary>=200000){
+            console.log("tax percent is 10")
+        }
+       else if(totalsalary>=100000){
+          console.log("tax percent is 5")  
+        }
+        else{
+            console.log("tax percent is 0")
+        }
+    }
+    if(gender =='female'){
+        if(totalsalary>=300000){
+            console.log("tax percent is 10")
+        }
+        else if(totalsalary>=200000){
+            console.log("tax percent is 5")
+        }
+        else{
+            console.log("tax percent is 0")
+        }
+    }
+    </script> 
+</body>
+</html>

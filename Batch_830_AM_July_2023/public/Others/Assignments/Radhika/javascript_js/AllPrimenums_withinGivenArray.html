@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Demonstrate All Prime numbers </title>
+    </head>
+    <body>
+        <h3>Find All The Prime numbers With in the Given array...!</h3>
+        <script>
+            var readData = () => {
+            var num=[];
+            var data=parseInt(prompt("Enter a value"));
+            for(var i=0;i<data;i++){
+                num[i]=parseInt(prompt("Enter a value"));
+            }
+            call(num,data);
+        }
+        var call = (num,data) => {
+            var sum=0;
+            for(var i=0;i<data;i++){
+                for(var j=0;j<=num[i];j++){
+                    if(num[i]%j==0){
+                        sum++;
+                    }
+                }if(sum<=2){
+                    console.log(num[i]  + " is prime number");
+                } 
+                else{
+                    console.log(num[i]  + " is not prime number");
+                }   
+                sum=0;
+            }
+        }
+        readData();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>floating_elements</title>
+  </head>
+
+  <style>
+    .nav {
+      border: 1px solid;
+      height: 40px;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: beige;
+    }
+    h2 {
+      margin: auto;
+    }
+    .box {
+      border: 1px solid;
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+    }
+    .box1,
+    .box2,
+    .box3 {
+      float: left;
+      background-color: coral;
+    }
+    .box4 {
+      clear: left;
+      float: right;
+      background-color: aquamarine;
+    }
+    .box5 {
+      float: right;
+      background-color: aquamarine;
+    }
+    .box6 {
+      clear: both;
+      background-color: greenyellow;
+    }
+    .box7 {
+      background-color: greenyellow;
+    }
+    .box8 {
+      float: right;
+      background-color: darksalmon;
+    }
+    .box9 {
+      clear: right;
+      float: right;
+      background-color: darksalmon;
+    }
+    .box10 {
+      clear: both;
+      float: right;
+      background-color: darksalmon;
+    }
+    .box11 {
+      clear: both;
+      float: left;
+      background-color: darkseagreen;
+    }
+    .box12,
+    .box13 {
+      float: left;
+      background-color: darkseagreen;
+    }
+    h5 {
+      margin: 50px auto;
+    }
+    .footer {
+      clear: both;
+      border: 1px solid;
+      height: 40px;
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      background-color: beige;
+    }
+  </style>
+  <body>
+    <div class="nav"><h2>Block Rendering</h2></div>
+    <div class="box box1"><h5>1</h5></div>
+    <div class="box box2"><h5>2</h5></div>
+    <div class="box box3"><h5>3</h5></div>
+    <div class="box box4"><h5>5</h5></div>
+    <div class="box box5"><h5>4</h5></div>
+    <div class="box box6"><h5>6</h5></div>
+    <div class="box box7"><h5>7</h5></div>
+    <div class="box box8"><h5>8</h5></div>
+    <div class="box box9"><h5>9</h5></div>
+    <div class="box box10"><h5>10</h5></div>
+    <div class="box box11"><h5>11</h5></div>
+    <div class="box box12"><h5>12</h5></div>
+    <div class="box box13"><h5>13</h5></div>
+    <div class="footer"><h2>@copyright</h2></div>
+  </body>
+</html>

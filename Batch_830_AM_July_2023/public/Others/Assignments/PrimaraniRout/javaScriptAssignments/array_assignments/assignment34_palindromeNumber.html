@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        Finding palindrome number
+    </title>
+</head>
+<body>
+    <script>
+        var elements = () => {
+                var lengthOfArray = prompt("Enter the number of elements");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0 ; i < lengthOfArray ; i++) {
+                    a[i] = prompt("Enter " + i + " value");
+                    a[i] = parseInt(a[i]);
+                }
+                palindrome(a);
+            }
+
+            var palindrome = (a) => {
+                var len = a.length;
+                for (var i = 0 ; i < len ; i++) {
+                    var rem;
+                    var num = '';
+                    var temp = a[i];
+    
+                    while (a[i] > 0) {
+                        rem = a[i] % 10;
+                        rem = rem.toString();
+                        num += rem;
+                        a[i] = a[i] / 10;
+                        a[i] = parseInt(a[i]);
+                    }
+                    if (temp == num) {
+                        console.log("The palindrome number = " + temp);
+                    }
+                }
+            }
+            elements();
+
+    </script>
+</body>
+</html>

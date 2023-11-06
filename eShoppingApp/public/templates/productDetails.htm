@@ -1,0 +1,63 @@
+
+<div class="logoutLink">
+    <a href="#logout" onclick="invalidateSession()">
+        Logout 
+    </a>
+</div>
+<div class="productDetailsContainer" >
+    
+    <!--  -->
+    <div class="detailsblock">
+        <ul class="productDetailsList"> 
+            
+        </ul>
+ </div>
+    <div class="categoryblock">
+
+        <h4>Filters</h4>
+        <hr>
+        <div class="sidebar">
+            <h6>Price Range</h6>
+            <form id="priceFilter">
+                <input type="range" class="range-slider" id="priceRange" min="0" max="1000">
+                <div class="range-values">
+                    <span id="minPriceValue">Min: 0</span>
+                    <span id="maxPriceValue">Max: 1000</span>
+                </div>
+            </form> 
+            <hr>
+            <h6><a class="category-link" href="#viewAll" onclick="loadSelectedPage('pDetails')">View All</a></h6>                  
+            <hr>
+            <h6 class="category-link">Discounts</h6>
+            <div class="discounts">
+                <div class="subcategory-link">18% off</div>
+                <div class="subcategory-link">30% off</div>
+                <div class="subcategory-link">45% off</div>
+            </div>
+           
+            <ul class="category-list">
+                <li>
+                    <a class="category-link" href="#">Electronics</a>
+                    <ul class="subcategory-list">
+                        <li><a class="subcategory-link" href="#phones" onclick="loadProductsToPage('phones')">Smartphones</a></li>                     
+                        <li><a class="subcategory-link" href="#laptop" onclick="loadProductsToPage('electronics')">Laptops</a></li>
+                        <li><a class="subcategory-link" href="#accessory"  onclick="loadProductsToPage('accessory')">Accessories</a></li>                       
+                    </ul>
+                </li>
+                <li>
+                    <a class="category-link" href="#">Clothing</a>
+                    <ul class="subcategory-list">
+                        <li><a class="subcategory-link" href="#mens" onclick="loadProductsToPage('men')">Men's</a></li>
+                        <li><a class="subcategory-link" href="#womens" onclick="loadProductsToPage('women')">Women's</a></li>
+                        <!-- <li><a class="subcategory-link" href="#">Kids'</a></li> -->
+                        <li><a class="subcategory-link" href="#kids" onclick="loadProductsToPage('kids')">Kids'</a></li>                        
+                    </ul>
+                </li>
+                <li><a class="category-link" href="#">Home & Kitchen</a></li>
+                <li><a class="category-link" href="#">Toys & Games</a></li>
+                <li><a class="category-link" href="#">Books</a></li>
+            </ul>
+        </div>
+        </div>
+</div>
+

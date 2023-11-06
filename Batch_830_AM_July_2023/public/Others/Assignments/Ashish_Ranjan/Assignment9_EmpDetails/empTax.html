@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ---------------User input----------->
+
+        var empName = prompt("Enter Employee Name");
+        var empAge = prompt("Enter Employee Age ");
+        var empGender = prompt("Enter Employee Gender");
+        var empDept = prompt("Enter Department");
+        var BasicSalary = prompt("Enter Employee Basic Salary");
+
+        var basicSalary =parseInt(BasicSalary);
+
+
+        // ------------PF & HRC calculation--------->
+        var PF = basicSalary * 0.12;
+        var HRC =basicSalary *0.24;
+
+
+        // --------------Total salary ---------->
+
+        var totalSalary = basicSalary + PF + HRC;
+
+
+         // <-------Display Output ------------>
+        console.log("Employee Name :"+empName);
+        console.log("Employee Age :"+empAge);
+        console.log("Employee Gender :"+empGender);
+        console.log("Employee  :"+empDept);
+        console.log("Employee Total Salary :"+totalSalary);
+
+        // --------------Tax Calculation-------------->
+
+        if(empGender =='male'){             //if gender == male then execute this conditional statement
+           
+            if (totalSalary >=300000) {
+                var totTax =totalSalary *0.15;          // Tax calculate 15%
+                var totSalary =totalSalary -totTax;
+                console.log("Total Tax of Employee is :"+totTax);
+                console.log("total salary after deducting tax :"+totSalary);
+                 }
+
+                 else if( totalSalary >=200000 && totalSalary < 300000){
+                    var totTax =totalSalary *0.1;                       //Tax Calculate 10%
+                    var totSalary =totalSalary -totTax;
+                    console.log("Total Tax Of Employee is :"+totTax);
+                    console.log("total salary after deducting tax :"+totSalary);
+
+                 }
+
+                 else if(totalSalary >=100000 && totalSalary < 200000){
+                    var totTax = totalSalary *0.05;                       //tax Calculate 5%
+                    var totSalary =totalSalary -totTax;
+                    console.log("Total Tax of Employee is :"+totTax);
+                    console.log("total salary after deducting tax :"+totSalary);
+                 }
+
+                 else if(totalSalary >=0 && totalSalary < 100000){
+                    var totTax =0;                                       //Tax Calculate 0%
+                    var totSalary =totalSalary -totTax;
+                    console.log("Total Tax of Employee is :"+totTax);
+                    console.log("total salary after deducting tax :"+totSalary);
+                 }
+
+        } else{                 //if gender == female then execute this conditional statement
+
+            if(totalSalary >=300000){
+
+                var totTax = totalSalary *0.1;                   //Tax Calculate 10%
+                var totSalary =totalSalary -totTax;
+                console.log("Total tax of Employee :"+totTax);
+                console.log("total salary after deducting tax :"+totSalary);
+            }
+            else if(totalSalary >= 200000 && totalSalary <300000){
+
+                var totTax = totalSalary *0.05;                      //Tax Calculate 5%
+                var totSalary =totalSalary -totTax;
+                console.log("Total tax of Employee :"+totTax);
+                console.log("total salary after deducting tax :"+totSalary);
+            }
+            else if( totalSalary >=0 && totalSalary <100000){
+
+                var totTax =0;                                   //Tax Calculate 0%
+                var totSalary =totalSalary -totTax;
+                console.log("Total tax of employee :"+totTax);
+                console.log("total salary after deducting tax :"+totSalary);
+            }
+
+        }
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        .container{
+            border: 1px solid;
+            height: 150px;
+            width: 150px;
+            margin: 50px auto;
+            background-image: url("https://th.bing.com/th?q=Anime+Icons+50X50&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            border-radius: 10px;
+            position: absolute;
+            left: 30px;
+            top: 10px;
+            animation: 15s mystyles infinite;
+        }
+        @keyframes mystyles {
+            1%{
+                left: 1%;
+                top: 2%px;
+            }
+            25% {
+                left: 85%;
+                top: 2%;
+                transform: rotate(360deg);
+            }
+            50%{
+                left:85%;
+                top:70%;
+
+            }
+            75%{
+                left: 2%;
+                top: 70%;
+                
+
+            }
+            100%{
+                top:2%;
+                left: 2%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"> </div>    
+</body>
+</html>

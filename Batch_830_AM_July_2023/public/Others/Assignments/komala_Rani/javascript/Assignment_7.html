@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Student details</title>
+    </head>
+    <body>
+        <script>
+
+            var studentname = prompt("enter studentname");
+            var studentage = prompt("enter studentage");
+            var studentgender = prompt("enter studentgender");
+
+            var telugumarks = prompt("enter telugumarks: ");
+            telugumarks = parseInt(telugumarks);
+
+            var englishmarks = prompt("enter englishmarks: ");
+            englishmarks = parseInt(englishmarks);
+
+            var mathsmarks = prompt("enter mathsmarks: ");
+            mathsmarks = parseInt(mathsmarks);
+
+            var sciencemarks = prompt("enter sciencemarks: ");
+            sciencemarks = parseInt(sciencemarks);
+
+            var socialmarks = prompt("enter socialmarks: ");
+            socialmarks = parseInt(socialmarks)
+            
+            var total = (telugumarks + englishmarks + mathsmarks + sciencemarks + socialmarks);
+            var avg = (total / 5);
+
+            console.log("enter studentname: " +studentname);
+            console.log("enter studentage: "+studentage);
+            console.log("enter studentgender: "+studentgender);
+            console.log("enter total is: "+total);
+            console.log("enter avg is: "+avg);
+            console.log("student is passed")
+
+            
+        </script>
+    </body>
+
+</html>

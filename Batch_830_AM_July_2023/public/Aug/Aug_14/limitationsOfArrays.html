@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Limitations of arrays
+        </title>
+    </head>
+    <body>
+        <script>
+            /* 
+            var sname = 'Raj';
+            var sage = 20;
+            var gender = 'Male';
+            var m1 = 50;
+            var m2 = 90;
+            var m3 = 99;
+            var m4 = 56;
+            var m5 = 78;
+
+
+            var total = m1 + m2 + m3 + m4 + m5;
+            var avg = total / 5;
+
+            console.log("Name is " + sname);
+            console.log("age " + sage);
+            console.log("Gender " + gender);
+            console.log("Total is " + total);
+            console.log("Avg is " + avg);
+            */
+           /*
+           var empname = 'Teena';
+           var empDep = 'It';
+            var sname = 'Raj';
+            var sage = 20;
+            var gender = 'Male';
+            var marks = [34, 66, 78, 99];
+            var total = 0;
+
+            for (var i = 0 ; i < marks.length; i++) {
+                total += marks[i];
+            }   
+            var avg = total / marks.length;
+
+            console.log("Name is " + sname);
+            console.log("age " + sage);
+            console.log("Gender " + gender);
+            console.log("Total is " + total);
+            console.log("Avg is " + avg);
+            */
+
+            var empname = 'Teena';
+            var empDep = 'It';
+            var sDetails = [
+                "Raj", 
+                20, 
+                [34, 66, 78, 99],
+                'Male', 
+                
+                0, 
+                0
+            ];
+            // sDetails[0] -> Raj
+            // sDetails[2] -> 20
+            // sDetails[3][1] -> 66
+
+            for (var i = 0 ; i < sDetails[3].length; i++) {
+                sDetails[4] += sDetails[3][i];
+            }   
+            sDetails[5] = sDetails[4] / sDetails[3].length;
+
+            console.log("Name is " + sDetails[0]);
+            console.log("age " + sDetails[1]);
+            console.log("Gender " + sDetails[2]);
+            console.log("Total is " + sDetails[4]);
+            console.log("Avg is " + sDetails[5]);
+        </script>
+    </body>
+</html>

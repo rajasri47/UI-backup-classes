@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+<html lang="eng">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <title> Employee Details </title>
+   
+</head>
+<body>
+    <script>
+
+       var name= prompt("Enter student name");
+       var age= prompt("Enter age");
+       var gender=prompt("Enter Gender");
+       var math=prompt("Enter Math marks");
+       var Phy=prompt("Enter Physics marks");
+       var chem=prompt("Enter chemistry marks");
+       var Bio=prompt("Enter Biology marks");
+       var Eng=prompt("Enter English marks");
+
+       
+        math = parseInt(math);
+        Phy=parseInt(Phy);
+        chem=parseInt(chem);
+        Bio=parseInt(Bio);
+        Eng=parseInt(Eng);
+
+        var totalmark = math + Phy + chem + Bio + Eng;
+
+        var result= totalmark/5 ;
+
+       
+       
+       console.log("Student mark");
+       console.log(" Name: "+ name);
+       console.log(" Age: " + age);
+       console.log("Gender: "+ gender);
+       console.log("Total mark: "+ totalmark);
+       console.log("Percentage: " + result);
+
+       
+    </script>
+</body>
+</html>

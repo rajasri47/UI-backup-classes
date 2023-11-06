@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 47
+        </title>
+        
+    </head>
+    <body>
+        <h1>
+            Eployee Salary Tax With JSON
+        </h1>
+        <script>
+            var empdata = {
+                name : 'Ishan Arora',
+                age : 22,
+                gender : 'Male',
+                department : 'Web Developer',
+                basicsal : 1200000,
+                getTotal() {
+                    this.hra = (24*this.basicsal) / 100;
+                    this.pf = (12*this.basicsal) / 100;
+                    this.total = this.basicsal + this.hra + this.pf;
+                },
+                getDetails() {
+                    this.getTotal();
+                    console.log('Name ' + this.name);
+                    console.log('Age ' + this.age);
+                    console.log('Gender ' + this.gender);
+                    console.log('Department ' + this.department);
+                    console.log('Basic Salary ' + this.basicsal);
+                    console.log('Total Salary ' + this.total);
+                }
+            }
+            empdata.getDetails();
+        </script>
+    </body>
+</html>

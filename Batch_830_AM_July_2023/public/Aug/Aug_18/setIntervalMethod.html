@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var count = 0;
+            console.log("start");
+
+            var mytimeout = setTimeout(() => {
+                console.log("hello");
+            }, 3000);
+            clearTimeout(mytimeout);
+
+
+            // var myinterval = setInterval(() => {
+            //     count++;
+            //     console.log("hello  every one");
+            //     console.log("Bye for today");
+            //     if (count == 3) {
+            //         clearInterval(myinterval);
+            //     }
+            // }, 2000);
+            // console.log("end")
+        </script>
+    </body>
+</html>

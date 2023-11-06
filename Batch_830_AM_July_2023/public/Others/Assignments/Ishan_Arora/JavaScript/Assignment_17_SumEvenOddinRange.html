@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 17
+        </title>
+    </head>
+    <body>
+        <h1>
+            Display sum of even and odd numbers individually in given range
+        </h1>
+        <script>
+            var number1 = prompt("Enter First Number: ");
+            var number2 = prompt("Enter Second Number: ");
+
+            number1 = parseInt(number1);
+            number2 = parseInt(number2);
+
+            var sumEven = 0;
+            var sumOdd = 0;
+
+            for (var i = number1; i <= number2; i++) {
+                if (i % 2 ==0) {
+                    sumEven += i;
+                }
+                else {
+                    sumOdd += i;
+                }
+            }
+            console.log("Sum of Even numbers from " + number1 + " to " + number2 + " is " + sumEven);
+            console.log("Sum of Odd numbers from " + number1 + " to " + number2 + " is " + sumOdd);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name=prompt("Enter User Name ");
+        var age=prompt("Enter User Age");
+        var Gender=prompt("Enter User Gender");
+        var basicsal=prompt("Enter Basic salary");
+
+        basicsal=parseInt(basicsal);
+
+        var pf = (basicsal*12)/ 100;
+        var hra = (basicsal*22)/ 100;
+
+         var Totalsal=pf+hra+basicsal;
+
+        console.log('Employee Details');
+        console.log("Name is" + name);
+        console.log("Age is" + age);
+        console.log("Gender is" + Gender);
+        console.log("Basicsal" + basicsal);
+        console.log("Pf is" + pf);
+        console.log("Hra is" + hra);
+        console.log("Totalsal is"+ Totalsal);
+
+        if(Gender=="Male"){
+          if(Totalsal >= 300000)
+         tax=Totalsal*10/100;
+         console.log("Tax is" + tax);
+        }
+         else if(Totalsal>=200000){
+
+        
+         tax=Totalsal*5/100;
+         console.log("Tax is" + tax);
+         }
+         else if(Totalsal>=100000){
+
+         tax=Totalsal*1/100;
+         console.log("Tax is" + tax);
+        }
+        else{
+            console.log("Tax is ZERO");
+
+        }
+         if(Gender=="Female"){
+            if(Totalsal>=300000)
+            tax=Totalsal*7/100;
+            console.log("Tax is" + tax )
+        }
+         else if(Totalsal>=200000){
+            tax=Totalsal*5/100;
+            console.log("Tax is" + tax )
+         }
+         else if(Totalsal>=100000){
+            tax=Totalsal*3/100;
+            console.log("Tax is" + tax )
+         }
+         else{
+            console.log("TAX IS ZERO")
+         }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Json</title>
+    </head>
+    <body>
+        
+        <script>
+           var Emp={}
+           Emp.name=prompt("enter emp name");
+           Emp.age=parseInt(prompt("Entery Emp age"));
+           Emp.gender=prompt("enter your gender");
+           Emp.BasicSal=parseInt(prompt("Enter Basic salary"));
+           Emp.pf = (12/100) * Emp.BasicSal;
+           Emp.Hra=(24/100) * Emp.BasicSal;
+           Emp.TotalSal=Emp.Hra + Emp.pf;
+
+          console.log("your total salary is " + Emp.TotalSal); 
+
+        </script>
+        
+    </body>
+</html>

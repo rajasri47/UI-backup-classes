@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Checkng whether the given string is a part of main string or not
+    </title>
+</head>
+<body>
+    <script>
+        var input = () => {
+            var mainString = prompt("Enter your string")
+            console.log("User given string is  = " + mainString);
+            var subString = prompt("Enter the string you wanna check");
+            var string = checkString(mainString, subString);
+        }
+
+        var checkString = (mainString, subString) => {
+            var stringCount = mainString.length;            
+            mainString = mainString.toLowerCase();
+            subString = subString.toLowerCase();
+            var a = mainString.split(" ");
+            var aSize = a.length;
+            var count = 0;
+
+            for (var i = 0 ; i < aSize ; i++) {
+                if (a[i] == subString) {
+                    count = count + 1;
+                    break;
+                }
+            }
+            if (count == 1) {
+                 console.log("" + subString + " is a part of the main string");
+            } 
+            else {
+                console.log("" + subString + " is not a part of the main string");
+            }
+        }
+        input();
+
+    </script>
+</body>
+</html>

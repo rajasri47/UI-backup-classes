@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var data = [];
+            n = prompt("enter how many no");
+            n = parseInt(n);
+            var maxvalue = 0;
+            for (i = 0; i < n; i++)
+            {
+                data[i] = prompt("enter the values" +i);
+                data[i] = parseInt(data[i]);
+            }
+            for (i = 1; i < data.length; i++)
+            {
+                if (maxvalue < data.length)
+                {
+                    maxvalue = data[i];
+                }
+            }
+            console.log(maxvalue);
+            
+        </script>
+        
+    </body>
+</html>

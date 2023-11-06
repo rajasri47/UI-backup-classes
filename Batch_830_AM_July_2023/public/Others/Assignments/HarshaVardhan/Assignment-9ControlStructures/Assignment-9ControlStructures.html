@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstarting conditional control structures</title>
+    </head>
+    <body>
+        <h2>"Result is shown in console"</h2>
+       <script>
+        var name = prompt("enter employee name");
+        var gender = prompt("enter gender");
+        var age = prompt("enter employee age");
+        age = parseInt(age);
+        var department = prompt("enter employee department");
+        var basicsalary = prompt("enter basic salary");
+        basicsalary = parseInt(basicsalary);
+        var pf = basicsalary * 12 / 100;
+        var hra = basicsalary * 24 / 100;
+        var totalsalary = pf + hra + basicsalary;
+        var tax;
+        console.log("employee name is" + name);
+        console.log("employee gender is" + gender);
+        console.log("employee age is" + age);
+        console.log("employee department is" + department);
+        console.log("employee basicsalary is" + basicsalary);
+        console.log("employee pf is" + pf);
+        console.log("employee hra is" + hra);
+        console.log("employee totalsalary is" + totalsalary);
+        if(gender == "male")
+        {
+           if(totalsalary >= 300000)
+           {
+             tax = totalsalary * 15 /100;
+             console.log("tax to be paid is" + tax);
+           }
+           else if(totalsalary >= 200000)
+           {
+             tax = totalsalary * 10 /100;
+             console.log("tax to be paid is" + tax);   
+           }
+           else if(totalsalary >= 100000)
+           {
+             tax = totalsalary * 5 /100;
+             console.log("tax to be paid is" + tax);
+           }
+           else{
+            console.log("tax to be paid is zero");
+           }
+        }
+        if(gender == "female")
+        {
+            if(totalsalary >= 300000)
+           {
+             tax = totalsalary * 10 /100;
+             console.log("tax to be paid is" + tax);
+           }
+           else if(totalsalary >= 200000)
+           {
+             tax = totalsalary * 5 /100;
+             console.log("tax to be paid is" + tax);   
+           }
+           else{
+            console.log("tax to be paid is zero");
+           }
+        }
+       </script> 
+    </body>
+</html>

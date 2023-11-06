@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bookdetails={
+            bookname : "reference physics",
+            bookprice : 3000,
+            bookdiscount :"20%",
+            authors : ["raju" ,"ramesh","ram"],
+            bookPublisher : "Eenadu",
+            displaydetails() {
+                console.log("book name is"+this.bookname);
+                console.log("book price is"+this.bookprice);
+                console.log("book discount is"+this.bookdiscount);
+                console.log("book authors are"+this.authors);
+                console.log("book publisher is"+bookdetails.bookPublisher);
+                
+            }
+        }
+        bookdetails.displaydetails();
+    </script>
+</body>
+</html>

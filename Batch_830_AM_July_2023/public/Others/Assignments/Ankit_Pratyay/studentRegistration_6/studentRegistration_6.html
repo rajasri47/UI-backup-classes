@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SudentRegistrationForm.css" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <div class="header">Student Details Registration Form</div>
+    <div class="body">
+      <form action="http://sample.com/data/register" method="POST">
+        <div class="user">User Details</div>
+        <div class="userDetails">
+          <li class="name">
+            <label class="name" for="Name">
+              Name :
+              <input
+                class="a"
+                type="text"
+                name="name"
+                maxlength="10"
+                placeholder="Enter User Name"
+              />
+            </label>
+          </li>
+          <li class="name">
+            <label for="age">
+              Age :
+              <input
+                class="b"
+                type="number"
+                name="age"
+                placeholder="Enter Age"
+              />
+            </label>
+          </li>
+          <li>
+            <label class="gend" for="Gender"><span>Gender: </span></label>
+            <input class="c" type="radio" name="gender" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <input type="radio" name="gender" value="female" /> Trans
+          </li>
+          <li class="address">
+            <label class="add" for="address">
+              <span>Address : <br /></span>
+            </label>
+            <textarea name="address" cols="50" rows="5"></textarea>
+          </li>
+        </div>
+        <div class="education">Education Details</div>
+        <div class="educationDetail">
+          <ul>
+            <li>
+              <label class="add" for="Qualification"
+                ><span> Qualification :</span></label
+              >
+              <span class="e">
+                MCA <input type="checkbox" name="Qua_MCA" /> MBA
+                <input type="checkbox" name="Qua_MBA" /> BTech
+                <input type="checkbox" name="lng_mar" /> BE<input
+                  type="checkbox"
+                  name="lng_tel"
+                />
+              </span>
+            </li>
+            <li>
+              <label class="add" for="Languages"
+                ><span>Languages Known :</span>
+              </label>
+              <span class="d">
+                English <input type="checkbox" name="lng_eng" /> Hindi
+                <input type="checkbox" name="lng_hin" /> Marathi
+                <input type="checkbox" name="lng_mar" /> Others<input
+                  type="checkbox"
+                  name="other"
+                />
+              </span>
+            </li>
+            <li class="qualification">
+              <label class="add" for="qualification"
+                ><span>Course Opted for : </span>
+              </label>
+              <select name="qualification" class="opt">
+                <option value="">Select Option</option>
+                <option value="btech">B.Tech</option>
+                <option value="be">B.E.</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="mtech">M.Tech</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="about">About Yourself</div>
+        <div class="AboutUrs">
+          <ul>
+            <li class="aboutUr">
+              <label class="tell" for="abouturslf">
+                <span class="span">Tell Few Words About Yourself :</span>
+              </label>
+              <textarea
+                class="textarea"
+                name="abouturslf"
+                id=""
+                cols="50"
+                rows="5"
+              ></textarea>
+            </li>
+
+            <input type="submit" class="btn" value="SUBMIT" />
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="footer">@copyRight @2023</div>
+  </body>
+</html>

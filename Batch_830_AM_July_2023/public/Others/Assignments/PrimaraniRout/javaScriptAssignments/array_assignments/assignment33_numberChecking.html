@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Checking whether the given number is existing or not
+        </title>
+    </head>
+    <body>
+        <script>
+            var elements = () => {
+                var lengthOfArray = prompt("Enter the number of elements");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0 ; i < lengthOfArray ; i++) {
+                    a[i] = prompt("Enter " + i + " value");
+                    a[i] = parseInt(a[i]);
+                }
+                checking(a);
+            }
+
+            var checking = (a) => {
+                var number = prompt("Enter the number for checking");
+                number = parseInt(number);
+                var len = a.length;
+                var present;
+                for (var i = 0 ; i < len ; i++) {
+                    if (number == a[i]) {
+                        present = 1;
+                    } 
+                    else {
+                        present = 0;
+                    }
+                }
+                if (present == 1) {
+                    console.log(number + " is existing in the array")
+                } 
+                else {
+                    console.log(number + " is not existing in the array")
+                }
+            }
+
+            elements();
+
+        </script>
+    </body>
+</html>

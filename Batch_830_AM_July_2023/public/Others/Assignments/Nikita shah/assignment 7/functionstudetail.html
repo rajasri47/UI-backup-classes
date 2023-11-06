@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function readStuData(){
+            var sname, age, gender, Maths, Hindi, English, total = 0, avg, grade;    
+             sname= prompt("Enter student name:");
+             age= prompt("Enter age:");
+             gender= prompt("Enter gender:")
+             Maths= prompt("Enter marks of Maths")
+             Maths= parseInt(Maths);
+              
+             Hindi= prompt("Enter marks of Hindi")
+             Hindi= parseInt(Hindi);
+
+             English= prompt("Enter marks of English")
+             English= parseInt(English);
+            
+             avg = getTotalandAvg(Maths,Hindi,English);
+             grade = getGrade(avg);
+
+             displaystudetails(sname, age, gender, avg, grade);
+        }   
+
+        function getTotalandAvg(Maths,Hindi,English){
+            var total = Maths + Hindi + English;
+            var marksAvg = total/3;
+            return marksAvg;
+        }
+
+        function getGrade(avg){
+            var grade;
+            if(avg>=90){
+                grade='A++'
+            }
+            else if(avg>=80){
+                grade = 'A+'
+            }
+            else if( avg>=70){
+                grade = 'A'
+            }
+            else if( avg>=60){
+                grade = 'B+'
+            }
+            else if( avg>=50){
+                grade = 'B'
+            }else{
+                grade = 'failed'
+            }
+
+            return grade;
+        
+        }
+
+        function displaystudetails(sname, age, gender, avg, grade){
+            console.log("Student Details:");
+            console.log("Name is:" + sname);
+            console.log("Age:"+ age);
+            console.log("Gender:"+ gender);
+            console.log("Avg:"+ avg);
+            console.log("Grade:"+ grade);
+        }
+        readStuData();
+ </script>
+</body>
+</html>

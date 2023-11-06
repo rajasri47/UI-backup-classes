@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+         var sample=()=>{
+        var name,gender,age,department,basicSalary;
+         name = prompt("enter the name")
+         gender = prompt("enter the gender")
+         age = prompt("enter the age")
+         department = prompt("enter the department")
+         basicSalary = prompt("enter the basicSalary")
+        basicSalary = parseInt(basicSalary)
+        pf = (basicSalary * 12) / 100;
+        hra = (basicSalary * 24) / 100;
+        totalsalary = pf + hra + basicSalary;
+        data(name,gender,age,department,basicSalary,pf,hra);
+        dates=salary(totalsalary,gender)
+         }
+    function salary(totalsalary,gender){
+        if (gender == "male") {
+            if (totalsalary > 300000) {
+                console.log("tax percent is 15")
+            }
+            else if (totalsalary > 200000) {
+                console.log("tax percent is 10")
+            }
+            else if (totalsalary > 100000) {
+                console.log("tax percent is 5")
+            } else {
+                console.log("zero tax")
+            }
+        }
+        if (gender == "female") {
+            if (totalsalary > 300000) {
+                console.log("tax percent is 10")
+            }
+            else if (totalsalary > 200000) {
+                console.log("tax percent is 5")
+            } else {
+                console.log("zero tax")
+                return dates;
+            }
+    }
+    }
+
+        var data=(name,gender,age,department,basicSalary,pf,hra)=>{
+        console.log("name is:"+name)
+        console.log("gender is:"+gender)
+        console.log("age is:"+age)
+        console.log("department is:"+department)
+        console.log("basicSalary is:"+basicSalary)
+        console.log("pf is:"+pf)
+        console.log("hra is:"+hra)
+        }
+       sample();
+    </script>
+</body>
+
+</html>

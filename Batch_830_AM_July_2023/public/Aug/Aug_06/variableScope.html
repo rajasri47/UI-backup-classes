@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Global Scope variables
+        </title>
+    </head>
+    <body>
+        <script>
+            var a = 90; // Global/public scope
+            var b = 99; // Global / public
+            z = 100; // public
+            userAge = 30; //public
+
+            function sample() {
+                userName = "Teena"; //  public scope 
+                var c = 100; // Local/private scope
+                
+                console.log("Value of a is " + a);
+                console.log("Value of b is " + b);
+                console.log("Value of c is " + c);
+            }
+
+
+            sample();
+
+            
+            console.log("Value of a is " + a);
+            console.log("Value of c is " + c);
+        </script>
+    </body>
+</html>

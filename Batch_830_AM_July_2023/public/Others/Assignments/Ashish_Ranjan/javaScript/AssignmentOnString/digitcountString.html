@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+  </head>
+  <body>
+    <!-- --------------Demonstrate count the number in given string----------- -->
+    <script>
+      var count = 0;
+      var getString = prompt("Enter String");
+      var temp = [];
+      temp = getString;
+      console.log(temp);
+
+      for (var i = 0; i < temp.length; i++) {
+        if (
+          temp[i] == "1" ||
+          temp[i] == "2" ||
+          temp[i] == "3" ||
+          temp[i] == "4" ||
+          temp[i] == "5" ||
+          temp[i] == "6" ||
+          temp[i] == "7" ||
+          temp[i] == "8" ||
+          temp[i] == "9" ||
+          temp[i] == "0"
+        ) {
+          count++;
+        }
+      }
+
+      console.log("Total count of Number in given string : " + count);
+    </script>
+  </body>
+</html>

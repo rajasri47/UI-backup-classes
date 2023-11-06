@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class UniversityDetails {
+                constructor(data) {
+                    this.univName = data.univ;
+                }
+            }
+             
+            class CollegeDetails extends UniversityDetails {
+                constructor(data) {
+                    super(data);
+                    this.schoolName = 'PQR School '
+                }
+            }
+
+            class StudentDetails extends CollegeDetails {
+                constructor(data) {
+                    super(data);
+                    this.sname = 'Raj';
+                    
+                }
+                displayInfo() {
+                    console.log("unvi name " + this.univName);
+                    console.log("School name " + this.schoolName);
+                    console.log("Student name " + this.sname)
+                }
+            }
+
+            var p1 = new StudentDetails({univ: 'ABC new univ'});
+            p1.displayInfo();
+        </script>
+    </body>
+</html>

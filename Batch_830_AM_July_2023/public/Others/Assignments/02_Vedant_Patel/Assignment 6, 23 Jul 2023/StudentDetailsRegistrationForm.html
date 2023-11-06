@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="SudentRegistrationForm.css">
+<title>Sudent Registration Form</title>
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+    <div class="header">STUDENT REGISTRATION FORM</div>
+    <div class="containe">
+        <form action="http://abcsample.com/data/api/registration" method="GET">
+            <div class="Userd">
+                <h2>
+                    User Details
+
+                </h2>
+
+            </div>
+            <div class="userDetails">
+                <ul>
+                    <li class="li name">
+                        <span class="mandate">*</span>
+                        <label for="Name"> Name :
+                            <input class="a" type="text" name="name" maxlength="10" placeholder="Enter User Name"
+                                required>
+                        </label>
+
+                    </li>
+                    <li class="li age">
+                        <span class="mandate">*</span>
+                        <label for=""> Age :
+                            <input class="b" type="number" name="age" placeholder="Enter User Age" required>
+                        </label>
+                    </li>
+                    <li class="li gender">
+                        <span class="mandate">*</span>
+                        <label for="Gender"><span>Gender: </span>
+                            <input class="c" type="radio" name="gender" checked value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </li>
+
+                    <li class="li address">
+                        <span class="mandate">*</span>
+                        <label for="address">
+                            <span>Address : <br></span>
+                            <textarea name="address" id="" cols="50" rows="5"></textarea>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="education">
+                <h2>
+                    Education Details
+
+                </h2>
+
+            </div>
+            <div class="Edetails">
+                <ul>
+                    <li class="li">
+                        <span class="mandate">*</span>
+                        <label for="Qualification"><span> Qualification :
+                                <span class="e">
+                                    MCA <input type="checkbox" name="Qua_MCA" required>
+                                    MBA <input type="checkbox" name="Qua_MBA" required>
+                                    BTech <input type="checkbox" name="lng_mar" required>
+                                    BE<input type="checkbox" name="lng_tel">
+                                </span>
+                        </label>
+                    </li>
+                    <li class="li">
+                        <span class="mandate">*</span>
+                        <label for="Languages"><span>Languages Known :
+                                <span class="d">
+                                    English <input type="checkbox" name="lng_eng" required>
+                                    Hindi <input type="checkbox" name="lng_hin" required>
+                                    Marathi <input type="checkbox" name="lng_mar" required>
+                                    Telugu<input type="checkbox" name="lng_tel">
+                                </span>
+                        </label>
+                    </li>
+                    <li class="li qualification">
+                        <span class="mandate">*</span>
+                        <label for="qualification"><span>Course Opted for : </span>
+                            <select name="qualification">
+                                <option value="" selected>MCA</option>
+                                <option value="SSC">MBA</option>
+                                <option value="HSC">BE</option>
+                                <option value="Graduate">ME</option>
+                                <option value="Masters">M.Teck</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="about">
+                <h2>
+                    About Yourself
+
+                </h2>
+
+            </div>
+            <div class="AboutUrs">
+                <ul>
+
+                    <li class="li aboutUr">
+                        <label for="abouturslf">
+                            <span class="span">Tell Few Words About Yourself :</span><br>
+                            <textarea name="abouturslf" id="" cols="50" rows="5"></textarea>
+                        </label>
+                    </li>
+
+                    <input type="submit" class="btn" value="SUBMIT">
+                </ul>
+            </div>
+
+        </form>
+    </div>
+    <div class="footer">COPYRITES &copy; 2023</div>
+</body>
+
+</html>

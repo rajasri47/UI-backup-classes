@@ -1,0 +1,24 @@
+.block {
+  float: left;
+}
+
+ul > li {
+  border: 1px solid;
+  list-style: none;
+  margin: 12px;
+  padding: 12px;
+  width: 250px;
+  background-color: #ccc;
+  overflow: auto;
+}
+ol > li {
+  list-style: none;
+  border: 1px solid;
+  margin: 4px;
+  padding: 4px;
+  background-color: #fff;
+}
+ol {
+  margin: 4px;
+  padding: 4px;
+}

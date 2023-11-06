@@ -1,0 +1,31 @@
+body{
+    margin: auto;
+    width: 1000px;
+}
+li{
+    list-style: none;
+}
+#con1{
+    text-align: center;
+    border: 2px solid;
+    width: 250px;
+    height: auto;
+    margin: 10px auto;
+    padding-right: 50px;
+    background-color: antiquewhite;
+}
+input{
+    margin: 5px;
+}
+#con2{
+    
+    border: 2px solid;
+    width: 250px;
+    height: auto;
+    margin: 10px auto;
+    padding-right: 50px;
+    background-color: antiquewhite;
+}
+#con2 li{
+    margin: 5px;
+}

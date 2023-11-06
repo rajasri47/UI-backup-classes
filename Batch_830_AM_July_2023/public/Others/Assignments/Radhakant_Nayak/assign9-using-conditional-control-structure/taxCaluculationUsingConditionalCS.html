@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Tax calculate Using conditional CS
+        </title>
+    </head>
+    <body>
+        <h2> Goto the console tab</h2>
+        <script>
+            var name = prompt("enter your name")
+            var gender = prompt (' enter your gender');
+            var basicSal = prompt ('enter basic salary');
+            basicSal = parseFloat (basicSal);
+            pf = (basicSal * 12) / 100;
+            hra = (basicSal * 15) / 100;
+            totalSal = ( basicSal + pf + hra);
+            console.log(" name is " + name);
+            console.log(' gender is ' + gender);
+            console.log(" basic  salary is "+ basicSal);
+            console.log(" pf is "+ pf);
+            console.log(" hra is "+ hra);
+            console.log(" total sal is  "+ totalSal);
+            
+           if(gender == "male")
+           {
+            if(totalSal >= 300000)
+            {
+                tax1 = (totalSal * 15) / 100;
+                console.log( "tax to be paid is " + tax1 );
+            }
+            else if(totalSal >= 200000)
+            {
+                tax2 = (totalSal * 10) / 100;
+                console.log( "tax to be paid is " + tax2 );
+            }
+            else if(totalSal >= 100000)
+            {
+                tax3 = (totalSal * 5) / 100;
+                console.log( "tax to be paid is " + tax3 );
+            }
+            else
+            {
+                console.log(' there is no tax');
+            }
+           }
+           if(gender == "female")
+           {
+            if(totalSal >= 300000){
+                tax = (totalSal * 10) / 100;
+                console.log( "tax to be paid is " + tax );
+            }else if(totalSal < 300000  && totalSal >= 200000){
+                tax2 = (totalSal * 5) / 100;
+                console.log( "tax to be paid is " + tax2 ); 
+            }else{
+                console.log(' there is no tax');
+            }
+           }
+           
+        </script>
+    </body>
+</html>

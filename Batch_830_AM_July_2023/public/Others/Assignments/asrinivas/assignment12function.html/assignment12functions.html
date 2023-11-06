@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function empdetails(){
+            var name = prompt("enter name");
+            var age = prompt("enter age");
+            var gender = prompt("enter gender");
+            var department = prompt("department");
+            var sal = prompt("sal");
+            sal = parseInt(sal);
+            var pf = 12/100*sal;
+            var hra = 24/100*sal;
+            var totalsal = pf + hra + sal;
+            output(name,age,gender,department,sal,pf,hra,totalsal)
+            }
+            
+            
+
+        //   function calculation(sal,pf,hra,totalsal){
+        //    var pf = 12/100*sal;
+        //     var hra = 24/100*sal;
+        //     var totalsal = pf + hra + sal; 
+        //   }
+
+
+          function output (name,age,gender,department,sal,pf,hra,totalsal){
+
+            console.log("emp name is " + name);
+            console.log("emp age is " + age);
+            console.log("emp gender is " + gender);
+            console.log("emp department" + department);  
+            console.log("emp sal is " + sal);
+            console.log("emp pf is " + pf);
+            console.log("emp hra is " + hra);
+            console.log("emp totalsal is " + totalsal);
+          
+          }
+        
+        empdetails();
+            
+           
+            
+
+            
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background-color: black;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+.navtop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space{
+    margin: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.space:hover{
+    background-color: white;
+    color:black
+}
+
+
+
+.main{
+    background-image: url(https://t4.ftcdn.net/jpg/02/86/36/11/360_F_286361199_fzZsOpZ3memFzCn889a9TZHMuTTsFrVl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.catlog{
+    border: 1px solid;
+    display: flex;
+    height:200px;
+    width: 300px;
+    margin: 10px;
+}
+
+.contain{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid;
+}

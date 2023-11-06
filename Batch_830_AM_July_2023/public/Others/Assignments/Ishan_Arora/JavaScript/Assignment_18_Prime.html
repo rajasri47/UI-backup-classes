@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 18
+        </title>
+    </head>
+    <body>
+        <h1>
+            Check for Prime Number
+        </h1>
+        <script>
+            var number = prompt("Enter Number: ");
+            number = parseInt(number);
+
+            for (i = 2; i < number; i++) {
+                var rem = number % i
+                if (rem == 0) {
+                    break;
+                }
+            }
+            if (rem == 0) {
+                console.log(number + " is not a Prime Number");
+            } else {
+                console.log(number + " is a Prime Number");
+            }
+        </script>
+    </body>
+</html>

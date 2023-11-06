@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EmployeeDetails</title>
+        <style>
+            h3{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3> Employee Salary And TaxDetails</h3>
+        <i><p> for the result right click and open inspect then go to console </p></i>
+        <script>
+            var EmpName = prompt("enter employee name");
+            var EmpAge = prompt (" enter employee age");
+            var Gender = prompt ( " enter employee gender");
+            var BasicSalary = prompt ( " enter basic salary");
+
+            BasicSalary = parseInt (BasicSalary);
+
+            var Pf = (BasicSalary * 12)/100;
+            var Hra = (BasicSalary * 24)/100;
+
+            TotalSalary = Pf + Hra + BasicSalary;
+
+            console.log( "Employee Details");
+            console.log( "EmpName is" + EmpName);
+            console.log( "EmpAge is" + EmpAge);
+            console.log( " Gender is" + Gender);
+            console.log( " Pf is" + Pf);
+            console.log( "Hra is" + Hra);
+            console.log( " TotalSalary is"+ TotalSalary);
+            
+
+           
+           //For male
+
+           if( Gender =="male")
+           {
+             if(TotalSalary = 300000)
+             {
+               
+                TotalTax = (TotalSalary*15)/100;
+                 SalaryAfterTax = TotalSalary -TotalTax;
+                 console.log( " Tax percentage of Employee is 15% ");
+                 console.log( " Total salary before Tax is" +TotalSalary );
+                 console.log( "Total tax is" + TotalTax);
+                 console.log(" Total salary after tax is" + SalaryAfterTax);
+                }
+            
+          else if (TotalSalary>=200000)
+          {
+            
+            TotalTax = (TotalSalary*10)/100;
+                 SalaryAfterTax = TotalSalary- TotalTax;
+                 console.log( " Tax percentage of Employee is 10% ");
+                 console.log( " Total salary before Tax is" +TotalSalary );
+                 console.log( "Total tax is" + TotalTax);
+                 console.log(" Total salary after tax is" + SalaryAfterTax);
+                }
+
+          
+          else if(TotalSalary>=200000 )
+          {
+            TotalTax = (TotalSalary*5)/100;
+              SalaryAfterTax = TotalSalary - TotalTax;
+              console.log( " Tax percentage of Employee is 5%");
+              console.log(" Total salary before Tax is" + TotalSalary);
+              console.log( " Total tax is" + TotalTax);
+              console.log( "Total salary after tax is " + SalaryAfterTax);
+          }
+         
+          else if(TotalSalary>=100000 )
+          {
+          TotalTax = 0;
+              SalaryAfterTax = TotalSalary - TotalTax;
+              console.log( " Tax percentage of Employee is 0%");
+              console.log(" Total salary before Tax is" + TotalSalary);
+              console.log( " Total tax is" + TotalTax);
+              console.log( "Total salary after tax is " + SalaryAfterTax);
+          }
+
+          }
+
+          if( Gender == "female")
+          {
+            if(TotalSalary>=300000)
+            {
+            TotalTax = (TotalSalary*10)/100;
+              SalaryAfterTax = TotalSalary - TotalTax;
+              console.log( " Tax percentage of Employee is 10%");
+              console.log(" Total salary before Tax is" + TotalSalary);
+              console.log( " Total tax is" + TotalTax);
+              console.log( "Total salary after tax is " + SalaryAfterTax);
+          }
+         else if(TotalSalary >= 200000)
+          {
+            TotalTax = (TotalSalary*5)/100;
+              SalaryAfterTax = TotalSalary - TotalTax;
+              console.log( " Tax percentage of Employee is 5%");
+              console.log(" Total salary before Tax is" + TotalSalary);
+              console.log( " Total tax is" + TotalTax);
+              console.log( "Total salary after tax is " + SalaryAfterTax);
+            }
+             else if( TotalSalary >= 100000)
+            {
+                TotalTax = 0;
+              SalaryAfterTax = TotalSalary - TotalTax;
+              console.log( " Tax percentage of Employee is 0%");
+              console.log(" Total salary before Tax is" + TotalSalary);
+              console.log( " Total tax is" + TotalTax);
+              console.log( "Total salary after tax is " + SalaryAfterTax);
+            }
+        }
+            
+
+          
+
+
+           
+
+
+        </script>
+        
+    </body>
+    </html>

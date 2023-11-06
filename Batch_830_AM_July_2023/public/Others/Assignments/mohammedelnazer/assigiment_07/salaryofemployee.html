@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+    <style>
+        .h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        here is the steps to run the file 
+        <li>
+            go to inspect then console to see the flow of execuation
+        </li>
+    </p>
+    <script>
+        var ename,age,dept,gender,bSalary;
+        var ename = "mohammed";
+        var age = 22;
+        var gender = "male";
+        var dept = "IT";
+        var Bsalary = 40000;
+
+        
+        var PF = 12/100*Bsalary;
+        var HRA = 24/100*Bsalary;
+
+        var totalsalary = PF + HRA + Bsalary;
+
+        console.log( "The Name of Emp is " + ename );
+        console.log( "The Age of "+ ename + " is " + age );
+        console.log( "The Dept of " + ename +" is " + dept );
+        console.log( "Basic Salary of mohammed is " + Bsalary );
+        console.log( "PF of mohammed is " + PF );
+        console.log( "HRA of mohammed is " + HRA );
+        console.log( "Total Salary of mohammed is " + totalsalary );
+
+    </script>
+</body>
+</html>

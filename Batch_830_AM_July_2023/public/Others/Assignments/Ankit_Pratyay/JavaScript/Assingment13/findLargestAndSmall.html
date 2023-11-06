@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get largest and Smallest Number</title>
+    <style>
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+      .getResult {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Find The Largest Number and Smallest from Given Array</h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">
+      Right click on Webpage then Inspect and then Console
+    </p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+      function getValue(arr) {
+        let large = arr[0];
+        let small = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+          if (+arr[i] > large) {
+            large = +arr[i];
+          }
+          if (+arr[i] < small) {
+            small = +arr[i];
+          }
+        }
+        console.log("Largest number from Array is : " + large);
+        console.log("Smallest number from Array is : " + small);
+      }
+      function getData() {
+        var input = prompt("Enter a list of items separated by commas:");
+        input = input.split(",");
+        getValue(input);
+      }
+      getData();
+    </script>
+  </body>
+</html>

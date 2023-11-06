@@ -1,0 +1,23 @@
+CSS Positions:
+    when we want to move any dom element to any required positon with in the page, without changing the dimentions, we use the below 4 css properties 
+
+        top
+        right
+        bottom
+        left 
+
+    The above 4 css props can only be considerd by the DOM elements which are positioned as non static. 
+
+        CSS property position will take below possible values:
+
+            position: static/relative/absolute/fixed/sticky;
+
+        position: static:
+            It os not going to consider the above 4 css props, it cannot be moved from the default position
+
+        Position Relative:
+
+
+        Any dom element which is a static, will fall by default under x,y axis , and the elements under x,y axis cannot be moved to new position 
+
+        Any dom elements with position non static, will automatically move from default xy axis to z axis 

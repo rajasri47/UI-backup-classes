@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Odd And Even Numbers In Given Range </title>
+        <style>
+            h1{
+                color: maroon;
+                font-size: xx-large;
+                font-style: oblique;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Taking Input From User & Seperate Odd And Even Numbers In Given Range </h1>
+        <script>
+            var mmin_range,max_range,Even_sum=0,Odd_sum=0;
+            min_range = prompt("Enter Minimum Range");
+            min_range = parseInt(min_range);
+            max_range = prompt("Enter Maximum Range");
+            max_range = parseInt(max_range);
+
+            for(i=min_range;i<=max_range;i++){
+                if(i%2==0){
+                    Even_sum = Even_sum+i;
+                }
+                else{
+                    Odd_sum = Odd_sum+i;
+                }
+            }
+            console.log("Even Sum is "+Even_sum);
+            console.log("Odd Sum is "+Odd_sum);
+        </script>
+    </body>
+</html>

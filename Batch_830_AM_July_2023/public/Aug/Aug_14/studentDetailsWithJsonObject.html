@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var empname = 'Teena';
+            var empDep = 'It';
+            var tempData = [ 20, 'Male',"Raj",[45, 90, 89, 44] ];
+            
+            var sdetails = {
+                'age' : 20,
+                gender : 'Male',
+                "sname" : "Raj",
+                marks : [45, 90, 89, 44], // sdetails.marks[1];
+                total: 0
+            };
+            // console.log(tempData)
+            // console.log(sdetails);
+
+            // console.log(tempData[0]);
+            // console.log(sdetails.sname)
+
+            for (var i = 0 ; i < sdetails.marks.length; i++) {
+                sdetails.total += sdetails.marks[i];
+            }   
+            sdetails.avg = sdetails.total / sdetails.marks.length;
+
+            console.log("Name is " + sdetails.sname);
+            console.log("age " + sdetails.age);
+            console.log("Gender " + sdetails.gender);
+            console.log("Total is " + sdetails.total);
+            console.log("Avg is " + sdetails.avg);
+
+        </script>
+    </body>
+</html>

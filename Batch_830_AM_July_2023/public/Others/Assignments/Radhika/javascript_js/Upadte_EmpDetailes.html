@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    
+    <title>Employee Details</Details></title>
+   
+</head>
+
+<body>
+    <h3 > To update EmpDetailes Using Functions</h1>
+    <script>
+
+        var ename, age, dept, gender, Bsalary;
+        var PF, HRA, TotalSalary;
+
+        function EmpInfo() {
+            ename = prompt("Enter Name ");
+            age = prompt("Enter age ");
+            dept = prompt("Enter Department ");
+            gender = prompt("Enter Gender ");
+            Bsalary = prompt("Enter BasicSalary ");
+            Bsalary = parseInt(Bsalary);
+            EmpBsalary()
+        }
+
+        function EmpBsalary() {
+            PF = 12 / 100 * Bsalary;
+            HRA = 24 / 100 * Bsalary;
+        }
+
+        function EmpTotalSalary() {
+            TotalSalary = PF + HRA + Bsalary;
+        }
+
+        function EmpData() {
+            EmpInfo()
+            EmpTotalSalary()
+            console.log("Emp Name is " + ename);
+            console.log("Emp Age is " + age);
+            console.log("Emp Department is " + dept);
+            console.log("Basic Salary of " + ename + " is " + Bsalary);
+            console.log("PF of " + ename + " is " + PF);
+            console.log("HRA of " + ename + " is " + HRA);
+            console.log("Total Salary of " + ename + " is " + TotalSalary);
+         
+            if (TotalSalary>= 300000) {
+                Tax = 15 / 100 * TotalSalary;
+                console.log("tax paid by %15");
+                console.log("Total Tax Paid by "  + Tax);
+            }
+            else if (TotalSalary>= 200000) {
+   
+                Tax = 10 / 100 * TotalSalary;
+                console.log("tax paid by %10");
+                console.log("Total Tax Paid by "+ Tax);
+            }
+            else if (TotalSalary>= 100000) {
+                Tax = 5 / 100 * TotalSalary;
+                console.log("tax paid by %5");
+                console.log("Total Tax Paid by " + Tax);
+            }else{
+                console.log("Total Tax Paid by 0")
+            }
+        }
+        EmpData()
+    </script>
+</body>
+
+</html>

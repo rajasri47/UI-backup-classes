@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        .header{
+            color: red;
+            background-color: lawngreen;
+            text-decoration: underline;
+            border: 1px solid;
+            text-align: center;
+        }
+      
+
+        
+        .LeftChild{
+            border: 1px solid;
+            text-align: center;
+            margin: 10px;
+            list-style: none;
+            height: 50px;
+            width: 250px;
+            background-color: brown;
+        }
+        .border{
+            border: 1px solid;
+            height: 600px;
+            width: 1420px;
+            overflow-x: scroll;
+            background-color: oldlace;
+           
+         }
+         .LeftParent{
+            border: 1px solid;
+            height: 600px;
+            width: 420px;
+            margin: 10px;
+            overflow-x: scroll;
+            background-color: sandybrown;
+
+         }
+         .rightparent{
+            border: 1px solid;
+            height: 600px;
+            width: 920px;
+            margin: 10px;
+            float: right;
+            overflow: scroll;
+
+         }
+         .RightChid{
+            border: 1px solid;
+            height: 270px;
+            width: 850px;
+            margin: 10px 5px;
+            float: right;
+            background-color: lightblue;
+           
+            
+
+         }
+         
+         .center{
+            text-align: center;
+            padding: 10px;
+            
+         }
+         .container{
+            border:1px solid;
+            height:100px;
+            width:60px;
+            margin: 10px;
+            background-image: url("https://tse3.mm.bing.net/th?id=OIP.et2HYcmLm4d2KSYeJm12xAHaDk&pid=Api&P=0&h=220");
+            background-repeat: no-repeat;
+            
+         }
+         .name1{
+            background-position: -1px -37px;
+         }
+         .name2{
+            background-position: -51px -28px;
+         }
+         .name3{
+            background-position: -98px -29px;
+
+         }
+         .name4{
+            background-position: -142px -29px;
+
+         }
+         .name5{
+            background-position: -195px -11px;
+
+         }
+         .name6{
+            background-position: -257px -11px;
+            
+         }
+         .name7{
+            background-position: -303px -25px
+           
+         }
+         .name8{
+            background-position: -343px -25px;
+           
+
+         }
+         .name9{
+            background-position: -395px -34px;
+
+         }
+         .footer{
+            color: blue;
+            background-color: antiquewhite;
+            border: 1px solid;
+            text-align: center;
+         }
+         
+     </style>   
+</head>
+<body>
+    <h2 class="header"> Student Details </h2>
+    <div class="border">
+        <div class="rightparent"> 
+            <div class="RightChid"> 
+                <div class="container name1"> </div>
+                <div class="center"> name:Jadeja</div>
+                <div class="center"> Age:30</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Gujarath</div>
+               
+               
+            </div>
+            <div class="RightChid">
+                <div class="container name2"> </div>
+                <div class="center"> name:Suresh Raina</div>
+                <div class="center"> Age:38</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Delhi</div>
+             </div>
+            <div class="RightChid"> 
+                <div class="container name3"> </div>
+                <div class="center"> name:Rohit Sharma</div>
+                <div class="center"> Age36</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Mumbai</div>
+            </div>
+            <div class="RightChid">
+                <div class="container name4"> </div>
+                <div class="center"> name:Virat Kohli</div>
+                <div class="center"> Age:34</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Delhi</div>
+             </div>
+            <div class="RightChid"> 
+                <div class="container name5"> </div>
+                <div class="center"> name:MS Dhoni</div>
+                <div class="center"> Age:42</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Ranchi</div>
+            </div>
+            <div class="RightChid">
+                <div class="container name6"> </div>
+                <div class="center"> name:R Ashwin</div>
+                <div class="center"> Age:36</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Chennai</div>
+             </div>
+            <div class="RightChid"> 
+                <div class="container name7"> </div>
+                <div class="center"> name:A rahane</div>
+                <div class="center"> Age:36</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Mumbai</div>
+            </div>
+            <div class="RightChid"> 
+                <div class="container name8"> </div>
+                <div class="center"> name:Umesh Yadav</div>
+                <div class="center"> Age:38</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Hyd</div>
+            </div>
+            <div class="RightChid"> 
+                <div class="container name9"> </div>
+                <div class="center"> name:Shikhar Dhawan</div>
+                <div class="center"> Age:38</div>
+                <div class="center"> Gender:Male</div>
+                <div class="center"> loaction:Punjab</div>
+            </div>
+        </div>
+        <div class="LeftParent"> 
+            <div>
+                <ol>
+                    <li class="LeftChild">
+                        Jadeja
+                    </li>
+                    <li class="LeftChild">
+                        Suresh Raina
+                    </li>
+                    <li class="LeftChild">
+                        Rohit sharma
+                    </li>
+                    <li class="LeftChild">
+                        Virat Kohli
+                    </li>
+                    <li class="LeftChild">
+                        MS Dhoni
+                    </li>
+                    <li class="LeftChild">
+                        R Aswin
+                    </li>
+                    <li class="LeftChild">
+                        A Rahane
+                    </li>
+                    <li class="LeftChild">
+                        Umesh Yadav
+                    </li>
+                    <li class="LeftChild">
+                        Shikhar Dhawan 
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
+        
+    </div>
+    <h3 class="footer">@copyrights2023</h3>   
+</body>
+</html>

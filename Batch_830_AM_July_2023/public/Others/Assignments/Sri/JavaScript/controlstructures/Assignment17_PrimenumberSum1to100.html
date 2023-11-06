@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sum of primenumbers</title>
+    </head>
+    <body>
+        <h3>print sum of prime numbers from 1 to 100</h3>
+        <script>
+            var i,j;
+            var No_factor = 0;
+            var PrimeSum = 0;
+
+            for( i = 2 ; i < 100 ; i++)
+            {
+                for(j = 2; j <= i/2; j++)
+                {
+                    if( i % j == 0)
+                    {
+                        No_factor = No_factor +1;
+                        break;
+                    }
+                }
+            
+              if( No_factor==0)
+              {
+                
+                PrimeSum = PrimeSum+i;
+               
+              }
+             No_factor = 0; 
+            }
+              console.log("prime sum is"+ PrimeSum)
+        </script>
+        
+    </body>
+    </html>

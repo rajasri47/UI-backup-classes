@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 30px;
+    margin-top: 10px;
+  
+}
+.logo{
+    height: 60px;
+}
+ .search-button {
+    background-color: #fd7e56;
+    color: #000; 
+    border: none;
+    border-radius: 11px;
+    padding: 12px ;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.search-input {
+    padding: 10px;
+    width: 160px;
+ 
+}
+.search-input:hover{
+    width: 320px;
+}
+nav a{
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0px 6px;
+     margin-top: -15px;
+    color: #000;
+    /* font-weight: 500; */
+}
+ header a:hover{
+text-decoration: underline #ff9a58;
+transition: 0.5ms;
+}
+nav img{
+    height: 40px;
+    padding: 0 6px;
+    margin: 0 6px;
+}
+
+
+       /* hero section */
+.heroSction{
+    height: 400px;
+    margin: 20px 50px;
+    width: auto;
+    color: black;
+    background-color: #fd7e56;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 4px 10px 10px;
+    border-radius: 16px;
+}
+.leftHero{  
+ margin: 20px 0px;
+}
+.leftHero h1{
+    
+    font-size: 5.5vw;
+    margin-bottom: 5px;
+    
+}
+.rightHero img{
+    height: 430px;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+   
+    width: auto; 
+}
+.btn{
+    color: black;
+    background-color: #a49de0;
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 9px;
+   font-weight: 600;
+   box-shadow: 1px 2px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+   color: black;
+   background-color:#fd7e56;
+   box-shadow: 3px 3px black;
+   transition: 0.5s;
+    
+}
+   /* feature products */
+   .featureHeadline{
+  text-align: center;
+  margin: 30px auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.featureBox{
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.product{
+  
+    height: 280px;
+    width: 300px;
+    margin:0 6px;
+    background-color:white;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.product1{
+    text-align: center;
+    height: 280px;
+    width: 600px;
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.product1 h3{
+    padding: 10px;
+}
+.product2{
+    display: flex;
+   
+}
+.malesectionimage img{
+ height: 200px;
+ width: auto;
+ margin: 10px;
+}
+.product img{
+   /* margin-left: 60px; */
+  height: 200px;
+  width: auto;
+}
+
+ /* branding of products */
+ .brandingofProduct{
+    height: 300px;
+    width: auto;
+    margin: 20px auto;
+    background-image: url("./images/cover2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    text-align: center;
+    
+   
+ }
+ .brandingcontent{
+    padding-top: 60px;
+    margin-right: -260px;
+   
+ }
+ .brandingcontent h1{
+            font-size: 5vw;
+ }
+
+   /* product-Box section */
+   .product-BoxSectin{
+    display: flex;
+    justify-content: space-around;
+   }
+   .product-Box{
+    margin: 8px;
+    height: 350px;
+    width: 185px;
+    background-color:white;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    text-align: center;
+   }
+   .product-Box:hover{
+    
+    /* height: 400px;
+    width: 300px;
+    background-color: gray; */
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.4);
+
+   }
+   .productImage{
+    height: 250px;
+    /* margin-left: 16px; */
+    width: auto;
+   }
+   /* .productImage:hover{
+    height: 450px;
+    width: auto;
+    z-index: 100;
+   } */
+   
+
+       /* footer section */
+.footersection{
+    height: 150px;
+    width: auto;
+    color: white;
+    margin-top: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: space-evenly;
+} 
+.pages{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    transform: none;
+} 
+.pages a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 2px;
+}
+.logoInfooter{
+    margin-top: 20px;
+    padding: 10px;
+}
+.social{
+    margin-top: 20px;
+    padding: 10px;
+}
+/* copywrite      */
+.copywrite{
+    font-size: 12px;
+    padding: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgb(12, 21, 21);
+}
+
+/* ..........login page .............*/
+.formContainer{
+   height: 400px;
+   width: 300px;
+   background-color: white;
+   margin: 20px;
+   border-radius: 11px;
+   box-shadow: 0 6px 20px rgb(0 0 0 / 0.4);
+}
+.formContainer h1{
+    padding: 6px;
+    margin:10px 5px;
+}
+.formContainer h3{
+    padding: 6px;
+    margin: 5px;
+}
+.btn2{
+    margin-top: 20px;
+   margin-bottom: 40px;
+   padding:6px 10px;
+   width: 100px;
+   border-radius: 9px;
+   box-shadow:3px 5px;
+   background-color: #a49de0;
+}
+.btn2:hover{
+    background-color: whitesmoke;
+    box-shadow:5px 3px;
+}
+.formContainer h5{
+    margin-bottom: 20px;
+}
+          /* cart page */
+ .Cartcontainer {
+    height: 270px;
+    width: auto;
+    margin: 30px;
+ }         

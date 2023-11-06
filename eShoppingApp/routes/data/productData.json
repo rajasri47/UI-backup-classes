@@ -1,0 +1,102 @@
+[
+        {
+            "name": "Laptop",
+            "price": 2000,
+            "rating": 3.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop2",
+            "price": 45000,
+            "rating": 2.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop4",
+            "price": 45000,
+            "rating": 4.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop6",
+            "price": 45000,
+            "rating": 5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop",
+            "price": 45000,
+            "rating": 1.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop",
+            "price": 45000,
+            "rating": 1.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop",
+            "price": 45000,
+            "rating": 1.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop",
+            "price": 45000,
+            "rating": 1.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop",
+            "price": 45000,
+            "rating": 1.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        },
+        {
+            "name": "Laptop",
+            "price": 45000,
+            "rating": 1.5,
+            "discountPercent": 10,
+            "manu": "Sony",
+            "image":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "imageFlip":"https://static.toiimg.com/thumb/msid-84196313,width-400,resizemode-4/84196313.jpg",
+            "category": "electronics"
+        }
+    ]

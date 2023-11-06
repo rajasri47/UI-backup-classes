@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<style>
+    .header {
+    height: 30px;
+    border: 3px solid;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: bold;
+    padding-top: 3px;
+    margin-bottom: 10px;
+    background-color: rgb(195, 193, 193);
+}
+
+.footer {
+    height: 30px;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: bold;
+    padding-top: 3px;
+    margin-top: 10px;
+    background-color: rgb(195, 193, 193);
+}
+
+.body {
+    height: 90%;
+    border: 1px solid;
+    margin: 1px 1px;
+    
+}
+
+.user {
+    width: 200px;
+    height: 30px;
+    padding-top: 3px;
+    border: 2px solid;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    top: 60px;
+    background-color: rgb(195, 193, 193);
+    
+}
+
+.userDetails {
+    width: 95%;
+    height: 120px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    margin-top: 20px;
+    padding-top: 45px;
+    
+
+}
+
+.address {
+    padding-top: 5px;
+    list-style: none;
+    float: right;
+    position: absolute;
+    top: 120px;
+    right: 8%;
+}
+
+.education {
+    width: 200px;
+    height: 30px;
+    border: 2px solid;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    top: 267px;
+    background-color: rgb(195, 193, 193);
+}
+
+.educationDetail {
+    width: 95%;
+    height: 120px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    margin-top: 20px;
+    padding-top: 45px;
+    
+}
+
+.qualification {
+    position: absolute;
+    top: 326px;
+    right: 165px;
+}
+
+.about {
+    width: 200px;
+    height: 30px;
+    border: 2px solid;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    top: 473px;
+    background-color:rgb(195, 193, 193);
+}
+
+.AboutUrs {
+    width: 95%;
+    height: 120px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    padding-top: 45px;
+    
+}
+
+.btn {
+    position: absolute;
+    top: 629px;
+    right: 125px;
+}
+
+li {
+    list-style: none;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+.a {
+    margin-left: 50px;
+}
+
+.b {
+    margin-left: 60px;
+}
+
+.c {
+    margin-left: 45px;
+}
+</style>
+<body >
+    <div class="header">Student Details Registration Form</div>
+    <div class="body">
+        <form action="http://sample.com/data/register" method="POST">
+            <div class="user">
+                User Details
+            </div>
+            <div class="userDetails">
+                <li class="name">
+                    <label for="Name"> Name :
+                        <input class="a" type="text" name="name" maxlength="10" placeholder="Enter User Name">
+                    </label>
+
+                </li>
+                <li class="name">
+                    <label for="Name"> Age :
+                        <input class="b" type="number" name="age"  placeholder="Enter Age">
+                    </label>
+
+                </li>
+                <li class="gender">
+                    <label for="Gender"><span>Gender: </span>
+                        <input class="c" type="radio" name="gender"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                </li>
+                <li class="address">
+                    <label for="address">
+                        <span>Address : <br></span>
+                        <textarea name="address" cols="50" rows="5"></textarea>
+                    </label>
+                </li>
+            </div>
+            <div class="education">
+                    Education Details
+            </div>
+            <div class="educationDetail">
+                <ul>
+                    <li >
+                        <label for="Qualification"><span> Qualification :
+                                <span class="e">
+                                    MCA <input type="checkbox" name="Qua_MCA" >
+                                    MBA <input type="checkbox" name="Qua_MBA">
+                                    BTech <input type="checkbox" name="lng_mar" >
+                                    BE<input type="checkbox" name="lng_tel">
+                                </span>
+                        </label>
+                    </li>
+                    <li >
+                        <label for="Languages"><span>Languages Known :
+                                <span class="d">
+                                    English <input type="checkbox" name="lng_eng">
+                                    Hindi <input type="checkbox" name="lng_hin">
+                                    Marathi <input type="checkbox" name="lng_mar">
+                                    Others<input type="checkbox" name="other">
+                                </span>
+                        </label>
+                    </li>
+                    <li class="qualification">
+                        <label for="qualification"><span>Course Opted for : </span>
+                            <select name="qualification">
+                                <option value="">Select Option</option>
+                                <option value="btech">UI Full stack</option>
+                                <option value="be"> CORE JAVA</option>
+                                <option value="bca">C++</option>
+                                <option value="mca">React</option>
+                                <option value="mtech">Python</option>
+                            </select>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="about">
+                    About Yourself 
+            </div>
+            <div class="AboutUrs">
+                <ul>
+
+                    <li class="aboutUr" >
+                        <label for="abouturslf">
+                            <span class="span">Tell Few Words About Yourself :</span><br>
+                            <textarea  name="abouturslf" id="" cols="50" rows="5"></textarea>
+                        </label>
+                    </li>
+
+                    <input type="submit" class="btn" value="SUBMIT">
+                </ul>
+            </div>
+            
+        </form>
+    </div>
+    <div class="footer">@copyRight @2023</div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 44
+        </title>
+    </head>
+    <body>
+        <h1>
+            Display Different types of date format
+        </h1>
+        <script>
+            var newmonth = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+            var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var shortmonth = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var shortday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+            var mydate = new Date();
+            
+            var userOption = prompt("Please choose the format you want\n 1. 11/08/2023\n 2. Aug/11/2023\n 3. Friday, Aug 11th 2023\n 4. 09h:11min:2s\n 5. August, 11th 2023\n 6. Fri, 11th Aug 2023\n 7. 11/Aug/2023\n 8. 11-08-2023\n 9. 11-08-2023 09:34:4");
+
+            userOption = parseInt(userOption);
+
+            if (userOption == 1) {
+                console.log(mydate.getDate() + '/' + '0' + newmonth[mydate.getMonth()] + '/' + mydate.getFullYear());
+            }
+            else if (userOption == 2) {
+                console.log(shortmonth[mydate.getMonth()] + '/' + mydate.getDate() + '/' + mydate.getFullYear());
+            }
+            else if (userOption == 3) {
+                console.log(day[mydate.getDay()] + ', ' + shortmonth[mydate.getMonth()] + ' ' + mydate.getDate() + 'th' + ' ' + mydate.getFullYear());
+            }
+            else if (userOption == 4) {
+                console.log(mydate.getHours() + 'h:' + mydate.getMinutes() + 'min:' + mydate.getSeconds() + 's');
+            }
+            else if (userOption == 5) {
+                console.log(month[mydate.getMonth()] + ', ' + mydate.getDate() + 'th ' + mydate.getFullYear());
+            }
+            else if (userOption == 6) {
+                console.log(shortday[mydate.getDay()] + ', ' + mydate.getDate() + 'th ' + shortmonth[mydate.getMonth()] + ' ' + mydate.getFullYear());
+            }
+            else if (userOption == 7) {
+                console.log(mydate.getDate() + '/' + shortmonth[mydate.getMonth()] + '/' + mydate.getFullYear());
+            }
+            else if (userOption == 8) {
+                console.log(mydate.getDate() + '-' + '0' + newmonth[mydate.getMonth()] + '-' + mydate.getFullYear());
+            }
+            else if (userOption == 9) {
+                console.log(mydate.getDate() + '-' + '0' + newmonth[mydate.getMonth()] + '-' + mydate.getFullYear() + ' ' + mydate.getHours() + ':' + mydate.getMinutes() + ':' + mydate.getSeconds());
+            }
+        </script>
+    </body>
+</html>

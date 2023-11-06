@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe detail</title>
+   <link rel="stylesheet" href="styel.css">
+   <script src="aap.js"></script>
+</head>
+<body>
+      
+      <div class="detail">
+             <ol>
+                <h3>Employee Details</h3>
+                    <li>
+                        <input type="text" placeholder="Enter the Name"  id="Name">
+                    </li>
+                    <li>
+                         <input type="text" placeholder="Age"  id="age">
+                    </li>
+                    <li>
+                        Gender: <input type="radio" name="Gender" value="Male"> Male
+                    <input type="radio" name="Gender" value="Female">Female
+                    </li> 
+                   
+                    <li>
+                        <input type="text" placeholder="Department" id="Department">
+                       
+                    </li>
+                    <li>
+                        <input type="text"  placeholder="Employe ID" id="Employe_ID">
+                    </li>
+                    <li>
+                         <input type="text" placeholder="basic Salary" id="Basic_Salary">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Account detail" id="AC-Nomber">
+                     </li>
+                     <li>
+                       <button onclick="GenEmp();" id="btn">submit</button> 
+                     </li>
+                    
+             </ol>
+            
+      </div>
+
+
+      
+       <div id="display">
+
+         <ol>
+            <h3>Employee Details</h3>
+            <li>Employee name : <span id="dsname"></span></li>
+            <li>Employee age :  <span id="dage"></span></li>
+            <li>Gender :<span id="eGender"></span></li>
+            <li>Employee id : <span id="EId"></span></li>
+            <li>Basic salary : <span id="basicSal"></span></li>
+
+            <li>Acount No : <span id="Acno"></span></li>
+            <li> <button id="btn" onclick="print();" >Print</button></li>
+
+         </ol>
+       </div>
+  
+</body>
+</html>

@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <title>studentDetailsRegistrationPage</title>
+    <style>
+        .page {
+            border: 3px solid black;
+            text-align: center;
+            border-color: black;
+            width: 52%;
+        }
+
+        .border {
+            border: 2px solid black;
+            border-color: black;
+            width: 10px 10px;
+        }
+
+        form {
+            border: 3px solid black;
+            width: 50%;
+            height: 65%;
+            border-color: black;
+            padding-right: 30px;
+            padding-bottom: 0%;
+        }
+
+
+        li {
+            margin: 10px;
+            list-style: none;
+        }
+
+        .Address {
+            position: absolute;
+            top: 110px;
+            bottom: 80px;
+            right: 60%;
+        }
+
+        .space {
+            width: 150%;
+            height: 10%;
+        }
+
+        .area {
+            width: 60%;
+            height: 10%;
+        }
+
+        .text {
+            border: 3px solid black;
+            margin-left: 87%;
+            text-align: center;
+            color: black;
+        }
+
+        .Language {
+            position: absolute;
+            top: 42%;
+            right: 60%;
+        }
+
+        .copy {
+            border: 3px solid black;
+            text-align: center;
+            border-color: black;
+            width: 52%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="page">Student Details Registration Page</h1>
+    <form>
+        <ul>
+            <fieldset>
+
+                <legend class="border">User Details:</legend>
+                <li>
+                    <label for="fname">Name:</label>
+                    <input type="text" name="fname">
+                </li>
+                <li>
+                    <label for="Age">Age:</label>
+                    <input type="text" name="Age">
+                </li>
+                <li>
+                    <label for="gender">gender:</label>
+                    <input type="radio" name="gender">male
+                    <input type="radio" name="gender">Female
+                </li>
+                <li class="Address">
+                    <label for="Address">Address:</label><br>
+                    <textarea class="space" name="Address"></textarea>
+                </li>
+            </fieldset>
+
+        </ul>
+        <ul>
+            <fieldset>
+                <legend class="border">Education Details:</legend>
+                <li>
+                    <label for="study">Qualiefication:</label>
+                    <input type="checkbox" name="study">MCA
+                    <input type="checkbox" name="study">MBA
+                    <input type="checkbox" name="study">B.TECH
+                </li>
+                <li>
+                    <label for="">Languages:</label>
+                    <input type="checkbox" name="">Telugu
+                    <input type="checkbox" name="">English
+                    <input type="checkbox" name="">Hindi
+                </li>
+                <li class="Language">
+                    <label for="Language">Course:</label>
+                    <select name="Language" id="Language">
+                        <option value="Language"></option>
+                        <option value="Language">c</option>
+                        <option value="Language">c++</option>
+                        <option value="Language">java</option>
+                        <option value="Language">html</option>
+                        <option value="Language">css</option>
+                        <option value="Language">javascript</option>
+                        <option value="Language"> react</option>
+                        <option value="Language">angular</option>
+                    </select>
+                </li>
+            </fieldset>
+        </ul>
+        <ul>
+            <fieldset>
+                <legend class="border">About yourself:</legend>
+                <li>
+                    <label for="urself">Tell few Words about urself:</label><br>
+                    <textarea class="area" name="urself"> </textarea>
+                </li>
+            </fieldset>
+            <li class="text">
+                Register
+            </li>
+        </ul>
+
+    </form>
+    <h1 class="copy">
+        @copy right 2023
+    </h1>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total no of Word</title>
+    <style>
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+      .getResult {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Find total Number of word in an given sentance
+    </h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">
+      Right click on Webpage then Inspect and then Console
+    </p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+      function getData() {
+        var str = prompt("Enter a Sentence to get total number of Word !");
+        str = str.split(" ");
+        var count=0;
+        for(i=0;;i++)
+        {
+            if(str[i])count++
+            else break;
+        }
+        console.log("Total number of word is :" +count);
+      }
+      getData();
+    </script>
+  </body>
+</html>

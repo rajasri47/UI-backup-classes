@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALARY STRUCTURE OF EMP</title>
+    <style>
+        .h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE SALARY STRUCTURE OF EMP OPEN DEBUGGER TOOL (Inspect-Console) </h1>
+    <h2 class="h2">Thanks for watching! Hope this assignment will helpfull to gain your knowledge</h2>
+    <script>
+        var ename, age, dept, gender, bSalary;
+        var ename = "Vedant";
+        var age = 29;
+        var gender = "male";
+        var dept = "IT";
+        var Bsalary = 40000;
+
+
+        var PF = 12 / 100 * Bsalary;
+        var HRA = 24 / 100 * Bsalary;
+
+        var totalsalary = PF + HRA + Bsalary;
+
+        console.log("The Name of Emp is " + ename);
+        console.log("The Age of " + ename + " is " + age);
+        console.log("The Dept of " + ename + " is " + dept);
+        console.log("Basic Salary of Vedant is " + Bsalary);
+        console.log("PF of Vedant is " + PF);
+        console.log("HRA of Vedant is " + HRA);
+        console.log("Total Salary of Vedant is " + totalsalary);
+
+    </script>
+</body>
+
+</html>

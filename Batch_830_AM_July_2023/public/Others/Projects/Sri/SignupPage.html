@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>signup page</title>
+        <style>
+             .maindiv{
+                border: 1px solid;
+                width: 500px;
+                height:300px;
+                margin: 10px;
+                padding: 5px;
+                position: absolute;
+                left: 34%;
+                top: 30%;
+                background-color: rgb(213, 145, 19);
+                opacity: 0.75;
+
+            }
+            body{
+                background-image: url("file:///C:/UIFULLSTACK%20CLASSES/UIClasses/Batch_830_AM_July_2023/public/Others/Projects/Sri/images/shoppingcart.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            label,input{
+                padding: 1px;
+                margin: 5px;
+            }
+             #pwd{
+                position: absolute;
+                top: 35px;
+                right: 174px;
+                }
+               #uname{
+                position: absolute;
+                top: 3px;
+                right: 174px;
+               }
+            #button{
+                position: absolute;
+                top: 193px;
+                left: 139px;
+                margin: 8px;
+                padding: 0px;
+                
+            }
+             password,confirmpassword{
+                margin: 10px ;
+            }
+          .confirmpassword{
+                position: absolute;
+                top:78px ;
+            }
+            #Cpwd{
+                
+                position: absolute;
+                top: 73px;
+                left: 159px;
+                 }
+            #email {
+                position: absolute;
+                top: 110px;
+                left: 160px;
+                }
+            
+            
+            .mail {
+            position: absolute;
+            top: 115px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 style="color: red;"> New User SignUp Here :</h3>
+          <div class="maindiv">
+            <label for="name" name="name"> User Name :</label>
+            <input type="text" id="uname">
+            <div class="password" name="password">Password &nbsp;&nbsp; :<div>
+            <input type="password" id="pwd">
+            <div class="confirmpassword" name="confirmpassword"> Confirm Password &nbsp; :</div>
+            <input type="password" id="Cpwd">
+            <div class="mail">Email_ID : </div>
+            <input type="text" id="email">
+            <input type="button" id="button" value="SUBMIT">
+         
+
+          </div>
+
+        
+    </body>
+    </html>

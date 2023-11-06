@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Students Registration </title>
+        <style>
+            h1 {
+                margin:10px;
+                position: relative;
+                left: 11%;
+                color: blueviolet;
+                
+            }
+
+            ul {   
+                width: 600px;
+                border: 1px solid red;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            li {
+                list-style-type: none ;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                color:black;
+            }
+
+            body {
+                background-image:url("BackGroundImage4.JPG");
+                background-size:     cover;                     
+                background-repeat:   no-repeat;
+                background-position: center center; 
+                
+            }
+
+            img {
+                height:20px;
+                width: 20px;
+            } 
+
+        </style>
+    </head>
+    <body >
+        <h1>Student Registration Page</h1>
+        <ul>
+            <li>
+                First Name
+                <input type="text">
+            </li>
+            <li>
+                Middle Name
+                <input type="text">
+            </li>
+            <li>
+                Last Name
+                <input type="text">
+            </li>
+            <li>
+                Gender
+                <input type="radio" name="gender">
+                <img src="male.JPG">
+                <input type="radio" name="gender">
+                <img src="female.JPG">
+            </li>
+            <li>
+                <img src="user.jpg">
+                  User Name
+                <input type="text">
+            </li>
+            <li> 
+                <img src="mail.jpg">
+                  Email ID
+                <input type="email">
+            </li>
+            <li>
+                <img src="password.jpg">
+                  Password
+                <input type="password">
+            </li>
+            <li>
+                DOB
+                <input type="datetime-local">
+            </li>
+            <li>
+                Country
+                <select id="">
+                    <option value=" ">Select Country</option>
+                    <option value="India ">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Canada ">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select> 
+            </li>
+            <li>
+                Languages You know
+                 <input type="checkbox">English
+                 <input type="checkbox">Telugu
+                 <input type="checkbox">Hindi
+                 <input type="checkbox">French
+            </li>
+            <li>
+                Tell about your self (min 200 char)
+                <textarea name=" " id=" " cols="50" rows="5"></textarea>
+            </li>
+            <li>
+                <input type="button" value="Register Details" style="background-color: blueviolet; color: white;">
+            </li>
+        </ul>
+    </body>
+</html>

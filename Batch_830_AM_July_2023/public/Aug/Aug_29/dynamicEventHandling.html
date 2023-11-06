@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic Event handling
+        </title>
+        <style>
+            .parentElement {
+                border: 1px solid;
+                background-color: yellowgreen;
+                padding: 50px;
+            }
+
+            .childElement {
+                padding: 30px;
+                border: 1px solid;
+                background-color: blue;
+            }
+        </style>
+        <script>
+            console.log("ONe")
+            document.addEventListener("DOMContentLoaded", () => {
+                console.log("TWO")
+                document.querySelector("#container").innerHTML = 'Hello we added a msg';
+
+                document.querySelector(".parentElement").addEventListener("click", () => {
+                        console.log("parent got invoked")
+                }, false);
+
+                document.querySelector(".childElement").addEventListener("click", () => {
+                        console.log("Child got invoked")
+                }, false);
+            })
+            console.log("THREE")
+
+           
+
+          // document.addEventListener("DOMContentLoaded")
+
+            
+        </script>
+    </head>
+    <body>
+        <div id="container"></div>
+        <div class="parentElement">
+            Parent content
+            <div class="childElement">
+                Child content
+            </div>
+        </div>
+    </body>
+</html>

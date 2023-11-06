@@ -1,0 +1,58 @@
+.chatIconBlock {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.chatBoxContainer {
+    width: 280px;
+    height: 380px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #ccc;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    display: none;
+}
+
+.msgcontainer {
+    height: 290px;
+    background-color: #fff;
+}
+
+.buttonContainer {
+    height: 80px;
+    background-color: #fff;
+}
+
+
+.buttonContainer input[type=text] {
+    height: 73px;
+}
+.sendBtn {
+    
+    width: 72px !important;
+    height: 73px;
+}
+.bi-file-x-fill {
+    color: orange;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sentmsg {
+    margin: 5px;
+    color: blue;
+    font-size: 15px;
+}
+
+.receivemsg {
+    margin: 5px;
+    color: green;
+    font-size: 15px;
+    text-align: right;
+    font-weight: bold;
+}

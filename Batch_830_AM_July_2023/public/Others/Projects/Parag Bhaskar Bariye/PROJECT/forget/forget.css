@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://t3.ftcdn.net/jpg/01/17/33/22/360_F_117332203_ekwDZkViF6M3itApEFRIH4844XjJ7zEb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 500px;
+}
+
+.child{
+      border: 1px solid #fff;
+      width: 400px;
+      height: 250px;
+      border-radius: 40px;
+      padding: 30px;
+}
+
+.child .rem{
+    width: 100%;
+    margin: 30px 0;
+    height: 50px;
+}
+.child .rem input{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    background-color: rgb(127, 217, 242);
+    font-size: 20px;
+    font-weight: 600;
+}

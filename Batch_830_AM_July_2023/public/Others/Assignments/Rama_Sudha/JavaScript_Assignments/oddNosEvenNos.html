@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Sum of Odd Numbers & Even Numbers</div>
+    <script>
+        var even=0;odd=0;
+        for(a=1; a<=50; a++){
+            remainder=a%2;
+             
+         if(remainder==0){
+            even=even+a;
+         }
+         else {
+            odd=odd+a;
+         }
+        }
+        console.log("Sum of 1 to 50 even numbers is "+ even);
+        console.log("Sum of 1 to 50 odd numbers is " +  odd);
+
+        
+    </script>
+    
+</body>
+</html>

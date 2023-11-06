@@ -1,0 +1,4 @@
+1) app.js express.static configuration update?
+2) routes setup for html rendering?
+3) what is views used for? defaulting to views!
+4) how to invoke bootstrap using npm library? cdn only working (index1)

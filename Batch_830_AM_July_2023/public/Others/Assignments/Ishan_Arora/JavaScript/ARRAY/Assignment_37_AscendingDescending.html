@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 37
+        </title>
+    </head>
+    <body>
+        <h1>
+            Rearrange the Array in Ascending and Descending Order
+        </h1>
+        <script>
+            var takingInput = () => {
+                var lengthOfArray = prompt("Enter the number of elements: ");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0; i < lengthOfArray; i++) {
+                    a[i] = prompt("Enter " + i + " Value: ");
+                    a[i] = parseInt(a[i]);
+                }
+                Ascending(a);
+                Descending(a);
+            }
+
+            var Ascending = (a) => {
+                var len = a.length;
+                for (var i = 0; i < len; i++) {
+                    for (var j = i+1; j < len; j++) {
+                        if (a[i] > a[j]) {
+                            var temp = a[i];
+                            a[i] = a[j];
+                            a[j] = temp;
+                        }
+                    }
+                }
+                console.log("Ascending Array " + a);
+            }
+
+            var Descending = (a) => {
+                var len = a.length;
+                for (var i = 0; i < len; i++) {
+                    for (var j = i+1; j < len; j++) {
+                        if (a[i] < a[j]) {
+                            var temp = a[i];
+                            a[i] = a[j];
+                            a[j] = temp;
+                        }
+                    }
+                }
+                console.log("Descending Array " + a);
+            }
+
+            takingInput();
+        </script>
+    </body>
+</html>

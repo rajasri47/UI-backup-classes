@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read the string from the user and find out the total no of characters within it without using .length property</title>
+</head>
+<body>
+    <script>
+        var string = prompt('enter a string');
+        console.log('the given string is ' + string);
+        count = 0;
+        for(i = 0; string[i] != undefined; i++) {
+            count = count + 1;
+        }
+        console.log('total no of character in a given string is ' + count);
+    </script>   
+</body>
+</html>

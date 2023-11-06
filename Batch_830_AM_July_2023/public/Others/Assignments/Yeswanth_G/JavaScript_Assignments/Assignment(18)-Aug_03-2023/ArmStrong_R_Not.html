@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> ArmStrong Number Or Not </title>
+        <style>
+            h1{
+                color: purple;
+                font-size: xx-large;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> ArmStrong Number Or Not </h1>
+        <script>
+            var n,m,sum = 0;
+            n = prompt("Enter A Number");
+            n = parseInt(n);
+            m = n;
+
+            while(n>0){
+                temp = n%10;
+                sum = sum+temp**3;
+                n = parseInt(n/10);
+            }
+            if(m == sum){
+                console.log("Its is An ArmStrong Number");
+            }
+            else{
+                console.log("Its is Not An ArmStrong Number");
+            }
+        </script>
+    </body>
+</html>

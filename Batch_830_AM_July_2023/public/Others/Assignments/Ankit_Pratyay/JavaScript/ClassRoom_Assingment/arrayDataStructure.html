@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Data in Array</title>
+    <style>
+        h2 {
+          text-align: center;
+          font-size: 30px;
+          color: red;
+        }
+        p {
+          text-align: center;
+          font-size: 25px;
+        }
+        .getResult {
+          font-size: 22px;
+        }
+      </style>
+</head>
+<body>
+    <h2>Sum of all the value in the given Array</h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">
+      Right click on Webpage then Inspect and then Console
+    </p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+        var arr=[20,30,40,50,60]
+        
+        function getsum(arr){
+            var sum =0;
+            for(var i=0;i<arr.length;i++)
+            {
+                sum +=arr[1]
+            }
+            return sum
+        }
+        console.log("Sum of the all value in Array is :"+getsum(arr))
+    </script>
+</body>
+</html>

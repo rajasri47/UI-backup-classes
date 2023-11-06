@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empname, age, gender, basicsalary;
+        var empname = prompt("Enter employe name");
+        var age = prompt("Enter employe age");
+        var gender = prompt("Enter employe gender");
+        var basicsalary = parseFloat(prompt("Enter employe basic salary"));
+
+        // var totalsalary;
+        // var totalsalary= prompt("Enter Employe Total salary")
+
+        console.log(" Employe name is " + empname );
+        console.log(" Employe Age is " + age );
+        console.log(" Employe Gender is " + gender );
+        // console.log(" Employe totalsalary is " + totalsalary );
+
+        var pf, hra, totalsalary;
+        pf = 12 / 100 * basicsalary;
+        hra = 24 / 100 * basicsalary;
+        totalsalary = basicsalary + pf + hra;
+
+        // var basicsalary, hra, pf;
+        // pf = 12 / 100 * basicsalary;
+        // hra = 24 / 100 * basicsalary;
+        // var basicsalary = totalalary - pf - hra;
+
+        console.log(" PF of " + empname + " is " + pf);
+        console.log(" HRA of " + empname + " is " + hra);
+        console.log(" Total salary of " + empname + " is " + totalsalary);
+        console.log("  Basic salary of " + empname + " is " + basicsalary);
+
+        if (gender == "male") {
+            if (totalsalary >= 300000) {
+                var taxamount = (totalsalary * 15) / 100;
+                console.log(" Tax percentage is " + taxamount);
+            } else if (totalsalary >= 200000) {
+                var taxamount = (totalsalary * 10) / 100;
+                console.log(" Tax percentage is " + taxamount);
+            } else if (totalsalary >= 100000) {
+                var taxamount = (totalsalary * 5) / 100;
+                console.log(" Tax percentage is " + taxamount);
+            } else {
+                var taxamount = (totalsalary * 0) / 100;
+                console.log(" Tax percentage is " + taxamount);
+            }
+        } else if (gender == "female") {
+            if (totalsalary >= 300000) {
+                var taxamount = (totalsalary * 10) / 100;
+                console.log(" Tax percentage is " + taxamount);
+            } else if (totalsalary >= 200000) {
+                var taxamount = (totalsalary * 5) / 100;
+                console.log(" Tax percentage is " + taxamount);
+            } else if (totalsalary >= 100000) {
+                var taxamount = (totalsalary * 0) / 100;
+                console.log(" Tax percentage is " + taxamount);
+            }
+        }
+    </script>
+</body>
+</html>

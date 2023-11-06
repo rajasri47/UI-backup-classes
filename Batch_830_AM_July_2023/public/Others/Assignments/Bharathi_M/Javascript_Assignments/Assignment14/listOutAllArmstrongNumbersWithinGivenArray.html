@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List out all armstrong numbers within the given array</title>
+</head>
+<body>
+    <script>
+        var array = [23,45,78,98,153,456,876,370,12,372,76,40,407,371,567,345,897,234,456];
+        for(i = 0; i < array.length; i++) {
+            var num = array[i];
+            var sum = 0;
+            while(num > 0) {
+                var rem = num % 10;
+                sum += rem * rem * rem;
+                num = parseInt(num / 10);
+            }
+            if(sum == array[i]) {
+                console.log(array[i]);
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

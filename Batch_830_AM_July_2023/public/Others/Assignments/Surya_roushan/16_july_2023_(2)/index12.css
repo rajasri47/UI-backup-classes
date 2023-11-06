@@ -1,0 +1,33 @@
+.block{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 05px;
+    background-image: url(Untitled.png);
+}
+
+.block1{
+    background-position: -196px 219px;
+}
+
+.block2{
+    background-position: -104px 378px;
+}
+
+
+
+.block3{
+    background-position: -277px 378px;
+}
+
+.block4{
+    background-position: -277px 508px;
+}
+
+.block5{
+    background-position: -496px 396px;
+}
+
+.block6{
+    background-position: -121px 508px;
+}

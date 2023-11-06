@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students marks Details</title>
+
+</head>
+
+<body>
+    <h1> STUDENTS MARKS DETAILS</h1>
+    <script type="text/javascript">
+        var sname, age, m1, m2, m3, m4, m5, total = 0, perc;
+        var greet;
+        function StudentGivenData() {
+            sname = prompt("Enter your Name ");
+            age = prompt("Enter your age ");
+            m1 = prompt("Enter your Science marks");
+            m1 = parseInt(m1);
+            m2 = prompt("Enter your English marks");
+            m2 = parseInt(m2);
+            m3 = prompt("Enter your Math marks");
+            m3 = parseInt(m3);
+            m4 = prompt("Enter your Physics marks");
+            m4 = parseInt(m4);
+            m5 = prompt("Enter your Chemistry marks");
+            m5 = parseInt(m5);
+            StudentMarksAvg();
+
+        }
+        function StudentMarksAvg() {
+            total = m1 + m2 + m3 + m4 + m5;
+            perc = total / 5;
+        }
+        function StudentPerc() {
+            if (perc < 35) {
+                greet = "Sorry! You have Failed";
+            }
+            else {
+                greet = "Congratualtions! You have passed ";
+            }
+        }
+        function DisplayStudentData() {
+            StudentGivenData();
+            StudentPerc();
+            console.log("Student Name is: " + sname)
+            console.log("Student Age is: " + age)
+            console.log("Marks of Science: " + m1);
+            console.log("Marks of Engish: " + m2);
+            console.log("Marks of Maths: " + m3);
+            console.log("Marks of Physics: " + m4);
+            console.log("Marks of Chemistry: " + m5);
+            console.log("Total marks is: " + total);
+            console.log("You Got " + perc + " percentage");
+            console.log(greet);
+
+        }
+
+        DisplayStudentData()
+    </script>
+</body>
+
+</html>

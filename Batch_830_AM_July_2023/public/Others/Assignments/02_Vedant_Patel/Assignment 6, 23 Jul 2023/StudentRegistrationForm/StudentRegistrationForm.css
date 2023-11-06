@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo Bhai&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: url(london2.avif) no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  color: orangered;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.container h2 {
+  font-family: "Baloo Bhai";
+
+  width: 100%;
+  display: inline-block;
+  font-size: 40px;
+  border-bottom: 5px solid purple;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.li {
+  width: 100%;
+  margin: 22px 0px;
+  border-bottom: 2px solid purple;
+  list-style: none;
+}
+.li input {
+  background: none;
+  width: 75%;
+  padding: 1px 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: blue;
+  font-family: "Baloo Bhai";
+}
+.li2 {
+  color: blue;
+  width: 100%;
+  margin: 22px 0px;
+  border-bottom: 2px solid purple;
+  list-style: none;
+}
+.box i {
+  padding: 0px 12px;
+  width: 25;
+  text-align: center;
+}
+.btn {
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin: 2px 15px;
+  padding: 6px 21px;
+  border: 2px solid purple;
+  border-radius: 10px;
+  font-size: 18px;
+  background: none;
+  font-weight: bold;
+  font-family: "Baloo Bhai";
+}
+.box i {
+  width: 25px;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.5;
+  color: rgb(193, 85, 173);
+  cursor: pointer;
+  /* margin: 12px 0px; */
+  /* padding: 10px 21px; */
+  border: 2px solid purple;
+  border-radius: 10px;
+  font-size: 18px;
+  background: rgb(58, 57, 55);
+  font-weight: bold;
+}
+.mandate{
+    color: red;
+}
+span{
+    color: black;
+}

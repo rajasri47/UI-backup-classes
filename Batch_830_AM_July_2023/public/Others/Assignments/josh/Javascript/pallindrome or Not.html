@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pallindrome</title>
+    </head>
+    <body>
+        <h2>Given Number is Pallindrome or Not</h2>
+        <script>
+            var rem, reverse = 0, user, temp;
+            user = prompt("enter the value:");
+            user = parseInt(user);
+            while(user > 0){
+                rem = user % 10;
+                reverse = reverse * 10 + rem;
+                temp = reverse;
+                user = parseInt(user / 10);
+            }
+            if(temp == reverse){
+                console.log("Pallindrome");
+            }else{
+                console.log("Not Pallindrome");
+            }
+        </script>
+    </body>
+</html>

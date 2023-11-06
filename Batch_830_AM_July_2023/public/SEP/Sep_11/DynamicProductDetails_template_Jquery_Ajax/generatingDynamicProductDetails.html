@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> </script>
+        <script src="../../jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+       <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="loadingBlock">
+            <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/8/e/6/8e6f33126207a47f09f7c6ac5333057c1f45b5de.gif" alt="">
+        </div>
+        <div class="errorBlock">
+            Error while communicating withe the server...
+        </div>
+        <input type="button" value="Get Data" onclick="getProductData()">
+        <ul id="productContainer"></ul>
+        
+
+
+        <div id="product_Template" style="display: none;">
+                <ol>
+                    <li>Product Name : {{name}}</li>
+                    <li>Manufacturer : {{manu}}</li>
+                    <li>Product Price : 
+                        <span class="aprice">{{price}}</span>
+                        <span class="dprice">{{discountPrice}}</span>
+                    </li>
+                    <li id="rating_template_{{index}}">
+                    </li>
+                    <li>
+                        <img src="{{image}}">
+                    </li>
+                </ol>        
+        </div>
+        <script src="pdetails.js"></script>
+    </body>
+</html>

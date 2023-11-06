@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstarte weather a num is prime or not</title>
+</head>
+<body>
+    <script>
+        n=prompt("enter number");
+        n=parseInt(n);
+        k=0;
+        for(var i=1; i<=n ;i++){
+            result = n%i;
+            if(result == 0){
+                k++;
+            }
+        }
+        if(k==2){
+            console.log("prime");
+        }else{
+            console.log("not prime")
+        }
+    </script>
+</body>
+</html>

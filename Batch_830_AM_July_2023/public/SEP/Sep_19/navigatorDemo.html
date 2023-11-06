@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            console.log(navigator.userAgent)
+            var isChromeBrowser = false;
+            var isFireFox = false;
+            
+            if (navigator.userAgent.match("Chrome/") != null) {
+                isChromeBrowser = true;
+            }
+            if (navigator.userAgent.match("Firefox/") != null) {
+                isFireFox = true;
+            }
+            console.log("isChromeBrowser -> " + isChromeBrowser);
+            console.log("isFireFox -> " + isFireFox);
+            console.log(navigator);
+            // navigator 
+           
+            if (!isChromeBrowser) {
+                alert("Please shift/run teh current application from Chrome browser for better performance");
+            } else {
+
+                alert("Thanks for using Chrome Browser");
+            }
+        </script>
+    </body>
+</html>

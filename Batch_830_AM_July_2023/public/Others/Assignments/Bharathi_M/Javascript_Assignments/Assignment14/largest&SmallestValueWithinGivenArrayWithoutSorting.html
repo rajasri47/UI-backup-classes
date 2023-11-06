@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the largest & smallest value within a given array without using sorting</title>
+</head>
+<body>
+    <script>
+        var array = [4,5,8,98,67,145,987,456,34,87,98,54,32,-10,-11,4567,876,4567,987,45,56,78,750,5000,5];
+            var smallestNum = array[0];
+            var largestNum = array[0];
+
+            for (var i = 1; i < array.length; i++) {
+                if(smallestNum > array[i]) {
+                    smallestNum = array[i];
+                }
+                
+               else if(largestNum < array[i]) {
+                    largestNum = array[i];
+                }
+               
+            }
+
+              console.log("Smallest Number in given array is " + smallestNum);
+              console.log("Largest Number in given array is " +largestNum);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+CACHE: 
+    
+    pages/*.* 
+    data/books/*.png
+    styles/book/page.css
+
+NETWORK:
+    # list of all the resources which should never cached 
+    payment/pages/*.* 
+    login/page.html
+    payment/payment.icon.png 
+    login/*.* 
+
+FALLBACK:
+
+    fallback.html 

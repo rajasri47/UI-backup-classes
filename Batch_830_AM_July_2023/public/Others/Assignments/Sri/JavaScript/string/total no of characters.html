@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            <h3>total number of characters</h3>
+            <script>
+                var userdata = ()=>{
+                var string = prompt("enter the string");
+                console.log("the user given string is ::"+ string);
+                var count = stringcount(string);
+                console.log("string size is"+ count);
+                var wordcount1 = wordcount(string);
+                console.log("word count  is"+ wordcount1);
+                
+                }
+                var stringcount = (userdata)=>{
+                    var count = 0;
+                    for(i = 0; userdata[i]!== undefined;i++){
+                        
+                        count = count+1;
+                        
+
+                    }
+                    return count;
+                }
+                    var wordcount= (Userdata)=>{
+                        var count = 1;
+                        for(i=0; Userdata[i]!== undefined;i++){
+
+                        
+                        if (Userdata[i] == ' ')
+                        {
+                        count = count+1;
+                        }
+                    }
+                        return count;
+                    
+
+                    }
+
+            
+                userdata();
+            </script>
+            
+        </body>
+        </html>

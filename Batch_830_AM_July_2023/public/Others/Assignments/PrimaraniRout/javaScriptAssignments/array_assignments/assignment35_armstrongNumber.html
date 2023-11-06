@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding armstrong number
+        </title>
+    </head>
+    <body>
+        <script>
+            var values = () => {
+                var lengthOfArray = prompt("Enter the number of elements");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0 ; i < lengthOfArray ; i++) {
+                    a[i] = prompt("Enter " + i + " Value");
+                    a[i] = parseInt(a[i]);
+                }
+                armstrong(a);
+            }
+
+            var armstrong = (a) => {
+                var len = a.length;
+                for (var i = 0 ; i < len ; i++) {
+                    var count = a[i].toString().length;
+                    var rem;
+                    var sum = 0;
+                    var temp = a[i];
+                    while (a[i] > 0) {
+                        rem = a[i] % 10;
+                        sum += rem ** count;
+                        a[i] = a[i] / 10;
+                        a[i] = parseInt(a[i]);
+                    }
+                    if (temp == sum) {
+                        console.log("The armstrong number = " + temp);
+                    }
+                }
+            }
+
+            values();
+
+        </script>
+    </body>
+</html>

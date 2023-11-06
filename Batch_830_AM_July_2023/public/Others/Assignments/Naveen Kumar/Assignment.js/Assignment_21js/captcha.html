@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demostrating captcha</title>
+
+    <link rel="stylesheet" href="/captcha.css" />
+  </head>
+  <body>
+    <div class="captcha-container">
+      <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" />
+      <div id="captchaDisplay" class="captcha-display"></div>
+      <button id="refreshButton" onclick="refreshCaptcha()">
+        Refresh CAPTCHA
+      </button>
+      <button id="submitButton" onclick="validateCaptcha()">Submit</button>
+    </div>
+    <script src="/captcha.js"></script>
+  </body>
+</html>

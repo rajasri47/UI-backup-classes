@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3: Demo On Margin, Padding, Floating</title>
+</head>
+<style>
+    .heading,.foater{
+        border: 4px double #00385a;
+        text-align: center;
+        color:#88ee89;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: x-large;
+    }
+    .divTop{
+        border: 4px dotted red;
+    }
+    .divstyle{
+        width: 120px;
+        height: 120px;
+        border: 5px solid rgb(120,23,140);
+        text-align: center;
+        margin:4px;
+        
+    }
+    .div1color{
+        background-color: #88ee89;
+        float: left;
+    }
+    .div4color{
+        background-color: rgb(240, 7, 116);
+        clear: left;
+        float: right;
+    }
+   /* .div5color{
+        background-color: rgb(240, 7, 116);
+        float: right;
+    }*/
+    .div6color{
+        background-color: rgb(68, 85, 121);
+        clear: right;
+        float: left;
+    }
+    .div7color{
+        background-color: rgb(68, 85, 121);
+        clear: left;
+        
+    }
+    .div8color{
+        background-color: rgb(235, 239, 127);
+        clear: left;
+        float: right;
+    }
+    .div9color, .div10color{
+        background-color: rgb(235, 239, 127);
+        clear: right;
+        float: right;
+    }
+    .div11color, .div12color, .div13color{
+        background-color: rgb(8, 214, 246);
+        clear:right;
+        float: left;
+    }
+    .divFooter{
+        background-color: rgb(193, 238, 239);
+        clear:left;
+    }
+    h6{
+        margin: 50px auto;
+    }
+</style>
+<body>
+    <div class="divTop">
+        <h3 class="heading">Blocks Rendering</h3>
+        <div class="divstyle div1color"><h6>1</h6></div>
+        <div class="divstyle div1color"><h6>2</h6></div>
+        <div class="divstyle div1color"><h6>3</h6></div>
+
+        <div class="divstyle div4color"><h6>5</h6></div>
+        <div class="divstyle div4color"><h6>4</h6></div>
+
+        <div class="divstyle div6color"><h6>6</h6></div>
+        <div class="divstyle div7color"><h6>7</h6></div>
+
+        <div class="divstyle div8color"><h6>8</h6></div>
+        <div class="divstyle div9color"><h6>9</h6></div>
+        <div class="divstyle div10color"><h6>10</h6></div>
+
+        <div class="divstyle div11color"><h6>11</h6></div>
+        <div class="divstyle div12color"><h6>12</h6></div>
+        <div class="divstyle div13color"><h6>13</h6></div>
+        <div class="divFooter">
+            <h3 class="foater">@CopyRight2023</h3>
+        </div>
+    </div>
+</body>
+</html>

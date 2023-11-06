@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           Demonstrating Armstrong number
+        </title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("Enter a number");
+            n = parseInt(n);
+            var sum = 0;
+            var temp = n;
+
+            var len = n.toString().length;
+
+            while(n > 0){
+                var rem = n % 10;
+                sum += (rem ** len);
+                n = n / 10;
+                n = parseInt(n);
+            }
+
+            if (sum == temp){
+                console.log("It's a armstrong number")
+            }
+            else {
+                console.log("It's not a armstrong number")
+            }
+
+        </script>
+    </body>
+</html>

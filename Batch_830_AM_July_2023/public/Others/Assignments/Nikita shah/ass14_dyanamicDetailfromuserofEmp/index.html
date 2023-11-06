@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <ul>
+        <li>
+            <input type="text" placeholder="Enter Employee Name" id="empName">
+        </li>
+        <li>
+            <input type="number" placeholder="Age" id="eage">
+        </li>
+        <li>
+             Gender:
+            <input type="radio" value="Male" name="egender" checked >" Male "         <input type="radio" value="Female" name="egender">" Female "
+        </li>
+        <li>
+          Department:
+           <select name id="eDepartment">
+           <option value="IT">IT</option>
+           <option value="Accountant">Accountant</option>
+           <option value="Security">Security</option>
+           <option value="counselling">counselling</option>
+           </select>
+        </li>
+        <li class="incomeList">
+           Income:
+            <input type="text" id="inc1" placeholder="Annual Income">
+            <input type="text" id="inc2" placeholder="hrf">
+            <input type="text" id="inc3" placeholder="Pf">
+        </li>
+        <li>
+           Languages Known:
+            <input type="checkbox" value="Hindi">" Hindi "
+            <input type="checkbox" value="English">" English "
+            <input type="checkbox" value="Urdu">" Urdu "
+        </li>
+        <li>
+            <input type="button" value="Generate Employee Details" onclick="readEmpDetails()">
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            Employee's Details
+        </li>
+        <li>
+           Employee Name: <span id="dename"></span>
+        </li>
+        <li>
+           Employee Age:<span id="dage"></span>
+        </li>
+        <li>
+           Employee Gender:<span id="dgender"></span>
+        </li>
+        <li>
+            Employee Department: <span id="ddepartment"></span>
+        </li>
+        <li>
+           Language Known:<span id="dlang"></span>
+        </li>
+        <li>
+           Total Income:<span id="dtotal"></span>
+        </li>
+        <li>
+           Average Income:<span id="davg"></span>
+        </li>
+        <li>
+           Post: <span id="dpost"></span>
+        </li>
+    </ul>
+</body>
+</html>

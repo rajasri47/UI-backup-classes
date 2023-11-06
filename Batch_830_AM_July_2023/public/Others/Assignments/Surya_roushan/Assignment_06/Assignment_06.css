@@ -1,0 +1,177 @@
+.header, .footer{
+    width: 1325px;
+    height: 25px;
+    border: 01px solid black;
+    margin: 05px;
+    text-align: center;
+    padding-top: 07px;
+
+}
+
+
+
+.mainContainer{
+width: 1325px;
+height: 550px;
+border: 01px solid;
+margin: 05px;
+}
+
+.container1{
+    width: 1300px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 024px 011px;
+
+}
+
+.subContainer1{
+    height: 35px;
+    width: 176px;
+    border: 01px solid black;
+    position: absolute;
+    top: 55px;
+    left: 45px;
+    background-color: white;
+    text-align: center;
+    padding-top: 05px;
+    
+}
+
+input{
+    width: 150px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.ulOne{
+    padding-top: 05px;
+    width: 506px;
+    height: 115px;
+    
+    
+}   
+
+.liOne{
+    margin: 7px;
+    list-style: none;
+}
+
+.liAddress{
+    position: absolute;
+    top: 14%;
+    left: 68%;
+    list-style: none;
+    
+
+}
+
+.label1{
+    text-align: start;
+    position: relative;
+    top: -97px;
+}
+
+.container2{
+    width: 1300px;
+    height: 155px;
+    border: 1px solid black;
+    margin: 024px 011px;
+
+}
+
+.subContainer2{
+    height: 35px;
+    width: 176px;
+    border: 01px solid black;
+    position: absolute;
+    top: 234px;
+    left: 45px;
+    background-color: white;
+    text-align: center;
+    padding-top: 05px;
+    
+}
+
+.ulTwo{
+    padding-top: 07px;
+    width: 950px;
+    height: 115px;
+    
+    
+}  
+
+
+.liTwo{
+    margin: 7px;
+    list-style: none;
+}
+
+.liDetails{
+    position: absolute;
+    Top: 42%;
+    left: 75%;
+    list-style: none;
+    margin-left: -48px;
+}
+
+
+.container3{
+    width: 1300px;
+    height: 145px;
+    border: 1px solid black;
+    margin: 024px 011px;
+
+}
+
+.subContainer3{
+    height: 35px;
+    width: 176px;
+    border: 01px solid black;
+    position: absolute;
+    top: 413px;
+    left: 45px;
+    background-color: white;
+    text-align: center;
+    padding-top: 05px;
+    
+}
+
+.ulThree{
+    padding-top: 07px;
+    width: 950px;
+    height: 115px;
+    
+    
+}  
+
+.liThree{
+    margin: 7px;
+    list-style: none;
+    position: absolute;
+
+    
+
+}
+
+.textarea1{
+    position: absolute;
+    top: -71%;
+    left: 190%;
+}
+
+
+.labelA{
+    position: relative;
+    left: 80%;
+    top: 05%;
+    text-align: center;
+    margin-bottom: 05px;
+}
+
+.liDetails2{
+    position: relative;
+    top: 81%;
+    left: 108%;
+    list-style: none;
+}

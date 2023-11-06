@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Total Salary</title>
+    </head>
+    <body>
+        <script>
+        var ename = "JAYA";
+        var age = 21;
+        var dept = "IT";
+        var gender = "Female";
+        var basic_Salary = 50000;
+        var epf,ehra;
+        epf = (basic_Salary * 12)/100;
+        ehra = (basic_Salary * 24)/100;
+        var total_Sal = basic_Salary + epf + ehra;
+        console.log("Total Salary of "+ename +" is "+total_Sal)
+        </script>
+    </body>
+</html>

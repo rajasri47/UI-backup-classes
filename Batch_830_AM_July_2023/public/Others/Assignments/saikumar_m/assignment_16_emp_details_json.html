@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emp details in json</title>
+</head>
+<body>
+    <script>
+        var empdetails= {};
+
+        empdetails.name=prompt("enter emp name");
+        empdetails.age=prompt("enter emp age");
+        empdetails.department=prompt("enter department name");
+        empdetails.gender=prompt("enter emp gender");
+        empdetails.basicsalary=("enetr emp basicsalary");
+        empdetails.basicsalary=parseInt(empdetails.basicsalary)
+        
+        empdetails.pf =  empdetails.basicsalary*24/100;
+        empdetails.hra =  empdetails.basicsalary*26/100;
+
+        empdetails.totalsalary=empdetails.pf + empdetails.hra + empdetails.basicsalary;
+
+        console.log("employee name is " + empdetails.name);
+        console.log("employee age is " + empdetails.age);
+        console.log("employee department is " + empdetails.department);
+        console.log("employee gender is " + empdetails.gender);
+        console.log("employee basicsalary is " + empdetails.basicsalary);
+        console.log("employee pf is " + empdetails.pf);
+        console.log("employee hra is " + empdetails.hra);
+        console.log("employee totalsary is " + empdetails.totalsalary);
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>

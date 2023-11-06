@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements</title>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <script>
+        var name=prompt("enter your name");
+        var gender=prompt("enter you gender");
+        var age=prompt("enter your age");
+        var dept=prompt("enter your department");
+        var basicsalary=prompt("enter your basicsalary");
+        basicsalary=parseInt(basicsalary);
+        var PF=(12*basicsalary)/100;
+        var HRA=(25*basicsalary)/100;
+        var totalsalary= PF + HRA + basicsalary;
+        console.log("employee name :" +name);
+        console.log("employee gender :" +gender);
+        console.log("employee age :" +age);
+        console.log("employee dept :" +dept);
+        console.log("employee basicsalary :" +basicsalary);
+        console.log("employee PF :" + PF);
+        console.log("employee HRA:" + HRA);
+        console.log("the totalsalary is " + totalsalary);
+
+        if(gender == "male"){
+            if(totalsalary>=300000){
+            var tax=(totalsalary*15)/100;
+            console.log("tax to be paid " + tax);
+            }
+            else if(totalsalary>=200000){
+                var tax=(totalsalary*10)/100;
+                console.log("tax to be paid " + tax);
+            }
+            else if(totalsalary>=10000){
+                var tax=(totalsalay*5)/100;
+                console.log("tax to be paid " + tax);
+            }
+            else{
+                console.log("zero tax")
+            }
+        }
+        else{
+            if(totalsalary>=300000){
+                var tax=(totalsalary*10)/100;
+                console.log("tax to be paid " + tax);
+            }
+            else if(totalsalary>=200000){
+                var tax=(totalsalary*5)/100;
+                console.log("tax to be paid " + tax);
+            }
+            else{
+                console.log("zero tax");
+            }
+        }
+    </script>
+</body>
+</html>

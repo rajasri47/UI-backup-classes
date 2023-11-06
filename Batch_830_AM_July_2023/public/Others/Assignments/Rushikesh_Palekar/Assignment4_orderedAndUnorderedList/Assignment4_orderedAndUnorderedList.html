@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details using ol and ul tags</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 15px;
+      }
+
+      .heading {
+        display: flex;
+        border: 1px solid red;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+      }
+
+      .content {
+        display: flex;
+        border: 1px solid red;
+        height: 471px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+
+      .studentList {
+        display: flex;
+        border: 1px solid red;
+        justify-content: center;
+        height: 470px;
+        width: 400px;
+      }
+
+      #studentName {
+        height: 427px;
+        width: 300px;
+        border: 1px solid red;
+        margin-top: 10px;
+        list-style: none;
+        text-align: center;
+        padding: 10px;
+        overflow-y: scroll;
+      }
+
+      #studentName .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+        height: 50px;
+        font-size: 1.7rem;
+        margin: 10px;
+      }
+
+      .studentInfo {
+        display: inline-block;
+        height: 470px;
+        width: 880px;
+        margin-left: 32px;
+        border: 1px solid red;
+        overflow-y: scroll;
+      }
+
+      .information {
+        display: flex;
+        height: 211px;
+        align-items: center;
+        width: 804px;
+        padding: 10px;
+        border: 1px solid red;
+        margin: 10px;
+      }
+
+      .information img {
+        height: 200px;
+        width: 200px;
+      }
+
+      .information div {
+        display: flex;
+        height: 200px;
+        width: 430px;
+        padding-left: 30px;
+        align-items: center;
+      }
+
+      .information div ul {
+        list-style: none;
+      }
+
+      .information div ul li {
+        font-size: larger;
+        margin: 12px 0px;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+        font-size: larger;
+        height: 50px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h2>Student Details</h2>
+    </div>
+    <div class="content">
+      <div class="studentList">
+        <ol id="studentName">
+          <li class="name">Raj</li>
+          <li class="name">Rohan</li>
+          <li class="name">Isha</li>
+          <li class="name">Natalia</li>
+          <li class="name">Netra</li>
+          <li class="name">Suresh</li>
+          <li class="name">Jenifer</li>
+          <li class="name">Piyush</li>
+          <li class="name">Aryan</li>
+          <li class="name">Neha</li>
+        </ol>
+      </div>
+      <div class="studentInfo">
+        <div class="information">
+          <img src="images/maleStudent.jpeg" alt="Male Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Raj</li>
+              <li>Age : 20</li>
+              <li>Gender : Male</li>
+              <li>Location : Banglore</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/maleStudent.jpeg" alt="Male Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Rohan</li>
+              <li>Age : 22</li>
+              <li>Gender : Male</li>
+              <li>Location : Mumbai</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/femaleStudent.jpeg" alt="Female Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Isha</li>
+              <li>Age : 19</li>
+              <li>Gender : Female</li>
+              <li>Location : Mumbai</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/femaleStudent.jpeg" alt="Female Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Natalia</li>
+              <li>Age : 18</li>
+              <li>Gender : Female</li>
+              <li>Location : Navi Mumbai</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/femaleStudent.jpeg" alt="Female Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Netra</li>
+              <li>Age : 23</li>
+              <li>Gender : Female</li>
+              <li>Location : Kolkata</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/maleStudent.jpeg" alt="Male Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Suresh</li>
+              <li>Age : 24</li>
+              <li>Gender : Male</li>
+              <li>Location : Banglore</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/femaleStudent.jpeg" alt="Female Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Jenifer</li>
+              <li>Age : 21</li>
+              <li>Gender : Female</li>
+              <li>Location : Mumbai</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/maleStudent.jpeg" alt="Male Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Piyush</li>
+              <li>Age : 24</li>
+              <li>Gender : Male</li>
+              <li>Location : Delhi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/maleStudent.jpeg" alt="Male Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Aryan</li>
+              <li>Age : 22</li>
+              <li>Gender : Male</li>
+              <li>Location : Madhya Pradesh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information">
+          <img src="images/femaleStudent.jpeg" alt="Female Student Icon" />
+          <div>
+            <ul>
+              <li>Name : Neha</li>
+              <li>Age : 20</li>
+              <li>Gender : Female</li>
+              <li>Location : Pune</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <b>Copyright @ 2023</b>
+    </div>
+  </body>
+</html>

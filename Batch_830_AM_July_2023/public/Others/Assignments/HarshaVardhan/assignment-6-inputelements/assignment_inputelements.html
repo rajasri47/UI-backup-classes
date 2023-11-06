@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details page</title>
+    <style>
+        .hop{
+            border:2px solid black;
+            text-align:center;
+            font-size: xx-large;
+        }
+        .hop1{
+            border:2px solid;
+            height:850px;
+        }
+        .hop2{
+            border:2px solid;
+            margin:30px;
+            height:250px;
+            width:1400px;
+            list-style: none;
+        }
+        .hop3{
+            border:2px solid;
+            font-size: xx-large;
+            background-color: white;
+            z-index: 1;
+            position:relative;
+            left:20px;
+            bottom:20px;
+        }
+        .hop4{
+            font-size: larger;
+            margin:30px;
+        }
+        .hop5{
+            float:right;
+            position: relative;
+            bottom: 180px;
+            right: 70px;
+            font-size: larger;
+        }
+        .hop6{
+            font-size:x-large;
+        }
+        .hop7{
+            border:2px solid;
+            font-size: xx-large;
+            background-color: white;
+            z-index: 1; 
+            position:relative;
+            left:20px;
+            bottom:20px;
+        }
+        .hop8{
+            border:2px solid;
+            margin:30px;
+            height:200px;
+            width:1400px;
+            list-style: none; 
+        }
+        .hop9{
+            float:right;
+            position: relative;
+            bottom: 100px;
+            right: 360px;
+            font-size: larger;
+        }
+        .hop10{
+            margin:40px;
+            font-size: larger;
+        }
+        .hop11{
+            list-style: none;
+        }
+        .hop12{
+        float: right;
+        font-size: x-large;
+        position: relative;
+        right: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hop">Student Details Registration Page</div><br>
+    <div class="hop1">
+    <ul>
+        <li class="hop2">
+            <span class="hop3">User Details</span><br>
+            <label for="name" class="hop4">Name:</label>
+            <input type="text" name="name"><br><br><br>
+            <label for="age" class="hop4">Age:</label>
+            <input type="text" name="age"><br><br><br>
+            <label for="gender" class="hop4">Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female<br><br><br>
+            <textarea class="hop5"name="adress" cols="60" rows="8" maxlength="200"></textarea>
+            <label class="hop5" class="hop6" for="adress">Address: </label>
+        </li>
+    </ul>
+    <ul>
+        <li class="hop8">
+            <span class="hop7">Education Details</span><br><br>
+            <label class="hop4">Qualification:</label>
+            <input type="checkbox">MCA
+            <input type="checkbox">MBA
+            <input type="checkbox">B-TECH<br><br><br>
+            <label class="hop4">Languages</label>
+            <input type="checkbox">Telugu
+            <input type="checkbox">English
+            <input type="checkbox">Hindi<br><br>
+            <select class="hop9" required>
+                <option name="list5">Select Course</option>
+                <option name="list5">Core java</option>
+                <option name="list5">Ui full stack</option>
+                <option name="list5">Selenium</option>
+            </select>
+            <label for="list5" class="hop9">Course opted for:</label>
+        </li>
+    </ul>
+    <ul>
+        <li class="hop8">
+            <span class="hop7">About Yourself</span><br><br> 
+            <label  class="hop10" for="adress">Tell About Yourself</label> 
+            <textarea name="adress" cols="120" rows="8" maxlength="200"></textarea>
+        </li>
+    </ul>
+    <ul>
+        <li class="hop11">
+            <label for="register"></label>
+            <input class="hop12" type="button" value="Register" name="register">
+        </li>
+    </ul>
+    </div><br>
+    <div class="hop">@copyrights2023</div>
+</body>
+</html>

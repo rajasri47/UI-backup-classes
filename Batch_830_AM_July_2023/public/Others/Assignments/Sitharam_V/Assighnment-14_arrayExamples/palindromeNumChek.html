@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Num Checking</title>
+    </head>
+    <body>
+        <script>
+            var readData = () => {
+                var data = [];
+                var len = parseInt(prompt(" Enter the num of values"));
+                for ( i = 0; i < len; i++) {
+                    data[i] = parseInt(prompt(" Enter the value"));
+                }
+                calc(data,len);
+            }
+            var calc = (data,len) => {
+                var count = 0;
+                for ( i = 0; i < len; i++) {
+                    var temp = data[i];
+                    var n = 0;
+                    while ( data[i] != 0) {
+                        var rem = data[i] % 10;
+                        data[i] = parseInt(data[i] / 10);
+                        n = (n * 10) + rem;
+                    }
+                    if ( n == temp) { 
+                        console.log(n + " is a palindrome number in given array");
+                        count++;
+                    }
+                }
+                if (count == 0) {
+                    console.log(" There are no palindrome numbers in given array");
+                }
+            }
+            readData();
+        </script>
+    </body>
+</html>

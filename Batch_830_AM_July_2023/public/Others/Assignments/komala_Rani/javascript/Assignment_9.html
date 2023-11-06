@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Assignment_9</title>
+    </html>
+    <body>
+        <script>
+            var min = 1;
+            var max = 100;
+            sum = 0;
+             for(var i = min ; i <= max ; i++){
+                sum += i;
+                
+             }
+            console.log("Sum of 1 to 100 value is: "+ sum)
+
+
+            var min = 99;
+            var max = 61;
+            sum = 0;
+            for( var i = 99 ; i >= 61 ; i--){
+                sum += i;
+            }
+            console.log("Sum of 99 to 61 value is: "+ sum)
+
+
+            var min = 1;
+            var max = 1000;
+            
+            for( var i = min ; i <= 1000 ; i++){
+                if(i % 2 == 0)
+                console.log("The Even numbers between 1 to 1000 is: "+ i);
+            }
+
+
+            var min = parseInt(prompt("Enter starting number: "));
+            var max = parseInt(prompt("Enter Ending number: "));
+            evensum = 0;
+            for(var i = min ; i <= max ; i++ ){
+                if(i % 2 == 0)
+                evensum += i;
+            }console.log("The Sum of all Even Numbers Value is: "+ evensum);
+
+
+
+
+            var min = 1000;
+            var max = 100;
+            for( var i = 1000 ; i >= 100 ; i--){
+                if(i % 2 != 0)
+                console.log("The odd numbers between 1000 to 100 is: "+ i);
+            }
+
+
+
+            var min = parseInt(prompt("Enter min number: "));
+            var max = parseInt(prompt("Enter max number: "));
+            oddsum = 0;
+            for(var i = min ; i <= max ; i++){
+                if(i % 2 != 0)
+                oddsum += i;
+
+            }console.log("The Sum Of  all Odd Values is: "+ oddsum);
+
+
+
+        </script>
+    </body>
+</head>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML input elements</title>
+        <style>
+            h3 {
+                border: 1px solid;
+                text-align: center;
+                padding: 10px;
+            }
+            ul {
+                border: 1px solid;
+                width: 500px;
+                margin: 20px auto;
+                
+            }
+            li {
+                border: 1px solid #ccc;
+                margin: 10px;
+                padding: 5px;
+                list-style: none;
+            }
+            input[type=text] {
+                width: 200px;
+            }
+
+        </style>
+    </head>
+    <body>
+       
+        <h3>
+            Student registration page
+        </h3>
+        <ul>
+            <li>
+                <label for="username">Enter STudent name: </label>
+                <input type="text" maxlength="15" name="username">
+            </li>
+            <li>
+                <label>College Name:</label>
+                <input type="text" disabled value="ABC College">
+            </li>
+            <li>
+                
+                <input type="text" placeholder="Enter Student Age">
+            </li>
+            <li>
+                Enter account password:
+                <input type="password" maxlength="8">
+            </li>
+            <li>
+                Gender: 
+                Male <input type="radio" name="gender" checked>
+                Female <input type="radio" name="gender">
+            </li>
+            <li>
+                Languages you know: 
+                English <input type="checkbox" checked disabled>
+                Telugu <input type="checkbox">
+                Hindi <input type="checkbox">
+                Urdu <input type="checkbox">
+            </li>
+            <li>
+                Qualification:
+                    <select name="" id="">
+                        <option value="">MCA</option>
+                        <option value="">MBA</option>
+                        <option value="" selected>Mtech</option>
+                        <option value="">Btech</option>
+                    </select>
+            </li>
+            <li>
+                Tell about youself:
+                <textarea name="" id="" cols="20" rows="5" maxlength="300"></textarea>
+            </li>
+            <li>
+                <input type="button" value="Register">
+            </li>
+        </ul>
+    </body>
+</html>

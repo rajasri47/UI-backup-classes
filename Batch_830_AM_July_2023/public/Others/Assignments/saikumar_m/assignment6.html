@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/DELL%205400/Desktop/sai.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment6</title>
+    <style>
+      h2 {
+        border: 2px solid blue;
+        text-align:center;
+        padding:3px;
+      }
+      .block2 {
+        border:2px solid blue;
+        text-align:center;
+        padding:5px;
+        margin-top:9px;
+        font-size:25px;
+        
+      }
+      .block1 {
+        border:2px solid red;
+        height:700px;
+      }
+      .block3{
+        border:2px solid rgb(0, 179, 255);
+        height: 180px;
+        margin:28px;
+        z-index: 1;
+        position: relative;
+
+      }
+      .blocka{
+        border:2px solid lightseagreen;
+        height:30px;
+        width:250px;
+        margin-left:35px;
+        z-index:2;
+        position:relative;
+        margin-bottom: 10px;
+        bottom: 17px;
+        background-color: aliceblue;
+        text-align: center;
+        padding-top: 5px;
+        font-weight: bold;
+      }
+      li{
+        margin: 5px;
+        padding:6px;
+        list-style: none;
+      }
+      
+      
+    </style>
+</head>
+<body>
+   <h2>Student details registration page</h2> 
+   <div class="block1">
+      <div class="block3">
+        <div class="blocka">User Details</div>
+        <ol>
+            <label style="float:right; margin-right:200px; margin-top: -50px;">
+              <p> Address :</p>
+            <textarea name="address" cols="30" rows="4"></textarea>
+            </label>
+            <li>
+               Name :
+               <input type="text">
+            </li>
+            <li>
+                Age :
+                <input type="age" max="" min="2">
+            </li>
+            <li>
+                Gender :
+                <input type="radio" name="gender" checked="" value="male">Male
+                <input type="radio" name="gender" value="femail">Female
+            </li>
+        </ol>
+      </div>
+      <div class="block3"><div class="blocka">Education Details</div>
+      <ol>
+        <label style="float:right; margin-right:200px; margin-top: 30px;">
+            Course Opted For :
+            <select>
+                <option value="">course opted </option>
+                <option value="finance">finance</option>
+                <option value="technology">technology</option>
+                <option value="business">business</option>
+                <option value="animation">animation</option>
+            </select>
+          </label>
+        <li>
+            Qualification :
+          <input type="checkbox" name="qualification" value="MCA" required=""> MCA 
+           <input type="checkbox" name="qualification" value="MBA">MBA
+           <input type="checkbox" nmae="qualification" value="Btech">Btech
+        </li>
+        <li>
+            Language :
+            Telugu<input type="checkbox" name="lan_tel" required="">
+            English<input type="checkbox" name="lan_eng" required="">
+            Hindi<input type="checkbox" name="lan_hin" required="">
+            Urdu<input type="checkbox" name="lan_urdu" required="">
+
+        </li>
+    </ol>
+    </div>
+    <div class="block3"><div class="blocka">About Self</div>
+    
+     <li>
+    <div> Tell Few Words About Ur Self :</div>
+        <textarea name="about ur self" id="" cols="60" rows="5"></textarea>
+     </li>
+     <label style="margin-top:30px; float:right; margin-right: 90px;">
+     <input type="submit" value="register details">
+     </label>
+      </div>
+   </div>
+   <div class="block2">@copyrights 2023</div>
+
+</body></html>

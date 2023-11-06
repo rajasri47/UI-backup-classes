@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        li::marker{
+            color: rgb(255, 5, 5);
+        }
+        div::first-letter{
+            color: darkblue;
+            font-size: 30px;
+        }
+        .para1::first-line{
+background-color: chartreuse;
+        }
+        .para2::after{
+            color: rgb(46, 12, 243);
+            content:"Continue reading....";
+            text-decoration: underline;
+        }
+        .para3::before{
+            content:".....read previous";
+            color: blue;
+            text-decoration: underline;
+        }
+        div::selection{
+            background-color: rgb(12, 214, 187);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>heading 1</li>
+        <li>heading 2</li>
+        <li>heading 3</li>
+        <li>heading 4</li>
+    </ul>
+    <h3>heading 1</h3>
+    
+    <div class="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse amet quia porro laborum pariatur non maiores quidem, incidunt id nesciunt minima, mollitia vitae dignissimos assumenda tenetur! Quisquam modi numquam animi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ducimus neque, porro assumenda deserunt molestiae inventore. Aspernatur consequatur, sapiente in vero, magni molestias fugit, ullam voluptate beatae inventore omnis? Sunt.</div>
+    <h3 >heading 2</h3>
+    <div class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto incidunt pariatur itaque nostrum hic delectus quod assumenda nam quis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aspernatur!</div>
+    <h3>heading 3</h3>
+    <div class="para3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nulla deleniti dignissimos suscipit fuga in iure ipsa recusandae laboriosam officiis.
+    </div>
+    <h3>heading 4</h3>
+    <div class="para4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi tempore adipisci, tempora mollitia dolores magni ratione. Molestias perferendis fuga quia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, dolorem.</div>
+    <h3>heading 5</h3>
+    <div class="para5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum saepe magnam debitis modi illum iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolorem?</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Employee info</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <script>
+        var employee_name = prompt("Enter Employee Name");
+        var employee_age = prompt("Enter Employee Age");
+        var employee_gender = prompt("Enter Employee Gender (Male/Female)");
+        var employee_bsalary = prompt("Enter Employee Basic Salary");
+        employee_bsalary =parseFloat(employee_bsalary);
+        employee_age = parseInt(employee_age);
+        hra = 0.24 * employee_bsalary;
+        pf = .12 * employee_bsalary;
+        total_salary = employee_bsalary + hra + pf;
+        console.log("Employee Name: " + employee_name);
+        console.log("Employee Age: " + employee_age);
+        console.log("Employee Gender: " + employee_gender);
+        console.log("Employee Base Salary: Rs " + employee_bsalary);
+        console.log("Employee PF: Rs " + pf);
+        console.log("Employee HRA: Rs " + hra);
+        console.log("Employee Total Salary: Rs " + total_salary);
+    </script>
+    
+</body>
+</html>

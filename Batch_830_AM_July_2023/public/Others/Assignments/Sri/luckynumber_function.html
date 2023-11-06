@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            <script>
+                var n = prompt ("enter the number");
+                 n = parseInt(n);
+                 var LuckyNo = 0;
+                function cal(){
+                    while (n > 0) {
+                        
+                    
+                    var rem = n % 10;
+                    n = parseInt( n/10 );
+                    LuckyNo = (LuckyNo + rem);
+
+                 }
+                }
+                 cal();
+               
+                if ( LuckyNo > 9){
+                    
+                    n = LuckyNo;
+                    LuckyNo = 0;
+                cal();
+                }
+
+                console.log(" LuckyNo is" + LuckyNo);
+                
+
+
+
+            </script> 
+            
+        </body>
+    </html>

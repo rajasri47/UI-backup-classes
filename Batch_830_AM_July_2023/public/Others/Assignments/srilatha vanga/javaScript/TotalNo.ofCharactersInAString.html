@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+           Reading String From The User finding the total no.of characters with in it with out using length property
+        </title>
+    </head>
+    <body>
+        <script>
+            var readFromUser = () => {
+                var userString=prompt("Enter a string");
+                console.log("User given string is:" + userString);
+                var strCount=countString(userString);
+                console.log("size of the string is " + strCount);
+            }
+            var countString = (userString) => {
+                var count = 0;
+                for(var i = 0; userString[i] !== undefined;i++){
+                    count += 1;
+                }
+                return count;
+            }
+            readFromUser();
+
+        </script>
+    </body>
+</html>

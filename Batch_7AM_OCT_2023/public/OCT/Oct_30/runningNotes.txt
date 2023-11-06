@@ -1,0 +1,53 @@
+To read and send data to server
+
+    2 ways
+        1. Manually read data from all input elements(js), send data to server(trough ajax)
+        2. Through the form tag 
+
+
+form Tag:
+
+    <form>
+    </form>
+
+    FORM TAG TAKES two mandate attributes 
+
+        method 
+
+
+        action 
+
+            path/url of the server, to which data has to be sent 
+
+                http://www.google.com
+
+                http://abc.com/sample/data 
+
+
+                http://localhost:8082/data/info/studentdetials 
+
+        method: 
+            we specify the type of communication, which sending/receiving data
+
+            GET/POST/PUT/Delete....
+
+            GET / POST 
+
+            method="GET" -> 
+                data will be sent to the server, by appending the user data directly to the url itself, which is called, url rewritting/query parameters 
+
+
+                eg:
+
+                    <form method="GET" action="http://userinfo.com/info/details">
+                        .....
+                        name
+                        age
+                        gender
+                    </form>
+
+                    http://userinfo.com/info/details?name=prasad&age=60&gender=male 
+
+            method='POST'
+
+                data will be sent to the specified server, by appending data to the req header itself, which i snot visible to the end user 

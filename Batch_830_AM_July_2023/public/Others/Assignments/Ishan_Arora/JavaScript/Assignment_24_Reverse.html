@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 24
+        </title>
+    </head>
+    <body>
+        <h1>
+            Read Number from user and display the Reverse of it
+        </h1>
+        <script>
+            var n = prompt("Enter Number: ");
+            n = parseInt(n);
+            var temp = n;
+            var rem, rev = '';
+
+            while (temp > 0) {
+                rem = temp % 10;
+                rem = rem.toString();
+                rev += rem;
+                temp /= 10;
+                temp = parseInt(temp);
+            }
+
+            console.log("Reverse of " + n + " is " + rev);
+        </script>
+    </body>
+</html>

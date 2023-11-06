@@ -1,0 +1,39 @@
+
+var m1 = 44;
+var m2 = 56;
+var m3 = 90;
+
+var marks -> 
+
+Datastructures:
+
+    It is a container capable of holding more than one value.
+    Eg:
+        Stacks
+        Queues
+        Graphs
+        Trees
+        Linked lists 
+        Array
+        JSON
+        Set
+        Map
+        etc.
+
+        --------------------
+
+        Arrays (Stacks, Queues)
+        JSON
+        Set 
+        Map 
+        
+        ------------
+
+        Arrays 
+
+            Hetirogenious DS 
+
+            C language / java -> int a[10]; // an integer array capable of holding 10 integer values
+
+
+            JS - var a = [] -> 

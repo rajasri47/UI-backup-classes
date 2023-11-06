@@ -1,0 +1,40 @@
+.loginBlock {
+    border: 1px solid;
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    height: 35px;
+}
+
+.label {
+    width: 150px;
+}
+.inputElement, .label {
+    float: left;
+}
+.detailsBlock {
+    display: none;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+
+}
+
+.invalidCredentials {
+    text-align: center;
+    color: red;
+    display: none;
+}
+
+.themeChooser{
+    text-align: right;
+    margin: 10px;
+}

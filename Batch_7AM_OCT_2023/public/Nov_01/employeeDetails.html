@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details
+        </title>
+    </head>
+    <body>
+        <script>
+            var empname, age, dep, basicSal;
+
+            empname = 'Krish';
+            age = 45;
+            dep = 'IT';
+            basicSal = 20000;
+
+            var pf = (basicSal * 14) / 100;
+            var hra = (basicSal * 24) / 100;
+
+            var totalSal = basicSal + pf + hra; 
+
+
+            console.log("Emp name " + empname);
+            console.log("total sal " + totalSal);
+
+        </script>
+    </body>
+</html>

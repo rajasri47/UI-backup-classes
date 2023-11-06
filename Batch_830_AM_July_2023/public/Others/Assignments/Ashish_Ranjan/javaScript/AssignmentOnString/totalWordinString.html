@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- --------------Demonstrate count number of word in given string--------------- -->
+
+    <script>
+      var getUserData = () => {
+        var getString = prompt("Enter string ");
+        var temp = getString.split(" ");
+
+        var len = temp.length;
+        displayUserDetails(temp,len);
+      };
+
+      displayUserDetails = (temp,len) => {
+        console.log("User entered string  : " + temp);
+        console.log("Number of word in given string : " + len);
+      };
+      getUserData();
+    </script>
+  </body>
+</html>

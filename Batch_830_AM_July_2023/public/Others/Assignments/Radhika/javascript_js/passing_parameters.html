@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Demonstarting Passing Parameters</title>
+    </head>
+    <body>
+        <h3>Demonstarting Passing Parameters....!</h3>
+        <script>
+            console.log("100% Modularization")
+            var readValues = () => { // calling funcion 
+                var f1, f2;
+                f1 = prompt("enter value for f1");
+                f1=parseFloat(f1);
+                f2 = prompt("enter value for f2");
+                f2=parseFloat(f2);
+                findSum(f1, f2); //actual parameters
+                console.log('done');
+            }
+
+            var findSum = (f1, f2) => { //  formal parameters
+                var result  = f1 + f2;
+                console.log("The sum is " + result);
+            }
+            readValues();
+         
+        </script>
+    </body>
+</html>

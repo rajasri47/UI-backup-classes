@@ -1,0 +1,50 @@
+@width: 10px;
+@height: @width + 10px;
+@copanythemeColor: yellow;
+@parentHeight: 550px;
+
+
+#header {
+  width: @width;
+  height: @height;
+}
+body {
+    background-color: @copanythemeColor;
+}
+
+div {
+    width: @parentHeight + 10px;
+}
+
+
+ul {
+    height: @parentHeight + 20px;
+}
+
+.box {
+    width: 20px;
+    background-color: green;
+    border: 2px solid;
+}
+
+.container1 {
+    height: 200px;
+    font-size: 30px;
+    .box();
+}
+
+.container2{ 
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+    .box();
+}
+
+#heder {
+    background-color: yellow;
+    .abc {
+        font-size: 20px;
+    }
+    .sample {
+        border: 2px solid;
+    }
+}

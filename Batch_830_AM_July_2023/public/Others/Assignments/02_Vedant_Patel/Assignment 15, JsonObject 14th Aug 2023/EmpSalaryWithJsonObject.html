@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpSalaryWithJson</title>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE SALARY STRUCTURE OF EMP OPEN DEBUGGER TOOL </h1>
+    <script>
+        var EmpDetails1 = {
+            name: "Vedant",
+            salary: 25000,
+            age: 25,
+            gender: "Male"
+        }
+        console.log(EmpDetails1)
+        var EmpDetails = {
+
+        };
+        EmpDetails.Name = prompt("Enter Emp Name ", "Vedant")
+        EmpDetails.Age = prompt("Enter Emp  age ", 28)
+        EmpDetails.Dept = prompt("Enter Emp  Department ", "IT")
+        EmpDetails.Gender = prompt("Enter Emp  Gender ", "Male")
+        EmpDetails.Bsalary = prompt("Enter Emp  Basic Salary ", "25000")
+        EmpDetails.Bsalary = parseInt(EmpDetails.Bsalary)
+
+        EmpDetails.PF = 12 / 100 * EmpDetails.Bsalary;
+        EmpDetails.HRA = 24 / 100 * EmpDetails.Bsalary;
+        EmpDetails.TotalSalary = EmpDetails.PF + EmpDetails.HRA + EmpDetails.Bsalary;
+        EmpDetails.AnualSalary = EmpDetails.TotalSalary * 12;
+
+
+        console.log("Emp Name is " + EmpDetails.Name);
+        console.log("Emp Age is " + EmpDetails.Age);
+        console.log("Emp Department is " + EmpDetails.Dept);
+        console.log("Basic Salary of " + EmpDetails.Name + " is " + EmpDetails.Bsalary);
+        console.log("PF of " + EmpDetails.Name + " is " + EmpDetails.PF);
+        console.log("HRA of " + EmpDetails.Name + " is " + EmpDetails.HRA);
+        console.log("Total Salary of " + EmpDetails.Name + " is " + EmpDetails.TotalSalary);
+        console.log("Anual Salary of " + EmpDetails.Name + " is " + EmpDetails.AnualSalary);
+
+    </script>
+</body>
+
+</html>

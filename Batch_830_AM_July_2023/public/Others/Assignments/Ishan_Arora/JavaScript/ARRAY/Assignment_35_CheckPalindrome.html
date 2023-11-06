@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 35
+        </title>
+    </head>
+    <body>
+        <h1>
+            Check For Palindorme
+        </h1>
+        <script>
+            var takingInput = () => {
+                var lengthOfArray = prompt("Enter the number of elements: ");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0; i < lengthOfArray; i++) {
+                    a[i] = prompt("Enter " + i + " Value: ");
+                    a[i] = parseInt(a[i]);
+                }
+                checkpalindrome(a);
+            }
+
+            var checkpalindrome = (a) => {
+                var len = a.length;
+                for (var i = 0; i < len; i++) {
+                    var newNum = '';
+                    var rem;
+                    var temp = a[i];
+    
+                    while (a[i] > 0) {
+                        rem = a[i] % 10;
+                        rem = rem.toString();
+                        newNum += rem;
+                        a[i] = a[i] / 10;
+                        a[i] = parseInt(a[i]);
+                    }
+                    if (temp == newNum) {
+                        console.log(temp);
+                    }
+                }
+            }
+            takingInput();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Details</title>
+    </head>
+    <body>
+        <h2>Employee Details</h2>
+        <script>
+          var EmpName, EmpAge, EmpGender, Location, pf, hra, BasicSalary, TotalSalary;
+
+          function Details(){
+            EmpName = prompt("Enter Name:");
+            EmpAge = prompt('Enter Age:')
+            EmpGender = prompt("Enter Gender:");
+            Location = prompt("Enter Location:");
+            BasicSalary = prompt("Enter BasicSalary:");
+        }
+          function calculation(){
+            BasicSalary = parseInt(BasicSalary);
+            pf = (BasicSalary * 12) / 100;
+            hra = (BasicSalary * 24) / 100;
+            TotalSalary = BasicSalary + pf + hra;
+        }
+        function Final(){
+            Details();
+            calculation();
+            console.log("EmpName is: " + EmpName);
+            console.log("EmpAge is: " + EmpAge);
+            console.log("EmpGender is: " + EmpGender);
+            console.log("location is: " + Location);
+            console.log("BasicSalary is: " + BasicSalary);
+            console.log("pf is: " + pf);
+            console.log("hra is: " + hra);
+            console.log("TotalSalary is: " + TotalSalary);
+        } 
+        Final();
+        </script>
+    </body>
+</html>

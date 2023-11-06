@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function operation on Number</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Code in console</h2>
+    <script>
+        var userInput, userOperation;
+
+        var readDataFromUser = () => {
+            userInput = prompt("Enter a Number");
+            userInput = parseInt(userInput);
+
+            userOperation = prompt("Enter a action to perform-- 'prime' for checking Prime Number or not. 'even' For Checking Even Number. 'countDigit' for Counting Number of Digits in this Number. 'sumOfDigits' for Finding sum of digit in this Number. 'palindrome' or finding Number is palindrome or not. 'armstrong' for finding number is armstrong or not. 'lucky' for Finding lucky Number of this Number");
+
+            userOperation = userOperation.toLowerCase();
+
+        }
+
+        var operationOnNumber = () => {
+            readDataFromUser();
+
+            switch (userOperation) {
+                case 'prime':
+                    primeNumberCheck();
+                    break;
+                case 'even':
+                    evenOrOddCheck();
+                    break;
+                case 'countdigit':
+                    countDigit();
+                    break;
+                case 'sumofdigit':
+                    sumOfDigits();
+                    break;
+                case 'palindrome':
+                    palindromeCheck();
+                    break;
+                case 'armstrong':
+                    armstrongCheck();
+                    break;
+                case 'lucky':
+                    findinglucky();
+                    break;
+                default:
+                    console.log("you entered wrong operation, Please enter valid Operation");
+                    break;
+            }
+        }
+
+        var primeNumberCheck = () => {
+            var count = 0;
+            for (var index = 2; index < userInput; index++) {
+                if (userInput % index == 0) {
+                    count += 1;
+                    break;
+                }
+            }
+            if (count == 0) {
+                console.log("Number is prime");
+            } else {
+                console.log("Number is not prime");
+            }
+        }
+
+        var evenOrOddCheck = () => {
+            if (userInput % 2 == 0) {
+                console.log("Number is Even");
+            } else {
+                console.log("NUmber is Odd");
+            }
+        }
+
+        var countDigit = () => {
+            var count = userInput.toString().length;
+            console.log("The length of digit is " + count);
+        }
+
+        var sumOfDigits = () => {
+            var rem = 0, count = 0;
+            for (var i = 0; userInput != 0; i++) {
+                var rem = userInput % 10;
+                userInput = userInput / 10;
+                userInput = parseInt(userInput);
+                count = count + rem;
+            }
+            console.log("Total  number is " + count);
+        }
+
+        var palindromeCheck = () => {
+            var rev = 0, rem, original;
+            original = userInput;
+            for (var i = 0; userInput != 0; i++) {
+                rem = original % 10;
+                rev = rev * 10 + rem;
+                userInput = userInput / 10;
+                userInput = parseInt(userInput);
+            }
+            if (original == rev) {
+                console.log('Number is palindrome');
+            } else {
+                console.log('Number is not palindrome');
+            }
+        }
+
+        var armstrongCheck = () => {
+            var ans = 0, mainNum = 0;
+            mainNum = userInput;
+            var lengthNum = userInput.toString().length;
+            while(userInput!=0){
+                rem=userInput%10;
+                ans=ans+(rem**lengthNum);
+                userInput=userInput/10;
+                userInput=parseInt(userInput);
+            }
+            if(mainNum==ans){
+                console.log('Number is armstrong');
+            }else{
+                console.log('Number is Not armstrong');
+            }
+        }
+
+        var findinglucky=()=>{
+            var sum=0;
+            while(userInput>0||sum>9){
+                if(userInput==0){
+                    userInput=sum;
+                    sum=0;
+                }
+                var rem=userInput%10;
+                sum=sum+rem;
+                userInput=userInput/10;
+                userInput=parseInt(userInput);
+            }
+            console.log(sum);
+        }
+
+
+        operationOnNumber();
+
+    </script>
+</body>
+
+</html>

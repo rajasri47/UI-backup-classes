@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="lib/Js/jquery.js"></script>
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/chatbox.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+        <script src="javascript/supportChat.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <h3>
+                Support team page
+            </h3>
+            <div class="link" onclick="openChatWindow()">
+                Open chat window
+            </div>
+        </div>
+
+        
+
+
+        <div class="chatBoxContainer">
+            <i class="bi bi-file-x-fill" title="Close chat box" onclick="closeChatWindow()"></i>
+            <div class="msgcontainer"></div>
+            <hr>
+            <div class="buttonContainer">
+              <input type="text" class="" id="chatMsg">
+              <input class="btn btn-primary sendBtn" type="button" value="Send" onclick="sendMsg()">
+            </div>
+        \</div>
+    </body>
+</html>

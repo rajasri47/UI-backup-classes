@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee details using json
+        </title>
+    </head>
+    <body>
+        <script>
+            var empData = {
+                readEmpData(){
+                this.name = prompt("Enter the name of the employee"),
+                this.age = prompt("Enter the age of the employee"),
+                this.gender = prompt("Enter the gender of the employee"),
+                this.department = prompt("Enter the department of the employee"),
+                this.basicSalary = prompt("Enter the basic salary of the employee"),
+                this.basicSalary = parseInt(this.basicSalary)
+                this.getHraAndPf();
+                },
+
+                getHraAndPf() {
+                  this.hra = (this.basicSalary * 12)/100;
+                  this.pf = (this.basicSalary * 10)/100;
+                  this.totalSalary = this.hra + this.pf + this.basicSalary;
+                  this.employeeDetails();
+                },
+
+                employeeDetails() {
+                    console.log("Employee's name : " + this.name);
+                    console.log("Employee's age : " + this.age);
+                    console.log("Employee's gender : " + this.gender);
+                    console.log("Employee's department : " + this.department);
+                    console.log("Employee's basicsalary : " + this.basicSalary);
+                    console.log("Employee's totalSalary : " + this.totalSalary);
+                },
+            };
+
+            empData.readEmpData();
+
+        </script>
+    </body>
+    </html>

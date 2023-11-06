@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var m1,m2,m3,name,age,basic_sal,total_salary, avg,mul;
+      function redadata(){
+       name = prompt("enter your name");
+       age =prompt("enter your age");
+       basic_sal = prompt("enter your basic salary");
+      basic_sal = parseInt(basic_sal);
+      
+     
+      
+       m1 = prompt("enter your number");
+       m1 =parseInt(m1);
+      
+       m2 = prompt("enter your number");
+       m2 =parseInt(m2);
+
+       m3 = prompt("enter your number");
+       m3 =parseInt(m3);
+
+       
+      }
+      function getavg()
+      {
+         
+        pf =  basic_sal * 12 / 100;
+        hra =basic_sal * 24 / 100;
+        total_salary = pf + hra + basic_sal;
+        total_salary = parseInt(total_salary);
+
+        avg =  m1 + m2 + m3 / 3;
+       avg = parseInt(avg);
+        mul = m1 * m2 * m3;
+
+      }
+      function displaydata(){
+        redadata();
+         getavg();
+       console.log("name is = "+ name)
+       console.log("age is = "+ age)
+       console.log("basic salary is =" + basic_sal);
+       console.log("total hra is=" + hra);
+       console.log("total pf is=" + pf);
+       console.log("total salary is=" + total_salary);
+       console.log("avg is =" + avg);
+       console.log("mul is =" + mul);
+
+      }
+     
+    
+      displaydata();
+
+
+    </script>
+</body>
+</html>

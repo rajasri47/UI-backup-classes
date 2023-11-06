@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssTransformProperty</title>
+    <style>
+        .container {
+            background-color: darkmagenta;
+            height: 350px;
+        }
+
+        .container2 {
+            background-color: rgb(12, 199, 9);
+            height: 400px;
+        }
+
+        .box {
+            /* border: 1px solid black; */
+            /* display: inline-block; */
+            transform: translate(134px, 56px);
+            /*rotateZ(4deg); */
+            /* transform-origin: 0; */
+            /* transform: scale(1,2); */
+            /* transform: skew(0deg,14.5deg); */
+        }
+
+        .box2 {
+            transform: translate(134px, 56px);
+        }
+
+        img:hover {
+            width: 500px;
+        }
+
+        img {
+            width: 300px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: .2s;
+            border: 2px solid white;
+        }
+
+
+        .btn {
+            /* float: right; */
+            line-height: 80px;
+            /* justify-content: center; */
+            align-items: center;
+            padding-left: 350px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage1" src="https://source.unsplash.com/350x200/?javascript,apple,happy">
+
+
+            <img id="myImage2" src="https://source.unsplash.com/350x200/?javascript,nature, happy">
+
+            <img id="myImage3" src="https://source.unsplash.com/350x200/?javascript,apple">
+
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="box2">
+            <img id="myImage4" src="https://source.unsplash.com/350x200/?javascript,apple,happy">
+
+
+            <img id="myImage5" src="https://source.unsplash.com/350x200/?javascript,nature, happy">
+
+            <img id="myImage6" src="https://source.unsplash.com/350x200/?javascript,apple">
+            <div class="btn">
+                <button id="btn">ClickMe</button>
+                <button id="btn1">ClickMe</button>
+                <button id="btn2">ClickMe</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    myImage4.style.width = '300px';
+    myImage5.style.width = '300px';
+    myImage6.style.width = '300px';
+    btn.addEventListener("click", () => {
+        if (myImage4.style.width === "500px") {
+            myImage4.style.width = "300px";
+        }
+        else if (myImage4.style.width === '300px') {
+            myImage4.style.width = "500px";
+        }
+    })
+    btn1.addEventListener("click", () => {
+        if (myImage5.style.width === "500px") {
+            myImage5.style.width = "300px";
+        }
+        else if (myImage5.style.width === '300px') {
+            myImage5.style.width = "500px";
+        }
+    })
+    btn2.addEventListener("click", () => {
+        if (myImage6.style.width === "500px") {
+            myImage6.style.width = "300px";
+        }
+        else if (myImage6.style.width === '300px') {
+            myImage6.style.width = "500px";
+        }
+    })
+</script>
+
+
+</html>

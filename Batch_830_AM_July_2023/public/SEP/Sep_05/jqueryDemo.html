@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            
+        </title>
+        <style>
+            .highlight {
+                background-color: blue;
+                text-align: center;
+                font-size: 30px;
+            } 
+            .container {
+                border: 1px solid;
+                width: 200px;
+                height: 200px;
+                margin: 20px auto;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <input type="button" value="Apply Changes" onclick="applyChanges()">
+        <div id="block" class="container abc test">Content</div>
+        <script>
+            /*var applyChanges = () => {
+                var existingClasses = document.querySelector("#block").getAttribute("class");
+                var newClasses = existingClasses + ' highlight';
+                document.querySelector("#block").setAttribute("class", newClasses);
+            }*/
+
+            // var applyChanges = () => {
+            //     $("#block").addClass("highlight");
+            // }
+
+            var applyChanges = () => {
+                // console.log(document.querySelector("#block").classList);
+                document.querySelector("#block").classList.add("highlight"); //HTML5
+            }
+        </script>
+    </body>
+</html>

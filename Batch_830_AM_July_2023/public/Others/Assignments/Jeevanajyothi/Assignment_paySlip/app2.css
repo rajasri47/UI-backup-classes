@@ -1,0 +1,23 @@
+h3 {
+    border :1px solid;
+    margin: 20px solid;
+    padding: 20px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 30px;
+}
+ul {
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid;
+}
+li {
+    border: 1px solid brown;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+.hide {
+    display: none;
+}

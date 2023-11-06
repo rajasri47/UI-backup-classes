@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Date Options</title>
+    </head>
+    <body>
+        <script>
+            var readData = () => {
+                var mydate = new Date();
+                var input = prompt("Choose any one format you want to need.\n 1. dd/mm/yy \n 2. mn/dd/yy \n 3. dn, mn dno yy \n 4. hh:min:sec \n 5. mn, dno yy \n 6. dn, dno mn yy \n 7. dd-mm-yy");
+                var mthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                var dayNames = ['Sun','Mon','Tues','Wed','Thur','Fri','Sat'];
+                option(mydate,mthNames,input,dayNames);
+            }
+            var option = (mydate,mthNames,input,dayNames) => {
+                switch(input) {
+                    case "1": //1. dd/mm/yy
+                        var myFormat = mydate.getDate() + "/" + mydate.getMonth() + "/" + mydate.getFullYear();
+                        console.log(myFormat);
+                        break;
+
+                    case "2": //2. mn/dd/yy
+                        var myFormat = mthNames[mydate.getMonth()] + "/" + mydate.getDate() + "/" + mydate.getFullYear();
+                        console.log(myFormat);
+                        break;
+
+                    case "3": //3. dn, mn dno yy
+                        var myFormat = dayNames[mydate.getDay()] + ", " + mthNames[mydate.getMonth()] + " " + mydate.getDate() + "th " + mydate.getFullYear();
+                        console.log(myFormat);
+                        break;
+
+                    case "4": //4. hh:min:sec
+                        var myFormat = mydate.getHours() + ":" + mydate.getMinutes() + ":" + mydate.getSeconds();
+                        console.log(myFormat);
+                        break;
+
+                    case "5": //5. mn, dno yy
+                        var myFormat = mthNames[mydate.getMonth()] + ", " + mydate.getDate() + "th " + mydate.getFullYear();
+                        console.log(myFormat);
+                        break;
+
+                    case "6": //6. dn, dno mn yy
+                        var myFormat = dayNames[mydate.getDay()] + ", " + mydate.getDate() + "th " + mthNames[mydate.getMonth()] + " " + mydate.getFullYear();
+                        console.log(myFormat);
+                        break;
+
+                    case "7": //7. dd-mm-yy
+                        var myFormat = mydate.getDate() + "-" + mydate.getMonth() + "-" + mydate.getFullYear();
+                        console.log(myFormat);
+                        break;
+                }
+            }
+            readData();
+        </script>
+    </body>
+</html>

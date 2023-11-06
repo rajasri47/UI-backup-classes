@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+        
+        <ul id="con1">
+            <h2>
+                Employee Details Page
+            </h2>
+            <li>
+                <input type="text" id="fname" placeholder="Enter First Name">
+            </li>
+            <li>
+                <input type="text" id="lname" placeholder="Enter Last Name">
+            </li>
+            <li>
+                <input type="text" id="age" placeholder="Enter Age">
+            </li>
+            <li>
+                <input type="radio" value="male" name="gender" checked> male
+                <input type="radio" value="female" name="gender"> female
+            </li>
+            <li>
+            Department
+                <select id="department">
+                    <option value="Select">Select</option>
+                    <option value="It">It</option>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="Mechanic">Mechanic</option>
+                </select>
+            </li>
+            <li>
+            <input type="text" id="salary" placeholder="Enter Basic Salary">
+            </li>
+            <li>
+                <input type="submit" onclick="readempdetails()">
+            </li>
+        </ul>
+
+   
+    <ul id="con2">
+        <h2>Employee Pay Slip</h2>
+        <li>
+            Name : <span id="Fname"></span> <span id="Lname"></span>
+        </li>
+        <li >
+            Age :<span id="Age"></span>
+        </li>
+        <li >
+            Gender : <span id="gender"></span>
+        </li>
+        <li >
+            Department : <span id="dept"></span>
+        </li>
+        <li >
+            Basic Salary : <span id="bsalary"></span>
+        </li>
+        <li>
+            Pf : <span id="pf"></span>
+        </li>
+        <li>
+            Hra : <span id="hra"></span>
+        </li>
+        <li>
+            Total : <span id="total"></span>
+        </li>
+        
+    </ul>
+</body>
+</html>

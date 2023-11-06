@@ -1,0 +1,26 @@
+.headercontent {
+    
+    height: 50px;
+    width: 100%;
+    background: #516a51;
+}
+.subheaderLift {
+    float: left;
+    margin: 4px;
+}
+.logImage{
+    height: 40px;
+    width: 140px;
+  
+}
+.rightLog {
+    height: 32px;
+    width: 32px;
+    margin: 5px;
+}
+.subheaderRight {
+    float:right;
+    margin: 4px;
+    display: flex;
+    justify-content: end;
+}

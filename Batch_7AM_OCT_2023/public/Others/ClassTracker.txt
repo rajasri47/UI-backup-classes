@@ -1,0 +1,105 @@
+#This is used to Track the every day topic.
+Class-01   (28.09.23)
+        VSCode
+        HTML ELEMENT (html,body, title, head, br, pre)
+
+Class-02   (29.09.23)
+        Use of Heading tag (h1-h6)
+
+Class-03   (02.10.23)
+        HTML ELEMENT (p)
+        HTML Attributes INFO(id, name)
+
+Class-04  (03.10.23)
+        HTML Attributes (class, title, src, href, style)
+
+Class-05   (04.10.23)
+        Different Way of CSS Apply
+        Inline CSS, Internal CSS
+
+Class-06 (05.10.2023)
+        --CSS Applied(tagName, IdAttribute, classAttribute)
+        --Different Way of Giving Color(colorname/rgb/hashcode)
+
+Class-07 (06.10.2023)
+        --Code Repository
+          --GitHub (register, collaborator, clone, pull)
+          --GitDesktop
+Class-08 (10.10.2023)
+        --<a> and <img> tag
+        --DOM Structure
+        --Assignment-1
+
+Class-09 (11.10.2023)
+        Explation on Usage of GIt GitDesktop
+        DOM Structure 
+        Debugging tool
+
+Class-10 (12.10.2023)
+        Debugging tool (CRUD Operation)
+        Assignment-2 (Play with Debugging Tool)
+        Css Priority
+
+Class-11 (13.10.2023)
+        Server Setup Info
+        NodeJs Server SetUp Steps
+
+Class-12 (16.10.2023)
+        Inline Element (span, a)
+        Block Level Element (div, h1-h6, p)
+
+Class-13 (17.10.2023)
+        Css Properties(Common Define and Reuse)
+        Margin
+
+Class-14 (18.10.2023)
+        Padding, Float, OverFlow
+        CSS Box Model
+
+Class-15 (19.10.2023)
+         Assignment-4
+         Absolute/Relative Path
+
+Class-16 (20.10.2023)
+          OL/UL tag
+          CSS Through Parent child
+          Background Images/colors
+
+Class-17 (21.10.2023)
+          Image Spriting
+          Table Tags(table, thead, tr, th, tbody, td, tfoot)
+          Colspan, rowspan
+
+Class-18 (25.10.2023)
+          Table Vs div
+          PseudoClasses, PseudoElements
+          Display Properties
+
+Class-19 (26.10.2023)
+         Difference b/w display:none & visibility:hidden
+         CssPosition(static/relative/absolute)
+
+Class-20 (28.10.2023)
+         CssPosition(fixed, sticky)
+         Css Property: z-index, Opacity
+         Input Tags(text, radio, select, button, textarea, checkbox, password)
+
+Class-21 (30.10.2023)
+         Assignment-5 dicussion
+         Input Tag with Form Tag (method: GET, POST)
+
+Class-22 (31.10.2023)
+         Java Script introduction
+         DataType Declaration, Assigning, display with alert()
+         demoJS.html (simple arithmetic operation)
+
+Class-23 (01.11.2023)
+         DataType
+         typeOf(), console.log()
+         Type casting:- static/Dynamic type casting
+         examples on arithmetic operation.
+
+Class-24 (02.11.2023)
+         Dynamic Reading Data By- prompt()
+         variable Hoisting
+         Intro of Control Structures

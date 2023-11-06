@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Tables
+        </title>
+        <style>
+            th {
+                background-color: red;
+            }
+            table {
+                background-color: yellow;
+            }
+            td:first-child {
+                font-weight: bold;
+                background-color: rebeccapurple;
+            }
+            .tableContainer {
+                border: 1px solid;
+                width: 450px;
+                height: 500px;
+                margin: 10px auto;
+            }
+            .row div {
+                width: 90px;
+                float: left;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                text-align: center;
+            }
+            .container {
+                background-image: url();
+            }
+
+            tr:nth-child(even) {
+                background-color: red;
+            }
+
+            div:nth-child(2) {
+
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Demonstrating Tables</h3>
+        <table style="border: 2px solid green;"  border="1px solid #ddd" cellspacing="10px" cellpadding="10px">
+            <thead>
+                <tr>
+                    <th>Sno.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Department</th>
+                    <th>Current Location</th>
+                    <th>Premnt Location</th>
+                    <th>Qualification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Raj</td>
+                    <td>20</td>
+                    <td>It</td>
+                    <td rowspan="2">Hyderabad</td>
+                    <td>Delhi</td>
+                    <td>MBA</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Teena</td>
+                    <td>22</td>
+                    <td>HRA</td>
+                    
+                    <td>Chennai</td>
+                    <td>MBA</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Krish</td>
+                    <td>21</td>
+                    <td>It</td>
+                    <td>Pune</td>
+                    <td>Hyderabad</td>
+                    <td>MCA</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Suresh</td>
+                    <td>19</td>
+                    <td>Programmer</td>
+                    <td>Hyderabad</td>
+                    <td>Goa</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>David</td>
+                    <td>20</td>
+                    <td>It</td>
+                    <td colspan="2">Vizag</td>
+                    
+                    <td>Degree</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border="2px solid">
+            <tr title="This is a header cell">
+                <td class="container">Name</td>
+                <td>Raj</td>
+                <td>Teena</td>
+                <td>Krish</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>20</td>
+                <td>30</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>MBA</td>
+                <td>MCA</td>
+                <td>MBA MCA</td>
+            </tr>
+        </table>
+
+        <div class="tableContainer">
+            <div class="row">
+                <div>Sno</div>
+                <div>User name</div>
+                <div>Age</div>
+                <div>Gender</div>
+            </div>
+            <div class="row">
+                <div>1</div>
+                <div>Krish</div>
+                <div>20</div>
+                <div>Male</div>
+            </div>
+            <div class="row">
+                <div>1</div>
+                <div>Krish</div>
+                <div>20</div>
+                <div>Male</div>
+            </div>
+            <div class="row">
+                <div>1</div>
+                <div>Krish</div>
+                <div>20</div>
+                <div>Male</div>
+            </div>
+            <div class="row">
+                <div>1</div>
+                <div>Krish</div>
+                <div>20</div>
+                <div>Male</div>
+            </div>
+        </div>
+    </body>
+</html>

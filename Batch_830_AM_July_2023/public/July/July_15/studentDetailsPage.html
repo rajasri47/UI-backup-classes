@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating studen details - spriting image
+        </title>
+        <style>
+            li {
+                border: 1px solid;
+                margin: 5px;
+                list-style: none;
+                padding: 10px;
+            }
+            li div {
+                margin: 4px;
+            }
+            img {
+                width: 120px;
+                height: 130px;
+            }
+            .imgContainer {
+                background-image: url(images/spritingmage.png);
+                height: 120px;
+                width: 140px;
+            }
+            .emp1 {
+                background-position: -158px 10px;
+            }
+            .emp3 {
+                background-position: -8px -121px;
+            }
+            .emp4 {
+                background-position: -164px -182px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/logo.png" alt="">
+        <h3>
+            Employee DETAILS DEMONSTRATING IMAGE SPRITING
+        </h3>
+        <ul>
+            <li>
+                <div>Name: Raj</div>
+                <div>Age: 20</div>
+                <div>Gender: Male</div>
+                <div>Location: hyderabad</div>
+                <div class="imgContainer emp1"></div>
+            </li>
+            <li>
+                <div>Name: Teena</div>
+                <div>Age: 20</div>
+                <div>Gender: Female</div>
+                <div>Location: hyderabad</div>
+                <div class="imgContainer"></div>
+            </li>
+            <li>
+                <div>Name: Kishore</div>
+                <div>Age: 20</div>
+                <div>Gender: Male</div>
+                <div>Location: hyderabad</div>
+                <div class="imgContainer emp3"></div>
+            </li>
+            <li>
+                <div>Name: Meena</div>
+                <div>Age: 20</div>
+                <div>Gender: Female</div>
+                <div>Location: hyderabad</div>
+                <div class="imgContainer emp4"></div>
+            </li>
+            
+        </ul>
+    </body>
+</html>

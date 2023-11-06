@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get All Prime Number</title>
+    <style>
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+      .getResult {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Get All Prime Number from Given Array</h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">
+      Right click on Webpage then Inspect and then Console
+    </p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+      function getPrimeNumber(arr) {
+        var result = [];
+        var flag = false;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > 0 && arr[i] < 4) {
+            result.push(arr[i])
+          } else {
+            for (let j = 2; j < arr[i]; j++) {
+              if (arr[i] % j === 0) {
+                flag = true;
+                break;
+              }
+            }
+            if (!flag) {
+                result.push(arr[i])
+            }else{
+                flag=false;
+            }
+          }
+        }
+        return result;
+      }
+      function getData() {
+        var input = prompt("Enter a list of items separated by commas:");
+        input = input.split(",");
+        console.log(
+          "List of All Prime Numbers from Given Array is : " +
+            getPrimeNumber(input)
+        );
+      }
+      getData();
+    </script>
+  </body>
+</html>

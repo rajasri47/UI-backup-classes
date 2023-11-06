@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Communication</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <table border="1px solid blue" cellpadding = '10px' cellspacing = '10px'>
+       <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Place</td>
+            <td>State</td>
+        </tr>
+       </thead>
+       <tbody>
+       </tbody>
+    </table>
+    <input type="button" value="Get Data" onclick="getApiCenters()">
+    <script>
+        var getApiCenters = () => {
+            axios.get('https://isro.vercel.app/api/centres')
+           .then(function(response) { 
+            console.log(response);
+            renderDataToTable(response.data.centers);
+           })
+           .catch(function(error) {
+             console.log(error);
+           })
+           .finally(function() {
+
+           });
+        }
+        var  renderDataToTable = (data) => {
+            data.forEach((item) => {
+                
+                var trTag = $("<tr/>");
+                var td1 = $("<td/>").text(item.id);
+                trTag.append(td1);  
+                
+                var td2 = $("<td/>").text(item.name);
+                trTag.append(td2); 
+
+                var td3 = $("<td/>").text(item.Place);
+                trTag.append(td3); 
+
+                var td4 = $("<td/>").text(item.State);
+                trTag.append(td4); 
+
+                $("tbody").append(trTag);
+            });
+        }
+    </script>  
+</body>
+</html>

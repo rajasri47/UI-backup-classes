@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            student details
+        </title>
+        <style>
+            .header{
+                border: 3px solid black;
+                height: 25px;
+                text-align: center ;
+                border-radius: 20px;
+                color: green;
+                text-decoration:underline;
+        
+            }
+            .footer{
+                border: 3px solid;
+                height: 30px;
+                text-align: center;
+                border-radius: 20px;
+                color: green;
+                text-decoration:underline;
+        
+            }
+            .body{
+                border: 3px solid;
+                height: 720px;
+                margin:10px;
+            }
+            .user{
+                border: 1px solid;
+                height: 15px;
+                width: 120px;
+                margin: 5px;
+                padding: 5px;
+                position: absolute;
+                top:62px;
+                left:57px;
+                background-color: white;
+                text-align: center;
+                text-decoration: underline;
+                font-size: 20px;
+                
+            }
+            .education{
+                border: 1px solid;
+                height:2opx;
+                width:120px;
+                padding:5px;
+                position: absolute;
+                top:279px;
+                left:57px;
+                background-color: white;
+                text-align: center;
+                text-decoration: underline;
+            }
+            .abouturslf{
+                border: 1px solid;
+                height: 20px;
+                width: 120px;
+                padding: 5px;
+                position: absolute;
+                top:499px;
+                left:65px;
+                background-color: white;
+                text-align: center;
+                text-decoration: underline;
+            }
+           
+            
+            ol{
+                border: 2px solid;
+                height: 190px;
+                margin: 25px;
+
+            }
+            li{
+                
+                list-style: none;
+                margin:10px;
+                padding: 5px;
+
+            }
+            .address{
+                
+                position:absolute ;
+                top:70px;
+                left: 500px;
+            }
+            .COURSE{
+               position:absolute ;
+                top:310px;
+                left: 568px;
+            }
+            .Register{
+                float: right;
+                background-color: brown;
+            }
+            label{
+                color: blueviolet;
+            
+    
+            }
+            .uname ,.uage ,.gender ,.address ,.QUALI ,.COURSE ,.Language ,.urslf {
+                font-size: 25px;
+                
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            STUDENT DETAILS REGISTRATION  PAGE
+        </div>
+        <div class="body">
+            <form action="http://www.abcsample.com/data/api/registration" method="get"> 
+              <ol>
+                  <div class="user">Userdetails</div>
+                   <br>
+                   <li  class="uname"><label for="uname"> Name:</label>
+                     <input type="text" name="uname">
+                  </li>
+                  <li class="uage"><label for="uage">AGE</label>
+                      <input type="text" name="uage" id="personal">
+                  </li>
+                  <li class="gender"><label for="gender"> GENDER:</label>
+                      <input type="radio" name="gender" checked value="male"><img src="UICLASS/boyimag.jpg.PNG">Male 
+                      <input type="radio" name="gender" value="female"><img src="girlimag.png">Female
+                  </li>
+                   <li class="address">
+                       <label for="address">ADDRESS:</label>
+                     <textarea name="address" id="personal" cols="50" rows="10"></textarea>
+                   </li>
+               </ol>
+               <ol>
+                   <div class="education">Education Details</div>
+                    <br>
+                    <li CLASS="QUALI"><label for="qualification">QUALIFICATION:</label>
+                        MCA<input type="checkbox" name="MCA">
+                        MBA<input type="checkbox" name="MBA">
+                        Btech<input type="checkbox" name="Btech" required>
+                    </li>
+                    <li class="Language"><label for="languages">LANGUAGES:</label>
+                        English<input type="checkbox" name="lng_eng"required>
+                        Telugu<input type="checkbox" name="lng_tel">
+                        Hindi<input type="checkbox" name="lng_hin">
+                        URdu<input type="checkbox" name="lng_urd">
+                     </li>
+                    <li CLASS="COURSE"><label for="course">COURSE OPTRD FOR:</label>
+                        <select>
+                            <OPtion value="UIFULLSTACK" selected>UIFULLSTACK</OPtion>
+                            <OPtion value="JAVA" >JAVA</OPtion>
+                            <OPtion value="PYTHAN">PYTHAN</OPtion>
+                            <OPtion value=".NET JAVA">.NET JAVA</OPtion>
+                        </select>
+                    </li>
+                    
+                      
+                </ol>
+                <ol>
+                    <div class="abouturslf">AboutYourself</div>
+                    <li class="urslf"><label for="abouturslf">TELL FEW WORDS ABOUT YOURSELF:</label>
+                        <textarea name="abouturslf" id="" cols="20" rows="5"></textarea>
+                    </li>
+                </ol>
+                <li class="Register">
+                    <input type="submit" value="Register">
+                </li>
+        </form>
+        </div>
+        <div class="footer">
+            copy right@2023
+        </div>
+    </body>
+</html>

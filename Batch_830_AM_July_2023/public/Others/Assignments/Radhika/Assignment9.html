@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>employeedetailes by using conditional controlstructures</title>
+    </head>
+    <body>
+        <h3>employeedetailes by using conditional controlstructures.....!</h3>
+        <script>
+            var Empname=prompt("Enter the emplooyee name");
+            var Gender=prompt("Enter the Gender");
+            var Age=prompt("Enter the ege");
+            var Dept=prompt("Enter the Deportment");
+            var Basicsal= parseInt(prompt("Enter the basicsalary"));
+            
+            var Pf,Hra,Totalsal;
+            Pf=(Basicsal*12)/100;
+            Hra=(Basicsal*24)/100;
+            Totalsal=Pf+Hra+Basicsal;
+
+            console.log("Name of the Emp is " + Empname);
+            console.log("Gender of the Emp is " +  Gender);
+            console.log("Age of the Emp is " +  Age);
+            console.log("Dept of the Emp is " +  Dept);
+            console.log("Basicsal of the Emp is " +  Basicsal);
+            console.log("Pf of the Emp is " +  Pf);
+            console.log("Hra of the Emp is " +  Hra);
+            console.log("Totalsal  of Emp is " + Totalsal);
+         //For male Employee
+        if (Gender=='male') {   
+            if (Totalsal>=300000) {
+                var Totaltax=(Totalsal*15)/100;
+                console.log("Tax of employee is 15%");
+                console.log("Totaltax of the Employee is " + Totaltax);
+            }
+            else if (Totalsal>=200000) {
+                var Totaltax=(Totalsal*10)/100;
+                console.log("Tax of employee is 10%");
+                console.log("Totaltax of the Employee is " + Totaltax);
+            }
+            else if (Totalsal>=100000) {
+                var Totaltax=(Totalsal*5)/100;
+                console.log("Tax of employee is 5%");
+                console.log("Totaltax of the Employee is " + Totaltax);
+
+            }
+            else{
+                console.log("Tax of employee is 0%");
+                console.log("Totaltax of the Employee is " + Totaltax);
+
+            }
+        }
+         //for Female Employee
+        else if (Gender=='female'){
+            if (Totalsal>=300000) {
+                var Totaltax=(Totalsal*10)/100;
+                console.log("Tax of employee is 10%");
+                console.log("Totaltax of the Employee is " + Totaltax);
+            }
+            else if (Totalsal>=100000 ) {
+                var Totaltax=(Totalsal*5)/100;
+                console.log("Tax of employee is 5%");
+                console.log("Totaltax of the Employee is " + Totaltax);
+
+            }
+            else{
+                console.log("Tax of employee is 0%");
+                console.log("Totaltax of the Employee is " +Totaltax);
+
+            }
+        }
+
+
+
+
+
+
+
+            
+        </script>
+    </body>
+</html>

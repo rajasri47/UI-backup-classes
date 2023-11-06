@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listout all Palindrome</title>
+    <style>
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+      .getResult {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>List out All Palindrome Number from Given Array</h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">
+      Right click on Webpage then Inspect and then Console
+    </p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+      function getPalindrome(arr) {
+        let result = [];
+
+        for (let i = 0; i < arr.length; i++) {
+          let sum = 0;
+          if (arr[i] < 10 && arr[i] >= 0) result.push(arr[i]);
+          else {
+            let temp = arr[i];
+            while (temp > 0) {
+              let remainder = temp % 10;
+              sum = remainder + sum * 10;
+              temp = parseInt(temp / 10);
+            }
+            if (sum == arr[i]) {
+              result.push(arr[i]);
+            }
+          }
+        }
+        return result;
+      }
+      function getData() {
+        var input = prompt("Enter a list of items separated by commas:");
+        input = input.split(",");
+        console.log(
+          "Palindrome numbers from Given array are : " + getPalindrome(input)
+        );
+      }
+      getData();
+    </script>
+  </body>
+</html>

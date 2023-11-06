@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign into your bag</title>
+        <style>
+            body {
+                background: url("images/image2.jpeg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;   
+            }
+            .logo{
+                
+                width: 100px;
+                height: 64px;
+            }
+            .data {
+                position: absolute;
+                left: 497px;
+                top: 100px;
+                width: 400px;
+                height: 400px;
+                text-align: center;
+            }
+            li {
+                list-style-type: none;
+                margin: 20px;
+                margin-left: 40px;
+            }
+            input {
+                width: 225px;
+                height: 20px;
+                background-color: pink;
+            }
+            button {
+                margin: 20px;
+                margin-left: 10px;
+                background-color: blue;
+                font-weight: bold;
+                color: white;
+            }
+            .forget {
+                margin-left: 25px;
+            }
+            .facebook {
+                border: 1px solid;
+                text-align: center;
+                width: 250px;
+                height: 20px;
+                margin: 20px;
+                position: relative;
+                left: 60px;
+                background-color: rgb(169, 158, 239);
+                
+            }
+            .google {
+                border: 1px solid;
+                text-align: center;
+                width: 250px;
+                height: 20px;
+                margin: 20px;
+                position: relative;
+                left: 60px;
+                background-color: rgb(223, 223, 159);
+            }
+            .newUser {
+                position: relative;
+                top: 30px;
+            }
+            a { 
+                text-decoration: none;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="homePage.html"><img class="logo" src="images/fillYourBagLogo1.jpg" alt="fill your bag"></a>
+        </div>
+        <div class="data">
+            <li><input type="text" placeholder="Enter your email"></li>
+            <li><input type="password" placeholder="Enter password"></li>
+            <button>Sign in</button>
+            <a class="forget" href="forgotPassPage.html"> Forget password</a><br>(OR)
+            <div class="facebook"><a href="">Sign in with Facebook</a></div>(OR) 
+            <div class="google"><a href="">Sign in with Google</a></div>
+            <a class="newUser" href="createNewAccPage.html">Are you a New User</a>
+
+
+        </div>
+    </body>   
+</html>

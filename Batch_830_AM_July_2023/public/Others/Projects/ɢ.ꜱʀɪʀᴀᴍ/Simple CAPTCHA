@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple CAPTCHA</title>
+</head>
+<body>
+  <div class="captcha-container">
+    <div class="captcha-text" id="captchaText"></div>
+    <input type="text" id="userInput" placeholder="Enter CAPTCHA">
+    <button id="verifyButton">Verify</button>
+  </div>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .captcha-container {
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    
+    .captcha-text {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    #userInput {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    
+    #verifyButton {
+      padding: 5px 10px;
+    }
+  </style>
+  <script>
+    const captchaTextElement = document.getElementById("captchaText");
+    const userInputElement = document.getElementById("userInput");
+    const verifyButton = document.getElementById("verifyButton");
+
+    function generateCaptcha() {
+      const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      let captchaText = "";
+
+      for (let i = 0; i < 6; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        captchaText += characters.charAt(randomIndex);
+      }
+
+      captchaTextElement.textContent = captchaText;
+    }
+
+    verifyButton.addEventListener("click", function() {
+      const captchaText = captchaTextElement.textContent;
+      const userInput = userInputElement.value;
+
+      if (userInput === captchaText) {
+        alert("CAPTCHA verified successfully!");
+        userInputElement.value = "";
+        generateCaptcha();
+      } else {
+        alert("CAPTCHA verification failed. Please try again.");
+        userInputElement.value = "";
+        generateCaptcha();
+      }
+    });
+
+    generateCaptcha();
+  </script>
+</body>
+</html>

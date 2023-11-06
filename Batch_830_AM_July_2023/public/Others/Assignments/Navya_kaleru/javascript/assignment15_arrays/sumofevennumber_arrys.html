@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demostrating sum of even numbers using arrays</title>
+    </head>
+    <body>
+        <script>
+            /*var data = [22 , 44 , 89 , 66];
+            var sumeven = 0;
+            var sumodd = 0;
+            for( var i=0; i<data.length;i++){
+                if(data[i]%2 == 0){
+                    sumeven += data[i];
+                }
+                console.log("even number is" + sumeven);
+            }
+            for(var i=0;i<data.length;i++){
+                if(data[i]%2 !=0){
+                   sumodd += data[i];
+                }
+                console.log("odd number is" + sumodd);
+            }*/
+             var data = [];
+             var sumeven=0;
+            for( var i =0 ; i < 6; i++){
+                data[i]= prompt("enter + i + value");
+                data[i] =parseInt(data[i]);
+                if(data[i]%2 == 0){
+                    sumeven += data[i];
+                }
+                console.log("even number is" + sumeven);
+            }
+            
+            var sumodd=0;
+            for( var i =0 ; i < 6; i++){
+                data[i]= prompt("enter + i + value");
+                data[i] =parseInt(data[i]);
+                if(data[i]%2 != 0){
+                    sumodd += data[i];
+                }
+                console.log("odd number is" + sumodd);
+            }
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+CSS Padding and margin Properties:
+    Padding - used to add a gap/space within the container/lement
+
+    Margin - add gap/space outside of the container / element
+
+    margin: 10px -> all the four directions 
+
+    margin: 10px             5px;
+
+             topand bottom   left and right
+
+    margin: 5px 10px 20px 45px;
+             top right btm left
+
+
+             Padding: 20px 
+
+    margin-left: 20px 
+    margin-right
+    margin-bottom
+    margin-top
+-------------
+
+CSS Box model:
+    the total margin been occupied
+    the total padding space been occupied 
+    the size of borders been occupied
+    the actual dimentions been given
+    
+    <div class="container">content</div>
+.container {
+    font-size: 20px;
+    border: 11px solid;
+    padding: 12px 13px;
+    margin: 5px 6px 9px 4px;
+    background: green;
+    width: 113px;
+    heigh: 170px;
+}
+
+149, 141, 135, 149, 139, 149, 136 137, 136, 143, 141, 
+132, 147, 171, 145, 140, 176, 136, 148, 163, 147, 128, 183
+
+4 + 11 + 13 + 113 + 6 + 11 + 13 -> 171

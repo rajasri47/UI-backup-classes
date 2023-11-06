@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>even&odd sum in given range</title>
+    </head>
+    <body>
+       <script>
+        var minNum = prompt("enter min range for even and odd sum");
+        minNum = parseInt(minNum);
+        var maxNum = prompt("enter max range for even and odd sum");
+        maxNum = parseInt(maxNum);
+        var evensum=0,oddsum=0;
+
+        for(; minNum<=maxNum; minNum++){
+            if(minNum%2  == 0){
+                evensum = evensum + minNum;
+            }
+            else{
+                oddsum = oddsum + minNum;
+            }
+        }
+        console.log("even sum in given range is "+evensum);
+        console.log("odd sum in given range is "+oddsum);
+       </script> 
+    </body>
+</html>

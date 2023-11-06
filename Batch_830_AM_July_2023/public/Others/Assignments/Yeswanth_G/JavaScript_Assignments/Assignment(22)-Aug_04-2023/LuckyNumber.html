@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Given Number Is Palindrome Or Not </title>
+    </head>
+
+    <body>
+        <h1> Given Number Is Palindrome Or Not </h1>
+        <script>
+            var  a, n, sum=0;
+            n = prompt("Enter A Number");
+            n = parseInt(n);
+
+            while(n>0){
+                a = n%10;
+                sum = sum + a;
+                n = parseInt(n/10);
+            }
+            console.log(sum);
+
+        </script>
+    </body>
+</html>

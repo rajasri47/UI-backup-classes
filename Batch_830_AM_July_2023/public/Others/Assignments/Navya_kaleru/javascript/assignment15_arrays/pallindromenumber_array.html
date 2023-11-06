@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demostrating assending and dessending order using arrays</title>
+    </head>
+    <body>
+        <script>
+            var data = [];
+        
+            var n = prompt("enter how many values");
+            n = parseInt(n);
+            for( i =0 ; i <n; i++){
+                data[i]= prompt("enter" + i + "value");
+                data[i] = parseInt(data[i]);
+            }
+            var original = 0 , reverse;
+            while( data[i]!=0){
+                var rem = data[i]%10;
+                data[i]= data[i] / 10 ;
+                data[i] = parseInt (data[i]);
+                if(original == reverse){
+                    console.log("pallinedrome number");
+                }else{
+                    console.log("not a pallindrome number");
+                }
+            }
+        </script>
+    </body>
+</html>

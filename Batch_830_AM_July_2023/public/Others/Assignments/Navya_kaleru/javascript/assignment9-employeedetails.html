@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demostrating employee details</title>
+    </head>
+    <body>
+        <script>
+            var name = "navya";
+            var age = 20;
+            var gender = "female";
+            var basicsalary = 400000;
+            var hra = 12/100*basicsalary;
+            var pf = 24/100*basicsalary;
+            var totalsalary = basicsalary + hra + pf;
+            console.log("emp name is" + name);
+            console.log("hra is" + hra);
+            console.log("pf is" + pf);
+            console.log("total is" + totalsalary)
+            //male
+            if(totalsalary >= 300000){
+               totaltax = (15/100)*totalsalary;
+               salaryaftertax = totaltax + totalsalary;
+               console.log("tax of salary 15%");
+               console.log("beforetax" + totalsalary);
+               console.log("total tax is " + totalsalary)
+               console.log("aftertax" + salaryaftertax);
+            }
+            if(totalsalary >= 200000){
+                totaltax = 10/100*totalsalary;
+                salaryafttertax = totaltax + totalsalary;
+                console.log("tax of salary 10%");
+                console.log("beforetax" + totalsalary);
+                console.log("total tax" + totaltax);
+                console.log("aftertax is" + salaryaftertax);
+            }
+            if(totalsalary >= 100000){
+                totaltax = 10/100*totalsalary;
+                salaryaftertax = totalsalary + totaltax;
+                console.log("tax of salary 5%");
+                console.log("beforetax is" + totalsalary);
+                console.log("totaltax is" +totaltax);
+                console.log("aftertax is" + salaryafttertax);
+
+            }
+            else{
+                console.log("tax is zero");
+                console.log("totalsalaryis" + totalsalary)
+            }
+            //female
+            if(totalsalary >= 300000){
+                totaltax = 10/100*totalsalary;
+                salaryafttertax = totalsalary + totaltax;
+                console.log("tax of salary 10%");
+                console.log("beforetax" + totalsalary);
+                console.log("totaltax is" + totaltax);
+                console.log("aftertax is" + salaryaftertax);
+            }
+            if(totalsalary >= 200000){
+                totaltax = 5/100*totalsalary;
+                salaryaftertax = totalsalary + totaltax;
+                console.log("tax of salary 5%");
+                console.log("beforetax" + totalsalary);
+                console.log("totaltax is" + totaltax);
+                console.log("aftersalary" + salaryaftertax );
+            }
+            else{
+                console.log("tax is zero");
+                console.log("totalsalaryis" + totalsalary)
+            
+            }
+        </script>
+    </body>
+</html>

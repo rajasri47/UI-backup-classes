@@ -1,0 +1,11 @@
+onclick 
+onhover
+onfocus
+onmouseover
+
+
+click
+mouserver
+chage
+focus
+blur

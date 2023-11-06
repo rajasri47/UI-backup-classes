@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sumOfAllPrimeNumbers</title>
+    </head>
+    <body>
+        <script>
+            let sum = 0;
+            //looping from 1 to 100 
+            for (i = 1; i <=100; i++){
+                let isPrime = true;
+                // 2 nd tho looping tesukoni daniki (i) yokka square root cheyyali
+                for(j = 2; j <=Math.sqrt(i); j++){
+                    // ippudu manam i and j ni moduloo (%) chesi (===)tho compare cehyyali and ikkada manam if condition tesukovali andhukante ?? apude manaki kavalisina no. output vastundhi
+
+                     if (i % j === 0) {
+                        isPrime = false;
+                        break;
+                }
+
+            }  // 1 kante akkuva unte adhi isprime lo true ithe adhi prime num so danni log output cheyyali
+                if (i > 1 && isPrime){
+                    sum += i; 
+                    // console.log(i)
+                    // this is for total no. of prime no. will be showing 
+                }
+            }
+            console.log('sum of total prime numbers is ' + sum);
+        </script>
+    </body>
+</html>

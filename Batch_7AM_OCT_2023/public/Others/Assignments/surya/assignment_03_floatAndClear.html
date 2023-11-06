@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-03</title>
+    <style>
+        /*-------------------css templates----------*/
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        .wrapper{
+            width:60%;
+            border: 1px solid #ccc;
+            margin:0 auto ;
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .positioning-box{
+            width: fit-content;
+            display: flex;
+        }
+
+        /*  header and footer css properties */
+
+
+        .heading-section,
+        .footer-section{
+            width: 100%;
+            border: 2px solid #ccc;
+            text-align: center;
+            height: 6vh;
+        }
+        .heading-section span,
+        .footer-section span{
+            text-transform: uppercase;
+        }
+         
+
+        /* -------------------main content ---------*/
+
+        .main-container{
+            width: 100%;
+            height: 88vh;
+        }
+        .box{
+            height: 11.2vh;
+            width: 15vh;
+            margin: .7vh;
+           background-color: rgb(111, 91, 105);
+           text-align: center;
+           font-size: 1.5rem;
+           color: #f2f2f2;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .combined-two{
+            float: right;
+        }
+        .box6{
+            clear: both;
+        }
+        .box7{
+            float: left;
+        }
+        .box8{
+             float: right;
+        }
+        .box9{
+            clear: both;
+            float: right;
+        }
+        .box10{
+            clear: both;
+            float: right;
+        }
+        .combined-three{
+            clear: both;
+        }
+    </style>
+</head>
+<body class="wrapper">
+
+    <!-- --------------------HEADER PART----------- -->
+
+    <header class="heading-section flex">
+        <span>blocks rendering</span>
+    </header>
+
+
+    <!-- ------------MAIN CONTENT PART -------------- -->
+    <main class="main-container">
+        <div class="positioning-box">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <div class="combined-two positioning-box">
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+         
+         <div class="box box6">6</div>
+         <div class="box box7">7</div>
+         <div class="box box8">8</div>
+         <div class="box box9">9</div>
+         <div class="box box10">10</div>
+
+         <div class="combined-three positioning-box">
+            <div class="box">11</div>
+            <div class="box">12</div>
+            <div class="box">13</div>
+         </div>
+    </main>
+
+    <!-- ----------------FOOTER PART ----------------------->
+    
+    <footer class="footer-section flex">
+              <span>&#169;copyright</span>
+    </footer>
+</body>
+</html>

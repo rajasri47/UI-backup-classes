@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+    <style>
+      .heading,
+      .footer {
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid;
+        padding: 10px 0;
+      }
+      .container {
+        margin: 10px 0;
+        position: relative;
+        height: 530px;
+        border: 1px solid;
+      }
+      .block {
+        width: 80px;
+        height: 80px;
+        border: 1px solid;
+        text-align: center;
+        line-height: 80px;
+      }
+      .c_1 {
+        position: absolute;
+        top: 43%;
+        left: 43%;
+        background-color: chocolate;
+      }
+      .c_2 {
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        background-color: blue;
+      }
+      .c_3 {
+        position: absolute;
+        top: 60%;
+        left: 43%;
+        background-color: blue;
+      }
+      .c_4 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        background-color: chocolate;
+      }
+      .centerall {
+        position: absolute;
+        top: 52%;
+        left: 47%;
+        background-color: red;
+      }
+      .tl_1 {
+        background-color: chocolate;
+      }
+      .tl_2 {
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        background-color: blue;
+      }
+      .tr_1 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: chocolate;
+      }
+      .tr_2 {
+        position: absolute;
+        top: 50px;
+        right: 40px;
+        background: blue;
+      }
+      .bl_1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: chocolate;
+      }
+      .bl_2 {
+        position: absolute;
+        bottom: 50px;
+        left: 40px;
+        background: blue;
+      }
+      .br_1 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background: chocolate;
+      }
+      .br_2 {
+        position: absolute;
+        bottom: 50px;
+        right: 40px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- used of position relative and absolute -->
+    <div class="heading">Block Game</div>
+    <div class="container">
+      <div class="block topleft tl_1">block1</div>
+      <div class="block topleft tl_2">block2</div>
+      <div class="block topright tr_1">block3</div>
+      <div class="block topright tr_2">block4</div>
+      <div class="block center c_1">center1</div>
+      <div class="block center c_2">center2</div>
+      <div class="block center c_3">center3</div>
+      <div class="block center c_4">center4</div>
+      <div class="block centerall">central</div>
+      <div class="block bl_1">block5</div>
+      <div class="block bl_2">block6</div>
+      <div class="block br_1">block7</div>
+      <div class="block br_2">block8</div>
+    </div>
+    <div class="footer">@copyright 2023</div>
+  </body>
+</html>

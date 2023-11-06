@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="top">Student Details Registration Page</div>
+    <div class="container">
+      <form action="" method="">
+        <ul>
+          <li class="block1">
+            <h3><span class="sp ud">User Details</span></h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br />
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required /><br />
+            <label for="gender">Gender:</label>
+            <input
+              type="radio"
+              name="gender"
+              id="mal"
+              value="male"
+              required
+            />Male
+            <input
+              type="radio"
+              name="gender"
+              id="fem"
+              value="female"
+              required
+            />Female<br />
+            <label for="address" class="add">Address:</label>
+            <textarea
+              id="address"
+              name="address"
+              required
+              minlength="6"
+              maxlength="50"
+              rows="12"
+              cols="40"
+            ></textarea>
+          </li>
+
+          <li class="block2">
+            <h3><span class="sp ed">Education Details</span></h3>
+            <label>Qualification:</label>
+            <input type="checkbox" name="qual-mba" />MCA
+            <input type="checkbox" name="qual-mca" />MBA
+            <input type="checkbox" name="qual-btech" />B.Tech
+            <input type="checkbox" name="qual-mtech" />M.Tech<br />
+            <label>Languages:</label>
+            <input type="checkbox" name="lan-eng" />English
+            <input type="checkbox" name="lan-tel" />Hindi
+            <input type="checkbox" name="lan-hin" />Telugu
+            <input type="checkbox" name="lan-kan" />Urdu<br />
+            <label for="cour" class="cour">Courses Offered:</label>
+            <select name="course" id="cour" required>
+              <option value="UI Fullstack">UI Fullstack</option>
+              <option value="Java">Java</option>
+              <option value=".Net">.Net</option>
+              <option value="Python">Python</option>
+              <option value="Testing">Testing</option>
+            </select>
+          </li>
+
+          <li class="block3">
+            <h3><span class="sp ab">About Yourself</span></h3>
+            <label for="ur">Tell few words about yourself</label>
+            <textarea
+              cols="120"
+              rows="6"
+              minlength="10"
+              maxlength="100"
+              name="about yourself"
+              id="ur"
+              required
+            ></textarea>
+          </li>
+        </ul>
+
+        <div class="last">
+          <button type="reset" class="btn-empty">Clear</button>
+
+          <button type="submit" class="btn-filled">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="top">@copyrights 2023</div>
+  </body>
+</html>

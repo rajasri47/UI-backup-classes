@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student details - using functions
+        </title>
+    </head>
+    <body>
+        <script>
+            var sname, age, gender, m1, m2, m3, total = 0, avg;
+            var grade;
+
+            function readUserData() {
+                sname = prompt("enter Student name");
+                age = prompt("enter age ");
+                gender = prompt("enter gender");
+                m1 = prompt("enter sub 1 marks")
+                m1 = parseInt(m1);
+
+                m2 = prompt("enter sub 2 marks")
+                m2 = parseInt(m2);
+
+                m3 = prompt("enter sub 3 marks")
+                m3 = parseInt(m3);
+                getTotalAndAvg();
+            }
+
+            function getTotalAndAvg() {
+                total = m1 + m2 + m3;
+                avg = total / 3;
+            }
+
+            function getGrade() {
+                if (avg <= 40) {
+                    grade = 'You got Passed';
+                } else {
+                    grade = 'You have a surprise';
+                }
+            }
+
+            function displayStudentDetails() {
+                readUserData();
+                getGrade();
+                console.log("STudent details");
+                console.log("Name is " + sname);
+                console.log("AGe is " + age);
+                console.log("total is " + total);
+                console.log("AVg is " + avg);
+                console.log("Grade is " + grade);
+            }
+
+            
+            displayStudentDetails();
+
+        </script>
+    </body>
+</html>

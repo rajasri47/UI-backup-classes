@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employeeDetailsAssign_8</title>
+</head>
+<body>
+    <script>
+        var name =prompt("Enter employee name");
+        var gender = prompt("Enter employee gender");
+        var age = prompt("Enter employee age");
+        var department = prompt("Enter employee department");
+        var basicsal = prompt("Enter Employee basicsal");
+        basicsal=parseInt(basicsal);
+
+        var pf = basicsal * 12/100;
+        var hra =basicsal * 24/100;
+        totalsalary=pf + hra + basicsal;
+         
+       var tax;
+       console.log("Employee name Is " + name);
+       console.log("Employee gender Is " + gender);
+       console.log("Employee age Is " + age); 
+       console.log("Employee depatment Is " + department);
+       console.log("Employee basicsal Is " + basicsal);
+       console.log("Employee pf Is" + pf);
+       console.log("Employee hra Is" + hra);
+       console.log("Employee totalsalary Is " + totalsalary);
+       if(gender == "male")
+    {
+       if(totalsalary >= 300000)
+       {
+        tax = totalsalary *15 /100;
+        console.log("tax to the paid is" + tax);
+       }
+       else if(totalsalary >=200000)
+       {
+        tax = totalsalary * 10 /100;
+        console.log("tax to the paid is" + tax);
+       }
+       else if(totalsalary >= 100000)
+       {
+        tax =totalsalary * 5 /100;
+        console.log("tax to the paid is " + tax);
+       }
+       else{
+        console.log("tax to the paid is zero")
+       }
+    } 
+    if(gender == "female")
+    {
+       if(totalsalary >= 300000)
+       {
+        tax = totalsalary *15 /100;
+        console.log("tax to the paid is" + tax);
+       }  
+       else if(totalsalary >= 100000)
+       {
+        tax =totalsalary * 5 /100;
+        console.log("tax to the paid is " + tax);
+       }
+       else{
+        console.log("tax to the paid is zero")
+       }
+    }
+    </script>
+    
+</body>
+</html>

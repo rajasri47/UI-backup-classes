@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var min = prompt("enter starting no");
+            min = parseInt(min);
+            var max = prompt("enter last no");
+            max = parseInt(max);
+            sumeven = 0;
+            sumodd = 0;
+
+            for (i = min; i <=max; i++)
+            {
+                if (i % 2 == 0)
+                {
+                sumeven +=i;
+                }
+                else{
+                    sumodd +=i;
+                }
+            }
+            console.log("sum of all even no " + sumeven)
+            console.log("sum of all odd no " + sumodd)
+        </script>
+        
+    </body>
+</html>

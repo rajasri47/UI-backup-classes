@@ -1,0 +1,95 @@
+Control Structure:
+
+    Conditional Control Structures:
+
+        1. if Conditional control Structure
+
+            Syntax:
+
+                ....
+                if (<single or multiple conditions> ) {
+                    ....
+                    ...
+                    ...
+                    ....
+                }
+                ....
+
+            EG:
+                if (a == b) {
+                    ...
+                     ..
+                     .
+                }
+        2. Conditional CS - if else 
+
+            Syntax:
+
+                if (condition) {
+                    ....
+                    ...
+                } else {
+                    ...
+                    ...
+                }
+
+        3. Else If Conditional CS 
+
+            Syntax:
+
+
+                if (condition) {
+                    ...
+                } else if (condition) {
+
+                }
+        4. nested If
+
+            IF () {
+                ... 
+                ...
+                IF () {
+                    ...
+                }
+            }
+    
+        5. nested if else 
+
+
+                ----------
+Debugging of JS 
+    Through developer tool
+
+----------------------
+
+Employee details assignment:
+
+    totalSal = basicsal + pf + hra;
+
+    taxvalue
+
+        if gender is male 
+
+            totalsal >= 100000
+                taxpercent is 15%
+
+            totalsal >= 50000
+                taxpercent is 10%
+            totalsal >= 30000
+                taxpercent is 5%
+            else 
+                Zero tax
+
+        if gender is female
+
+            totalsal >= 100000
+                taxpercent is 10%
+
+            totalsal >= 50000
+                taxpercent is 5%
+            else 
+                Zero tax
+
+---------------------------
+
+Diff btwn =, ==, ===, != 

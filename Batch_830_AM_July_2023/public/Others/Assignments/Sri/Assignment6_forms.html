@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6</title>
+    <style>
+        .header{
+            border: 2px solid black;
+            height: 25px;
+            font-style: initial;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            font-size: larger;
+            
+        }
+        .maindiv{
+            margin: 5px;
+        }
+         .Userdetails, .EducationDetails, .aboutyourself{
+          border: 2px solid black;
+          width: 1420px;
+          margin: 5px;
+          padding: 5px;
+          position: absolute;
+          font-size: larger;
+            
+        }
+        .Userdetails{
+            top: 15%;
+            height: 200px;
+
+        }
+        .EducationDetails{
+            top:50%;
+            height: 150px;
+
+            
+            
+        }
+        .aboutyourself{
+            top: 80%;
+            height: 200px;
+        }
+        .subcontainer1{
+            border: 2px solid black;
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+            position: absolute;
+            height: 14px;
+            width: 150px;
+            top: -25px;
+            left: 6%;
+            background-color: white;
+        }
+        ul{
+        
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        li{
+            font-size: 20px;
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+        }
+        .mandate{
+            color: red;
+        }
+        #address{
+            position: absolute;
+            right: 25%;
+            top: 5%;
+        }
+        #Add{
+            position: absolute;
+            right: 5%;
+            top: 5%;
+        }
+        .course{
+            position: absolute;
+            right: 15%;
+            bottom: 50%;
+        }
+        #Abt1{
+            position: absolute;
+            bottom: 70%;
+        }
+        #Abt{
+            position: absolute;
+            right: 60%;
+        }
+        .button{
+            text-align: right;
+            position: absolute;
+            right: 16%;
+            bottom: -13%;
+            font-size: larger;
+            
+        }
+        .footer{
+            border: 2px solid black;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            position: absolute;
+            bottom: -20%;
+            font-style: italic;
+            width: 1420px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">STUDENT DETAILS REGISTRATION PAGE</div>
+    <div class="maindiv">
+        <div class="Userdetails">
+    
+    <ul>
+    <div class="subcontainer1"> User Details</div>
+    <li>
+        <label for="name"> Name :</label>
+       <input type="text"  name="Name" required>
+        <span class="mandate"> *</span>
+    </li>
+    <li>
+        <label for="Age"> Age &nbsp;&nbsp;:</label>
+        <input type="text"  name="Age" required>
+        <span class="mandate"> *</span>
+
+    </li>
+    <li>
+        <label for="Gender"> Gender:</label>
+        <input type="radio" name="gender" checked value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        </li>
+        <li>
+            <label for="Address" id="address">Address:</label>
+            <textarea name="Address" id="Add" cols="30" rows="10"></textarea>
+        </li>
+    
+    </ul>
+</div>
+<div class="EducationDetails">
+    <div class="subcontainer1"> EducationDetails</div>
+    <li>
+        <label for="Qualification">Qualification :</label>
+         <input type="checkbox" id="" name="mca" > M.C.A
+        <input type="checkbox" id="" name="mba" >M.B.A
+        <input type="checkbox" id="" name="b.tech"> B.Tech
+    </li>
+    <li>
+        <label for="Languages">Languages:</label>
+        <input type="checkbox" id="" name="English" > English
+       <input type="checkbox" id="" name="Hindi" >Hindi
+       <input type="checkbox" id="" name="Telugu"> Telugu
+       <input type="checkbox" id="" name="Urdu"> Urdu
+
+    </li>
+    <li>
+       <div class="course">
+        Course Opted For:
+        <select name="course" id="c">
+        <option value="fullstack UI">fullstack UI </option>
+        <option value="dotnet">DotNet</option> 
+        <option value="Java">Java</option>
+        <option value="Mainframes">MainFrames</option>
+        <option value="cloud">Cloud</option>
+    </select>
+    </div>
+        
+    </li>
+</div>
+<div class="aboutyourself">
+    <ul>
+    <div class="subcontainer1"> About yourself</div>
+   <li>
+    <label for="Aboutyourself" id="Abt1">About yourself:</label>
+    <textarea name="About" id="Abt" cols="50" rows="10"></textarea>
+    
+    </li>
+</ul>
+</div>
+<div class="button">
+    <input type="button" value="REGISTER">
+</div>
+<div class="footer">@Copyrights 2023</div>
+  
+
+</div>
+</body>
+</html>

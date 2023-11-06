@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OTP Generator</h1>
+        <button id="generateButton">Generate OTP</button>
+        <p id="otpDisplay"></p>
+    </div>
+    <script>
+        document.getElementById('generateButton').addEventListener('click', function () {
+            const otp = generateOTP(6); // Change the length as needed
+            document.getElementById('otpDisplay').textContent = `Generated OTP: ${otp}`;
+        });
+
+        function generateOTP(length) {
+            const characters = '0123456789';
+            let otp = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                otp += characters.charAt(randomIndex);
+            }
+            return otp;
+        }
+    </script>
+</body>
+</html>

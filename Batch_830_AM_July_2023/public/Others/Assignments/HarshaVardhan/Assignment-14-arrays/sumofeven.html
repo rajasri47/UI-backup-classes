@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sum of even numbers</title>
+    </head>
+    <body>
+        <script>
+            var data = [];
+            var s=0;
+            for(var i=0; i<=6; i++){
+                data[i] = prompt("enter" + i + "value");
+                data[i] = parseInt(data[i]);
+                if(data[i] % 2 == 0){
+                    s = s+data[i];
+                }
+            }
+            console.log("sum of even numbers is" + s);
+        </script>
+    </body>
+</html>

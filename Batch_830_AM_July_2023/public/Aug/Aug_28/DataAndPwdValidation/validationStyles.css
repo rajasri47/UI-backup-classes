@@ -1,0 +1,48 @@
+h3 {
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+ul {
+    border: 1px solid;
+    width: 500px;
+    margin: 20px auto;
+    background-color: #ccc;
+}
+
+li {
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+    background-color: bisque;
+}
+
+.pwdErr,
+.error {
+    padding-top: 3px;
+    color: red;
+    font-size: 12px;
+    
+}
+
+.error {
+    display: none;
+}
+
+.link {
+    cursor: pointer;
+    position: relative;
+    left: -23px;
+    top: 3px;
+}
+
+#eyeOpen {
+    display: none;
+}
+
+.pwdValid {
+    padding-top: 3px;
+    color: green;
+    font-size: 12px;
+}

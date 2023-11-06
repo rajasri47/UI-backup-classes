@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul {
+                width: 500px;
+                background-color: #ccc;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                background-color: #fff;
+            }
+            .rblock {
+                background-color: yellow;
+                display: none;
+
+            }
+            .error {
+                color: red;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter first value :
+                <input type="text" id="fval" onkeypress="return validateData(event)">
+            </li>
+            <li>
+                Enter Second value :
+                <input type="text" id="sval" onkeypress="return validateData(event)">
+            </li>
+            <li>
+                <input class="abc" type="button" value="Get Sum" onclick="getSumOfValues(event)">
+                
+            </li>
+            <li class="error">
+                Data cannot be empty
+            </li>
+            <li class="rblock">
+                The sum of values is <span></span>
+            </li>
+        </ul>
+        <script>
+            
+        </script>
+    </body>
+</html>

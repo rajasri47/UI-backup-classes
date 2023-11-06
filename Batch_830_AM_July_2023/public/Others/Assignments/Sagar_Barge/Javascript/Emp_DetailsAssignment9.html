@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Student Regestration Page</title>
+<style></style>
+</head>
+<body>
+    <script>
+        console.log("!!!Employee Details!!!");
+        var Name=prompt("Enter Emp Name");
+        var Age=prompt("Enter Emp Age");
+        var Gender=prompt("Enter Emp Gender");
+        var BasicSal=prompt("Enter Basic Sal");       
+        BasicSal=parseInt(BasicSal);      
+        var Pf=(BasicSal*12)/100;
+        var Hra=(BasicSal*24)/100;
+        var TotalSal=BasicSal+Pf+Hra;
+        var AnnualSal=TotalSal*12;
+
+        if(Gender="Male")
+        {
+            var tax;
+            if(AnnualSal>=300000){
+                tax=(AnnualSal*15)/100;
+                //consile.log("Employee paying tax 15% =",tax);
+            }
+            else if(AnnualSal>=200000)
+            {
+                tax=(AnnualSal*10)/100;
+                //consile.log("Employee paying tax 10% =",tax);
+            }
+            else if(AnnualSal>=100000)
+            {
+                tax=(AnnualSal*5)/100;
+               // consile.log("Employee paying tax 5% =",tax);
+            }
+            else if(AnnualSal<100000) 
+            {
+                tax=0;
+               // consile.log("Employee paying tax 0% =",tax);
+            }
+        }
+        else{
+            if(AnnualSal>=300000)
+            {
+                tax=(AnnualSal*10)/100;
+                //consile.log("Employee paying tax 10% =",tax);
+            }
+            else if(AnnualSal>=200000)
+            {
+                tax=(AnnualSal*5)/100;
+                //consile.log("Employee paying tax 5% =",tax);
+            }
+            else if(AnnualSal<200000)
+            {
+                tax=0;
+                // consile.log("Employee paying tax 0% =",tax);
+            }
+           
+        }
+
+
+        console.log('Employee details');
+            console.log("Name is " + name);
+            console.log("Age is " + Age);
+            console.log("Gender is " + Gender);
+            console.log("pf is " + Pf);
+            console.log("HRA is " + Hra);
+            console.log("Total sal is " + TotalSal);
+            console.log("Total Annual sal is " + AnnualSal);
+            console.log("Total Annual tax paid " + tax);
+
+    </script>
+
+
+</body>
+</html>

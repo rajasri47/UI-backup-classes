@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 12
+        </title>
+    </head>
+    <body>
+        <h1>
+            Show table of given number in the given range
+        </h1>
+        <script>
+            var number = prompt("Enter Number: ");
+            var range = prompt("Enter Range: ");
+
+            number = parseInt(number);
+            range = parseInt(range);
+
+            for (var i = 1; i <= range; i++) {
+                var result = number * i;
+                console.log(number + " * " + i + " = " + result);
+            }
+        </script>
+    </body>
+</html>

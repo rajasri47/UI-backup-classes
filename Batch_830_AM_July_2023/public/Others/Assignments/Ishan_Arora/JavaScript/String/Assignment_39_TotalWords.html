@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 39
+        </title>
+    </head>
+    <body>
+        <h1>
+            Find Total Number of Words in String
+        </h1>
+        <script>
+            var s = prompt("Enter Your String: ");
+            var count = 0;
+            for (var t = 0; s[t]; t++) {
+                if (s[t] == ' ') {
+                    count++;
+                }
+            }
+            count = count + 1
+            console.log("The total number of Words are " + count);
+        </script>
+    </body>
+</html>

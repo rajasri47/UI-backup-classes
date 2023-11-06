@@ -1,0 +1,44 @@
+<html>
+<html>
+<head>
+    <title>StudentDetails</title>
+</head>
+<body>
+    <script>
+        var Name=prompt("enter the Name:")
+        var Rollnumber=prompt("enter the Rollnumber:")
+        var Class=prompt("enter the Class")
+        var Telugu=prompt("enter the Telugu  marks:");
+        var English=prompt("enter the English marks:");
+        var Maths=prompt("enter the  Maths marks:");
+        var Sciens=prompt("enter the Sciens marks:");
+        var Social=prompt("enter the Socialmarks:");
+        Rollnumber=parseInt(Rollnumber)
+        Class=parseInt(Class)
+        Telugu=parseInt(Telugu)
+        English=parseInt(English)
+        Maths=parseInt(Maths)
+        Sciens=parseInt(Sciens)
+        Social=parseInt(Social)
+        studentTotalMarks=Telugu+English+ Maths+Sciens+Social;
+        studentAverageMarks=Telugu+English+ Maths+Sciens+Social/5;
+         console.log("StudentDetails")
+        console.log("Name is:"+Name)
+        console.log("Rollnumber is:"+Rollnumber)
+        console.log("Class is:"+Class)
+        console.log("Telugu Marks:"+Telugu)
+        console.log("English Marks:"+English)
+        console.log("Maths Marks:"+Maths)
+        console.log("Sciens Marks:"+Sciens)
+        console.log("Social Marks:"+Social)
+        console.log("studentTotalMarks:"+studentTotalMarks)
+        console.log("studentAverageMarks:"+studentAverageMarks)
+         if(250<studentTotalMarks){
+            console.log("candidate Pass")
+         }else{
+            console.log("candidate Fail")
+         }
+    </script>
+    
+</body>
+</html>

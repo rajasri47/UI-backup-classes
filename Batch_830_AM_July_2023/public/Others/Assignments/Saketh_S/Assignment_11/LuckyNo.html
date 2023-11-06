@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>LuckyNo</title>
+    </head>
+    <body>
+        <script>
+            var n=12345;
+            var x,sum=0;
+            while (n>0){
+                x=n%10;
+                sum=sum+x;
+                n=n/10;
+                n=parseInt(n);
+                if(n==0 && sum>9){
+                    n=sum;
+                    sum=0;
+                }
+            }
+            console.log(sum)
+        </script>
+    </body>
+</html>

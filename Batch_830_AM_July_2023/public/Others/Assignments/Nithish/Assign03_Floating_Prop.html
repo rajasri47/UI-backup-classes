@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Floating Properties</title>
+
+        <style>
+            .header{
+                background-color: mediumspringgreen;
+                border: 2px solid;
+                text-align: center;
+            }
+            
+            .footer{
+                background-color: mediumspringgreen;
+                border: 2px solid;
+                text-align: center;
+                clear: both;
+            }
+
+            .b1,.b2,.b3,.b4,.b5,
+            .b6,.b7,.b8,.b8,.b9,.b10,
+            .b11,.b12,.b13,.b14,.b15{
+                border: 2px solid;
+                height:70px;
+                width: 80px;
+                margin: 5px;
+                text-align: center;
+                padding: auto;
+            }
+
+            .b1{
+            float: left;           
+            }
+            .b2,.b3,.b5{
+            background-color: yellow;
+            float: right;
+            }
+            .b4{
+                background-color: yellow;
+                float: left;
+                clear: both;
+            }
+            .b6,.b7{
+                float: left;
+                clear: both;
+            }
+            
+            .b8,.b9,.b10{ 
+                background-color: yellow;       
+                float: right;
+                clear: none;
+            }
+            .b11{
+                background-color: yellow;
+                float: left;
+                clear: both;
+            }
+            .b12,.b13,.b14{
+            float: left;
+            clear: none;
+            }
+            .b15{
+                float: left;
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: bisque;">
+        <div class="header">Block Game</div>
+
+        <div>
+        <div class="b1">Block 1</div>
+        <div class="b2">Block 3</div>
+        <div class="b3">Block 2</div>
+        <div class="b4">Block 4</div>
+        <div class="b5">Block 5</div>
+        <div class="b6">Block 6</div>
+        <div class="b7">Block 7</div>
+        <div class="b8">Block 8</div>
+        <div class="b9">Block 9</div>
+        <div class="b10">Block 10</div>
+        <div class="b11">Block 11</div>
+        <div class="b12">Block 12</div>
+        <div class="b13">Block 13</div>
+        <div class="b14">Block 14</div>
+        <div class="b15">Block 15</div>
+        </div>
+        
+        <div class="footer">CopyRights@2023</div>
+        
+    </body>
+
+
+</html>

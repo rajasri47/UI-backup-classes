@@ -1,0 +1,22 @@
+h2{
+    border: 2px solid;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 20px;
+    text-align: center; 
+}
+ul{
+    width: 550px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid;
+}
+li{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    list-style: none;
+}
+.incomeList input{
+    width: 70px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some more pseudo classes</title>
+<style>
+    .container{
+        width: 700px;
+        border: 2px solid black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .box1, .box2{
+        border: 2px solid red;
+        width: 600px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+   p:only-child{
+        color: red;
+    }
+    p:nth-child(2){
+        color: blueviolet;
+        font-family: cursive;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <p> sit, amet consectetur adipisicing elit. Saepe dolorem magni consequuntur temporibus aliquam, odit fugiat expedita quod quibusdam sequi unde mollitia maiores eius dicta sed rerum voluptates libero autem ad impedit nesciunt praesentium excepturi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, suscipit?</p>
+            <div> Architecto laboriosam excepturi nesciunt </div>
+            <div>Lorem ipsum dolor sit amet.</div>
+        </div>
+        <p> amet consectetur, adipisicing elit. Quos, expedita?</p>
+        <p>ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, laborum.</p>
+        <p>dolor sit amet consectetur adipisicing elit. Ab, earum?</p>
+        <div class="box2">
+            <p>consectetur adipisicing elit. Aspernatur magnam ad labore eligendi, repudiandae iste alias similique quo rem iusto!</p>
+            <p> Vitae nihil deserunt cupiditate ipsa consequatur eos nobis, eligendi, quidem voluptatibus similique quae magni, iste perspiciatis!</p>
+            <div> Odio facere rerum magnam quibusdam ex ipsa perferendis consequatur, eligendi obcaecati aliquam, cupiditate veniam. Explicabo, omnis quod?</div>
+            <div>
+                <p>magnam consequuntur velit nemo beatae quasi itaque ex delectus recusandae labore reprehenderit fugit illo quae. Deleniti quam perspiciatis nisi. Atque iure quo, delectus eaque minima aliquid?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

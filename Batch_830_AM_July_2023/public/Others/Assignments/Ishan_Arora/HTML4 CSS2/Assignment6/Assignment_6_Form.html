@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 6
+        </title>
+        <style>
+            .out {
+                border: 2px solid;
+                width: 700px;
+                height: 740px;
+                margin: auto;
+                padding: 5px 10px;
+                background-color: black;
+            }
+            .head, .foot {
+                border: 2px solid;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                margin: 5px;
+                padding: 5px;
+            }
+            .userDetails {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                height: 200px;
+                background-color: gray;
+            }
+            .education, .about {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                background-color: gray;
+            }
+            .one, .two, .three {
+                border: 1px solid;
+                padding: 10px 25px;
+                margin: 20px ;
+                font-size: 20px;
+                background-color: skyblue;
+            }
+            .add {
+                display: inline-block;
+                position: absolute;
+                right: 420px;
+                top: 130px;
+            }
+            .submit {
+                position: absolute;
+                right: 420px;
+                top: 780px;
+            }
+            body {
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            Student Details Registration Page
+        </div>
+        <form action="http://sample.com" method="get">
+            <div class="out">
+                
+                <br>
+                <fieldset class="userDetails">
+                    <legend class="one">
+                        User Details
+                    </legend>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name">
+                    <div class="add">
+                        <label for="address">Address:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <br><br>
+                    <label for="age">Age:</label>
+                    <input type="text" name="age">
+                    <br><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio">Male
+                    <input type="radio">Female
+                </fieldset>
+                <br>
+                <fieldset class="education">
+                    <legend class="two">
+                        Education Details
+                    </legend>
+                    <label for="qualification">Qualification:</label>
+                    <input type="checkbox" name="qualification">MCA
+                    <input type="checkbox" name="qualification">MBA
+                    <input type="checkbox" name="qualification">Btech
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    <label for="course">Course Opted For:</label>
+                    <select name="course" id="">
+                        <option value="" selected>Select the course</option>
+                        <option value="">Full Stack Web Development</option>
+                        <option value="">AWS</option>
+                        <option value="">Data Science</option>
+                        <option value="">Machine Learning</option>
+                        <option value="">Python</option>
+                    </select>
+                    <br><br>
+                    <label for="language">Languages:</label>
+                    <input type="checkbox">English
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">Telugu
+                    <input type="checkbox">Urdu
+                    <br><br>
+                </fieldset>
+                <br>
+                <fieldset class="about">
+                    <legend class="three">
+                        About Yourself
+                    </legend>
+                    <label for="about">Tell few words about yourself:</label>
+                    <textarea name="" id="" cols="85" rows="10"></textarea>
+                </fieldset>
+                <div class="submit">
+                    <input type="submit" value="Register">
+                </div>
+            </div>
+        </form> 
+        <div class="foot">
+            @Copyrights 2023
+        </div>   
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating conditional control statements</title>
+    </head>
+    <body>
+        <script>
+            var name = prompt("enter student name");
+            var age = prompt("enter student age");
+            age = parseInt(age);
+            var maths = prompt("enter maths marks");
+            maths = parseInt(maths);
+            var physics = prompt("enter physics marks");
+            physics = parseInt(physics);
+            var chemistry = prompt("enter chemistry marks");
+            chemistry = parseInt(chemistry);
+            var english = prompt("enter english marks");
+            english = parseInt(english);
+            var telugu = prompt("enter telugu marks");
+            telugu = parseInt(telugu);
+            var total = maths + physics + chemistry + english + telugu;
+            var avg = total / 5;
+            console.log("student name is" + name);
+            console.log("student age is" + age);
+            console.log("student total marks are" + total);
+            console.log("student average is" + avg);
+            if(avg > 70){
+                console.log("student is passed");
+            }
+            if(avg > 50 && avg << 70){
+                console.log("student get b garde");
+            }
+            else{
+                if(avg < 50){
+                    console.log("student failed");
+                }
+            }
+        </script>
+    </body>
+</html>

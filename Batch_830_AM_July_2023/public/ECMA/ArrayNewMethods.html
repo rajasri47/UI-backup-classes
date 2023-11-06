@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var data = [20, 30, 45, 67, 89, 90];
+            var data2 = [];
+
+           for (var i = 0 ; i < data.length; i++) {
+                var value = data[i] * 2;
+                data2.push(value);
+            }
+            console.log(data);
+
+            /*for (var i = 0 ; i < data.length; i++) {
+                console.log(data[i]);
+            }*/
+
+           /* data.forEach((value, index) => {
+                console.log(index)
+                console.log(value)
+            }); */
+
+
+            var data2 = data.map((value) => {
+                return value / 2;
+            });
+
+            console.log(data2);
+            // push, pop, shift, unshift, splice, includes, has
+
+            // find, sort, map, filter
+
+            
+        </script>
+    </body>
+</html>

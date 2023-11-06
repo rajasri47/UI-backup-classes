@@ -1,0 +1,33 @@
+Contact Details: 
+    name
+    age
+    midname
+    lastname 
+    gender
+    contactNo
+        office - single
+        prsnl - multiple
+    email
+        office
+        prsnl - multipe 
+    address
+        office
+            countryname
+            stateinfo
+            buildingno 
+        prsnl
+            hno
+            stateinfo   
+                statename 
+                statecode 
+            countryname
+    relation
+    dob
+        date
+        month
+    socialid
+        fb 
+        linkdin
+        twitter
+
+    

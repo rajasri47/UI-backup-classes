@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("enter a number"));
+        var s = 0;
+        var temp = n;
+        n = n.toString();
+        while(n>0){
+            var rem = n%10;
+            s = s + rem;
+            n = n/10;
+            n=parseInt(n);
+            if(n==0 && s>9){
+                n =s;
+                s = 0;
+            }
+        }
+        console.log(s);
+    </script>
+</body>
+</html>

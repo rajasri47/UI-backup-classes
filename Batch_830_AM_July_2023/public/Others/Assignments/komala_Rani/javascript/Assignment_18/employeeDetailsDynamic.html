@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Assignment_18</title>
+        <link rel="stylesheet" href="employeeDetailsDynamic.css">
+    </head>
+    <body>
+        <script src="employeeDetailsDynamic.js"></script>
+        <h3>Employee Details</h3>
+        <ul>
+            <li>
+                <input type="text" placeholder="EmployeeName" id="empName">
+            </li>
+            <li>
+                <input type="text" placeholder="EmployeeAge" id="empAge">
+            </li>
+            <li>
+                Dept:
+                <select id="empdept">
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="web developer">web developer</option>
+                    <option value="Associate Engineer">Associate Engineer</option>
+                    <option value="system Engineer">system Engineer</option>
+                </select>
+            </li>
+            <li>
+                Gender:
+                <input type="radio" value="male" name="gender" checked> Male
+                <input type="radio" value="female" name="gender"> Female
+            </li>
+            <li>
+                BankOption:
+                <select id="bankoption">
+                    <option value="SBI">SBI</option>
+                    <option value="IndianBank">IndianBank</option>
+                    <option value="HDFC">HDFC</option>
+                    <option value="ICIC">ICIC</option>
+                </select>
+            </li>
+            <li>
+                <input type="text" placeholder="A/C number" id="accountnumber">
+            </li>
+            <li>
+                <input type="text" placeholder="Basic salary" id="empSalary">
+            </li>
+            <li>
+                <input type="button" value="Generate EmpDetails" onclick="empData()">
+            </li>
+
+        </ul>
+        <ul class="ResultBlock">
+            <li>
+                Employee Details:
+            </li>
+            <li>
+                Employee Name: <span id="dname"></span>
+            </li>
+            <li>
+                Employee Age: <span id="dage"></span> 
+            </li>
+            <li>
+                Employee Dept: <span id="ddept"></span>
+            </li>
+            <li>
+                Employee Gender: <span id="dgender"></span>
+            </li>
+            <li>
+                Employee BankName: <span id="dbankname"></span>
+            </li>
+            <li>
+                Employee A/C Num: <span id="dacnumber"></span>
+            </li>
+            <li>
+                Employee Salary: <span id="dsalary"></span>
+            </li>
+            <li>
+                Employee pf: <span id="dpf"></span>
+            </li>
+            <li>
+                Employee hra: <span id="dhra"></span>
+            </li>
+            <li>
+                Employee Totalsalary: <span id="dtotalsal"></span>
+            </li>
+           
+        </ul>
+    </body>
+</html>

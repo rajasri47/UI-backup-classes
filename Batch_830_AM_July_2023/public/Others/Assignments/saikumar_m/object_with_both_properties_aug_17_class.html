@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object eith both peoperties aug 17th class</title>
+</head>
+<body>
+    <script>
+        var sdetails = {
+            name : prompt("enetr student  name" ),
+            age  : prompt("enter student age "),
+            gender: prompt("enetr student gender"),
+            marks: [90,90,90,90,10],
+
+            
+
+            total:0,
+                        
+            gettotalandavg() {
+                sdetails.total = 0 ;
+                for(var i = 0; i < sdetails.marks.length; i++){
+                    sdetails.total += sdetails.marks[i]
+                }
+                sdetails.avg = sdetails.total/sdetails.marks.length;
+            },
+            getgrade () {
+                sdetails.gettotalandavg ();
+                sdetails.grade = '';
+                if(sdetails.avg >= 40){
+                    sdetails.grade = 'you passed';
+                }else{
+                    sdetails.grade = "you have surprise";
+                }
+            
+            },
+            displaydetails () {
+                sdetails.getgrade ();
+                console.log("name is " + sdetails.name);
+                console.log("age is " + sdetails.age);
+                console.log("gender is " + sdetails.gender);
+                console.log("total is " + sdetails.total);
+                console.log("avg is " + sdetails.avg);
+                console.log("grade is " + sdetails.grade);
+            },
+
+        };
+        sdetails.displaydetails ();
+    </script>
+</body>
+</html>

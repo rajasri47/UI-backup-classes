@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows Given Number is there or not in array of elements.. <br>
+            Go to console tab for result...
+        </h1> 
+        <script>
+              var a = [];
+                var index = prompt("enter index value of Array..");
+                index = parseInt(index);
+  
+                for(var i=0; i < index; i++){
+                     a[i] = prompt("enter the values"+i+" th position of array");
+                    a[i] = parseInt(a[i]);
+                    console.log(a[i]);
+                }
+
+            var n = prompt("enter a number to check weather it there in or not in Array");
+            var count = 0;
+
+            for(var i = 0; i < a.length; i++){
+                if(n == a[i]){
+                    count++;
+                }
+            }
+            if(count >0){
+                console.log("Ginven number "+n+" is there in the Array of elements");
+            }
+            else{
+                console.log("given number not founded in the array..");
+            }
+        </script>
+    </body>
+</html>

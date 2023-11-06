@@ -1,0 +1,59 @@
+UL and OL tags
+
+Css through parent and child
+
+    div, span, #abc, .test {
+
+    }
+.
+    #abc .pqr div {
+
+    }
+
+    .abc #pqr div span p {
+
+    }
+
+    div#abc.pqr { // Same element having both id as abc and class as pqr 
+
+    }
+
+    div.sample {
+
+    }
+
+
+    div span {
+       background-color: green;
+    }
+
+
+    div > span {
+
+    }
+
+    <span>Item 1 </span>
+
+    <div>
+        <span>ITem 2 </span>
+    </div>
+
+
+    <p>
+       <span>ITem 3 </span>
+    </p>
+
+    <div>
+        <p>
+            <span>ITem 4 </span>
+        </p>
+    </div>
+
+-------------------------------------------
+
+BackGround images/colors
+
+    background / background-image 
+
+-----------------------
+Image spriting :

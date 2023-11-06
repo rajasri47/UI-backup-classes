@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Update Employee Detailes Using Functions...!</title>
+    </head>
+    <body>
+        <h3>Update Employee Detailes Using Functions...!</h3>
+        <script>
+                var  updateEmpDetailes=function(){
+                    console.log("updating employee detailes");
+                }
+                var EmpName=prompt("enter a name");
+                console.log("Emp Name is " + EmpName);
+                var EmpAge=prompt("enter age");
+                console.log("Emp Age is " + EmpAge);
+                var EmpGender=prompt("enter a gender");
+                console.log("Emp Gender is " + EmpGender);
+                var EmpDep=prompt("enter a deportment");
+                console.log("Emp EmpDep is " + EmpDep);
+                var Basicsal=prompt("enter basicsalary");
+                console.log("Bsaicsalary is " + Basicsal);
+                Basicsal=parseInt( Basicsal);
+                Pf=(12*Basicsal/100);
+                console.log("pf is " + Pf);
+                Hra=(24*Basicsal)/100;
+                console.log("Hra is " + Hra);    
+                Totalsal=Pf+Hra+Basicsal;
+                console.log("Totalsal is " + Totalsal);
+                if(Totalsal>=300000){
+                         var Totaltax=(15/100)*Totalsal;
+                         console.log("tax of employee is 15%");
+                         console.log("tax of employee is " + Totaltax );
+                    }else if(Totalsal>=200000){
+                        var Totaltax=(10/100)*Totalsal;
+                         console.log("tax of employee is 10%");
+                         console.log("tax of employee is " + Totaltax );
+                         
+                    }else if(Totalsal>=100000){
+                         var Totaltax=(5/100)*Totalsal;
+                         console.log("tax of employee is 5%");
+                         console.log("tax of employee is " + Totaltax );
+
+                    }else{
+                         console .log("tax of employee is 0%");
+                         console.log("tax of employee is not paied");
+
+                    }
+               
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Accessory1",
+        "price": 500,
+        "rating": 3.5,
+        "discountPercent": 0,
+        "manu": "ChargePoint",
+        "image": "/images/productImages/accessories/accessoryImg1.png",
+        "imageFlip": "/images/productImages/accessories/accessoryImg1.png",
+        "category": "accessory"
+    },
+    {
+        "name": "Accessory2",
+        "price": 1500,
+        "rating": 5.0,
+        "discountPercent": 0,
+        "manu": "Laptop Station",
+        "image": "/images/productImages/accessories/accessoryImg2.png",
+        "imageFlip": "/images/productImages/accessories/accessoryImg2.png",
+        "category": "accessory"
+    },
+    {
+        "name": "Accessory4",
+        "price": 1200,
+        "rating": 4.5,
+        "discountPercent": 0,
+        "manu": "Motorola Razr",
+        "image": "/images/productImages/accessories/accessoryImg3.png",
+        "imageFlip": "/images/productImages/accessories/accessoryImg3Flip.png",
+        "category": "accessory"
+    },
+    {
+        "name": "Accessory5",
+        "price": 1670,
+        "rating": 5,
+        "discountPercent": 10,
+        "manu": "Samsung",
+        "image": "/images/productImages/accessories/accessoryImg1.png",
+        "imageFlip": "/images/productImages/accessories/accessoryImg1.png",
+        "category": "accessory"
+    },
+    
+    {
+        "name": "Accessory6",
+        "price": 2300,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "Apple iPods",
+        "image": "/images/productImages/accessories/accessoryImg3.png",
+        "imageFlip": "/images/productImages/accessories/accessoryImg3Flip.png",
+        "category": "accessory"
+    }
+]

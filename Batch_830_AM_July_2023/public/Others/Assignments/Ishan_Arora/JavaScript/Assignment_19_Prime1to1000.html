@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 19
+        </title>
+    </head>
+    <body>
+        <h1>
+            Display Prime Numbers 1 to 1000
+        </h1>
+        <script>
+            var rem = 0;
+            for (var i = 2; i <= 1000; i++) {
+                for (var j = 1; j <= i; j++) {
+                    if (i % j == 0) {
+                        rem += 1;
+                    }
+                }
+                if (rem == 2) {
+                console.log(i);
+                }
+                rem = 0;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check the String</title>
+    <style>
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+      .getResult {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Check Given string is part of Actual String !!!</h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">
+      Right click on Webpage then Inspect and then Console
+    </p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+      function getData() {
+       var actualStr= prompt("Enter actual string !!!").toLocaleLowerCase()
+        var str = prompt("Enter a String !!!").toLocaleLowerCase();
+        var count=0;
+        if(actualStr.toLocaleLowerCase().includes(str))
+        {
+            console.log("given String is available in Actual string!!")
+        }else{
+            console.log("given String is not available in Actual string!!")
+        }
+      }
+      getData();
+    </script>
+  </body>
+</html>

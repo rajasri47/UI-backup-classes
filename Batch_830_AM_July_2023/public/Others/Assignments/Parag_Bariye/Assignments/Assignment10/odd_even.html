@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var range = prompt("Enter The Number :");
+        range = parseInt(range);
+        var even=0;
+        var odd=0;
+        for(var i=1;i<=range;i++){
+            if(i%2==0){
+                even = even +i;
+            }
+            else{
+                odd = odd +i;
+            }
+        }
+        console.log("Sum of Even Numbers :"+even);
+        console.log("Sum of odd Numbers :"+odd);
+    </script>
+</body>
+</html>

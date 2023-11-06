@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Registration Page</title>
+    <style>
+        h3 {
+            border: 2px ssolid;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: midnightblue;
+            background-color: antiquewhite;
+        }
+        .mainContainer{
+            margin: 5px;
+            padding: 5px;
+            width: 99%;
+            height: 620px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpEd4pHlkPIwWbqsep-GPUHv_fWAdZvGXO1g&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
+        .container {
+            border: 1px solid;
+            margin: 20px 5px 5px 5px ;
+            padding: 10px;
+            width: 98%;
+            height: auto;
+            color: whitesmoke;
+        }
+        .block {
+            width: 150px;
+            height: auto;
+            border: 1px solid;
+            background-color: yellow;
+            color: black;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            top: -25px;
+            left: 30px;
+        }
+        li {
+            list-style-type: none;
+            margin: 10px;   
+        }
+        .address {
+            position: absolute;
+            left: 738px;
+            top: 91px;
+        }
+        .qualfy {
+            font-weight: bold;
+        }
+        .course {
+            position: absolute;
+            left: 738px;
+            top: 313px;
+        }
+        .submit {
+            border: 2px solid;
+            width: fit-content;
+            background-color: green;
+            color: blue;
+            font-weight: bold;
+            padding: 10px;
+            float: right;
+        }
+        footer {
+            border: 2px ssolid;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: firebrick;
+            background-color: olive;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h3>STUDENT DETAILS REGISTRATION PAGE</h3>
+
+    <div class="mainContainer">
+        <form action="C:\SITHARAM\webServer\public" method="get">
+        <div class="container">
+            <div class="block" id="b1">User Details</div>
+            <ul>
+                <li>
+                    <label for="fname">First Name:&nbsp;</label>
+                    <input type="text" name="fname" id="">`
+                </li>
+                <li>
+                    <label for="lname">Last Name:&ensp;</label>
+                    <input type="text" name="lname" id="">
+                </li>
+                <li>
+                    <label for="age">Age:&emsp;&emsp;&emsp;</label>
+                    <input type="text" name="age" id="">
+                </li>
+                <li>
+                    <label for="gender">Gender:&emsp;&nbsp;</label>
+                    <input type="radio" name="gender">Male&emsp;
+                    <input type="radio" name="gender">Female&emsp;
+                    <input type="radio" name="gender">Other&emsp;
+                </li>
+                <li  class="address"> 
+                    <label for="address">Address:&nbsp;</label>
+                    <textarea name="address" id="" cols="30" rows="10"></textarea>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="block" id="b2">Education Details</div>
+            <li>
+                <span class="qualfy">Qualification&emsp;&emsp;</span>
+                <input type="radio" name="edu">B-Tech&emsp;
+                <input type="radio" name="edu">Degree&emsp;
+                <input type="radio" name="edu">MCA &emsp;
+                <input type="radio" name="edu">MBA &emsp;
+            </li>
+            <li>
+                <span class="qualfy">Languages&emsp;&emsp;&emsp;</span>
+                <input type="checkbox" name="eng">English&emsp;
+                <input type="checkbox" name="hin">Hindi &emsp;
+                <input type="checkbox" name="tel">Telugu &emsp;
+                <input type="checkbox" name="tamil">Tamil &emsp;
+            </li>
+            <li class="course">
+                <label for="course">Course Name:</label>
+                <select name="course" id="">
+                    <option value="mech">MECH</option>
+                    <option value="cse">CSE</option>
+                    <option value="ece">ECE</option>
+                    <option value="eee">EEE</option>
+                    <option value="it">IT</option>
+                    <option value="civil">CIVIL</option>
+                </select>
+            </li>
+        </div>
+
+        <div class="container">
+            <div class="block" id="b3">About Yourself</div>
+            <li>
+                <label for="about">Tell few words about yourself</label>
+                <textarea name="about" id="" cols="100" rows="6"></textarea>
+            </li>
+        </div>
+        <li class="submit">
+            <input type="submit" value="Submit">
+        </li>
+    </form>
+    </div>
+    <footer>@copyrights2023</footer>
+</body>
+</html>

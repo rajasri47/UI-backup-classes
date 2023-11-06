@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details using Functions</title>
+</head>
+<body>
+    <script>
+        function readUserData() {
+        var empName, empAge, empGender, department, basicSal, pf, hra, totalSal, totalTax,salAfterTax;
+        empName = prompt('enter employee name');
+        empAge = prompt('enter age');
+        empGender = prompt("enter gender");
+        department = prompt("enter department");
+        basicSal = prompt("enter basic salary");
+        basicSal = parseInt(basicSal);
+        var totalSal = getPfHraTotalSal(pf,hra,basicSal);
+        displayEmployeeDetails(empName,empAge,empGender,department,basicSal,pf,hra,totalSal,totalTax,salAfterTax);
+    }
+       function getPfHraTotalSal(pf,hra,basicSal) {
+        pf = (basicSal * 12) / 100;
+        hra = (basicSal *24) / 100;
+        totalSal = pf + hra + basicSal;
+        return totalSal;
+    }
+        function displayEmployeeDetails(empName,empAge,empGender,department,basicSal,pf,hra,totalSal,totalTax,salAfterTax) {
+        console.log('name is ' + empName);
+        console.log('age is ' + empAge);
+        console.log('gender is ' + empGender);
+        console.log('department is ' + department);
+        console.log('basic salary is ' + basicSal);
+       
+        
+
+        //for male employees
+
+        if( empGender == 'male' && totalSal >= 300000) {  
+            totalTax = (totalSal*15) / 100;
+            salAfterTax = totalSal - totalTax;
+            console.log('tax is 15%');
+            console.log("total salary  is " + totalSal);
+            console.log('total tax is ' + totalTax);
+            console.log("total salary after tax is " + salAfterTax);
+
+        }
+        if(empGender == 'male' && totalSal >= 200000 && totalSal < 300000) {
+            totalTax = (totalSal*10) / 100;
+            salAfterTax = totalSal - totalTax;
+            console.log('tax is 10%');
+            console.log("total salary is " + totalSal);
+            console.log('total tax is ' + totalTax);
+            console.log("total salary after tax is " + salAfterTax);
+           
+
+        }
+         if(empGender == 'male' && totalSal >= 100000 && totalSal < 200000) {
+            totalTax = (totalSal*5) / 100;
+            salAfterTax = totalSal - totalTax;
+            console.log('tax is 5%');
+            console.log("total salary is " + totalSal);
+            console.log('total tax is ' + totalTax);
+            console.log("total salary after tax is " + salAfterTax);
+           
+        }
+        else if(empGender == 'male' && totalSal < 100000){
+            totalTax = 0;
+            salAfterTax = totalSal - totalTax;
+            console.log('tax is 0');
+            console.log('total salary  is ' + totalSal);
+            console.log('total tax is ' + totalTax);
+            console.log("total salary after tax is " + salAfterTax);
+           
+
+        }
+
+        //for female employees
+
+        if(empGender == 'female' && totalSal >= 300000) {  
+            totalTax = (totalSal*10) / 100;
+            salAfterTax = totalSal - totalTax;
+            console.log('tax is 10%');
+            console.log("total salary is " + totalSal);
+            console.log('total tax is ' + totalTax);
+            console.log("total salary after tax is " + salAfterTax);
+
+        }
+        if(empGender == 'female' && totalSal >= 200000 && totalSal < 300000) {
+            totalTax = (totalSal*5) / 100;
+            salAfterTax = totalSal - totalTax;
+            console.log('tax is 5%');
+            console.log("total salary is " + totalSal);
+            console.log('total tax is ' + totalTax);
+            console.log("total salary after tax is " + salAfterTax);
+        }
+         
+        else if(empGender == 'female' && totalSal < 200000){
+            totalTax = 0;
+            salAfterTax = totalSal - totalTax;
+            console.log('tax is 0');
+            console.log('total salary is ' + totalSal);
+            console.log('total tax is ' + totalTax);
+            console.log("total salary after tax is " + salAfterTax);     
+        }
+    }
+      readUserData();
+    </script> 
+</body>
+</html>

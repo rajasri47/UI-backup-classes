@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performing Arthemetic Operations by using JavaScript</title>
+    <style>
+        h2 {
+            text-align: center;
+            background-color: black;
+            color: gold;
+            font-size: 30px;
+            border: 4px solid;
+            border-color: purple;
+            margin: 5px;
+        }
+        div {
+            width: fit-content; 
+            text-align: center;
+            font-size: 25px;
+            background-color: yellow;
+            color: black;
+            margin: 10px;
+        }
+        span {
+            background-color: green;
+            color: red;
+            font-size: 30px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h2>Performing Arthemetic Operations by using JavaScript</h2>
+    <div>Go to console tab &emsp;<span>=></span></div>
+   <script>
+       var empName = "Ram";
+       var empAge = 22;
+       var empDept = "Develpoer";
+       var empGender;
+       var empBasicSalary = 500000;
+       var empPF = (empBasicSalary * 12) / 100;
+       var empHRA = (empBasicSalary * 24) / 100;
+       var empTotalSalary = (empPF + empHRA + empBasicSalary);
+
+       alert("Welcome " + empName + ". Click OK to see your salary details.");
+
+       console.log("Bacic salary of the employe " + empName + " is ₹" + empBasicSalary);
+       console.log("proficient Fund of the employe " + empName + " is ₹" + empPF);
+       console.log("HRA of the employe " + empName + " is ₹" + empHRA);
+       console.log("Total salary of the employe " + empName + " is ₹" + empTotalSalary);
+
+
+   </script> 
+</body>
+</html>

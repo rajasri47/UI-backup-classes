@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>predefined string methods count vowle  s</title>
+</head>
+<body>
+    <script>
+        
+             var data =prompt( "enter any name count vowels");
+            // data=parseInt(data)
+            var vowles = ('a,e,i,o,u');
+            var count = 0; 
+
+            for( var i = 0 ; i < data.length ; i++){
+                if(vowles.includes(data[i])){
+                    count ++;
+                }
+
+            }   
+            console.log("total vowles is  " +count );
+    </script>
+</body>
+</html>

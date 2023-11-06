@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = 'Using the following syntax';
+        var arr =  str.split('');
+        var  coutnt =0;
+        var vowelsCount = 0;
+        for (var i =0; i < arr.length; i++){
+          
+          if(arr[i].toLowerCase()=='a'|| arr[i].toLowerCase() == 'e'|| arr[i].toLowerCase()== 'i'|| arr[i].toLowerCase() == 'o' || arr[i].toLowerCase() == 'u'){
+            vowelsCount ++;
+          }
+          coutnt++;
+        }
+        var fstring = "synx";
+        console.log('character count: '+coutnt);
+        console.log('vowels count: '+vowelsCount);
+        var arr2 = str.split(' ');
+        var c =0;
+        var fc = 0;
+        for (var j =0; j < arr2.length; j++){
+          c++;
+          if(arr2[j] ===  fstring){
+            fc ++;
+          }
+        }
+        if(fc >= 1){
+            console.log("true")
+        }else {
+            console.log("false")  
+        }
+        console.log('Words count: '+c);
+
+        var str1 = 'Number names 1 to 1001 to 100 in words. When students learn counting 1 to 100, it also helps the@$^m le^)@arnh. A few example(s of number names 1 to 100';
+        var arr3 =  str1.split('');
+        var numberC =0
+        var spC = 0;
+        for (var i =0; i < arr3.length; i++){
+          
+          if(arr3[i] =='1'|| arr3[i]== '2'|| arr3[i]== '3'|| arr3[i] == '4' || arr3[i] == '5'|arr3[i] =='6'||
+           arr3[i]== '7'|| arr3[i]== '8'|| arr3[i] == '9' || arr3[i] == '0'){
+            numberC ++;
+          }else if(arr3[i] =='!'|| arr3[i]== '@'|| arr3[i]== '#'|| arr3[i] == '$' || arr3[i] == '%'|arr3[i] =='^'||
+           arr3[i]== '&'|| arr3[i]== '*'|| arr3[i] == '()' || arr3[i] == ')'){
+            spC ++;
+          }
+          
+        }
+        console.log('numer  count' +numberC);
+        console.log('sp charat  count' +spC);
+ 
+    </script>
+
+</body>
+
+</html>

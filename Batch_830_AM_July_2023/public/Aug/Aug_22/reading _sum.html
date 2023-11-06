@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading data from user for addition</title>
+    <style>
+        ul{
+            width: 500px;
+            height: 200px;
+            border: 2px solid;
+            margin: 20px auto;
+            background-color: #ccc;
+            
+        }
+        li{
+            list-style: none;
+            border: 1px solid #fff;
+            margin: 10px;
+            padding: 5px;
+            background-color: #fff;
+
+        }
+        .rblock{
+            display: none;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Enter first value :
+            <input type="number" id="fval">
+        </li>
+        <li>
+            Enter second value :
+            <input type="number" id="sval">
+        </li>
+        <li>
+            <input type="button" value="Get Sum" onclick="readdata()">
+        </li>
+
+            <li class="rblock">sum of values is <span></span></li>
+        
+    </ul>
+    <script>
+        var userdata={};
+        var readdata = () =>{
+            
+            /*var a1 = document.querySelector("#fval").value;
+            a1 = parseInt(a1);
+            var a2 = document.querySelector("#sval").value;
+            a2 = parseInt(a2);
+            //console.log(readdata)
+            var result = a1+a2;
+            console.log(result)*/readdata
+
+            
+            userdata.fval = document.querySelector("#fval").value;
+            userdata.fval = parseInt(userdata.fval);
+            userdata.sval = document.querySelector("#sval").value;
+            userdata.sval = parseInt(userdata.sval);
+
+            userdata.sum = userdata.fval + userdata.sval;
+
+            document.querySelector("span").innerText=userdata.sum;
+            document.querySelector(".rblock").style.display='block'
+        }
+    </script>
+    
+</body>
+</html>

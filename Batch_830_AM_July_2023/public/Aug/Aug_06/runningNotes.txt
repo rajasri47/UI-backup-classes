@@ -1,0 +1,67 @@
+Scope of VAriables
+
+    Which actually speicifies the accessability level of that particular variable
+
+    3 scopes are been supported:
+
+        Global Scope 
+            any variables / functions defined out of functions are accessable at global level / public data
+
+        Module Scope 
+
+        Block Scope 
+
+    --------------------
+function sample() {
+    // module 
+}
+
+    if () {
+        .. block 
+        var  a = 90; // global 
+        let b = 99; // block scope 
+    }
+
+    for () {
+        .. // block 
+    }
+  
+    while () {
+        .... //block 
+    }
+=---------------------------------------
+
+var a = 90;
+console.log("hello");
+var c = 100;
+function sample() {
+    var k = 11;
+    var z = 10;
+    console.log("hello");
+    console.log("TEST");
+    var name = 'PRASAD';
+}
+var location = 'Hyd'
+ .............................
+var a, c, location;
+a = 90
+c = 100;
+function sample() {
+    var z, k, name;
+
+     k = 11;
+     z = 10;
+     console.log("hello");
+    console.log("TEST");
+     name = 'Prasad';
+}
+
+
+
+------------------------
+
+
+3 Different ways we could access the private data of a function into another function 
+    1. By passing values as parameters 
+    2. By Returning value from a function 
+    3. By both passing values and Returning value from function 

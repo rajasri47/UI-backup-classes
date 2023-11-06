@@ -1,0 +1,120 @@
+<div class="newsProductDetailsPage">
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item" onclick="highlightTab('.addNewProductDetailsBlock', event)">
+            <a class="nav-link active" aria-current="page" href="#">Add New Product</a>
+        </li>
+        <li class="nav-item" onclick="highlightTab('.listNewProductDetailsBlock', event)">
+            <a class="nav-link" href="#">List of Added products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="highlightTab('.editNewProductDetailsBlock', event)">Edit products</a>
+        </li>
+
+    </ul>
+
+
+    <div class="addNewProductDetailsBlock tabContainer">
+        <h5 style="display:flex;justify-content:center;align-items:center;">
+            Add new product Details ....
+        </h5>
+        <ul class="newProductAddingFrom">
+            <li>
+                <input type="text" class="form-control" id="productName" placeholder="Product Name">
+            </li>
+            <li>
+                <input type="number" class="form-control" id="productPrice" placeholder="Product Price">
+            </li>
+            <li>
+                <input type="number" id="discountPercent" min="0" max="10" class="form-control"
+                    placeholder="Product Discount">
+            </li>
+            <li>
+                <input type="number" id="rating" placeholder="Rating " class="form-control">
+            </li>
+            <li>
+                <input type="text" id="manu" placeholder="Product Manufacturer" class="form-control">
+            </li>
+            <li>
+                Category:
+                <select name="" id="productCategory" class="form-control">
+                    <option value="electronics">Laptops</option>
+                    <option value="phones">Smart Phones</option>
+                    <option value="accessory">Electronics</option>
+                    <option value="kids">Kids</option>
+                    <option value="mens">Mens</option>
+                    <option value="womens">Womens</option>
+                </select>
+            </li>
+            <li>
+                <input type="text" class="form-control" placeholder="Seller Name" id="sellerName" disabled>
+            </li>
+            <li>
+                <form method="POST" enctype="multipart/form-data">
+                    <input type="file" name="prodImage" placeholder="Product Image">
+                    <input type="button" value="Upload Image" onclick="uploadDetails()">
+                </form>
+            </li>
+           
+            <li>
+                <input class="imgTwo" type="button" value="Add Hover Image" onclick="openDialogBox()">
+                <div class="addImageTwo"   style="display: none;">
+                    <form method="POST" enctype="multipart/form-data">
+                        <input type="file" name="prodImage">
+                        <input type="button" value="Upload Image" onclick="addImageTwo()">
+                    </form>
+                </div>
+                <div class="maskBlock"></div>
+                <div class="dialogContainer">
+                    <div class="dialogHeader">
+                        Confirm Upload Second Image
+                    </div>
+                    <div class="dialogBody">
+                        Do you want to add Second Image for the same Product?
+                    </div>
+                    <div class="buttonFooter">
+                        <button onclick="closeDialogBoxYes()">
+                            Yes
+                        </button>
+                        <button onclick="closeDialogBoxNo()">
+                            No
+                        </button>
+                    </div>
+                </div>
+            </li>                    
+            <li>
+                <input type="button" value="Add new Product" class="btn btn-primary" onclick="addNewProdcutDetails()">
+            </li>
+            <li class="productSuccess">
+                Product got inserted successfully!
+            </li>
+        </ul>
+    </div>
+
+    <div class="listNewProductDetailsBlock tabContainer">
+        <h3>
+            List of products added
+        </h3>
+        <table class="table table-striped-columns">
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Prodcut Name</th>
+                    <th>Product Price</th>
+                    <th>Manufacturer</th>
+                    <th>Discount</th>
+                </tr>
+            </thead>
+            <tbody id="listproducts_table">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="editNewProductDetailsBlock tabContainer">
+        <h3>
+            Edit product details
+        </h3>
+    </div>
+
+
+</div>

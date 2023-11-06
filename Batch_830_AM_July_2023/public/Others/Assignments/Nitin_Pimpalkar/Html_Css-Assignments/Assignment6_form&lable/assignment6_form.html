@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar,
+        footer {
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            margin: 1px;
+            border-radius: 4px;
+        }
+
+        .page {
+            position: relative;
+            height: 100vh;
+            border: 2px solid red;
+        }
+
+        .formborder {
+            border: 1px solid black;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 1px;
+            width: 100%;
+        }
+
+        .footer {
+            display: block;
+        }
+
+        legend {
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        label span {
+            color: red;
+        }
+
+        legend,
+        label {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .userform {
+            margin: 5px;
+        }
+
+        .btn {
+            position: relative;
+            bottom: 2px;
+            left: 1200px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        .uaddress {
+            position: absolute;
+            top: 15%;
+            left:50% ;
+        }
+
+        .ucountry {
+            position: absolute;
+            top:40% ;
+            left: 50%;
+        }
+    </style>
+</head>
+<div class="page">
+    <header>
+        <nav class="navbar">
+            <h2>Student Registration Page</h2>
+        </nav>
+    </header>
+
+    <main class="formMain">
+        <div class="formborder">
+            <form action="http://" method="post" class="userform">
+                <fieldset>
+                    <legend>User Details</legend>
+                    <label for="name">
+                        Name <span>*</span>:
+                        <input type="text" id="name" required placeholder=" Enter your name" />
+                    </label>
+                    <label for="address" class="uaddress">
+                        Address <span>*</span>:
+                        <textarea name="Address" id="address" cols="30" rows="5"
+                            placeholder="Enter your address"></textarea>
+                    </label><br>
+                    <br>
+                    <label for="age">
+                        Age <span>*</span>:
+                        <input type="number" id="age" placeholder="Enter your age">
+                    </label><br><br>
+                    <label for="gender">
+                        Gender <span>*</span>:
+                        <input type="radio" name="gen" id="male"> <label for="male">Male</label>
+                        &nbsp;&nbsp;<input type="radio" name="gen" value="female" id="female"> <label
+                            for="female">Female</label>
+                    </label>
+                </fieldset>
+            </form>
+
+            <form action="" class="userform">
+                <fieldset>
+                    <legend>Education Details</legend>
+                    <br>
+                    <label for="quali">
+                        Qualification: <input type="checkbox" id="btech"><label for="btech"> B.Tech</label>
+                        <input type="checkbox" id="mba"><label for="mba"> MBA</label>
+                        <input type="checkbox" id="mca"><label for="mca"> MCA</label>
+                    </label>
+                    <label class="ucountry">
+                        Country:
+                        <select name="ucountry">
+                            <option value="">Select Country</option>
+                            <option value="India" selected>India</option>
+                            <option value="China">China</option>
+                            <option value="Japan" >Japan</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </label>
+                    <br><br>
+                    <label for="lang">
+                        Languages: <input type="checkbox" id="eng"><label for="eng"> English</label>
+                        <input type="checkbox" id="hin"><label for="hin"> Hindi</label>
+                        <input type="checkbox" id="tel"><label for="tel"> Telugu</label>
+                    </label>
+                </fieldset>
+            </form>
+            <form action="" class="userform">
+                <fieldset>
+                    <legend>About your Self</legend>
+                    <label for="aboutUself">
+                        Tell few words about your Self : <textarea name="aboutURself" id="aboutUself" cols="140"
+                            rows="5"></textarea>
+                    </label>
+                </fieldset>
+            </form>
+            <button type="submit" class="btn">Register</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2>@CopyRight 2023
+        </h2>
+    </footer>
+</div>
+</body>
+
+</html>

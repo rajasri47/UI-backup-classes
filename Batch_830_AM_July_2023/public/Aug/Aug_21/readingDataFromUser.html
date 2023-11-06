@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <span></span>
+        <div>
+            the sum of values is <span></span>
+        </div>
+        <script>
+            var a1 = prompt("enter value for a1")
+            var a2 = prompt("enter value for a2")
+            a1 = parseInt(a1);
+            a2 = parseInt(a2);
+            var sum = a1 + a2;
+
+            // document.querySelector("span").innerHTML = sum;
+
+            var spanlist = document.querySelectorAll("span");
+            spanlist[1].innerHTML = sum;
+            console.log(document.querySelectorAll("span"));
+        </script>
+    </body>
+</html>

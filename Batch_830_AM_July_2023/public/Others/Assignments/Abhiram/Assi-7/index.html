@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Calculate the PF and HRA Using javaScri</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>for results click inspect and go into the console tab</h1>
+        </div>
+        <div class="main">
+            <div class="empDatails">
+                <form>
+                    <header>
+                        Register Employee
+                    </header>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="EmpName">Employe Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="EmpName" id="empName" autofocus required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="EmpAge">Employe Age:</label>
+                            </td>
+                            <td>
+                                <input type="Date" name="EmpAge" id="empAge" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="EmpGender">Employe Gender:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="EmpGender" id="empGender" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="EmpSalary">Employe Salary:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="EmpSalary" id="empSalary" required />
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="field">
+                        <!-- href="asset/empDetails.html" target="_blank" -->
+                        <!-- <input type="submit" class="get-btn" /> -->
+                        <button type="get" class="get-btn"><a href="#" class="get">get</a></button>
+                        <button type="submit" class="sub-btn"><a href="#" class="sub"
+                                onclick="getData();">submit</a></button>
+                        <button type="clear" class="clr-btn"><a href="#" class="clr"
+                                onclick="clearConsole();">clear</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Total salary after tax and before tax</h1>
+
+        </div>
+    </div>
+
+    <script>
+        // accessing data elements
+        const form = document.querySelector("form");
+        const empName = document.getElementById("empName");
+        const empAge = document.getElementById("empAge");
+        const empGender = document.getElementById("empGender");
+        const empSalary = document.getElementById("empSalary");
+
+
+
+        // stop the form refreshing
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            getData();
+        });
+
+        // display the user Details
+        function getData() {
+            // accessing the data elements values
+            let empNameValue = empName.value;
+            let empAgeValue = empAge.value;
+            let empGenderValue = empGender.value;
+            let empSalaryValue = empSalary.value;
+
+            // Employee value change from string to number 
+            parseInt(empSalaryValue);
+
+
+            // calculate for PF and HRA  
+            const empPF = (12 / empSalaryValue) * 100;
+            const empHRF = (24 * empSalaryValue) * 100;
+            const total = empPF + empHRF;
+
+            // print the user data 
+            console.log("employeeName :" + empNameValue);
+            console.log("EmployeeAge :" + empAgeValue);
+            console.log("EmployeeGender :" + empGenderValue);
+            console.log("EmployeeloyeSalary:" + empSalaryValue);
+            console.log("EmployeePF :" + empPF);
+            console.log("EmployeeHRF :" + empHRF);
+
+
+            console.log("Employee total salary before tax is :" + total);
+
+            // Tax paid method for men 
+            if (empGenderValue == "male") {
+                if (total >= 300000) {
+                    var tax = (total * 15) / 100;
+                    console.log(`Total salary is ${total} And paid Tax is ${tax}`);
+
+                }
+                else if (total >= 200000) {
+                    var tax = (total * 10) / 100;
+                    console.log(`Total salary is ${total} And paid Tax is ${tax}`);
+                }
+                else if (total >= 100000) {
+                    var tax = (total * 5) / 100;
+                    console.log(`Total salary is ${total} And paid Tax is ${tax}`);
+                }
+                else {
+                    console.log(`Total salary is ${total} And you have enjoy don't pay any Tax`);
+                }
+
+                if (total != 0) {
+                    const AfterTaxSalary = (total - tax);
+                    console.log("Employee total salary After tax is :" + parseInt(AfterTaxSalary));
+                }
+
+            }
+            // Tax paid method for women
+            else if (empGenderValue == "female") {
+                if (total >= 300000) {
+                    let tax = (total * 10) / 100;
+                    console.log(`Total salary is ${total} And paid Tax is ${tax}`);
+                }
+                else if (total >= 200000) {
+                    let tax = (total * 8) / 100;
+                    console.log(`Total salary is ${total} And paid Tax is ${tax}`);
+                }
+                else if (total >= 100000) {
+                    let tax = (total * 5) / 100;
+                    console.log(`Total salary is ${total} And paid Tax is ${tax}`);
+                }
+                else {
+                    console.log(`Total salary is ${total} And you have enjoy don't pay any Tax`);
+                }
+
+                if (total != 0) {
+                    const AfterTaxSalary = (total - tax);
+                    console.log("Employee total salary After tax is :" + AfterTaxSalary);
+                }
+
+
+            }
+
+        }
+
+        function clearConsole() {
+            console.clear();
+        }
+    </script>
+</body>
+
+</html>

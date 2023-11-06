@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bookdetails={
+            book_name : "Ancient India",
+            book_price : 3000,
+            book_discount : "40 %" ,
+            authors : ["Parag" , "Sultan" , "Aman"],
+            book_Publisher : "Bhaskarji",
+
+            displaydetails() {
+                console.log("book name is :"+this.book_name);
+                console.log("book price is :"+this.book_price);
+                console.log("book discount is :"+this.book_discount);
+                console.log("book authors are :"+this.authors);
+                console.log("book publisher is :"+bookdetails.book_Publisher);
+                
+            }
+        }
+        bookdetails.displaydetails();
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var data = [23, 44, 55, 66, 33, 44, 66, 100];
+            var name = 'Teena';
+            var age = 22;
+            console.log(data);
+            // console.log(typeof(name));
+            // console.log(typeof(age));
+            // console.log(typeof(data));
+
+            // console.log(Array.isArray(data));
+
+            // console.log(data.length);
+
+            // data.push(100, 203);
+            
+            // console.log(data);
+            // data.unshift(300, 304);
+            // console.log(data);
+
+            // data.pop(); // delete a single value 
+            // console.log(data);
+
+            // data.shift(); // delete a value from left
+            // console.log(data);
+
+            // data.splice(start index, no of values to be deleted, optional values to be inserted)
+
+            data.splice(3, 0, 111, 222, 211);
+            console.log(data);
+             
+
+            console.log(data.join(''));
+            console.log(data.includes(33))
+            console.log(data.indexOf(33));
+
+            // map, filter, sort, find,
+
+            var p1 = [23, 45, 56];
+            var p2 = [44, 55, 66];
+            console.log(p1.concat(p2));
+
+            data.push([1000, 2000]);
+            console.log(data)
+
+            console.log(data[1])
+            console.log(data[11][1])
+        </script>
+    </body>
+</html>

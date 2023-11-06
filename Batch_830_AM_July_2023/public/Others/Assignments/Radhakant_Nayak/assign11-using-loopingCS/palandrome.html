@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            palandrome
+        </title>
+    </head>
+    <body>
+        <script>
+            var n = prompt('entr a no')  ; 
+            var p = n ;
+            var rem , res = 0;
+            while(n != 0){
+                rem = n % 10;
+                res = res * 10 + rem; 
+                n /= 10;
+                n = parseInt(n)
+            }
+            if(res == p ){
+                console.log("palamndrome no is " + n);
+            }else{
+                console.log("not a palandrome no");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Project
+        </title>
+        <style>
+            .header, .footer {
+                border: 2px solid;
+                background-color: aquamarine;
+                height: 80px;
+            }
+            .heading {
+                display: inline;
+                position: absolute;
+                left: 43%;
+            }
+            .logo {
+                height: 80px;
+                width: 120px;
+            }
+            .main {
+                border: 2px solid;
+                background-color: bisque;
+                height: 500px;
+            }
+            .footer {
+                text-align: center;
+
+            }
+            .sections {
+                border: 2px solid;
+                height: 500px;
+                width: 180px;
+            }
+            .list1 {
+                border: 2px solid;
+                list-style: none;
+                text-align: center;
+            }
+            .products {
+                border: 1px solid;
+                height: 492px;
+                width: 1322px;
+                display: inline-block;
+                padding: 5px;
+                position: absolute;
+                top: 90px;
+                left: 192px;
+            }
+            .one, .two, .three, .five, .six, .seven {
+                border: 1px solid;
+                height: 200px;
+                width: 250px;
+                position: absolute;
+            }
+            .photo {
+                height: 200px;
+                width: 250px;
+            }
+            .one {
+                top: 10px;
+                left: 40px;
+            }
+            .two {
+                top: 10px;
+                left: 370px;
+            }
+            .three {
+                top: 10px;
+                left: 690px;
+            }
+            .four {
+                font-size: 20px;
+                text-align: center;
+                left: 1050px;
+                top: 37%;
+                position: absolute;
+            }
+            .five {
+                left: 40px;
+                top: 52%;
+            }
+            .six {
+                left: 370px;
+                top: 52%;
+            }
+            .seven {
+                top: 52%;
+                left: 690px;
+            }
+            .eight {
+                font-size: 20px;
+                text-align: center;
+                left: 1050px;
+                top: 87%;
+                position: absolute;
+            }
+            .product {
+                border: 1px solid;
+                height: 200px;
+                width: 350px;
+                position: absolute;
+                top: 18%;
+                left: 10%;
+            }
+            .mainimage {
+                height: 200px;
+                width: 350px;
+            }
+            .image1, .image2, .image3 {
+                border: 1px solid;
+                height: 100px;
+                width: 100px;
+            }
+            .simage1, .simage2, .simage3 {
+                height: 100px;
+                width: 100px;
+            }
+            .image1 {
+                position: absolute;
+                top: 50%;
+                left: 10%;
+            }
+            .image2 {
+                position: absolute;
+                left: 18%;
+                top: 50%;
+            }
+            .image3 {
+                position: absolute;
+                left: 26.2%;
+                top: 50%;
+            }
+            .specifications {
+                border: 1px solid;
+                height: 350px;
+                width: 600px;
+                position: absolute;
+                top: 18%;
+                right: 19%;
+            }
+            .rating {
+                border: 1px solid;
+                height: 80px;
+                width: 960px;
+                position: absolute;
+                bottom: 18%;
+                left: 10%;
+                font-size: x-large;
+                padding: 10px 0px 0px 10px;
+            }
+            li {
+                font-size: x-large;
+                list-style: none;
+            }
+            .cart {
+                position: absolute;
+                bottom: 18%;
+                right: 19%;
+                padding: 15px 0px 0px 0px;
+            }
+            .add {
+                background-color: greenyellow;
+            }
+            .view {
+                font-size: larger;
+                position: absolute;
+                top: 14%;
+                right: 22%;
+            }
+            .view:visited, .view:link {
+                text-decoration: none;
+                color: black;
+            }
+            /* .view:hover {
+                color: blueviolet;
+                text-decoration: underline;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img class="logo" src="Images/logo_2.png" alt="">
+            <h1 class="heading">
+                Fashion Store
+            </h1>
+        </div>
+        <div class="main">
+            <div class="product">
+                <img class="mainimage" src="Images/Suits&Blazers.jpg" alt="">
+            </div>
+            <div class="image1">
+                <img class="simage1" src="Images/Suits&Blazersimage1.jpg" alt="">
+            </div>
+            <div class="image2">
+                <img class="simage2" src="Images/Suits&Blazersimage2.jpg" alt="">
+            </div>
+            <div class="image3">
+                <img src="Images/Suits&Blazersimage3.jpg" alt="" class="simage3">
+            </div>
+            <div class="specifications">
+                <ul>
+                    <li>Product Name: Suit</li>
+                    <li>Category: Men</li>
+                    <li>Price: 4000</li>
+                    <li>Vendor: AP Fab</li>
+                    <li>Manufacturer: Dellz</li>
+                    <li>In Stock: 10</li>
+                    <li>Colour: Purple</li>
+                    <li>Size: 28/30/32/34/36</li>
+                    <li>Description: Luxury Suit</li>
+                </ul>
+            </div>
+            <div class="rating">
+                Ratings: 5.0 <br>
+                Reviews: 5000
+            </div>
+            <div class="cart">
+                <input type="submit" value="ADD TO CART" class="add">
+            </div>
+            <div class="view">
+                <a href="productPage.html">View Product</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; View Cart
+            </div>
+        </div>
+        <div class="footer">
+            <br>
+            Copyrights @2023
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ascending and Decending </title>
+    </head>
+        <body>
+            <h3>Ascending and Decending order</h3>
+                <script>
+                    var data = [];
+                    var size = prompt("enter the size");
+                    size = parseInt(size);
+
+                    for(i = 0;i < size; i++){
+                        data[i] = prompt("enter the number");
+                        data[i] = parseInt(data[i]); 
+
+                    }
+                    console.log(data);
+                    for(i = 0; i < size;i++){
+                        for(j =i; j < size;j++ ){
+                            if(data[i] > data[j]){
+                                var temp = data[j];
+                                data[j] = data[i];
+                                data[i] = temp;
+                                
+
+                            }
+
+                        }
+                    }
+                   
+                    console.log("ascending order is" + data)
+                    for(i = 0; i < size;i++){
+                        for(j =i; j < size;j++ ){
+                            if(data[i] < data[j]){
+                                var temp = data[j];
+                                data[j] = data[i];
+                                data[i] = temp;
+                            }
+                        }
+                    }
+                    console.log("decending order is" + data)
+
+                                
+
+
+                </script>
+            
+        </body>
+        </html>

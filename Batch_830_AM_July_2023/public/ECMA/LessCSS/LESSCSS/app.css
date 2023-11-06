@@ -1,0 +1,12 @@
+@width: 10px;
+@height: @width + 10px;
+@copanythemeColor: yellow;
+
+
+#header {
+  width: @width;
+  height: @height;
+}
+body {
+    background-color: @copanythemeColor;
+}

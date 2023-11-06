@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Read a string Dynamically from user and return total no.of words in it
+        </title>
+    </head>
+    <body>
+        <script>
+            var readFromUser= () => {
+                var userString = prompt("Enter a userString");
+                console.log("given user string is:" + userString);
+                var wordsCount=countWords(userString);
+                console.log("Given words count is:" + wordsCount);
+
+            }
+            var countWords = (userString) => {
+                var totalWords = userString.split(" ").length;
+                return totalWords;
+            }
+            readFromUser();
+
+            
+        </script>
+    </body>
+</html>

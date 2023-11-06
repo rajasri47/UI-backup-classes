@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.main{
+    border: 1px solid;
+    border-radius: 500px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://t3.ftcdn.net/jpg/01/17/33/22/360_F_117332203_ekwDZkViF6M3itApEFRIH4844XjJ7zEb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.child{
+    width: 420px;
+    border: 1px solid #fff;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+.child h1{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.child .rem{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.child input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.child input::placeholder{
+    color: white;
+}
+
+.child .forget{
+    width: 100%; 
+}
+
+.child .rem1 i{
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.child .rem2 i{
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 550;
+    background-color: rgb(127, 217, 242);
+}
+
+.top a p{
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.top a p:hover{
+    text-decoration: underline;
+}

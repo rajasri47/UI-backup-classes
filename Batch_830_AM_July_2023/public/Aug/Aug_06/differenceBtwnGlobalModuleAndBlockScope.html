@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Difference btween Global, Module and Block scope
+        </title>
+    </head>
+    <body>
+        <script>
+            var name = 'Raj'; //Public
+            let a = 900; // public 
+            function sample() {
+                let test = 'abc'; // modulescope/prive/local 
+                var age = 20; // Private
+                className = '10th class'; // public
+            }
+
+            if (true) {
+                let gender = 'Male'; // local 
+                console.log("Gender is " + gender)
+            }
+
+            console.log("Gender is " + gender)
+        </script>
+    </body>
+</html>

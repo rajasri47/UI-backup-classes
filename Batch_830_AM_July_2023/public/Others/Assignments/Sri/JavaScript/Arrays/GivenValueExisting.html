@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>given value existing</title>
+    </head>
+        <body>
+            <h3>to check whether the value is existing or not</h3>
+            <script>
+                var data = [];
+                var size = prompt("enter the size");
+                size = parseInt(size);
+                var found = 0;
+
+               for(var i = 0; i < size; i++){
+                data[i] = prompt("eneter the number" + i);
+                data[i] = parseInt(data[i]);
+               }
+               var Sno = prompt(" enter any number to search in the array");
+               Sno = parseInt(Sno);
+               for(i = 0; i < size; i++){
+                if (Sno == data[i]){
+                    console.log(data);
+                    console.log(" number found at " + data[i]);
+                     found = 1;
+                    break;
+                    
+                }
+                
+               }
+               if ( found==0){
+                console.log("number not found");
+               }
+            </script>
+            
+        </body>
+        </html>

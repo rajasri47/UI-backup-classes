@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            <h3>print amstrong numbers</h3>
+            <script>
+                var data = [];
+                var sum = 0;
+                var size = prompt("enter the size");
+                size = parseInt(size);
+             
+            for(i = 0; i < size; i++){
+                data[i] = prompt("enter the number" );
+                data[i] = parseInt(data[i]);
+                var a = data[i];
+
+                while( a!= 0){
+                    var rem = a % 10;
+                    a = parseInt(a/10)
+                    sum = sum + (rem*rem*rem)
+                 }
+                 if(sum == data[i]){
+                    console.log("its a armstrong number" +data[i])}
+                    else {
+                        console.log("its not a armstron no" +data[i]);
+                    }
+                 
+                   sum = 0;
+            }
+
+            </script>
+            
+        </body>
+        </html>

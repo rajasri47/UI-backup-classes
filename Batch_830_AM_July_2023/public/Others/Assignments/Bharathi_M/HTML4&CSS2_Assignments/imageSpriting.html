@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Spriting</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+  
+        li{
+            border: 2px solid;
+            margin: 10px;
+            padding: 20px;
+            list-style: none;
+            font-size: 20px;
+        }
+        li div{
+            margin: 5px;
+        }
+       
+        .imageContainer{
+            background-image: url("images/spriting.png");
+            height: 160px;
+            width: 150px;
+        }
+        .stu1{
+            background-position:-46px 380px;
+        }
+        .stu2{
+            background-position: -32px -169px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <ol>
+        <li>
+            <div>Name:Bharathi</div>
+            <div>Age:29</div>
+            <div>Gender:Female</div>
+            <div>Location:Hyd</div>
+            <div class="imageContainer stu1"></div>
+        </li>
+        <li>
+            <div>Name:Niranjan</div>
+            <div>Age:32</div>
+            <div>Gender:Male</div>
+            <div>Location:Hyd</div>
+            <div class="imageContainer stu2"></div>
+        </li>
+    </ol>
+
+    
+</body>
+</html>

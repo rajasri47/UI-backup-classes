@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var count = 99;
+            var a = 90;
+            var b = 99;
+            
+            var sample = () => {
+                console.log("am frm sample")
+            }
+            
+
+
+            (function() { 
+                var count = 100;
+                var a1 = 90;
+                var sample = () => {
+                    console.log("frm sample")
+                }
+                class Test {
+
+                }
+                var data = {};
+                console.log("frm closure")
+                sample();
+                console.log(a1)
+            })(); // both calling and definight 
+
+            sample();
+            
+            
+
+        </script>
+    </body>
+</html>

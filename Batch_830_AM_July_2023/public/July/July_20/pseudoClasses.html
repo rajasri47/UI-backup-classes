@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating PseudoClasses
+        </title>
+        <style>
+            .container {
+                border: 1px solid;
+                width: 200px;
+                height: 200px;
+                text-align: center;
+
+                
+            }
+
+            /* .test:hover, .abc:link {
+                ...
+            } */
+
+            .container:hover {
+                font-size: 20px;
+                background-color: green;
+            }
+            a:link {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            a:focus {
+                font-size: 20px;
+                color: rebeccapurple;
+            }
+            a:active {
+                color: yellow;
+            }
+            p:empty {
+                border: 1px solid;
+                padding: 5px;
+            }
+            td:empty {
+                background-color: aquamarine;
+            }
+            /* td:first-child {
+                background-color: red;
+            }
+            td:last-child {
+                background-color: blueviolet;
+            }
+            td:nth-child(2) {
+                background-color: yellow;
+            } */
+            tr:nth-child(odd) {
+                background-color: brown;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">BLOCK</div>
+        Link <a href="http://google.com">Click here to visit Google</a>
+        Link <a href="http://amazon.com">Click here to visit Amazon</a>
+        Link <a href="http://flipkar.com">Click here to visit Flipkart</a>
+        Link <a href="http://ebay.com">Click here to visit Ebay</a>
+
+        <p>ITem 1</p>
+        <p>ITem 2</p>
+        <p>hello</p>
+        <p></p>
+        <p>Item 3</p>
+        <table border="1px solid" cellspacing="10px" cellpadding="10px">
+            <tr>
+                <th>NAme</th>
+                <th>Passport number</th>
+                <th>Adhar nao</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>Raj</td>
+                <td>A23423</td>
+                <td>23423423</td>
+                <td>MAle</td>
+            </tr>
+            <tr>
+                <td>Krish</td>
+                <td>sdfsd</td>
+                <td>23423423</td>
+                <td>MAle</td>
+            </tr>
+            <tr>
+                <td>Teena</td>
+                <td>A23423</td>
+                <td></td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Prasad</td>
+                <td>A23423</td>
+                <td>23423423</td>
+                <td>MAle</td>
+            </tr>
+            <tr>
+                <td>Suresh</td>
+                <td></td>
+                <td></td>
+                <td>MAle</td>
+            </tr>
+        </table>
+    </body>
+</html>

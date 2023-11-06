@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of odd Values</title>
+    <style>
+        h2 {
+          text-align: center;
+          font-size: 30px;
+          color: red;
+        }
+        p {
+          text-align: center;
+          font-size: 25px;
+        }
+        .getResult {
+          font-size: 22px;
+        }
+      </style>
+</head>
+<body>
+    <h2>List out all odd numbers between 1000 to 100 <h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">Right click on Webpage then Inspect and then Console</p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+        
+        for (let i=1000; i>=100;i--)
+        {
+            if(i%2 !== 0){
+                console.log(" No is:"+ i)
+            }
+        }
+    </script>
+</body>
+</html>

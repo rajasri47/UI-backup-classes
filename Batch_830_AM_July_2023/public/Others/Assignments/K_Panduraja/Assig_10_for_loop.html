@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //sum of values btw 1 - 100
+        var n=1;
+        var s=0;
+
+        for(n ; n <= 100 ; n++ ){
+            s= s+n
+        }
+        console.log(s);  
+        
+        //sum of num btw 99 - 61
+        var a=99
+        var b=0
+        for(a ;a>=61;a--){
+            b= b + a
+        }
+        console.log(b)
+        // all even num btw 1 - 1000
+        var i = 1;
+
+        for(i ; i <= 1000 ; i++) {
+            if(i % 2 == 0){
+                console.log("even num 1- 1000 is : " + i);
+            }
+        }
+        //all odd num btw 1000 - 100
+        var j=1000;
+        for(j;j>=100;j--){
+            if(j % 2 !==0){
+                console.log("Odd num 1000-100 is :" + j)
+            }
+        }
+        //sum of odd num individually and sum of even num individually between 1 - 10
+        var k=1;
+        var evensum = 0;
+        var oddsum = 0;
+        for(k;k<=10;k++){
+            if(k % 2 == 0){
+                evensum = evensum + k
+            }
+            else{
+                oddsum = oddsum + k
+            }
+        }
+        console.log("even sum : " +evensum);
+        console.log("odd sum :" + oddsum);
+
+    </script>
+</body>
+</html>

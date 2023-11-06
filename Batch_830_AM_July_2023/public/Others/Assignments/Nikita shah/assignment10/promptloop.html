@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>h1{
+        text-align: center;
+        margin:280px auto ;
+    
+    }</style>
+</head>
+<body>
+    <h1>Demonstrating the sum of odd and even no.s individually.</h1>
+    <script>
+        var i = prompt("Enter the no.");
+        var maxRange = prompt("Enter the max range");
+        i = parseInt(i);
+        maxRange = parseInt(maxRange);
+       var sumOdd = 0;
+       var sumEven = 0;
+       for(i =1; i<=maxRange; i++){
+        if(i%2 ==1){
+            sumOdd = sumOdd + i;
+        }
+        if(i%2 ==0){
+            sumEven = sumEven + i;
+        }
+       }
+        
+       console.log("sum of the odd no. between your given values is" + sumOdd);
+       console.log("sum of the even no. between your given values is" + sumEven);
+    </script>
+</body>
+</html>

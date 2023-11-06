@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Tags</title>
+    <style>
+        .header{
+            height: 40px;
+            margin: 10px 10px;
+            border: 2px solid;
+            padding:10px;
+            text-align: center;
+            background-color: rgb(9, 9, 36);
+            color: rgb(242, 236, 236);
+            font-size: 30px;
+        }
+        .mainForm{
+            height: 778px;
+            margin: 10px 10px;
+            border: 2px solid;
+            background-color: rgb(9, 9, 36);
+        }
+        .footer{
+            height: 30px;
+            margin: 10px 10px;
+            border: 2px solid;
+            text-align: center;
+            background-color: rgb(9, 9, 36);
+            color: antiquewhite;
+        }
+        .box1{
+            height: 128px;
+            margin: 30px 10px;
+            border: 2px solid;
+            padding: 47px;
+            background-color: darkgrey; 
+            
+        }
+        .box2{
+            height: 76px;
+            margin: 30px 10px;
+            border: 2px solid;
+            padding: 47px;
+            background-color: darkgrey; 
+        }
+        .box3{
+            height: 131px;
+            margin: 30px 10px;
+            border: 2px solid;
+            padding: 47px;
+            background-color: darkgrey; 
+        }
+        .mini1, .mini2, .mini3{
+            width: 210px;
+            height: 40px;
+            border: 2px solid;
+            text-align: center;
+            padding: 5px;
+            background-color: rgb(251, 248, 248);
+            
+        }
+        .mini1{
+            position: absolute;
+            top: 15%;
+            left: 10%;
+        }
+        .mini2{
+            position: absolute;
+            top: 54%;
+            left: 10%;
+        }
+        .mini3{
+            position: absolute;
+            top: 85%;
+            left: 10%;
+        }
+        div{
+            font-size: 25px;
+        }
+        
+         #address{
+            position: absolute;
+            top: 25%;
+            right: 10%;
+         }
+         #Course{
+            position: absolute;
+            top: 64%;
+            right: 20%;
+         }
+         #submit{
+            margin: 25px;
+            position: absolute;
+            bottom: -33%;
+            right: 0%;
+         }
+         .background{
+            background-color: rgb(72, 84, 84);
+         }
+         .mandate{
+            color: black;
+         }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="header">Students Details Registration Page</div>
+        <form action="http://abcsample.com/data/api/registration" method="post">
+        <div class="mainForm">
+            <div class="mini1">User's Details</div>
+            <div class="box1">
+                <div>
+             
+                <label for="uname">Name:</label>
+                <input type="text" name="uname" placeholder="Write your name">
+                </div>
+                <br>
+                <div>
+                <span class="mandate">*</span>
+                <label for="uage">Age:</label>
+                <input type="number" name="uage" min="18" max="40" placeholder="Click UP and DOWN to fill the valid age">
+                </div>
+                <br>
+                <div>
+                    <span class="mandate">*</span>
+                <label for="ugender">Gender:</label>
+                <input type="radio" name="ugender" >Male
+                <input type="radio" name="ugender" >Female
+                <input type="radio" name="ugender" >Others
+                </div>
+                <br>
+                <div id="address" >
+                    <span class="mandate">*</span>  
+                <label for="uaddress">Address:</label>
+                <br>
+                
+                <textarea name="uaddress" cols="60" rows="8"></textarea>
+                </div>
+                <br>
+            </div>   
+                
+            
+            <div class="mini2">Educational Details</div>
+            <div class="box2">
+             <div>
+                <span class="mandate">*</span>
+                <label for="uqualification">Qualication:</label>
+                <input type="checkbox" name="uqualification">MCA
+                
+                <input type="checkbox" name="uqualification">MBA
+                <input type="checkbox" name="uqualification">B.TECH
+             </div> 
+             <br>
+             <div>
+                <span class="mandate">*</span>
+                <label for="ulang">Language:</label>
+                <input type="checkbox" name="ulang">English
+                <input type="checkbox" name="ulang">Hindi
+                <input type="checkbox" name="ulang">Telugu
+                <input type="checkbox" name="ulang">Urdu
+                
+             </div>
+             <br>
+             <div id="Course">
+                <span class="mandate">*</span>
+                <label for="ucourse">Course Opted For:</label>
+                <select name="ucourse" title="Select Course">
+                 
+                    <option> MBA</option>
+                    <option >BBA</option>
+                    <option>B.TECH</option>
+                    <option >BCA</option>
+                    <option >M.TECH</option>
+                    <option >B.ED</option>
+                 
+                </select>
+             </div>  
+            </div>
+            <div class="mini3">About Yourself</div>
+            <div class="box3">
+                <div>
+                    <span class="mandate">*</span>
+                    <label for="uabout">Tell few words about yourself:</label>
+                    <br>
+                    
+                    <textarea name="uabout" id="" cols="120" rows="8"></textarea>
+                </div>
+            </div>
+            <div id="submit">
+               
+                
+                <input type="submit" name="submit" value="Register">
+            </div>
+
+        </div>
+        </form>
+        <div class="footer">@copyrights 2023</div>
+        
+    </div>
+</body>
+</html>

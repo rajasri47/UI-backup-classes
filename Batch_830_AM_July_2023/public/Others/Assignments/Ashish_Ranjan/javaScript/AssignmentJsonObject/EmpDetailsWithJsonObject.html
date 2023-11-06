@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsonObject</title>
+  </head>
+  <body>
+    <!-- -------------------json Object with Employee details---------- -->
+    <script>
+
+      //<---------------------- Input get from the user------------>
+
+      var empData = {};        //json Object
+
+      empData.name = prompt("Enter Name ");
+      empData.age = prompt("Enter Age");
+      empData.dept = prompt("Enter Department");
+      empData.basicSalary = prompt("Enter Basic Salary ");
+      empData.basicSalary = parseInt(empData.basicSalary);
+
+      // <----calculate pf and Hre -------------->
+
+      let pf, hre;
+      pf = empData.basicSalary * 0.12;
+      hre = empData.basicSalary * 0.24;
+
+      // <-----Total salary------------->
+
+      let totalSalary = empData.basicSalary + pf + hre;
+
+      //    <------------Display  employee Details------->
+
+      console.log | "Employee Details Are :";
+      console.log("Employee Name : " + empData.name);
+      console.log("Employee Age : " + empData.age);
+      console.log("Employee Department : " + empData.dept);
+      console.log("Employee Total salary : " + totalSalary);
+    </script>
+  </body>
+</html>

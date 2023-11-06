@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+        <title>Employee playslip with JSON and JAVASCRIPT </title>
+    </head>
+    <body>
+        <h2>Employee PlaySlip</h2>
+         
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter name "  id="name">
+            </li>
+            <li>
+                <input type="text" placeholder="Enter age" id="age" >
+            </li>
+            <li>
+                <input type="text" placeholder="Enter Location" id="location" >
+            </li>
+            <li>
+                Gender : 
+                <input type="radio" value="male" name="gender" checked>Male
+                <input type="radio" value="female" name="gender">Female
+            </li>
+            <li>
+                Department :
+                <select name="" id="department">
+                    <option value="">select</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Frontend">Backend</option>
+                    <option value="Frontend">Good end</option>
+                    <option value="Frontend">Bad end</option>
+                    <option value="Frontend">The end</option>
+                    <option value="Frontend">No end</option>
+                </select>
+            </li>
+            <li>
+                <input type="text" placeholder=" Enter Basic Salary" id="salary">
+            </li>
+            <button id="btn" title="Please check the entered details" onclick="empData()">Generate PaySlip</button>
+        </ul>
+        <ul class="hider">
+            <h3>Employee PaySlip</h3>
+            <li>
+                Employee Name : <span id="empName"> </span>
+            </li>
+            <li>
+                Employee Age : <span id="empAge"></span>
+            </li>
+            <li>
+                Employee Location : <span id="empLocn"></span>
+            </li>
+            <li>
+                Gender : <span id="empGen"></span>
+            </li>
+            <li>
+                Employee Department : <span id="empDep"></span>
+            </li>
+            <li>
+                Employee Salary : <span id="empSal"></span>
+            </li>
+            <li>
+                Employee PF : <span id="empPf"></span>
+            </li>
+            <li>
+                Employee HRA : <span id="empHra"></span>
+            </li>
+            <li>
+                 Total Salary : <span id="empTotalSal"></span>
+            </li>
+            <li>
+                Payble Tax : <span id="empTax"></span>
+            </li>
+        </ul>
+
+
+
+        <script src="./app.js"></script>
+    </body>
+</html>

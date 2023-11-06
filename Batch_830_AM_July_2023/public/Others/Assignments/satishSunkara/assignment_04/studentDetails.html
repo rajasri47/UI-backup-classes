@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .header{
+                border: 4px solid rgb(0, 0, 0);
+                text-align: center;
+                text-decoration: underline;
+                font-size: 17px;
+                
+            }
+            .parentContainer{
+                border: 2px solid;
+                height: 100%;
+                width: 100%;
+                margin-top: 10px;
+                display: flex;
+
+            }
+            .childContainer{
+                border: 2px solid rgb(236, 0, 0);
+                margin: 2px;
+                width: 30%;
+                height: 550px;
+                overflow: auto;
+            }
+            .childContainer ol li {
+                border: 1px solid black;
+                margin: 20px;
+                padding: 15px;
+                font-weight:bold ;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            .navContainer {
+                border: 2px solid;
+                margin: 3px;
+                height:max-content;
+                width: 95%;
+                display: flex;
+                padding: 20px;
+               
+               
+            }
+            .navContainer div img {
+                 border: 1px solid;
+                 margin: 2px;
+                 height: 145px;
+                 padding: 10px;
+                 
+            }
+            .navContainer #side li {
+                padding: 10px;
+                font-weight: bold;
+
+            }
+            .scrollBar {
+                border: 2px solid red;
+                margin: 3px;
+                width: 100%;
+                height: 550px;
+                overflow: auto;
+
+            }
+            .footer p{
+                border: 3px solid black;
+                margin-top: 5px;
+                text-align: center;
+                text-decoration: underline;
+                padding: 10px;
+                font-weight: bold;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h3>STUDENT DETAILS PAGE</h3>
+        </div>
+        <div class="parentContainer">
+            <div class="childContainer">
+                <ol>
+                    <li>Satish</li>
+                    <li>Prasad</li>
+                    <li>Damanthi</li>
+                    <li>Thanija</li>
+                    <li>Jasmine</li>
+                    <li>Natasha</li>
+                    <li>Shankar</li>
+                    <li>Ramesh</li>
+                    <li>ShouravGanguly</li>
+                    <li>Srinivas</li>
+                </ol>
+            </div>
+            <div class="scrollBar">               
+            <div class="navContainer">
+                <h5>1.</h5>
+                <div>
+                    <img src="./employee.6.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Satish</li>
+                        <li>Age : 20</li>
+                        <li>Gender :Male</li>
+                        <li>Location :Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>2.</h5>
+                <div>
+                    <img src="./employee.1.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Prasad</li>
+                        <li>Age : 20</li>
+                        <li>Gender :Male</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>3.</h5>
+                <div>
+                    <img src="./employee.2.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Dhamanthi</li>
+                        <li>Age : 20</li>
+                        <li>Gender :Female</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>4.</h5>
+                <div>
+                    <img src="./employee.3.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Thanija</li>
+                        <li>Age : 20</li>
+                        <li>Gender :Female</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>5.</h5>
+                <div>
+                    <img src="./employee.4.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Jasmine</li>
+                        <li>Age : 20</li>
+                        <li>Gender : Female</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>6.</h5>
+                <div>
+                    <img src="./employee.5.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Natasha</li>
+                        <li>Age :20</li>
+                        <li>Gender : Female</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>7.</h5>
+                <div>
+                    <img src="./employee.1.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Shankar</li>
+                        <li>Age : 20</li>
+                        <li>Gender : Male</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>8.</h5>
+                <div>
+                    <img src="./employee.1.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Ramesh</li>
+                        <li>Age : 20</li>
+                        <li>Gender : Male</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>9.</h5>
+                <div>
+                    <img src="./employee.1.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : SouravGouguly</li>
+                        <li>Age : 20</li>
+                        <li>Gender : Male</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="navContainer">
+                <h5>10.</h5>
+                <div>
+                    <img src="./employee.1.png" alt="employee">
+                </div>
+                <div>
+                    <ul id="side">
+                        <li>Name : Srinivas</li>
+                        <li>Age : 20</li>
+                        <li>Gender : Male</li>
+                        <li>Location : Hyderabad</li>
+                    </ul>
+                </div>              
+            </div>
+            </div>
+            
+        </div> 
+        <div class="footer">
+
+            <p>@CopyRight 2023</p>
+
+        </div>
+        
+    </body>
+</html>

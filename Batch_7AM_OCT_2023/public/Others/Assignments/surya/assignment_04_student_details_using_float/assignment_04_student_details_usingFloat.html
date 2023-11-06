@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-part,
+        .footer-part{
+            width: calc(100% - 12px);
+            padding: 1rem;
+            margin: 2px;
+            border: 3px solid #ccc;
+        }
+        .header-part span
+        .footer-part span{
+            text-align: center;
+            text-transform: uppercase;
+        }
+         .main-content{
+            width: calc(100% - 16px);
+            height: calc(2216px + 13*8.3px);
+            margin: 5px;
+            border: 3px solid #ccc;
+         }
+        .left-part{
+            width:calc(20% - 16px);
+            float: left;
+            margin: 5px;
+            border: 3px solid #ccc;
+        }
+        .right-part{
+            width: calc(80% - 5px);
+            float: left;
+            margin: 5px;
+            border: 3px solid #ccc;
+        }
+        .left-part .student-name{
+            text-align: center;
+            border: 2px solid #ccc;
+            margin:6px;
+            padding: 9px;
+        }
+        .student-container{
+            margin:8px;
+            border: 2px solid #ccc;
+            height: 200px;
+            width: calc(100% - 16px);
+        }
+        .student-container_img{
+            float: left;
+            height: inherit;
+            padding: 10px;
+        }
+        .student-container_img img{
+            height: 100%;
+        }
+        .student-container_details{
+            float: left;
+            padding: 10px;
+        }
+        .student-container_details div{
+            margin: 6.5px;
+        }
+    </style>
+
+    <style>
+        @media (max-width:620px) {
+            .right-part{
+               clear: both;
+               width: calc(100% - 16px);
+            }
+            .left-part{
+                width: calc(100% - 16px);
+            }
+            .main-content{
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-part center">
+        <span>student details</span>
+    </header>
+
+    <main class="main-content">
+        <div class="left-part">
+            <div class="student-name">demo-01</div>
+            <div class="student-name">demo-02</div>
+            <div class="student-name">demo-03</div>
+            <div class="student-name">demo-04</div>
+            <div class="student-name">demo-05</div>
+            <div class="student-name">demo-06</div>
+            <div class="student-name">demo-07</div>
+            <div class="student-name">demo-08</div>
+            <div class="student-name">demo-09</div>
+            <div class="student-name">demo-10</div>
+        </div>
+        <div class="right-part">
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : dummy</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : dummy</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+            <div class="student-container">
+                <div class="student-container_img">
+                    <img src="imgs/profile_demo.jpg" alt="profile-pic">
+                </div>
+                <div class="student-container_details">
+                    <div>name : raj</div>
+                    <div>age : 10</div>
+                    <div>gender:female</div>
+                    <div>location:hyderabad</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="center footer-part">
+        <span>&#169;copyright</span>
+    </footer>
+</body>
+</html>

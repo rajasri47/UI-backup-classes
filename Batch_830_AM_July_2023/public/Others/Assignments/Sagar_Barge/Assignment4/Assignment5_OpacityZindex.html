@@ -1,0 +1,165 @@
+<html>
+<head>
+    <title>Opacity and positions</title>
+    <style> .header{
+        height: 60px;
+        width: auto;
+        text-align: center;
+        text-decoration: underline;
+        border: 2px solid;
+        font-size: 30px;
+        font-weight: bolder;
+       
+    }
+    .footer{
+                clear: both;
+                width: 1400px;
+                height: 50px;
+                border: 2px solid black;
+                margin: 3px;
+                padding: 20px;
+                text-align: center;
+                font-weight: bold;font-size: 20px;
+             }
+             .blockdiv1,.blockdiv2,.blockdiv3,.blockdiv4,.blockdiv5,.blockdiv6,.blockdiv7,.blockdiv8,.blockdiv9,.blockdiv10,
+             .blockdiv11,.blockdiv12,.blockdiv13{
+                width:100px;
+                height: 100px;
+                border: 1px solid;
+             }
+             .blockdiv1{
+                background-color: aqua;
+                position: relative;
+                left:3px;
+                top: 0px;
+                z-index: 1;
+             }
+             .blockdiv2{
+                background-color: blueviolet;
+                position: absolute;
+                left: 60px;
+                top: 130px;
+                z-index: 2;
+                opacity: 0.80;
+                z-index: 3;
+             }
+             .blockdiv3{
+                background-color: chartreuse;
+                position: absolute;
+                left: 92%;
+                 top: 76px;
+                z-index: 2;
+             }
+             .blockdiv4{
+                background-color: cornflowerblue;
+                position: absolute;
+                left: 88%;
+                top: 136px;
+                z-index: 4;
+                opacity: 0.80;
+                
+             }
+             .blockdiv5{
+                background-color: crimson;
+                position: absolute;
+                left: 42%;
+                top: 226px;
+                z-index: 2;
+             }
+             .blockdiv6{
+                background-color: cornflowerblue;
+                position: absolute;
+                left: 52%;
+                top: 226px;
+                z-index: 2;
+             }
+
+             .blockdiv7{
+                background-color: cyan;
+                position: absolute;
+                left: 42%;
+                top: 357px;
+                z-index: 2;
+             }
+             .blockdiv8{
+                background-color: darkseagreen;
+                position: absolute;
+                left: 52%;
+                top:357px;
+                z-index: 2;
+             }
+             .blockdiv9{
+                background-color: deeppink;
+                position: absolute;
+                left: 47%;
+                top:295px;
+                z-index:5;
+                opacity: 0.80;
+             }
+             .blockdiv10{
+                background-color: aqua;
+                position: absolute;
+                left: 13px;
+                 top: 480px;
+                z-index: 1;
+             }
+             .blockdiv11{
+                background-color: blueviolet;
+                position: absolute;
+                left:63px;
+                top:418px;
+                z-index: 2;
+                opacity: 0.80;
+                z-index: 3;
+             }
+             .blockdiv12{
+                background-color: chartreuse;
+                position: absolute;
+                left: 92%;
+                top: 480px;
+                z-index: 2;
+             }
+             .blockdiv13{
+                background-color: cornflowerblue;
+                position: absolute;
+                left: 88%;
+                top:418px;
+                z-index: 4;
+                opacity: 0.80;
+                
+             }
+             .maincontainer{
+
+                height: 80%;
+                width: 100%;
+                border: 2px solid black;
+                padding:2px;
+             }
+
+            
+    </style>
+</head>
+<body>
+    <div class="header" >Positions and Opacity </div>
+    <div class="maincontainer">
+    
+    <div class="blockdiv1">1</div>
+    <div class="blockdiv2">2</div>
+    <div class="blockdiv3">3</div>
+    <div class="blockdiv4">4</div>
+    <div class="blockdiv5">5</div>
+    <div class="blockdiv6">6</div>
+    <div class="blockdiv7">7</div>
+    <div class="blockdiv8">8</div>
+    <div class="blockdiv9">9</div>
+    <div class="blockdiv10">10</div>
+    <div class="blockdiv11">11</div>
+    <div class="blockdiv12">12</div>
+    <div class="blockdiv13">13</div>
+</div>
+<div class="footer" >@copywrights 2023</div>
+    
+    
+</body>
+
+</html>

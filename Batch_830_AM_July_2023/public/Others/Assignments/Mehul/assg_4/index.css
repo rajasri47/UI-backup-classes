@@ -1,0 +1,96 @@
+.mainContainer {
+    height: 50px;
+    width: auto;
+    border: 4px solid ;
+    margin: 12px 12px;
+    text-align: center;
+    padding: 12px 12px;
+    font-size: 32px;
+    background: blanchedalmond;
+}
+
+
+.full{
+    height: 740px;
+    width: auto;
+    margin: 12px 12px;
+    border: 2px solid;
+    background: #92e5e5;
+}
+
+.nameStudent{
+    height: 700px;
+    width: 300px;
+    margin: 16px;
+    border: 2px solid;
+    float: left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: aquamarine;
+}
+
+.name{
+    height: 52px;
+    width: 240px;
+    border: 2px solid;
+    margin: 12px;
+    padding: 8px;
+    list-style: none;
+    font-size: 24px;
+    
+}
+
+.name:hover{
+    background: greenyellow;
+}
+
+.detail{
+    height: 700px;
+    width: 888px;
+    margin: 16px;
+    border: 2px solid;
+    float: right;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: aquamarine;
+}
+
+
+.student {
+    height: 180px;
+    width: 800px;
+    margin: 24px;
+    border: 2px solid;
+  }
+
+.student:hover{
+    background-color: greenyellow;
+}
+
+
+.pic{
+    float: left;
+    margin: 24px;
+    padding: 12px;
+    border: 2px solid;
+}
+
+img{
+    height: 100px;
+}
+
+.fullDetail{
+    list-style: none;
+    float: right;
+    padding: 12px;
+    width: 468px;
+    
+}
+
+.info{
+    padding: 8px;
+}
+
+.info:hover{
+    background: purple;
+}

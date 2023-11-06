@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            <script>
+                var employeeDetails = () =>{
+
+                     var empDetails = {};
+
+                     empDetails.name = prompt("enter the empname");
+                     empDetails.age =  prompt("enter the empage");
+                     empDetails.gender = prompt("enter the empGender");
+                     empDetails.department = prompt("enter the empDepartment");
+                     empDetails.basicsalary = prompt("enter the empBasicsalary");
+                     empDetails.basicsalary =  parseInt(empDetails.basicsalary);
+
+                     empDetails.Hra = (empDetails.basicsalary * 24)/100;
+                     empDetails.Pf  = (empDetails.basicsalary * 12)/100;
+                     empDetails.TotalSalary = empDetails.Hra + empDetails.Pf + empDetails.basicsalary;
+
+                     console.log(empDetails);
+
+
+                     console.log("employee name is" + empDetails.name);
+                     console.log("employee Age is" + empDetails.age);
+                     console.log("employee gender is" + empDetails.gender);
+                     console.log("employee department is" + empDetails.department);
+                     console.log("employee basicsalary is" + empDetails.basicsalary);
+                     console.log("employee  Hra is" + empDetails.Hra);
+                     console.log("employee Pf is" + empDetails.Pf);
+                     console.log("employee totalsalary is" + empDetails.TotalSalary);
+
+                     empTax(empDetails);
+                     console.log("employee Tax is" + empDetails.Tax);
+
+                     salaryafteratax(empTax,empDetails);
+                     console.log("employee salaryAfterTax is" + empDetails.TotalSalaryAfterTax);
+                }
+
+                var empTax = (empDetails) => {
+
+                    if((empDetails.gender == "male") && (empDetails.TotalSalary >= 300000 )){
+                        empDetails.Tax = (empDetails.TotalSalary * 25)/100;
+                    }
+                    else if((empDetails.gender == "male") && (empDetails.TotalSalary >= 200000 )){
+                        empDetails.Tax = (empDetails.TotalSalary * 15)/100;
+
+                    }
+                    else if ((empDetails.gender == "male") && (empDetails.TotalSalary >= 100000 )){
+                        empDetails.Tax = (empDetails.TotalSalary * 10)/100;
+                    }
+
+                    if((empDetails.gender == "female") && (empDetails.TotalSalary >= 300000 )){
+                        empDetails.Tax = (empDetails.TotalSalary * 15)/100;}
+
+                    else if  ((empDetails.gender == "female") && (empDetails.TotalSalary >= 200000 )){
+                        empDetails.Tax = (empDetails.TotalSalary * 5)/100;}
+
+                    else if ((empDetails.gender == "female") && (empDetails.TotalSalary >= 100000 ))
+                    {
+                        empDetails.Tax = 0;
+                    }
+
+
+            }
+
+            var salaryafteratax = (empTax,empDetails) =>{
+
+               empDetails.TotalSalaryAfterTax = empDetails.TotalSalary - empDetails.Tax;
+
+            }
+
+                  
+
+                employeeDetails();
+
+
+
+                     
+
+
+                
+            </script>
+        </body>
+        </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding All Primes in Given Array</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows All Primes in Given Array <br>
+            Go to console tab for result...
+        </h1>
+        <script>
+            var a = [];
+            var n = prompt("enter index value of Array..");
+            n = parseInt(n);
+            var count = 0;
+
+            for(var i=0; i < n; i++){
+                 a[i] = prompt("enter the values"+i+" th position of array");
+                a[i] = parseInt(a[i]);
+            }
+
+            for(var i = 0; i < a.length; i++){
+                count = 0;
+                for(var j = 2; j <= a[i]; j++){
+                   
+                    if(a[i] % j == 0){
+                        count++;
+                    }
+                }
+                if(count == 1){
+                    console.log(a[i]);
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Student Marks</title>
+    </head>
+    <body>
+        <script>
+            alert("Enter Student Details ");
+            var name = prompt("enter name ");
+            var age = prompt("enter age");
+            var gender = prompt("enter gender");
+
+            var Telugu = prompt("enter Telugu Sbject marks");
+            Telugu = parseInt(Telugu);
+            var English = prompt("enter English marks");
+            English = parseInt(English);
+            var Hindi = prompt("enter Hindi marks");
+            Hindi = parseInt(Hindi);
+            var Maths = prompt("enter Maths marks");
+            Maths = parseInt(Maths);
+            var Science = prompt("enter Science marks");
+            Science = parseInt(Science);
+            var Social = prompt("enter Socila marks");
+            Social = parseInt(Social);
+            
+            var total = Telugu + English + Hindi + Maths + Science + Social;
+            total = parseInt(total);
+            var avg = total / 6;
+            avg = parseInt(avg);
+
+            console.log("Below are the Student Ddetails");
+            console.log("Name is " +name);
+            console.log("Age is " +age);
+            console.log("Gender is " +gender);
+            console.log("total marks of student is " +total);
+            console.log("Percentage is " + avg);
+            
+        </script>
+    </body>
+</html>

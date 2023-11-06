@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amtrong</title>
+</head>
+<body>
+    <script>
+        var n = 153;
+        var o ;
+        o = n;
+        var remainder ;
+        var res = 0 ;
+        while(n != 0){
+            remainder = n % 10;
+            res += remainder * remainder * remainder ;
+            n /= 10 ;
+            n = parseInt(n);
+        }
+        if (res == o ){
+            console.log("amstrong number")
+        }
+    </script>
+</body>
+</html>

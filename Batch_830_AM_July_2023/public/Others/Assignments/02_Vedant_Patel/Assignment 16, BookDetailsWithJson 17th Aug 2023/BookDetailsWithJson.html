@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookDetailsWithJson</title>
+</head>
+
+<body>
+    <h1>TO VIEW THE BOOK DETAILS OPEN CONSOLE</h1>
+    <script>
+        let book = {
+            Title: "Wings of Fire",
+            Author: ["A P J Abdul Kalam", " Arun Tiwari"],
+            Price: 200,
+            ISBN: "81-7371-146-1 (paperback edition)",
+            Publisher: "Universities Press",
+
+            BookDetails() {
+                console.log(book);
+                console.log("Book Name is " + this.Title);
+                console.log("Book Author is " + this.Author);
+                console.log("Book Price is " + this.Price);
+                console.log("Book ISBN is " + this.ISBN);
+                console.log("Book Publisher is " + this.Publisher);
+
+            }
+        }
+        book.BookDetails();
+    </script>
+</body>
+
+</html>

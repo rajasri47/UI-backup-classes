@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+          Demostrating strings
+        </title>
+    </head>
+    <body>
+        <script>
+            //find total no of chatacters in given string
+            var msg1 = ("hello every one");
+            var count = 0;
+           for(var i =0;i <msg1.length;i++){
+            if(msg1!=''){
+                count++;
+            }
+           }
+            console.log("total no of characters is:", count);
+            //findout total no of words eith in the string
+            var msg = ("hello every one , god morning");
+            var words = msg.split(" ");
+            var numwords = words.length;
+            console.log("total number of words:",numwords);
+
+            //find out vowles given string
+            var data = "a,t,e,i,l";
+            var vowles = ('a,e,i,o,u');
+           /*var vowlestring = (" ");
+            for (var i = 0 ; i < data.length ; i++){
+                if(vowles.includes(data[i])){
+                    vowlestring += data[i];
+                }
+            }
+            console.log("voweles is:",  vowlestring);*/
+            //fin out  no of vowles in the string
+            var count = 0; 
+            for( var i = 0 ; i < msg.length ; i++){
+                if(vowles.includes(msg[i])){
+                    count ++;
+
+                }
+            }
+            console.log("no of voweles:" , count);
+
+
+
+            //find out no of digits given string
+            var numstring = ("ab12nj56nh6");
+            var numcount = 0;
+            for(var i = 0 ; i < numstring.length ; i++){
+                if(!isNaN(numstring[i])){
+                    numcount ++;
+                }
+            }
+            console.log("total no of digits is:",numcount);
+
+
+            //find out no of spcial symbols of given string
+            var symstring = ("fff##hgrf***hbgg%%");
+            var spcialsymbols = ["!@#$%^&*/"] ;
+            var symcount = 0;
+            for (var i = 0 ; i<symstring.length; i++){
+                if (spcialsymbols.includes(symstring[i])){
+                    symcount ++;
+                }
+            } 
+            console.log("total number of spcial symbols is :", symcount);
+            //check weither the srtring is part of main string or not
+            var mainstring = ('hello evry one, godd morning');
+            var givenstring =('one')
+            if(mainstring.indexOf(givenstring)!==-1){
+                console.log("given string is part of main string")
+            }else{
+                console.log("given string is not a part of main string");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Detail Registration Page</title>
+    <style>
+      .header {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+      }
+
+      form {
+        display: flex;
+        height: 798px;
+        border: 1px solid red;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      .userDetails {
+        display: block;
+        height: 200px;
+        padding: 10px 10px 10px 41px;
+        border: 1px solid red;
+        position: relative;
+        margin: 10px;
+      }
+
+      .title {
+        display: flex;
+        height: 39px;
+        width: 200px;
+        border: 1px solid red;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: white;
+        top: -25px;
+      }
+
+      .userDetails input,
+      .userDetails label,
+      .userDetails textarea {
+        position: absolute;
+      }
+
+      input[name="userName"] {
+        left: 97px;
+      }
+
+      label[for="age"] {
+        top: 104px;
+      }
+
+      input[name="age"] {
+        top: 104px;
+        left: 89px;
+      }
+
+      label[for="gender"] {
+        top: 165px;
+      }
+
+      input[name="male"] {
+        top: 165px;
+        left: 98px;
+      }
+
+      label[for="male"] {
+        top: 165px;
+        left: 131px;
+      }
+
+      input[name="female"] {
+        top: 165px;
+        left: 192px;
+      }
+
+      label[for="female"] {
+        top: 165px;
+        left: 226px;
+      }
+
+      label[for="address"] {
+        left: 566px;
+      }
+
+      textarea[name="address"] {
+        left: 638px;
+      }
+
+      .educationDetails {
+        display: block;
+        height: 200px;
+        padding: 10px 10px 10px 41px;
+        border: 1px solid red;
+        position: relative;
+        margin: 10px;
+      }
+
+      .box {
+        display: flex;
+        height: 70px;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid none;
+      }
+
+      .qualification {
+        display: flex;
+        height: 50px;
+        width: 521px;
+        border: 1px solid none;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .qualification input,
+      .qualification label {
+        position: absolute;
+      }
+
+      input[name="mca"] {
+        left: 138px;
+      }
+
+      label[for="mca"] {
+        left: 169px;
+      }
+
+      input[name="mba"] {
+        left: 221px;
+      }
+
+      label[for="mba"] {
+        left: 253px;
+      }
+
+      input[name="btech"] {
+        left: 312px;
+      }
+
+      label[for="btech"] {
+        left: 338px;
+      }
+
+      .course {
+        display: flex;
+        height: 50px;
+        width: 400px;
+        border: 1px solid none;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+      }
+
+      select[name="course"] {
+        position: absolute;
+        left: 135px;
+        width: 181px;
+      }
+
+      input[name="english"] {
+        position: absolute;
+        left: 146px;
+      }
+
+      label[for="english"] {
+        position: absolute;
+        left: 177px;
+      }
+
+      input[name="hindi"] {
+        position: absolute;
+        left: 261px;
+      }
+
+      label[for="hindi"] {
+        position: absolute;
+        left: 291px;
+      }
+
+      input[name="marathi"] {
+        position: absolute;
+        left: 366px;
+      }
+
+      label[for="marathi"] {
+        position: absolute;
+        left: 395px;
+      }
+
+      input[name="telugu"] {
+        position: absolute;
+        left: 486px;
+      }
+
+      label[for="telugu"] {
+        position: absolute;
+        left: 516px;
+      }
+
+      .about {
+        display: block;
+        height: 200px;
+        padding: 10px 10px 10px 41px;
+        border: 1px solid red;
+        position: relative;
+        margin: 10px;
+      }
+
+      label[for="about"] {
+        position: relative;
+        top: -144px;
+      }
+
+      .submitButton {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: flex-end;
+        border: 1px solid none;
+        margin: 10px;
+      }
+
+      .submitButton input {
+        margin-right: 10px;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        border: 1px solid red;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Student Details Registration Page</h2>
+    </div>
+    <form action="" method="post">
+      <div class="userDetails">
+        <div class="title">
+          <h3>User Details</h3>
+        </div>
+        <label for="userName">Name:</label>
+        <input name="userName" type="text" />
+
+        <label for="age">Age:</label>
+        <input name="age" type="number" />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="female" />
+        <label for="female">Female</label>
+
+        <label for="address">Address:</label>
+        <textarea
+          name="address"
+          placeholder="Enter your permanent address"
+          cols="60"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="educationDetails">
+        <div class="title">
+          <h3>Education Details</h3>
+        </div>
+        <div class="box">
+          <div class="qualification">
+            <label for="qualification">Qualification:</label>
+            <input type="checkbox" name="mca" />
+            <label for="mca">MCA</label>
+            <input type="checkbox" name="mba" />
+            <label for="mba">MBA</label>
+            <input type="checkbox" name="btech" />
+            <label for="btech">Btech</label>
+          </div>
+          <div class="course">
+            <label for="course">Course opted for:</label>
+            <select name="course"></select>
+          </div>
+        </div>
+        <div class="box">
+          <label for="languages">Languages:</label>
+          <input type="checkbox" name="english" />
+          <label for="english">English</label>
+          <input type="checkbox" name="hindi" />
+          <label for="hindi">Hindi</label>
+          <input type="checkbox" name="marathi" />
+          <label for="marathi">Marathi</label>
+          <input type="checkbox" name="telugu" />
+          <label for="telugu">Telugu</label>
+        </div>
+      </div>
+      <div class="about">
+        <div class="title">
+          <h3>About Yourself</h3>
+        </div>
+        <label for="about">Tell few words about yourself:</label>
+        <textarea name="about" cols="60" rows="10"></textarea>
+      </div>
+      <div class="submitButton">
+        <input type="button" value="Register" />
+      </div>
+    </form>
+    <div class="footer">
+      <b>Copyright @ 2023</b>
+    </div>
+  </body>
+</html>

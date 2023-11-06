@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty pseudo class</title>
+    <style>
+        h1{
+            color: rgb(87, 17, 17);
+            text-align: center;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            font-size: 20px;
+            margin:10px auto
+
+        }
+        
+        .empty{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>TOPPERS</h1>
+    <table style="border: 3px solid;" border="1px" cellspacing="4px" cellpadding="2px">
+          <thead>
+            <tr>
+                <td>Name</td>
+                <td>Roll No.</td>
+                <td>Marks</td>
+                <td>Percent</td>
+                <td>Rank</td> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Ramesh</td>
+                <td>32</td>
+                <td>546</td>
+                <td>89%</td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td>Nidhi</td>
+                <td>24</td>
+                <td>504</td>
+                <td>80%</td>
+                <td>2nd</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>30</td>
+                <td>480</td>
+                <td class="empty"></td>
+                <td>3rd</td>
+            </tr>
+          </tbody>
+
+    </table>
+</body>
+</html>

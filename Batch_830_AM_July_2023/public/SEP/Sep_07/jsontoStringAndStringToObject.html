@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var temp = "{age: 20, 'gender': 'male'}"
+
+
+
+            var data = {
+                name: 'Krish',
+                age: 20,
+                gender: 'Male',
+                address: {
+                    code: 'a_20'
+                }
+            };
+
+            console.log(data);
+            console.log(typeof(data));
+            var sample = JSON.stringify(data);
+
+            console.log(sample);
+            console.log(typeof(sample));
+
+            console.log(JSON.parse(sample))
+
+            
+        </script>
+    </body>
+</html>

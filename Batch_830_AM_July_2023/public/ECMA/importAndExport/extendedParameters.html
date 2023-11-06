@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var addValues = (a, b, ...temp) => {
+                console.log(temp)
+                var result = 0;
+                result = a + b;
+
+                // for (var i = 0 ; i < temp.length; i++) {
+
+                // }
+                temp.forEach((value) => {
+                    result += value;
+                })
+                return result;
+            }
+
+            var sum = addValues(20, 30);
+            console.log("Teh sum is " + sum)
+
+            sum = addValues(20.5, 30.2, 20, 10);
+            console.log("Teh sum is " + sum)
+
+
+            sum = addValues(10, 90, 100);
+            console.log("Teh sum is " + sum)
+
+            sum = addValues(6, 11, 30, 40, 60, 90);
+            console.log("Teh sum is " + sum);
+
+
+            // merging arrays
+
+            var a1 = [23, 45, 89];
+
+            var a2 = ["raj", "teena", 'Female']
+
+            var sample = [...a1, [...a2]]
+
+            console.log(sample)
+
+            var temp = [...a1, 100, 101 ]
+
+            console.log(temp)
+
+            
+        </script>
+    </body>
+</html>

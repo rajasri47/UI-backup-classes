@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data= [12,2,34,54,45,6,76,67,8,78,99,90,76,61,16,23,3,43];
+        max = data[0];
+        slargest = 0;
+        for(var i = 0; i< data.length; i++){
+            if(data[i]>max){
+                if(slargest<max){
+               slargest = max;
+               }
+               max = data[i];
+            } else if (slargest<data[i] && data[i]<max){
+                slargest = data[i];
+            }
+        }
+        console.log(`Largest no. in array is ${max}`);
+        console.log(`Second largest no. in array is ${slargest}`);
+    </script>
+</body>
+</html>

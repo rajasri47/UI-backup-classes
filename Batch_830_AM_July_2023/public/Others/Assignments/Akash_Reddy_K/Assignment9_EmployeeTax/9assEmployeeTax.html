@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Employe Tax</title>
+    </head>
+    <body>
+        <script>
+            var ename = prompt("Enter Employee name");
+            var age = prompt("Enter Employee Age");
+            var dprt = prompt("Enter Employee Department");
+            var gender = prompt("Enter the gender of the Employee(male/female)");
+            var bsal= prompt("Enter Employee Basic  salary");
+            bsal = parseInt(bsal);;
+            var pf = (12*bsal)/100;
+            var hra = (24*bsal)/100;
+            var tsal = bsal+pf+hra;
+            console.log("Employee Name : "+ename);
+            console.log("Employee Age : "+age);
+            console.log("Employee Gender : "+gender);
+            console.log("Employee Department : "+dprt);
+            console.log("Employee Basic Salary : "+bsal);
+            console.log("Employee PF : "+pf);
+            console.log("Employee HRA : "+hra);
+            console.log("Employee Total Salary : "+tsal);
+
+            if(gender == 'male'){
+                if(tsal>=300000){
+                    console.log("As your are a male and your salary is above 300000 you have to pay 15% tax")
+                    var tax = (15*tsal)/100;
+                    console.log("Tax should be paid = "+tax)
+                    ttsal = tsal-tax;
+                    console.log("Salary after tax deduction = "+ttsal)
+                }
+                else if(tsal<300000 && tsal>200000){
+                    console.log("As your are a male and your salary is above 200000 you have to pay 10% tax");
+                    var tax = (10*tsal)/100;
+                    console.log("Tax should be paid = "+tax);
+                    ttsal = tsal-tax;
+                    console.log("Salary after tax deduction = "+ttsal);
+                }
+                else if(tsal<200000 && tsal>100000){
+                    console.log("As your are a male and your salary is above 100000 you have to pay 5% tax");
+                    var tax = (5*tsal)/100;
+                    console.log("Tax should be paid = "+tax);
+                    ttsal = tsal-tax;
+                    console.log("Salary after tax deduction = "+ttsal);
+                }
+                else{
+                    console.log("As your salary is less than 100000 you no need to pay tax");
+
+                }
+            }
+            else if (gender == 'female'){
+                if(tsal>=300000){
+                    console.log("As your are a female and your salary is above 300000 you have to pay 10% tax")
+                    var tax = (10*tsal)/100;
+                    console.log("Tax should be paid = "+tax)
+                    ttsal = tsal-tax;
+                    console.log("Salary after tax deduction = "+ttsal)
+                }
+                else if(tsal<300000 && tsal>200000){
+                    console.log("As your are a male and your salary is above 200000 you have to pay 5% tax")
+                    var tax = (5*tsal)/100;
+                    console.log("Tax should be paid = "+tax)
+                    ttsal = tsal-tax;
+                    console.log("Salary after tax deduction = "+ttsal)
+                }
+                else{
+                    console.log("As your salary is less than 200000 you no need to pay tax");
+
+                }
+            }
+            else{
+                console.log("Error:give gender correctly only male/female")
+            }
+            
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Demonstrate Ascending and Decending order  </title>
+    </head>
+    <body>
+        <h3>To Re-Arenge The Values b/w ascending and Decending Order .....!</h3>
+        <script>
+            var num=[4,9,83,20,23,45,67,89,70,65,24,99];
+            for(var i=0;i<num.length;i++){
+                for(var j=0;j<num.length;j++){
+                    if(num[i]<num[j]){//ascending order
+                        var temp=num[i];
+                        num[i]=num[j];
+                        num[j]=temp;
+                    }
+                }
+            }
+            console.log(num);
+            var value=[34,87,50,47,13,25,45,22,88,66];
+            for(var i=0;i<value.length;i++){
+                for(var j=0;j<value.length;j++){
+                    if(value[i]>value[j]){//decending order
+                        var temp=value[i];
+                        value[i]=value[j];
+                        value[j]=temp;
+                    }
+                }
+            }
+            console.log(value);
+            
+            
+        </script>
+    </body>
+</html>

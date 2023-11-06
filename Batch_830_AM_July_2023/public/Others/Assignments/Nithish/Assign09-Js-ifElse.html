@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employeer Salary Details</title>
+</head>
+    <body>
+        <script>
+
+            var empName=prompt("Enter empName: ");
+            var empAge=prompt("Enter empAge: ");
+            var Gender=prompt("Enter Gender: ");
+            var Department=prompt("Enter Department: ");
+            var basicSalary=prompt("Enter basicSalary: ");
+            basicSalary=parseInt(basicSalary);
+
+            var HRA=(basicSalary*24)/100;
+            var PF=(basicSalary*12)/100;
+            var totalSalary=HRA+PF+basicSalary;
+
+            console.log("Employeer Name : "+empName);
+            console.log("Employeer Age : "+empAge);
+            console.log("Employeer Gender : "+Gender);
+            console.log("Employeer Department : "+Department);
+            console.log("Employeer BasicSalary : "+basicSalary);
+            console.log("Employeer HRA : "+HRA);
+            console.log("Employeer PF : "+PF);
+            console.log("Employeer Total Salary Without Tax: "+totalSalary);
+
+            if(Gender=='male'){
+                if(basicSalary>=300000){
+                    var tax=(15*totalSalary)/100;
+                    console.log("Amount of tax Should pay: "+tax);
+                    totalSalary=totalSalary-tax;
+                    console.log("Salary after tax deduction: "+totalSalary);
+                }
+                else if(basicSalary<=300000 && basicSalary>=200000){
+                    var tax=(10*totalSalary)/100;
+                    console.log("Amount of tax Should pay: "+tax);
+                    totalSalary=totalSalary-tax;
+                    console.log("Salary after tax deduction: "+totalSalary);
+                }
+                else if(basicSalary<=200000 && basicSalary>=100000){
+                    var tax=(5*totalSalary)/100;
+                    console.log("Amount of tax Should pay: "+tax);
+                    totalSalary=totalSalary-tax;
+                    console.log("Salary after tax deduction: "+totalSalary);
+                }
+                else{
+                    console.log("Based on your salary No tax deducation: "+totalSalary);
+                }
+            }
+
+            else if(Gender=='female'){
+                if(basicSalary>=300000){
+                    var tax=(10*totalSalary)/100;
+                    console.log("Amount of tax Should pay: "+tax);
+                    totalSalary=totalSalary-tax;
+                    console.log("Salary after tax deduction: "+totalSalary);
+                }
+                else if(basicSalary<=300000 && basicSalary>=200000){
+                    var tax=(5*totalSalary)/100;
+                    console.log("Amount of tax Should pay: "+tax);
+                    totalSalary=totalSalary-tax;
+                    console.log("Salary after tax deduction: "+totalSalary);
+                }
+                else{
+                    console.log("Salary With No tax deducation: "+totalSalary);
+                }
+            }
+            
+            else{
+                console.log("Choose Gender Either Male or Female");
+            }
+        </script>        
+    </body>
+</html>

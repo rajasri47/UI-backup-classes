@@ -1,0 +1,67 @@
+Limitations of Inline css
+    1. Dupllication/Repeating of code 
+    2. Maintenance Of code,
+
+CSS Classes: 
+
+
+    .sampleclassname {
+        color: green;
+        .... 
+        .... 
+        .... 
+
+    }
+
+
+    <tagname class="sampleclassname">
+        ... 
+        ..
+    </tagname>
+
+
+    <tag2 class="sampleclassname">
+        ...
+        ...
+    </tag2>
+
+    Eg of class names:
+
+        .newsSubHeader { // mostly recommended
+
+        }
+
+        .news-sub-header {
+
+        }
+
+        .news_sub_header {
+
+        }
+
+        .newssubheader {
+
+        }
+
+        <p>...</p>
+
+Comments: 
+
+    CSS 
+        /*  
+            .. 
+            ...
+        */
+
+    HTML: 
+        <!-- 
+        .   ...
+            ....
+        -->
+
+    ctl + /
+
+    JS 
+        // single line 
+
+        /* */ multi line

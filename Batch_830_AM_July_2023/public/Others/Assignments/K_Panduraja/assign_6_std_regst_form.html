@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration details</title>
+    <style>
+        h3{
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid black;
+            padding: 5px;
+            background-color: darkgoldenrod;
+        }
+        .bodycontent{
+            border: 2px solid black;
+            height: 515px;
+        }
+
+        div ul li { 
+            padding: 5px;
+            list-style-type: none;
+        }
+        div ul{
+            border: 2px solid black;
+            padding: 5px;
+            margin-top: 25px ;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        div ul:first-child{
+            padding-top: 35px;
+        }
+        .box1{
+            border: 2px solid black;
+            width: 125px;
+            margin-left: 45px;
+            position: absolute;
+            top: 89px;
+            z-index: 2;
+            background-color: #fff;
+            padding-left: 10px;
+            background-color: khaki;
+        }
+        .box2{
+            border: 2px solid black;
+            width: 125px;
+            margin-left: 45px;
+            position: absolute;
+            top: 285px;
+            z-index: 2;
+            background-color: #fff;
+            padding-left: 10px;
+            background-color: khaki;
+        }
+        .box3{
+            border: 2px solid black;
+            width: 125px;
+            margin-left: 45px;
+            position: absolute;
+            top: 383px;
+            z-index: 2;
+            background-color: #fff;
+            padding-left: 10px;
+            background-color: khaki;
+        }
+        #submit{
+            position: absolute;
+            left: 1100px;
+            margin: 10px ;
+            font-size: 15px;
+            padding: 5px 30px;
+            top: 530px;
+        }
+        .course{
+            position: absolute;
+            left:600px ;
+        }
+        .address{
+            position: absolute;
+            left: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Student Registration Details</h3>
+    <div class="box1">User Details</div>
+       <div class="bodycontent">
+        <ul>
+            <li class="address">
+                <label for="address">Address : </label><br>
+                 <textarea name="address"  cols="60" rows="4"></textarea>
+            </li>
+            <li>
+                <label for="fname">Enter First Name: </label>
+                <input type="text" name="fname">
+            </li>
+            <li>
+                <label for="lname">Enter Last Name: </label>
+                <input type="text" name="lname">
+            </li>
+            <li>
+                <label for="age">Age : </label>
+                <input type="text" name="age" >
+            </li>
+            <li>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Others
+
+            </li>
+        </ul>
+        <div class="box2">Education Details</div>
+        <ul>
+            <li class="course">
+                <label for="course">Course Opted : </label>
+                <select name="course">
+                    <option value="course">MECH</option>
+                    <option value="course">ECE</option>
+                    <option value="course">EEE</option>
+                    <option value="course">CSE</option>
+                    <option value="course">CE</option>
+                    <option value="course">Course</option>
+                </select>
+            </li>
+            <li>
+                <label for="Qualification">Qualification:</label>
+                <input type="radio" name="Qualification">MBA
+                <input type="radio" name="Qualification">MCA
+                <input type="radio" name="Qualification">Btech
+            </li>
+            <li>
+                <label for="Language">Known Language : </label>
+                <input type="checkbox" name="Language">Tamil
+                <input type="checkbox" name="Language">Telugu
+                <input type="checkbox" name="Language">English
+                <input type="checkbox" name="Language">Urdu
+            </li>
+        </ul>
+        <div class="box3">About</div>
+        <ul>
+            <li>
+                <label for="selfIntero">Tell me about yourself : </label><br>
+                <textarea name="selfIntro" cols="90" rows="5"></textarea>
+            </li>
+        </ul>
+        <div>
+            <label for="submit"></label>
+            <input id="submit" type="button" value="Save Here">
+        </div>
+       </div>        
+    <h3>@copyrights 2023</h3>
+</body>
+</html>

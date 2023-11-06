@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Security through closure and accessing closure data outside of closure</title>
+</head>
+<link rel="stylesheet" href="closure.css">
+<script src="closure.js"></script>
+<script src="lib/mathOperations.js"></script>
+<body>
+    <ul>
+        <li>
+            Enter First Value:
+            <input type="text" id="fval">
+        </li>
+        <li>
+            Enter Second Value:
+            <input type="text" id="sval">
+        </li>
+        <li>
+            <input type="button" value="Do Addition" onclick="doJob('add')">
+            <input type="button" value="Do Substraction" onclick="doJob('sub')">
+            <input type="button" value="Do Multiplication" onclick="doJob('mul')">
+            <input type="button" value="Do Division" onclick="doJob('div')">
+
+        </li>
+        <li id="rBlock">
+
+        </li>
+        <li id="countBlock">
+
+        </li>
+    </ul>
+    
+</body>
+</html>

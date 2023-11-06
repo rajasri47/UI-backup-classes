@@ -1,0 +1,73 @@
+JS 
+
+    core js 
+        basics
+        DHTML
+
+    adv js 
+        JSON
+        Classes
+        OOPS
+        Closures
+        Exception handlings
+
+    ECMA
+        ..
+
+Exception handling 
+
+    Error
+        Compile time errors 
+        Runtime erros / Exceptions
+
+
+    Compilation 
+        1. check for any syntactical erros 
+        2. convert to system understandbale lang
+
+    Execution/Runtime .
+        execute code and show result back 
+
+        C / C++ -> TC 
+
+        JAva -> JVM /JRE 
+
+        JS -> JS engine 
+
+
+
+
+try
+catch 
+finally
+throw
+throws
+
+----------------------
+
+types of Errors :
+
+
+    Compiletime errors 
+        syntactical Errors
+    Runtime errors 
+        element not found 
+        array index out of bounds
+        open a file which is not existing 
+
+    Userdefined errors .
+        if age < 21 error 
+
+Syntax:
+
+    try {
+        .... 
+        .... 
+        .... // set of instructions in which there is a chance of getting runtime error 
+    } catch(error) {
+        ..
+        ... //set of instructions to handle the error got raised within the try block 
+    } finally {
+        ... 
+        ... // set of instructions which for sure gets executed, irrelevant of wheter exception got raised or not
+    }

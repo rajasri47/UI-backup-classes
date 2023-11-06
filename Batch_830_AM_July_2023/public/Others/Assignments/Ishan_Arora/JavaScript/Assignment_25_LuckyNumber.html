@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 25
+        </title>
+    </head>
+    <body>
+        <h1>
+            Lucky Number
+        </h1>
+        <script>
+            var n = prompt("Enter Number: ");
+            n = parseInt(n);
+            var temp = n;
+            var len = n.toString().length;
+            var rem, sum = 0;
+            while (n > 0) {
+                rem = n % 10;
+                n /= 10;
+                n = parseInt(n);
+                sum += rem;
+                if (n == 0 && sum > 9) { //changing n if sum is in more than one digit
+                    n = sum;
+                    sum = 0;
+                }
+            }
+            console.log("Lucky Number of " + temp + " is " + sum);
+        </script>
+    </body>
+</html>

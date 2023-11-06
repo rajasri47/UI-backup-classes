@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Pesudo Classes
+        </title>
+        <style>
+            .block {
+                border: 1px solid;
+                text-align: center;
+                font-size: 20px;
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+            }
+            .block:hover {
+                background-color: green;
+                font-weight: bold;
+            }
+            a:visited {
+                color: green;
+            }
+            a:focus {
+                background-color: yellow;
+            }
+            a:active {
+                color: red;
+                font-size: 25px;
+            }
+            div:empty {
+                background-color: greenyellow;
+                padding: 10px;
+                margin: 10px;
+            }
+            span:first-child {
+                background-color: aqua;
+            }
+            span:last-child {
+                background-color: aquamarine;
+            }
+            span:nth-child(4) {
+                background-color: yellow;
+            }
+
+            span:nth-child(even) {
+                background-color: yellow;
+            }
+            span:nth-child(odd) {
+                background-color: red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="block ">BLOCK 1</div>
+
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.amazon.com">Amazon</a>
+        <a href="http://www.flipkart.com">Fipkart</a>
+        <a href="http://www.shopclues.com">Shopclues</a>
+
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div></div>
+        <div></div>
+        <div>Item 4</div>
+
+        <div>
+            <span>Item 1</span>
+            <span>Item 2</span>
+            <span>Item 3</span>
+            <span>Item 3</span>
+            <span>Item 3</span>
+            <span>Item 3</span>
+
+            <span>Item 4</span>
+        </div>
+    </body>
+</html>

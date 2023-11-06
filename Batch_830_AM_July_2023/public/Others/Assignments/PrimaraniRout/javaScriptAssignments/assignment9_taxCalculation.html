@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Total salary & tax calculation</title>
+        <style>
+            .li{ 
+                font-size: 30px;
+                margin: 7px;
+                font-style: normal;
+                list-style-type:decimal;
+             }
+            .header{
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3 class="header"> To see the Employee's total salary structure follow the instructions below</h3>
+
+        <ol>
+            <li class = li><b><u> Right click</u></b> on the page</li>
+            <li class = li>Click on <b><u> Inspect</u></b></li>
+            <li class = li>Click on<b><u> Console</u></b></li>
+        </ol>
+
+        <script>
+            var empName = prompt("Enter employee name");
+            var gender = prompt("Enter your gender");
+            var age = prompt("Enter your age");
+            var department = prompt("Enter your department");
+            var basicSal = prompt("Enter your basicSalary");
+            basicSal = parseInt(basicSal);
+
+            var PF = (basicSal * 10 )/100;
+            var HRA = (basicSal * 15 )/100;
+
+            totalSalary = basicSal + PF + HRA;
+
+            console.log("Employee name is " + empName);
+            console.log("Employee gender is " + gender);
+            console.log("Employee age is " + age);
+            console.log("Department is " + department);
+            console.log("PF is " + PF);
+            console.log("HRA is " + HRA);
+            console.log("TotalSalary is " + totalSalary);
+
+            if(gender==('male')){
+                    if(totalSalary >= 300000){
+                        console.log("tax = " + (totalSalary * 15/100));
+                }
+                    if(totalSalary >= 200000 && totalSalary < 300000){
+                        console.log("tax = " + (totalSalary * 10/100));
+                }
+                    if(totalSalary >= 100000 && totalSalary < 200000){
+                        console.log("tax = " + (totalsalary * 5/100));
+                }
+                    if(totalSalary < 100000){ 
+                        console.log("zero tax");
+                }
+            }
+
+            if(gender==('female')){
+                    if(totalSalary >= 300000){
+                        console.log("tax = " + (totalSalary * 10/100));
+                }
+                    if(totalSalary >= 200000 && totalSalary < 300000){
+                        console.log("tax =" + (totalSalary * 5/100));
+                }
+                    if(totalSalary < 200000){ 
+                        console.log("zero tax");
+                }
+            }
+
+        </script>
+    </body>
+</html>

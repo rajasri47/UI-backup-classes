@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Different ways of declaring function
+        </title>
+    </head>
+    <body>
+        <script>
+            var displayMsg, showMsg;
+            displayMsg();
+
+            /*function displayMsg() {
+                console.log("Am from disply msg");
+            }*/ 
+            var displayMsg = function() {
+                console.log("Am from disply msg");
+            }
+
+            displayMsg();
+
+            var showMsg = 90; // number 
+            console.log(typeof(showMsg))
+            var showMsg = "hello" // string
+            console.log(typeof(showMsg))
+            var showMsg = true; // boolean 
+            console.log(typeof(showMsg))
+            var showMsg = undefined;
+            console.log(typeof(showMsg))
+
+            var showMsg = function() { // function
+
+            }
+            console.log(typeof(showMsg))
+        </script>
+    </body>
+</html>

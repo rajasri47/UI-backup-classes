@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENTS MARKS DETAILS </title>
+    <style>
+        .h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE REPORT CARD OF STUDENT OPEN DEBUGGER TOOL (Inspect-Console)</h1>
+    <h2 class="h2">Thanks for watching! Hope this assignment will helpfull to gain your knowledge</h2>
+    <script type="text/javascript">
+        var Sname = prompt("Enter your Name ");
+        var age = prompt("Enter your age ");
+        var m1 = prompt("Enter your Science marks");
+        m1 = parseInt(m1);
+        var m2 = prompt("Enter your English marks");
+        m2 = parseInt(m2);
+        var m3 = prompt("Enter your Math marks");
+        m3 = parseInt(m3);
+        var m4 = prompt("Enter your Physics marks");
+        m4 = parseInt(m4);
+        var m5 = prompt("Enter your Chemistry marks");
+        m5 = parseInt(m5);
+        var total = m1 + m2 + m3 + m4 + m5;
+        var perc = total / 5;
+
+
+        console.log("Student Name is: " + Sname)
+        console.log("Student Age is: " + age)
+        console.log("Marks of Science: " + m1);
+        console.log("Marks of Engish: " + m2);
+        console.log("Marks of Maths: " + m3);
+        console.log("Marks of Physics: " + m4);
+        console.log("Marks of Chemistry: " + m5);
+        console.log("Total marks is: " + total);
+        console.log("You Got " + perc + " percentage");
+        // console.log("Congratualtions! You are passed ");
+        // console.log("type of age: " + typeof (age));
+        // console.log("type of name " + typeof (name));
+        if (perc < 35) {
+            console.log("Sorry! You have Failed");
+        }
+        else {
+            console.log("Congratualtions! You have passed ");
+        }
+
+    </script>
+</body>
+
+</html>

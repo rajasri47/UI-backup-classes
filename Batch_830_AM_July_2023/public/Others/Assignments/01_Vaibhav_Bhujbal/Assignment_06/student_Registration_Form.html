@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainHeading{
+            margin: 10px;
+            border: 1px solid;
+            padding: 10PX;
+            text-align: center;
+            text-decoration: underline;
+        }
+        li{
+            list-style-type: none;
+        }
+        .mainContainer{
+            height: 640px;
+            width: 100%;
+            border: 1px solid;
+        }
+        .userDetailsFieldset{
+            border: 1px solid;
+            height: 30px;
+            width: 150px;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 5px;
+            position: relative;
+            top: -15px;
+            left: 10px;
+            background-color: white;
+        }
+        .userContent{
+            padding: 15px;
+            margin-left: 30px;
+            
+        }
+        .addressContent{
+            position: absolute;
+            top: 120px;
+            right: 164px;
+        }
+        .address{
+            position: absolute;
+            top: 10px;
+            right: 250px;
+        }
+        .userDetails{
+            height: auto;
+            border: 1px solid;
+            margin: 25px ;
+        }
+        .educationalDetails{
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px;
+        }
+        .userContent{
+
+        }
+        .fieldset li{
+            margin: 10px;
+        }
+        .span1{ position: absolute;
+            top: 337px;
+             right: 14%;
+
+        }
+        .userDetailsFieldset{
+            border: 1px solid;
+        }
+        .fieldset{
+            border: 1px solid;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 5px;
+            position: relative;
+            top: -25px;
+            left: 10px;
+            background-color: white;
+            
+        }
+        .newLi{
+            margin-top: 15px;
+
+        }
+        .aboutYourself{
+            border: 1px solid;
+            margin: 20px;
+            padding: 10px;
+            
+        }
+        .about{
+            border: 1px solid;
+            height: 30px;
+            box-sizing: border-box;
+            padding: 5px;
+            width: 150px;
+            position: relative;
+            top: -23px;
+            left: 10px;
+            background-color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="mainHeading">
+        Student Details Registration Page
+    </h2>
+    <div class="mainContainer">
+    <div class="userDetails">
+        <li class="userDetailsFieldset"> User Details</li>
+        <li class="userContent"><label for="fname">Name:</label>
+        <input type="text" name="uname">
+        </li>
+        <li class="userContent"><label for="age">Age:</label>
+        <input type="number" name="age">
+        </li>
+        <li class="userContent"><label for="gender">Gender :</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        </li>
+        <li class="addressContent">
+           <label class="address" for="">Address:</label> 
+            <textarea name="address" id="" cols="30" rows="5"></textarea>
+        </li>
+    </div>
+    <div class="educationalDetails">
+        <div class="fieldset">
+            Education Details
+        </div>
+        <li class="newLi"><label for="qualification">Qualification</label>
+        <input type="checkbox">MCA
+        <input type="checkbox">MBA
+        <input type="checkbox">B-tech
+        </li>
+        <span class="span1">
+            <label for="course"> Courser Opted For:
+            </label>
+            <select name="course" id="">
+                <option value="">Select Course</option>
+                <option value=""> UI Fullstack</option>
+                <option value="">Java Fullstack</option>
+                <option value="">.Net Fullstack</option>
+            </select>
+        </span>
+        <li class="newLi">
+            <label for="">Language Known</label>
+            <input type="checkbox" required>English
+            <input type="checkbox">Hindi
+            <input type="checkbox" name="" id="">Marathi
+        </li>
+    </div>
+    <div class="aboutYourself">
+        <li class="about">About Yourself</li>
+        <li>
+            <label for="">Tell me about yourself :</label><br>
+            <textarea name="aboutYourself" id="" cols="30" rows="10"></textarea>
+        </li>
+        <li>
+            <input type="submit" value="Register">
+        </li>
+    </div>
+</div>
+<h2 class="mainHeading">@copyright2023
+
+</h2>
+</body>
+</html>

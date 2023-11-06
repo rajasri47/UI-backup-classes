@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+      *{
+            padding: 0;
+            margin: 0;
+        }
+        .backgroundImage{
+            background-image: url('images/image2.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-weight: bold; 
+        }
+        .mainContainer{
+            margin: 50px 400px;
+        }
+      
+        .header,.footer{
+            border: 1px solid;
+            height: 50px;  
+            background-color: seagreen;
+            text-align: center;
+        }
+        .container{
+            border: 1px solid;
+            height: 450px;
+        }
+        li{
+           list-style: none;
+           margin: 30px;
+           font-size: 20px;
+        }
+       .userName{
+           margin-left: 80px;
+           height: 30px;
+           width: 250px;
+        }
+        .password{
+           margin-left:95px;
+           height: 30px;
+           width: 250px;
+        }
+        .confirmPassword{
+           margin-left:20px;
+           height: 30px;
+           width: 250px;
+
+        }
+        .mobileNumber{
+           margin-left:40px;
+           height: 30px;
+           width: 250px;
+        }
+        .email{
+           margin-left:95px;
+           height: 30px;
+           width: 250px;
+        }
+        .btn{
+           position: relative;
+           left: 180px;
+           width: 90px;
+           height: 30px;
+           font-size: 20px;
+        }
+        .btn a{
+           text-decoration: none;
+        }
+
+    </style>
+</head>
+<body class="backgroundImage">
+    <div class="mainContainer">
+        <div class="header"><h2>Login Here</h2></div>
+        <div class="container">
+            <ul>
+                <li>
+                    <label>User Name:</label>
+                    <input type="text" class="userName">
+                </li>
+                <li>
+                    <label>Password:</label>
+                    <input type="password" class="password">
+                </li>
+                <li>
+                    <label>Confirm Password:</label>
+                    <input type="password" class="confirmPassword">
+                </li>
+                <li>
+                    <label>Mobile Number:</label>
+                    <input type="number" class="mobileNumber">
+                </li>
+                <li>
+                    <label>Email ID:</label>
+                    <input type="email" class="email">
+                </li>
+                <li>
+                    <button class="btn"><a href="1_homePage.html">Submit</a></button>
+                </li>
+            </ul>
+        </div>
+        <div class="footer"><h2>Enjoy The Shopping</h2></div>
+    </div>
+    
+</body>
+</html>

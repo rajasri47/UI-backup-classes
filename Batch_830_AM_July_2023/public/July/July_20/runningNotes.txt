@@ -1,0 +1,38 @@
+Pseudo Classe & Elements :
+
+    PseudoClasses:
+        The special set of classes, using which we could add/remove the css prop not on load of page, but based on the current state of the element.
+
+        :hover
+        :link 
+        :active
+        :first-child
+        ... 
+         .. 
+
+         id/class/tagname/anyselector : <pseudoClassname> {
+            ... 
+             .. 
+             .. .
+         }
+
+         .abc:hover {
+            .. 
+         }
+
+         #abc:link {
+
+         }
+
+         tr:nth-child(3) {
+            ...
+         }
+         ------------------------
+
+         PseudoElements : 
+            Syntax:
+
+                selector::<pseudo Element> {
+                    ..
+                    ...
+                }

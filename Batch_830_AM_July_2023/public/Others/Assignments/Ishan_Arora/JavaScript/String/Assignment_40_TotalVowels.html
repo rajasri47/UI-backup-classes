@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 40
+        </title>
+    </head>
+    <body>
+        <h1>
+            Find Total Number of Vowels in String
+        </h1>
+        <script>
+            var count = 0;
+            var s = prompt("Enter Your String: ");
+            for (var i = 0; s[i]; i++) {
+                if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u'
+                 || s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U') {
+                    count++;
+                }
+            }
+            console.log("The Total Number of Vowels In Given String are " + count);
+        </script>
+    </body>
+</html>

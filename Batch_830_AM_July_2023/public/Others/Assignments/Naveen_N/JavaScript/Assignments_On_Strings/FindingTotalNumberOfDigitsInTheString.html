@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows the total number of digits is there in the String.. <br>
+            Go to console tab for result...
+            </h1>
+            <script>
+                var msg = "abc1d30 gh 54 234 gh 3456 ";
+                n = [1,2,3,4,5,6,7,8,9,0];
+                var count = 0;
+                console.log(msg);
+                for(var i = 0; i < msg.length; i++){
+                    for(var j = 0; j < n.length; j++){
+                    if(msg[i] == n[j] && msg[i] != " "){
+                        count++;
+                    }
+                }
+                }
+                if(count > 0){
+                console.log("There are "+count+" number of digits in the string");
+            }
+
+            </script>
+    </body>
+</html>

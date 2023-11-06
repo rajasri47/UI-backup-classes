@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>salary</title>
+        <style>
+            .display{
+               color: chartreuse;
+               font-size: 30px;
+               position: relative;
+               left:20%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="display">plz inspect or click (ctrl+shift+c)to watch employee details on console</div>
+        <script>
+            alert("about employee  details");
+            var employee_Name ="surendra";
+            var age = 22;
+            var gender = "male";
+            var baseSalary = 400000;
+            pf = 12*baseSalary/100;
+            hra = 24*baseSalary/100;
+            totalSalary = pf+hra+baseSalary;
+            console.log("Employee name is "+ employee_Name);
+            console.log("Age is " + age);
+            console.log("Gender is "+ gender);
+            console.log("PF is "+ pf);
+            console.log("HRA is " + hra);
+            console.log("TotalSalary is "+totalSalary);
+        </script>
+    </body>
+</html>

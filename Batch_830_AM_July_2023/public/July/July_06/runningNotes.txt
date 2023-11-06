@@ -1,0 +1,18 @@
+Relative Path and Absolute Path 
+
+Inline and Block level elements:
+
+
+    Block level:
+        1. Best example is - div tag
+        2. By default every block level element, will automatically fall under new line, while rendering on the page 
+        3. The eement which is following the block leel element, also comes to the new line 
+        3. By default every block level element is going to ouccupy 100% width of container 
+        4. we can control the dimentions of a block element usring width/height css porps
+        5. Other examples - p h1- h6, li, etc 
+    Inline :
+        1. span tag 
+        2. Bydefault inline elements always tries to render within the same line 
+        3. By default they take the width based on the content its holding 
+        4. We cannot control the dimentions of an inline element
+        5. other examples - a tag b u 

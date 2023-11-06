@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>employee details with json object</title>
+    </head>
+    <body>
+        <script>
+            var empdetails = {
+                "name" : "navya",
+                "age" : 20,
+                "dept" : "IT",
+                "basicsalary" : 25000,
+                hra : 24 ,
+                pf : 12 ,
+                totalsalary :0,
+            };
+             empdetails.hra = 24/100*empdetails.basicsalary;
+             empdetails.pf = 12/100*empdetails.basicsalary;
+             empdetails.totalsalary = empdetails.hra + empdetails.pf + empdetails.basicsalary;
+             console.log("name is"+empdetails.name);
+             console.log("age is"+ empdetails.age);
+             console.log("basicsalary is"+ empdetails.basicsalary)
+             console.log("hra is"+empdetails.hra);
+             console.log("pf is"+ empdetails.pf);
+             console.log("totalsalary is"+ empdetails.totalsalary);
+        </script>
+    </body>
+</html>

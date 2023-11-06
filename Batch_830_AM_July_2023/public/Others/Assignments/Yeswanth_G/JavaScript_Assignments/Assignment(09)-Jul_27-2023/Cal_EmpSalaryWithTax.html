@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculate Employee Salary </title>
+        <Style>
+            h1{
+                text-align: center;
+                color: green;
+            }
+        </Style>
+    </head>
+
+    <body>
+        <h1> Calculating The Employee Salary After Paying The Tax</h1>
+        <script>
+            //var E_Name,E_Age,E_Dep,E_Gender,E_BSalary,PF,HRA,Tot_Sal,Tot_Tax,Sal_Aft_Tax;
+            E_Name = prompt("Enter Your Name");
+            E_Age = prompt("Enter Your Age");
+            E_Dep = prompt("Enter Yout Department");
+            E_Gender = prompt("Enter Your Gender");
+            E_BSalary = prompt("Enter Your Basic Salary");
+            E_BSalary = parseInt(E_BSalary);
+            PF = (E_BSalary*12)/100;
+            HRA = (E_BSalary*24)/100
+            Tot_Sal = PF + HRA + E_BSalary;
+
+            console.log("Employe Name is " +E_Name);
+            console.log("Employe Age is " +E_Age);
+            console.log("Employe Department is " +E_Dep);
+            console.log("Employe Gender is " +E_Gender);
+            console.log("Employe Basic Salary is " +E_BSalary);
+
+            //Tax For Males
+
+            if(E_Gender == "Male" && Tot_Sal >= 300000){
+                Tot_Tax = (Tot_Sal*15)/100;
+                Tot_Sal_Aft_Tax = Tot_Sal-Tot_Tax;
+                console.log("Total Salary is " +Tot_Sal);
+                console.log("Total Tax is 15%");
+                console.log("Total Tax in Rupees " +Tot_Tax);
+                console.log("Total Salary After Tax " +Tot_Sal_Aft_Tax);
+            }
+            if(E_Gender == "Male" && Tot_Sal >= 200000 && Tot_Sal < 300000){
+                Tot_Tax = (Tot_Sal*10)/100;
+                Tot_Sal_Aft_Tax = Tot_Sal-Tot_Tax;
+                console.log("Total Salary is " +Tot_Sal);
+                console.log("Total Tax is 10%");
+                console.log("Total Tax in Rupees " +Tot_Tax);
+                console.log("Total Salary After Tax " +Tot_Sal_Aft_Tax);
+            }
+            if(E_Gender == "Male" && Tot_Sal >= 100000 && Tot_Sal < 200000){
+                Tot_Tax = (Tot_Sal*5)/100;
+                Tot_Sal_Aft_Tax = Tot_Sal-Tot_Tax;
+                console.log("Total Salary is " +Tot_Sal);
+                console.log("Total Tax is 5%");
+                console.log("Total Tax in Rupees " +Tot_Tax);
+                console.log("Total Salary After Tax " +Tot_Sal_Aft_Tax);
+            }
+            else if(E_Gender == "Male" && Tot_Sal < 100000){
+                Tot_Tax = 0;
+                Tot_Sal_Aft_Tax = Tot_Sal-Tot_Tax;
+                console.log("Total Salary is " +Tot_Sal);
+                console.log("Total Tax is 0%");
+                console.log("Total Tax in Rupees " +Tot_Tax);
+                console.log("Total Salary After Tax " +Tot_Sal_Aft_Tax);
+            }
+
+             //Tax For Females
+
+             if(E_Gender == "Female" && Tot_Sal >= 300000){
+                Tot_Tax = (Tot_Sal*10)/100;
+                Tot_Sal_Aft_Tax = Tot_Sal-Tot_Tax;
+                console.log("Total Salary is " +Tot_Sal);
+                console.log("Total Tax is 10%");
+                console.log("Total Tax in Rupees " +Tot_Tax);
+                console.log("Total Salary After Tax " +Tot_Sal_Aft_Tax);
+            }
+            if(E_Gender == "Female" && Tot_Sal >= 200000 && Tot_Sal < 300000){
+                Tot_Tax = (Tot_Sal*5)/100;
+                Tot_Sal_Aft_Tax = Tot_Sal-Tot_Tax;
+                console.log("Total Salary is " +Tot_Sal);
+                console.log("Total Tax is 5%");
+                console.log("Total Tax in Rupees " +Tot_Tax);
+                console.log("Total Salary After Tax " +Tot_Sal_Aft_Tax);
+            }
+            if(E_Gender == "Female" && Tot_Sal > 100000){
+                Tot_Tax = 0;
+                Tot_Sal_Aft_Tax = Tot_Sal-Tot_Tax;
+                console.log("Total Salary is " +Tot_Sal);
+                console.log("Total Tax is 0%");
+                console.log("Total Tax in Rupees " +Tot_Tax);
+                console.log("Total Salary After Tax " +Tot_Sal_Aft_Tax);
+            }
+            else if(E_Gender == "Female" && Tot_Sal < 100000){
+                Tot_Tax = 0;
+                Tot_Sal_Aft_Tax = Tot_Sal-Tot_Tax;
+                console.log("Total Salary is " +Tot_Sal);
+                console.log("Total Tax is 0%");
+                console.log("Total Tax in Rupees " +Tot_Tax);
+                console.log("Total Salary After Tax " +Tot_Sal_Aft_Tax);
+            }
+        </script>
+    </body>
+</html>

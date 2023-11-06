@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>assignment-2</title>
+    </head>
+    <Style>
+        h3 
+        {
+            border:5px solid black;
+            text-align:center;  
+        }
+        img
+        {
+            width:200px;
+            height:250px;
+        }
+        .label {
+            color: red;
+        }
+    </Style>
+    <body>
+        <h3>
+            Student Details
+        </h3>
+        <div>
+            <div> 
+                <span style="color:red">Name:</span> 
+                <span style="color:blue">Akkena.Anilkumar</span>
+            </div>
+            <div>
+                <span style="color:rgb(77, 20, 200)">Age:</span>
+                <span style="color:rgb(60, 150, 60)">20</span>
+            </div>
+            <div>
+                <span style="color:red">Gender:</span>
+                <span style="color:aqua">Male</span>
+            </div>
+            <img src="c:\Users\Srinivas\Pictures\anil pic\1696789527189.jpg">
+        </div>
+        <hr>
+        <div>
+            <div>
+                <span style="color:purple">Name:</span>
+                <span style="color:green">HR.Ramya</span>
+           </div>
+            <div>
+                <span style="color:skyblue">Age:</span>
+                <span style="color:gold">20</span>
+            </div>
+            <div>
+                <span style="color:brown">Gender:</span>
+                <span style="color:blue">Female</span>
+            </div>
+            <img src="c:\Users\Srinivas\Pictures\anil pic\1695388289679.jpg">
+        </div>
+        </hr>
+    </body>
+</html>

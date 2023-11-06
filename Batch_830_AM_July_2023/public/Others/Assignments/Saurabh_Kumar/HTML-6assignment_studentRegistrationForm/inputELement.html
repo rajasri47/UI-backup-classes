@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        .header {
+            border: 3px solid;
+            text-align: center;
+            width: 1405px;
+            padding: 10px;
+        }
+
+        .maincontainer {
+            border: 3px solid;
+            width: 1425px;
+            height: auto;
+        }
+
+        p {
+            border: 2px solid;
+            width: auto;
+            height: auto;
+            text-align: center;
+            font-size: 30px;
+            position: absolute;
+            top: 90px;
+            left: 250px;
+            background-color: white;
+        }
+
+        .block1,
+        .block2,
+        .block3 {
+            width: 1400px;
+            height: auto;
+            border: 3px solid;
+            margin: 10px;
+
+        }
+
+        li {
+            margin: 10px;
+            padding: 20px;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        #userdetails {
+            position: absolute;
+            top: 77px;
+            left: 100px;
+            width: 200px;
+            height: auto;
+        }
+
+        #Edudetails {
+            position: absolute;
+            top: 335px;
+            left: 100px;
+            text-align: center;
+            width: 250px;
+            height: auto;
+        }
+
+        .owninfo {
+            position: absolute;
+            top: 538px;
+            left: 100px;
+            text-align: center;
+            width: 250px;
+            height: auto;
+        }
+
+        .rightSideData {
+            position: absolute;
+            top: 138px;
+            left: 800px;
+            width: 200px;
+            height: auto;
+        }
+
+        .rightSideData2 {
+            position: absolute;
+            top: 388px;
+            left: 800px;
+            width: 200px;
+            height: auto;
+        }
+        .submitebutton{
+            position: relative;
+            left: 1120px;
+            border: 3px solid;
+            height: auto;
+            width: 240px;
+            font-size: 20px;
+        }
+        .footer{
+            border: 3px solid;
+            text-align: center;
+            width: 1405px;
+            padding: 10px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1 class="header">Student Registration Form Page</h1>
+    <form action="http://127.0.0.1:5500/July%2023/inputELement.html" method="get">
+    <div class="maincontainer">
+        <div class="block1">
+            <ul>
+                <p id="userdetails">User Details</p>
+                <li>
+                    Name :
+                    <input type="text" name="name" id="firstname" maxlength="20" placeholder="First Name" required>
+                    <input type="text" name="name" id="lastname" maxlength="20" placeholder="First Name" required>
+                </li>
+                <li>
+                    Age :
+                    <input type="date" id="age" maxlength="2" required>
+                </li>
+                <li>
+                    Gender :
+                    <input type="radio" name="gender" checked value="male" required>Male
+                    <input type="radio" name="gender" value="female" required>Female
+                </li>
+                <li class="rightSideData">
+                    Address :
+                    <textarea name="aboutYourself" cols="50" rows="5"></textarea>
+                </li>
+            </ul>
+        </div>
+        <div class="block2">
+            <ul>
+                <p id="Edudetails">Education Details</p>
+                <li>
+                    Qualification :
+                    <input type="checkbox" name="education10th">10th
+                    <input type="checkbox" name="education11+12">11+12th
+                    <input type="checkbox" name="educationBtech">B. Tech
+                    <input type="checkbox" name="educationmtech">M. Tech<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                        type="checkbox" name="educationMBA">MBA
+                    <input type="checkbox" name="educationBCA">BCA
+                    <input type="checkbox" name="educationMCA" required>MCA
+                    <input type="checkbox" name="educationOther" required>Other
+                </li>
+                <li>
+                    Language Know :
+                    <input type="checkbox" name="eng">English
+                    <input type="checkbox" name="hin">Hindi
+                    <input type="checkbox" name="tam">Tamil
+                </li>
+                <li class="rightSideData2">
+                    Course Opt :
+                    <select id="coursedetails">
+                        <option id="coursedetails" name="selecthere">Select Here</option>
+                        <option id="coursedetails" name="selecthere">Fullstack Web Devloper</option>
+                        <option id="coursedetails" name="selecthere">.Net Devloper</option>
+                        <option id="coursedetails" name="selecthere">Java Devloper</option>
+                        <option id="coursedetails" name="selecthere">Data Analytics</option>
+                        <option id="coursedetails" name="selecthere">Data Science</option>
+                        <option id="coursedetails" name="selecthere">Machine Learning</option>
+                        <option id="coursedetails" name="selecthere">PowerBI</option>
+                        <option id="coursedetails" name="selecthere">Database</option>
+                        <option id="coursedetails" name="selecthere">Artificail Inteligence</option>
+                        <option id="coursedetails" name="selecthere">PHP Devloper</option>
+
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="block3">
+            <ul>
+                <p class="owninfo">About you</p>
+                <li>
+                    Tell me about yourself :<br>
+                    <textarea name="tellmeaboutyou" cols="150" rows="5"
+                        placeholder="Tell us about yourself in 200 words min..."></textarea>
+                </li>
+                <li>
+                    Upload your picture:
+                    <input type="file" id="pic">
+                </li>
+            </ul>
+        </div>
+        <li class="submitebutton">
+            Click here to proceed
+            <input type="submit" id="submittionbtn" placeholder="Click here to proceed">
+        </li>
+    </div>
+</form>
+<h4 class="footer">@ CopyRights 2023</h4>
+
+</body>
+
+</html>

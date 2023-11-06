@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsonObject</title>
+  </head>
+  <body>
+    <!-- ---------------------Demonstrate json object with employee Details-------------- -->
+    <script>
+      var empDetails = {
+        name: "Ashish",
+        age: 23,
+        gender: "Male",
+        dept: "software Engineer",
+        basicSalary: 20000,
+      };
+
+      var getPfHre = () => {
+        var pf = empDetails.basicSalary * 0.12;
+        var hre = empDetails.basicSalary * 0.24;
+        empDetails.totalSal = pf + hre + empDetails.basicSalary;
+
+        displayDetails();
+      };
+
+      var displayDetails = () => {
+        console.log("<------Employee Details are---------->");
+        console.log("Name of Employee : " + empDetails.name);
+        console.log("Age of Employee : " + empDetails.age);
+        console.log("Gender of Employee : " + empDetails.gender);
+        console.log("Department of Employee : " + empDetails.dept);
+        console.log("Total salary of employee : " + empDetails.totalSal);
+      };
+      getPfHre();
+    </script>
+  </body>
+</html>

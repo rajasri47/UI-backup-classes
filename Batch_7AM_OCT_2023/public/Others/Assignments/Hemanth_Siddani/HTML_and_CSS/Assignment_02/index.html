@@ -1,0 +1,116 @@
+
+<!--Concept : Inline and Block Level (Span and Div Tags) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Details</title>
+    <link rel="icon" href="./Images/profile.png">
+    <style>
+
+        body{
+            text-align:center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image:linear-gradient(to right,rgb(20, 226, 219),rgb(8, 106, 148));
+        }
+        #Title {
+            font-size:50px;
+            color:#000;
+        }
+        .Gents {
+            padding:20px;
+        }
+        .PersonBlock {
+            box-shadow:0px 5px 15px rgba(0,0,0,.90);
+            padding:10px;
+            margin:30px 0px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:20px;
+        }
+        .Ladies {
+            padding:20px;
+        }
+        #Image {
+            height:150px;
+            width:150px;
+        }
+        #PersonName {
+            font-size:30px;
+        }
+        #Age {
+            font-size:20px;
+        }
+        .SpanAge,.SpanID {
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="Gents">
+        <h1 id="Title">Gents Details</h1>
+        <div class="PersonBlock">
+            <img src="./Images/Men/Man_1.png" id="Image">
+            <div>
+                <h2 id="PersonName">Siva Kumar</h2>
+                <h3 id="Age"><span class="SpanAge">Age : </span>23</h3>
+                <h3 id="Adhaar_no"><span class="SpanID">ID :</span> 2031171</h3>
+            </div>
+    </div>
+    <hr>
+        <div class="PersonBlock">
+            <img src="./Images/Men/Man_2.png" id="Image">
+             <div>
+                <h2 id="PersonName">Ravi Kumar</h2>
+                <h3 id="Age"><span class="SpanAge">Age : </span>26</h3>
+                <h3 id="Adhaar_no"><span class="SpanID">ID :</span> 2031172</h3>
+             </div>
+        </div>
+        <hr>
+        <div class="PersonBlock">
+            <img src="./Images/Men/Man_3.png" id="Image">
+            <div>
+                <h2 id="PersonName">Teja Naga Sai</h2>
+                <h3 id="Age"><span class="SpanAge">Age : </span>23</h3>
+                <h3 id="Adhaar_no"><span class="SpanID">ID :</span>2031173</h3>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="Ladies">
+        <h1 id="Title">Ladies Details</h1>
+        <div class="PersonBlock">
+            <img src="./Images/Women/Woman_1.png" id="Image">
+            <div>
+                <h2 id="PersonName">Teja Sri</h2>
+                <h3 id="Age"><span class="SpanAge">Age : </span>22</h3>
+                <h3 id="Adhaar_no"><span class="SpanID">ID :</span>2031174</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="PersonBlock">
+            <img src="./Images/Women/Women_2.png" id="Image">
+            <div>
+                <h2 id="PersonName">Jay Sri</h2>
+                <h3 id="Age"><span class="SpanAge">Age : </span>23</h3>
+                <h3 id="Adhaar_no"><span class="SpanID">ID :</span>2031175</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="PersonBlock">
+            <img src="./Images/Women/Women_3.png" id="Image">
+            <div>
+                <h2 id="PersonName">Prasanna</h2>
+                <h3 id="Age"><span class="SpanAge">Age : </span>25</h3>
+                <h3 id="Adhaar_no"><span class="SpanID">ID :</span>2031176</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+D:\UI Full Stack Assignments\Person_Details_Div_Span(Oct_16)\index.html

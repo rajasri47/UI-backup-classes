@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>User input through prompt</title>
+    </head>
+    <body>
+        <script>
+            var sname = prompt("Enter Student Name");
+            var age = prompt("Enter Age");
+            var tel = parseInt(prompt("Enter Telugu Marks"));
+            var hin = parseInt(prompt("Enter Hindi Marks"));
+            var eng = parseInt(prompt("Enter English Marks"));
+            var mat = parseInt(prompt("Enter Maths Marks"));
+            var sci = parseInt(prompt("Enter Science Marks"));
+            var soc = parseInt(prompt("Enter Social Marks"));
+            var total = tel + hin + eng + mat + sci + soc;
+            var avg = total/6;
+            console.log("student name is "+sname);
+            console.log("student age is "+age);
+            console.log("total marks secured by "+sname+" is "+total);
+            console.log("avg marks of "+sname+" is "+avg);
+        </script>
+    </body>
+</html>

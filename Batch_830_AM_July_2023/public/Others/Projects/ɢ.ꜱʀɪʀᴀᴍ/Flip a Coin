@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip a Coin</title>
+</head>
+<body>
+    <h1>Flip a Coin</h1>
+    <div class="coin">
+        <div class="side front">Heads</div>
+        <div class="side back">Tails</div>
+    </div>
+    <button id="flip">Flip</button>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .coin {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .side {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+        .coin.flipping .side {
+            transform: rotateY(180deg);
+        }
+        #flip {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        const coin = document.querySelector('.coin');
+        const flipButton = document.getElementById('flip');
+        flipButton.addEventListener('click', () => {
+            if (!coin.classList.contains('flipping')) {
+                coin.classList.add('flipping');
+                setTimeout(() => {
+                    const result = Math.random() < 0.5 ? 'Heads' : 'Tails';
+                    coin.querySelector('.front').textContent = result;
+                    coin.querySelector('.back').textContent = result === 'Heads' ? 'Tails' : 'Heads';
+                    setTimeout(() => {
+                        coin.classList.remove('flipping');
+                    }, 500);
+                }, 250);
+            }
+        });
+    </script>
+</body>
+</html>

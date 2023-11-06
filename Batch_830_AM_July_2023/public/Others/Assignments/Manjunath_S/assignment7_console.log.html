@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Salary info</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        ol {
+            list-style: none;
+            border: 1px solid;
+            padding: 20px;
+            margin: 20px;
+            font-size: 20px;
+            width: 400px;
+            
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Name: Surya</li>
+        <li>Age: 30</li>
+        <li>Department: Engineering</li>
+        <li>Gender: Male</li>
+        <li>Basic Salary: 300000</li>
+    </ol>
+    <script>
+        var basicSalary = 300000;
+        var pf = 0.12*basicSalary;
+        var hra = 0.24*basicSalary;
+        var totalSalary = basicSalary + pf + hra;
+        console.log("Name: Surya");
+        console.log("Age: 30");
+        console.log("Department: Engineering");
+        console.log("Gender: Male");
+        console.log("Basic Salary: Rs 300000");
+        console.log("PF: Rs " + pf);
+        console.log("HRA: Rs "+ hra);
+        console.log("Total Salary: Rs " + totalSalary);
+    </script>
+</body>
+</html>

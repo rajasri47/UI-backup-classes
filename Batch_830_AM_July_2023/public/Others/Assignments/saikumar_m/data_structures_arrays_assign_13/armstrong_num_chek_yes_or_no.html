@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong_num check</title>
+</head>
+<body>
+    <script>
+        var data = [];
+         var sum = 0;
+         for(var i = 0; i <=6 ; i++ ){
+            data[i] = prompt("enter" +i+ "value");
+            data[i] =parseInt(data[i]);
+              var t= data[i]; 
+            data[i]=data[i].toString();
+             var k = data[i].length;
+
+
+            while(data[i] > 0){
+                var rem = data[i] % 10;
+                 sum = sum + (rem ** k);
+                 data[i] = data[i]/10;
+                 data[i] = parseInt(data[i]);
+
+            }
+
+            if(t == sum ){
+                console.log(sum);
+            }
+           sum=0;
+        }
+    </script>
+</body>
+</html>

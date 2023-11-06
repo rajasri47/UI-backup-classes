@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Sum of all EvenNumbers Using Dynamic values of array </title>
+    </head>
+    <body>
+        <h3>Sum of all EvenNumbers Using Dynamic values of array....! </h3>
+        <script>
+        // using dynamic array To check the given num is even or not
+       /*var date=[];
+        var n=parseInt(prompt("enter value"));
+        if(n%2==0){
+            console.log(n + " : is an even number " );
+        }else{
+            console.log("It is not an even")
+        }*/
+       
+       //sum of even numbers 
+        var num=[];
+        var n=prompt("enter a value");
+        n=parseInt(n);                                            
+        for (var i=0;i<=n;i++){
+        num[i]=parseInt(prompt("Enter a value of " + i ));
+        }
+        var sum=0;
+        for(var i=0;i<num.length;i++){
+        if(num[i]%2==0){
+                sum=sum + num[i];
+            }
+        }    
+        console.log(sum);
+        
+        </script>
+    </body>
+</html>

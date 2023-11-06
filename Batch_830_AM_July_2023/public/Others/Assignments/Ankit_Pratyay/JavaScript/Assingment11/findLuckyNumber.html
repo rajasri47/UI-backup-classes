@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Lucky Number</title>
+    <style>
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+      .getResult {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Get the Lucky number of Given number from user</h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">
+      Right click on Webpage then Inspect and then Console
+    </p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+      let number = parseInt(
+        prompt("Enter a Number")
+      );
+      let num=number;
+      let result = 0;
+      if (num < 10) {
+        console.log(
+          "Enter a Valid number which should be Positive and should be greater than 9"
+        );
+      } else {
+        while(num){
+          result+=num%10;
+          num= parseInt(num/10);
+          if(result>9 && !num )
+          {
+            num=result;
+            result=0;
+          }
+        }
+      }
+
+      console.log("Reverse of Number: " + number + " is : " + result);
+    </script>
+  </body>
+</html>

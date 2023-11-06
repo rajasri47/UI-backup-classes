@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var employeeDetails = {
+                readEmpData(){
+                this.name = prompt("enter the name of the employee"),
+                this.age = prompt("enter the age of the employee"),
+                this.gender = prompt("enter the  gender of the employee"),
+                this.department = prompt("enter the department of the employee"),
+                this.BasicSalary =parseInt( prompt("enter the BasicSalary of the employee")),
+                this.getHraAndPf();
+                },
+
+               
+
+                getHraAndPf() {
+                  this.Hra = (this.BasicSalary * 24)/100;
+                  this.Pf = (this.BasicSalary * 12)/100;
+                  this.TotalSalary = this.Hra + this.Pf + this.BasicSalary;
+                  this.getTax();
+                },
+                getTax() {
+                    if(employeeDetails.gender == "male"){
+                        if(this.TotalSalary >= 300000){
+                           this.Tax = (this.TotalSalary * 30)/100;
+                        }
+                        else if(this.TotalSalary >= 200000){
+                            this.Tax = (this.TotalSalary * 20)/100;
+
+                        }
+                        else (this.TotalSalary >= 100000)
+                        {
+                            this.Tax = (this.TotalSalary * 10)/100;
+
+                        }
+                    }
+
+                    if(this.gender == "female") {
+                        if(this.TotalSalary >= 300000){
+                           this.Tax = (this.TotalSalary * 20)/100;
+                        }
+                        else if(this.TotalSalary >= 200000){
+                            this.Tax = (this.TotalSalary * 10)/100;
+
+                        }
+                        else (this.TotalSalary >= 100000)
+                        {
+                            this.Tax = (this.TotalSalary * 5)/100;
+
+                        }
+                    }
+                    this.getSalaryAfterTax();
+                },
+            
+                getSalaryAfterTax(){
+                    this.SalaryAfterTax = this.TotalSalary-this.Tax;
+                    this.Displaydetails();
+                },
+
+
+                Displaydetails() {
+                    
+                    console.log(" employee name is :"+ this.name);
+                    console.log(" employee age is :"+ this.age);
+                    console.log(" employee gender is :"+ this.gender);
+                    console.log(" employee department is :"+ this.department);
+                    console.log(" employee Basicsalary is :"+ this.BasicSalary);
+                    console.log(" employee Hra is :"+ this.Hra);
+                    console.log(" employee Pf is :"+ this.Pf);
+                    console.log(" employee TotalSalary is :"+ this.TotalSalary);
+                    console.log(" employee Tax is :"+ this.Tax);
+                    console.log(" employee SalaryAfterTax is :"+ this.SalaryAfterTax);
+                },
+               
+
+                
+            };
+
+              employeeDetails.readEmpData();
+        </script>
+        
+    </body>
+    </html>

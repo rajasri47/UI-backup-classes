@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demostrating assending and dessending order using arrays</title>
+    </head>
+    <body>
+        <script>
+           
+            var data = [ 54 , 66 ,33 ,24 ,88];
+            console.log(data);
+            for(var i = 0 ; i < data.length;i++){
+                for( var j = 1 ; j< data.length ; j++){
+                    if(data[i]>data[j]){
+                      var temp = data[i];
+                     data[i] = data[j];
+                      data[j]= temp;
+                   }
+                }
+                    
+                   
+            }
+            console.log(data)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment9</title>
+</head>
+<body>
+    <script>
+        var EmpName = prompt("Enter Employee Name ");
+        var EmpAge = prompt("Enter Employee Age");
+        var EmpGender = prompt("Enter Employee Gender");
+        var EmpBasicsalary = prompt("Enter Basic Salary ");
+        EmpBasicsalary = parseInt(EmpBasicsalary)
+        var EmpPf = 20 * EmpBasicsalary / 100 ;
+        var EmpHra = 18 * EmpBasicsalary / 100 ;
+        var EmpTotalsalary = EmpBasicsalary + EmpHra + EmpPf ;
+        var Tax1 = 15 * EmpTotalsalary / 100 ;
+        var Tax2 = 10 * EmpTotalsalary / 100 ;
+        var Tax3 = 5 * EmpBasicsalary / 100;
+        console.log("Name of the  Employee : " +  EmpName);
+        console.log("Age  of the Employee : " + EmpAge);
+        console.log("Gender of the employee : " + EmpGender);
+        console.log("Basic salary of the employee : " + EmpBasicsalary);
+        console.log("Provident fund of the Employee: " + EmpPf);
+        console.log("House rent allowence of the Employee :" + EmpHra);
+        console.log("Total salary of the Employee :"+ EmpTotalsalary);
+        if(EmpTotalsalary >= 300000){
+            console.log("tax on male employee : " + Tax3);
+        }if(EmpTotalsalary >= 200000){
+            console.log("tax on male employee : " + Tax2);
+        }if(EmpTotalsalary >= 100000){
+            console.log("tax on male employee: " + Tax1);
+        }else{
+            console.log("no tax ");
+        }
+        if(EmpTotalsalary >= 200000){
+            console.log("tax on Female employee : " + Tax3);
+        }if(EmpTotalsalary >= 100000){
+            console.log("tax on Female employee : " + Tax2);
+        }else{
+            console.log(" no tax");
+         }
+
+    </script>
+</body>
+</html>

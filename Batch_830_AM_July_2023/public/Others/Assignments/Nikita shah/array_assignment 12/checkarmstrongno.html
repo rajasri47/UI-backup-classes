@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        var data = [23,153,453,876,370,371,407,999,897,654,789,908,453];
+        for(var i=0; i<data.length; i++){
+        var temp= data[i];
+        var armstrong = 0;
+        var noOfdigits = data[i].toString().length;
+            while(temp>0){
+                var digit= temp%10;
+                armstrong= armstrong + digit**noOfdigits;
+                temp= parseInt(temp/10); 
+            }
+            if(armstrong==data[i]){
+                console.log(`${data[i]} is a armstrong no.`)
+            }else{
+                console.log(`${data[i]} is not a armstrong no.`)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="app1.css">
+    </head>
+    <body>
+        <h3>student progress card generator</h3>
+
+        <ul>
+            <li>
+                <input type="text" placeholder="enter student name" id = "studentName">
+            </li>
+            <li>
+                <input type="text" placeholder="enter age" id = "studentAge">
+            </li>
+            <li>
+                gender:
+                 <input type="radio" value="male" name = "gender" checked>male
+                 <input type="radio" value="female" name = "gender">female
+            </li>
+            <li>
+                class: 
+                <select name="" id="studentClass">
+                    <option value="class1">class1</option>
+                    <option value="class2">class2</option>
+                    <option value="class3">class3</option>
+                    <option value="class4">class4</option>
+                    <option value="class5">class5</option>
+                    <option value="class6">class6</option>
+                    <option value="class7">class7</option>
+                    <option value="class8">class8</option>
+                    <option value="class9">class9</option>
+                    <option value="class10">class10</option>
+
+                </select>
+            </li>
+            <li class = marks>
+                marks:
+                <input type="text" id = "m1" placeholder="telugu">
+                <input type="text" id = "m2" placeholder="hindhi">
+                <input type="text" id = "m3" placeholder="english">
+                <input type="text" id = "m4" placeholder="mathes">
+                <input type="text" id = "m5" placeholder="scince">
+                <input type="text" id = "m6" placeholder="sociel">
+            </li>
+            <li>
+                language opted:
+                <input type="checkbox" value="telugu">telugu
+                <input type="checkbox" value="hindhi">hindhi
+                <input type="checkbox" value="english">english
+            </li>
+            <li>
+                <input type="button" value="generate progress card" onclick="readStudentData()">
+            </li>
+        </ul>
+
+        <ul id = "reportcard">
+            <li>
+                student progress card
+            </li>
+            <li>
+                student name : <span id = "dname"></span>
+            </li>
+            <li>
+                student age : <span id = "dage"></span>
+            </li>
+            <li>
+                gender: <span id = "dgender"></span>
+            </li>
+            <li>
+                class: <span id = "dclass"></span>
+            </li>
+            <li>
+                language known: <span id = "dlanguage"></span>
+            </li>
+            <li>
+                total : <span id = "dtotal"></span>
+            </li>
+            <li>
+                avg: <span id = "davg"></span>
+            </li>
+            <li>
+                grade : <span id = "dgrade"></span>
+            </li>
+        </ul>
+        
+        <script src="app1.js"></script>
+    </body>
+</html>

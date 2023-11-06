@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Sum Of EVen ANd Odd Numbers Between User Given Range</h3>
+        <script>
+            var i = prompt("First number");
+            var j = prompt("Last number") ;
+            var evenSum=0;
+            var oddSum=0;
+            
+            
+
+            i = parseInt(i);
+            j = parseInt(j);
+             
+            
+
+            console.log("First number is"+i);
+            console.log( "Last number is"+j);
+
+            for(i=0;i<=j;i++)
+            {
+                if(i % 2 == 0)
+                {
+                    evenSum=evenSum+i;
+                }
+                   else{
+                   oddSum=oddSum+i;
+                   console.log("evenSum is"+ evenSum);
+                   console.log("oddSum is"+ oddSum);
+                   }
+
+            }
+
+            
+
+            
+        </script>
+        
+    </body>
+    </html>

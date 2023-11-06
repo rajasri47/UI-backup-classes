@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>employee details tax persentage with json object</title> 
+    </head>
+    <script>
+        var empdetails = {
+            name : "navya",
+            age : 22,
+            "basicsalsry" : 25000,
+            hra :24,
+            pf : 12,
+            totalsalary : 0,
+            
+        }
+        empdetails.hra = 24/100*empdetails.basicsalsry;
+        empdetails.pf = 12/100*empdetails.basicsalsry;
+        empdetails.totalsalary = empdetails.hra + empdetails.pf + empdetails.basicsalsry;
+        console.log("name is"+empdetails.name);
+        console.log("pf is"+empdetails.pf);
+        console.log("hra is"+empdetails.hra);
+        console.log("total salary is"+empdetails.totalsalary);
+        //male
+        if(empdetails.totalsalary>=300000){
+            empdetails.totaltax = (15/100)*empdetails.totalsalary;
+            empdetails.aftertax = empdetails.totaltax + empdetails.totalsalary;
+        }
+        
+        console.log("tax is 15 percentage");
+        console.log("before tax is" + empdetails.totalsalary);
+        console.log("tax is"+empdetails.totaltax);
+        console.log("after tax is"+empdetails.aftertax);
+        if(empdetails.totalsalary>=200000){
+            empdetails.totaltax  = 10/100*empdetails.totalsalary;
+            empdetails.aftertax = empdetails.totaltax + empdetails.totalsalary;
+        }
+        console.log("tax is 10 percentage");
+        console.log("before tax is" + empdetails.totalsalary);
+        console.log("tax is"+empdetails.totaltax);
+        console.log("after tax is"+empdetails.aftertax);
+        if(empdetails.totalsalary>=100000){
+            empdetails.totaltax  = 5/100*empdetails.totalsalary;
+            empdetails.aftertax = empdetails.totaltax + empdetails.totalsalary;
+        }
+        console.log("tax is 5 percentage");
+        console.log("before tax is" + empdetails.totalsalary);
+        console.log("tax is"+empdetails.totaltax);
+        console.log("after tax is"+empdetails.aftertax);
+        //female
+        if(empdetails.totalsalary>=200000){
+            empdetails.totaltax  = 10/100*empdetails.totalsalary;
+            empdetails.aftertax = empdetails.totaltax + empdetails.totalsalary;
+        }
+        console.log("tax is 10 percentage");
+        console.log("before tax is" + empdetails.totalsalary);
+        console.log("tax is"+empdetails.totaltax);
+        console.log("after tax is"+empdetails.aftertax);
+
+        if(empdetails.totalsalary>=100000){
+            empdetails.totaltax  = 5/100*empdetails.totalsalary;
+            empdetails.aftertax = empdetails.totaltax + empdetails.totalsalary;
+        }
+        console.log("tax is 5 percentage");
+        console.log("before tax is" + empdetails.totalsalary);
+        console.log("tax is"+empdetails.totaltax);
+        console.log("after tax is"+empdetails.aftertax);
+
+
+
+    </script>
+</html>

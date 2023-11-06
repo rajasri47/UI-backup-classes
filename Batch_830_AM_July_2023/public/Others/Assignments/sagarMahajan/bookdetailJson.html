@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookdetail using json</title>
+</head>
+<body>
+    
+    <script>
+         
+         const Bookdetail = {
+    bookName: "self-Helf",
+    bookPrice: 90,
+    dicount: 10, 
+    bookAutor: ["Naveen", "sagar"],
+    Publisher: "balbharti@publisher",
+};
+
+const retrieveData = (data) => {
+    for (let i in data) {
+        if (typeof data[i] === 'object' && data[i] !== null && !Array.isArray(data[i])) {
+            console.log(i + ' -->');
+            console.log(data[i]);
+        } else {
+            console.log(i + ' --> ' + data[i]);
+        }
+    }
+}
+
+retrieveData(Bookdetail);
+
+
+
+    </script>   
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> no.of digits in given string</h3>
+    <script>
+
+        var userdata = () =>{
+        var string = prompt("enter the string");
+        console.log(" user given stringis =>" + string);
+
+        digitCount = NoOfDigits(string);
+        digitCount!=0 ? console.log(" no od digits are :"+ digitCount): console.log("no digits found")
+        }
+
+        var NoOfDigits = (string) => {
+            var sLength = string.length;
+            var count = 0;
+            string = string.replace(/\s/g,"");
+            for( var i=0 ; i < sLength;i++ ){
+                if(string[i] == 1 || string[i] == 2 || string[i] == 3 || string[i] == 4 ||string[i] == 5 ||string[i] == 6 ||string[i] == 7 ||string[i] == 8 ||string[i] == 9||string[i] == 0){
+               count = count + 1;
+            }
+        }
+            if (count > 0){
+                return count;
+            }
+            else {
+                return 0;
+            }
+
+            }
+            userdata();
+        
+
+    </script>
+    
+</body>
+</html>

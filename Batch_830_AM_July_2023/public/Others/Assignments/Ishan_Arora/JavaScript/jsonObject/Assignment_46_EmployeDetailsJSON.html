@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 46
+        </title>
+    </head>
+    <body>
+        <h1>
+            Employee Details Using JSON
+        </h1>
+        <script>
+            var emp = {
+                name : prompt("Enter Employee Name: "),
+                age : prompt("Enter Age: "),
+                gender : prompt("Enter Gender: "),
+                Department : prompt("Enter Department: "),
+                BasicSalary : prompt("Enter Basic Salary: "),
+            };
+
+            emp.BasicSalary = parseInt(emp.BasicSalary);
+            var pf = (emp.BasicSalary * 12) / 100;
+            var hra = (emp.BasicSalary * 24) / 100;
+            var totalSal = pf + hra + emp.BasicSalary;
+
+            console.log("Employee Name: " + emp.name);
+            console.log("Employee Gender: " + emp.gender);
+            console.log("Employee Age: " + emp.age);
+            console.log("Employee Department: " + emp.Department);
+            console.log("Employee Basic Salary: " + emp.BasicSalary);
+            console.log("Employee Total Salary: " + totalSal);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            var mydata = (() => {t
+                var count = 90;
+                var a = 99;
+                var k = 100;
+               
+
+                var sample = () => {
+                    console.log("frm sample");
+                    var b = 88;
+                }
+
+                return {
+                    a: a,
+                    countValue: count,
+                    getSample: () => {
+                        sample();
+                    },
+                    showData() {
+                        console.log("a value is " + a)
+                        console.log("count value is " + count)
+                    },
+                    getKvalue(){
+                        return k;
+                    }
+                };
+
+                
+            })();
+            
+
+            console.log("a value is " + mydata.a)
+            console.log("count value is " + mydata.countValue);
+
+            mydata.getSample();
+
+            mydata.showData();
+            console.log(mydata.getKvalue());
+            
+        </script>
+    </body>
+</html>
+
+// Steps to access closure data ouside of closure
+
+// 1 -> assign a user defined name to clsoure

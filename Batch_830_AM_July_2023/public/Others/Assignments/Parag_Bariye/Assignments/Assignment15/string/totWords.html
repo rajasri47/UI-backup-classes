@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>total o of charactor in a string</title>
+    </head>
+    <body>
+        <script>
+            var asc = prompt("enter the value");
+            console.log(asc);
+
+            var str = asc.length;
+            var sum=0;
+
+            for(var i=0; i<str; i++){
+                n = asc.charCodeAt(i);
+                if(( n >= 65 && n <= 90 ) || ( n >= 97 && n <= 122 )){
+                    var sum = sum + 1;
+                }
+            }
+            console.log(sum);
+
+        </script>
+    </body>
+</html>

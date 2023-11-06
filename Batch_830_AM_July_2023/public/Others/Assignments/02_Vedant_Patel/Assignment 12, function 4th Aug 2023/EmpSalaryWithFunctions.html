@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+    <style>
+        .h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE SALARY OF EMP OPEN DEBUGGER TOOL </h1>
+    <script>
+        var ename, age, dept, gender, Bsalary;
+        var PF, HRA, totalsalary;
+
+        function EmpDetails() {
+            ename = "Vedant";
+            age = 29;
+            dept = "IT";
+            gender = "male";
+            Bsalary = 20000;
+            EmpBsalary();
+        }
+
+        function EmpBsalary() {
+            PF = 12 / 100 * Bsalary;
+            HRA = 24 / 100 * Bsalary;
+        }
+        function EmpTotalSalary() {
+            totalsalary = PF + HRA + Bsalary;
+        }
+        function EmpSalary() {
+            EmpDetails();
+            EmpTotalSalary();
+            console.log("Basic Salary of Vedant is " + Bsalary);
+            console.log("PF of Vedant is " + PF);
+            console.log("HRA of Vedant is " + HRA);
+            console.log("Total Salary of Vedant is " + totalsalary);
+        }
+        EmpSalary();
+    </script>
+</body>
+
+</html>

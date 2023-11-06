@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>student marks display through prompt</title>
+        </head>
+        <body>
+            <script>
+                console.log("student Details");
+
+                var sNmae  =  prompt("Enter student name:");
+                var sAge   =  prompt("Enter student age :");
+                var sDept  =  prompt("Enter student dept:");
+                var maths  =  prompt("Enter maths marks:");
+                var science = prompt("Enter science marks:");;
+                var english = prompt("Enter english marks:");;
+                var biology = prompt("Enter biology marks:");;
+                var totalmarks = parseInt(maths)+parseInt(science)+parseInt(english)+parseInt(biology);
+
+                var avg= totalmarks/4;
+
+                console.log(sNmae);
+                console.log("totalmarks is " + totalmarks);
+                console.log("avg is " + avg);
+
+            
+            </script>
+        </body>
+</html>

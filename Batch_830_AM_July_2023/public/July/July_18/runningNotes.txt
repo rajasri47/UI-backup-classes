@@ -1,0 +1,46 @@
+Diff btwn Display none and visibility hidden
+
+CSS display property:
+
+    disipaly:  none/ inline/block/inline-block/ flex/grid ..
+
+            display: none -> makes any dom element to be not visible on the page, but the element still remains within the DOM structure
+
+
+            display: inline -> It will force any dom element to get rendered as like an inlie element. 
+
+             display: block -> It will force any dom element to get rendered as like an block  element. 
+
+              display: inline-block -> Makes element to render within the same line as like inline, but still we could control the dimentions of it as like block level elements 
+
+        following are the predefined tags through which we could render any data in the form of row/column wise 
+            table 
+            thead 
+            tbody 
+            tfoot 
+            tr 
+            td 
+            th 
+
+        Basic structure of a table 
+
+            <table>
+                <thead>
+                    tr
+                        th 
+                </thead>
+                <tbody>
+                    tr 
+                        td 
+                </tbody>
+                <tfoot>
+                    tr 
+                        td
+                </tfoot>
+            </table>
+
+            table 
+                tr 
+                    td 
+
+    rowspan and colspan are the two predefined attributes can be added to td, to merge multiple cells to form a single cell

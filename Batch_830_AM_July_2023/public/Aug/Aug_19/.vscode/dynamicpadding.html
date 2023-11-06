@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .parentElement{
+            border: 1px;
+            background-color: blue;
+            padding: 50px;
+        }
+        .childElement{
+            padding: 60px;
+            border: 1px;
+            background-color: blueviolet;
+        }
+    </style>
+    <script>
+        console.log("one")
+        document.addEventListener("DOMContentLoaded",() => {
+            console.log("two")
+        document.querySelector("#container").innerHTML='hello we added a msg';
+        document.querySelector(".parentElement").addEventListener('click' ,() =>{
+            console.log("parent got invoked");
+        } , false);
+    })
+    </script>
+    <head>
+    <body>
+        <div id="container"></div>
+        <div class="parentElement"></div>
+                  parent content
+        <div class="childElement"></div>
+                   child content
+    </div>
+</div>
+</body>
+</html>

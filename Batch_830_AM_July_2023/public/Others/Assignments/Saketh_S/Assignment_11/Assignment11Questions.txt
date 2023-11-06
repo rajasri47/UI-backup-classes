@@ -1,0 +1,7 @@
+1.write a program to check a given number is prime or not
+2.write a program to find out all the prime number b/w 1 to 1000
+3.write a program to check whether a given number is armstrong no or not?
+4.write a program to check whether a given number is palindrome no or not?
+5.write a program to find out all the palindrome numbers b/w 1 to 1000
+6.write a program to read number from the user and find the reverse of it
+7.write a program to read number from the user and find the Lucky number of it

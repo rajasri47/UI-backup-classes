@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            prime number or nt using arry
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [];
+            var n = prompt("enter how many values");
+            n = parseInt(n);
+            var rem ,count;
+            count = 0;
+            for (var i =0; i< n;i++){
+                data[i]= prompt("enter" + i + "values");
+                data[i]= parseInt(data[i]);
+                for(var j = 1; j<data[i];j++){
+                    rem = data[n] % 10;
+                   if (rem ==0){
+                    count ++;
+                    }
+                }
+                if(count ==2){
+                    console.log("prime number");
+                }else{
+                    console.log("not a prime number");
+                }
+               
+            }
+
+
+        </script>
+    </body>
+</html>

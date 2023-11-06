@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating HTML input elements
+        </title>
+        <style>
+            h2{
+                border: 2px solid;
+                height: 50px;
+                width: auto;
+                text-align: center;
+                color: tomato;
+                padding-top: 10px;
+                background-color: black;
+            }
+            ul{
+                border: 2px solid;
+                height: 150px;
+                width: auto;
+                margin-top: 40px;
+                padding: 10px;
+
+            }
+            .top{
+                background-image: url(file:///C:/Users/VISHNU%20VARDHAN/Downloads/bookimg2.jpg);
+                background-repeat: no-repeat;
+                background-position: 270px;
+            }
+            li{
+                list-style: none;
+                margin: 10px;
+                padding: 5px;
+            }
+            .box{
+                float: left;
+                position: absolute;
+                left: 550px;
+                top: 200px;
+            }
+           .child{
+                border: 2px solid;
+                height: 40px;
+                width: 180px;
+                position: absolute;
+                left: 80px;
+                top: 120px;
+                background-color: black;
+                color: azure;
+                font-size: xx-large;
+                text-align: center;
+            }
+            .box1{
+                position: absolute;
+                left: 560px;
+                top: 400px;
+            }
+            .child1{
+                position: absolute;
+                width: 250px;
+                left: 80px;
+                top: 350px;
+                font-size: x-large;
+            }
+            .container {
+                border: 2px solid;
+                width: auto;
+                height: 700px;
+                padding: 10px;
+                margin: 10px;
+
+
+            }
+            .child2{
+                position: absolute;
+                width: 250px;
+                left: 70px;
+                top: 557px;
+                font-size: x-large;
+            }
+            .button{
+                float: right;
+                font-size: 30px;
+                
+            }
+            .foot {
+                border: 2px solid;
+                width: auto;
+                height: 40px;
+                text-align: center;
+                background-color: gold;
+
+            }
+            label{
+                color: black;
+            }
+
+            </style></head>
+            <body>
+                <h2>
+                    Student Registration Form
+                </h2>
+                <form action="http://abcsample.com/data/api/registration" method="get">
+                    <div class="top">
+                    <div class="container">
+                  <ul>
+                    <div class="child">User Details</div>
+                    <li>
+                        First Name :
+                        <input type="text" name="ufirstname" maxlength="10">
+                    </li>
+                    <li>
+                        Last Name :
+                        <input type="text" name="lname" maxlength="10">
+                    </li>
+                    <li>
+                        Age :
+                        <input type="number" name="Age">
+                    </li>
+                    <li>
+                        Gender :
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">female
+                    </li>
+                    <li>
+                        <div class="box">
+                       <label for="add">
+                        Address :
+                       </label>
+                        <textarea rows="5" cols="50"></textarea>
+                        </div>
+                    </li>
+
+                    </ul>
+                    <ul>
+                        <div class="child child1">Education Qualification</div>
+                        <li>
+                            Qualification :
+                            Degree<input type="checkbox" name="degree" required="">
+                            Btech<input type="checkbox" name="btech">
+                            MBA<input type="checkbox" name="mba">
+                            MCA<input type="checkbox" name="mca">
+                        </li>
+                        <li>
+                            Languages :
+                            English<input type="checkbox" name="lng_en" required="">
+                            Telugu<input type="checkbox" name="lng_tel">
+                            Hindi<input type="checkbox" name="lng_hin">
+                        </li>
+                        <li>
+                            <div class="box1">
+                            Courses :
+                            <select name="ucourse">
+                                <option value="">select course</option>
+                                <option value="Bsc">Bsc</option>
+                                <option value="Bcom">Bcom</option>
+                                <option value="BCA">BCA</option>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="IT">IT</option>
+                                <option value="Finance">Finance</option>
+                                <option value="HR">HR</option>
+                                <option value="Computer applications">computer applications</option>
+                            </select>
+                            </div>
+                        </li></ul>
+                        <ul>
+                            <div class="child child2">About Yourself</div>
+                        <li>
+                            <label for="urself">
+                                Tell me About Youself :</label>
+                            <textarea name="urslf" id="" cols="150" rows="8" width="1046px" height="360px" style="width: 1014px; height: 120px;"></textarea>
+                        
+                        </li>
+                        <li>
+                            <div class="button">
+                              <input type="button" value="Register"></div>
+                        </li>
+                    
+                    </ul></div></div>
+                </form>
+                <h3 class="foot"> Copyrights@2023</h3>
+
+            </body>
+            </html>

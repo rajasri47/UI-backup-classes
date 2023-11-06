@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSChapter-4</title>
+</head>
+
+<body>
+    <h1>
+        PSChapter-4
+    </h1>
+    <script>
+        // Chapter 4 - Practice Set
+        // Problem 1
+        let str = "Vedant\""
+        console.log(str.length)
+
+        // Problem 2
+        const sentence = 'The quick brown fox jumps over the lazy dog.';
+        const word = 'fox2';
+        console.log(sentence.includes(word))
+        console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+
+        // Problem 3
+        let word2 = "Vedant";
+        console.log(word2.toLowerCase());
+        console.log(word2.toUpperCase());
+
+        // Problem 4
+        let str2 = "Please give Rs 1000"
+        let amount = Number.parseInt(str2.slice(15))
+        console.log(amount)
+        console.log(typeof amount)
+
+        // Problem 5
+        let friend = "Deepika"
+        friend[3] = "R"
+        console.log(friend) // friend is not changed, because string is immutable
+    </script>
+</body>
+
+</html>

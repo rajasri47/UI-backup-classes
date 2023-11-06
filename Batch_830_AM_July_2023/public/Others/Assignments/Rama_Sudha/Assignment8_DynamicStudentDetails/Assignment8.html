@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter Name");
+        var age = prompt("Enter Age");
+        var clas = prompt("Enter Class");
+        var english = prompt("Enter English Marks");
+        var telugu = prompt("Enter Telugu Marks");
+        var hindi = prompt("Enter Hindi Marks");
+        var maths = prompt("Enter Maths Marks");
+        var science = prompt("Enter Science Marks");
+        var social = prompt("Enter Social Marks");
+        
+        english = parseInt(english);
+        telugu = parseInt(telugu);
+        hindi = parseInt(hindi);
+        maths = parseInt(maths);
+        science = parseInt(science);
+        social = parseInt(social);
+
+        var total = english+telugu+hindi+maths+science+social;
+        total = parseInt(total);
+
+        var avg = total/6*100;
+        avg = (avg);
+
+        console.log("Student Name is "+ name);
+        console.log("Student Name is "+ age);
+        console.log("Student Name is "+ clas);
+        console.log("English Marks is "+ english);
+        console.log("Telugu Marks is "+ telugu);
+        console.log("Hindi Marks is "+ hindi);
+        console.log("Maths Marks is "+ maths);
+        console.log(" ScienceMarks is "+ science);
+        console.log("Social Marks is "+ social);
+        console.log("Total i s" + total);
+        console.log("Avarage is " + avg);
+
+       
+    </script>
+    
+</body>
+</html>

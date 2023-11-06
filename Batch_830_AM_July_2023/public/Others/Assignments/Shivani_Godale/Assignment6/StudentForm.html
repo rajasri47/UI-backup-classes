@@ -1,0 +1,229 @@
+<Doctype html!>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Student Form</title>
+      </head>
+        <style>
+           .container{
+                        border:1px solid;
+                        width:900px;
+                        height:40px;
+                        margin: 5px;
+                        padding: 5px;
+                        justify-content:center;
+                        display:flex;
+                        left:200px;
+                        position: absolute;
+                      
+                        
+                      }
+                       
+                          .container2{
+                            border: 1px solid;
+                            width:150px;
+                            height:25px;
+                            text-align: center;
+                            top:90px;
+                            left:280px;
+                            position: absolute;
+                            background-color: darkgrey;
+
+                          }
+                          .container3
+                          {
+                            border:1px solid;
+                            width:800px;
+                            height:140px;
+                            top: 90px;
+                            left:240px;
+                            position: absolute;
+                            margin:10px auto;
+                            padding :10px;
+
+                          }
+                          .container4
+                          {
+                            border:1px solid;
+                            width:800px;
+                            height:150px;
+                            top: 250px;
+                            left:240px;
+                            position: absolute;
+                            margin:10px auto;
+                            padding :10px;
+
+                          }
+                          .container5
+                          {
+                            border:1px solid;
+                            width:810px;
+                            height:100px;
+                            top:345px;
+                            left:34px;
+                            position: absolute;
+                            margin:10px auto;
+                            padding :5px;
+
+                          }
+
+                          .container6{
+                        border:1px solid;
+                        width:900px;
+                        height:20px;
+                        margin: 5px;
+                        padding: 5px;
+                        justify-content:center;
+                        display:flex;
+                        left:200px;
+                        top:620px;
+                        position: absolute;
+                      
+                        
+                      }
+                       
+
+            ul                     
+               {
+                  border:1px solid;
+                  width:830px;
+                  height:440px;
+                  margin:20px auto;
+                  padding:40px;
+                  top: 55px;
+                  left:205px;
+                  position: absolute;
+
+                        }
+
+                
+              li{
+                 list-style: none;
+              }
+              .container7
+              {
+                
+                text-align:justify;
+                justify-content:top;
+                display:flex;
+                top:40px;
+                right:170px;
+                position:absolute;
+              }
+             
+
+              textarea{
+               
+               margin:10px;
+
+              }
+
+
+
+
+                      
+
+            </style>
+            <body>
+              <span class="container"> <h3>Student Details Registration Page</h3> </span>
+              <span class="container2" >User Details </span>   
+               <Div class="container3"> </Div>
+               <Div class="container4"> </Div>
+               
+               
+               
+            <ul>
+                  <br>
+                          <li>
+                            <label for="lname">
+                                    Name:
+                            </label>
+                            <input type="text" name="lname" required>
+                        </li>
+              <br>
+                          <li>
+                            <label for="lage">
+                                  Age:
+                            </label>
+                            <input type="text" name="lage" required >
+                            
+                        </li>
+            <br>
+
+                            <li>
+                              Gender:
+                              <input type="radio" name="gender" checked value="male"> Male
+                              <input type="radio" name="gender" value="female"> Female
+                          </li>
+                         
+                          
+                        <div class="container7">
+                          <li>
+                            <label for="address"> Address:
+                            </label>
+                            <textarea name="address" id="" cols="20" rows="7"></textarea>
+                        </li>
+                      </div>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <li>
+                        <label For="lqualification">
+                          Qualification:
+                          <input type="checkbox" name="qualification">MBA
+                          <input type="checkbox" name="qualification">MCA
+                          <input type="checkbox" name="qualification">BE
+                          <input type="checkbox" name="qualification">BTech
+
+
+                        </label>
+                      </li>
+                  <br>
+                  
+                  <li>
+                    <label For="llang">
+                      Languages:
+                      <input type="checkbox" name="languages">English
+                      <input type="checkbox" name="languages">Marathi
+                      <input type="checkbox" name="languages">Hindi
+                      <input type="checkbox" name="languages">Telugu
+
+
+                    </label>
+                  </li>
+                  <br>
+                  <li>
+                   Course Opted For:
+                 <select name="uourseoptedfor">
+                  <option value="">Select Course</option>
+                  <option value="UI Full stack">UI FullStack</option>
+                  <option value="Selenium ">Selenium</option>
+                  <option value="Tosca">Tosca</option>             
+                    </select>
+                    
+                  </li>
+                  <div class="container5">
+                  <li>
+                    <label for="abouturslf">
+                        Tell about Yourself (min 200 char):
+                    </label>
+                    <textarea name="abouturslf" id=" " cols="40" rows="5">
+
+                    </textarea>
+                </li>
+              
+                <br>
+                <li>
+                  
+                  <input type="submit" value="Register">
+              </li>
+            </div>
+          </ul>
+          
+         <div class="container6">Copyrights@2023</div>
+         
+
+            </body>
+    </html>

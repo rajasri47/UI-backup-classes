@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sum of Even num in Dynamic Array</title>
+    </head>
+    <body>
+        <script>
+            var readData = () => {
+                var data = [];
+                var len = parseInt(prompt("Enter the num of values"));
+                for ( var i = 0; i < len; i++) {
+                    data [i] = parseInt(prompt("Enter the values"));
+                } 
+                var sum = calc(data,len);
+                display(sum);
+            }
+            var calc = (data,len) => {
+                var sum = 0;
+                var count = 0;
+                for ( var i = 0; i < len; i++) {
+                    if ( data[i] % 2 == 0) {
+                        sum = sum + data[i];
+                        count ++;
+                    }
+                }
+                return sum;
+                if ( count == 0) {
+                    console.log("There are no even num in given array");
+                }
+            }
+            var display = (sum) => {
+                console.log(" Sum of all even num in given array " + sum);
+            }
+            readData();
+        </script>
+    </body>
+</html>

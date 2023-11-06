@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>demonstrating ReturnValue From Function</title>
+    </head>
+    <body>
+        <h3>demonstrating ReturnValue From Function....!</h3>
+        <script>
+            var num1,num2,result;
+            var readValues = () => {
+                num1=prompt("enter a value for num1");
+                num1=parseInt(num1);
+                num2=prompt("enter a value for num2");
+                num2=parseInt(num2);
+                var sum=findSum(num1, num2);
+                console.log("sum is " +sum);
+            }
+            var findSum = (num1, num2) => {
+                var result= num1 + num2;
+                return result;
+            }
+            readValues();
+        </script>
+    </body>
+</html>

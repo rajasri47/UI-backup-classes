@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = prompt("enter a number");
+        n = parseInt(n)
+        var luckyNO = 0;
+        var rem;
+        while(n > 0 ) {
+            rem = n % 10;
+            n = n / 10;
+            n = parseInt(n);
+            // luckyNO = luckyNO + rem;
+            luckyNO += rem;
+            if(n == 0  && luckyNO > 9 ) {
+                n = luckyNO;
+                luckyNO = 0;
+            }
+        }
+
+        console.log(luckyNO);
+    </script>
+    
+</body>
+</html>

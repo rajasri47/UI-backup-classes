@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ename, egender, eBasicSalary, eDepartment,eTotalSalary, ePF, eHRA, etax;
+
+        ename= "Sonu";
+
+        // egender= "Female";
+        egender= "Male";
+
+        eBasicSalary= 75000;
+        eDepartment= "IT";
+        ePF= eBasicSalary*0.14;
+        eHRA= eBasicSalary*0.24;
+        eTotalSalary= eBasicSalary+ePF+eHRA;
+        if (egender=="Male"){
+            if (eTotalSalary >= 100000)
+            {etax = 0.15* eTotalSalary
+            console.log("Applicable Tax Rate is 15%")}
+            else if (eTotalSalary >= 50000)
+            {etax = 0.10* eTotalSalary
+            console.log("Applicable Tax Rate is 10%")}
+            else if (eTotalSalary >= 30000)
+            {etax = 0.05* eTotalSalary
+            console.log("Applicable Tax Rate is 5%")}
+            else
+            {etax = 0}
+        }
+        else {
+            if (eTotalSalary >= 100000)
+            {etax = 0.10* eTotalSalary
+            console.log("Applicable Tax Rate is 10%")}
+            else if (eTotalSalary >= 50000)
+            {etax = 0.05* eTotalSalary
+            console.log("Applicable Tax Rate is 5%")}     
+            else
+            {etax = 0}
+        }
+        console.log("Name Of Employee= " +ename);
+        console.log("Gender= " +egender);
+        console.log("Basic Salary= " +eBasicSalary);
+        console.log("Department= " +eDepartment);
+        console.log("Total Salary= " +eTotalSalary);
+        console.log("Total Tax= " +etax);
+    </script>
+</body>
+</html>

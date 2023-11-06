@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating user defined exceptions
+        </title>
+        <script src="userException.js"></script>
+        <style>
+            ul {
+                border: 1px solid;
+                width: 500px;
+                margin: 20px auto;
+                padding: 10px;
+                background-color: rgb(191, 247, 247);
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                padding: 10px;
+                margin: 10px;
+                background-color: #fff;
+            }
+            .title {
+                text-align: center;
+                color: orange;
+                font-size: 20px;
+            }
+            .error {
+                color: red;
+                font-size: 10px;
+                margin: 5px;
+                display: none;
+            }
+            .successmsg {
+                display: none;
+                font-size: 20px;
+                color: green;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li class="title">
+                User Registration Page
+            </li>
+            <li>
+                <input type="text" id="username" placeholder="User Name">
+                <div class="nameEmptyErr error">
+                    User name is Mandate field.
+                </div>
+            </li>
+            <li>
+                <input type="password" id="userPwd" placeholder="Account Password">
+                <div class="pwdEmptyErr error">
+                    User Account pwd is Mandate field.
+                </div>
+            </li>
+            <li>
+                <input type="text" placeholder="User Age" id="uage" value="0">
+                <div class="ageErr error">
+                    User age should be >= 21.
+                </div>
+            </li>
+            <li>
+                <input type="radio" value="Male" name="gender" checked>Male
+                <input type="radio" value="Female" name="gender"> Female
+            </li> 
+            <li>
+                <input type="button" value="Registere details" onclick="readUserInfo()">
+            </li>
+            <li class="successmsg">
+                <div class="popup">User detaisl got registed successful</div>
+            </li>
+        </ul>
+    </body>
+</html>

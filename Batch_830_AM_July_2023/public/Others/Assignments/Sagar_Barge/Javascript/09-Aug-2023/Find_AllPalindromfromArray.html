@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            var data = [ 210, 207, 202,203,250];
+            console.log(data);
+            // Code to find largest
+            /*var maxValue = data[0];
+
+            for (var i = 1; i < data.length; i++) {
+                if (maxValue < data[i]) {
+                    maxValue = data[i];
+                }
+            }
+            console.log(maxValue); */
+
+            /*
+            // Sorting 
+            for (var i = 0 ; i < data.length; i++) {
+                for (var j = i; j < data.length; j++) {
+                    if (data[i] > data[j]) {
+                        var temp = data[i];
+                        data[i] = data[j]
+                        data[j] = temp;
+                    }
+                }
+            }
+            console.log(data); */ 
+
+            //var max =  smallnum=data[0];
+            var result = 0;
+            var sum=0;
+                
+            for (var i = 0; i < data.length; i++) {
+                var actualnum=data[i];
+                var sum=0;
+                while(data[i]>0)
+                {
+                result= data[i]%10;
+                sum=(sum*10)+result;
+                data[i]=data[i]/10;
+                data[i] = parseInt(data[i]);
+
+                }
+                if(actualnum==sum)
+                {
+                    console.log("This is palindrom number in array "+ actualnum);
+                }
+                else{
+                    console.log("This is not palindrom number in array "+ actualnum);
+                }
+
+
+            }
+
+            //console.log("max is " + max)
+           // console.log("secondLarg is " + smallnum)
+        </script>
+    </body>
+</html>

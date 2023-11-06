@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumn of Even number</title>
+</head>
+
+<body>
+    <h1 align="center">Code in Console</h1>
+    <script>
+        var firstno = 1;
+        var lastno = 1000;
+        var sum = 0;
+
+        for (var i = firstno; i <= lastno; i++) {
+            if (i % 2 == 0) {
+                console.log(i);
+                sum += i;
+          }
+          //console.log(sum);
+        }
+        console.log("Sum of 1 to 1000 Even Number :" + sum);
+    </script>
+</body>
+
+</html>

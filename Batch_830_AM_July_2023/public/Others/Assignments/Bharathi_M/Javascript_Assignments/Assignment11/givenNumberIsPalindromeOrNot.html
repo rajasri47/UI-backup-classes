@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given number is palindrome or not?</title>
+</head>
+<body>
+    <script>
+        var reverseNumber = 0;
+        var n = prompt('enter a number');
+        n = parseInt(n);
+        var temp = n;
+        while(n > 0) {
+            var rem = n % 10;
+            n = n / 10;
+            n = parseInt(n);
+            reverseNumber = (reverseNumber * 10) + rem;
+        }
+        if(temp == reverseNumber) {
+            console.log('its a palindrome');
+        }
+        else {
+            console.log('not a palindrome');
+        }
+        console.log(reverseNumber);
+
+    </script>
+    
+</body>
+</html>

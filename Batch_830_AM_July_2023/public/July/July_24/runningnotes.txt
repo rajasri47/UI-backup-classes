@@ -1,0 +1,42 @@
+Javascript:
+    Dynamic webpages
+    Arithematic Operations
+    Logical operations 
+    DAta validation
+    Interact with the RESTAPI/webservices
+        ECMA version 
+
+        --------------------------
+
+in c, c++, java 
+int, float, char, string,boolean, null, object ,,,,,
+
+    int a; // its a numeric variable, can store 2 bytes of data 
+    a = 90;
+
+    a= 7.6 // error 
+    a = 'raj' // error 
+    a = 234234234 // error 
+    float avg; // its a decimal type can store 4 bytes of data 
+    avg = 45.7
+    char test; // its a char, can store only 1 byte 
+    string, boolan, ..
+----------------------
+
+datatypes supported in js :
+    number, string, boolean (true/false), objct, fucntion, undefined, null ...
+
+
+Datatypes:
+    Specifies the type of data  a vairable can hold, along with the size it can hold 
+        var a;
+        a = 90
+
+        var name;
+        name = 'raj'
+
+        var avg;
+        avg = 90.23
+
+
+    

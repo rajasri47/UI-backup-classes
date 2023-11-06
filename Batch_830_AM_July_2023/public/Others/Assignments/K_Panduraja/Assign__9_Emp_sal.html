@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emp salary And Tax cal</title>
+    </head>
+    <body>
+        <script>
+            var Emp_name = prompt("Enter Employee Name : ");
+            var Emp_age =parseInt(prompt("Enter Employee Age : "));
+            var Emp_Gender = prompt("Enter Gender : ");
+            var Department = prompt("Enter Department : ");
+            var Basic_salary = parseInt(prompt("Enter Basic Salary  "));
+
+            var hra = (20/100)*Basic_salary ; 
+            var pf = (15/100)*Basic_salary ;
+            var Total_salary = hra + pf + Basic_salary
+            var tax ;
+
+            console.log("Employee Name : " + Emp_name);
+            console.log("Employee Age : " + Emp_age);
+            console.log("Employee Gender : " + Emp_Gender);
+            console.log("Department of Employee : " + Department);
+            console.log("Basic Salary :" + Basic_salary);
+            console.log("PF :" + pf );
+            console.log("HRA allowance :" + hra);
+            console.log("Total Salary : " + Total_salary);
+
+            if(Emp_Gender == "male" || Emp_Gender == "Male" || Emp_Gender == "M" ) {
+                if ( Total_salary >= 300000){
+                    tax = (15/100)*Basic_salary ;
+                    console.log("Tax is :" + tax);
+                    var Salary_after_tax = Total_salary - tax
+                    console.log("Salary after tax paid : " + Salary_after_tax) 
+                }
+                else if ( Total_salary >= 200000){
+                    tax = (10/100)*Basic_salary ;
+                    console.log("Tax is :" + tax);
+                    var Salary_after_tax = Total_salary - tax
+                    console.log("Salary after tax paid : " + Salary_after_tax)  
+                }
+                else ( Total_salary >= 100000);{
+                    tax = (5/100)*Basic_salary ;
+                    console.log("Tax is :" + tax);
+                    var Salary_after_tax = Total_salary - tax
+                    console.log("Salary after tax paid : " + Salary_after_tax)   
+                }   
+            }else (Emp_Gender == "F" || Emp_Gender == "Female" || Emp_Gender == "female"); {
+                if (Total_salary >= 300000) {
+                    tax = (10/100)*Basic_salary ;
+                    var Salary_after_tax = Total_salary - tax ;
+                    console.log("Salary After Tax :" + Salary_after_tax)
+                }
+                else if( Total_salary >= 200000) {
+                    tax = (5/100)*Basic_salary
+                    var Salary_after_tax = Total_salary - tax
+                    console.log("Salary After Tax :" + Salary_after_tax)
+                }
+                else {
+                tax= 0;
+                var Salary_after_tax = Basic_salary - tax
+                console.log("Salary after tax paid : " + Salary_after_tax)
+            }
+        }   
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+CSS Classes:
+
+        // Class definition
+        .newsHeading {
+            color: blue;
+            background-color:yellow;
+            border: 1px solid red;
+        }
+
+
+        <h3 name="newsTitle" class="newsHeading">News Item 1: </h3>
+
+        <p class="newsHeading"> ..  </p>
+
+        -----------
+
+        css Prop which been applied through the style attribute - inline css 
+
+-------------------------------------
+.abc {
+    font-size: 20px;
+}
+
+<p style="font-size:20px" class="abc"> .. </p>-----------
+
+---------------------------------------------
+
+DOM Structure
+ Document object model
+
+ -----------------
+
+ File extensions:   
+    .txt. .doc, .ppt, .pdf, .jpeg, .exe, .msi, .c, .cpp, .java, .class, .html, .js, .css, .htm etc...
+
+    file.html/htm 
+
+    prsadresume.doc 
+
+    mydata.ppt -> MS powerpoint sw
+
+    empdata.xls
+    -----------
+
+    Templates: 

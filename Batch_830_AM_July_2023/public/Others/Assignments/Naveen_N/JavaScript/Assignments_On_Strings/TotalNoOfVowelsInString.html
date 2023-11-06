@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>total no of Vowels in given String</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows  total no of Vowels in given String of elements.. <br>
+            Go to console tab for result...
+        </h1>
+        <script>
+             var msg = prompt("Enter string of characters..");
+             console.log(msg);
+             var sum = 0;
+            for(var i = 0; i < msg.length; i++){
+
+                if(msg[i] == 'a' || msg[i] == "A" || msg[i] == "e" || msg[i] == "E" || msg[i] == "i" || msg[i] == "I" ||msg[i] == "o" || msg[i] == "O" || msg[i] == "u" || msg[i] == "U"){
+                    sum++;
+                }
+            }
+            console.log("There are "+sum+" no of Vowels in the given string");
+
+        </script>
+    </body>
+</html>

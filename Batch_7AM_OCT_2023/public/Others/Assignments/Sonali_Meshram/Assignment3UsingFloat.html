@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Rendering</title>
+    <style>
+        div{
+            border: 1px solid red;
+            text-align: center;
+            padding: 0.5%;
+            margin: 8px;
+        }
+        .box{
+            border: 1px solid rgb(143, 143, 221);
+            margin: 8px;
+            width: 8px;
+            padding: 2%;
+        }
+        .fRight{
+            float: right;
+        }
+        .fLeft{
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+        body{
+            color: rgb(19, 214, 228);
+        }
+        .box1{
+            border-color: rgb(238, 167, 141);
+        }
+    </style>
+</head>
+<body>
+    <div>Block Rendering</div>
+
+    <div class="box box1 fLeft">1</div>
+    <div class="box fLeft">2</div>
+    <div class="box fLeft">3</div>
+    <div class="box fRight clear">5</div>
+    <div class="box fRight">4</div>
+    <div class="box clear ">6</div>
+    <div class="box">7</div>
+    <div class="box fRight clear">8</div>
+    <div class="box fRight clear">9</div>
+    <div class="box fRight clear">10</div>
+    <div class="box clear">11</div>
+    <div class="box clear">12</div>
+    <div class="box clear">13</div>
+
+<div style="border: 1px solid rgb(19, 214, 228);">@copyrights 2023</div>
+</body>
+</html>

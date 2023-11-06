@@ -1,0 +1,37 @@
+<!-- student details -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var userName = prompt('enter user name');
+    var age = prompt("enter student age");
+    var m1 = prompt("enter first subject marks");
+    var m2 = prompt("enter second subject marks");
+    var m3 = prompt("enter third subject marks");
+    var m4 = prompt("enter fourth subject marks");
+    var m5 = prompt('enter fifth subject marks');
+    m1 = parseInt(m1);
+    m2 = parseInt(m2);
+    m3 = parseInt(m3);
+    m4 = parseInt(m4);
+    m5 = parseInt(m5);
+    var total = m1+ m2+ m3+ m4+ m5;
+    var avg = total/5;
+   
+    total= parseInt(total);
+
+    
+    console.log(' student name is '+ userName);
+    console.log('student age is '+ age);
+    console.log('student total marks  is '+ total);
+    console.log('student average is '+ avg);
+
+
+  </script>  
+</body>
+</html>

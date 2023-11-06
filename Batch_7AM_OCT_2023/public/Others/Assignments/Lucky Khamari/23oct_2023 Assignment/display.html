@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Property</title>
+        <style>
+            #inline{
+               width:100%;
+               height:200px;
+               border:3px dashed blue; 
+            }
+            #inline > h1{
+                text-align: center;
+                text-decoration-line: underline;
+                text-decoration-style: wavy;
+                text-decoration-color: aqua;
+            }
+            #inline div{
+                width:300px;
+                height:300px;
+                border:1px double pink;
+                display: inline;
+                font-weight: bold;
+                font-size:medium;
+                
+            }
+            #block{
+                margin:50px 0px;
+                width:100%;
+                height:500px;
+                border:3px double rgb(8, 119, 194);
+            }
+            #block>h1{
+                text-align: center;
+                text-decoration-line: underline;
+                text-decoration-style: double;
+                text-decoration-color: rgb(222, 80, 220);   
+            }
+            #block span{
+                display:block;
+                width:80px;
+                height:80px;
+                border:1px solid red;
+            }
+            #inline-block > h1{
+                text-align: center;
+                text-decoration-line: underline;
+                text-decoration-style: double;
+                text-decoration-color: rgb(206, 186, 7);    
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div id="inline">
+            <h1>convert block-level element into inline-element</h1>
+            <div class="div-1">First</div>
+            <div class="div-2">Second</div>
+            <div class="div-3">Third</div>
+            <div class="div-4">Fourth</div>
+            <div class="div-5">Fifth</div>
+        </div>
+        
+        <div id="block">
+            <h1>convert inline-element into block-level element</h1>
+            <span>First</span>
+            <span>Second</span>
+            <span>Third</span>
+            <span>Four</span>
+            <span>Fifth</span>
+        </div>
+
+        <div id="inline-block">
+            <h1>Example of inline-block element</h1>
+            <img src="https://img.freepik.com/free-photo/natures-beauty-captured-colorful-flower-close-up-generative-ai_188544-8593.jpg" alt="" width="250" height="250">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW3uAgj5qOaz8hDSF1QtP6l82SfaPPzaScGacgI2FlflArPqTtY-JniyuerUuh_xOWu4E&usqp=CAU" alt="" width="250" height="250">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrM7req3UFsSeJGd_IukvXbLlBPLHhTheJMnu3PpJACgP-eJeuA9XZiGZYIeuJNUVhnk&usqp=CAU" alt="" width="250" height="250">
+        </div>
+    </body>
+</html>

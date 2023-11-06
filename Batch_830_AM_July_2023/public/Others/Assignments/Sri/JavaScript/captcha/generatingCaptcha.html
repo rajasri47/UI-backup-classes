@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OTP Generator</title>
+        <style>
+            .otpBlock {
+                border: 1px solid;
+                width: 100px;
+                font-weight: bold;
+                color: blueviolet;
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Generate OTP" onclick=" getcapthca();">
+        <div class="otpBlock" ></div>
+
+        <script>
+
+           // var upperCaseChar = ['A', 'B', 'C', 'D', 'E', 'F','G','H','I','J','K','L','M','N','O','P','Q','S','T','U','V','W','Y','Z']
+           // var lowerCaseChar = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+           var capthcaLength = 5;
+           var capthcaValue = [];
+
+            /*
+            // Lengthy process through array of char
+            var getRandomUpperCaseChar = () => {
+                var randomChar = '';
+                var randomIndex = Math.random() * upperCaseChar.length;
+                randomIndex = Math.floor(randomIndex);
+                console.log(upperCaseChar[randomIndex])
+                return upperCaseChar[randomIndex];
+
+            } */
+         
+           
+            /*var getRandomNumber = () => {
+                var randomNumber = Math.random() * 9;
+                randomNumber = Math.floor(randomNumber);
+                return randomNumber;
+            }*/
+             var getcapthca = () =>{
+
+             for(i =0 ;i < capthcaLength ; i++){
+                if (i==3 || i==4){
+                   var min = 97;
+                   var max = 122;
+                }   
+            else if (i == 1 )   {
+               var min = 48;
+               var max = 57;
+            }   
+        else {
+           var min = 65;
+           var max = 90;
+        }  
+         capthcaValue[i] = getRandomNumberBetweenGivenRange(min,max) 
+        }
+       // document.querySelector(".otpBlock").innerHTML = String.concat(capthcaValue[0],capthcaValue[1],capthcaValue[2],capthcaValue[3],capthcaValue[4]);
+        document.querySelector(".otpBlock").innerHTML = capthcaValue.join("");
+    }
+
+            var getRandomNumberBetweenGivenRange = (min, max) => {
+                var randomNumber = Math.floor(Math.random() * (max - min)) + min;
+                console.log(randomNumber);
+        
+              return  String.fromCharCode(randomNumber);
+
+               
+               
+
+            }
+            //getRandomNumberBetweenGivenRange(97, 122)//
+           
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!-- write a program to find the sum of all the odd numbers individual and sum of all the even numbers individual b/w user given range -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sum of All Odd Num And Even Num Individually</title>
+    </head>
+
+    <body>
+        <script>
+
+            eSum=0;
+            oSum=0;
+
+            var n=prompt("Enter UserRange: ")
+
+            n=parseInt(n);
+
+            for(var num=1;num<=n;num++){
+                if(num%2==0){
+                    eSum=eSum+num;
+                }
+                else{
+                    oSum=oSum+num;
+                }
+            }    
+            console.log("Sum of All Even Numbers in givenRange: "+eSum);
+            
+            console.log("Sum of All Odd Numbers in givenRange: "+oSum);    
+        </script>
+        
+    </body>
+</html>

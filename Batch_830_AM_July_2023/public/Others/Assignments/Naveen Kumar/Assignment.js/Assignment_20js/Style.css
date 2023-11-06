@@ -1,0 +1,81 @@
+<<<<<<< HEAD:Batch_830_AM_July_2023/public/Others/Assignments/Naveen Kumar/Assignment.js/Assignment_20js/Style.css
+.container {
+  display: flex;
+  justify-content: center;
+} 
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  text-align: center;
+  border: 1px solid;
+  padding: 20px;
+  background-color: blue;
+  
+}
+h4 {
+  text-align: center;
+  border: 1px solid;
+  padding: 20px;
+  background-color: aqua;
+  
+}
+
+ul {
+  width: 700px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+li {
+  list-style: none;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+=======
+.container {
+  display: flex;
+  justify-content: center;
+} 
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  text-align: center;
+  border: 1px solid;
+  padding: 20px;
+  background-color: blue;
+  
+}
+h4 {
+  text-align: center;
+  border: 1px solid;
+  padding: 20px;
+  background-color: aqua;
+  
+}
+
+ul {
+  width: 700px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+li {
+  list-style: none;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+>>>>>>> cd7f7cda82af51b60c9d142009328638fc60f1c1:Batch_830_AM_July_2023/public/Others/Assignments/Naveen Kumar/Assignment.js/Assignment_20js/emp.payslip.css

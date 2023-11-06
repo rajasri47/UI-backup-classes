@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .searchBlock {
+                border: 1px solid;
+                border-radius: 10px;
+                width: 400px;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            .searchBlock input[type=text] {
+                width: 300px;
+                margin: 0 10px;
+                height: 30px;
+                font-size: 20px;
+            }
+            input[type=button] {
+                height: 30px;
+            }
+            .autoFillBlock {
+                
+                width: 300px;
+                margin: 0 10px;
+                padding: 1px;
+                
+            }
+            .autoFillBlock div {
+                border: 1px solid;
+                margin: 1px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="searchBlock">
+            <input type="text" id="searchText" onkeyup="fillAutoContent(event)">
+            <input type="button" value="Search">
+            <div class="autoFillBlock"></div>
+        </div>
+        <script>
+            var animals = [
+                "Tiger",
+                "Lion",
+                "Cheetha",
+                "Cow",
+                "Deer",
+                "Cat",
+                "Dog"
+            ];
+
+            var fillAutoContent = (event) => {
+                var searchText = document.querySelector("#searchText").value;
+                console.log(searchText)
+                var filteredList = animals.filter((animalName) => {
+                    if (searchText.length == 0) {
+
+                    } else {
+                        var subText = animalName.substr(0, searchText.length);
+                        if (subText.toLowerCase() == searchText.toLowerCase()) {
+                            return animalName;
+                        }
+                    }
+                });
+
+                console.log(filteredList);
+                
+                fillAutofillData(filteredList);
+            }
+            var fillAutofillData = (filteredList) => {
+                document.querySelector(".autoFillBlock").innerHTML = '';
+                filteredList.forEach(element => {
+                    var divTag = document.createElement("div");
+                    divTag.innerText = element;
+                    divTag.addEventListener("click", (event) => {
+                        var text = event.target.innerText;
+                        document.querySelector("#searchText").value = text;
+                        document.querySelector(".autoFillBlock").innerHTML = '';
+                    })
+                    document.querySelector(".autoFillBlock").append(divTag);
+
+                });
+            }
+        </script>
+    </body>
+</html>

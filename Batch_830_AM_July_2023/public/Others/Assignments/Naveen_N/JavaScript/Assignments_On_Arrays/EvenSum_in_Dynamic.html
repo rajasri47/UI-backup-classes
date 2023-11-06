@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Even numbers sum in given Array</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows Even numbers sum in given Array.. <br>
+            Go to console tab for result...
+        </h1>
+        <script>
+            var n = prompt("enter the index value..");
+            n = parseInt(n);
+            var a = [];
+            for(var i=0; i < n; i++){
+                 a[i] = prompt("enter the values"+i+" th position of array");
+                a[i] = parseInt(a[i]);
+            }
+            console.log(a);
+            var EvenSum = 0;
+            var OddSum = 0;
+            for(var i = 0; i < a.length; i++){
+                if(a[i] % 2 == 0){
+                    var EvenSum = EvenSum + a[i];
+                }
+                else{
+                   var OddSum = OddSum + a[i];
+                }
+            }
+            console.log("Sum of all even numbers in given Array is  " +EvenSum);
+            console.log("Sum of all even numbers in given Array is  " +OddSum);
+        </script>
+    </body>
+</html>

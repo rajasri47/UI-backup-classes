@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASON Emp Details</title>
+</head>
+<body>
+    <script>
+        var userData = () => {
+            var empData = {};
+            empData.empName = prompt("Enter user Name");
+            empData.empAge = prompt("Enter age");
+            empData.empGender = prompt("Enter gender");
+            empData.empSalary = parseInt(prompt("Enter Salary"));
+            calc(empData);
+            display(empData);
+        }
+        
+        
+        var calc = (empData) => {
+                switch (empData.empGender) {
+                    case "male" :
+                        if (empData.empSalary > 300000) {
+                            empData.empTax = (empData.empSalary * 15 ) / 100;
+                            empData.empTsal = (empData.empSalary - empData.empTax );
+                        } else if ( empData.empSalary > 200000) {
+                            empData.empTax = (empData.empSalary * 10 ) / 100;
+                            empData.empTsal = (empData.empSalary - empData.empTax );
+                        } else if ( empData.empSalary > 100000) {
+                            empData.empTax = (empData.empSalary * 5 ) / 100;
+                            empData.empTsal = (empData.empSalary - empData.empTax );
+                        }
+                }
+                switch ( empData.empGender) {
+                    case "female" :
+                        if ( empData.empSalary > 300000) {
+                            empData.empTax = (empData.empSalary * 10 ) / 100;
+                            empData.empTsal = (empData.empSalary - empData.empTax );
+                        } else if ( empData.empSalary > 100000) {
+                            empData.empTax = (empData.empSalary * 5 ) / 100;
+                            empData.empTsal = (empData.empSalary - empData.empTax );
+                        }
+                }
+        }
+        var display = (empData) => {
+            console.log(empData.empName + "'s Salary Details: ");
+            console.log(" Basic Salary        : ₹" + empData.empSalary);
+            console.log(" Applicable Tax is   : ₹" + empData.empTax);
+            console.log(" In-Hand Salary is   : ₹" + empData.empTsal);
+        }
+        userData();
+    </script>
+</body>
+</html>

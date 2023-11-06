@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        /* .red{
+            display: flex;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Addmition Form for MCA</h1>
+        <form action="form.php">
+            <span>Name:</span>
+            <input type="text" name="Name" id="Name" placeholder="Enter your FirstName">
+            <br><br>
+            <span>Email Id:</span>
+            <input type="email" name="Email" id="Email" placeholder="Enter your Email">
+            <br><br>
+            <label for="Gender">Gender:</label>
+            <select id="Gender" name="Gender" form="Genderform">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="SectionIdA">
+                <p>Section:</p>
+                <input type="radio" value="Section a" name="section" id="SectionIdA"> Section A
+            </label>
+            <label for="SectionIdB">
+                <input type="radio" value="Section b" name="section" id="SectionIdB"> Section B
+            </label>
+            <label for="SectionIdC">
+                <input type="radio" value="Section c" name="section" id="SectionIdC"> Section C
+            </label>
+            <p> Languages Known:</p>
+            <input type="checkbox" name="Languages" id="LanguageJava" class="red">
+            <label for="LanguageJava">Java</label>
+            <br>
+            <input type="checkbox" name="Languages" id="LanguageC++" class="red">
+            <label for="LanguageC++">C++</label>
+            <br>
+            <input type="checkbox" name="Languages" id="Language.Net" class="red">
+            <label for="Language.Net">.Net</label>
+            <br>
+            <input type="checkbox" name="Languages" id="LanguagePython" class="red">
+            <label for="LanguagePython">Python</label>
+            <br><br>
+            <textarea name="Explain" id="Explain" cols="30" rows="10"
+                placeholder="Explain whay you want to join our Institute"></textarea>
+            <br>
+            <input type="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>

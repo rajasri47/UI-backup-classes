@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        #headContainer {
+            border: 5px solid lightblue;
+            text-align: center;
+            padding: 5px;
+            background-image: url("Image/head.png");
+
+
+        }
+
+        .listEmpContainer {
+            border: 3px solid;
+            height: 500px;
+            width: 300px;
+            font-size: 30px;
+            padding: 10px;
+            overflow: auto;
+            text-align: left;
+            float: left;
+            background-image: url("Image/b2.jpg");
+            background-position: -771px -97%;
+        }
+
+        .name1,
+        .name2,
+        .name3,
+        .name4,
+        .name5,
+        .name6,
+        .name7,
+        .name8,
+        .name9,
+        .name10 {
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        #empDetailsContainer {
+            float: right;
+            border: 3px solid;
+            height: 500px;
+            width: 1150px;
+            padding: 10px;
+            overflow: scroll;
+            background-image: url("Image/b2.jpg");
+            background-position: 103%;
+        }
+
+        .imgContainer1 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -52px -16px;
+            margin: 5px;
+        }
+
+        .imgContainer2 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -279px -23px;
+            margin: 5px;
+        }
+
+        .imgContainer3 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -579px -25px;
+            margin: 5px;
+        }
+
+        .imgContainer4 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -805px -28px;
+            margin: 5px;
+        }
+
+        .imgContainer5 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -1070px -43px;
+            margin: 5px;
+        }
+
+        .imgContainer6 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -53px -267px;
+            margin: 5px;
+        }
+
+        .imgContainer7 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -276px -272px;
+            margin: 5px;
+        }
+
+        .imgContainer8 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -526px -270px;
+            margin: 5px;
+        }
+
+        .imgContainer9 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -818px -294px;
+            margin: 5px;
+        }
+
+        .imgContainer10 {
+            background-image: url("Image/workerSpringImg.jpg");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            background-position: -1076px -273px;
+            margin: 5px;
+        }
+
+        #EMP1 {
+            float: right;
+            border: 2px solid;
+            width: 860px;
+            height: auto;
+            font-size: 35px;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        #StudentHead {
+            border: 5px solid lightblue;
+            text-align: center;
+            float: left;
+            width: 1496px;
+            clear: both;
+            background-image: url("Image/head.png");
+        }
+
+        .listStudentContainer {
+            border: 3px solid;
+            height: 500px;
+            width: 300px;
+            font-size: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 10px;
+            overflow: auto;
+            text-align: left;
+            float: left;
+            background-image: url("Image/b2.jpg");
+            background-position: 103%;
+        }
+
+        .nameSt1,
+        .nameSt2,
+        .nameSt3,
+        .nameSt4,
+        .nameSt5,
+        .nameSt6,
+        .nameSt7,
+        .nameSt8,
+        .nameSt9,
+        .nameSt10 {
+            border: 2px solid;
+            padding: 15px;
+            margin: 10px;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+        }
+
+        #StudentDetailsContainer {
+            float: right;
+            border: 3px solid;
+            height: 500px;
+            width: 1150px;
+            padding: 10px;
+            overflow: scroll;
+            background-image: url("Image/b2.jpg");
+            background-position: -771px -97%;
+        }
+
+        #Student1 {
+            float: right;
+            border: 2px solid;
+            width: 860px;
+            height: auto;
+            font-size: 35px;
+            padding: 15px;
+            margin: 5px;
+            font-family: serif;
+        }
+
+        .imgStudentContainer {
+            background-image: url("Image/studentSpritingImg.png");
+            width: 200px;
+            height: 190px;
+            list-style: none;
+            border: 2px solid;
+            float: left;
+            margin: 5px;
+        }
+
+        .st1 {
+            background-position: -53px -49px;
+        }
+
+        .st2 {
+            background-position: -280px -49px;
+        }
+
+        .st3 {
+            background-position: -537px -49px;
+        }
+
+        .st4 {
+            background-position: -759px -49px;
+        }
+
+        .st5 {
+            background-position: -1011px -49px;
+        }
+
+        .st6 {
+            background-position: -53px -290px;
+        }
+
+        .st7 {
+            background-position: -293px -293px;
+        }
+
+        .st8 {
+            background-position: -554px -287px;
+        }
+
+        .st9 {
+            background-position: -796px -291px;
+        }
+
+        .st10 {
+            background-position: -1080px -291px;
+        }
+
+        #Footer {
+            border: 1px solid limegreen;
+            text-align: center;
+            float: left;
+            width: 1500px;
+            clear: both;
+            background-image: url("Image/Sky.jpg");
+            background-position: 1px -2218px;
+            color: orangered;
+        }
+
+        body {
+            background-image: url("Image/Sky.jpg");
+            background-attachment: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="headContainer">Empoleye Details</h1>
+    <div class="listEmpContainer">
+        <ol class="nameList">
+            <li class="name1">James Wilson</li>
+            <li class="name2">Ron. Henky</li>
+            <li class="name3">Jecob Loachab</li>
+            <li class="name4">Prateek Jaiswal</li>
+            <li class="name5">Sam Robert</li>
+            <li class="name6">Lisa F.</li>
+            <li class="name7">Jane. Chau</li>
+            <li class="name8">Alice White</li>
+            <li class="name9">Aanya Sharma</li>
+            <li class="name10">Ritika Roy</li>
+        </ol>
+    </div>
+    <div id="empDetailsContainer">
+        <div>
+            <li class="imgContainer1"></li>
+            <div id="EMP1">
+                Name- James Wilson <br>
+                Age- 55Year <br>
+                Gender- Male <br>
+                City- Banglore <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer2"></li>
+            <div id="EMP1">
+                Name- Ron. Henky <br>
+                Age- 25Year <br>
+                Gender- Male <br>
+                City- Hyderabaad <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer3"></li>
+            <div id="EMP1">
+                Name- Ming Chang <br>
+                Age- 32Year <br>
+                Gender- Male <br>
+                City- Mizoram <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer4"></li>
+            <div id="EMP1">
+                Name- Prateek Jaiswal <br>
+                Age- 29Year <br>
+                Gender- Male <br>
+                City- Gurugram <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer5"></li>
+            <div id="EMP1">
+                Name- Sam Robert<br>
+                Age- 28Year <br>
+                Gender- Male <br>
+                City- Banglore <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer6"></li>
+            <div id="EMP1">
+                Name- Lisa F. <br>
+                Age- 24Year <br>
+                Gender- Female <br>
+                City- Chennai <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer7"></li>
+            <div id="EMP1">
+                Name- Jane Chau.<br>
+                Age- 27Year <br>
+                Gender- Female <br>
+                City- Gurugram <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer8"></li>
+            <div id="EMP1">
+                Name- Alice White <br>
+                Age- 26Year <br>
+                Gender- Female <br>
+                City- Delhi <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer9"></li>
+            <div id="EMP1">
+                Name- Ananya Sharma <br>
+                Age- 28Year <br>
+                Gender- Female <br>
+                City- Noida <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgContainer10"></li>
+            <div id="EMP1">
+                Name- Ritika Roy <br>
+                Age- 26Year <br>
+                Gender- Female <br>
+                City- Delhi <br>
+            </div>
+        </div>
+    </div>
+    <h1 id="StudentHead"> Student Details</h1>
+    <div class="listStudentContainer">
+        <ol class="nameList">
+            <li class="nameSt1">Ritika Roy</li>
+            <li class="nameSt2">Aadhya</li>
+            <li class="nameSt3">Ozo Deb</li>
+            <li class="nameSt4">Pratibha Roy</li>
+            <li class="nameSt5">Manisha S.</li>
+            <li class="nameSt6">Prateek Jaiswal</li>
+            <li class="nameSt7">Varun Sehgal</li>
+            <li class="nameSt8">Sonu Bhardwaj</li>
+            <li class="nameSt9">Pawan Patel</li>
+            <li class="nameSt10">Saurabh Kumar</li>
+        </ol>
+    </div>
+    <div id="StudentDetailsContainer">
+        <div>
+            <li class="imgStudentContainer st1"></li>
+            <div id="Student1">
+                Name- Ritika Roy <br>
+                Age- 26Year <br>
+                Gender- Female <br>
+                City- Delhi <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st2"></li>
+            <div id="Student1">
+                Name- Aadhya <br>
+                Age- 26Year <br>
+                Gender- Female <br>
+                City- Delhi <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st3"></li>
+            <div id="Student1">
+                Name- Ozo Deb <br>
+                Age- 26Year <br>
+                Gender- Female <br>
+                City- Delhi <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st4"></li>
+            <div id="Student1">
+                Name- Pratibha Roy <br>
+                Age- 26Year <br>
+                Gender- Female <br>
+                City- Delhi <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st5"></li>
+            <div id="Student1">
+                Name- Manisha Sharma <br>
+                Age- 26Year <br>
+                Gender- Female <br>
+                City- Delhi <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st6"></li>
+            <div id="Student1">
+                Name- Prateek Jaiswal <br>
+                Age- 29Year <br>
+                Gender- Male <br>
+                City- Gurugram <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st7"></li>
+            <div id="Student1">
+                Name- Varun Sehgal <br>
+                Age- 29Year <br>
+                Gender- Male <br>
+                City- Gurugram <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st8"></li>
+            <div id="Student1">
+                Name- Sonu Bhardwaaj <br>
+                Age- 29Year <br>
+                Gender- Male <br>
+                City- Gurugram <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st9"></li>
+            <div id="Student1">
+                Name- Pawan Patel <br>
+                Age- 29Year <br>
+                Gender- Male <br>
+                City- Gurugram <br>
+            </div>
+        </div>
+        <div>
+            <li class="imgStudentContainer st10"></li>
+            <div id="Student1">
+                Name- Saurabh Kumar <br>
+                Age- 29Year <br>
+                Gender- Male <br>
+                City- Gurugram <br>
+            </div>
+        </div>
+    </div>
+    <h2 id="Footer"> Copyright@2023. All right Reserved to Me Only</h2>
+</body>
+
+</html>

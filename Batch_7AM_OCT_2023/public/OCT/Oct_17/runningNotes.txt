@@ -1,0 +1,17 @@
+padding 
+and
+Margin
+
+
+css margin 
+
+margin: 10px; for all the directions its 10px margin 
+
+
+margin: 20px 30px;  top and bottom is 20px, 30px for left and right
+
+margin-left: 30px;
+margin-right 50px;
+margin: 10px    11px   30px   50px;
+
+        top      right  bottom  left

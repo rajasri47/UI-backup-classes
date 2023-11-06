@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <script src="http://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous">
+    </script>
+    <title>Transperant Login</title>
+    <link rel="stylesheet" href="StudentRegistrationForm.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="http://abcsample.com/data/api/registration" method="GET">
+            <div class="box">
+                <ul>
+                    <li class="li">
+                        <span class="mandate">*</span>
+                        <input type="text" name="Fname" maxlength="10" placeholder="Enter User First Name" required>
+                    </li>
+                    <li class="li">
+                        <span class="mandate">*</span>
+                        <input type="text" name="lname" placeholder="Enter User Last Name" required>
+                    </li>
+                    <li class="li">
+                        <span class="mandate">*</span>
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    </li>
+                    <li class="li">
+                        <span class="mandate">*</span>
+                        <i class="fa fa-key"></i>
+                        <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                    </li>
+                    <li class="li2">
+                        <span class="mandate">*</span>
+                        <label for="Gender"><span>Gender: </span>
+                            <input type="radio" name="gender" checked value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </li>
+                    <li class="li2">
+                        <span class="mandate">*</span>
+                        <label for="Languages"><span>Languages Known : </span>
+                            English <input type="checkbox" name="lng_eng" required>
+                            Hindi <input type="checkbox" name="lng_hin" required>
+                            Marathi <input type="checkbox" name="lng_mar" required>
+                            Telugu<input type="checkbox" name="lng_tel">
+                        </label>
+                    </li>
+                    <li class="li2">
+                        <span class="mandate">*</span>
+                        <label for="qualification"><span>Qualification : </span>
+                            <select name="qualification">
+                                <option value="" selected>Qualification</option>
+                                <option value="SSC">SSC</option>
+                                <option value="HSC">HSC</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Masters">Masters</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li class="li2">
+                        <span class="mandate">*</span>
+                        <label for="dateofbirth"><span>DOB: </span>
+                            <input type="date" name="Mydate">
+                        </label>
+                    </li>
+                    <li class="li2">
+                        <span class="mandate">*</span>
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+
+                        <label for="country"><span>Country : </span>
+                            <select name="country">
+                                <option value="" selected>Select Country</option>
+                                <option value="India">India</option>
+                                <option value="China">China</option>
+                                <option value="Japan">Japan</option>
+                                <option value="USA">USA</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li class="li2">
+                        <span class="mandate">*</span>
+                        <label for="file"><span>UPLOAD PHOTO :</span>
+                            <input type="file" name="MyPhoto">
+                        </label>
+                    </li>
+                    <li class="li2">
+                        <label for="abouturslf">
+                            <span>Tell About Yourself :(min 200 char)</span>
+
+                            <textarea name="abouturslf" id="" cols="50" rows="5"></textarea>
+                        </label>
+                    </li>
+
+                    <input type="submit" class="btn" value="SUBMIT">
+            </div>
+</body>
+
+</html>

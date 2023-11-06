@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEN NUMBER BET 1 TO 1000</title>
+    <style>
+        .h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE EVEN NUMBER BET 1 TO 1000 OPEN DEBUGGER TOOL </h1>
+    <script>
+        var n1 = prompt("Enter the Number")
+        n1 = parseInt(n1);
+        var n2 = prompt("Enter the Number")
+        n2 = parseInt(n2);
+        sumEven = 0;
+        sumOdd = 0
+        for (i = n1; i <= n2; i++) {
+            if (i % 2 == 0) {
+                sumEven += i
+            }
+            else {
+                sumOdd += i
+            }
+        };
+        console.log("Sum of even Number from " + n1 + " to " + n2 + "=" + sumEven);
+        console.log("Sum of Odd Number from " + n1 + " to " + n2 + "=" + sumOdd);
+    </script>
+</body>
+
+</html>

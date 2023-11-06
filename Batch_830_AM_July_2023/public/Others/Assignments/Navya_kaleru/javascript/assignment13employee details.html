@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            employee  details - using functions
+        </title>
+        <style>
+           .h3{
+            text-align: center;
+           }
+        </style>
+        
+    </head> 
+    <body>
+        <h3>employee details using functions</h3>
+        <script>
+
+            
+            var empname , age , gender , hra ,pf ,basicsalary  ,totalsalary = 0;
+            function readUserData(){
+            empname = prompt("enter name");
+            age = prompt(" enter age");
+            gender = prompt ("enter gender");
+            basicsalary = prompt("enter salary");
+          }
+          function hraandpf(){
+            hra = (12/100)*basicsalary;
+            pf = (24/100)*basicsalary;
+          }
+          function displaytotalsalary(){
+            totalsalary = basicsalary + hra + pf;
+         }
+          function displayempDetails(){
+            console.log(" name is"+ empname);
+            console.log("age is" + age);
+            console.log("basicsalary is" + basicsalary);
+            console.log("hra is" + hra);
+            console.log("pf is"+ pf);
+            console.log("total salary is" + totalsalary);
+         }
+          readUserData();
+          hraandpf();
+          displaytotalsalary();
+          displayempDetails();
+
+     </script>
+    </body>
+</html>

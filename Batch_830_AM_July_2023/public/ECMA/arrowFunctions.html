@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Arrow functions
+        </title>
+    </head>
+    <body>
+        <script>
+            var showInfo = undefined
+            // showData();
+            // function showData() {
+            //     console.log("from show data")
+            // }
+            // showData();
+
+            // showInfo();
+
+            // var showInfo = function() {
+            //     console.log("frm show info");
+            // }
+
+            // var displayInfo = () => {
+            //     console.log("frm display info")
+            // }
+
+            // showData();
+            // showInfo();
+            // displayInfo();
+
+            class Demo {
+                constructor() {
+                    console.log("frm constructor");
+                    this.name = 'Teena';
+                }
+                displayInfo() {
+                    console.log("name is " + this.name);
+                    console.log("name is " + this.name);
+                    console.log("name is " + this.name);
+                    setTimeout(() => {
+                        console.log("name is " + this.name);
+                    }, 3000);
+                }
+            }
+
+            var p1 = new Demo();
+            p1.displayInfo();
+
+
+        </script>
+    </body>
+</html>

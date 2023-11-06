@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding Second Largest Value in Given Array</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows Second Largest Number in Given Array <br>
+            Go to console tab for result...
+        </h1>
+        <script>
+
+            var a = [];
+                var n = prompt("enter index value of Array..");
+                n = parseInt(n);
+  
+                for(var i=0; i < n; i++){
+                     a[i] = prompt("enter the values"+i+" th position of array");
+                    a[i] = parseInt(a[i]);
+                    console.log(a[i]);
+                }
+
+                large = a[0];
+                var seclarge = 0;
+    
+                for(var i = 0; i < a.length; i++){
+                   
+                    if(large < a[i]){
+                        seclarge = large;
+                        large = a[i];
+                    }
+                    if(seclarge < a[i] && a[i] != large){
+                        seclarge = a[i];
+                    }
+                }
+                console.log(large);
+                console.log(seclarge);
+    
+            </script>
+    </body>
+</html>

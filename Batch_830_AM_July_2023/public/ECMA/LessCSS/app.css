@@ -1,0 +1,40 @@
+:root {
+    --mycompanyColor: pink;
+    --companyfontsize: 20px;
+}
+
+.container {
+    background-color: var(--mycompanyColor);
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10PX;
+    bottom: 10PX;
+    font-size: var(--companyfontsize);
+}
+
+.childContent {
+    background-color: aquamarine;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.theme {
+    background-color: var(--mycompanyColor);
+    margin: 30px;
+    padding: 20px;
+}
+
+.subchild {
+    background-color: blue;
+    margin: 30px;
+    padding: 20px;
+}
+
+.innerChild {
+    background-color: var(--mycompanyColor);
+    margin: 50px;
+    
+}

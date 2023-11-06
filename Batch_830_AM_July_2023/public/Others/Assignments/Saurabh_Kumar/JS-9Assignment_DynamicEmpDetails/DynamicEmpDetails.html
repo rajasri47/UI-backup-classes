@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empolyee Details</title>
+    <style>
+        body{
+            background: linear-gradient(to top, Yellow, Pink, Violet,skyblue);
+        }
+        div{
+            border:2px solid;
+            width:300px;
+            margin: 10px;
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1> For the Source Code PLease follow the Below Steps:-</h1>
+    <div>Click On right Button</div>
+    <div>Click On Inspect</div>
+    <div> Click on Console</div>
+    <div>Refresh Your Page for the Next record.</div>
+    <script>
+        var EmpolyeeName = prompt("Enter Employee Name");
+        var EmpolyeeGender = prompt("Enter Employee Gender");
+        var EmpolyeeDepartment = prompt("Enter Employee Department");
+        var BasicSalary = prompt("Enter Employee Basic Salary Annual");
+
+        BasicSalary = parseInt(BasicSalary);
+        HRA = (BasicSalary * 24) / 100;
+        PF = (BasicSalary * 6) / 100;
+        TotalSalary = (BasicSalary - PF) + HRA;
+
+        console.log("Employee Name : " + EmpolyeeName);
+        console.log("Gender : " + EmpolyeeGender);
+        console.log("Department : " + EmpolyeeDepartment);
+        console.log("Total Base Salary : " + TotalSalary);
+
+        //For Male
+        if (EmpolyeeGender == 'Male' && TotalSalary >= 300000) {
+            TotalTax = (TotalSalary * 15) / 100;
+            SalaryafterDeduction = TotalSalary - TotalTax;
+            MonthlySalary = SalaryafterDeduction / 12;
+            console.log("For this Tax Slab 15%")
+            console.log("Total Salary Before Tax is " + TotalSalary);
+            console.log("Total Tax is " + TotalTax);
+            console.log('Total salary after tax is ' + SalaryafterDeduction);
+            console.log("Your Monthly Payout is " + MonthlySalary);
+        }
+        if (EmpolyeeGender == 'Male' && TotalSalary >= 200000 && TotalSalary < 300000) {
+            TotalTax = (TotalSalary * 10) / 100;
+            SalaryafterDeduction = TotalSalary - TotalTax;
+            MonthlySalary = SalaryafterDeduction / 12;
+            console.log("For this Tax Slab 10%")
+            console.log("Total Salary Before Tax is " + TotalSalary);
+            console.log("Total Tax is " + TotalTax);
+            console.log('Total salary after tax is ' + SalaryafterDeduction);
+            console.log("Your Monthly Payout is " + MonthlySalary);
+        }
+        if (EmpolyeeGender == 'Male' && TotalSalary >= 100000 && TotalSalary < 200000) {
+            TotalTax = (TotalSalary * 5) / 100;
+            SalaryafterDeduction = TotalSalary - TotalTax;
+            MonthlySalary = SalaryafterDeduction / 12;
+            console.log("For this Tax Slab 5%")
+            console.log("Total Salary Before Tax : " + TotalSalary);
+            console.log("Total Tax : " + TotalTax);
+            console.log('Total salary after tax : ' + SalaryafterDeduction);
+            console.log("Your Monthly Payout : " + MonthlySalary);
+        }
+        if (EmpolyeeGender == 'Male' && TotalSalary >= 1 && TotalSalary < 100000) {
+            TotalTax = 0;
+            SalaryafterDeduction = TotalSalary - TotalTax;
+            MonthlySalary = SalaryafterDeduction / 12;
+           console.log("For this Tax Slab 0%")
+           // console.log("Total Salary Before Tax is " + TotalSalary);
+           // console.log("Total Tax is " + TotalTax);
+             console.log('Total salary after tax is ' + SalaryafterDeduction);
+            console.log("Your Monthly Payout is " + MonthlySalary);
+        }
+
+        //For Female
+        if (EmpolyeeGender == 'Female' && TotalSalary >= 300000) {
+            TotalTax = (TotalSalary * 10) / 100;
+            SalaryafterDeduction = TotalSalary - TotalTax;
+            MonthlySalary = SalaryafterDeduction / 12;
+            console.log("For this Tax Slab 10%")
+            console.log("Total Salary Before Tax is " + TotalSalary);
+            console.log("Total Tax is " + TotalTax);
+            console.log('Total salary after tax is ' + SalaryafterDeduction);
+            console.log("Your Monthly Payout is " + MonthlySalary);
+        }
+        if (EmpolyeeGender == 'Female' && TotalSalary >= 200000  && TotalSalary < 300000) {
+            TotalTax = (TotalSalary * 5) / 100;
+            SalaryafterDeduction = TotalSalary - TotalTax;
+            MonthlySalary = SalaryafterDeduction / 12;
+            console.log("For this Tax Slab 5%")
+            console.log("Total Salary Before Tax is " + TotalSalary);
+            console.log("Total Tax is " + TotalTax);
+            console.log('Total salary after tax is ' + SalaryafterDeduction);
+            console.log("Your Monthly Payout is " + MonthlySalary);
+        }
+        if (EmpolyeeGender == 'Female' && TotalSalary >= 1 && TotalSalary < 200000) {
+            TotalTax = 0;
+            SalaryafterDeduction = TotalSalary - TotalTax;
+            MonthlySalary = SalaryafterDeduction / 12;
+           console.log("For this Tax Slab 0%")
+           // console.log("Total Salary Before Tax is " + TotalSalary);
+           // console.log("Total Tax is " + TotalTax);
+             console.log('Total salary after tax is ' + SalaryafterDeduction);
+            console.log("Your Monthly Payout is " + MonthlySalary);
+        }
+    </script>
+</body>
+
+</html>

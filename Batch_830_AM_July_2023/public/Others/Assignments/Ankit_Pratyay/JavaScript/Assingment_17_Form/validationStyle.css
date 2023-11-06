@@ -1,0 +1,42 @@
+h3 {
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+ul {
+    border: 1px solid;
+    width: 500px;
+    margin: 20px auto;
+    background-color: azure
+}
+
+li {
+    border: 1px solid;
+    margin: 10px 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: antiquewhite;
+}
+
+.eye {
+    cursor: pointer;
+    position: relative;
+    left: -23px;
+    top: 2px;
+}
+
+.eyeclose {
+    display: none;
+}
+
+.uage {
+    width: 40px;
+}
+
+.uIdErr {
+    padding-top: 3px;
+    color: red;
+    font-size: 12px;
+    display: none;
+}

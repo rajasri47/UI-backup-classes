@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr =[];
+        var even = 0;
+        var odd = 0;
+        for(var i = 0 ; i < 5 ; i++){
+            arr[i] = prompt("Enter " + i + "number");
+            arr[i] = parseInt(arr[i]);
+            if(arr[i] % 2 == 0){
+                even = even + arr[i];
+            }
+            console.log(even);
+        }
+
+        for(var i = 0 ; i < 5 ; i++){
+            arr[i] = prompt("Enter " + i + "number");
+            arr[i] = parseInt(arr[i]);
+            if(arr[i] % 2 != 0){
+                odd = odd + arr[i];
+            }
+            console.log(odd);
+        }
+    </script>
+</body>
+</html>

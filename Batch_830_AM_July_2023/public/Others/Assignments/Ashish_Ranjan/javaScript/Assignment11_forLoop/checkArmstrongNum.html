@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fo loop</title>
+  </head>
+  <body>
+    <!---Demonstrate check whether number is ArmStrong or not--- -->
+    <script>
+        var num = prompt("Enter Number");
+        num =parseInt(num);
+        var sum = 0;
+        var temp = num;
+
+          num= num.toString();
+            var len = num.length;
+            num = parseInt(num);
+
+        // var length = num.toString().length;
+
+        while( num > 0){
+
+          var rem = num % 10;
+
+          sum +=rem * rem * rem;
+          num = num / 10;
+        }
+        if( temp ===sum){
+
+          console.log(tem +" is a Armstrong Number");
+        }
+
+        else{
+          console.log(temp +" is not Armstrong Number");
+        }
+        
+    </script>
+  </body>
+</html>

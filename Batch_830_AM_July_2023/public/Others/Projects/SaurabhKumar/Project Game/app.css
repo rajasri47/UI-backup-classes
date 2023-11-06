@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(26, 23, 23);
+    padding: 2vw 3vw;
+}
+.nav h2{
+    font-size: 2.5vw;
+    color: aquamarine;
+}
+.navright a{
+    text-decoration: none;
+    color:rgb(166, 229, 237);
+    
+}
+.navright :hover{
+    background-color: rgb(59, 108, 114);
+    border-radius: 10px;
+    align-self: center;
+    padding: 2px;
+    font-size: 4vh;
+    transition: 1s;
+}
+.navright{
+    padding: 0px 50px;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 6.5vw;
+}
+.container{
+   width: 100%;
+   height: 100%;
+}
+.page1{
+    width:100%;
+    height:80%;
+    background-color: yellow;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+

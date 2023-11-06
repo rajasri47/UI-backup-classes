@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>demonstrating forloop control structure</title>
+    </head>
+    <body>
+        <h3>A Programme To Find sum of EvenNums& sum of OddNums</h3>
+        <script>
+             
+            var n=0;
+            var maxrange=prompt("enter the given range");
+            maxrange=parseInt(maxrange);  
+            for(var i=0; i<=maxrange; i++)
+            {
+            if(i%2==0){
+               var result=n+i;
+                n=result;
+                console.log(result); 
+            }
+            }
+            console.log(result); 
+            
+            var n=0;
+            for(var i=0;i<=maxrange;i++)
+            {
+             if(i%2!=0){
+               var result=n+i;
+               n=result;
+             }
+             
+            }
+            console.log(result);  
+        </script>
+    </body>
+</html>

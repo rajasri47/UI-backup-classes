@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic array find sum of all even numbers
+        </title>
+    </head>
+    <body>
+        <script>
+            var arr1=[];
+
+            var sum=0;
+            arr1[0]=prompt("Enter 1 value of array ");
+            arr1[0]=parseInt(arr1[0]);
+            arr1[1]=prompt("Enter 2 value of array ");
+            arr1[1]=parseInt(arr1[1]);
+            arr1[2]=prompt("Enter 3 value of array ");
+            arr1[2]=parseInt(arr1[2]);
+            arr1[3]=prompt("Enter 4 value of array ");
+            arr1[3]=parseInt(arr1[3]);
+            arr1[4]=prompt("Enter 5 value of array ");
+            arr1[4]=parseInt(arr1[4]);
+
+            for(i=0;i<=arr1.length-1;i++)
+            { 
+                if(arr1[i] % 2 == 0)
+                {
+                sum=sum + arr1[i];
+                 }
+                
+            }
+            console.log("Element of  array  is="+ arr1);
+
+            console.log("sum of all array element is="+sum);
+
+
+        </script>
+    </body>
+</html>

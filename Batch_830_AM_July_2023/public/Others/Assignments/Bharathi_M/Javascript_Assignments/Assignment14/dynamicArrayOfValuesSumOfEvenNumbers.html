@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Aarray of values and find the sum of all even numbers within it</title>
+</head>
+<body>
+    <script>
+        var array = [];
+        var size = prompt('enter the size');
+        size = parseInt(size);
+        for(i = 0; i < size; i++) {
+            array[i] = prompt('enter numbers');
+            array[i] = parseInt(array[i]);
+        }
+        console.log('user given array is ' + array);
+            var sum = 0;
+            for(i = 0; i < size; i++) {
+                if(array[i] % 2 == 0) {
+                    sum += array[i];
+                }
+            }
+            console.log('the sum of even numbers is ' + sum);
+    
+       
+    </script>
+</body>
+</html>

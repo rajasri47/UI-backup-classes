@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Passing Params
+        </title>
+    </head>
+    <body>
+        <script>
+            
+            
+            var readValues = () => { // calling funcion 
+                var a1, a2;
+                a1 = prompt("enter value for a1");
+                a1 = parseInt(a1); // 23
+                a2 = prompt("enter value for a2")
+                a2 = parseInt(a2); // 33
+                findSum(a1, a2); // findSum(23, 33); , a1, a2 - actual params
+                console.log('done');
+            }
+
+            var findSum = (a1, p2) => { // called function, p1  = 23, p2 = 33, p1, p2 -> formal params
+                var result  = a1 + p2;
+                console.log("The sum is " + result);
+            }
+            readValues();
+        </script>
+    </body>
+</html>

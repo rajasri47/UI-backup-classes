@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for Loop</title>
+  </head>
+  <body>
+    <script>
+      // ----------Display all prime number between 1 to 1000-------->
+      var num = 1000;
+      var count = 0;
+      for (var i = 2; i <= num; i++) {
+        for (var j = 1; j <= i; j++) {
+          var rem = i % j;
+          if (rem == 0) {
+            count++;
+          }
+        }
+        if (count == 2) {
+          console.log(i);
+        }
+        count = 0;
+      }
+    </script>
+  </body>
+</html>

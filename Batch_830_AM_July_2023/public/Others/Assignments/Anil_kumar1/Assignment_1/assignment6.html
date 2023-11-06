@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>
+            Student Registration Page
+        </title>
+        <style>
+            .header{
+                border: 3px solid black;
+                height: 25px;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+                margin: 10px auto;
+            }
+            ul{
+                border: 2px solid black;
+                height: auto;
+                margin: 5px;
+                padding: 5px;
+                list-style: none;
+            }
+            .userdetails{
+                border: 2px solid black ;
+                height: 110px;
+                padding: 20px;
+                margin: 20px;
+                font-weight: 700;
+            }
+            .Userbox{
+                border: 2px solid black;
+                position: absolute;
+                left: 10%;
+                padding: 3px;
+                text-align: center;
+                top: 8%;
+                left: 5%;
+                margin: 5px;
+                background-color: white;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .edudetails{
+                border: 2px solid black ;
+                height: 90px;
+                padding: 20px;
+                margin: 20px;
+                font-weight: 700;
+                position: relative;
+            }
+            .edubox{
+                border: 2px solid black;
+                position: absolute;
+                background-color: white;
+                padding: 5px;
+                text-align: center;
+                left: 2%;
+                top: -8%;
+            }
+            .self{
+                border: 2px solid black;
+                margin: 20px;
+                padding: 30px;
+                position: relative;
+                font-weight: 700;
+            }
+            .selfbox{
+                border: 2px solid black;
+                padding: 10px;
+                background-color: white;
+                text-align: center;
+                font-weight: bold;
+                position: absolute;
+                top: -8%;
+                left: 2%;
+            }
+            .footer{
+                border: 2px solid black;
+                height: 25px;
+                font-size: 25px;
+                font-weight:700;
+                text-align: center;
+                padding: 10px;
+                margin: 10px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">Student Details Registration Page</div>
+     <form action="" method="">
+        <ul>
+            <li class="userdetails">
+                <div class="Userbox">User Details</div>
+                <label for="name">
+                Name : &nbsp;         
+                </label>
+                <input type="text" name="name" >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address : 
+                <textarea rows="1" ></textarea>
+                <br>
+                <br>
+                <label for="age">
+                    Age :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
+                <input type="text" name="age">
+                <br>
+                <br>
+                <label for="gender">
+                    Gender :
+                </label>
+                <input type="radio" name="gender">Male&nbsp;
+                <input type="radio" name="gender">Female
+                
+            </li>
+            <li class="edudetails">
+                <div class="edubox">Education Details</div>
+                <br>
+                <label for="qualification">
+                    Qualification :
+                </label>
+                <input type="radio" name="qualification">MCA&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="qualification">MBA&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="qualification">B.TECH
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Course Opted For :
+                <select name="course">
+                    <option value="UI/UX" selected>UI/UX Designing</option>
+                    <option value="JavaFullStack">java Full Stack</option>
+                    <option value="CoreJava">Core Java</option>
+                    <option value="Python">Python</option>
+                    <option value="React">React</option>
+                </select>
+                <br>
+                <br>
+                <label for="lang">
+                    Languages :
+                </label>
+                <input type="checkbox" name="lang">English
+                <input type="checkbox" name="lang">Hindi
+                <input type="checkbox" name="lang">Telugu
+                <input type="checkbox" name="lang">Urdu
+            </li>
+            <li class="self">
+                <div class="selfbox">About Yourself</div>
+                Tell Few words about your self :
+                <br>
+                <br>
+                <textarea rows="7" cols="50"></textarea>
+
+            </li>
+        </ul>
+    </form>
+    <div class="footer"> @copyrights 2023</div>
+    </body>
+</html>

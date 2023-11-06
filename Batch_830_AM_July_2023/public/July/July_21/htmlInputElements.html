@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating HTML input elements
+        </title>
+        <style>
+            h3 {
+                text-align: center;
+                margin: 20px;
+                color: yellowgreen;
+            }
+            ul {
+                border: 1px solid;
+                width: 600px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid #ccc;
+                margin: 10px;
+                padding: 10px;
+            }
+            label {
+                color: gold;
+            }
+            .mandate {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Student Registration Page
+        </h3>
+        <form action="http://abcsample.com/data/api/registration" method="GET">
+            <ul>
+                <li>
+                    
+                    <input type="text" name="ufirstname" maxlength="10" placeholder="Enter User first Name ">
+                </li>
+                <li>
+                    <label for="lname">
+                        Enter User Last Name:
+                        <span class="mandate">*</span>
+                    </label>
+                    <input type="text" name="lname" required>
+                </li>
+                <li>
+                    Enter accont Password:
+                    <input type="password" name="actPwd">
+                </li>
+                <li>
+                    Gender:
+                    <input type="radio" name="gender" checked value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </li>
+                <li>
+                    Country: 
+                    <select name="ucountry">
+                        <option value="">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                        <option value="Japan" selected>Japan</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </li>
+                <li>
+                    Languages you know:
+                    English <input type="checkbox" name="lng_eng" required>
+                    Telugu <input type="checkbox" name="lng_tel">
+                    Hindi <input type="checkbox" name="lng_hin">
+                    URdu <input type="checkbox" name="lng_urd">
+                    
+                </li>
+                <li>
+                    <label for="abouturslf">
+                        Tell about urself (min 200 char)
+                    </label>
+                    <textarea name="abouturslf" id="" cols="50" rows="5"></textarea>
+                </li>
+                <li>
+                    <!-- <input type="button" value="Register Details"> -->
+                    <input type="submit" value="Register Details">
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>
+

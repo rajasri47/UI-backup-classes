@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul {
+                width: 500px;
+                background-color: #ccc;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid;
+                margin: 10px;
+                padding: 10px;
+                background-color: #fff;
+            }
+            .rblock {
+                background-color: yellow;
+                display: none;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">hello</div>
+        <ul>
+            <li>
+                Enter first value :
+                <input type="text" id="fval">
+            </li>
+            <li>
+                Enter Second value :
+                <input type="text" id="sval">
+            </li>
+            <li>
+                <input type="button" value="Get Sum" onclick="getSumOfValues()">
+                
+            </li>
+            <li class="rblock">
+                The sum of values is <span></span>
+            </li>
+        </ul>
+        <script>
+            var getSumOfValues = () => {
+                var userData = {};
+                userData.fval = document.querySelector("#fval").value;
+                userData.fval = parseInt(userData.fval);
+                userData.sval = document.querySelector("#sval").value;
+                userData.sval = parseInt(userData.sval);
+                userData.sum = userData.fval + userData.sval;
+                document.querySelector("span").innerText = userData.sum;
+
+                document.querySelector(".rblock").style.display = 'block';
+            }
+
+            
+        </script>
+    </body>
+</html>

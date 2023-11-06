@@ -1,0 +1,55 @@
+Heading Tags:
+    h1 
+    h2
+    h3 
+
+
+    h6
+    -----------
+
+p Tag - > any time  we need to render multiline of text content in the form of paragraph
+
+Tags:
+    html
+    body 
+    title 
+    head
+    p 
+    h1 to h6 
+    br 
+---------------
+
+CSS 
+
+--------------
+
+HTML Attributes: 
+    id -> through which we can add unique identity to elements
+
+    name - > through which we can group the relative items to a corresponding category
+
+    class -> Through which we add single and multiple css classes to a single element
+
+    href -> attribute through whichw e can provide external link to tag
+
+    alt -> Alternative text to be provided to img tag 
+
+    title - > A tool tip msg can be added through this 
+
+    src -> Through which we can specify the source of external resource 
+
+    keyword - > we can specify the list of keywords the current page can be searched
+
+    etc. 
+
+
+    Syntax:
+        <tagname attributename1="value" attrname2="value2" ... > 
+            content ... 
+        </tagname>
+    Example:
+
+        <p id="myelement" name="news" class="msg container">
+            Hello 
+        </p>
+

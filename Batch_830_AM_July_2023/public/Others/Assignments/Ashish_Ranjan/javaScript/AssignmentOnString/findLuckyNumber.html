@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find lucky Number</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Code in console</h2>
+
+    <script>
+        var number = 0, Sum = 0;
+        number = prompt("Enter a number ");
+        number = parseInt(number);
+        while (number > 0 || Sum > 9) {
+            if (number == 0) {
+                number = Sum;
+                Sum = 0;
+            }
+            var rem = number % 10;
+            Sum = Sum + rem;
+            number = number / 10;
+            number=parseInt(number);
+        }
+        console.log(Sum);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+setTimeout and Interval methods
+
+    setTimeout()
+    setInterval()
+
+    arrow functions
+    callback functions 
+    anonymous function 
+    recurrsive function 
+    pure and impure functions 
+    inner functions 
+
+
+    function sample() {
+        ,... 
+        function test() {
+
+        }
+    }
+----------------------
+
+DHTML 
+
+    window
+
+    document 
+
+    CRUD 
+
+    Different selectors :
+
+        document.getelementById("test")
+        document.getElementByTagname("test")
+        document.getElementByClassname("test")
+
+            document.querySelector("#ABC")
+            document.querySelector(".ABC")
+            document.querySelector("ABC")

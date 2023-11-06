@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITION</title>
+    <style>
+        .header{
+            height: 40px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 2px;
+            padding: 10px;
+            border: 2px solid;
+        }
+        .content{
+            height: 520px;
+            border: 2px solid;
+            position: relative;
+        }
+        .block{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            text-align: center;
+        }
+         .block1{
+            background-color: aqua;
+            border: 2px solid;
+            position: relative;
+            left: 3px;
+            top: 0px;
+            z-index: 2;
+        }
+        .block2{
+            background-color: rgb(63, 53, 53);
+            border: 2px solid;
+            position: absolute;
+            left: 5%;
+            top: 60px;
+            z-index: 3;
+            opacity: 0.80;
+        }
+        .block3{
+            background-color: blueviolet;
+            border: 2px solid;
+            position: absolute;
+            bottom: 10px;
+            left: 3px;
+            z-index: 2;
+            
+
+        }
+        .block4{
+            background-color: brown;
+            border: 2px solid;
+            position: absolute;
+            bottom: 60px;
+            left: 40px;
+            z-index: 3;
+            opacity: 0.80;
+
+        }
+        .block5{
+            background-color: chartreuse;
+            border: 2px solid;
+            position: absolute;
+            left: 92%;
+            top: 0px;
+            z-index: 2;
+        }
+        .block6{
+            background-color: cornflowerblue;
+            border: 2px solid;
+            position: absolute;
+            left: 87%;
+            top: 60px;
+            z-index: 3;
+            opacity: 0.80;
+        }
+        .block7{
+            background-color: cyan;
+            border: 2px solid;
+            position: absolute;
+            left: 92%;
+            bottom: 10px;
+            z-index: 2;
+        }
+        .block8{
+            background-color: darkorange;
+            border: 2px solid;
+            position: absolute;
+            left: 87%;
+            bottom: 60px;
+            z-index: 3;
+            opacity: 0.80;
+        }
+        .block9{
+            background-color: #8b008b;
+            border: 2px solid;
+            position: relative;
+            top: 6%;
+            left: 40%;
+            z-index: 2;
+        }
+        .block10{
+            background-color: darkred;
+            border: 2px solid;
+            position: relative;
+            top: -14%;
+            left: 50%;
+            z-index: 2;
+        }
+        .block11{
+            background-color: darkslategray;
+            border: 2px solid;
+            position: relative;
+            bottom: 9%;
+            left: 40%;
+            z-index: 2;
+        }
+        .block12{
+            background-color: deeppink;
+            border: 2px solid;
+            position: relative;
+            bottom: 29%;
+            left: 50%;
+            z-index: 2;
+        }
+        .block13{
+            background-color: greenyellow;
+            border: 2px solid;
+            position: absolute;
+            top: 38%;
+            left: 45%;
+            z-index: 3;
+            opacity: 0.80;
+
+        }
+        .footer{
+            text-align: center;
+            height: 30px;
+            padding: 2px;
+            margin-top: 4px;
+            border: 2px solid;
+            font-size: 20px;
+        }
+        .textCenter{
+            font-weight: bold;
+            position: relative;
+            top: 40%;
+            left: 2%;
+        }
+    </style>
+
+</head>
+<body>
+    <h3 class="header">Block Game</h3>
+    
+<div class="content">
+    <div class="block block1"><span class="textCenter">Block 1</span></div>
+    <div class="block block2"><span class="textCenter">Block 2</span></div>
+    <div class="block block3"><span class="textCenter">Block 3</span></div>
+    <div class="block block4"><span class="textCenter">Block 4</span></div>
+    <div class="block block5"><span class="textCenter">Block 5</span></div>
+    <div class="block block6"><span class="textCenter">Block 6</span></Block></div>
+    <div class="block block7"><span class="textCenter">Block 7</span></div>
+    <div class="block block8"><span class="textCenter">>Block 8</span></div>    
+    <div class="block block9"><span class="textCenter">Block 9</span></div>
+    <div class="block block10"><span class="textCenter">Block 10</span></div>
+    <div class="block block11"><span class="textCenter">>Block 11</span></div>
+    <div class="block block12"><span class="textCenter">Block 12</span></div>
+    <div class="block block13"><span class="textCenter">Block 13</span></div>
+    <div class="footer">@copyrights 2023</div>
+</div>  
+</body>
+</html>

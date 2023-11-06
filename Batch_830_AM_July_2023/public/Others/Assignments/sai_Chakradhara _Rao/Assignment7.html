@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ename, age, gender, basicSalary;
+        var ename = prompt("Enter student name");
+        var age = prompt("Enter student age");
+        var gender = prompt("Enter student gender");
+        var sub1marks = parseInt(prompt("Enter student sub1marks"));
+        var sub2marks = parseInt(prompt("Enter student sub2marks"));
+        var sub3marks = parseInt(prompt("Enter student sub3marks"));
+        var sub4marks = parseInt(prompt("Enter student sub4marks"));
+        var totalmarks = sub1marks + sub2marks + sub3marks + sub4marks;
+        var avg = totalmarks / 4; 
+
+        console.log(" Student Name: " + ename);
+        console.log(" Age: " + age);
+        console.log(" Gender: " + gender);
+        console.log(" Subject 1 Marks: " + sub1marks);
+        console.log(" Subject 2 Marks: " + sub2marks);
+        console.log(" Subject 3 Marks: " + sub3marks);
+        console.log(" Subject 4 Marks: " + sub4marks);
+        console.log(" Total Marks: " + totalmarks);
+        console.log(" Average Marks: " + avg);
+    </script>
+</body>
+</html>

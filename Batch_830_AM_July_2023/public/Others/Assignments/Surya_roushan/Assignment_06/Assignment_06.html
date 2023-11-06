@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_06</title>
+    <link rel="stylesheet" href="Assignment_06.css">
+</head>
+<body>
+  <form action="http://127.0.0.1:5500/Assignment_06.html?name=Surya+Roushan&age=24&gender=on&address=++++++++++++&qualification=on&qualification=on&qualification=on&languages=on&languages=on&languages=on&languages=on&self=%0D%0A++++++++&register=Submit" method="get">
+    <div class="header">
+     Student Details Registration Page
+    </div>
+    
+    <div class="mainContainer">
+     <div class="container1">
+      <ul class="ulOne">
+        <li class="liOne">
+            <lable for="name">Name: </lable>
+            <input type="text" name="name" id="name" required>
+        </li>
+        <li class="liOne">
+            <label for="age">Age: &#160;&#160; </label>
+            <input type="text" name="age" id="age" required>
+        </li>
+        <li class="liOne">
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="gender" required> Male &#160;
+            <input type="radio" name="gender" id="gender" required>Female
+        </li>
+        <li class="liAddress">
+            <label for="address" class="label1" > Address: </label>
+            <textarea name="address" id="address" rows="7" cols="35">
+            </textarea>
+        </li>
+      </ul>
+     </div>
+     <div class="subContainer1">
+     User Details
+     </div>
+     <div class="container2">
+      <ul class="ulTwo">
+        <li class="liTwo">
+            <label for="checkbox">Qualification: </label>
+      <input type="checkbox" name="qualification" id="qualification"required> MCA
+      <input type="checkbox" name="qualification" id="qualification"required> MBA
+      <input type="checkbox" name="qualification" id="qualification"required> B.tech
+        </li>
+        <li class="liTwo">
+            <label for="languages">Languages: </label>
+            <input type="checkbox" name="languages" id="languages"required>Sanskrit
+            <input type="checkbox" name="languages" id="languages"required>Hindi
+            <input type="checkbox" name="languages" id="languages"required>Telugu
+            <input type="checkbox" name="languages" id="languages"required>English
+
+        </li>
+         <li class="liDetails">
+            <label>Course Opted For</label>
+            <select>
+                <option>Select Option</option>
+                <option>Web Devlopment</option>
+                <option>Core Java</option>
+                <option>Full stack Java</option>
+                <option>Full Stack Web Development</option>
+                <option>Testing</option>
+
+            </select>
+
+         </li>
+      </ul>
+     </div>
+     <div class="subContainer2">
+        Education Details
+     </div>
+     <div class="container3">
+       <ul class="ulThree">
+        <li class="liThree">
+        <label for="self"  class="labelA"> Tell Few Words About Self  </label>
+        <textarea name="self" id="self" rows="6" cols="120" class="textarea1">
+
+        </textarea>
+    </li>
+    <li class="liDetails2">
+        <label for="register">
+        
+        </label>
+        <input type="submit" name="register" id="register" placeholder="register" required>
+    </li>
+    </ul>
+      </div>
+      <div class="subContainer3">
+        About Your Self
+      </div>
+    </div>
+    <div class="footer">
+      @Copyright 2023
+    </div>
+  </form>
+</body>
+</html>

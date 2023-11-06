@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<html lang="eng">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <title> Employee Details </title>
+   
+</head>
+<body>
+    <script>
+            var name=prompt( "Enter employee name");
+            var gender=prompt( "Enter gender");
+            var department=prompt("Enter department");
+            var basicsal=prompt("Enter basic Salary");
+
+            basicsal=parseInt(basicsal);
+
+            var emppf=(basicsal*12)/100;
+            var emphra=(basicsal*24)/100;
+
+            var totalsal= emppf + emphra + basicsal;
+
+            console.log("Employee Details " );
+            console.log("Name is " + name);
+            console.log("Gender is " + gender);
+            console.log("Department is " + department);
+            console.log("Emp PF is " + emppf);
+            console.log("Emp HRA is "+ emphra);
+            console.log("Emp Total salary is "+ totalsal);
+
+           // Total Salary = emp  pf + emp hra + Salary paid
+
+    </script>
+ 
+
+</body>
+</html>

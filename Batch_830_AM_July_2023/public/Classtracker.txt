@@ -1,0 +1,461 @@
+Class-01 (22.06.2023)---Demo
+        --Introduction of course
+        --Syllabus of Course
+
+Class-02 (23.06.2023)----Demo
+	--Prerequisites of courses
+	--How to download VS code 
+	--How to Signup Github & Telegram 
+	--What will be the achievement after completing this course
+	--what is a webpage, UI, Full Stack Web Development
+	--connection between client, web server, Database
+
+Class-03 (26.06.2023)----Demo
+	--Intro of Course Syllabus
+	--How to download Node js
+	--Intro with Assignment & Project Folder
+	--Explanation of Static & Dynamic Webpage
+
+Class-04 (27.06.2023)
+	--Intro of Course Syllabus
+	--What is a Responsive Webpage
+	--use of getbootstrap.com
+	--ECMA Intro
+	--Advantages of VS Code
+	--What is a tag
+	--Basic structure of a html webpage
+	--What is the header part of a webpage
+	--What is the body part of a webpage
+	--Ways to execute a webpage with a browser
+
+Class-05 (28.06.2023)---Starting of html4
+	--Important tips for coding
+	--<br> tag
+	--<h1>-<h6> tags
+	--&nbsp; bytecode for a single space
+	--list of Html Attrubutes
+
+Class-06 (29.06.2023)----css3
+	--What is Id Attribute
+	--What is Name Attribute
+	--What is Style Attribute
+	--Explanation of Style attributes 
+	--Working With Color (RGB, hashcode)
+	--Border concept
+
+Class-07 (30.06.2023)
+	--Explanation of what is GitHub
+	--Step to access Git Hub access
+
+Class-08 (01.07.2023)
+	--Inline CSS
+	--Css with classes
+	--Style tag
+	--DOM structure
+	--Explanation about file extension(.txt, .pdf, .doc, .xmls, .pptx etc)
+
+Class-09 (03.07.2023)
+	--Different ways to assign CSS properties to the elements (Class base, Inline CSS, Id base css)
+	--CSS property order
+	--Debugging tool
+	--Assignment-01- Do familiar with Debugging tool
+
+Class-10 (05.07.2023)
+	--CSS Priority
+	--<img> image tag
+	--title tag in paragraph tag <p title"---" > </p>
+	--<a> anchor tag
+	--{a:visited}css property
+	--use of !important in CSS property
+	--Assignment-02--Put 10 student Details on our webpage
+
+
+Class-11 (06.07.2023)
+	--Relative and absolute position of an element
+	--Inline & Block level Elements 
+	--<div> <span> tags
+
+Class-12 (07.07.2023)
+	--Css overflow property 
+	--Css padding & Margin
+
+Class-13 (10.07.2023)---Online Class on Zoom 
+	--Css float property
+	--Assignment-03---Block Game Project
+
+Class-14 (12.07.2023)
+	--How to submit the changes in github repo
+	--Use of <Ul> <Ol> & <li> tags 
+
+Class-15 (13.07.2023)
+	--Assignment-04---Student Details base on <ul> <ol>and <li> tags
+	--How to add background-image on a webpage
+	--Steps to Download & install node.js
+	--What is Base64 & normal Images
+
+Class-16 (14.07.2023)
+	--Advantages of node js
+	--use of node js
+	--Steps to create a node js server and run on our machine
+		
+Class-17 (15.07.2023)
+	--interaction with server
+	--image spriting
+	--Css position
+	--Css-position:relative
+	--Css-position:static
+
+Class-18 (17.07.2023)
+	--Css position--fixed/sticky/absolute
+	--Opacity
+	--Z-index
+	--Assignment-05--Block Game using css position & z-index
+
+Class-19 (18.07.2023)
+	--Difference Between display: none & Visibility: hidden
+	--display:none/ inline/block/inline-block
+	--html tables 
+
+class-20 (20.07.2023)
+	--pseudo classes 
+	--pseudo Elements
+
+Class-21 (21.07.2023)
+	--creating form using label, inputs
+	--Explain Attributes 
+
+Class-22 (23.07.2023)
+	--Ways to communicate with server
+	--GET & POST method
+	-Assignment-06 --Student Details Registration page
+
+Class-23 (24.07.2023)---Javascript Lecture
+	--Discussion of Student Question
+	--Introduction of Javascript
+	--Demonstrating alert method
+
+Class-24 (25.07.2023)----Javascript Lecture
+	--Demonstrating Console.log method
+	--Variable Hoisting
+	--Assignment-07--Calculate total salary of employee
+
+Class-25 (26.07.2023)----Javascript Lecture
+	--Typecasting
+	--Use of typeof method
+	--use of prompt method
+	--Conversion of one data type into another parseInt(),parseFloat(),toString()
+	--Hard Coded Data
+	--Dynamic Data
+	--Assignment-08---student details getting percentage of student from theirs marks 
+	--Conditional Control Structure of js
+
+Class-26 (27.07.2023)---Javascript Lecture
+	--what is conditional control structure-if,if else, elseif,nested if, nested if else
+	--Function of source tab in inspect 
+	--Assignment-09 --tax paid by male and female employee according to given data
+	--Debugger tool source tab
+
+Class-27 (31.07.2023)----Javascript Lecture--Looping Statement
+	--Info about developer.mozilla.org notes & knowledge
+	--Info about leetCode & HackerCode
+	--for loop
+	--Assignment-10 to 17---- related to for loop 
+	--Didfferent Assignment Operator
+
+
+Class-28 (01.08.2023)--------Javascript Lecture-Artihmatics
+	--Finding odd & even number
+	--Finiding sum of odd & even number
+	--Prime number check 
+	--Time Complexity
+	--Break & Continue Keywords
+	--Project Reviews 
+	--Assignment-18 to 26--related if, for loop & arithmatical operation
+
+Class-29 (02.08.2023)-------Javascript Lecture
+	--Break Statement
+	--Demonstrating While Loop
+	--Logic For lopp
+	--random Number
+
+Class-30 (03.08.2023)--------Javascript Lecture
+	--Palindrome Numbers
+	--Armstrong Number
+	--Exponentiation operation
+	--Lucky Number
+	--do while looping Statements
+
+Class-31 (04.08.2023)----Javascript Lecture
+	--Javascript Function
+	--Function Overloading
+	--Switch Case
+	--Js Function
+	--Assignment-27-Use of function in employee details
+
+Class-32 (06.08.2023)--Javascript Lecture
+	--Student Details function without global data
+	--Variable Scope
+	--Difference between global module & block scope
+	--Data Leakage
+
+Class-33 (07.08.2023)--Javascript Lecture
+	--Arrow function
+	--Demonstrating passing parameters
+	--Different way of Declaring a function
+	--Returning a value from a function
+
+Class-34 (09.08.2023)--Javascript Lecture
+	--Returning value and passing parameters
+	--Student Details function passing parameters	
+	--Javascript Array Demo
+	--Finding the sum of values in array
+	--Assignment-28 Employee Details using function 
+	--Assignment-29 -38 on Array 
+	
+Class-35 (10.08.2023)--Javascript Lecture
+	--finding even numbers within the array
+	--find second largest number within the array
+	--reading dynamic values within the array
+	--predefined string methods
+	--predefined array methods 
+	--Assignment-39 to 44 on string
+
+Class-36 (11.08.2023) ----Javascript Lecture
+	--Predefined string method in Array
+	--javascript data object 
+	--Assignment-45 on date by using the javascript date method
+
+Class-37 (14.08.2023)--- Javascript Lecture
+	--Limitations of array
+	--Introduction of json object
+	--Student details static and dynamic with json object
+	--Assignment-46---write some dummy data in json object
+	--Assignment-47 --- write a programe in json object of employee details
+
+Class-38 (16.08.2023)-----Javascript lecture
+	--contact details in json
+	--different way of retrieving data from json 
+	--iterate Over  Json object for in looping
+	--memory structure of json
+	--iterating over complex json object 
+	
+
+Class-39 (17.08.2023)---javascript lecture
+	--Recursive object
+	--JSON object with function 
+	--iterating over complex JSON object 
+	--Assignment--48--- Write a book details in the object along with functionality
+	--Assignment--49--- Write employee details in the object along with functionality
+
+Class-40 (18.08.2023)---Dhtml lecture
+	--setTimeout method & clearTimeout
+	--setInterval method & clearInterval
+	--Dhtml
+	--Window object
+	--Document object
+	--Use of javascript over HTML elements
+	--How to apply CSS property to immediate children 
+	
+Class-41 (19.08.2023)
+	--generating dynamic rating
+	--including the position of js
+	--Assignment -50-- Create employee details on the same template
+	--How to create an external javascript file
+	--How to create an external css file
+
+Class-42 (21.08.2023)
+	--Reading data from user
+	--Generating dynamic product details
+	--Assignment--51-- Create employee details template and make it dynamic data
+
+Class-43 (22.08.2023)
+	--Event handling
+	--Reading Data from user
+	--Student progress card generator
+
+Class-44 (24.08.2023)
+	--Dynamic student progress card generator 
+	--Event Handling 
+	--User Registration page with validation
+	--Reading data from the user
+	Assignment- 52-- validate student progress card
+
+Class-45 (25.08.2023)	
+	--User registration page with validation
+	--generate captcha 
+	--OTP generator
+	--Assignment--53-- validate password with the condition 1&3 position uppercase,2nd position numeric, 4 lowercase
+	--student activity search on your own--how to handle search backspace in the password section
+
+Class-46 (26.08.2023)
+	--Introduction to ECMA 
+	--Global, module and local scope of a variable 
+	--String interpolation 
+	--Javascript classes 
+	--Student Details through classes
+	--Inheritance concept (single-level inheritance & multi-level inheritance)
+	--Arrow function 
+
+Class-47 (28.08.2023)
+	--Captcha generation
+	--User Registration page with validation
+	--Dynamic event handling 
+
+
+Class-48 (29.08.2023)
+	--Dynamic event handling
+	--Introduction with js error
+	--compilation error, Runtime error 
+
+Class-49 (30.08.2023)--Advance Javascript
+	--Exceptional handling real-time example
+	--User-defined exceptions
+
+Class-50 (31.08.2023)--Advance javascript
+	--import & export of external javascript library
+	--Set and Map data structures
+	--data processing on Set & Map Ds using various method
+
+
+Class-51 (02.09.2023)----ECMA Script class
+	--import and export of javascript libraries
+	--js promises
+	--map data structure
+	--set data structure
+	--extend parameters
+
+Class-52 (04.09.2023)---Advance javascript lectures
+	--Closures
+	--Accessing closure data outside of a function
+
+Class-53 (05.09.2023)----JQuery Lecture
+	--JQuery Introduction
+	--How to insert jQuery into an index file
+
+	
+Class-54 (06.09.2023)---JQuery Lecture
+	--JQuery predefined methods
+	--Ajax Communication Architecture
+
+Class-55 (07.09.2023)---Ajax Lecture
+	--Ajax communication using three method 
+	--(1)fetch method
+	--(2)Ajax method	
+	--(3)Axios method
+	--conversion of JSON to string & string to object 
+	--Assignment -- use isro API and fake API and show data on UI
+	
+Class-56 (08.09.2023)--
+	--Generating dynamic product details 
+	--Create webservice inside node js
+
+Class-57 (11.09.2023)
+	--Dynamic product details template using jQuery
+	--loader 
+	
+Class-58 (12.09.2023)
+	--Introduction HTML 5 and CSS 3 
+	--local storage and session storage 
+	--Introduction of Application tab in Inspect 
+	--Assignment -- Make an autofill searchBar
+	
+Class-59 (14.09.2023)
+	--login details using local storage and session storage
+	--Semantics Tags
+	--<!DOCTYPE Html>
+	--Audio and video tags and controls 
+
+Class-60 (15.09.2023)
+	--Drag & Drop elements  
+	--ondragstar, ondrop, ondragover
+	--event.preventDefault();
+	--Autofill Searchbar
+
+Class-61 (16.09.2023)
+	--Application Cache---Cache, Network, fallback
+	--WebWorkers---MultiThreading/ MultiProgramming
+
+Class-62 (19.09.2023)
+	--Navigator Object
+	--Navigator Geolocation
+	--Canvas
+	--SVG
+
+	
+Class-63 (20.09.2023)
+	--Introduction of css3
+	--background-image & css property
+	--Gradients 
+		1) Linear Gradients
+		2) Radial Gradients 	
+		3) Conic Gradients 	
+	--Customizable dialogue box
+	--Multicolumn Layouts 
+
+	
+Class-64 (21.09.2023)
+	--Transform scale 
+	--Transition skew
+	--Transform Translate
+	--CSS transform Rotate
+	--Display Flex
+	--Flex Containers
+
+
+Class-65 (25.09.2023)
+	--display flex layout sample
+	--display grid
+	--grid container
+	--examples of grid layouts
+	--responsive webpage
+	--media queries
+	--Replace of float property
+
+Class-67 (26.09.2023)
+	--Responsive menu bar
+	--css3 keyframes
+	--media queries
+
+Class-68 (27.09.2023)
+	--Introduction of bootstrap
+	--bootstrap navbar
+	--bootstrap component
+	--bootstrap table
+	--dynamic slidebar
+
+Class-69 (28.09.2023)
+	--autofill with dynamic data
+	--bootstrap grid system
+	--static autofill conmponent
+	
+Class-70 (29.09.2023)
+	--Introduction with node js
+	--create the first server
+
+Class-71 (02.10.2023)
+	--Express Server 
+	--file operations
+
+Class-72 (04.10.2023)
+	--bin folder 
+	--app.json
+	--public folder
+	--favicon
+
+
+Class-73 (05.10.2023) ---starts project
+	--Single page web application(templating conce
+	--starts project of eShoppingApp
+	--
+	
+
+Class-74 (06.10.2023)
+	--Create API 
+	--validate data to API
+	--Work with E-Shopping Project
+
+Class-75 (10.10.2023)
+	--Introduction of MongoDB
+	--Downloading steps of MongoDB 
+
+

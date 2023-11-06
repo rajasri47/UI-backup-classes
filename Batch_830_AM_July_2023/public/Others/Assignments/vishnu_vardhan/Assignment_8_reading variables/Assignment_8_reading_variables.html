@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Reading variables prompt method
+        </title></head>
+        <body>
+        <script>
+            var stdName = prompt("Enter User Name");
+            var stdAge = prompt("Enter User Age");
+            var stdDOB = prompt("Enter user Dob");
+    
+            var sub1 = prompt("Enter Telugu marks");
+            sub1 = parseInt(sub1);
+            var sub2 =  prompt("Enter English marks");
+            sub2 = parseInt(sub2);
+            var sub3 =  prompt("Enter Maths marks");
+            sub3 = parseInt(sub3);
+            var sub4 =  prompt("Enter Science marks");
+            sub4 = parseInt(sub4);
+            var sub5 =  prompt("Enter Computers marks");
+            sub5 = parseInt(sub5);
+    
+            var total = (sub1+sub2+sub3+sub4+sub5);
+            var avg = (sub1+sub2+sub3+sub4+sub5)/5;
+            var percentage = (total * 100)/500;
+    
+            console.log("Stdent Details:");
+            console.log("Name of the student is " + stdName);
+            console.log("student age is" + stdAge);
+            console.log("student DOB" + stdDOB)
+            console.log("Total Marks are " + total);
+            console.log("Average Marks are " + avg);
+            console.log("percentage is" + percentage);
+        </script>
+        </body>
+        </html>

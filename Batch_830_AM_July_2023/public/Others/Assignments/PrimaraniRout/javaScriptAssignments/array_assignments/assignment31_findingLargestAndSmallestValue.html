@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding the largest and smallest number 
+        </title>
+    </head>
+    <body>
+        
+        <script>
+            var elements = () => {
+                var lengthOfArray = prompt("Enter the number of elements");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0 ; i < lengthOfArray ; i++) {
+                    a[i] = prompt("Enter " + i + " value");
+                    a[i] = parseInt(a[i]);
+                }
+                console.log(a);
+
+                largest(a);
+                smallest(a);
+            }
+
+            var largest = (a) => {
+                var large = a[0] , len;
+                len = a.length;
+                for (var i = 1 ; i < len ; i++) {
+                    if (large < a[i]) {
+                        large = a[i];
+                    }
+                }
+                console.log("The largest number = " + large);
+            }
+
+            var smallest = (a) => {
+                var small = a[0], len;
+                len = a.length;
+                for (var i = 1; i < len; i++) {
+                    if (small > a[i]) {
+                        small = a[i];
+                    }
+                }
+                console.log("The smallest number = " + small);
+            }
+
+            elements();
+
+        </script>
+    </body>
+</html>

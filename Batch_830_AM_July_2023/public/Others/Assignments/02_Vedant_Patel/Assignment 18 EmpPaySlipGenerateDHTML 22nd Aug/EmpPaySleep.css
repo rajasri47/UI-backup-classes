@@ -1,0 +1,76 @@
+.heading {
+  /* text-align: center;
+    border: 1px solid;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightskyblue; */
+  text-align: center;
+  border: 1px solid;
+  margin: 30px 400px;
+  padding: 10px;
+  background-color: lightskyblue;
+}
+
+ul {
+  width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: rgb(143, 219, 219);
+}
+.ul2 {
+  width: 1000px;
+}
+
+li {
+  list-style: none;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(158, 158, 213);
+}
+.heading2 {
+  text-align: center;
+  border: 1px solid;
+  margin: 30px 400px;
+  padding: 10px;
+  background-color: lightskyblue;
+}
+.company {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 500px;
+}
+.empid,
+.name,
+.bank,
+.ac,
+.loc,
+.gend,
+.dept,
+.designation {
+  display: inline-flex;
+  width: 450px;
+  /* padding: 0px 250px; */
+  height: 20px;
+}
+.main {
+  display: none;
+}
+
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .footer,.header{
+         font-size: 18px;
+         text-align: center;
+         padding: 15px;
+         color: black;
+         background-color: bisque;
+        }
+        .box{
+            height: 200px;
+            width: auto;
+            border: 1px solid;
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+             justify-content:space-evenly;
+        }
+        label,input{
+         margin: 20px  20px;
+         padding: 5px;
+        }
+        .userdetailBox2{
+            margin-top: 10px;
+           
+        }
+        .subHeading{
+            margin-top: 10px;
+            background-color: white;
+            font-size: 16px;
+            padding: 6px;
+            border: 1px solid;
+            position: absolute;
+            left: 25px;
+        }
+        textarea{
+            margin-top: 10px;
+        }
+        .btn{
+           
+            padding: 10px;
+            margin: 11px;
+            color: black;
+            background-color:skyblue;
+            border-radius: 3px;
+            box-shadow: 3px 2px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>
+            Student Details Registration Page
+        </h3>
+    </div>
+    <span class="subHeading">User detail</span>
+    <div class="userdetailBox box">
+       
+           <div class="userdetailBox1">
+                <label for="Name">Name:</label>
+                <input type="text"> <br>
+            
+                <label for="Age">Age:</label>
+                <input type="text"><br>
+                <label for="Gender">Gender :</label>
+                <input type="radio" name="Gender" value="gender"> Male
+                <input type="radio">Female
+         </div>
+         <div class="userdetailBox2">
+            <label for="Address">Address</label>
+            <textarea name="" id="" cols="40" rows="6"></textarea>
+         </div>
+     </div>   
+
+     <span class="subHeading">Education Deatails</span>
+     <div class="EducationBox  box">
+        
+            <div class="userdetailBox1">
+                <label for="Qualification">Qualification :</label>
+                <input type="checkbox"> MCA
+                <input type="checkbox"> Msc (cs)
+                <input type="checkbox"> M-tech <br>
+                <label for="Language">Language Known :</label>
+                <input type="checkbox"> English
+                <input type="checkbox"> Hindi
+                <input type="checkbox"> Marathi
+          </div>
+          <div class="userdetailBox2">
+            <label for="course"> Course Option :</label>
+              <select name="cousr" id="">
+                        <option value="null"> Course Option</option>
+                        <option value="UI">Ul </option>
+                        <option value="Java">java</option>
+                        <option value="cpp">Cpp</option>
+              </select>
+          </div>
+      </div>   
+      
+     <span class="subHeading">Personal Deatails</span>
+     <div class="PersonlInfoBox box">
+                 <li>
+            <label for="aboutYourself">Tell me about Yourself</label>
+            <textarea name="" id="" cols="40" rows="7"></textarea>
+                 </li>
+    </div>
+    <center>
+    <button type="submit" value="Register" class="btn">Submit</button>
+</center>
+
+    <div class="footer">
+        <h4>@copyright-2023</h4>
+    </div>
+    
+</body>
+</html>

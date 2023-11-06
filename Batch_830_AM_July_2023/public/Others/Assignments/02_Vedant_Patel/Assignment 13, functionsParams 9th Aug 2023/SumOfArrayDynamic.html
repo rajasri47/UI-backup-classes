@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE ARRAY PROGRAM OPEN DEBUGGER TOOL </h1>
+    <h2> Write a program to declare dynamic array with values find the sum of values within it.</h2>
+    <script>
+        function arr() {
+
+            var arr = [];
+            sumEven = 0;
+            for (let i = 1; i <= 5; i++) {
+                arr[i] = prompt("Enter the " + i + " value")
+                arr[i] = parseInt(arr[i]);
+                if (arr[i] % 2 == 0)
+                    sumEven += arr[i];
+            }
+            console.log("The sum of even number is " + sumEven);
+        }
+        arr();
+    </script>
+
+</body>
+
+</html>

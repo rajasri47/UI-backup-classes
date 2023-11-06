@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo disabled class</title>
+    <style>
+        h1{
+            text-align: center;
+            color: forestgreen;
+        }
+        ul{
+            list-style: none;
+            width: 400px;
+            border: 2px solid;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        li{
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 10px;
+        }
+        #submit{
+            background-color: cornflowerblue;
+            margin-left: 10px;
+        }
+        input[type='number']:disabled{
+            border: 1px solid red;
+        }
+        input[type='radio']:checked{
+            box-shadow: 0 0 0 3px red;
+        }
+        input[type='text']:focus{
+            border: 4px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="http://www.serverlocation.in.com" method="post">
+    <h1>Sign Up</h1>
+    <ul>
+        <li>
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" name="username" placeholder="Write your username" focus>
+
+        </li>
+        <li>
+            <label for="email">E-mail ID:</label>
+            <br>
+            <input type="email" name="email" placeholder="Write your valid email id">
+        </li>
+        <li>
+            <label for="pwd">Password:</label>
+            <br>
+            <input type="password" name="pwd" placeholder="Write your password" maxlength="10" required>
+        </li>
+        <li>
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" name="gender" checked>Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+        </li>
+        <li>
+            <label for="age">Your Age:</label>
+            <br>
+            <input type="number" min="18" max="40" name="age" placeholder="Click UP and DOWN to enter valid age"disabled>
+        </li>
+        <li>
+            <label for="rememberpwd">Remember Password:</label>
+            <br>
+            <input type="checkbox" name="rememberpwd" checked >Yes
+            <input type="checkbox" name="rememberpwd" >No
+        </li>
+        <li>
+            <input type="submit" value="Submit" id="submit">
+        </li>
+    </ul>
+    </form>
+</body>
+</html>

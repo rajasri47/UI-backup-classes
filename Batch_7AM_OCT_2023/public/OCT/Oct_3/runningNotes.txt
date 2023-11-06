@@ -1,0 +1,59 @@
+<tagname attrname="..value..." attrname2="..value2">
+    content...
+</tagname>
+
+id  - 
+name 
+title 
+style - using which we could add any no. of css prop for a single element 
+
+user_name 
+
+user-name 
+
+userName 
+
+
+newsContent_4
+
+news-content_4
+
+news_Content_4
+
+-------------------
+
+<tagname style="css prop name : value; csspropname2:value; csspropname3:value;">
+    Content
+</tagname>
+
+<text>
+    ... 
+</text>
+
+<h3 >
+</h3>
+
+Sample css prop :
+
+    color: red;
+    font-size: 20px; 
+
+    background-color: green; 
+
+
+    Color: one single value; 
+    border: size of border, type of border, color of border;
+
+    border: 5px dotted green;
+
+    text-align: left/right/center 
+
+
+    Different ways of applying css to html elements
+
+        1. Inline css 
+        2. Internal css through classes 
+        3. external css 
+
+
+        @durgaprasad158

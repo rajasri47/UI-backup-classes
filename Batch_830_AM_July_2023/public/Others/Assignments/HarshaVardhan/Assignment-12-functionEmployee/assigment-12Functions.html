@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating employee details</title>
+    </head>
+    <body>
+     <script>
+        var name,Age,Department,Gender;
+        var BasicSalary;
+        var PF , HRA , TotalSalary;
+        function readuserdata(){
+            
+            name = prompt("enter name");
+            Age = prompt("enetr age");
+            Department = prompt("enetr department");
+            Gender = prompt("enter gender");
+            calculations();
+        }
+        function calculations(){
+            BasicSalary = prompt("enter basicsalary");
+            BasicSalary = parseInt(BasicSalary);
+            PF = BasicSalary*12/100;
+            HRA = BasicSalary*24/100;
+            TotalSalary = PF + HRA + BasicSalary;
+        }
+       
+        function output(){
+            readuserdata();
+            console.log("Employee name is" + name);
+            console.log("Employee Age is" + Age);
+            console.log("Employee Department is" + Department);
+            console.log("Employee Gender is" + Gender);
+            console.log("employee BasicSalary is" + BasicSalary);
+            console.log("employee PF is" + PF);
+            console.log("employee HRA is" + HRA);
+            console.log("employee TotalSalary is" + TotalSalary);
+        }
+        output();
+     </script>
+    </body>
+</html>

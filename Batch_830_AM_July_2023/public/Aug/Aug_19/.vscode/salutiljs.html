@@ -1,0 +1,22 @@
+export var getEMPTotalTax =(gender,tsal) =>{
+    var taxpercent = 0;
+    if(gender =='male') {
+        if(tsal >=100000) {
+            taxpercent = 10;
+        } else if(tsal >= 50000){
+            taxpercent = 5;
+        }
+    }else{ // female
+         if(tsal >= 100000){
+            taxpercent = 5;
+         } else if (tsal >= 500000){
+            taxpercent = 0;
+         }
+
+    } vAR totalTAXTObepaid = (tsal*taxpercent)/100;
+    return totalTAXTObepaid;
+}
+export var count=90;
+var getcommunicationwithgovsite =() =>{
+    
+}

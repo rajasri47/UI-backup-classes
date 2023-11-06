@@ -1,0 +1,36 @@
+Display prop 
+
+    display: none/inline/block/inline-block/  grid/flex 
+
+Pseudo Classes 
+    Syntax:
+
+        cssselector: <pseudo class name > {
+            ... 
+            ...
+        }
+
+        .abc:hover {
+            ...
+        }
+
+        div:focus {
+            ...
+        }
+
+        #pqr:active {
+            ...
+        }
+
+and 
+
+Pseudo Elements
+
+    Syntax:
+        cssselector::<pseudo element name> {
+            ... 
+            ..
+             ..
+        }
+
+Syt

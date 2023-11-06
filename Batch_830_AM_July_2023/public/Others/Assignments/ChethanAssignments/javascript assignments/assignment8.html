@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment8</title>
+</head>
+<body>
+    <script>
+        var Name = prompt("Enter your name ");
+        var Age = prompt("Enter your Age");
+        var Gender = prompt("Enter your gender");
+        var TeluguMarks = prompt("Enter telugu marks");
+        TeluguMarks=parseInt(TeluguMarks);
+        var EnglishMarks = prompt("Enter English marks");
+        EnglishMarks = parseInt(EnglishMarks)
+        var Hindimarks = prompt("Enter hindi marks");
+        Hindimarks = parseInt(Hindimarks);
+        var ScienceMarks =prompt("Enter science marks");
+        ScienceMarks = parseInt(ScienceMarks);
+        var SocialMarks = prompt("Enter social marks");
+        SocialMarks = parseInt(SocialMarks);
+        var Totalmarks =    TeluguMarks + EnglishMarks + Hindimarks + ScienceMarks + SocialMarks ;
+        var Avgmarks = Totalmarks / 6 ;
+        console.log("The Total marks of all subjects " + Totalmarks);
+        console.log("The Average marks of all subjects" + Avgmarks);
+        if(Avgmarks >= 75) {
+                   console.log("Student got distinction");
+   } else if(Avgmarks >= 36  ){
+            console.log("student got firstclass");
+        }else{
+            console.log("student got failed");
+          }
+                          
+        
+
+    </script>
+</body>
+</html>

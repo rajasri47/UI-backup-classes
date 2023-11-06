@@ -1,0 +1,69 @@
+Basic html 
+
+some tags body, p, h, br, title, etc
+
+CSS -
+    id 
+    class 
+    inline 
+    tag based 
+------------------------------------
+
+    anchor tag and img tag
+    DOM Structrue 
+    Debuggin tool 
+    CSS Priority
+
+
+    <a href="path/link of webpage, to be redirected to">
+        click on 
+    </a>
+
+    <a href="http://sample.com ">
+        text
+    </a>
+
+    <a href="c:\abc\samppl.html">
+        text
+    </a>
+
+    https://www.google.com/
+    file:///F:/UIClass_new/UIClasses/Batch_7AM_OCT_2023/Oct_06/newsDetailsPage_Css_Classes.html
+
+    img 
+
+Applying css through attribute :
+
+    eg:
+
+        a[targer=_blank] {
+            ...
+        }
+
+        #abc[name=test] {
+
+        }
+
+        .sample[title=demo] {
+
+        }
+
+        .container[id=test] {
+
+        }
+
+        p[class=test] {
+
+        }
+    ------------------------------------
+
+    DOM Structure 
+
+        DOM - Document Object Model 
+
+            Tree structure representation of any web page 
+
+
+            p tag 
+            HTML element p 
+            DOM element p 

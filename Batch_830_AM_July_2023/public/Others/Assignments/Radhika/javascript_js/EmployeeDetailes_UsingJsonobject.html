@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Demonstrate Employee deatiles</title>
+    </head>
+    <body>
+        <h3>Employee Detailes Using JsonObject...!</h3>
+        <script>
+            // Employee detailes with json obeject using dunamic data
+               var Empdata = {}
+               Empdata.ename=prompt("enter employee name"),
+               Empdata.age=parseInt(prompt("enter age")),
+               Empdata.gender=prompt("eneter gender"),
+               Empdata.dept=prompt("enter deportment");
+               Empdata.basicsal=parseInt(prompt("enter basicsalary")),
+               Empdata.pf=(12/100)*Empdata.basicsal,
+               Empdata.hra=(15/100)*Empdata.basicsal,
+               Empdata.Totalsal=Empdata.pf+Empdata.hra+Empdata.basicsal;
+            
+            
+               console.log(Empdata);
+
+               if(Empdata.Totalsal>=300000){
+                Empdata.Tax=(15/100)*Empdata.Totalsal;
+                console.log("tax to be paid 15% ");
+                console.log("tax to to be paid by " + Empdata.Tax);
+               }else if(Empdata.Totalsal>=200000){
+                Empdata.Tax=(10/100)*Empdata.Totalsal;
+                console.log("tax to be paid 10% ");
+                console.log("tax to to be paid by " + Empdata.Tax);
+               }else if(Empdata.Totalsal>=100000){
+                Empdata.Tax=(5/100)*Empdata.Totalsal;
+                console.log("tax to be paid 15% ");
+                console.log("tax to to be paid by " + Empdata.Tax);
+               }else{
+                console.log("tax to be paid 0 % ");
+                console.log("tax to to be paid by " + Empdata.Tax);
+               }
+          
+            
+        </script>
+    </body>
+</html>

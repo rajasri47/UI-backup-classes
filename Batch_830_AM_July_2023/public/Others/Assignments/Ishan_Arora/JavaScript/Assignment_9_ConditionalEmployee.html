@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 9
+        </title>
+    </head>
+    <body>
+        <h3>
+            Eployee Salary Tax with Conditional CS
+        </h3>
+        <script>
+            var name = prompt("Enter Employee Name:");
+            var gender = prompt("Enter Gender:")
+            var age = prompt("Enter Age:");
+            var department = prompt("Enter Department:");
+            var basicSal = prompt("Enter Basic Salary:");
+            var pf, hra, totalSal, tax;
+
+            basicSal = parseFloat(basicSal);
+            pf = (12 * basicSal) / 100;
+            hra = (24 * basicSal) / 100;
+            totalSal = pf + hra + basicSal;
+
+            console.log("Employee Name: " + name);
+            console.log("Employee Gender: " + gender);
+            console.log("Employee Age: " + age);
+            console.log("Employee Department: " + department);
+            console.log("Employee Basic Salary: " + basicSal);
+            console.log("Employee Total Salary: " + totalSal);
+
+            if(gender == "Male") {
+                if(totalSal >= 300000) {
+                    tax = (15 * totalSal) / 100;
+                    console.log("Tax at 15%: " + tax);
+                }else if(totalSal >= 200000) {
+                    tax = (10 * totalSal) / 100;
+                    console.log("Tax at 10%: " + tax);
+                }else if(totalSal >= 100000) {
+                    tax = (5 * totalSal) / 100;
+                    console.log("Tax at 5%: " + tax);
+                }else {
+                    console.log("Tax: 0");
+                }
+            }else if(gender == "Female") {
+                if(totalSal >= 300000) {
+                    tax = (10 * totalSal) / 100;
+                    console.log("Tax at 10%: " + tax);
+                }else if(totalSal >= 200000) {
+                    tax = (5 * totalSal) / 100;
+                    console.log("Tax at 5%: " + tax);
+                }else {
+                    console.log("Tax: 0");
+                }
+            }
+        </script>
+    </body>
+</html>

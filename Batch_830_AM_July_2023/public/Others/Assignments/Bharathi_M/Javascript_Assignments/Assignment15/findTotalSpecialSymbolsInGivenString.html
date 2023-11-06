@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the total number of Special symbols in given string</title>
+</head>
+<body>
+    <script>
+        var str = prompt("enter the string");
+        var sChars = 0;
+        for(i = 0; i < str.length; i++) {
+            var j = str.charCodeAt(i);
+            if((j >= 33 && j <= 47) || (j >= 58 & j <= 64)) {
+                sChars ++;
+            }
+        }
+        console.log("total number of special symbols in given string is " + sChars);
+    </script>
+    
+</body>
+</html>

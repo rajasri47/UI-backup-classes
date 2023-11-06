@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_Positions</title>
+    <style>
+        .Block {
+            height:100px;
+            width:100px;
+            margin:10px;
+            border:2px solid #000;
+            font-size:30px;
+        }
+
+       /* BlockContainers */
+
+        .myContainer_01 {
+            position:relative;
+            float:left;
+        }
+        .myContainer_02 {
+            position:relative;
+        }
+        .myContainer_03 {
+            position:relative;
+            width:100%;
+            margin:0px auto;
+        }
+        .myContainer_04 {
+            bottom:0px;
+            margin:10px;
+        }
+
+        /* Blocks */
+
+        .Block_01 {
+            background-color:rgb(237, 9, 9);
+            position:static;
+        }
+        .Block_02 {
+            background-color:rgb(255, 89, 0);
+            position:absolute;
+            left:50px;
+            top:50px;
+
+        }
+        .Block_03 {
+            background-color:rgb(255, 174, 0);
+            position:absolute;
+            right:0px;
+            top:0px;
+        }
+        .Block_04 {
+            background-color:rgb(251, 255, 0);
+            position:absolute;
+            right:50px;
+            top:50px;
+        }
+        .Block_05 {
+           background-color:#000;
+           position:absolute;
+           left:680px;
+           top:213px;
+        }
+        .Block_06 {
+           background-color:rgb(156, 247, 0);
+           position:absolute;
+           left:740px;
+           /* right:500px; */
+           top:280px;
+        }
+        .Block_07 {
+           background-color:rgb(1, 199, 1);
+           position:absolute;
+           left:620px;
+           /* right:400px; */
+           top:150px;
+        }
+        .Block_08 {
+           background-color:rgb(5, 110, 5);
+           position:absolute;
+           left:740px;
+           right:500px;
+           top:150px;
+        }
+        .Block_09 {
+           background-color:rgb(0, 251, 163);
+           position:absolute;
+           left:620px;
+           top:280px;
+        }
+        .Block_10 {
+           background-color:rgb(0, 255, 255);
+           position:absolute;
+           left:0px;
+           bottom:0px;
+        }
+        .Block_11 {
+            background-color:rgb(0, 191, 255);
+           position:absolute;
+           left:50px;
+           bottom:50px;
+        }
+        .Block_12 {
+            background-color:rgb(0, 51, 255);
+           position:absolute;
+           right:0px;
+           bottom:0px;
+           text-align:end;
+        }
+        .Block_13 {
+            background-color:rgb(136, 0, 255);
+           position:absolute;
+           right:50px;
+           bottom:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="myContainer_01">
+        <div class="Block Block_01">1</div>
+        <div class="Block Block_02">2</div>
+
+    </div>
+    <div class="myContainer_02">
+        <div class="Block Block_03">3</div>
+        <div class="Block Block_04">4</div>
+    </div>
+    <div class="myContainer_03">
+        <div class="Block Block_05">5</div>
+        <div class="Block Block_06">6</div>
+        <div class="Block Block_07">7</div>
+        <div class="Block Block_08">8</div>
+        <div class="Block Block_09">9</div>
+    </div>
+    <div class="myContainer_04">
+        <div class="Block Block_10">10</div>
+        <div class="Block Block_11">11</div>
+    </div>
+    <div>
+        <div class="Block Block_12">12</div>
+        <div class="Block Block_13">13</div>
+    </div>
+</body>
+</html>

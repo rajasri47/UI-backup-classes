@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details with JSON object</title>
+</head>
+<body>
+    <script>
+        var empDetails = {
+
+        };
+        empDetails.name = prompt('enter name');
+        empDetails.age = prompt('enter age') ;
+        empDetails.gender = prompt('enter gender');
+        empDetails.department = prompt('enter department');
+        empDetails.basicSalary = prompt('enter basic salary');
+        empDetails.basicSalary = parseInt(empDetails.basicSalary);
+        empDetails.pf = (empDetails.basicSalary * 12) / 100;
+        empDetails.hra = (empDetails.basicSalary * 12) / 100;
+        empDetails.totalSal = empDetails.pf + empDetails.hra + empDetails.basicSalary;
+
+        console.log('name is ' + empDetails.name);
+        console.log('age is ' + empDetails.age);
+        console.log('gender is ' + empDetails.gender);
+        console.log('department is ' + empDetails.department);
+        console.log('basic salary is ' + empDetails.basicSalary);
+
+        if( empDetails.gender == 'male' && empDetails.totalSal >= 300000) {  
+           empDetails.totalTax = (empDetails.totalSal*15) / 100;
+           empDetails.salAfterTax = empDetails.totalSal - empDetails.totalTax;
+            console.log('tax is 15%');
+            console.log("total salary  is " + empDetails.totalSal);
+            console.log('total tax is ' + empDetails.totalTax);
+            console.log("total salary after tax is " + empDetails.salAfterTax);
+
+        }
+        if(empDetails.gender == 'male' && empDetails.totalSal >= 200000 && empDetails.totalSal < 300000) {
+            empDetails.totalTax = (empDetails.totalSal*10) / 100;
+            empDetails.salAfterTax = empDetails.totalSal - empDetails.totalTax;
+            console.log('tax is 10%');
+            console.log("total salary  is " + empDetails.totalSal);
+            console.log('total tax is ' + empDetails.totalTax);
+            console.log("total salary after tax is " + empDetails.salAfterTax);
+
+        }
+         if(empDetails.gender == 'male' && empDetails.totalSal >= 100000 && empDetails.totalSal < 200000) {
+            empDetails.totalTax = (empDetails.totalSal*5) / 100;
+            empDetails.salAfterTax = empDetails.totalSal - empDetails.totalTax;
+            console.log('tax is 5%');
+            console.log("total salary  is " + empDetails.totalSal);
+            console.log('total tax is ' + empDetails.totalTax);
+            console.log("total salary after tax is " + empDetails.salAfterTax);
+           
+        }
+        else if(empDetails.gender == 'male' && empDetails.totalSal < 100000){
+            totalTax = 0;
+            empDetails.salAfterTax = empDetails.totalSal - empDetails.totalTax;
+            console.log('tax is 0');
+            console.log("total salary  is " + empDetails.totalSal);
+            console.log('total tax is ' + empDetails.totalTax);
+            console.log("total salary after tax is " + empDetails.salAfterTax);
+           
+
+        }
+
+        //for female employees
+
+        if(empDetails.gender == 'female' && empDetails.totalSal >= 300000) {  
+            empDetails.totalTax= (empDetails.totalSal*10) / 100;
+            empDetails.salAfterTax = empDetails.totalSal - empDetails.totalTax;
+            console.log('tax is 10%');
+            console.log("total salary  is " + empDetails.totalSal);
+            console.log('total tax is ' + empDetails.totalTax);
+            console.log("total salary after tax is " + empDetails.salAfterTax);
+
+        }
+        if(empDetails.gender == 'female' && empDetails.totalSal >= 200000 && empDetails.totalSal < 300000) {
+            empDetails.totalTax= (empDetails.totalSal*5) / 100;
+            empDetails.salAfterTax = empDetails.totalSal - empDetails.totalTax;
+            console.log('tax is 5%');
+            console.log("total salary  is " + empDetails.totalSal);
+            console.log('total tax is ' + empDetails.totalTax);
+            console.log("total salary after tax is " + empDetails.salAfterTax);
+        }
+         
+        else if(empDetails.gender == 'female' && empDetails.totalSal < 200000){
+            totalTax = 0;
+            empDetails.salAfterTax = empDetails.totalSal - empDetails.totalTax;
+            console.log('tax is 0');
+            console.log("total salary  is " + empDetails.totalSal);
+            console.log('total tax is ' + empDetails.totalTax);
+            console.log("total salary after tax is " + empDetails.salAfterTax);
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armstrongnumber</title>
+    </head>
+    <body>
+        <script>
+            var n =prompt('enter a number');
+            n=parseInt(n);
+            var len = n.toString().length;
+            var sum = 0;
+            var temp = n;
+       
+        while ( n> 0)
+        {
+           var rem = n % 10;
+            n = n/10;
+            n = parseInt (n);
+            sum = sum + (rem ** len);
+            
+        }
+            console.log("sumis"+ sum);
+            if(sum==temp){
+            console.log("Its armstrong no")
+            }
+            else {
+                console.log(" its not")
+            }
+
+
+        
+    </script>
+        
+    </body>
+    </html>

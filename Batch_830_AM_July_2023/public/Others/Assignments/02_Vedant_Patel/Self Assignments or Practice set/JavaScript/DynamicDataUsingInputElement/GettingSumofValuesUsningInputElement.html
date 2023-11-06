@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GettingSumofValuesUsningInputElement</title>
+    <link rel="stylesheet" href="GettingSumofValuesUsningInputElement.css">
+    <script src="GettingSumofValuesUsningInputElement.js"></script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            Enter The First Value :
+            <input type="text" id="fav1" onkeypress="return validation(event)">
+            <!-- <input type="text" id="fav1" onkeypress="return false"> -->
+            <!-- <input type="text" id="fav1" onkeypress="return true"> -->
+        </li>
+        <li>
+            Enter The Second Value :
+            <input type="text" id="fav2"onkeypress="return validation(event)">
+        </li>
+        <li>
+            <button class="sum" onclick="ShowSum()">GetSum</button>
+            <button class="sub" onclick="ShowSub()">GetSub</button>
+            <button class="div" onclick="ShowDiv()">GetDiv</button>
+            <button class="mul" onclick="ShowMul()">GetMul</button>
+        </li>
+        <div class="d0"></div>
+        <div class ="d1">
+            Addition : <span id="sum"></span>
+        </div>
+        <div class ="d2">
+            Substracton : <span id="sub"></span>
+        </div>
+        <div class ="d3">
+            Division : <span id="div"></span>
+        </div>
+        <div class ="d4">
+            Multiplication : <span id="mul"></span>
+        </div>
+    </ul>
+    <div id="d">
+        <u><span class="error">Enter the value! Data cannot be empty!</span></u>
+        
+    </div>
+    <script>
+        
+
+    </script>
+</body>
+
+</html>

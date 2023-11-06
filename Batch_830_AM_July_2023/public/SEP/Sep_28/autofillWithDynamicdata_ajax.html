@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .searchBlock {
+                border: 1px solid;
+                border-radius: 10px;
+                width: 400px;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            .searchBlock input[type=text] {
+                width: 300px;
+                margin: 0 10px;
+                height: 30px;
+                font-size: 20px;
+            }
+            input[type=button] {
+                height: 30px;
+            }
+            .autoFillBlock {
+                
+                width: 300px;
+                margin: 0 10px;
+                padding: 1px;
+                
+            }
+            .autoFillBlock div {
+                border: 1px solid;
+                margin: 1px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="searchBlock">
+            <input type="text" id="searchText" onkeyup="fillAutoContent(event)">
+            <input type="button" value="Search">
+            <div class="autoFillBlock"></div>
+        </div>
+        <script>
+            var suggestedProducts = [];
+            
+
+            var fillAutoContent = (event) => {
+                var searchText = document.querySelector("#searchText").value;
+                if (searchText.length < 3) {
+                    document.querySelector(".autoFillBlock").innerHTML = '';
+                    return;
+                }
+                var dataUrl = `https://completion.amazon.in/api/2017/suggestions?limit=11&prefix=${searchText}&suggestion-type=WIDGET&suggestion-type=KEYWORD&page-type=Gateway&alias=aps&site-variant=desktop&version=3&event=onkeypress&wc=&lop=en_IN&last-prefix=d&avg-ks-time=4854&fb=1&session-id=257-6181892-3191156&request-id=YX3QCJF99XJRYVWEM0R3&mid=A21TJRUUN4KGV&plain-mid=44571&client-info=amazon-search-ui`;
+
+                fetch(dataUrl)
+                .then((response) => {
+                    return response.json();
+                }).then((productData) => {
+                    console.log(productData);
+                    filteredList = productData.suggestions;
+                    fillAutofillData(filteredList);
+                });                
+            }
+            var fillAutofillData = (filteredList) => {
+                document.querySelector(".autoFillBlock").innerHTML = '';
+                filteredList.forEach(element => {
+                    var divTag = document.createElement("div");
+                    divTag.innerText = element.value;
+                    divTag.addEventListener("click", (event) => {
+                        var text = event.target.innerText;
+                        document.querySelector("#searchText").value = text;
+                        document.querySelector(".autoFillBlock").innerHTML = '';
+                    })
+                    document.querySelector(".autoFillBlock").append(divTag);
+
+                });
+            }
+        </script>
+    </body>
+</html>

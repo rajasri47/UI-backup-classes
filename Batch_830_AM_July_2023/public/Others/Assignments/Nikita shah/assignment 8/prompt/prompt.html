@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of Prompt</title>
+
+</head>
+<body>
+    <h1>USE OF PROMPT </h1>
+    <script>
+        var name = prompt("Enter Patient name");
+        var age = prompt("Enter patient age");
+        var gender = prompt("Enter patient gender ");
+        var mrp = prompt("Enter total mrp of medicines");
+         
+        mrp = parseInt(mrp);
+        var externalTaxes = 12/100 * mrp;
+        var otherTaxes = 20/100 * mrp;
+        var xyztaxes = 10/100 * mrp;
+        
+         var totalAmt = externalTaxes + otherTaxes + xyztaxes + mrp; 
+
+         console.log("Patients Details");
+         console.log("Pateint's Name:" + name);
+         console.log("External Taxes:" + externalTaxes);
+         console.log("Other Taxes:" + otherTaxes);
+         console.log("XYZ Taxes:" + xyztaxes);
+         console.log("Total amount to be paid:" + totalAmt);
+    </script>
+</body>
+</html>

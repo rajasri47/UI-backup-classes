@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee payslip</title>
+    <link rel="stylesheet" href="./app.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <h2>Ivy India privet Limt</h2>
+    <h3>employee payslip </h3>
+    <ul>
+        <li>
+            Employee Name<input type="text" id="empName">
+        </li>
+        <li>
+            Age
+            <input type="text" placeholder="Age" id="eAge">
+        </li>
+        <li>
+            Gender:
+            <input type="radio" value="Male" name="gender" checked> Male 
+            <input type="radio" value="Female" name="gender"> Female
+        </li>
+        <li>
+            department
+            <select name="" id="EmpDept">
+                <option value="IT">It</option>
+                <option value="HRI">HR</option>
+                <option value="Admin">Admin</option>
+                <option value="Technical support">Technical support</option>
+                <option value="engineering">engineering</option>
+            </select>
+        </li>
+        <li>
+            basic salary
+        <input type="text" placeholder="basic  salyary" id="EmpBsal">
+    </li>
+    <li>
+        <input type="button" value="Generate Pay Slip" onclick="readStudentData()">
+    </li>
+    </ul>
+    <ul>
+        <li>
+            Employee Payslip
+        </li>
+        <li>
+            Employee Name: <span id="esname"></span>
+        </li>
+        <li>
+            Employee age: <span id="eage"></span>
+        </li>
+        <li>
+            Employee age: <span id="egender"></span>
+        </li>
+        <li>
+            Employee department: <span id="edept"></span>
+        </li>
+        <li>
+            Basic salary: <span id="ebsal"></span>
+        </li>
+        <li>
+            HRA : <span id="eHRA"></span>
+        </li>
+        <li>
+            PF : <span id="ePF"></span>
+        </li>
+        <li>
+            Total Salary : <span id="eTotal"></span>
+        </li>
+    </ul>
+</body>
+</html>

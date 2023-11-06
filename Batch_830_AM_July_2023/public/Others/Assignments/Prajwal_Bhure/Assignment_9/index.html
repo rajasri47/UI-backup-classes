@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var emp_name = prompt("Enter employee name");
+
+        var gender = prompt("Employee gender");
+
+        var age = prompt("Employee age");
+
+        var dept = prompt("Enter employee Department");
+
+        var basic_sal = prompt("Enter employee basic salary");
+        basic_sal = parseInt(basic_sal);
+
+        var pf = (12 * basic_sal) / 100;
+        var hra = (24 * basic_sal) / 100;
+
+        var total_salary = pf + hra + basic_sal;
+
+        console.log("Employee Details \nEmployee name : " + emp_name + "\nGender : " + gender + "\nDepartment : " + dept);
+
+        if(gender=='male'){
+            if(total_salary>=300000){
+                console.log("Total tax : "+ ((15*total_salary)/100));
+            }
+            else if(total_salary>=200000){
+                console.log("Total tax : "+ ((10*total_salary)/100));
+            }
+            else if(total_salary>=100000){
+                console.log("Total tax : "+ ((5*total_salary)/100));
+            }
+            else{
+                console.log("No tax")
+            }
+        }
+        else{
+            if(total_salary>=300000){
+                console.log("Total tax : "+ ((10*total_salary)/100));
+            }
+            else if(total_salary>=200000){
+                console.log("Total tax : "+ ((5*total_salary)/100));
+            }
+            else{
+                console.log("No tax")
+            }
+        }
+    </script>
+</body>
+
+</html>

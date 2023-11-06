@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>primeno</title>
+    </head>
+        <body>
+             <h3>finding prime numbers using arrays</h3>
+            <script>
+                var usersdata = () =>{
+                    var data =[];
+
+                    var size =prompt('enter the size of array');
+                    size = parseInt(size);
+
+                    for(i = 0; i < size; i++){
+                        data[i] = prompt('enter the numbers');
+                        data[i] = parseInt(data[i]);
+
+                    }
+                    console.log(data);
+                    prime( data,size);
+                }
+                var prime = ( data,size) =>{
+                    for( var i =0 ; i < size; i++){
+                        var factors = 0;
+                        var temp = data[i];
+                        for( var j = 2; j< temp;j++){
+                            if(temp % j == 0){
+                                factors = factors + 1;
+                                break;
+                            }
+                        }
+                        if((factors==0) && (temp!=1)){
+                            console.log("the prime number is"+temp);
+                        }
+                    }
+                }
+         
+
+                
+                
+                usersdata();
+
+            </script>
+                
+        </body>
+</html>

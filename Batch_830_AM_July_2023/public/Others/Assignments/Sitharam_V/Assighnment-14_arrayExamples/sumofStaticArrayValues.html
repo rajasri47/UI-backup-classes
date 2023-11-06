@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Static array values sum</title>
+    </head>
+    <body>
+        <script>
+            var readData = () => {
+                var data = [95, 65, 44, 87, 26];
+                calc(data);
+            }
+            var calc = (data) => {
+                var sum = 0;
+                for ( var i = 0; i < data.length; i++) {
+                    sum = sum + data[i];
+                }
+                console.log(" Sum of array values is " + sum);
+            }
+            readData();
+        </script>
+    </body>
+</html>

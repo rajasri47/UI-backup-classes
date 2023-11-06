@@ -1,0 +1,96 @@
+/* student details page css  */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow: hidden;
+}
+ol {
+    padding-left: 20px;
+}
+/* header css start */
+header{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 25px;
+    background: linear-gradient(45deg,blue,red,green);
+}
+/* header css end */
+/* left aside css */
+.search{
+    width: 100%;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+.aside{
+    background-color: lightgrey;
+    width: 15%;
+    height: 728px;
+    overflow: auto;
+    padding: 20px;
+    /* text-align: center; */
+    position: fixed; 
+}
+.aside li{
+    padding: 5px;
+    /* list-style-type: circle; */
+}
+.aside a{
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+/* left aside css */
+/* main part start */
+.main {
+    display:inline-flex;
+    justify-content: space-between;
+    text-align: left;
+    border: 3px solid black;
+    background-color:lightgray;
+    width: 28%;
+    margin: 7px 1px;
+    height: 230px;
+}
+.main img {
+    width: 200px;
+    height: 200px;
+    background: auto;
+
+}
+.mainBody{
+    /* background-color: aqua; */
+    width: 100%;
+    /* margin: 2px 80px; */
+    height: 730px;
+    /* margin: 10px 30px; */
+    display: -webkit-inline-box;
+    overflow:auto;
+
+}
+.main input{
+    font-size:100%;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.mainContainer{
+    background-color: red;
+    width:100%;
+    display: block;
+    justify-content:right;
+    align-items: center;
+    text-align:right;
+    
+}
+/* main part end */

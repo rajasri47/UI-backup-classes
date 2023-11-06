@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee details</title>
+    </head>
+        <body>
+            <script>
+                function readUserData(){
+                    var empname,empage,gender,basicsalary,Hra,Pf;
+
+                    empname = prompt(" enter employee name");
+                    empage = prompt(" enter employee age");
+                    gender = prompt(" enter employee gender");
+                    basicsalary = prompt(" enter employee basicsalary");
+                    basicsalary = parseInt(basicsalary);
+                    var salary = getSalaryAndHra(basicsalary,Hra,Pf);
+                    displayeMployeeDetails(empname,empage,gender,salary);
+                    
+
+                }
+
+                function getSalaryAndHra(basicsalary,Hra,Pf){
+                    var Hra = (basicsalary*12)/100;
+                    Hra = parseInt(Hra);
+                    var Pf = (basicsalary*24)/100;
+                    Pf = parseInt(Pf);
+                    var salary = basicsalary+Hra+Pf;
+                    return salary;
+                    
+                }
+                
+
+
+                
+                function displayeMployeeDetails(empname,empage,gender,salary){
+                    console.log("employee details");
+                    console.log("employee name is"+ empname);
+                    console.log("employee age is"+ empage);
+                    console.log("employee gender is"+ gender);
+                    console.log("employee salary is"+ salary);
+                    
+
+                    
+
+
+                }
+                readUserData();
+            </script>
+            
+        </body>
+        </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Vendors</title>
+    <style>
+        .backgroundImage{
+            background-image: url('images/image2.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-weight: bold; 
+        }
+        .mainContainer{
+            border: 1px solid;
+            width: 500px;
+            height: 450px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container1{
+            border: 1px solid;
+            width: 500px;
+            height: 300px;
+            margin:10px auto;
+            
+        }
+        li{
+            list-style: none;
+            font-size: 18px;
+        }
+        .btn1,.btn2{
+            margin: 20px;
+            font-size: 15px;
+            height: 30px;
+            width: 120px;
+        }
+        .btn1 a{
+            text-decoration: none;
+        }
+        .vId{
+            font-size: 18px;
+            margin: 15px;
+            position: relative;
+            left:50px;
+        }
+        .vName{
+            font-size: 18px;
+            margin: 15px;
+            position: relative;
+            left:30px;
+        }
+        .vLocation{
+            font-size: 18px;
+            margin: 15px;
+            position: relative;
+            left:10px;
+        }
+        .btn3{
+            font-size: 18px;
+            padding: 5px;
+            width: 120px;
+            position: relative;
+            left: 170px;
+        }
+        .btn3 a{
+            text-decoration: none;
+        }
+        .bottom li{
+            position: relative;
+            left: 370px;
+        }
+    </style>
+</head>
+<body class="backgroundImage">
+       <div class="mainContainer">
+        <button class="btn1">Add Vendor</button>
+        <button class="btn2">Add Product</button>
+        <div class="container1">
+          <ul>
+             <li>
+                 <label>Vendor ID:</label>
+                 <input class="vId" type="text">
+               </li>
+               <li>
+                 <label>Vendor Name:</label>
+                 <input class="vName" type="text">
+                </li>
+                <li>
+                  <label>Vendor Location:</label>
+                  <input class="vLocation" type="text">
+                </li>
+            </ul>
+            <button class="btn3">Add</button>
+            <div class="bottom">
+                <ol>
+                <li><a href="14_allAddedVendors.html">View All</a></li>
+                </ol>
+            </div>
+        </div>
+        </div>
+    
+</body>
+</html>

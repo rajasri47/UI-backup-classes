@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Details Registration Page </title>
+        <style>
+            .header {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid;
+            }
+            .mainBlock {
+                border: 1px solid;
+                width: 100%;
+                height: 100%;
+                margin: 10px;
+                padding: 10px;
+            }
+            .footer {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+                margin: 5px;
+                padding: 5px;
+                border: 1px solid;
+            }
+
+                       
+        </style>
+    </head>
+    <body>
+        <div class="header"> Student Details Registration Page  </div>
+        <div class="mainBlock">
+            <fieldset>
+                <legend> User Details </legend>
+                <label> Name: </label>
+                <input type="text" placeholder="enter your name" name="Name">
+                <label> Address:</label>
+                <textarea rows="3" cols="50"></textarea><br><br>
+                <label> Age:</label>
+                <input type="text" placeholder="enter your age" name="Age"><br><br>
+                <label> Gender: </label>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+                <input type="radio" name="Gender">Others
+            </fieldset>
+            <fieldset>
+                <legend> Educational Details </legend>
+                <label> Qualification: </label>
+                <input type="checkbox" name="Qulification">MCA
+                <input type="checkbox" name="Qulification">MBA
+                <input type="checkbox" name="Qulification">B-Tech
+                <label> Course Opted for: </label>
+                <select name="course">
+                <option> UI Full Stack Web Developper </option>
+                <option> Python </option>
+                <option>ReactJS </option>
+                <option> .net </option>
+                <option> Java Developper </option>
+                <option> Software Testing </option>
+                <option> C and C++ </option>
+                </select><br><br><br><br><br>
+                <label> Languages Known:</label>
+                <input type="checkbox"> English
+                <input type="checkbox"> Telugu
+                <input type="checkbox"> Hindi
+                <input type="checkbox"> Urdu
+            </fieldset>
+            <fieldset>
+                <legend> About Yourself </legend>
+                <label> Tell About Yourself </label>
+                <textarea rows="6" cols="50"></textarea>
+            </fieldset><br>
+            <div style="float: right;"><input type="submit" id="button" value="Register"></div>
+        </div>
+        <div class="footer"> Copyrights @2023</div>
+    </body>
+</html>

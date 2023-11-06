@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Student_progress</title>
+        <link rel="stylesheet" href="studentDataDynamic.css">
+    </head>
+    <body>
+        <script src="studentDataDynamic.js"></script>
+        
+        <h3>Student Progress Card Generation</h3>
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter Username" id="studentName">
+            </li>
+            <li>
+                <input type="text" placeholder="Age" id="studentAge">
+            </li>
+            <li>
+                Gender:
+                <input type="radio" value="male" name="gender" checked> Male
+                <input type="radio" value="female" name="gender"> Female
+            </li>
+            <li>
+                Class:
+                <select id="studentClass">
+                    <option value="class I">class I</option>
+                    <option value="class II">class II</option>
+                    <option value="class III">class III</option>
+                    <option value="class IV">class IV</option>
+                    <option value="class V">class V</option>
+
+                </select>
+            </li>
+            <li class="markslist">
+                Sub Marks:
+                <input type="text" id="m1" placeholder="maths">
+                <input type="text" id="m2" placeholder="science">
+                <input type="text" id="m3" placeholder="social">
+                <input type="text" id="m4" placeholder="english">
+                <input type="text" id="m5" placeholder="computers">
+            </li>
+            <li>
+                Languages Opted
+                <input type="checkbox" value="telugu">Telugu 
+                <input type="checkbox" value="english">English
+                <input type="checkbox" value="hindi">Hindi
+            </li>
+            <li>
+                <input type="button" value="Generate progress card" onclick="readStudentData()">
+            </li>
+        </ul>
+        <ul class="progresscardblock">
+            <li>
+                Student Progress Card
+            </li>
+            <li>
+                student Name: <span id="dsname"></span>
+            </li>
+            <li>
+                student Age: <span id="dage"></span>
+            </li>
+            <li>
+                student Gender: <span id="dgender"></span>
+            </li>
+            <li>
+                student Languages Known: <span id="dlanguages"></span>
+            </li>
+            <li>
+                student Total: <span id="dmarks"></span>
+            </li>
+            <li>
+                student Avg: <span id="davg"></span>
+            </li>
+            <li>
+                student Grade: <span id="dgrade"></span>
+            </li>
+
+        </ul>
+        
+    </body>
+    
+</html>

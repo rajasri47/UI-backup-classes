@@ -1,0 +1,90 @@
+/* form  */
+
+.container {
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  padding: 20px 0;
+}
+
+form label {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+input {
+  width: 96%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+#divTwo > div > div > div > form > input[type="text"]:nth-child(1) {
+  width: 44%;
+}
+
+#divTwo > div > div > div > form > input[type="text"]:nth-child(2) {
+  width: calc(94% - 44%);
+}
+
+input:invalid + span::after {
+  position: absolute;
+  content: "\2716";
+  padding: 12px;
+  color: #8b0000;
+}
+
+input:valid + span::after {
+  position: absolute;
+  content: "\2713";
+  padding: 12px;
+  color: #009000;
+}
+
+.btn {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 16px 52px;
+  border: none;
+  border-radius: 52px;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 36%;
+}
+
+.btn-filled {
+  background-color: rgb(51, 67, 100);
+  color: white;
+}
+
+.btn-empty {
+  background-color: rgb(180 191 215);
+  color: rgb(51, 67, 100);
+}
+
+.btn-filled:hover {
+  background-color: rgb(69, 89, 129);
+  border-color: rgb(69, 89, 129);
+}
+
+.btn-empty:hover {
+  background-color: rgb(171, 189, 230);
+}
+
+input:focus {
+  background-color: rgb(208, 223, 255);
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(photos/backgroundImg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 657px;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 30px;
+    position: fixed;
+    background-image: linear-gradient(#141e30, #243b55
+    );
+    display: flex;
+    opacity: 0.85;
+    
+
+}
+.sitelogo{
+    width: 75px;
+    height: 75px;
+    border: 1px solid;
+    background-image: url("photos/siteLogo.jpg");
+    background-position: center;
+    background-size: cover;
+    
+    border-radius: 50%;
+}
+ p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.header ul{
+    display: flex;
+    margin-top: -10px;
+    margin-left: 452px;
+}
+.header li{
+    list-style: none;
+    display: inline-block;
+}
+.header li a{
+    font-size: 18px;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+}
+.header li a:hover{
+    color: #f8ba55;
+    transition: all 0.4s ease 0s;
+}
+.sitebody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+.container {
+    display: flex;
+    width: 590px;
+    height: 458px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 123px;
+    background-color: #f8ba55;
+
+    z-index: 1;
+    opacity: 0.80;
+    
+}
+
+    
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+
+}
+.content{
+    
+    width: 230px;
+    height: 230px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background-color: #e5e5e5;
+    opacity: 0.98;
+}
+ul{
+    list-style: none;
+    margin: -21px;
+    padding: 6px;
+
+    
+    
+}
+li{
+    margin: 5px;
+    padding: 2px;
+    font-size: 10px;
+    
+}
+#logo{
+    background-image: url("photos/siteLogo.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 24px;
+    z-index: 3;
+
+}
+#form{
+    
+    transform: scaleY(1);
+    padding: 30px 5px;
+}
+input{
+    width: 209px;
+    height: 23px;
+    background-color: #ffffff;
+    border-bottom: 2px black;
+    
+}
+.submit1{
+    width: 155px;
+    height: 27px;
+    position: absolute;
+    bottom: 22%;
+    left: 18%;
+    background-color:#58f943 ;
+}
+a{
+    font-size: 16px; 
+    text-decoration: none;
+}
+.forgot{
+    position: relative;
+    bottom: 19%;
+    left: 1%;
+}
+.signup{
+    position: relative;
+    bottom: 11%;
+    left:1%
+}
+.half{
+    width: 300px;
+    height: 500px;
+    /* border: 1px solid red; */
+    position: absolute;
+
+    left: 398px;
+    background-color: #14213d;
+    z-index: 2;
+
+}
+.footer{
+    height: 30px;
+    background-image: linear-gradient(#141e30, #243b55);
+    opacity: 0.85;
+    text-align: center;
+    position: relative;
+    bottom: -46px;
+    color: #ffffff;
+    font-size: 25px;
+}
+.container2 {
+    display: flex;
+    width: 590px;
+    height: 458px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 123px;
+    background-color: #14213d;
+
+    z-index: 1;
+    opacity: 0.80;
+    
+}
+.signupPage{
+    color:#fbe104;;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.li2{
+    background-color: antiquewhite;
+
+    font-size: 20px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    color: black;
+    opacity: 0.90;
+
+}
+
+.submit2{
+    background-color:#58f943 ;
+    width: 171px;
+    height: 35px;
+    font-size: 21px;
+}
+.container3{
+    
+    display: flex;
+    width: 590px;
+    height: 300px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    margin-top:210px;
+    background-color: #14213d;
+    margin-bottom: 71px;
+    z-index: 1;
+    opacity: 0.80;
+}
+.rememberPage{
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    color: #ffffff;
+    text-align: center;
+}

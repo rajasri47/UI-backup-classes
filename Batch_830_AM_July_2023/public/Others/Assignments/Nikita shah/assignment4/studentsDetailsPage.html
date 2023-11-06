@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .mainContainer{
+            width: 1320px;
+            height: 610px;
+            
+            margin:  auto;
+            padding: 10px;
+            background-color: rgb(1, 4, 33);
+            
+        }
+        .header{
+            width: 1300px;
+            height: 50px;
+            
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+           
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(5, 249, 29); 
+        }
+        .mainContent{
+            width: 1320px;
+            height: 485px;
+            
+            margin:  10px auto;
+           
+            background-color: rgb(216, 171, 235);
+            float: left;
+            clear: both;
+        }
+        .block1{
+             width: 320px;
+             height: 460px;
+             margin: 10px;
+            
+             float: left;
+             background-color: rgb(255, 5, 5); 
+        }
+        .block2{
+            width: 950px;
+             height: 460px;
+            margin: 10px; 
+            
+            float: left;
+            overflow: auto;
+            background-color:rgb(255, 5, 5); 
+        
+        }
+        .footer{
+            width: 1309px;
+            height: 22px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            float: left;
+            clear: both;
+            margin: 15px auto;
+            padding: 5px ;
+            text-align: center;
+            background-color: rgb(9, 21, 244);
+            color: aliceblue;
+            
+        }
+        #names li{
+            width: 230px;
+            height: 40px;
+            
+            margin: 10px 2px;
+            padding: 10px;
+            list-style: none;
+            font-size: 21px;
+            background-color: black;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #box1, #box2, #box3, #box4, #box5 {
+            width: 870px;
+            height: 150px;
+            
+            margin:  10px auto;
+            font-size: 21px;
+            list-style: none;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .img1, .img2, .img3, .img4, .img5{
+            width: 160px;
+            height: 140px;
+            
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: left;
+            margin: 5px 15px;
+            
+        }
+        ul li{
+            margin: 3px;
+            padding: 2px;
+        }
+        .details{
+            margin: 5px 10px;
+            padding: 2px;
+        }
+        .img1{
+            background-image: url(https://th.bing.com/th/id/OIP.rtaM-AfxZ9HSLOdFDeY5aAHaE8?w=263&h=180&c=7&r=0&o=5&pid=1.7);
+        }
+        .img2{
+            background-image: url(https://s-i.huffpost.com/gen/1257364/images/o-COLLEGE-STUDENT-facebook.jpg);
+        }
+        .img3{
+            background-image: url(https://th.bing.com/th/id/OIP.Dpj3U51gISJMWUROJ6907wHaE7?w=264&h=180&c=7&r=0&o=5&pid=1.7);
+        }
+        .img4{
+            background-image: url(https://th.bing.com/th/id/OIP.lGbo6eNjqJ9WSnCi_jvWewHaKc?w=137&h=193&c=7&r=0&o=5&pid=1.7);
+        }
+        .img5{
+            background-image: url(https://th.bing.com/th/id/OIP.T-jbbb_360Anxt9nYg3M8gHaE8?w=290&h=193&c=7&r=0&o=5&pid=1.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="header">Students Details Page</div>
+        <div class="mainContent">
+            <div class="block1">
+                <ul id="names">
+                    <li>1. Priya kumari</li>
+                    <li>2. Rani mishra</li>
+                    <li>3. Ankit mishra</li>
+                    <li>4. Shiv sharma</li>
+                    <li>5. Palak mishra</li>
+                </ul>            
+            </div>
+            <div class="block2">
+                 <ul id="box1">
+                    <div class="img1"></div>
+                 <div class="details">
+                    <li>Name    :Priya kumari</li>
+                    <li>Age     : 20</li>
+                    <li>Gender  : Female</li>
+                    <li>location: Gwalior</li>
+                </div>
+                 </ul>
+                 <ul id="box2">
+                    <div class="img2"></div>
+                    <div class="details">
+                    <li>Name    :Rani Mishra</li>
+                    <li>Age     : 21</li>
+                    <li>Gender  : Female</li>
+                    <li>location: Pune</li>
+                    </div>
+                 </ul>
+                 <ul id="box3">
+                    <div class="img3"></div>
+                    <div class="details">
+                    <li>name    : ankit mishra</li>
+                    <li>Age     : 22</li>
+                    <li>Gender  : male</li>
+                    <li>location: kolkata</li>
+                    </div>
+                    
+                 </ul>
+                 <ul id="box4">
+                    <div class="img4"></div>
+                    <div class="details">
+                    <li>Name    : Shiv sharma</li>
+                    <li>Age     : 21</li>
+                    <li>Gender  : Male</li>
+                    <li>location: Delhi</li>
+                    </div>
+                 </ul>
+                 <ul id="box5">
+                    <div class="img5"></div>
+                    <div class="details">
+                    <li>Name    :Palak mishra</li>
+                    <li>Age     : 22</li>
+                    <li>Gender  : Female</li>
+                    <li>location: Hyderabad</li>
+                 </div>
+                 </ul>
+            </div><br>
+            <div class="footer">@copyrights2023</div>
+            
+        </div>
+         
+    </div>
+    
+</body>
+</html>

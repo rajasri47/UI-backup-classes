@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        eName       = prompt("Enter Your Name");
+        gender      = prompt("Enter your Gender");
+        jobLocation = "Hyderabad";
+        bSalary     = prompt("Enter your Salary");
+        bSalary     = parseInt(bSalary);
+        pf          = 12*bSalary/100;
+        hra         = 24*bSalary/100;
+        totalSalary = pf+ hra + bSalary;
+        if(gender==("male")){
+            if(totalSalary>=300000){
+                console.log("Tax= " + (totalSalary*15/100))
+            }
+            if(totalSalary>=200000 && totalSalary<300000){
+                console.log("Tax= " +(totalSalary*10/100))
+            }
+            if(totalSalary>=100000 && totalSalary<200000){
+                console.log("Tax= " + (totalSalary*5/100))
+            }else{
+                console.log(" sir you don't need to pay tax ")
+            }
+        }
+        if(gender=="female"){
+             if(totalSalary>=300000){
+                console.log("Tax=" + (totalSalary*10/100));
+            }
+            else if(totalSalary>=200000 && totalSalary<300000){
+                console.log("Tax= " + (totalSalary*5/100))
+            }
+            else{
+                console.log("Mam you don't need to pay any tax")
+            }
+        }
+    </script>   
+</body>
+</html>

@@ -1,0 +1,44 @@
+.content {
+    color: yellow;
+}
+
+tagname {
+    color: yellow;
+}
+
+#samplecontainer {
+    color: yellow;
+    border: 2px solid #cc12ab; 
+}
+
+
+
+<tagname style="color:yellow" class="content " id="samplecontainer">
+    ...
+    ....
+</tagname>
+
+differnt ways of giving color 
+
+DOM Structure
+
+Debugging tool 
+
+CSS priority order 
+-----------------------------------
+
+color: red/blue/black/white
+
+
+color: colorname/rgb/hashcode/ hsl/rgba 
+
+color: rgb(20, 20, 30);
+
+color: hashcode; #6 charset
+
+#-- -- --;
+
+# a1 bc d2;
+
+ASCII 
+

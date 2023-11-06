@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+    <style>
+        .header{
+            border:3px solid black;
+            text-align:center;
+            font-size:26px;
+            padding:8px;
+            margin:5px;
+        }
+        .back{
+            border:3px solid black;
+            height:1050px;
+            margin:5px;
+        }
+        .container1{
+            border:2px solid black;
+            height:230px;
+            width:1420px;
+            margin:30px;
+        }
+        ul{
+            list-style:none;
+        }
+        .Details{
+            border:2px solid black;
+            position:absolute;
+            left:125px;
+            top:73px;
+            background-color:white;
+            text-decoration:underline;
+            font-weight:bold;
+            font-size:20px;
+            padding:7px;
+        }
+        
+        .name{
+            text-decoration:underline;
+            font-size:25px;
+            position:absolute;
+            top:130px;
+            left:100px;
+        }
+        .age{
+            text-decoration:underline;
+            font-size:25px;
+            position:absolute;
+            top:130px;
+            left:600px;
+        }
+        .gender{
+            text-decoration:underline;
+            font-size:25px;
+            position:absolute;
+            top:200px;
+            left:100px;
+        }
+        .elements{
+            font-size:20px;
+            position:absolute;
+            top:205px;
+            left:185px;
+        }
+        .country{
+            text-decoration:underline;
+            font-size:25px;
+            position:absolute;
+            top:207px;
+            left:600px;
+        }
+        .class{
+            text-decoration:underline;
+            font-size:25px;
+            position:absolute;
+            top:270px;
+            left:100px;
+        }
+        .education{
+            border:2px solid black;
+            background-color:white;
+            text-decoration:underline;
+            font-weight:bold;
+            font-size:20px;
+            padding:7px;
+            width:160px;
+            text-align:center;
+            position:absolute;
+            left:125px;
+            top:340px;
+        }
+        .container2{
+            border:2px solid black;
+            height:170px;
+            width:1420px;
+            margin:30px;
+        }
+        .language{
+            font-size:24px;
+            position:absolute;
+            top:400px;
+            left:100px;
+        }
+        .options{
+            position:relative;
+            top:0px;
+            left:10px;
+        }
+        .qualification{
+            font-size:23px;
+            position:relative;
+            top:80px;
+            left:48px;
+        }
+        .options1{
+            font-size:23px;
+            position:relative;
+            top:-48px;
+            left:95px;
+        }
+        .course{
+            border:2px solid black;
+            background-color:white;
+            text-decoration:underline;
+            text-align:center;
+            font-weight:bold;
+            font-size:20px;
+            padding:7px;
+            width:160px;
+            position:relative;
+            left:95px;
+            top:-15px;
+        }
+        .options2{
+            font-size:26px;
+            position:absolute;
+            left:100px;
+            top:600px;
+        }
+        .options3{
+            font-size:26px;
+            position:absolute;
+            top:650px;
+            left:100px;
+        }
+        .container3{
+            border:2px solid black;
+            height:170px;
+            width:1420px;
+            margin:30px;
+        }
+        .about{
+            border:2px solid black;
+            background-color:white;
+            text-decoration:underline;
+            text-align:center;
+            font-weight:bold;
+            font-size:20px;
+            padding:7px;
+            width:160px;
+            position:relative;
+            left:95px;
+            top:-15px;
+
+        }
+        .container4{
+            border:2px solid black;
+            height:230px;
+            width:1420px;
+            margin:30px;
+        }
+        .label{
+            font-size:26px;
+            position:relative;
+            left:65px;
+            top:-100px;
+        }
+        .box{
+            box-sizing: border-box;
+            position:relative;
+            left:70px;
+            top:-20px;
+        }
+        #button{
+            padding:15px 30px;
+            color:black;
+            font-size:26px;
+            font-family:'arial';
+            font-weight:bold;
+        }
+
+        .button{
+            text-align: right;
+            position: relative;
+            right: 60px;
+            bottom: 3px;
+        }
+        
+    </style>
+<body>
+    <div class="header">Student Registration Page</div>
+    <div class="back">
+        <div class="container1">
+        <div class="Personal Details">Personal Details</div>
+        </div>
+        <ul>
+            <li>
+                <label class="name">Name:<input type="text" name="name"></label>
+            </li>
+            <li>
+                <label class="age">Age:<input type="text" name="age"></label>
+            </li>
+            <li>
+                <label class="gender">Gender:</label>
+                    <label><span class="elements"><input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="Female">Female</span></label>
+            </li>
+            <li>
+                <label class="country">Country Name:
+                <select>
+                    <option>India</option>
+                    <option>Dubai</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                    <option>Singapore</option>
+                    <option>Quwait</option>
+                    <option>Bangladesh</option>
+                    <option>Newzealand</option>
+                    <option>London</option>
+                    <option>America</option>
+                </select></label>
+            </li>
+            <li>
+                <label class="class">Class:
+                <select>
+                    <option>1st</option>
+                    <option>2nd</option>
+                    <option>3rd</option>
+                    <option>4th</option>
+                    <option>5th</option>
+                    <option>6th</option>
+                    <option>7th</option>
+                    <option>8th</option>
+                    <option>9th</option>
+                    <option>10th</option>
+                    <option>Inter I</option>
+                    <option>Inter II</option>
+                    <option>13th</option>
+                    <option>14th</option>
+                    <option>15th</option>
+                    <option>16th</option>
+                    <option>17th</option>
+                    <option>18th</option>
+
+                </select>
+                </label>
+            </li>
+        </ul>    
+       
+        <div class="container2">
+        <div class="education">Education Details
+        </div>   
+            <ul>
+                <li>
+                <label class="language">Languages Known: 
+                <span class="options"><input type="checkbox" id="radio" name="button">English 
+                     <input type="checkbox" id="radio" name="button">Hindi 
+                     <input type="checkbox" id= "radio" name="button">Telugu</label> 
+                </span>
+                </li>
+            </ul>
+       
+        <div class="qualification">Qualification:
+        <ul>
+        <label class="options1"><input type="checkbox" >MBA
+        <input type="checkbox">MCA
+        <input type="checkbox">BTech
+        <input type="checkbox">MTech
+        </label>
+        </ul></div>
+        </div>
+
+        <div class="container3">
+        <div class="course details">Course Details</div>
+        <div class="options2">Course option for
+        <select>
+            <option>UI Full Stack</option>
+            <option>JAVA Full Stack</option>
+            <option>AWS</option>
+            <option>Devops</option>
+            <option>Python Full Stack</option>
+            <option>Data Science</option>
+            <option>.Net Full Stack</option>
+            <option>Hadoop</option>
+            <option>ReactJS</option>
+            <option>NodeJS</option>
+            <option>PowerBI</option>
+        </select>
+        </div>
+        <div>
+            <span class="options3">Language
+                <select>
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Telugu</option>
+                </select></span>
+        </div>
+        </div>
+
+        <div class="container4">
+            <div class="about">About yourself
+            </div>
+            <label class="label">Few words about yourself: </label>
+            <textarea name="text" class="box" rows="12" cols="120"></textarea>
+        </div>
+
+        <div class="button">
+            <input type="Submit" id="button" value="Save Details">
+        </div>
+    </div>
+    <div class="header">@copyrights 2023</div>
+</body>
+</html>

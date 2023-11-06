@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var bookDetails = {
+                bookname : "magnuschase",
+                bookprice : 399,
+                discount : 15,
+                authorlist : ["RickRiordan","roshanichokshi"],
+                publisher : "penguin publications",
+
+                bookwriter(){
+                    for(i=0; i < this.authorlist.length; i++){
+                        console.log("author of the book is"+ this.authorlist[i]);
+                        }
+                        
+                },
+                bookPriceAfterDiscount(){
+                    bookPriceAfterDisc = this.bookprice - (((this.discount)*this.bookprice)/100);
+                console.log("book price after discount"+bookPriceAfterDisc);              },
+
+                book(){
+                    console.log("Book Name :" + this.bookname);
+                    console.log("Publisher :" + this.publisher);
+                    console.log("Actual Price of Book is : ₹" + this.bookprice);
+                    console.log("Discount on this book is : " + this.discount + "%");
+                    this.bookwriter();
+                    this.bookPriceAfterDiscount();
+                },
+
+               };
+               bookDetails.book();
+        </script>
+        
+    </body>
+    </html>

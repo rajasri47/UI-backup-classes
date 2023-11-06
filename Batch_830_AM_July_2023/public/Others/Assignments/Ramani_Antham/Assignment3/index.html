@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var name=prompt("Enter Name");
+    var age=prompt("Enter Age");
+    var gender=prompt("Enter Gender");
+    var pf=prompt("Enter Pf");
+    var basic=prompt("Enter Basic");
+    var hra=prompt("Enter Hra");
+    hra=parseInt(hra);
+    basic=parseInt(basic);
+    pf=parseInt(pf);
+    var sal=hra+basic+pf;
+    var tax;
+    console.log("Name:"+name);
+    console.log("Age:"+age);
+    console.log("Gender:"+gender);
+    console.log("Salary:"+sal);
+
+    if(gender=='male'){
+        if(sal>300000)
+        tax=(sal*15)/100;
+        if(sal>200000)
+        tax=(sal*10)/100;
+        if(sal>100000)
+        tax=(sal*5)/100;
+        else
+        tax=0;
+    }
+    else{
+        if(sal>300000)
+        tax=(sal*10)/100;
+        if(sal>200000)
+        tax=(sal*5)/100;
+        else
+        tax=0;
+    }
+ console.log("Total Tax to be paid:"+tax);
+</script>
+<body>
+  Employee Details with control structures     
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript variable Hoisting</title>
+    </head>
+    <body>
+        <script>
+            var a = 90;
+            
+            console.log("Value of a is " + a);
+            console.log("value of z is " + z);
+
+            var z = 99;
+
+            console.log("value of z is " + z);
+            var username;
+            username = 'TEena';
+            var isFeepaid = true;
+
+        </script>
+
+        <script>
+            var a;
+            var z;
+            var username;
+            var isFeepaid;
+            a = 90;
+            
+            console.log("Value of a is " + a);
+            console.log("value of z is " + z);
+
+            z = 99;
+
+            console.log("value of z is " + z);
+            var username;
+            username = 'TEena';
+            isFeepaid = true;
+            
+        </script>
+    </body>
+</html>

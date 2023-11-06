@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>EmployeeDetails using Function</title>
+    </head>
+    <body>
+        <script>
+            
+            var name=prompt("enter your name");
+            var age=prompt("enter your age");
+            var gender=prompt("male or female");
+            var departnment=prompt("enter your departnment");
+            var basicSalary=prompt("enter your basic salary");
+            basicSalary=parseInt(basicSalary);
+            var pf = (basicSalary * 12)/100;
+            var hra = (basicSalary * 24)/100;
+            var totalSalary= pf + hra + basicSalary;
+            function EmployeeDetails(){
+                console.log("Name  " + name)
+                console.log("Age " + age)
+                console.log("Department " + departnment)
+                console.log("Toatl Salary" + totalSalary)
+            }
+            
+            function Gender(){
+                if(gender=='male'){
+                    if(totalSalary>=300000){
+                        tax=(totalSalary *15)/100
+                        console.log("tax to paid is "+ tax);
+                    }
+                    else if(totalSalary>=200000){
+                        tax=(totalSalary *10)/100
+                        console.log("tax to paid is "+ tax);
+                    }
+                    else if(totalSalary>=100000){
+                        tax=(totalSalary *5)/100
+                        console.log("tax to paid is "+ tax);
+                    }
+                    else{
+                        console.log("No tax");
+                    }    
+            }
+                else{
+                    if(totalSalary>=300000){
+                        tax=(totalSalary *10)/100
+                        console.log("tax to paid is "+ tax);
+                    }
+                    else if(totalSalary>=200000){
+                        tax=(totalSalary *5)/100
+                        console.log("tax to paid is "+ tax);
+                    }
+                    else{
+                        console.log("No tax");
+                    } 
+                }
+            }
+
+            EmployeeDetails();
+            Gender();
+            
+
+        </script> 
+    </body>
+</html>

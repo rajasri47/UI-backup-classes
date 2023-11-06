@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About prime numbers</title>
+    </head>
+    <body>
+        <script>
+            var n = prompt('Enter a num....')
+            n = parseInt(n)
+            var count = 0;
+
+            //this is first method 
+            // for (var i = 1; i <= n; i++) {
+            //     var rem = n % i;
+            //     // console.log(rem)
+            //     if (rem == 0) {
+            //         count++;
+            //     }
+            // }
+            // if (count == 2) {
+            //     console.log("ITs a prime number")
+            // } else {
+            //      console.log("its not a prime")
+            // }
+
+            for( var i = 1; i <= n; i++){
+                var rem = n % i;
+
+                if (rem == 0){
+                    count++;
+                }
+            }
+            if(count == 2){
+                console.log( n + ' is a prime number ' )
+            } else{
+                console.log( n + ' is not a prime number ');
+            }
+        </script>
+    </body>
+</html>

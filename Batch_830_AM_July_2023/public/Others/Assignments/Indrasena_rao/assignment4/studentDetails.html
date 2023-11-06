@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainContent {
+            width: 100%;
+            /* height: 100%; */
+            border: 1px solid gray;
+
+            .headerContent {
+                width: 100%;
+                height: 40px;
+                border: 1px solid gray;
+                background: beige;
+
+                .titelBlack {
+                    text-align: center;
+                    color: cadetblue;
+                    margin: 5px auto;
+                }
+            }
+
+            .bodyContent {
+                width: 90%;
+                height: 500px;
+                display: flex;
+                border: 1px solid gray;
+
+                .bodyContentLeft {
+                    width: 25%;
+                    height: 98%;
+                    float: left;
+                    margin: 5px;
+                    border: 1px solid gray;
+
+                    .orderList {
+                        .listData {
+                            height: 30px;
+                            list-style: none;
+                            border: 1px solid gray;
+                        }
+                    }
+                }
+
+                .bodyContentRight {
+                    width: 65%;
+                    height: 98%;
+                    margin: 5px;
+                    float: right;
+                    border: 1px solid gray;
+
+                    .userData {
+                        width: 95%;
+                        height: 100px;
+                        display: flex;
+                        border: 1px solid gray;
+
+                        .imgimgClass {
+                            width: 70px;
+                            height: 90px;
+                            
+                        }
+
+                        .userList {
+                            li {
+                                height: 30px;
+                                list-style: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContent">
+        <div class="headerContent">
+            <h2 class="titelBlack"> Student Details</h2>
+        </div>
+        <div class="bodyContent">
+            <div class="bodyContentLeft">
+                <ol class="orderList">
+                    <li class="listData">Raj</li>
+                    <li class="listData">krish</li>
+                    <li class="listData">rao</li>
+                    <li class="listData">Babu</li>
+                </ol>
+
+            </div>
+            <div class="bodyContentRight">
+                <div class="userData">
+                    <img class="imgClass" src="images/emp1.jpeg">
+                    <ul class="userList">
+                        <li style="list-style: none;"> Name : Raj</li>
+                        <li style="list-style: none;"> Age : 25</li>
+                        <li style="list-style: none;"> Gender : Male</li>
+                        <li style="list-style: none;"> Location : Hyderabad</li>
+                    </ul>
+
+                </div>
+                <div class="userData">
+                    <img class="imgClass" src="images/emp2.jpeg">
+                    <ul class="userList">
+                        <li style="list-style: none;"> Name : krish</li>
+                        <li style="list-style: none;"> Age : 27</li>
+                        <li style="list-style: none;"> Gender : Male</li>
+                        <li style="list-style: none;"> Location : Hyderabad</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="headerContent">
+            <h6 class="titelBlack"> @ copy Right 2023</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

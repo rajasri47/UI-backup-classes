@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Online shopping app</div>
+            <div class="leftblock">lblock</div>
+            <div class="rightblock">
+                <img src="images/icons8-menu-64.png" alt="" onclick="toggleMenu()">
+                <div class="tabContainer">
+                    <div>Home</div>
+                    <div>Careers</div>
+                    <div>Our clients</div>
+                    <div>Contact info</div>
+
+                </div>
+                <div class="msgBlock">
+                    Products are about to come
+                </div>
+                <div class="adsBlock">
+                    <marquee behavior="" direction="">
+                        Promotions about to come
+                    </marquee>
+                </div>
+            </div>
+            <div class="footer">@copyrights 2023</div>
+        </div>
+
+        <script>
+            var toggleMenu = () => {
+                var element = document.querySelector(".tabContainer");
+                var currentStyle =window.getComputedStyle(element).display;
+                if (currentStyle == 'none') {
+                    element.style.display = 'block'
+                } else {
+                    element.style.display = 'none'
+                }
+
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = [2,43,54,45,23,65,78,99,3,25,67,56,,43,23,89,77,98,90,3,23,51,91,43,57,34];
+        for(var i = 0; i<data.length; i++){
+             var count = 0;
+            for(var j = 1; j <= data[i]; j++){
+                    if(data[i]%j == 0){
+                        count++;
+                    }
+            }
+            if (count ==2){
+                console.log(`${data[i]} is prime`);
+            }
+        }
+    </script>
+</body>
+</html>

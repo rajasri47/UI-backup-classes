@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payslip Generator</title>
+    <link rel="stylesheet" href="payslipGenerator.css">
+    <script src="payslipGenerator.js"></script>
+
+</head>
+<body>
+    <h2><u>Employee Payslip Generator</u></h2>
+    <div class="container">
+        <ul>
+            <li>
+                Enter Name of Employee:
+                <input type="text" id = "eName">
+            </li>
+            <li>
+                Enter Age:
+                <input type="number" id = "eAge">
+            </li>
+            <li>
+                Select Gender:
+                <input type = "radio" name = "gender" value = "male" checked>Male
+                <input type = "radio" name = "gender" value = "female">Female
+            </li>
+            <li>
+                Enter the Department:
+                <select id = "eDept">
+                    <option value = "Software Engineer">Software Engineer</option>
+                    <option value = "Senior Software Engineer">Senior Software Engineer</option>
+                    <option value = "Junior Software Engineer">Junior Software Engineer</option>
+                    <option value = "Assistant Manager">Assistant Manager</option>
+                    <option value = "Business Analyst">Business Analyst</option>
+                </select>
+            </li>
+            <li>
+                Enter Basic Salary:
+                <input type = "number" id = "ebSal">
+            </li>
+            <li>
+                <div>
+                    <input type="button" value="Generate Payslip" onclick="generatePayslip()">
+                    
+            </li>
+        </ul>
+    </div>
+    <div class="resultContainer">
+        <ul>
+            <li>
+                Employee Name: <span id="name"></span>
+            </li>
+            <li>
+                Employee Age: <span id="age"></span>
+            </li>
+            <li>
+                Employee Gender: <span id="gender"></span>
+            </li>
+            <li>
+                Department : <span id="dept"></span>
+            </li>
+            <li>
+                Basic Salary: <span id="bSal"></span>
+            </li>
+            <li>
+                PF : <span id="pf"></span>
+            </li>
+            <li>
+                HRA : <span id="hra"></span>
+            </li>
+            <li>
+                Total Salary is : <span id="totalSal"></span>
+            </li>
+        </ul>
+    </div>  
+</body>
+</html>

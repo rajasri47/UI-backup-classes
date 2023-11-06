@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Book details using json
+        </title>
+    </head>
+    <body>
+        <script>
+            var book = {
+                bookName : 'Parallel Universe',
+                bookPrice : 600,
+                discountPrice: 530,
+                authorsList : ['R.R.Rout , B.R.Rout , P.R.Rout'],
+                bookPublisher : 'SPS Publishing',
+                bookPublished : 80,
+                
+            bookDetails(){
+                console.log("Book name : " + this.bookName);
+                console.log("Book price : " + this.bookPrice);
+                console.log("Discount value : " + this.discountPrice);
+                console.log("Authors list : " + this.authorsList);       
+                console.log("Book publisher : " + this.bookPublisher);
+                console.log("Number of book published : " + this.bookPublished);
+            },
+        };
+
+        book.bookDetails();
+            
+        </script>
+    </body>
+</html>

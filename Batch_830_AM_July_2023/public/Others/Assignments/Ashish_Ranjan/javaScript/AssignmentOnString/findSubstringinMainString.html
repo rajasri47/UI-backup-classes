@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ----------------Demonstrate to find the substring in main String---------- -->
+
+    <script>
+      var mainString = "honesty is the best policy";
+
+      var subString = prompt("Enter string to search");
+      var subString =subString.toLowerCase(subString);  //convert to lowercase
+
+
+      var checkString = mainString.includes(subString);
+      if(checkString ==true){
+        console.log( subString +": is subString of Main String");
+      }
+      else{
+        console.log( subString +": is not subString of Main String");
+      }
+    </script>
+  </body>
+</html>

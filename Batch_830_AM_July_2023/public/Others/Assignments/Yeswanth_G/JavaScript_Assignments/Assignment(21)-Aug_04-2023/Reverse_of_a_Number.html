@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Given Number Is Palindrome Or Not </title>
+    </head>
+
+    <body>
+        <h1> Given Number Is Palindrome Or Not </h1>
+        <script>
+            var a, temp = 0;
+            n = prompt("Enter A Number");
+            n = parseInt(n);
+
+            while(n>0){
+                a = n%10;
+                n = parseInt(n/10);
+                temp = temp * 10 + a;
+            }
+            console.log("Reverse of a Number "+temp);
+
+        </script>
+    </body>
+</html>

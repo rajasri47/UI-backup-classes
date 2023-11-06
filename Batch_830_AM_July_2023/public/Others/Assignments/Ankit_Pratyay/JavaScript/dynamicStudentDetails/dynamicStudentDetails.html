@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details</title>
+    <style>
+      .header {
+        text-align: center;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">Veiw Student Details on Debugger Tool</h1>
+    <script>
+      var name = prompt("Enter Employee Name ");
+      var age = prompt("Enter Employee Age ");
+      
+     var subject1 = parseInt(prompt("Enter Mark of subject 1: "));
+     var subject2 = parseInt(prompt("Enter Mark of subject 2: "));
+     var subject3 = parseInt(prompt("Enter Mark of subject 3: "));
+     var subject4 = parseInt(prompt("Enter Mark of subject 4: "));
+     var subject5 = parseInt(prompt("Enter Mark of subject 5: "));
+
+     var total = subject1 + subject2 + subject3 + subject4 + subject5;
+     var avg = total/5;
+
+      console.log(
+        "Student Name " + name + " and age is " + age
+      );
+      console.log( name + "'s Total Marks obtained : " + total);
+      console.log(name + "'s Average : " + avg );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var arr = [];
+            var ans = 0;
+
+            for(var i = 0 ; i <= 5; i++){
+                arr[i] = prompt("Enter" +i+ "Number");
+                arr[i] = parseInt(arr[i]);
+
+                var temp = arr[i];
+                arr[i]=arr[i].toString();
+                var k =arr[i].length;
+
+                while(arr[i] > 0){
+                    var rem = arr[i]%10;
+                    ans = ans + (rem ** k);
+                    arr[i] = arr[i]/10;
+                    arr[i] = parseInt(arr[i]);
+                }
+                if(temp == ans){
+                    console.log(ans);
+            }
+            ans = 0;
+        }
+
+        </script>
+</body>
+</html>

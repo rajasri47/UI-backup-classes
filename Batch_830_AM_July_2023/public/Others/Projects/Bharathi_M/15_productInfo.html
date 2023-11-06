@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Information</title>
+    <style>
+        .backgroundImage{
+            background-image: url('images/image2.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-weight: bold; 
+        }
+        .mainContainer{
+            border: 1px solid;
+            width: 500px;
+            height: 550px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container1{
+            border: 1px solid;
+            width: 500px;
+            height: 400px;
+            margin:10px auto;
+            
+        }
+        li{
+            list-style: none;
+            font-size: 18px;
+        }
+        .btn1,.btn2{
+            margin: 20px;
+            font-size: 15px;
+            height: 30px;
+            width: 120px;
+        }
+        .btn1 a{
+            text-decoration: none;
+        }
+        .pName{
+            font-size: 16px;
+            margin: 5px;
+            position: relative;
+            left:30px;
+        }
+        .pPrice{
+            font-size: 16px;
+            margin: 5px;
+            position: relative;
+            left:95px;
+        }
+        .pCategory{
+            font-size: 16px;
+            margin: 5px;
+            position: relative;
+            left:65px;
+        }
+        .pVendor{
+            font-size: 16px;
+            margin: 5px;
+            position: relative;
+            left:80px;
+        }
+        .pInStock{
+            font-size: 16px;
+            margin: 5px;
+            position: relative;
+            left:70px;
+        }
+        .pColour{
+            font-size: 16px;
+            margin: 5px;
+            position: relative;
+            left:80px;
+        }
+        .pDescription{
+            font-size: 16px;
+            margin: 5px;
+            position: relative;
+            left:45px;
+        }
+        .pManufacturer{
+            font-size: 16px;
+            margin: 5px;
+            position: relative;
+            left:30px;
+        }
+        .btn3{
+            font-size: 16px;
+            padding: 5px;
+            width: 120px;
+            position: relative;
+            left: 170px;
+        }
+        .btn3 a{
+            text-decoration: none;
+        }
+        .bottom li{
+            position: relative;
+            left: 370px;
+        }   
+    </style>
+</head>
+<body class="backgroundImage">
+       <div class="mainContainer">
+        <button class="btn1">Add Vendor</button>
+        <button class="btn2">Add Product</button>
+        <div class="container1">
+          <ul>
+             <li>
+                 <label>Product Name:</label>
+                 <input class="pName" type="text">
+               </li>
+               <li>
+                 <label>Price:</label>
+                 <input class="pPrice" type="text">
+                </li>
+                <li>
+                  <label>Category:</label>
+                  <input class="pCategory" type="text">
+                </li>
+                <li>
+                    <label>Vendor:</label>
+                    <input class="pVendor" type="text">
+                  </li>
+                  <li>
+                    <label>In Stock:</label>
+                    <input class="pInStock" type="text">
+                  </li>
+                  <li>
+                    <label>Colour:</label>
+                    <input class="pColour" type="text">
+                  </li>
+                  <li>
+                    <label>Description:</label>
+                    <input class="pDescription" type="text">
+                  </li>
+                  <li>
+                    <label>Manufacturer:</label>
+                    <input class="pManufacturer" type="text">
+                  </li>
+            </ul>
+            <button class="btn3">Add</button>
+            <div class="bottom">
+                <ol>
+                <li>View All</li>
+                </ol>
+            </div>
+        </div>
+        </div>
+    
+</body>
+</html>

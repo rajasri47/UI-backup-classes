@@ -1,0 +1,28 @@
+
+addvalues(int a, float b) {
+    float c = a + b;
+    ... 
+    
+}
+
+addvalues(20, 3.4)
+---------------------------
+
+addvalues(a, b) {
+        ...
+
+        ...
+        ...
+}
+--------------------
+
+Parameters / Arguments
+    actual and Formal Parameters 
+
+CAlling function 
+CAlled function 
+
+3 diff ways of declaring function 
+    using funciton keyword
+    as a variable 
+    as a arrow function

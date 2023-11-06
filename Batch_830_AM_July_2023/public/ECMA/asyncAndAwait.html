@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DEmonstrating async and await
+        </title>
+    </head>
+    <body>
+        <script>
+            var totalBalace = 0;
+            var myPromise = new Promise((resolve, rejected) => {
+                var myTotalAccountBalance = 200000;
+                setTimeout(() => {
+                    resolve(myTotalAccountBalance)
+                }, 3000);
+                
+            });
+            async function checkkBalance() {
+
+                await myPromise.then((balace) => {
+                    console.log("Ttoal balace you have is " + balace);
+                    totalBalace = balace;
+                });
+
+                if (totalBalace >= 1000) {
+                    console.log("you have enough balance for shopping");
+                } else {
+                    console.log("you dnt have balance for shopping");
+                }
+            }
+
+            checkkBalance();
+
+        </script>
+    </body>
+</html>

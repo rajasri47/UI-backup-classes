@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating all the palindrome numbers between 1 to 1000
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("List of all the palindrome numbers between 1 to 1000");
+            
+            for (i = 1 ; i <= 1000 ; i++) { 
+                var temp = i;
+                var revNum = 0;
+               
+                    while (temp > 0) {
+                        rem = temp % 10;
+                        revNum = (revNum * 10) + rem;
+                        temp = temp / 10;
+                        temp = parseInt(temp);
+                    }
+                    if (i == revNum) {
+                        console.log(i);
+                    }
+                }
+             
+        </script>
+    </body>
+</html>

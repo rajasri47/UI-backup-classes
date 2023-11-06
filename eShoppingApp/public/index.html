@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Shopping</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/Js/handlebars.js"></script>
+  <script src="lib/Js/axios.js"></script>
+  <script src="lib/Js/jquery.js"></script>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="CSS/app.css" />
+  <link rel="stylesheet" href="CSS/dialog.css">
+  <script src="javascript/dialog.js"></script>  
+  <script src="javascript/productsLoadingPage.js"></script>
+  <script src="javascript/uploadResource.js"></script>
+  <script src="javascript/onPageLoad.js"></script>
+  <script src="javascript/loginPage.js"></script>
+  <script src="javascript/captch.js"></script>
+  <script src="javascript/passwordvalidation.js"></script>
+  <script src="javascript/Passwordvisible.js"></script>
+  <script src="javascript/credential.js"></script>
+  <script src="javascript/newUserSignup.js"></script>
+  <script src="javascript/uploadNewProductDetails.js"> </script>
+  <script src="javascript/supportChat.js"></script>
+  <link rel="stylesheet" href="css/chatbox.css">
+  
+
+  <!-- Option 1: Include in HTML -->
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+  <header>
+    <a href="/">
+      <img src="images/eshop-logo.png" alt="logo" class="logo" />
+    </a>
+
+    <form action="/search" method="get">
+      <!-- Search input field -->
+      <input type="text" name="q" class="search-input" placeholder="Search" />
+      <img src="images/serchIcon.png" alt="" class="Sicon" />
+      <!-- Search button with the specified background color -->
+    </form>
+    <nav>
+      <a href="">HOME</a>
+      <a href="">PRODUCTS</a>
+      <img src="images/white-profile-icon.jpg" alt="" />
+      <img src="images/white-cart-icn.png" alt="" />
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="pagecontainer">
+      <div class="loginBlock">
+        <h3 class="LoginHeading">Login</h3>
+        <ul>
+          <li>
+            <input type="text" class="form-control" placeholder="Account Id" />
+          </li>
+          <li>
+            <input type="password" class="form-control" id="password" oninput="checkPassword()"
+              placeholder="Account Password" />
+            <div id="instructions">
+              <p id="length">Password must be at least 8 characters long.</p>
+              <p id="letters">Password must contain at least one letter.</p>
+              <p id="numbers">Password must contain at least one number.</p>
+              <p id="symbols">Password must contain at least one symbol.</p>
+            </div>
+
+            <p id="status"></p>
+          </li>
+          <li><input type="checkbox" /> Remember my credentials</li>
+          <li>
+            <!-- <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white"
+              href="/fgpwdpage.html">
+              Forgot Password?
+            </a> -->
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white"
+              href="/forgotPwd.html">
+              Forgot Password?
+            </a>
+            &nbsp;
+            <!-- <a
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white"
+                href="/newUserSignup.html"
+              > -->
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white"
+              href="/newSignup.html">
+              New Signup
+            </a>
+          </li>
+          <li class="captchaBlock">
+            <span id="generatecapcha"> </span>
+
+            <input type="text" class="Enter Captcha" />
+
+            <button class="btn btn-primary btn-sm" onclick="getcapcha()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                <path
+                  d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                <path fill-rule="evenodd"
+                  d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+              </svg>
+              refresh
+            </button>
+            <button class="btn btn-primary login">Login</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<div class="footerContent">
+  <div class="container my-">
+    <footer class="text-center text-lg-start mt-xl-3">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="mb-4">Our World</h5>
+
+            <ul class="list-unstyled mb-4">
+              <li>
+                <a href="#!" class="text-white">About us</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Collections</a>
+              </li>
+
+              <li>
+                <a href="#!" class="text-white">Artist collaborations</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="mb-4">Assistance</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Contact us</a>
+              </li>
+
+              <li>
+                <a href="#!" class="text-white">Shipping Information</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Returns & Exchanges</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="mb-4">Careers</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Jobs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Internship</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="mb-4">Sign up to our newsletter</h5>
+
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" placeholder="Email address" />
+              <!-- <label class="form-label" for="form5Example2" ></label> -->
+            </div>
+            <!-- class="btn btn-primary" -->
+            <button type="submit" class="btn btn-primary form-control">
+              Subscribe
+            </button>
+            <!-- <button type="submit" class="btn btn-outline-white btn-block">Subscribe</button> -->
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+      <hr />
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © 2023- <a id="footerHomeLink" href="/"> Eshop </a> (Powered By NIT)
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+</div>
+
+</html>

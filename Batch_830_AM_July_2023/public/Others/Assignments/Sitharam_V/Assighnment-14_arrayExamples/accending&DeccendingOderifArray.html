@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>accending & Deccending Oder in an Array</title>
+    </head>
+    <body>
+        <script>
+            var readData = () => {
+                var data = [];
+                var len = parseInt(prompt(" Enter the num of values"));
+                for ( i = 0; i < len; i++) {
+                    data[i] = parseInt(prompt(" Enter the value"));
+                }
+                console.log(" Given Array: " + data);
+                assen(data,len);
+                deccen(data,len);
+                
+            }
+            var assen = (data,len) => {
+                for ( i = 0; i < len; i++) {
+                    for (j = i; j < len; j++) {
+                        if (data[i] > data[j]) {
+                            var temp = data[i];
+                            data[i] = data[j];
+                            data[j] = temp;
+                        }
+                    }
+                }
+                console.log( " Accending oder: " + data);
+            }
+            var deccen = (data,len) => {
+                for ( i = 0; i < len; i++) {
+                    for (j = i; j < len; j++) {
+                        if (data[i] < data[j]) {
+                            var temp = data[i];
+                            data[i] = data[j];
+                            data[j] = temp;
+                        }
+                    }
+                }
+                console.log(" Deccending oder: " + data);
+            }
+            readData();
+        </script>
+    </body>
+</html>

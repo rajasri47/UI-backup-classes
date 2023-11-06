@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+          .container {
+                width: 200px;
+                height: 50px;
+                padding: 50px;
+                text-align: center;
+                font-weight: bold;
+                margin: 120px auto;
+                border-radius: 10px;
+                border: 1px solid;
+                background-color: aquamarine;
+                transition: height 3s, width 2000ms, transform 2s;
+            }
+
+            .container:hover {
+                width: 300px;
+                height: 200px;
+                transform: scale(2, 4);
+            }
+    </style>
+    <body>
+        <div class="container">
+            content
+        </div>
+    </body>
+</html>

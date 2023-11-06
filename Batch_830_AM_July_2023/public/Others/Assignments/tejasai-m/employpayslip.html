@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app2.css">
+</head>
+<body>
+    <h4>employeedetails</h4>
+    <ul>
+    <li>
+        <input type="text"placeholder="enter emp name"id="name">
+    </li>
+    <li>
+        <input type="text"placeholder="enter age"id="age">
+    </li>
+    <li>
+        gender:
+        <input type="radio"value="male"name="gender"checked>male
+        <input type="radio"value="female"name="gender">female
+    </li>
+    <li>
+        Department:
+        <select name=""id="department">
+        <option value="it">it</option>
+        <option value="frontend">frontend</option>
+        <option value="backend">backend</option>
+        <option value="analyst">analyst</option>
+        <output value="designer">designer</option>
+        </select>
+    </li>
+    <li>
+        salary:
+        <input type="text"placeholder="enter salary"id="salary">
+</select>
+</li>
+<li>
+    <input type="button"value="generate payslip"onclick="empdetails()">
+</li>
+    </ul>
+    <ul class="hide">
+    <li>employee payslip</li>
+    <li>sbi bank id</li>
+    <li>
+        employee name:<span id="dname"></span>
+    </li>
+    <li>
+        employee age:<span id="dage"></span>
+    </li>
+    <li>
+        employee gender:<span id="dgender"></span>
+        </li>
+    <li>
+        employee department:<span id="ddepartment"></span>
+    </li>
+    <li>
+        employee salary:<span id="dsal"></span>
+    </li>
+    <li>
+        employee pf:<span id="dpf"></span>
+    </li>
+    <li>
+        employee hra:<span id="dhra"></span>
+    </li>
+    <li>
+        total sal:<span id="dtotalsal"></span>
+    </li>
+    <li>
+        tax:<span id="dtax"></span>
+    </li>
+    </ul>
+    <script src="app2.js"></script>
+    
+</body>
+</html>

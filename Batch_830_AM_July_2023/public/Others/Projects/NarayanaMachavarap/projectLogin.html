@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Narayana Machavarapu's Shoping Project Login Page</title>
+      
+        <style>
+            h3{
+                color: black;
+                background-color: aquamarine;
+                padding: 10px;
+                margin: 20px 20px;
+                border-radius: 10px;
+                text-align: center;
+                font-family: sans-serif ;
+                box-shadow: #000;
+            }
+            img{
+               float: left;
+               margin: 50px;
+            }
+            .mainDiv{
+                background-color: #ecf6f5;
+                margin: 10px auto;
+                padding: 10px;
+                border-radius: 10px;
+                width: 1920px;
+                height: 1080px;
+                background-image: url("images/bg.png");
+            }
+            ul{
+                width: 500px;
+                margin: 200px auto;
+                padding: 10px;   
+            }
+            li{
+                list-style: none;
+                border: 1px solid ;
+                margin: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #edf6f5;
+            }
+            .login{
+                border: none;
+                text-align: center;
+                background-color: #df8181;
+                padding: 10px;
+                margin: 10px auto;
+                width: 200px;   
+            }
+            .bottomDetails{
+                width: 500px;
+                padding: 0px;
+                display: inline-block;
+            }
+            #forgot{
+                text-align: left;
+                margin: 30px; 
+            }
+            #register{
+                text-align: right;
+                margin-top: -46px;
+                margin-right: 30px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="mainDiv">
+            
+            <img src="images/girl.png" alt="Girl Image">
+            <form action="http://narayanamachavarapu.com/data/api/loginpage" method="post">
+                
+                <ul>
+                    <h3>Narayana Machavarapu's E-cart</h3>
+                    <li>
+                        <input type="email" name="name" maxlength="15" placeholder="Enter Your Email">
+
+                    </li>
+                    <li>
+                        <input type="password" maxlength="15" placeholder="Enter Your Password">
+
+                    </li>
+                    <li class="login">
+                        <input type="submit" value="Login" >
+    
+                    </li>
+                <div class="bottomDetails">
+                    <h4 id="forgot">Forgot Password?</h5>
+                    <h4 id="register">Register</h5>
+                </div>   
+                </ul>
+            </form>
+
+        </div>
+        
+    </body>
+</html>

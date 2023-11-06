@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+    <style>
+        .header{
+            border: 2px solid;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+            padding: 10px;
+            background-color: aqua;
+        }
+        .container{
+            border: 1px solid;
+            margin: 10px 0 10px 0;
+            height: 950px;
+            background-color: lightgray;
+        }
+     
+        li{
+            border: 1px solid;
+            list-style: none;
+            width: 95%;
+            margin: 30px;
+            padding: 15px;
+            font-size: 20px;
+            background-color: yellowgreen;
+            color: black;
+        }
+        .userDetails{
+            border: 1px solid;
+            position: absolute;
+            left:158px;
+            padding: 5px;
+            top: 80px;
+            margin: 5px;
+            background-color: white;
+            font-weight: bold;
+        }
+        input{
+            padding: 15px;
+            margin: 15px;
+        }
+        .educationDetails{
+            border: 1px solid;
+            position: absolute;
+            top:440px;
+            left: 158px;
+            padding: 10px;
+            background-color: white;
+            font-weight: bold;
+        }
+        .aboutYourself{
+            border: 1px solid;
+            position:absolute;
+            top: 700px;
+            left: 158px;
+            padding: 10px;
+            font-weight: bold;
+            background-color: white;
+
+        }
+        .block1{
+            height: 300px;
+        }
+        .block2{
+            height: 200px;
+        }
+        .block3{
+            height:150px;
+        }
+        .btn{
+            background-color: darkorchid;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            position: absolute;
+            left: 650px;
+            
+        }
+        .footer{
+            border: 2px solid;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+            padding: 10px;
+            background-color: aqua;
+        }
+    
+
+    </style>
+</head>
+<body>
+   <div class="header">Student Details Registration Page</div> 
+   <div class="container">
+    <form action="http://abcsample.com/data/api/registration" method="POST">
+    <ul>
+        <li class="block1">
+            <div class="userDetails">User Details</div>
+            <label for="name">Name:</label>
+            <input type="text" name="name"><br>
+            <label for="age">Age:</label>
+            <input type="text" name="age"><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female<br>
+            <label for="address">Address:</label>
+            <input type="text" name="address">
+        </li>
+        <li class="block2">
+            <div class="educationDetails">Education Details</div>
+            <label>Qualification:</label>
+            <input type="checkbox" name="qual-mba">MBA
+            <input type="checkbox" name="qual-mca">MCA
+            <input type="checkbox" name="qual-btech">B.Tech
+            <input type="checkbox" name="qual-mtech">M.Tech<br>
+            <label>Languages:</label>
+            <input type="checkbox" name="lan-eng">English
+            <input type="checkbox" name="lan-tel">Telugu
+            <input type="checkbox" name="lan-hin">Hindi
+            <input type="checkbox" name="lan-kan">Kannada<br>
+            <label>Courses Offered:</label>
+            <select name="course">
+                <option value="UI Fullstack">UI Fullstack</option>
+                <option value="Java">Java</option>
+                <option value=".Net">.Net</option>
+                <option value="Python">Python</option>
+                <option value="Testing">Testing</option>
+            </select>
+        </li>
+        <li class="block3">
+            <div class="aboutYourself">About Yourself</div>
+            <label>Tell few words about yourself</label>
+            <textarea cols="20" rows="4" name="about yourself"></textarea>
+        </li>   
+    </ul>
+    <input class="btn" type="submit" value="Register">
+   </div>
+</form>
+<div class="footer">@copyrights 2023</div> 
+</body>
+</html>

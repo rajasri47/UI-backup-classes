@@ -1,0 +1,194 @@
+oops
+    Class 
+    Object
+    Encapsulation
+    Data Abstraction 
+    Polymorphysim
+    Inheritance 
+
+
+JS 
+    Class 
+    Object
+    Encapsulation
+    Data Abstraction 
+    Inheritance 
+-----------
+
+function addValues(a, b) {
+    ...
+}
+
+function addValues(a, b, c) {
+    ...
+}
+
+addValues(2)
+-----------------
+
+int addValues(int a, int b) {
+
+}
+
+float addValues(int a, float b) {
+
+}
+
+float addValues(int a, float b, float c) {
+
+}
+
+addValues(2, 3)
+
+addValues(2, 5.6)
+
+addValues(2, 4.5, 6.7)
+
+---------------------------------
+
+va name = 'raj'
+function sample() {
+    //
+}
+
+class abc {
+    public int a = 90;
+    private int k = 99;
+    protected ink z = 100;
+}
+
+var std1 = {
+    name: 'raj',
+    age: 20,
+    gender: 'Male',
+    marks: [34, 56, 78,90],
+    otpvalue: 22342,
+    displayStudentdetails() {
+        var accountno = 234234;
+         console.log("STudent name is " + this.name);
+         console.log("STudent age is " + this.name);
+         console.log("STudent gender is " + this.gender);
+         this.getTotalAndAvg()
+    },
+    getTotalAndAvg() {
+        this.total = 0;
+        for (var i = 0 ; i < this.marks.length; i++) {
+            this.total += this.marks[i];
+        }
+        this.total += 10;
+    }
+}
+
+
+var std2 = {
+    name: 'Teena',
+    age: 15,
+    gender: 'Female',
+    marks: [89, 88, 78,90],
+    displayStudentdetails() {
+         console.log("STudent name is " + this.name);
+         console.log("STudent age is " + this.name);
+         console.log("STudent gender is " + this.gender);
+         this.getTotalAndAvg()
+    },
+    getTotalAndAvg() {
+        this.total = 0;
+        for (var i = 0 ; i < this.marks.length; i++) {
+            this.total += this.marks[i];
+        }
+        this.total += 10;
+    }
+}
+
+
+var std3 = {
+    name: 'Krish',
+    age: 21,
+    gender: 'male',
+    marks: [33, 88, 78,90],
+    displayStudentdetails() {
+         console.log("STudent name is " + this.name);
+         console.log("STudent age is " + this.name);
+         console.log("STudent gender is " + this.gender);
+         this.getTotalAndAvg()
+    },
+    getTotalAndAvg() {
+        this.total = 0;
+        for (var i = 0 ; i < this.marks.length; i++) {
+            this.total += this.marks[i];
+        }
+        this.total += 10;
+    }
+}
+
+std1.displayStudentdetails();
+std2.displayStudentdetails();
+
+----------------
+
+JS Classes 
+
+        class StudentDetails {
+            constructor() {
+                var location = 'hyderabad';
+                this.name = "Raj";
+                this.gender = 'male';
+                this.age = 20;
+                this.marks = [34, 56, 55]
+            }
+            displayStudentdetails() {
+                console.log("STudent name is " + this.name);
+                console.log("STudent age is " + this.name);
+                console.log("STudent gender is " + this.gender);
+                this.getTotalAndAvg()
+            }
+            getTotalAndAvg() {
+               this.total = 0;
+               for (var i = 0 ; i < this.marks.length; i++) {
+                   this.total += this.marks[i];
+               }
+               this.total += 10;
+           }
+        }
+
+    ------------------------
+
+    class ModalMarutiBreeza {
+        constructor(obj) {
+            this.color = obj.color;
+            this.gearType = obj.gearType;
+            this.seatsCoverType = obj.seatsCoverType;
+            this.ccValue = obj.ccValue;
+            this.cameraType = obj.ctype;
+        }
+        howCarDirvesonMountains() {
+            ...
+        }
+        howCarTakesBakegear() {
+            ...
+        }
+        carControllingWhenHigherSpeed() {
+            ..
+        }
+    }
+    
+    var data1 = {color: 'black', gearType: 'Manaul', seatsCoverType: 'Pure Leather', ccValue: 1000, ctype: 'HD'}
+    
+    var c1 = new ModalMarutiBreeza(data1);
+
+    -----------------------------------------------------------
+
+    importing external js file within a js file 
+
+
+        index.html
+            script src="empdetail.js"
+            script src="salutil.js"
+            script src="payslipg.js"
+
+        index.html
+            scscript src="empdetail.js"
+            script src="payslipg.js"
+
+        empdetail.js
+            include an external js file 

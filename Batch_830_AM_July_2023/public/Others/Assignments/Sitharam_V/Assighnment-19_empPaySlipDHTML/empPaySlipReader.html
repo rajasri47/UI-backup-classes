@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reading Data</title>
+       <link rel="stylesheet" href="empReader.css">
+    </head>
+    <body>
+        <h2>
+            Enter Employe Details to View Pay Slip
+        </h2>
+        <div class="main"></div>
+        <ol class="block">
+            <li>
+                <input type="text" placeholder="Employe Name" id="ename">
+            </li>
+            <li>
+                <input type="text" placeholder="Employe Age" id="eage">
+            </li>
+            <li>
+                Gender :
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="others">Others
+            </li>
+            <li>
+                <input type="text" placeholder="E-mail" id="email">
+            </li>
+            <li>
+                <input type="text" placeholder="Employe ID" id="id">
+            </li>
+            <li>
+                Job Designation :
+                <select name="" id="jobTitle">
+                    <option value="Front-End-Dev">Front-End-Dev</option>
+                    <option value="Back-End-Dev">Back-End-Dev</option>
+                    <option value="Java-Dev">Java Dev</option>
+                    <option value="Data-Analist">Data-Analist</option>
+                    <option value="Testing">Testing</option>
+                </select>
+            </li>
+            <li>
+                <input type="text" placeholder="Basic Salary" id="bsal">
+            </li>
+            <button onclick="readData();"> View Pay Slip </button>
+            
+            
+        </ol>
+        <script src="empPaySlip.js"></script>
+    </body>
+</html>

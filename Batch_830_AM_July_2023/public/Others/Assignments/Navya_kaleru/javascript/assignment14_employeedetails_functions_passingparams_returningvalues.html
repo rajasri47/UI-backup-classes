@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            employee details - using functions
+        </title>
+    </head>
+    <body>
+        <script>
+            function readUserData(){
+                var name , avg , gender , basicsalary , hra , pf ,totalsalary , total;
+                name = prompt("enter name");
+                age = prompt("enter age");
+                gender = prompt("enter gender");
+                basicsalary = prompt("enter salary");
+                basicsalary = parseInt(basicsalary);
+                var hra = gethra(basicsalary);
+                var  pf = getpf(basicsalary);
+                var totalsalary = gettotalsalary(basicsalary);
+                displaydetails(name , age , gender,basicsalary ,hra ,pf ,totalsalary);
+            }
+            function gethra(basicsalary){
+                var basicsalary;
+                
+                var hra = basicsalary*(24/100);
+                return hra;
+            }
+            function getpf(basicsalary){
+                var basicsalary;
+                var pf;
+                 pf = basicsalary*(12/100);
+                return pf;
+            }
+            function gettotalsalary(basicsalary){
+                var basicsalary;
+                var hra , pf;
+                var totalsalary = basicsalary + hra +pf ;
+                
+                return totalsalary;
+            }
+            function displaydetails(name , age , gender,basicsalary ,hra ,pf ,totalsalary){
+                console.log("name is" + name);
+                console.log("age is" + age);
+                console.log("gender is" + gender);
+                console.log("basicsalary is"+ basicsalary);
+                console.log("hra  is" +hra);
+               console.log("pf is" + pf);
+                console.log("totalsalary is " + totalsalary);
+            }
+            readUserData();
+        </script>
+    </body>
+</html>

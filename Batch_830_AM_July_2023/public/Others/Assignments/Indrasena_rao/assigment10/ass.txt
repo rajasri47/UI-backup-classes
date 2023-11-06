@@ -1,0 +1,6 @@
+
+1)write a program to read a value from user and to check whether it is prime or not?                             
+2)write a program to display all the prime numbers b/w 1 to 1000                                                     3)write a program to find the sum of all the prime numbers b/w 1 to 100                                     
+4)write a program to check wheter a given number Armstrong number or not                                 
+ 5) write a program to check a given number is palindrome number or not                                               6)   write a program to find all  palindrome 1 to 1000;                                                                                            
+ 7)write a program to read number from the user a find the reverse of it                                                              8)write a program to  read number from user and find the lucky number of it

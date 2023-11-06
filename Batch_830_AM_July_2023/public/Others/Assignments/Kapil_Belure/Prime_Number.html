@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>To Find the Number is Prime Or Not Enter the Number and then See the Console</h2>
+
+    <h2>To View The Prime Numbers From 1 to 1000 See the Console</h2>
+    <script>
+
+        // prime number or not
+
+        var n = parseInt(prompt("Enter a number"));
+        var count = 0;
+        for (i = 2; i < n; i++) {
+            if (n % i == 0) {
+                count++;
+                break;
+            }
+        }
+        if (count == 0) {
+            console.log("Number " + n + " is a prime");
+        } else {
+            console.log("Number " + n + " is not a prime");
+        }
+
+        //List & Sum of all prime between 1 to 1000
+        
+        var j,k;
+        var count = 0;
+        var sumPrime = 0;
+        console.log("Prime numbers from 1 to 1000:");
+        for (j = 2; j < 1000; j++) {
+            for (k = 1; k <= j; k++) {
+                if (j % k == 0) {
+                    count++;
+                    // break;
+                }
+            }
+            if (count == 2) {
+                sumPrime += j;
+                console.log(j);
+            }
+            count = 0;
+        }
+        console.log("Sum of all Prime Numbers From 1 to 1000 is = " + sumPrime)
+
+
+    </script>
+</body>
+
+</html>

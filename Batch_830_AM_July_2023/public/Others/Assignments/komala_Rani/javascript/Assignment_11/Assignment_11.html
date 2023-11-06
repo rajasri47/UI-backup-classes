@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Assignment_11</title>
+        <script>
+            // write a program to check whether a given number is an Armstrong number or not?//
+
+            var n = parseInt(prompt("Enter a number"));
+            var sum = 0
+            var temp = n;
+            var len = n.toString().length;
+            while(n > 0){
+                var rem = n % 10;
+                sum = sum + (rem ** len);
+                n = n / 10;
+                n = parseInt(n);
+
+            }if(sum == temp){
+                console.log("Its Armstrong number")
+            }else{
+                console.log("Its not Armstrong number")
+            }
+
+            //write a program to check whether a given number is palindrome number or not?
+
+
+            var n = parseInt(prompt("Enter a number"));
+            var revnumber = 0;
+            var temp = n;
+
+            while(n > 0) {
+                var rem = n % 10;
+                n = n / 10;
+                n = parseInt(n);
+                revnumber = revnumber * 10 + rem;
+            }if(revnumber ==  temp){
+                console.log("Its a Palindrome")
+            }else{
+                console.log("Its not Palindrome")
+            }
+
+            // write a program to read a number from the user and find the lucky number or not?
+
+
+            var n = parseInt(prompt("Enter a number"));
+            var sum = 0;
+            while(n > 0){
+                var rem = n % 10;
+                n = parseInt(n / 10);
+                sum = sum + rem;
+                if(n == 0 && sum > 9){
+                    n = sum;
+                    sum = 0;
+                }
+            }console.log("Lucky num is: " + sum)
+            
+            
+
+
+        </script>
+    </head>
+</html>

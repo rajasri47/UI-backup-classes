@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic Student Details
+        </title>
+            <style>
+                .li{ 
+                    font-size: 30px;
+                    margin: 7px;
+                    font-style: normal;
+                    list-style-type:decimal;
+                }
+                .header{
+                    font-size: 40px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+            </style>
+    </head>
+    <body>
+
+        <h3 class= "header">To see the result please follow the instructions below</h3>
+
+            <ul>
+                <li class="li"> <b><u> Right click </b></u> on the page </li>
+                <li class="li">  Click on <b><u> Inspect </b></u> </li>
+                <li class="li">  Click on <b><u> Console </b></u> </li>
+            </ul>
+
+                <script>
+                    var name = prompt("Enter your name");
+                    var Class = prompt("Enter your class");
+                    var mathematics = prompt("Enter marks secured in Mathematics ");
+                    var english = prompt("Enter marks secured in English");
+                    var chemistry = prompt("Enter marks secured in Chemistry");
+                    var physics = prompt("Enter marks secured in Physics");
+                    var hindi = prompt("Enter marks secured in Hindi");
+                    
+                    
+                    mathematics= parseInt(mathematics);
+                    english = parseInt(english);
+                    chemistry = parseInt(chemistry);
+                    physics = parseInt(physics);
+                    hindi = parseInt(hindi);
+                    
+                    var totalMarksSecured = mathematics + english + chemistry + physics + hindi;
+                    var percentage = (totalMarksSecured / 500 )* 100;
+
+                    console.log("Student Result");
+                    console.log("Name= " + name);
+                    console.log("Class= " + Class);
+                    console.log("Math= " + mathematics);
+                    console.log("Eng= " + english);
+                    console.log("Chemistry= " + chemistry);
+                    console.log("Physics= " + physics);
+                    console.log("Hindi= " + hindi);
+                    console.log("Total marks secured= " + totalMarksSecured);
+                    console.log("Percentage= " + percentage);
+                </script>
+    </body>
+</html>

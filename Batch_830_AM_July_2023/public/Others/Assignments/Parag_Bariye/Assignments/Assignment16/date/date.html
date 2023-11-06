@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dates</title>
+    </head>
+    <body>
+        <script>
+            var data = prompt("please choose the date format: \n 1.11/08/2023,\n 2.aug/11/2023,\n 3.friday,aug11th,2023,\n4.09h:11min:2s,\n5.August,11th 2023,\n6.fri,11th aug 2023,\n7.11/aug/2023,\n8.11-08-2023 09:34:4");
+            var monthNames = ["JAn", 'Feb', 'Mar', 'Apr', 'May', 'June', 'Jul', 'Aug', 'Sep'];
+            var daynames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday','saturday'];
+            var mydate = new Date();
+            if(data == 1){
+                console.log(mydate.getDate()+ "/" +mydate.getMonth()+'/'+mydate.getFullYear())
+            }
+            if(data == 2){
+                console.log(monthNames[mydate.getMonth()] + '/' + mydate.getDate()+ '/' + mydate.getFullYear());
+            }
+            if(data == 3){
+                console.log(daynames[mydate.getDay()] + ',' + monthNames[mydate.getMonth()]+mydate.getDate()+'th,'+ mydate.getFullYear());
+            }
+            if(data == 4){
+                console.log(mydate.getHours()+ 'h:' + mydate.getMinutes()+ 'min:' + mydate.getSeconds()+ 's')
+            }
+            if(data == 5){
+                console.log(monthNames[mydate.getMonth()]+ ','+ mydate.getDate() + 'th '+mydate.getFullYear())
+            }
+            if(data == 6){
+                console.log(daynames[mydate.getDay()] + ','+ mydate.getDate() + 'th '+monthNames[mydate.getMonth()]+mydate.getFullYear())
+            }
+            if(data == 7){
+                console.log(mydate.getDate()+ "/" +monthNames[mydate.getMonth()]+'/'+mydate.getFullYear())
+            }
+            if(data == 8){
+                console.log(mydate.getDate()+ "-" +mydate.getMonth()+'-'+mydate.getFullYear()+' ' +mydate.getHours()+ 'h:' + mydate.getMinutes()+ 'min:' + mydate.getSeconds()+ 's')
+            }
+        </script>
+    </body>
+</html>

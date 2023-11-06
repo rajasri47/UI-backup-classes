@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic Employee Details
+        </title>
+
+        <style>
+            .header{
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+            }
+            li{
+                font-size: 30px;
+                font-style: normal;
+                margin:10px;
+             }
+        </style>
+    </head>
+    <body>
+
+        <h3 class="header"> To see the Employee details please follow the instructions below</h3>
+
+        <ol>
+            <li><b><u> Right click</u></b> on the page</li>
+            <li>Click on <b><u> Inspect</u></b></li>
+            <li>Click on<b><u> Console</u></b></li>
+        </ol>
+    
+            <script>
+                 
+                var empName = "Prima";
+                var age = 20;
+                var gender = "female";
+                var basicSal = 100000;
+
+                var pf = (basicSal * 10)/100;
+                var hra = (basicSal * 15)/100; 
+
+                totalSal = basicSal + pf + hra;
+                console.log("The name of emp is " + empName);
+                console.log("Age is " + age);
+                console.log("Gender is " + gender);
+                console.log("Pf is " + pf);
+                console.log("HRA is " + hra);
+                console.log("Total Salary is " + totalSal);
+            </script>
+</body>
+</html>

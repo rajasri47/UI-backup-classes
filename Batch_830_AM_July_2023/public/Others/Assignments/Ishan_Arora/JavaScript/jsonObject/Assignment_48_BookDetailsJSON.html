@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 48
+        </title>
+    </head>
+    <body>
+        <h1>
+            Book Details With JSON
+        </h1>
+        <script>
+            var book = {
+                bname : 'Ikigai',
+                bprice : 400,
+                discount : '50%',
+                author : ['Hector Garcia', 'Francesc Miralles'],
+                publisher : 'Penguin Life',
+                getDetails() {
+                    console.log('Book Name: ' + this.bname);
+                    console.log('Book Price: ' + this.bprice);
+                    console.log('Discount: ' + this.discount);
+                    console.log('Authors: ' + this.author);
+                    console.log('Publisher: ' + this.publisher);
+                }
+            }
+            book.getDetails();
+        </script>
+    </body>
+</html>

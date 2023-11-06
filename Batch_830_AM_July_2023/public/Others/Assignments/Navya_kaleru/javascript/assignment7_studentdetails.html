@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demostraing student details</title>
+    </head>
+    <body>
+        <script>
+            var name = prompt("student name");
+            var age = prompt("age");
+            var m1 = prompt("enter marks1");
+            var m2 = prompt("enter marks2");
+            var m3 = prompt("enter marka3");
+            var m4 = prompt("enter marks4");
+            m1 = parseInt(m1);
+            m2 = parseInt (m2);
+            m3 =  parseInt(m3);
+            m4 = parseInt(m4);
+            var total = m1 + m2 + m3 + m4;
+            var avg = total/4;
+            console.log("stdentname is" + name);
+            console.log("age is" + age);
+            console.log("total is" + total);
+            console.log("avg is" + avg);
+            if(avg >= 40){
+                console.log("you got passed");
+            }
+            if(avg <= 40){
+                console.log("you got failed");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt("enter the value");
+        console.log(str);
+
+            var len = str.length;
+            var sum=0;
+
+            for(var i=0 ; i < len; i++){
+                var n = str.charCodeAt(i);
+                if((n <= 47 && n >= 32) || (n <= 64 && n >= 58)){
+                    var sum = sum + 1;
+                }
+            }
+            console.log(sum);
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            checking function
+        </title>
+    </head>
+    <body>
+        <script>
+            var name,age,gender,basicSal,pf,hra,totalSal;
+            function readingUserData() {
+                 name= prompt('enter emp nane');
+                 age = prompt('nter age');
+                 gender = prompt("enter gender");
+                 basicSal = prompt('entr basic basicSal');
+                basicSal = parseInt(basicSal);
+                
+            }
+            function calculatingPfAndhra(){
+                 pf = (basicSal * 10) / 100;
+                 hra = (basicSal * 12) / 100;
+                 totalSal = (basicSal + pf  + hra);
+            }
+            function displaying(){
+                readingUserData();
+                calculatingPfAndhra();
+                console.log("name is " + name);
+                console.log("age is " + age);
+                console.log("gender is " + gender);
+                console.log("basicSal is " + basicSal);
+                console.log("pf is " + pf);
+                console.log("hra is " + hra);
+                console.log("totalSal is " + totalSal);
+            }
+            displaying();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demostraring Employee PaySlip</title>
+
+  <link rel="stylesheet" href="Style.css">
+
+   
+
+    <script src="/emp_payslip.js"></script>
+  </head>
+  <body>
+    <h3>Employee PaySlip</h3>
+    <h4>Deloitte</h4>
+    <div class="container">
+    <ul>
+      <li>
+        <input
+          type="text"
+          placeholder="Enter Employee name"
+          id="employeeName"
+        />
+      </li>
+
+      <li>
+        <input type="text" placeholder="Age" id="eAge" />
+      </li>
+      <li>
+        Gender:
+        <input type="radio" value="Male" name="gender"  /> Male
+        <input type="radio" value="Female" name="gender" /> Female
+      </li>
+      <li>
+        <input type="text" placeholder="Department" id="eDepartment" />
+      </li>
+      <li>
+        <input type="text" placeholder="Employee ID" id="eEmployeeID" />
+      </li>
+      <li>
+        <input type="text" placeholder="Designation" id="edesignation" />
+      </li>
+
+      <li>
+        <input type="text" placeholder="Bank Name" id="ebankName" />
+      </li>
+      <li>
+        <input type="text" placeholder="A/c No." id="eAccountNumber" />
+      </li>
+      <li>
+        <input type="text" placeholder="Basic Salary" id="eBasicSalary" />
+      </li>
+      <li>
+        <button onclick="employeedetails();">Submit</button
+      </li>
+    </ul>
+  </div>
+
+  <div id="display">
+    <ul>
+      <li>
+        employee details
+      </li>
+      <li>
+        employee Name: <span id="dename" ></span>
+      </li>
+      <li>
+        employee age: <span id="dage"></span>
+      </li>
+      <li>
+        Gender: <span id="dgender"></span>
+      </li>
+      <li>
+        Department: <span id="ddepartment"></span>
+      </li>
+      <li>
+        EmployeeID: <span id="dEmployeeID"></span>
+      </li>
+      <li>
+        Designation: <span id="ddesignation"></span>
+      </li>
+      <li>
+        Bank Name: <span id="dbankname"></span>
+      </li>
+      <li>
+        A/c No.: <span id="daccountNumber"></span>
+      </li>
+      <li>
+        Basic Salary: <span id="dBasicSalary"></span>
+      </li>
+
+    </ul>
+
+  </div>
+  </body>
+</html>

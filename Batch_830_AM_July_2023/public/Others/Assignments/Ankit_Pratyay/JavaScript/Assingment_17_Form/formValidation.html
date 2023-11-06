@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data validation through user registration page</title>
+    <script src="Registration_Validation.js"></script>
+    <link rel="stylesheet" href="./validationStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <h3>Account Registration page</h3>
+    <ul>
+      <li>
+        Enter userid : <input type="text" id="userid" maxlength="15" onkeyup="validateUserid()" />
+        <div class="uIdErr">* Enyer a valid userId</div>
+      </li>
+      <li>
+        Password :<input type="password" id="password" maxlength="10" />
+
+        <span class="eye" onclick="showHide()">
+          <i class="bi bi-eye eyeopen"></i>
+          <i class="bi bi-eye-slash eyeclose"></i>
+        </span>
+      </li>
+      <li>
+        Re-Enter Password :<input
+          type="password"
+          id="repassword"
+          maxlength="10"
+        />
+      </li>
+      <li>
+        User Age : <input type="text" id="age" maxlength="2" class="uage" />
+      </li>
+      <li>
+        <input type="button" value="Register" onclick="UserRegister()" />
+      </li>
+    </ul>
+  </body>
+</html>

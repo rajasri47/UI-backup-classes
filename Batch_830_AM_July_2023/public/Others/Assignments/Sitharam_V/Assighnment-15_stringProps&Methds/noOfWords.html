@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding Num of Words in given String</title>
+    </head>
+    <body>
+        <script>
+            var readData = () => {
+                var s1 = prompt("Enter the string");
+                var count = 0;
+                count = calc(s1,count);
+                console.log(count);
+            }
+            var calc = (s1,count) => {
+                for ( i = 0; i < s1.length; i++) {
+                    var n = s1.charCodeAt(i);
+                    if ( (n >= 65 && n <= 90) || (n >= 97 && n <= 122) ) {
+                        count++
+                    }
+                }
+                return count;
+            }
+           
+            readData();
+        </script>
+    </body>
+</html>

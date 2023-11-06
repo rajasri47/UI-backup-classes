@@ -1,0 +1,81 @@
+JS :
+    Dynamic ness 
+
+    Arithematic opetaions 
+
+
+    Logical operations 
+
+
+    By default every browser comes with a js engine 
+
+    JS is client side scripting language 
+
+
+    put a req to server
+
+        server interally puts req to db 5sec 
+
+        db returs data - 6sec 
+
+        server rtetuns data back to client 
+
+
+        client generates webpage based on data been thrown by server - 10sec 
+
+
+    Predefined functions:
+
+        alert("Hello every one")
+
+        No init and main methods in js 
+
+
+
+    Datatype of variables:
+
+        1. type of data can be stored 
+
+        2. max size of data can be stored 
+
+0----------
+
+C language
+
+
+float, char, double, long, string,,,,, 
+
+
+    int a
+    a = 90
+    a = 'abc'
+
+    a = 2423423423
+
+-----------
+JAva
+    int totalmarks;
+    String username
+    float avg 
+    int age 
+
+    totalmarks = 200.23
+    username = "TEena"
+    avg = 34.5
+    age = 20
+----------------------
+
+    
+    var a, b, c
+    a = 30
+    b = 90
+
+    c = a + b
+    
+
+    var avg;
+
+    avg = 89
+    avg = 34.5
+
+    avg = 'RAj'

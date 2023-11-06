@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Number Check</title>
+    </head>
+    <body>
+        <script>
+            var input = parseInt(prompt(" Enter a number"));
+            var copy = input;
+            var n = 0;
+            while(input != 0) {
+                var rem = input % 10;
+                input = parseInt(input / 10);
+                n = (n*10) + rem;
+            }
+            if (n == copy) {
+                console.log( copy + " is a palindrome number");
+            } else { console.log( copy + " is not a palindrome number");
+            }
+        </script>
+    </body>
+</html>

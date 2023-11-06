@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <title>
+            Demonstrating Grid containers
+        </title>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                height: 300PX;
+
+            }
+            .container div{
+              border: 1px solid;
+             margin: 10px;
+              padding: 10px;
+              
+            }
+            .item1{
+                
+                background-color: blue;
+            }
+            .item2{
+             
+              background-color: brown;
+            }
+            .item3{
+                background-color:green;
+               
+            }
+            .item7,
+            .item4{
+                background-color: rgb(102, 255, 0);
+               
+            }
+            .item5{
+                
+                background-color: rgb(134, 134, 233);
+            }
+            .item6{
+             
+              background-color: rgb(245, 211, 211);
+            }
+            .item8{
+                background-color:rgb(0, 128, 0);
+                grid-column: 3/6;
+               
+            }
+            .item9{
+                background-color: aqua;
+                grid-column: 1/6;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item1">item1</div>
+            <div class="item2">item2</div>
+            <div class="item3">item3</div>
+            <div class="item4">item4</div>
+            <div class="item5">item5</div>
+            <div class="item6">item6</div>
+            <div class="item7">item7</div>
+            <div class="item8">item8</div>
+            <div class="item9">item9</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,195 @@
+#headLine{
+    background-color: aqua;
+    text-align: center;
+    border: solid 5px blue navy;
+}
+.backgroundstyle{
+    background-color: rgb(127, 157, 114);
+}
+#studentName1{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color: rgb(218, 114, 140);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: left;
+    clear: right;
+    }
+#studentName2{
+    font-size: 20px;
+    height: 100px;
+     width: 150px;
+    border: 5px solid  navy;
+    background-color: rgb(243, 233, 160);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: right;
+    
+    }
+#studentName3{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color: rgb(113, 71, 28);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: right;
+   }
+#studentName4{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:rgb(218, 114, 140);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: left;
+    clear: left;
+}
+#studentName5{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color: rgb(172, 141, 134);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: right;
+}
+#studentName6{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color: rgb(213, 221, 132);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    clear: left;
+}
+#studentName7{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:rgb(72, 155, 164);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+#studentName8{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color: rgb(15, 58, 40);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: left;
+    }
+#studentName9{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:rgb(8, 120, 249);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: right;
+}
+#studentName10{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:rgb(27, 120, 53);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: right;120, 53
+}
+#studentName11{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:skyblue;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: right;
+    }
+#studentName12{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:rgb(120,20, 03);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: left;
+    clear: left;
+}
+#studentName13{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:rgb(120, 53,96);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: left;
+    }
+#studentName14{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:#E5FFCC ;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: left;  
+}
+#studentName15{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:#CC99FF;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    float: left;
+    }
+#studentName16{
+    font-size: 20px;
+    height: 100px;
+    width: 150px;
+    border: 5px solid  navy;
+    background-color:rgb(27, 120, 53);
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    clear: left;
+    }
+#copyBottomLine{
+    height: 60px;
+    width: auto;
+    background-color: aqua;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

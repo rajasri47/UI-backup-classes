@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>    
+            Demonstrating Case CS - Switch case
+        </h3>
+        <script>
+            var a1 = prompt("Enter first value");
+            var a2 = prompt("Enter second Value");
+            
+            a1 = parseInt(a1);
+            a2 = parseInt(a2);
+
+            var userChoice = prompt("Enter option add/div/sub/mul")
+
+            /*if (userChoice == 'add') {
+                // Addition
+                var sum = a1 + a2;
+                console.log("The sum is " + sum);
+            } else if (userChoice == 'sub') {
+                // Substraction            
+                var sub = a1 - a2;
+                console.log("The Sub is " + sub);
+            } else if (userChoice == 'mul') {
+                // Multiplication
+                var mul = a1 * a2;
+                console.log("The mul is " + mul);
+            } else if (userChoice == 'div') {
+                // Division
+                var div = a1 / a2;
+                console.log("The Division is " + div);
+            } else {
+                console.log("wrong option been choosen")
+            } */
+
+            switch(userChoice) {
+                case 'add':
+                    var sum = a1 + a2;
+                    console.log("The sum is " + sum);
+                    break;
+                case 'div':
+                    var div = a1 / a2;
+                    console.log("The Division is " + div);
+                    break;
+                case 'sub':
+                    var sub = a1 - a2;
+                    console.log("The Sub is " + sub);
+                    break;
+                case 'mul':
+                    var mul = a1 * a2;
+                    console.log("The mul is " + mul);
+                    break;
+                default:
+                    console.log("wrong option choosen");
+                
+            }
+        </script>
+    </body>
+</html>

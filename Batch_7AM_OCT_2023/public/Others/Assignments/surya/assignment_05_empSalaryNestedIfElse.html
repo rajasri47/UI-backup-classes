@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+     <script>
+      var empName = prompt('enter emp name :');
+      var empAge = prompt('enter your age :');
+      var empBasicSal = parseFloat(prompt('enter your basic pay'));
+      var empGen = prompt('enter your gender :');
+      var totalSal  = empBasicSal + (14*empBasicSal)/100 + (24*empBasicSal)/100;
+      var finalSal,tax;
+      if(empGen == 'male' || empGen== 'MALE'){
+        if(totalSal>=100000){
+            finalSal = totalSal - (totalSal*15)/100;
+            tax = (totalSal*15)/100;
+        }
+        else if(totalSal>=50000){
+          finalSal = totalSal - (totalSal*10)/100;
+          tax = (totalSal*10)/100;
+        }
+        else if(totalSal>=30000){
+          finalSal = totalSal -(totalSal*5)/100;
+          tax = (totalSal*5)/100;
+        }
+        else{
+          finalSal = totalSal;
+          tax = 0;
+        }
+      }
+      else if(empGen == 'female'|| empGen=='FEMALE'){
+        if(totalSal>=100000){
+          finalSal = totalSal - (totalSal*10)/100;
+          tax = (totalSal*10)/100;
+        }
+        else if(totalSal>=50000){
+          finalSal = totalSal - (totalSal*5)/100;
+          tax = (totalSal*5)/100;
+        }
+        else{
+          finalSal = totalSal;
+          tax = 0;
+        }
+      }
+      else{
+        prompt('your gender is not valid or recheck spelling!!!!!!');
+        console.log('your gender is not valid or recheck spelling!!!!!! so i can not calculate the tax');
+        finalSal = 0;
+        tax = 0;
+      }
+      console.log('NAME : '+empName);
+      console.log('AGE :'+empAge);
+      console.log('GENDER : '+empGen);
+      console.log('your basic salary is : '+ empBasicSal);
+      console.log('your total salary is after PF and HRF :'+ totalSal);
+      console.log('your have to pay tax : '+tax);
+      console.log('your final salary is : ' + finalSal);
+     </script>
+</body>
+</html>

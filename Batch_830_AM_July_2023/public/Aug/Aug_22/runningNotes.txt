@@ -1,0 +1,23 @@
+EventHandling
+
+    Event 
+
+    EventHandling can be implimented in 2 ways
+
+        Static way
+            We have set of event html attributes, through which we could specify teh corresponding method to be invoked when a particular action happens on the dom element
+
+                onclick 
+                onchange
+                onfoucs
+                onblur
+                onmouseover
+                onkeyup
+                onkeydown
+                ....
+                ....
+
+        Dynamic way 
+
+                addEventListener()
+

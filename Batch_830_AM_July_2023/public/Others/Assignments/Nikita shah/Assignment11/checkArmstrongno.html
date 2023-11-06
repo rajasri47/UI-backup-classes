@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n= prompt("Enter any no.")
+        var temp = n;
+        var sum = 0;
+        var noOfdigits = n.toString().length;
+        while(temp>0){
+         var digit = temp%10;
+         sum = sum + digit**noOfdigits;
+         temp= parseInt(temp/10);
+        }
+        if(sum == n){
+            console.log(`${n} is a armstrong no.`)
+        } else {
+            console.log(`${n} is not a armstrong no.`)
+        }
+    </script>
+</body>
+</html>

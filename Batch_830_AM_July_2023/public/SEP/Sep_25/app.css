@@ -1,0 +1,65 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    
+}
+.footer,
+.header {
+    grid-column: 1/3;
+}
+
+.container div {
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.rightblock,
+.leftblock {
+    height: 500px;
+    overflow: auto;
+    
+}
+
+.msgBlock {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+.adsBlock {
+    position: absolute;
+    bottom: 150px;
+    right: 10px;
+    width: 200px;
+    background-color: rgb(7, 51, 51);
+    height: 100px;
+    color: #fff;
+}
+
+@media screen and (max-width:600px) {
+    
+    .msgBlock {
+        width: 200px;
+        background-color: yellow;
+    }
+
+    .adsBlock {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 601) {
+    .adsBlock {
+        display: none;
+    }
+
+    .msgBlock {
+        background-color: blue !important;
+    }
+}

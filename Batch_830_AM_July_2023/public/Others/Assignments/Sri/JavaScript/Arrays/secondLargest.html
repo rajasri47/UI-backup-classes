@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            <h3>print the second largest number</h3>
+            <script>
+                var data = [];
+                var size = prompt("enter the size");
+                size = parseInt(size);
+                var max = 0;
+                var secmax =0;
+
+                for(var i = 0; i < size; i++){
+                    data[i] = prompt(" enter the number" + i);
+                    data[i] = parseInt(data[i]);
+
+                    if( data[i] >  max){
+                        max = data[i];
+                        
+                    }
+                }
+                console.log(data);
+                console.log(" the largest number is" + max);
+                for(var j=0; j < size;j++ ){
+                    if ((secmax < data[j]) && (data[j] != max )){
+                        secmax = data[j];
+                    }
+                }
+              console.log("second largest number is" + secmax);
+
+            </script>
+            
+        </body>
+    </html>

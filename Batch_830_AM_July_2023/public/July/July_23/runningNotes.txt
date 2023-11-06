@@ -1,0 +1,26 @@
+GET, POST, PUT, DElete, Query....
+
+Two types of communications while communicating with server
+    method:
+
+    GET - Its is a non secured way of communicating, where data will be sent to the server by url rewriting (query params)
+
+    <form action="http://sample.com/data/userinfo" method = "POST">
+        <input type=text name = uname>
+        uname, uage, upasswd 
+    </form>
+        
+
+
+
+            action="http://sample.com/data/userinfo"
+            action="http://amazon.com/dta/samle"
+            action="http://localhost:8081/sdfS"
+
+                    http://sample.com/data/userinfo?uname=test&uage=20&upasswd=hello123#
+
+                    http://abcsample.com/data/api/registration?ufirstname=Hello&lname=test&actPwd=hllo1223&gender=male&ucountry=China&lng_eng=on&lng_tel=on&abouturslf=am+good
+
+        POST - DAta will be sent to the server in a secured way, by appending data to the request header 
+
+        Request header - an object which will be automatically sent to the server by default, which has all the extra information regarding the request been created (time, the ip, locaiton ,,,,type ofdata, )

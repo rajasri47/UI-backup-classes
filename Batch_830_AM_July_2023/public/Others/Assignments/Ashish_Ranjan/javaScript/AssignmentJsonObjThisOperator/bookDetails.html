@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- -----------Demonstrate json objects ------- -->
+
+        <script>
+            var bookDetails ={
+                bookName :'You Can Win',
+                bookPrice : 300 ,
+                discount : '20%' ,
+                authorList : 'Shiv Khera',
+                publisher : 'Macmillan Publisher India Limited',
+
+
+                DisplayDetails () {
+                    console.log("-----------Book Details are----------");
+                    console.log("Book Name :" +this.bookName);
+                    console.log("Book Price : "+this.bookPrice);
+                    console.log("Book Discount :"+this.discount);
+                    console.log("Author list : "+this.authorList);
+                    console.log("Publisher : "+this.publisher);
+
+                }
+            }
+            bookDetails.DisplayDetails();
+
+           
+
+        </script>
+
+    </body>
+</html>

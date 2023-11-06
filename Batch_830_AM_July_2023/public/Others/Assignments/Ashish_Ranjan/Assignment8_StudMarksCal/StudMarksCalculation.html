@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+    //    ------Student Details------>
+       var studName = prompt("Enter Name");
+       var studAge = prompt("Enter Age");
+       var studGender = prompt("Enter Gender");
+
+        //  ------Marks of the students-------->
+       var phyMarks = prompt("Enter Physics Marks");
+       var chyMarks = prompt("Enter Chemistry Marks");
+       var mathMarks = prompt("Enter Math Marks");
+       var engMarks = prompt("Enter English Marks");
+       var BioMarks = prompt("Enter Biology Marks");
+
+    //-----conversion of one type to another----->
+       var phyMarks = parseInt(phyMarks);
+       var chyMarks = parseInt(chyMarks);
+       var mathMarks = parseInt(mathMarks);
+       var engMarks = parseInt(engMarks);
+       var BioMarks = parseInt(BioMarks);
+
+
+        // --------Calculation of total Marks and percentage ---->
+       var totMarks = phyMarks + chyMarks + mathMarks +engMarks + BioMarks;
+       var percentage = (totMarks /500) * 100;
+
+    // -----print of name age subject Marks& percentage------>
+
+       console.log("Name of Student :"+studName);
+       console.log("Age of Student :"+studAge);
+
+       console.log("Marks of physics :"+phyMarks);
+       console.log("Marks of Chemistry :"+chyMarks);
+       console.log("Marks of Math :"+mathMarks); 
+       console.log("Marks of English :"+engMarks);
+       console.log("Marks of Biology :"+BioMarks);
+
+       console.log("Total marks :" +totMarks);
+       console.log("Percentage :"+percentage);
+       
+
+    </script>
+</body>
+</html>

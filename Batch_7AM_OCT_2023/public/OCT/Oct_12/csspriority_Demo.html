@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating CSS Priority
+        </title>
+        <style>
+            .cotainer {
+                color: blue !important;
+                font-size: 30px !important;
+            }
+            #userContent {
+                font-size: 20px;
+            }
+            p {
+                text-decoration: underline;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="background-color: green;font-size: 15px;" class="cotainer" id="userContent">
+            Hello every one, how are you doing today...
+        </p>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>palindromr or not </title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows given number is Palindrome or not.. <br>
+            Go to console tab for result...
+        </h1>
+        <script>
+            var n = prompt("enter a num to check weather it a palindromr or not..");
+            n = parseInt(n);
+            var m=n,rem,sum=0;
+
+            while(n>0){
+                rem = n % 10;
+                sum = sum * 10 + rem;
+                n = parseInt(n/10);
+            }
+            if(m == sum){
+                console.log("given no is palindrome ");
+            }
+            else{
+                console.log("given no is not a palindrome ");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var mydate = new Date;
+            console.log(mydate);
+            var userOption = prompt("Please choose the format you wanted \n1. 11/08/2023 \n 2. Aug/11/2023 \n  3. Friday, Aug 11th 20234. 09h:11min:2s \n  5. Auguest, 11th 2023 \n  6. Fri, 11th Aug 2023  \n 7. 11/Aug/2023 \n 8. 11-08-2023  \n 9. 11-08-2023 09:34:4 ");
+            //11/08/2023
+            
+           
+             var monthsnames = ['jan' , 'feb', 'mar','apr','may','jun','july','aug','sep']
+            var monthfullnames = ['january','february', 'march','april','may','june','july','Auguest','september']
+            var monthsnumber = [ '01' ,'02','03','04','05','06','07','08','09','10','11','12']
+            var daynames = ['monday','tuesday','wedsday','thursday','friday','saturday']
+          
+            
+            switch(userOption){
+                case '1':
+             var myformat = mydate.getDate() + '/'+ monthsnumber[mydate.getMonth()] +'/' + mydate.getFullYear();
+             console.log(myformat);
+             break;
+            }
+            //aug/11/2023
+            switch(userOption){
+                case '2':
+             var myformat = monthsnames[mydate.getMonth()]+'/'+ mydate.getDate() + '/'+mydate.getFullYear();
+             console.log(myformat);
+             break;
+            }
+            // friday,aug 11th 2023
+            switch(userOption){
+                case'3':
+             var myformat = daynames[mydate.getDay()]+','+monthsnames[mydate.getMonth()]+'  '+mydate.getDate()+'th'+ '  '+mydate.getFullYear();
+             console.log(myformat);
+             break;
+            }
+            // 09:11min:2s
+            switch(userOption){
+                case'4':
+               var myformat = mydate.getHours()+ ':'+mydate.getMinutes()+':'+mydate.getSeconds();
+               console.log(myformat);
+               break;
+            }
+             //Auguest , 11th 2023
+             switch(userOption){
+                case'5':
+               var myformat = monthfullnames[mydate.getMonth()]+','+mydate.getDate()+'th'+'  '+mydate.getFullYear();
+               console.log(myformat);
+               break;
+            }
+            // friday ,11th 2023
+            switch(userOption){
+                case'6':
+              var myformat = daynames[mydate.getDay()]+','+mydate.getDate()+'th'+'  '+mydate.getFullYear();
+              console.log(myformat);
+              break;
+            }
+            // 11/aug/2023
+            switch(userOption){
+                case'7':
+             var myformat =mydate.getDate()+'/'+monthsnames[mydate.getMonth()]+'/'+mydate.getFullYear();
+             console.log(myformat);
+             break;
+            }
+            //11-08-2023
+            switch(userOption){
+                case'8':
+              var myformat =mydate.getDate()+'-'+monthsnumber[mydate.getMonth()]+'-'+mydate.getFullYear();
+              console.log(myformat);
+              break;
+            }
+            //11-08-2023 9:34:4
+            switch(userOption){
+                case'9':
+              var myformat =mydate.getDate()+'-'+monthsnumber[mydate.getMonth()]+'-'+mydate.getFullYear()+ '    '+mydate.getHours()+':'+mydate.getMinutes()+':'+mydate.getSeconds();
+              console.log(myformat);
+            break;
+            }
+
+
+    </script>
+</body>
+</html>

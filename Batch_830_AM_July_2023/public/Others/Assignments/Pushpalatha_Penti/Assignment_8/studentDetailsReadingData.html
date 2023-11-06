@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Student Details Reading Data </title>
+    </head>
+    <body>
+        <script>
+          var stuName = prompt("enter student name");
+          var stuAge = prompt("enter student age");
+          var stuReg = prompt("enter register number");
+          var hindi = prompt("enter hindi marks")
+          var english = prompt("enter english marks");
+          var maths = prompt("enter maths marks");
+          var science = prompt("enter science marks");
+          var social = prompt("enter social marks");
+          stuAge = parseInt(stuAge);
+          stuReg = parseInt(stuReg);
+          hindi = parseInt(hindi);
+          english = parseInt(english);
+          maths = parseInt(maths);
+          science = parseInt(science);
+          social = parseInt(social);
+          var totalMarks = hindi + english + maths + science + social;
+          var percentage = ( totalMarks * 100)/500;
+          console.log("Student Name = " +stuName);
+          console.log("Student Regiser Number = " +stuReg);
+          console.log("Hindi = " +hindi);
+          console.log("English = " +english);
+          console.log("Maths = " +maths);
+          console.log("Science = " +science);
+          console.log("Social = " +social);
+          console.log("Total Marks = " +totalMarks);
+          console.log("Percentage =" +percentage);
+
+        </script>
+    </body>
+</html>

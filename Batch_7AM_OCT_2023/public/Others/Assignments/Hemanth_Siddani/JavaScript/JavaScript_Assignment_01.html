@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var EmlpoyeeName = prompt("Enter Employee Name");
+        var Gender = prompt("Enter Employee Gender");
+        var Age = prompt("Enter Employee Age");
+        var Salary = prompt("Enter Employee Salary");
+
+
+        if(Gender == "Male" || Gender == "male") {
+
+            if(Salary >= 100000) {
+                console.log("TaxPercentage(15% of Salary) : "+((Salary*15)/100));
+                console.log("Salary of "+(EmlpoyeeName)+" is "+(Salary-((Salary*15)/100)));
+            }
+            else if(Salary >= 50000) {
+                console.log("TaxPercentage(10% of Salary) : "+((Salary*10)/100));
+                console.log("Salary of "+(EmlpoyeeName)+" is "+(Salary-(((Salary*10)/100))));
+            }
+            else if(Salary >= 30000) {
+                console.log("TaxPercentage(5% of Salary) : "+((Salary*5)/100));
+                console.log("Salary of "+(EmlpoyeeName)+" is "+(Salary-(((Salary*5)/100))));
+            }
+        }
+        if(Gender == "Female" || Gender == "female") {
+
+            if(Salary >= 100000) {
+                console.log("TaxPercentage(10% of Salary) : "+((Salary*10)/100));
+                console.log("Salary of "+(EmlpoyeeName)+" is "+(Salary-(((Salary*10)/100))));
+            }
+            else if(Salary >= 50000) {
+                console.log("TaxPercentage(0% of Salary) : "+((Salary*0)/100));
+                console.log("Salary of "+(EmlpoyeeName)+" is "+(Salary-(((Salary*0)/100))));
+            }
+
+        }
+        
+    </script>
+</body>
+</html>

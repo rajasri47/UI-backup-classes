@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Info</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   
+</head>
+<body>
+    <table border="1px solid" cellspacing = '10px' cellpadding = '10px'>
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>title</td>
+                <td>price</td>
+                <td>description</td>
+                <td>category</td>
+                <td>image</td>
+                <td>rating</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <input type="button" value="Get Data" onclick="getProductDetails()">
+    <script>
+        var getProductDetails = () => {
+           axios.get('https://fakestoreapi.com/products')
+            .then(function(response) {
+                console.log(response);
+                renderDataToTable(response.data.products)
+
+            })
+            .catch(function(error) {
+                console.log(error);
+            })
+            .finally(function() {
+
+            });
+           /* $.ajax({
+                    url: 'https://fakestoreapi.com/products',
+                    method: 'GET',
+                    dataType: 'JSON',
+                    data: {}, 
+                    success: (response) => {
+                        console.log(response);
+                    },
+                    error: () => {
+                        console.log("eror while communcating")
+                    }
+                });*/
+
+        }
+        var renderDataToTable = (data) => {
+            data.forEach((product) => {
+                var trTag = $("<tr/>");
+                var td1 = $("<td/>").text(product.id);
+                trTag.append(td1);
+
+                var td2 = $("<td/>").text(product.title);
+                trTag.append(td2);
+
+                var td3 = $("<td/>").text(product.price);
+                trTag.append(td3);
+
+                var td4 = $("<td/>").text(product.description);
+                trTag.append(td4);
+
+                var td5 = $("<td/>").text(product.category);
+                trTag.append(td5);
+
+                var td6 = $("<td/>").text(product.image);
+                trTag.append(td6);
+
+                var td7 = $("<td/>").text(product.rating);
+                trTag.append(td7);
+
+                $("tbody").append(trTag);
+                
+            });
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>PrimeNumberRnot</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <script>
+            var num=prompt("Enter a Number");
+            num=parseInt(num);
+            var count =0;
+            for(var a=1;a<=num;a++ ){
+                var rem=num%a;
+                
+                if(rem==0){
+                   count++;
+                }
+            }
+                if(count==2){
+                    console.log(num+" is a prime number ");
+                }
+                else {
+                    console.log(num+" is not a prime number ");  
+                }
+          
+        </script>
+    </body>
+</html>

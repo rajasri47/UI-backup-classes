@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        #main_container{
+            border: 2px solid rgb(244, 12, 171);
+            height: 520px;
+            width: auto;
+            padding: 5px;
+        }
+            h2{
+                text-align: center;
+                color: rgb(212, 14, 243);
+            }
+        #nav {
+            height: 20px;
+            border: 1px solid red;
+            text-align: center;
+            padding: 5px;
+            color: red;
+        }
+
+        .box {
+            border: 1px solid blue;
+            height: 45px;
+            width: 45px;
+            text-align: center;
+        }
+
+        .first1 {
+            border: 1px solid rgb(255, 0, 0);
+        }
+
+        .first {
+            float: left;
+            margin: 5px;
+        }
+
+        .second {
+            float: right;
+            clear: left;
+            margin: 5px;
+        }
+
+        .third1 {
+            clear: both;
+            margin: 5px;
+        }
+
+        .third2 {
+            float: left;
+            clear: left;
+            margin: 5px;
+        }
+
+        .fourth {
+            float: right;
+            clear: right;
+            margin: 5px;
+        }
+
+        .fifth {
+            float: inline-start;
+            clear: right;
+            margin: 5px;
+
+        }
+
+        #footer {
+            height: 20px;
+            border: 1px solid #4800ff;
+            text-align: center;
+            padding: 5px;
+            color: #4000ff;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+
+     <div id="main_container">
+        <h2>Box Model using Float</h3>
+        <div id="nav">Bloacks Rednering</div>
+        <div class="box first first1">1</div>
+        <div class="box first">2</div>
+        <div class="box first">3</div>
+        <div class="box second">5</div>
+        <div class="box second">4</div>
+        <div class="box third1 ">6</div>
+        <div class="box third2">7</div>
+        <div class="box fourth">8</div>
+        <div class="box fourth">9</div>
+        <div class="box fourth">10</div>
+        <div class="box fifth">11</div>
+        <div class="box fifth">12</div>
+        <div class="box fifth">13</div>
+        <div id="footer">footer@copyRight2023</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Employee tax calculation dynamically</title>
+    </head>
+    <body>
+        <script>
+            var empName=prompt("Enter emloyee Name");
+            var empAge=parseInt(prompt("Enter employee Age"));
+            var empGender=prompt("Enter employee Gender");
+            var empDepartment=prompt("Enter employee Department");
+            var basicSal=parseInt(prompt("Enter employee basicSalary"));
+            var totalTax;
+            var  SalaryAfterTax;
+            var pf=(basicSal*12)/100;
+            var hra=(basicSal*24)/100;
+            var totalSal=basicSal+pf+hra;
+            console.log("emloyee Name = "+empName);
+            console.log("employee Age = "+empAge);
+            console.log("employee Gender = "+empGender);
+            console.log("employee Department = "+empDepartment);
+            console.log("basicSalary = "+basicSal);
+            console.log("total salary = "+totalSal)
+            //For Male
+            if(empGender == 'Male' && totalSal > 300000){
+            TotalTax=(TotalSal*15)/100;
+            SalaryAfterTax=TotalSal+TotalTax;
+            console.log("Tax Slab of Empolyee is 15%");
+            console.log("total Salary of the Employee Before tax is  "+totalSalary);
+            console.log("totalTax is = "+totalTax);
+            console.log("totalSalary Salary of the employee AfterTax is "+SalaryAfterTax);
+            }
+            else if(empGender == 'Male' && totalSal > 200000 && totalSal < 300000){
+            TotalTax=(TotalSal*15)/100;
+            SalaryAfterTax=TotalSal+TotalTax;
+            console.log("Tax Slab of Empolyee is 10%");
+            console.log("total Salary of the Employee Before tax is  "+totalSalary);
+            console.log("totalTax is = "+totalTax);
+            console.log("totalSalary Salary of the employee AfterTax is "+SalaryAfterTax);
+            }
+            else if(empGender == 'Male' && totalSal >= 100000){
+            TotalTax=(TotalSal*15)/100;
+            SalaryAfterTax=basicSal+TotalTax;
+            console.log("Tax Slab of Empolyee is 5%");
+            console.log("total Salary of the Employee Before tax is  "+totalSalary);
+            console.log("totalTax is = "+totalTax);
+            console.log("totalSalary Salary of the employee AfterTax is "+SalaryAfterTax);
+            }
+            else{
+                console.log("Zero Tax")
+            }
+            //For Female
+            if(empGender == 'Female' && totalSal >=300000){
+                TotalTax=(TotalSal*10)/100;
+            SalaryAfterTax=TotalSal+TotalTax;
+            console.log("Tax Slab of Empolyee is 15%");
+            console.log("total Salary of the Employee Before tax is  "+totalSalary);
+            console.log("totalTax is = "+totalTax);
+            console.log("totalSalary Salary of the employee AfterTax is "+SalaryAfterTax);
+            }
+            else if(empGender == 'Female' && totalSal > 200000 && totalSal >= 300000){
+            TotalTax=(TotalSal*5)/100;
+            SalaryAfterTax=TotalSal+TotalTax;
+            console.log("Tax Slab of Empolyee is 10%");
+            console.log("total Salary of the Employee Before tax is  "+totalSalary);
+            console.log("totalTax is = "+totalTax);
+            console.log("totalSalary Salary of the employee AfterTax is "+SalaryAfterTax);
+            }
+            else{
+                console.log("Zero Tax");
+            }
+            
+        </script>
+    </body>
+</html>

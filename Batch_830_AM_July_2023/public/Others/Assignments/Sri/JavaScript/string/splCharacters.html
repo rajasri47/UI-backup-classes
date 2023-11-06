@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            <h3> find the spl characters in the string </h3>
+            <script>
+            var userdata = () => {
+                var string = prompt(" enter the string");
+                console.log(" enter the sentence =>" + string);
+
+                var splCharacter = characters(userdata,string);
+                splCharacter != 0 ? console.log("the spl character found" + splCharacter): console.log("the spl characters not found");
+            }
+            
+            var characters = (userdata,string) => {
+                var strlength = string.length;
+                var found = 0;
+
+                string = string.replace(/\s/g , "a");
+                for(var i = 0; i < strlength ; i++){
+                
+
+
+                    if ((string[i] == "~" ) || (string[i] == "@") || (string[i] == "#") || (string[i] == "$") || (string[i] == "%") || (string[i] == "^") || (string[i] == "&") || (string[i] == "*") || (string[i] == "(") || (string[i] == ")" )|| (string[i] == "-") || (string[i] == "+") || (string[i] == "/") || (string[i] == "<") || (string[i] == ">") || (string[i] == "|")) {
+                        found = found + 1;
+                }
+            }
+                if (found >= 1){
+                    return found;
+                }
+                else{
+                    return 0;
+                }
+            }
+            userdata();
+            </script>
+            
+        </body>
+    </html>

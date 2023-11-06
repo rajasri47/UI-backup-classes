@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_Positions</title>
+    <style>
+        .Box {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border: 2px solid #000;
+            font-size: 30px;
+
+        }
+
+        /* myBoxes */
+
+        .myBox_01 {
+            position: absolute;
+
+        }
+
+        .myBox_02 {
+            position: relative;
+        }
+
+        .myBox_03 {
+            position: relative;
+            width: 100%;
+            margin: 0px auto;
+        }
+
+        .myBox_04 {
+            bottom: 0px;
+            margin: 10px;
+        }
+
+        /* Boxes */
+
+        .Box_01 {
+            background-color: rgb(237, 9, 9);
+            position: static;
+        }
+
+        .Box_02 {
+            background-color: rgb(255, 89, 0);
+            position: absolute;
+            left: 50px;
+            top: 50px;
+
+        }
+
+        .Box_03 {
+            background-color: rgb(255, 174, 0);
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+        .Box_04 {
+            background-color: rgb(251, 255, 0);
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+
+        .Box_05 {
+            background-color: #000;
+            position: absolute;
+            left: 680px;
+            top: 213px;
+        }
+
+        .Box_06 {
+            background-color: rgb(156, 247, 0);
+            position: absolute;
+            left: 740px;
+            top: 280px;
+        }
+
+        .Box_07 {
+            background-color: rgb(1, 199, 1);
+            position: absolute;
+            left: 620px;
+            /* right:400px; */
+            top: 150px;
+        }
+
+        .Box_08 {
+            background-color: rgb(5, 110, 5);
+            position: absolute;
+            left: 740px;
+            right: 500px;
+            top: 150px;
+        }
+
+        .Box_09 {
+            background-color: rgb(0, 251, 163);
+            position: absolute;
+            left: 620px;
+            top: 280px;
+        }
+
+        .Box_10 {
+            background-color: rgb(0, 255, 255);
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+
+        .Box_11 {
+            background-color: rgb(0, 191, 255);
+            position: absolute;
+            left: 50px;
+            bottom: 50px;
+        }
+
+        .Box_12 {
+            background-color: rgb(0, 51, 255);
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            text-align: end;
+        }
+
+        .Box_13 {
+            background-color: rgb(136, 0, 255);
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myBox_01">
+        <div class="Box Box_01">1</div>
+        <div class="Box Box_02">2</div>
+
+    </div>
+    <div class="myBox_02">
+        <div class="Box Box_03">3</div>
+        <div class="Box Box_04">4</div>
+    </div>
+    <div class="myBox_03">
+        <div class="Box Box_05">5</div>
+        <div class="Box Box_06">6</div>
+        <div class="Box Box_07">7</div>
+        <div class="Box Box_08">8</div>
+        <div class="Box Box_09">9</div>
+    </div>
+    <div class="myBox_04">
+        <div class="Box Box_10">10</div>
+        <div class="Box Box_11">11</div>
+    </div>
+    
+    <div>
+        <div class="Box Box_12">12</div>
+        <div class="Box Box_13">13</div>
+    </div>
+</body>
+
+</html>

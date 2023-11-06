@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Assignment-9</title>
+</head>
+<body>
+    <h1>PLEASE PRESS F12 BOTTOM</h1>
+    <h1>GO TO THE CONSOLE SCREEN</h1>
+    <h2>SEE THE RESULT</h2>
+    <script>
+        var gender=prompt("Enter your gender:(Male or Female)");
+        var basicSalary=prompt("Enter your basic Salary:");
+        basicSalary=parseInt(basicSalary);
+        var pf=basicSalary*0.1;
+        var hra=basicSalary*0.2;
+        var totalSalary=basicSalary+pf+hra;
+        var tax=0;
+        if(gender==="Male"){
+            if(totalSalary>=300000){
+                 tax=totalSalary*0.15;
+                 console.log("Tax is:"+tax);
+            }
+            else if(totalSalary>=200000 && totalSalary<=300000){
+                tax=totalSalary*0.1;
+                console.log("Tax is:"+tax);
+            }
+            else if(totalSalary>=100000 && totalSalary<=200000){
+                tax=totalSalary*0.05;
+                console.log("Tax is:"+tax);
+            }
+            else{
+                console.log("Tax is:"+tax)
+            }
+        }
+        else{
+            if(gender===Female){
+               if(totalSalary>=300000){
+                 tax=totalSalary*0.1;
+                 console.log("Tax is:"+tax);
+            }
+            else if(totalSalary>=200000 && totalSalary<=300000){
+                tax=totalSalary*0.05;
+                console.log("Tax is:"+tax);
+            }
+
+            else{
+                console.log("Tax is:"+tax)
+               }  
+            }
+        }
+    </script>
+</body>
+</html>

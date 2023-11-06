@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Student Regestration Page</title>
+<style></style>
+</head>
+<body>
+    <script>
+        var Name,Age,Gender,BasicSal,PF,HRA,TotalSal,AnnualSal,tax;
+        function Enter_empdetails(){
+                console.log("!!!Employee Details!!!");
+                Name=prompt("Enter Emp Name");
+                Age=prompt("Enter Emp Age");
+                Gender=prompt("Enter Emp Gender");
+                BasicSal=prompt("Enter Basic Sal");       
+                BasicSal=parseInt(BasicSal);  
+                calTotalSal();    
+            }
+                function calTotalSal(){
+                Pf=(BasicSal*12)/100;
+                Hra=(BasicSal*24)/100;
+                TotalSal=BasicSal+Pf+Hra;
+                AnnualSal=TotalSal*12;
+                CalculateTax();
+             }
+            function CalculateTax(){
+                if(Gender=="Male")
+                {
+                    
+                    if(AnnualSal>=300000){
+                        tax=(AnnualSal*15)/100;
+                        //consile.log("Employee paying tax 15% =",tax);
+                    }
+                    else if(AnnualSal>=200000)
+                    {
+                        tax=(AnnualSal*10)/100;
+                        //consile.log("Employee paying tax 10% =",tax);
+                    }
+                    else if(AnnualSal>=100000)
+                    {
+                        tax=(AnnualSal*5)/100;
+                    // consile.log("Employee paying tax 5% =",tax);
+                    }
+                    else if(AnnualSal<100000) 
+                    {
+                        tax=0;
+                    // consile.log("Employee paying tax 0% =",tax);
+                    }
+                }
+                else{
+                    if(AnnualSal>=300000)
+                    {
+                        tax=(AnnualSal*10)/100;
+                        //consile.log("Employee paying tax 10% =",tax);
+                    }
+                    else if(AnnualSal>=200000)
+                    {
+                        tax=(AnnualSal*5)/100;
+                        //consile.log("Employee paying tax 5% =",tax);
+                    }
+                    else if(AnnualSal<200000)
+                    {
+                        tax=0;
+                        // consile.log("Employee paying tax 0% =",tax);
+                    }
+                
+                }
+
+             }
+             function DisplayEMpInfo(){
+                    Enter_empdetails();
+
+                    console.log('Employee details');
+                    console.log("Name is " + Name);
+                    console.log("Age is " + Age);
+                    console.log("Gender is " + Gender);
+                    console.log("pf is " + Pf);
+                    console.log("HRA is " + Hra);
+                    console.log("Total sal is " + TotalSal);
+                    console.log("Total Annual sal is " + AnnualSal);
+                    console.log("Total Annual tax paid " + tax);
+            }
+            DisplayEMpInfo();
+    </script>
+
+
+</body>
+</html>

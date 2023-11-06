@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Emp_Salary </title>
+        <style>
+            h1{
+                text-align: center;
+                color: palevioletred;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> To See The Salary Details Of An  <br> Open Debugger Tool (Right click Of Mouse --> Inspect --> Console) </h1>
+        <script>
+            var Emp_Name = "Dattu";
+            var Emp_Age = 22;
+            var Emp_Gender = "Male";
+            var Emp_Dep = "CSE";
+            var Emp_BSalary = 25000;
+
+            var PF = (Emp_BSalary*12)/100;
+            var HRA = (Emp_BSalary*24)/100;
+            var Total_Salary = PF + HRA + Emp_BSalary
+
+            console.log("Employe Name is " +Emp_Name);
+            console.log("Employe Age is " +Emp_Age);
+            console.log("Employe Gender is " +Emp_Gender);
+            console.log("Employe Department is " +Emp_Dep);
+            console.log("Employe Basic Salary is " +Emp_BSalary);
+            console.log("Employe Total Salary is " +Total_Salary);
+        </script>
+    </body>
+</html>

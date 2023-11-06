@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+        <body>
+            <h3> no.of vowels</h3>
+            <script>
+
+                var userdata = () => {
+                    var string = prompt("enter the string");
+                    var lower  =  string.toLowerCase(string);
+                    console.log ( "the string given by user is=>"+ string);
+                    console.log ( "the string converted in to lower=>"+ lower);
+                    
+
+
+                    var countOfVowels = vowelcount(lower);
+                    console.log("enter the total no.of vowels is =>" + countOfVowels)
+
+
+                }
+
+                var vowelcount = (data) =>{
+                    var count = 0;
+                    for(var i = 0; data[i] !== undefined; i++){
+                        
+                        if((data [i]=='a') || (data [i] == 'e') || (data[i]=='i') || (data[i] =='o') || (data[i]=='u')){
+                            count = count+1;
+
+                        }
+                    }
+                    return count;
+                }
+                 userdata();
+            </script>
+            
+        </body>
+        </html>

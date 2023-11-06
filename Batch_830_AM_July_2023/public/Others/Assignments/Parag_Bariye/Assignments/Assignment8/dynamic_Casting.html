@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter your name");
+        var Age = prompt("Enter your Age");
+        var Gender = prompt("Enter your Gender");
+        var Maths = prompt("Enter MArks");
+        Maths = parseInt(Maths);
+        var Science = prompt("Enter MArks");
+        Science = parseInt(Science);
+        var SST = prompt("Enter MArks");
+        SST = parseInt(SST);
+        var English = prompt("Enter MArks");
+        English = parseInt(English);
+        var Sanskrit = prompt("Enter MArks");
+        Sanskrit = parseInt(Sanskrit);
+
+        var Marks_Obtained =  Maths + SST + English + Sanskrit + Science;
+        var Total_Marks = prompt("Enter The Total MArks");
+        Total_Marks = parseInt(Total_Marks);
+        var Average = ((Marks_Obtained/Total_Marks)*100);
+        console.log("Average"+Average);
+        
+    
+
+    </script>
+</body>
+</html>

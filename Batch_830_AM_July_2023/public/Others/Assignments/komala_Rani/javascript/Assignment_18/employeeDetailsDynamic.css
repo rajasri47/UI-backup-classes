@@ -1,0 +1,26 @@
+h3{
+    border:2px solid;
+    margin: 20px auto;
+    width:900px;
+    padding:10px;
+    background-color: aquamarine;
+    text-align: center;
+}
+ul{
+    width:500px;
+    border:2px solid;
+    margin:20px auto;
+    padding:20px;
+    background-color: #fff;
+}
+li{
+    list-style: none;
+    border:2px solid;
+    margin:10px;
+    padding:10px;
+ 
+}
+.ResultBlock{
+    display:none;
+    background-color:bisque;
+}

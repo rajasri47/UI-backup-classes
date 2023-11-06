@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+    <style>
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: red;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+      .getResult {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Employee Details With JSON</h2>
+    <i><p>! See Console for results</p></i>
+    <p class="getResult">
+      Right click on Webpage then Inspect and then Console
+    </p>
+    <p class="getResult">OR</p>
+    <p class="getResult">Ctrl + Shift + i and then Console</p>
+    <script>
+      function PFCalculationMale({totalSalary}) {
+        if (totalSalary >= 300000) {
+          console.log("Tax Slab is 15%");
+          console.log(
+            "Total tax is ₹" + (totalSalary * 15) / 100 + " Per Year"
+          );
+        } else if (
+          totalSalary >= 200000 &&
+          totalSalary < 300000
+        ) {
+          console.log("Tax Slab is 10%");
+          console.log(
+            "Total tax is ₹" + (totalSalary * 10) / 100 + " Per Year"
+          );
+        } else if (
+          totalSalary >= 100000 &&
+          totalSalary < 200000
+        ) {
+          console.log("Tax Slab is 5%");
+          console.log(
+            "Total tax is ₹" + (totalSalary * 5) / 100 + " Per Year"
+          );
+        } else {
+          console.log("Tax Slab is 0%");
+          console.log("Total tax is ₹0 Per Year");
+        }
+      }
+      function PFCalculationFemale({totalSalary}) {
+        if (totalSalary >= 300000) {
+          console.log("Tax Slab  is 10%");
+          console.log(
+            "Total tax is ₹" + (totalSalary * 10) / 100 + " Per Year"
+          );
+        } else if (
+          totalSalary >= 200000 &&
+          totalSalary < 300000
+        ) {
+          console.log("Tax Slab   is 5%");
+          console.log(
+            "Total tax is ₹" + (totalSalary * 5) / 100 + " Per Year"
+          );
+        } else {
+          console.log("Tax Slab is 0%");
+          console.log("Total tax is ₹0 Per Year");
+        }
+      }
+      function SalaryClculation({basicSalary,empGender}) {
+       // console.log(empDetails)
+        var saldetails = {};
+        saldetails.HRA = (basicSalary * 24) / 100;
+        saldetails.PF = (basicSalary * 14) / 100;
+        saldetails.totalSalary = (basicSalary + saldetails.HRA + saldetails.PF) * 12;
+        if (empGender === "male") {
+          PFCalculationMale(saldetails);
+        } else {
+          PFCalculationFemale(saldetails);
+        }
+      }
+      function getData() {
+        var empDetails = {};
+        empDetails.empName = prompt("Enter Employee Name");
+        empDetails.empAge = prompt("Enter Employee Age");
+        empDetails.empGender = prompt("Enter Employee Gender");
+        empDetails.department = prompt("Enter Department");
+        empDetails.basicSalary = parseInt(prompt("Enter Basic Salary"));
+        console.log("Name  Employee is " + empDetails.empName);
+        console.log("Age  Employee is " + empDetails.empAge);
+        console.log("Gender  Employee is " + empDetails.empGender);
+        console.log("Department  employee is " + empDetails.department);
+        SalaryClculation(empDetails);
+      }
+      getData()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic Student Data
+        </title>
+    </head>
+    <body>
+        <h1>right click --> inspect  --> console</h1>>
+        <script>
+            var Name = prompt('enter student Name');
+            var age = prompt('enter student Age');
+            var Gender = prompt('enter student Gender');
+            var Math = prompt('enter student Math Mark between (1-100)');
+            Math = parseFloat(Math);
+            var Phy = prompt('enter student phy Mark between (1-100)');
+            Phy = parseFloat(Phy);
+            var Chem = prompt('enter student Chem Mark between (1-100)');
+            Chem = parseFloat(Chem);
+            avg = (Math + Phy + Chem) / 3;
+            console.log('student Name is ' + Name);
+            console.log('student Age is ' + age);
+            console.log('student Gender is ' + Gender);
+            console.log('student Math mark is ' + Math);
+            console.log('student Phy Mark is ' + Phy);
+            console.log('student Chem Mark is ' + Chem);
+            console.log('student Avg is ' + avg);
+        </script>
+    </body>
+</html>

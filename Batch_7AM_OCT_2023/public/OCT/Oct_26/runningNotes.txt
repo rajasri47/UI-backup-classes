@@ -1,0 +1,41 @@
+Css Positions:
+
+
+
+    4 css prop through whcih we could move any dom element to any req position, witout change in dimentions
+
+        left
+        top 
+        bottom
+        right 
+
+        eg:
+
+            left: 30px;
+
+    The above 4 css prop can only be applied to the dom elements which are positioned 
+
+
+        position: static/relative/absolute/fixed/sticky
+
+
+    Any element can be moved to any req poostion within the page (using left, right, bottom and top prop), only if its position is non static 
+
+    position: static;
+
+
+x y axis 
+
+    1. every static element, by default gets rendered within the x, y axis of page 
+    2. By default every dom element with position non static, will automatically jump from default xy axis to z axis 
+
+
+Absolute: 
+
+    its is not going to hold its original position within the x y axis 
+
+    this element will move relative to its parent position 
+
+    while it is depending on the parent position, it only depends on the parent, whose position is non static., if not will depend on the grand parent which is non static posiion 
+
+    If non of the parent or grand parent position is non static, then it will directly depend on the body tag.

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding total number of digits
+        </title>
+    </head>
+    <body>
+        <script>
+            var count = 0;
+            var s = prompt("Enter your string");
+            console.log("The user given string is " + s);
+
+            for (var i = 0 ; s[i] ; i++) {
+                if 
+                (s[i] == '0' || s[i] == '1' || s[i] == '2' || s[i] == '3' || s[i] == '4' ||
+                s[i] == '5' || s[i] == '6' || s[i] == '7' || s[i] == '8' || s[i] == '9') {
+                    count++;
+                }
+            }
+
+            console.log("Total number of digits = " + count);
+
+        </script>
+    </body>
+</html>

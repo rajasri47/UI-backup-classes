@@ -1,0 +1,53 @@
+background: color/image 
+
+background-color: color
+
+background-image: image 
+
+------------------------------------------------------------------
+
+Steps to create a nodejs server and host resources(file, pdf, image, js, css file) in it 
+    Installation of node js platform:
+        Step1: Download and install node exe from https://nodejs.org/en/download
+
+    Steps to create a server in nodejs:
+
+    1. install express node module
+
+        npm install express -g
+
+    2. install express-generator node module
+        
+        npm install express-generator -g
+
+    3. under command prompt, redirect to the selected drive/folder or use cmd command
+
+    4. create a server folder using express command 
+
+        express <servername> 
+        eg:
+            express webapplication
+
+
+Steps to create a nodejs server and host resources(file, pdf, image, js, css file) in it 
+    Installation of node js platform:
+        Step1: Download and install node exe from https://nodejs.org/en/download
+
+    Steps to create a server in nodejs:
+
+    1. install express node module
+
+        npm install express -g
+
+    2. install express-generator node module
+        
+        npm install express-generator -g
+
+    3. under command prompt, redirect to the selected drive/folder or use cmd command
+
+    4. create a server folder using express command 
+
+        express <servername> 
+        eg:
+            express webapplication
+

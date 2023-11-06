@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.header{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: lightblue;
+    color: brown;
+    width: 90%;
+    border-radius: 40px;
+    margin: 10px auto;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color:lightblue;
+    color:brown;
+    width: 45%;
+    margin: 60px auto;
+    height: 500px;
+    overflow: hidden;
+   
+}
+header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    padding:20px;
+    background-color:green;
+    border-radius: 20px;
+    color:white;
+    margin-bottom: 20px;
+
+}
+table{
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 30px;
+}
+table td{
+    padding: 5px;
+    margin: auto;
+}
+table label,input{
+    font-size:100%;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding:5px;
+    margin: auto;
+  
+}
+.field{
+    width: 100%;  
+    display: flex;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.get,.sub,.clr{
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+.clr-btn,.get-btn,.sub-btn{
+    font-size:30px;
+    width: 100%;
+    margin: 10px;
+    font-weight: bolder;
+    padding:15px;
+    border-radius: 20px; 
+    color: white;
+}
+.get-btn{
+    
+    background-color: green;
+}
+
+.get-btn:hover{
+    transform: scale(1.1);
+}
+.sub-btn{
+    background-color: blue;
+}
+.sub-btn:hover{
+    transform: scale(1.1);
+}
+.clr-btn{
+    background-color: red;
+}
+.clr-btn:hover{
+    transform: scale(1.1);
+}
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Iterating over json object
+        </title>
+    </head>
+    <body>
+        <script>
+             
+
+            /*var data = [3, 5, 6];
+            var sample = {
+                name: 'raj'
+            }
+
+            console.log(typeof(data))
+            console.log(typeof(sample))
+
+            console.log(data.length)
+            console.log(sample.length); 
+
+            console.log(Array.isArray(data))
+            console.log(Array.isArray(sample)) */
+
+            if (typeof(sample) == 'object' && sample.length == undefined) {
+
+            }
+
+
+            var contactDetails = {
+                name: 'Raj',
+                age: 20,
+                lastname: 'Hero',
+                gender: 'male',
+                contactDetails: {
+                    office: '040-234234',
+                    prsnl: [985345, 98234234,23423423]
+                },
+                email: {
+                    office: 'abc@compnay.com',
+                    prsnl: ['abc@gmail.com', 'pqr@htomail.com']
+                },
+                address: {
+                    office: {
+                        countryname: 'India',
+                        sateInfo: 'TS',
+                        buildingNo: '56A'
+                    },
+                    prsnl: {
+                        hno: '123A',
+                        stateInfo: {
+                            name: 'TS',
+                            code: 'TS1',
+                            stateDisDetails: {
+                                distInfo: {
+                                    name: 'Hyderabad'
+                                }
+                            }
+                        }
+                    }
+                },
+                relation: 'Friend',
+                dob: {
+                    date: '09',
+                    month: '01'
+                },
+                socialId: {
+                    fb: 'abc34',
+                    twitter: 'test'
+                },
+                test: {
+                    sample: 'hello'
+                }
+            };
+
+
+            var rertiveObjData = (data) => {
+                for (var temp in data) {
+                    // Array.isArray(data[temp] != true)
+                    if (typeof(data[temp]) == 'object' && !data[temp].length) { // its object
+                        console.log(temp + ' -> ')
+                        rertiveObjData(data[temp]);
+                        
+                        
+                    } else {
+                        console.log(temp + " -> " + data[temp]);
+                    }
+                }
+            }
+
+            rertiveObjData(contactDetails);
+            
+        </script>
+    </body>
+</html>
+

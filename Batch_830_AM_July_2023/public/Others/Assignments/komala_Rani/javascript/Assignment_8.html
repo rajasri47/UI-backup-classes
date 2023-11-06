@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Assignment_8</title>
+    </head>
+    <body>
+        <script>
+
+            var empname = prompt("enter employee name ");
+            var empage = parseInt(prompt("enter employee age "));
+            var gender = prompt("ener employee gender ");
+            var dept = prompt("enter employee dept ");
+            var empsal = parseInt(prompt("enter employee salary "));
+
+            var pf, hra, totalsal;
+            var pf = (12 / 100) * empsal;
+            hra = (24 / 100) * empsal;
+            totalsal = pf + hra + empsal;
+
+            console.log("enter employee name " + empname);
+            console.log("enter employee age " + empage);
+            console.log("enter empgender " + gender);
+            console.log("enter employee dept " + dept);
+            console.log("enter employee salary " + empsal);
+            console.log("enter employee pf is " + pf);
+            console.log("enter employee hra is " + hra);
+            console.log("enter totalsalary before tax is " + totalsal);
+            
+            if(gender == "male" || gender == "Male") {
+                if(totalsal >= 300000) {
+                    tax = (15 / 100) * totalsal;
+                    console.log("tax paid is " + tax);
+                    totalsal = totalsal - tax;
+                    console.log("after paid tax totalsal is " + totalsal);
+                } else if(totalsal >= 200000) {
+                    tax = (10 / 100) * totalsal;
+                    console.log("tax paid is " + tax);
+                    totalsal = totalsal - tax;
+                    console.log("after paid tax totalsal is " + totalsal);
+                } else if(totalsal >= 100000) {
+                    tax = (5 / 100) * totalsal;
+                    console.log("tax paid is " + tax);
+                    totalsal = totalsal - tax;
+                    console.log("after paid tax totalsal is " + totalsal);
+                } else{
+                    tax = 0;
+                    console.log("tax paid is " + tax);
+                    totalsal = totalsal - tax;
+                    console.log("after paid tax totalsal is " + totalsal);
+                }
+            } else if(gender == "female" || gender == "Female") {
+                if(totalsal >= 300000) {
+                    tax = (10 / 100) * totalsal;
+                    console.log("tax paid is " + tax);
+                    totalsal = totalsal - tax;
+                    console.log("after paid tax totalsal is " + totalsal);
+                } else if(totalsal >= 200000) {
+                    tax = (5 / 100) * totalsal;
+                    console.log("tax paid is " + tax);
+                    totalsal = totalsal - tax;
+                    console.log("after paid tax totalsal is " + totalsal);
+                } else{
+                    tax = 0;
+                    console.log("tax paid is "+ tax);
+                    totalsal = totalsal - tax;
+                    console.log("after paid tax totalsal is " + totalsal);
+                }
+            } else{
+                console.log("Zero tax");
+            }        
+            
+        </script>       
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows given word is there in the  String of elements or not.. <br>
+            Go to console tab for result...
+            </h1>
+            <script>
+                var msg = "naveen rajesh narendra rajasekhar";
+                var input = prompt("enter the word to check weather it is there in the string or not");
+                var temp = "";
+                var count = 0;
+                for(var i = 0; i < msg.length; i++){
+                    
+                    if(msg[i] != " "){
+                    temp =temp + msg[i];
+                }
+
+                    if(temp == input){
+                        console.log("the given word "+input+" is there in the string");
+                        count ++;
+                        break;
+                    }
+
+                if(msg[i] == " " ){
+                    temp = "";
+                }
+                }
+                if(count == 0){
+                    console.log("Given Word is not there in the string..")
+                }
+                
+
+
+
+
+            </script>
+
+
+    </body>
+</html>

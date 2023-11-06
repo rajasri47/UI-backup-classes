@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating String interpolization
+        </title>
+    </head>
+    <body>
+        <script>
+            var userDetails = {
+                name: 'Raj',
+                age: 20
+            }
+            var totalSal = 3000;
+
+            var msg = 'Hey mr. ' + userDetails.name + ' with age ' + userDetails.age + ' gets salary of ' + totalSal;
+
+    var msg2 = `Hey mr. ${userDetails.name} with age ${userDetails.age} gets salary of ${totalSal} --- ${40 + 80}`;
+            console.log(msg)
+            console.log(msg2);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+    .back{
+       width: 100%;
+       height: 110vh;
+       background-image: url("photos/background.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+
+    .header{
+        width: 100%;
+        height: 16vh;
+        font-size: 50px;
+        background: rgba(177, 72, 177, 0.492);
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .footer{
+        width: 100%;
+        height: 4vh;
+        font-size: 20px;
+        position: absolute;
+        top: 827px;
+        background: rgba(177, 72, 177, 0.492);
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;  
+    }
+    .himher{
+        
+        width: 200px;
+        height: 50px;  
+        color: bisque;
+        top: 80px;
+        left: 453px;
+        font-size: 25px;
+        position: absolute;
+        font-style: italic;
+    }
+    .signupbox{
+        width: 320px;
+        height: 443px;
+        background-color: rgba(128, 0, 128, 0.673);
+        color: whitesmoke;
+        top: 58%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 40px 70px;
+    }
+    h1{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+    }
+    .signupbox p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+    .signupbox input{
+            width: 100%;
+            margin-bottom: 20px;
+
+        } 
+    .signupbox input[type="text"], input[type="password"], input[type="email"]
+        {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 30px;
+
+        }
+    .signupbox input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #fb2525;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+            cursor: pointer;
+        }       
+</style>
+<body>
+    <div class="back">
+        <div class="header"> THE JEWELL STORE </div>
+        <div class="himher"> for him & her &#9829;</div>
+       </div>
+       <div class="signupbox">
+            <h1>Sign Up</h1>
+        <form> 
+            <p> Enter your name</p>   
+            <input type="text" name="" placeholder=" Enter Username">
+            <p>Enter your email</p>
+            <input type="email" name="" placeholder="Enter Email">
+            <p>Enter a strong password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <p>Confirm your password</p>
+            <input type="password" name="" placeholder="Confirm Password">
+            <input type="submit" name="" value="Sign Up">
+            
+
+        </form>
+
+       </div>
+       <div  class="footer"> Copyrights@2023 </div>
+    
+</body>
+</html>

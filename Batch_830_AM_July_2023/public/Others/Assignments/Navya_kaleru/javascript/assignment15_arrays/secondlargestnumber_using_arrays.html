@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demostrating second largest numbers using arrays</title>
+    </head>
+    <body>
+        <script>
+            var data = [22 ,77,33,67,12,94];
+            var maxvalue = data[0];
+            var secondlargest =data[0];
+            for(var i = 1 ; i < data.length ; i++){
+                if(maxvalue<data[i]){
+                    if(secondlargest < maxvalue){
+                        secondlargest = maxvalue;
+                    }
+                    maxvalue = data[i];
+                } 
+                //else if(secondlargest < data[i] && data[i]!=maxvalue){
+                  //   secondlargest = data[i];
+                //}
+            }       
+        
+            
+            console.log("max value is" + maxvalue);
+            console.log("secondlargest value is " + secondlargest);
+        </script>
+    </body>
+</html>

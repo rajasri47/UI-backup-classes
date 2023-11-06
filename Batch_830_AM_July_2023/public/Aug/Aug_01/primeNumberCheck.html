@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Program to check whether a number is a prime or not
+        </title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("enter a number");
+            n = parseInt(n);
+            var count = 0;
+            // The time complexity is "n"
+            /*for (var i = 1; i <= n; i++) {
+                var rem = n % i;
+                // console.log(rem)
+                if (rem == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                console.log("ITs a prime number")
+            } else {
+                 console.log("its not a prime")
+            }*/
+
+            // The time complexity is "n-2"
+            for (var i = 2; i < n; i++) {
+                var rem = n % i;
+                // console.log(rem)
+                if (rem == 0) {
+                    count++;
+                    break;
+                }
+            }
+            if (count == 0) {
+                console.log("ITs a prime number")
+            } else {
+                 console.log("its not a prime")
+            }
+            
+        </script>
+    </body>
+</html>

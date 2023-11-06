@@ -1,0 +1,28 @@
+.abc,
+#pqr,
+div,
+span {
+    set of css prop
+    ... 
+    ..
+}
+
+class=""
+
+Padding: space betwn the content and border of the container 
+
+
+CSS box model:
+
+    include total space been occupied by the margin, padding, border and the actuall dimentions of the dom element
+
+
+
+CSS float prop :
+
+    float: left / right;
+
+    if multiple continues dom elements change there default rendering direction to left/right using float prop, Irrelevent of whether the elemnts belong to block or inline, they all try to come and render in the same line 
+
+
+    clear: left/ right/both;

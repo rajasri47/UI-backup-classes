@@ -1,0 +1,1 @@
+var count=0,subValues=(u,r)=>{count++;var a=0;return u+r},addValues=(u,r)=>{count++;var a=0;return u+r},mulValues=(u,r)=>{count++;var a=0;return u*r},divValues=(u,r)=>{count++;var a=0;return u/r};

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css">
+        
+    </head>
+    <body>
+        <h3>Employee Details</h3>
+        
+        <ul>
+            <li>
+                <input type="text" placeholder="Enter Employee Name" id="ename">
+            </li>
+            <li>
+                <input type="text" placeholder="Enter Employee Age" id="eage">
+            </li>
+            <li>
+                Gender:
+                    <input type="radio" value="Male" name="gender" checked>Male
+                    <input type="radio" value="Female" name="gender" >Female
+
+            </li>
+        <li>
+            country:
+            <select name="" id="country">
+            <option value="India">INDIA</option>
+            <option value="U.S.A">U.S.A</option>
+            <option value="Australia">Australia</option>
+            <option value="U.K">U.K</option>
+        </select>
+        </li>
+        <li>
+            Enter Employee BasicSalary:
+            <input type="text" id="ebasicsal" >
+        </li>
+        <li>
+            <input type="button" value="Generate Employee PaySlip" onclick="reademployeedata()">
+        </li>
+
+
+        </ul>
+        <ul id="dis">
+            <li style="text-align: center"> Employee pay slip</li>
+            <li>Employee Name : <span id="sename"></span></li>
+         <li> Employee Age : <span id = "seage"></span></li>
+         <li> Employee  Gender : <span id = "segender"></span></li>
+         <li> Employee Country : <span id = "secountry"></span></li>
+         <li> Employee Basicsalary : <span id = "sebasicsalary"></span></li>
+         <li> Employee Hra : <span id = "sehra"></span></li>
+         <li> Employee Pf : <span id = "sepf"></span></li>
+         <li> Employee Totalsalary : <span id = "setotalsalary"></span></li>
+         <li> Employee Tax : <span id = "setax"></span></li>
+         <li> Employee Salaryaftertax : <span id = "sesalaryaftertax"></span></li>
+         
+        </ul>
+        
+    </body>
+    </html>

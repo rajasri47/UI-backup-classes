@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating Exception handling
+    </title>
+    <style>
+        h3 {
+            text-align: center;
+            color: green;
+            margin: 10px;
+        }
+
+        .taskContainer {
+            border: 1px solid orangered;
+            text-align: center;
+            margin: 30px auto;
+            padding: 30px;
+            color: brown;
+            width: 500px;
+        }
+
+        #thanksBlock {
+            display: none;
+            position: absolute;
+            bottom: 10%;
+            left: 30%;
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        Eployee Task assigner
+    </h3>
+    <input type="text" id="username" placeholder="Enter Employee name"> <input type="button" value="Save User" onclick="saveUserName()">
+    <input type="button" value="Create task block" onclick="createTaskContainer()">
+    <input type="button" value="Show Task" onclick="showTodaysTask()">
+
+
+    <div class="blockContainer"></div>
+    <div id="thanksBlock">
+       
+    </div>
+    <script>
+        var taskList = [
+            "Do the code reivew of all the modules",
+            "Prepate the mockups for new module development",
+            "Create new signup user page",
+            "Workw ith support team, understand the requriements what they have",
+            "Implement automation test cases"
+        ];
+        var userName = '';
+        var createTaskContainer = () => {
+            var divTag = document.createElement("div");
+            divTag.setAttribute("class", "taskContainer");
+            document.querySelector(".blockContainer").append(divTag);
+        }
+
+        var showTodaysTask = () => {
+            var taskName = taskList[getRandomValue()];
+            var task = `Mr. ${userName} today task is - ${taskName}`;
+            try {
+                document.querySelector('.taskContainer').innerText = task;
+            } catch(error) {
+                console.log(error)
+                alert("you missed to create a task container");
+            } finally {
+                // Set of instructions, which for sure need to be executed, irrleveant of whether there is an exception or not
+                showthanksMsg();
+            }
+
+            
+        }
+
+        var saveUserName = () => {
+            userName = document.querySelector("#username").value;
+        }
+
+        var getRandomValue = () => {
+            var randomIndex = Math.floor(Math.random() * taskList.length);
+            return randomIndex;
+        }
+
+        var showthanksMsg = () => {
+            setTimeout(() => {
+                var msg = `Thanks Mr. ${userName} for using our webpage for taks assigning`;
+                document.querySelector("#thanksBlock").innerText  = msg;
+                document.querySelector("#thanksBlock").style.display = 'block';
+            }, 3000);
+            
+        }
+    </script>
+
+</body>
+</html>

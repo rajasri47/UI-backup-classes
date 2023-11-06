@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <span>
+                user name is <span id="sname"></span>
+                age <span id="sage"></span>
+            </span>
+        </div>
+        about to show student data
+        <script>
+           console.log(window.location)
+           const searchParams = new URLSearchParams(window.location.search);
+           console.log(searchParams)
+           console.log(searchParams.get('sname'));
+           console.log(searchParams.get('age'));
+
+           document.querySelector("#sage").innerHTML = searchParams.get('age');
+           document.querySelector("#sname").innerHTML = searchParams.get('sname');
+        </script>
+
+
+    </body>
+</html>

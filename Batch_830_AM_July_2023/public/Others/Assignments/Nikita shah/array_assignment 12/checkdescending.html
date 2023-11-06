@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var data = [];
+            var n = prompt("enter no.of data");
+            n = parseInt(n);
+            for (var i = 0; i < n; i++) {
+                data[i] = prompt("etner values of array " + i) ;   
+                data[i] = parseInt(data[i]);
+            }
+            temp = 0;
+            for(var i=0; i<data.length;i++){
+                for(var j= i+1; j<data.length; j++){
+                     if(data[j]>data[i]){
+                        temp=data[j];
+                        data[j]=data[i];
+                        data[i]=temp;
+                     }
+                }
+            } 
+            for(var i=0; i<data.length;i++){
+                console.log(data[i] +" ")
+            }
+    </script>
+</body>
+</html>

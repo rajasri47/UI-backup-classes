@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>PROJECT</title>
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+            }
+            
+            .head,.foot{ 
+                border: 1px solid grey;
+                height: 60px;
+                background-color: lightgrey;
+                
+            }
+            .mainbox{
+                border: 1px solid grey;
+                height: 500px;
+
+            }
+            .mainContainer{
+                margin: 50px 300px;
+            }
+            .minibox{
+                border: 1px solid grey;
+                height: 350px;
+                margin: 75px 150px;
+            }
+            li{
+                list-style: none;
+                margin: 25px 75px;
+                font-size: 20px;
+            
+            }
+            .foruser{
+                margin-left: 10px;
+                height: 30px;
+                width: 250px;
+            }
+            .forpassword{
+                margin-left: 71px;
+                height: 30px;
+                width: 250px;
+            }
+            .forlogin{
+                padding: 2px 7px;
+                width: 100px;
+                height: 30px;
+                position: relative;
+                left: 230px;
+            }
+            .forSignUp{
+                position: relative;
+                left: 245px;
+            }
+            .forSignUp:hover,.forForgotPassword:hover{
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            .forForgotPassword{
+                position: relative;
+                left: 210px;
+            }
+
+            
+        </style> 
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="head"><h3>Header Part</h3></div>
+            <div class="mainbox">
+                <div class="minibox">
+                    <ul>
+                        <li> 
+                            <label for="username">Enter User Name:</label>
+                            <input type="text" name="username" class="foruser">
+                        </li>
+                        <li> 
+                            <label for="acc_password">Password:</label>
+                            <input type="password" name="acc_password" class="forpassword" >
+                        </li>
+                        <li>
+                            <button class="forlogin",type="button" onclick="location.href='4_ProductPage.html'">Login</button> 
+                        </li>
+                        <li class="forSignUp">
+                            <a href="2_SignUpPage.html"> Sign Up</a>
+                        </li>
+                        <li class="forForgotPassword">
+                            <a href="3_forgotPasswordPage.html"> Forgot Password?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot"><h3>Footer Part</h3></div>
+            
+        </div>
+    </body>
+</html>

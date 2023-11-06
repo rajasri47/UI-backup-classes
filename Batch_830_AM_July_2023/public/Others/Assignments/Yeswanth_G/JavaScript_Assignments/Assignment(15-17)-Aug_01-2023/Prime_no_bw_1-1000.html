@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Given Number Is Prime Or Not </title>
+        <style>
+            h1{
+                color: purple;
+                font-size: xx-large;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Prime Numbers Between 1-1000 </h1>
+        <script>
+            var n=1000,i,j,count=0;
+            
+            for(j=2;j<=n;j++){
+                for(i=2;i<=j;i++){
+                    if(j%i==0)
+                    count++;
+                }
+                if(count==1)
+                console.log(j);
+                count=0;
+            }
+        </script>
+    </body>
+</html>

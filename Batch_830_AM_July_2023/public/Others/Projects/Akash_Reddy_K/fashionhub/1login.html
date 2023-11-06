@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>login</title>
+    <style>
+        .header{
+                border: 2px solid black;
+                height: 60px;
+                text-align: center;
+                font-weight: bold;
+                position:relative;
+                background-color: rgb(25, 22,10);
+            }
+        .logobox{
+            border: 1px solid gray;
+            height: 55px;
+            width: 439px;
+            background-image: url("logo.jpg");
+            float: left;
+            position: absolute;
+            left: 0.4%;
+            top: 2.5%;
+            background-position: -46px -57px;
+        }
+        .body{
+            border: 2px solid black;
+            height: 90%;
+            background-image: url("background.jpg");
+            background-position:center;
+            background-size: cover;
+            
+        }
+        .loginbox{
+            border: 1px solid black;
+            width: 371px;
+            height: 215px;
+            margin: auto;
+            position: absolute;
+            top: 36%;
+            left: 42%;
+        }
+        ul{
+            list-style: none;
+            color: white;
+            font-weight: bolder;
+        
+        }
+        .center{
+            text-align: center;
+        }
+        .footer{
+            border: 2px solid black;
+            height: 20px;
+            background-color:rgb(25, 22,10);
+            text-align: center;
+            padding: 10px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">  
+        <div class="logobox"></div>
+    </div>
+    <div class="body">
+        <div class="loginbox">
+            <ul>
+                <li>
+                    <label for="name">
+        <span style ="background-color: black;">User Name</span>  :&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="text" name="name">
+                </li>
+                <br>
+                <li>
+                    <label for="password">
+        <span style ="background-color: black;">Password</span> :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="password" name="password">
+                </li>
+                <br>
+                <li class="center">
+                    <input type="submit" value="Login">
+                </li>
+                <br>
+                <li class="center">
+                    <input type="submit" value="Sign Up">
+                </li>
+                <br>
+                <li class="center">
+                    <span style ="background-color: black;">Forgot Password?</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer"> copyrights@2023</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predefined String Methods</title>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE STRING PROGRAM OPEN DEBUGGER TOOL </h1>
+    <h2> Write a program to read a string from the user and find out the total number of characters within it, without using .Length property.</h2>
+    <script>
+        function str() {
+            let str = prompt("Enter a string", "Hello, world!");
+            let length = 0;
+            console.log(str);
+            console.log([...str].reduce(a => a+1, 0));
+        }
+        str();
+    </script>
+
+</body>
+
+</html>

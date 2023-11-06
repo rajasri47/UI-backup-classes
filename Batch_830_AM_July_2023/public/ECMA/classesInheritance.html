@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class SchoolDetails {
+                constructor() {
+                    this.schoolname = 'ABC School';
+                    this.schllcoation = 'Ameerpet';
+                    this.schoolRating = '4/5';
+                }
+                displaySchoolInfo() {
+                    
+                }
+            }
+
+            class StudentUnderFifthGrade extends SchoolDetails {
+                constructor () {
+                    super();
+                    this.sname = 'teena';
+                    this.age = 20;
+                }
+                dispalyInfo() {
+                    console.log("Student name is " + this.sname);
+                    console.log("Student ag is " + this.age);
+                    console.log("Scholname " + this.schoolname)
+                    console.log("School Location " + this.schllcoation)
+                }
+            }
+
+            class StudentAboveFifthGrade {
+                constructor () {
+                    this.projectName = 'Chandrayan 3';
+                    this.projectMarks = 10;
+                    this.schoolname = 'ABC School';
+                    this.schllcoation = 'Ameerpet';
+                    this.schoolRating = '4/5';
+                    this.sname = 'Raj';
+                    this.age = 10;
+                }
+                dispalyInfo() {
+
+                }
+            }
+
+            var s1 = new StudentUnderFifthGrade();
+            s1.dispalyInfo();
+        </script>
+    </body>
+</html>

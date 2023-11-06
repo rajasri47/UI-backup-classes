@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Dynamic Data</title>
+</head>
+<body>
+    <script>
+        var stdName = prompt("Enter User Name");
+        var stdAge = prompt("Enter User Age");
+
+        var sub1 = prompt("Enter subject1 marks");
+        sub1 = parseInt(sub1);
+        var sub2 =  prompt("Enter subject2 marks");
+        sub2 = parseInt(sub2);
+        var sub3 =  prompt("Enter subject3 marks");
+        sub3 = parseInt(sub3);
+        var sub4 =  prompt("Enter subject4 marks");
+        sub4 = parseInt(sub4);
+        var sub5 =  prompt("Enter subject5 marks");
+        sub5 = parseInt(sub5);
+        var sub6 =  prompt("Enter subject6 marks");
+        sub6 = parseInt(sub6);
+
+        var total = (sub1+sub2+sub3+sub4+sub5+sub6);
+        var avg = (sub1+sub2+sub3+sub4+sub5+sub6)/6;
+
+        console.log("Stdent Details:");
+        console.log("Name of the student is " + stdName);
+        console.log("Total Marks are " + total);
+        console.log("Average Marks are " + avg);
+    </script>
+</body>
+</html>

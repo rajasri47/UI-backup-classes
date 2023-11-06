@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Salary Slip Of Employee</title>
+    <style>
+        .header{
+            text-align: center;
+            border:1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Veiw Salary slip of Employee on Debugger Tool</h1>
+    <script>
+        var empname, age,dept,basicSalary;
+        empname="Ankit";
+        age=30;
+        dept="IT";
+        basicSalary=30000;
+        var pf= (basicSalary*12)/100;
+        var HRA=(basicSalary*24)/100;
+        //var totalSalary= basicSalary + pf + HRA
+        console.log( "Basic Salary of employee " + empname + " is : ₹" + basicSalary );
+        console.log( "PF of " + empname + " is : ₹" + pf );
+        console.log( "HRA of " + empname + " is : ₹" + HRA );
+        console.log( "Total Salary of " + empname + " is : ₹" +(basicSalary + pf + HRA)  )
+    </script>
+</body>
+</html>

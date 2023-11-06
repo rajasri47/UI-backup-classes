@@ -1,0 +1,192 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Student Registration</title>
+          <style>
+            *{
+              background-color: silver;
+            }
+            .box1{
+              border: 2px solid ;
+              text-align: center;
+              font-weight: 600;
+              font-size: 30px;
+              margin-bottom: 7px;
+              
+            }
+            .box2{
+              border: 2px solid;
+              height:850px;
+              width:1330px;
+              text-align: center;
+            
+
+            }
+            .boxdecoration{
+              border: 1px solid;
+              margin-left: -20px;
+              height: 180px;
+              width: 1270px;
+              margin-bottom: 20px;
+              text-align: center;
+            
+              
+            }
+            .font{
+              font-weight: 600;
+              font-size: 20px;
+              text-align: center;
+              text-decoration: underline;
+          
+            }
+            .age{
+              position: absolute;
+              top:130px;
+              right:200px;
+            }
+            .name{
+              position: absolute;
+              top:110px;
+              left:80px;
+
+            }
+            .gender{
+                    
+              position: absolute;
+              top:150px;
+              margin-left: 50px;
+
+            }
+            .nation{
+              position: absolute;
+              top:195px;
+              margin-left: 50px;
+            }
+          .division{
+            position: absolute;
+            top:180px;
+            right: 320px;
+          }
+          .language{
+            position: absolute;
+            top:320px;
+            left:31px;
+          }
+          .quali{
+            position: relative;
+            top:50px;
+            left:20px;
+          }
+          .corse{
+            position: absolute;
+            top:500px;
+            left:40px;
+          }
+          .medium{
+            position: absolute;
+            top:580px;
+            left:40px;
+          }
+          .aboutyourself{
+            position: absolute;
+            top:700px;
+            left:35px;
+          }
+          .footer{
+            border: 2px solid ;
+              text-align: center;
+              font-weight: 400;
+              font-size: 25px;
+              margin-top: 7px;
+              padding: 4px;
+          }
+          
+          </style>
+      </head>
+      <body>
+          <div class="box1">Student Registration Page</div>
+          <div class="box2">
+              <ul type="none">
+                  <li class="boxdecoration font">Personal Details
+                    <div class="name"> Name : <input type="text"></div>
+                    <div class="age">Age : <input type="text"></div>
+                    <div class="gender">Gender: <input type="radio" name="gender" >Male<input type="radio" name="gender">female
+                    </div>
+                  <div class="nation">
+                    <label for="country">Country Name : </label>
+                    <select title="Click to get country" name="Country">
+                      <option>India</option>
+                      <option>Japan</option>
+                      <option>UK</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+                  <div class="division">
+                    <label for="class">Class : </label>
+                    <select title="Click to select class" name="class">
+                      <option>1st</option>
+                      <option>2nd</option>
+                      <option>3rd</option>
+                    </select>
+                  </div>
+                  </li>
+                  <li class="boxdecoration font">Educational Details
+                    <ul class="language" type="none">
+                      <li>
+                        <label for="languages">Languages Known : </label>
+                        <input type="checkbox" name="language" class="checkbox">
+                        <label for="language">English</label>
+                        <input type="checkbox" name="language" class="checkbox">
+                        <label for="language">Hindi</label>
+                        <input type="checkbox" name="language" class="checkbox">
+                        <label for="language">Telugu</label> 
+                        <div class="quali">
+                        <label for="qualification">Qualification : </label>
+                        <input type="checkbox" name="qualification" class="checkbox">
+                        <label for="qualification">B.E</label>
+                        <input type="checkbox" name="qualification" class="checkbox">
+                        <label for="qualification">MBA</label>
+                        <input type="checkbox" name="qualification" class="checkbox">
+                        <label for="qualification">MCA</label>
+                        <input type="checkbox" name="qualification" class="checkbox">
+                        <label for="qualification">Graduation</label>
+                      </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="boxdecoration font">Course Details
+                    <ul class="corse" type="none">
+                    <label for="course" >Course Option : </label>
+                    <select title="Select Course" name="course">
+                      <option>UI Full Stack</option>
+                      <option>JAVA Full Stack</option>
+                      <option>DEVOPS</option>
+                      <option>AZURE</option>
+                    </select>
+                  </ul>
+                  <ul class="medium">
+                    <label for="language" > Language For Course : </label>
+                    <select title="Select language for Course" name="language">
+                      <option>English</option>
+                      <option>Hindi</option>
+                      <option>Telugu</option>
+                    </select>
+                  </ul>
+                  </li>
+                  <li class="boxdecoration font">About Yourself
+                      <ul type="none" class="aboutyourself">
+                        <li> 
+                          <label for="text">Few Words About Yourself: </label>
+                          <textarea name="text"></textarea>
+                        </li>
+                      </ul>
+                  </li>
+                  
+              </ul>
+              <button>SUBMIT</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>RESET</button>
+          </div>
+          <div class="footer">@CopyRights 2023</div>
+      </body>
+      </html>

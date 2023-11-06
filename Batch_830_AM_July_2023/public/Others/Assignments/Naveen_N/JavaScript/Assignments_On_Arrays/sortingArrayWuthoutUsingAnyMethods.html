@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows the Sorting of given array of elements.. <br>
+            Go to console tab for result...
+        </h1>
+        <script>
+            var a = [],b = [];
+              var index = prompt("enter index value of Array..");
+              index = parseInt(index);
+
+              for(var i=0; i < index; i++){
+                   a[i] = prompt("enter the values"+i+" th position of array");
+                  a[i] = parseInt(a[i]);
+                  b[i] = a[i];
+                  console.log(a[i]);
+              }
+
+              var temp = 0;
+
+              for(var i=0; i < a.length; i++){
+                
+                for(var j = 0; j < a.length; j++){
+                    if(a[i] < a[j])
+                    {
+                        var temp = a[i];
+                        a[i] = a[j];
+                        a[j] = temp; 
+                    }
+                    if(b[i] > b[j])
+                    {
+                        var temp = b[i];
+                        b[i] = b[j];
+                        b[j] = temp; 
+                    }
+                }
+            }
+
+            console.log("");
+            console.log("Ascending Order is");
+            for(var i=0; i < index; i++){
+            console.log(a[i]);
+            }
+            console.log("");
+            console.log("Descending Order is");
+            for(var i=0; i < index; i++){
+            console.log(b[i]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplayee Details</title>
+</head>
+<body>
+
+    <script>
+        var name = prompt("Enter Name");
+
+        var age = prompt("Enter age");
+        var gender = prompt("Enter gender");
+        var basicSarlary = prompt("Enter basicSalary");
+        basicSarlary = parseInt(basicSarlary);
+        pf = basicSarlary*12/100;
+        hra = basicSarlary*24/100;
+        totalSalary = pf+hra+basicSarlary;
+
+        console.log("totalSalary is " + totalSalary);
+         if(gender=="male"){
+            if(totalSalary>=300000){
+                console.log("Sir your tax  is = " +totalSalary*15/100);
+            }
+            else if(totalSalary>=200000 && totalSalary<300000){
+                console.log("Sir your tax  is = " +totalSalary*10/100);
+            }
+            else if(totalSalary>=100000 && totalSalary<200000){
+                console.log("Sir your tax  is = " +totalSalary*5/100);
+            }
+            else{
+                console.log("sir you no need to pay tax");
+            }
+         }
+            
+
+         else if(gender=="female"){
+            if(totalSalary>=300000){
+                console.log("Mam your tax  is = " +totalSalary*10/100);
+            }
+            else if(totalSalary>=200000 && totalSalary<300000){
+                console.log("Mam your tax  is = " +totalSalary*5/100);
+            }
+            else{
+                console.log("Mam you no need to pay tax");
+            }
+         }
+
+        
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

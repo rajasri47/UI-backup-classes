@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demostrating pallamdrome  number</title>
+    </head>
+    <body>
+        <script>
+            var original , reverse = 0;
+           var i = prompt("enter a number");
+            i = parseInt(i);
+            original = i;
+           while (i!= 0){
+            var remainder = i % 10;
+             reverse = reverse * 10 + remainder;
+             i = i/10;
+             i = parseInt(i);
+            }
+            if (original == reverse){
+             console.log("palladrome number");
+            }
+            else{
+              console.log("not");
+            }
+        
+        </script>
+    </body>
+</html>

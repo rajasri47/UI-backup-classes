@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OTP Generator</title>
+        <style>
+            .otpBlock {
+                border: 1px solid;
+                width: 100px;
+                font-weight: bold;
+                color: blueviolet;
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Generate OTP" onclick="getRandomNumber()">
+        <div class="otpBlock"></div>
+
+        <script>
+
+            var upperCaseChar = ['A', 'B', 'C', 'D', 'E', 'F']
+
+            var capthcaValue = '';                                            //generating captcha
+
+            /*
+            // Lengthy process through array of char
+            var getRandomUpperCaseChar = () => {
+                var randomChar = '';
+                var randomIndex = Math.random() * upperCaseChar.length;
+                randomIndex = Math.floor(randomIndex);
+                console.log(upperCaseChar[randomIndex])
+                return upperCaseChar[randomIndex];
+
+            } */
+            var getRandomNumber = () => {
+                var randomNumber = Math.random() * 9;
+                randomNumber = Math.floor(randomNumber);
+                return randomNumber;
+            }
+
+            var getRandomNumberBetweenGivenRange = (min, max) => {
+                var randomNumber = Math.floor(Math.random() * (max - min)) + min;
+                console.log(randomNumber);
+                console.log(String.fromCharCode(randomNumber))
+
+            }
+
+            getRandomNumberBetweenGivenRange(97, 122)
+            
+        </script>
+    </body>
+</html>

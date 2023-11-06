@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>palinddrome number</title>
+    </head>
+    <body>
+        <script>
+
+             var revNum = 0;
+             var n = prompt('enter the value');
+             n = parseInt(n);
+             var temp = n;
+
+             while (n > 0){
+                var rem = n % 10 ;
+                n = n / 10;
+                n = parseInt(n);
+
+                revNum = (revNum * 10) + rem;
+
+            }
+            if ( temp == revNum){
+                console.log('it is palindrome');
+            }else {
+                console.log('It os not palindrome ')
+            }
+
+
+        </script>
+    </body>
+</html>

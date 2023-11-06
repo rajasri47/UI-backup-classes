@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listofevenandodd</title>
+</head>
+<body>
+    <script>
+        var data = [];
+            var s=0;
+            var k=0;
+            console.log("even numbers");
+            for(var i=0; i<=6; i++){
+                data[i] = prompt("enter" + i + "value");
+                data[i] = parseInt(data[i]);
+                if(data[i]%2==0){
+                    s=s+data[i];
+                    console.log(s)
+                }
+                s=0;
+            }
+            console.log("odd numbers")
+            for(var i=0; i<=6; i++){
+                data[i] = prompt("enter" + i + "value");
+                data[i] = parseInt(data[i]);
+                if(data[i]%2!=0){
+                    k=k+data[i];
+                    console.log(k)
+                }
+                k=0;
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>
+            Demonstrating CSS display property
+        </title>
+        <style>
+            .block {
+                border: 1px solid;
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+                display: inline;
+                background-image: linear-gradient(red, blue, green);
+            }
+            .block1 {
+                background-color: gray;
+            }
+            .block2 {
+                background-color: yellow;
+            }
+            .block3 {
+                background-color: palegreen;
+               
+            }
+            .block4 {
+                background-color: aqua;
+            }
+            span {
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                width: 130px;
+                height: 100px;
+                display: inline-block;
+                background-image: linear-gradient(to right bottom, red, blue, green);
+            }
+            .maskBlock {
+                background-color: linear-gradient(to right bottom, red, blue, green);
+                position: absolute;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                top: 5px;
+                opacity: 0.7;
+            }
+            h3 {
+                color: #fff;
+                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                left: 45%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="maskBlock">HELLO Content</div>
+        <prasad>hello</prasad>
+        <div class="block block1">Block 1</div>
+        <div class="block block2">Block 2</div>
+        <div class="block block3">Block 3</div>
+        <div class="block block4">Block 4</div>
+
+        <span>Item 1</span>
+        <span>Item 1</span>
+        <span>Item 1</span>
+        <span>Item 1</span>
+        <h3>
+            Hello eveyr one
+        </h3>
+    </body>
+</html>

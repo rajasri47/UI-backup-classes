@@ -1,0 +1,21 @@
+HTML Attributes 
+
+    id 
+    name 
+    title 
+    src
+    href
+    style 
+    onclick
+    ... 
+    ... 
+    ... 
+    .
+
+        <tagname attrname="value" attrname2="value2" .. .. . .. >
+            sample content 
+        </tagname>
+
+        <p id="sample" name="test" class="xyz" .. .. .. .>
+            content 
+        </p>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>sum of all the values in given array</title>
+    </head>
+    <body>
+        <script>
+            //static array with values
+           /* var data=[73,57,23,45,21,67];
+            var sum=0;
+            for(var i=0;i < data.length;i++){
+                sum +=data[i];
+            }
+            console.log("The sum is :" + sum);*/
+            //Dynamic array with even numbers sum
+            var data=[];
+            var n=parseInt(prompt("enter how many numbers"));
+            for(var i = 0;i <= n;i++){
+            data[i]=parseInt(prompt("enter values of "+ i +"pos"));
+            }
+            var sum = 0;
+            for(var i = 0;i < data.length;i++){
+                 if(data[i]%2 == 0){
+                    sum=sum + data[i];
+                 }
+            }
+            console.log(sum);
+           
+                
+                
+        </script>
+    </body>
+</html>

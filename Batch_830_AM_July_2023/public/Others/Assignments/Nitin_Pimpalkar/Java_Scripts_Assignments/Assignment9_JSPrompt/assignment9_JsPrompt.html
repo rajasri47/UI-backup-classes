@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+
+<body>
+    <h1 align='center'>Code In console</h1>
+    <script>
+        var empname = prompt("enter employee Name ");
+        var age = prompt("enter employee Age ");
+        var dept = prompt("enter employee Department ");
+        var gender = prompt("enter  employee Gender ");
+        var basicsalary = prompt("enter employee BasicSalary ");
+
+
+        age = parseInt(age);
+        basicsalary = parseInt(basicsalary);
+
+
+        console.log(empname);
+        console.log(age);
+        console.log(dept);
+        console.log(gender);
+        console.log(basicsalary);
+
+        var empPf = (basicsalary * 12) / 100;
+        var empHra =( basicsalary * 24) / 100;
+        var totalSalary = basicsalary + empPf + empHra;
+
+        console.log("Basic Salary of Nitin is " + basicsalary);
+        console.log("Pf of Nitin is " + empPf);
+        console.log("Hra of Nitin  is " + empHra);
+        console.log("Total salary of Nitin is " + totalSalary);
+    </script>
+</body>
+
+</html>

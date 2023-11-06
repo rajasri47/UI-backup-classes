@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+    <style>
+        .h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h2"> TO VIEW THE SALARY STRUCTURE OF EMP OPEN DEBUGGER TOOL </h1>
+    <script>
+        var ename, age, dept, gender, bSalary;
+        var ename = prompt("Enter Emp Name ");
+        var age = prompt("Enter Emp  age ");
+        var dept = prompt("Enter Emp  Department ");
+        var gender = prompt("Enter Emp  Gender ");
+        var Bsalary = prompt("Enter Emp  Basic Salary ");
+        var Bsalary = parseInt(Bsalary);
+
+        var PF = 12 / 100 * Bsalary;
+        var HRA = 24 / 100 * Bsalary;
+
+        var TotalSalary = PF + HRA + Bsalary;
+        var AnualSalary = TotalSalary*12;
+        
+
+        console.log("Emp Name is " + ename);
+        console.log("Emp Age is " + age);
+        console.log("Emp Department is " + dept);
+        console.log("Basic Salary of " + ename + " is " + Bsalary);
+        console.log("PF of " + ename + " is " + PF);
+        console.log("HRA of " + ename + " is " + HRA);
+        console.log("Total Salary of " + ename + " is " + TotalSalary);
+        console.log("Anual Salary of " + ename + " is " + AnualSalary);
+        if (AnualSalary>=300000 && gender=== "male") {
+            Tax = 15/100*AnualSalary
+            console.log("Total Tax Paid by " + ename + " is " + Tax);
+        }
+        else if (AnualSalary>=300000 && gender=== "female") {
+            Tax = 10/100*AnualSalary
+            console.log("Total Tax Paid by " + ename + " is " + Tax);
+        }
+         else if( AnualSalary>=200000 && gender=== "male") {
+            Tax = 10/100*AnualSalary
+            console.log("Total Tax Paid by " + ename + " is " + Tax);
+        }
+
+        else if( AnualSalary>=200000 && gender=== "female") {
+            Tax = 5/100*AnualSalary
+            console.log("Total Tax Paid by " + ename + " is " + Tax);
+        }
+         else if ( AnualSalary>=100000 && gender=== "male") {
+            Tax = 5/100*AnualSalary
+            console.log("Total Tax Paid by " + ename + " is " + Tax);
+        }
+
+        else if ( AnualSalary>=100000 && gender=== "female") {
+            Tax = 0/100*AnualSalary
+            console.log("Total Tax Paid by " + ename + " is " + Tax);
+        }
+
+    </script>
+</body>
+
+</html>

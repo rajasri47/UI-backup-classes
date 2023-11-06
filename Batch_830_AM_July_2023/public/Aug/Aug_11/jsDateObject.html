@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+
+            var monthNames = ["JAn", 'Feb', 'Mar', 'Apr', 'May', 'June', 'Jul', 'Aug', 'Sep'];
+
+            var mydate = new Date();
+            console.log(mydate);
+
+            var customDate = new Date("Aug 16 1947")
+            var customDate2 = new Date("Aug 17 1947")
+
+            console.log(customDate2 - customDate)
+            var customDate3 = new Date("Aug 18 1947")
+            console.log(customDate);
+            console.log(customDate2);
+            console.log(customDate3);
+
+
+            console.log(mydate.getFullYear())
+            console.log(mydate.getDate());
+            console.log(mydate.getHours());
+            console.log(mydate.getMonth());
+            console.log(mydate.getDay());
+            console.log(monthNames[mydate.getMonth()])
+
+            // Aug, 11th 2023
+            var myformat = monthNames[mydate.getMonth()] + ', ' + mydate.getDate() + 'th'+ ' ' + mydate.getFullYear();
+            console.log(myformat)
+            var userOption = prompt("Please choose the format you wanted \n1. 11/08/2023 \n 2. Aug/11/2023 \n  3. Friday, Aug 11th 20234. 09h:11min:2s \n  5. Auguest, 11th 2023 \n  6. Fri, 11th Aug 2023  \n 7. 11/Aug/2023 \n 8. 11-08-2023  \n 9. 11-08-2023 09:34:4 ");
+        </script>
+    </body>
+</html>

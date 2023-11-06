@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic Event handling
+        </title>
+    </head>
+    <body>
+        <div id="container" >Click me</div>
+        <script>
+            // var showMsg = () => {
+            //     console.log("frm shwo msg");
+            // }
+
+            var typeofEvent = prompt("enter evet type click/mouseover")
+
+            document.querySelector("#container").addEventListener(typeofEvent, () => {
+                console.log("frm shwo msg");
+            })
+        </script>
+    </body>
+</html>

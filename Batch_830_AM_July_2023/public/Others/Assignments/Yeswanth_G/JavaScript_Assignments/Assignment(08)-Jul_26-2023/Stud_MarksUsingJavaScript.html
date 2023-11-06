@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Student Marks Using JavaScript</title>
+        <style>
+            h1,h2{
+                text-align: center;
+                color: purple;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Student Marks Using JavaScript </h1>
+        <h2>To See The Student Marks <br> Open Debugger Tool (Right click Of Mouse --> Inspect --> Console) </h2>
+        <script>
+            var S_Name = prompt("Enter Your Name");
+            var S_Age = prompt("Enter Your Age");
+            S_Age = parseInt(S_Age);
+            var S1 = prompt("Enter Your Telugu Marks");
+            S1 = parseInt(S1);
+            var S2 = prompt("Enter Your Hindi Marks");
+            S2 = parseInt(S2);
+            var S3 = prompt("Enter Your English Marks");
+            S3 = parseInt(S3);
+            var S4 = prompt("Enter Your Maths Marks");
+            S4 = parseInt(S4);
+            var S5 = prompt("Enter Your Science Marks");
+            S5 = parseInt(S5);
+            var S6 = prompt("Enter Your Social Marks");
+            S6 = parseInt(S6);
+
+            var total = S1 + S2 + S3 + S4 + S5 + S6;
+            var Total_Percentage = total/6; 
+
+            console.log("Student Name is " +S_Name);
+            console.log("Student Age is " +S_Age);
+            console.log("Student Telugu Marks " +S1);
+            console.log("Student Hindi Marks " +S2);
+            console.log("Student English Marks " +S3);
+            console.log("Student Maths Marks " +S4);
+            console.log("Student Science Marks " +S5);
+            console.log("Student Social Marks " +S6);
+            console.log("Your Total Marks is " +total);
+            console.log("Your Total Percentage is " +Total_Percentage);
+
+            if(Total_Percentage >= 35){
+                console.log("Congrats! You Have Passed This Test");
+            }else if(Total_Percentage <= 35){
+                console.log("Sorry! You Have Failed This Test");
+            }else{
+                console.log("Please Enter The Correct Input");
+            }
+        </script>
+        
+    </body>
+</html>

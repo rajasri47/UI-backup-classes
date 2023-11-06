@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Inner functions
+        </title>
+    </head>
+    <body>
+        <script>
+            var a = 90;
+
+            var showMsg = () => {
+                var b = 99;
+                console.log("b value " + b);
+
+                var sample = () => {
+                    console.log("sample");
+                }
+                sample();
+
+            }
+            sample();
+            //console.log("b value " + b)
+
+            showMsg();
+    
+        </script>
+    </body>
+</html>

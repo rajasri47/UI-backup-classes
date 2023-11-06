@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Name of the Employee is :");
+        var Age = prompt("Age of the Employee is :");
+        var Gender = prompt("Gender of the Employee is :");
+        var Department = prompt("Enter the departement of the employee");
+        var BasicSalary = prompt("Enter the Baisc salary of the employee :");
+        var PF = (12*BasicSalary)/100
+        var HRA =(5*BasicSalary)/100
+        BasicSalary=parseInt(BasicSalary);
+       
+        var  Total_salary = BasicSalary + PF + HRA;
+
+        console.log("Name of the Employee is :"+name);
+        console.log("Age of the Employee is :"+Age);
+        console.log("Gender of the Employee is :"+Gender);
+        console.log("Department of the Employee is :"+Department);
+        console.log("Basic salary of the Employee is :"+BasicSalary);
+        console.log("PF of the Employee is :"+PF);
+        console.log("HRA of the Employee is :"+HRA);
+        console.log("Total salary of the Employee is :"+Total_salary);
+
+        if(Gender=='Male'){
+              if(Total_salary>=300000){
+                var tax = (15*Total_salary)/100;
+                post_tax=Total_salary-tax;          
+                console.log("Tax to be paid by the employee is :"+ tax);
+                console.log("Total salary after paying the tax :"+ post_tax);
+
+            }
+            else if(Total_salary>=200000 && Total_salary<300000){
+                var tax = (10*Total_salary)/100;
+                post_tax=Total_salary-tax;   
+                console.log("Tax to be paid by the employee is :"+ tax);
+                console.log("Total salary after paying the tax :"+ post_tax);
+            }
+            else if(Total_salary>=100000 && Total_salary<200000){
+                var tax = (5*Total_salary)/100;
+                post_tax=Total_salary-tax;   
+                console.log("Tax to be paid by the employee is :"+ tax);
+                console.log("Total salary after paying the tax :"+ post_tax);
+
+            }
+            else{
+                
+                console.log("The employee salary is less than 100000 no need to pay the tax");
+            }
+            
+
+        }
+       else if(Gender=='Female'){
+        if(Total_salary>=300000){
+                var tax = (10*Total_salary)/100; 
+                post_tax=Total_salary-tax;      
+                console.log("Tax to be paid by the employee is :"+ tax);
+                console.log("Total salary after paying the tax :"+ post_tax);
+            }
+            else if(Total_salary>=200000 && Total_salary<300000){
+                var tax = (5*Total_salary)/100;
+                post_tax=Total_salary-tax;   
+                console.log("Tax to be paid by the employee is :"+ tax);
+                console.log("Total salary after paying the tax :"+ post_tax);
+            }
+           
+            else{
+                
+                console.log("The employee salary is less than 200000 no need to pay the tax");
+            }
+        }
+        else{
+            console.log("Please enter the valid gender");
+        }
+    </script>
+</body>
+</html>

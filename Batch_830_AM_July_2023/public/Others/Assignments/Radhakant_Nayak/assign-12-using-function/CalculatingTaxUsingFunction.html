@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Calculating tax using function
+        </title>
+    </head>
+    <body>
+        
+        <script>
+            var name,age,gender,department,basicSal,pf,hra,totalSal,tax;
+            function userInput() {
+                name = prompt("enter name ");
+                age = prompt('Enter age ');
+                gender = prompt('enter gender');
+                department = prompt('enter department name ');
+                basicSal = prompt('Enter basi saary');
+                basicSal = parseInt(basicSal);
+                totalSal();
+            }
+            function totalSal(){
+                pf = (basicSal * 10) / 100;
+                hra = (basicSal * 12) / 100;
+                totalSal = (basicSal + pf + hra);
+            }
+            function userGender() {
+                switch (gender){
+                    case "male" :
+                        if(totalSal >= 300000){
+                            tax = (totalSal * 15) / 100 ;
+                            console.log("tax is" + tax);
+                            break;
+                        }else if(totalSal >= 200000){
+                            tax = (totalSal * 10) / 100 ;
+                            console.log("tax is" + tax);
+                            break;
+                        }else if(totalSal >= 100000){
+                            tax = (totalSal * 5) / 100 ;
+                            console.log("tax is" + tax);
+                            break;
+                        }else {
+                            console.log(" no tax" );
+                        }
+                      case "female" :
+                        if(totalSal >= 300000){
+                            tax = (totalSal * 10) / 100 ;
+                            console.log("tax is" + tax);
+                            break;
+                        }else if(totalSal >= 200000){
+                            tax = (totalSal * 5) / 100 ;
+                            console.log("tax is" + tax);
+                            break;
+                        }else {
+                            console.log(" no tax" );
+                        }
+                }
+            }
+            function showDetails() {
+                userInput();
+                
+                console.log(" name is " + name);
+                console.log(" age is " + age);
+                console.log(" gender is " + gender);
+                console.log(" department is " + department);
+                console.log(" basicsal is " + basicSal);
+                console.log(" pf is " + pf);
+                console.log(" hra is " + hra);
+                console.log(" totalsal is " + totalSal);
+                
+                userGender();
+            }
+        
+            showDetails();
+        </script>
+    </body>
+</html>

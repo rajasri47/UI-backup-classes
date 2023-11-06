@@ -1,0 +1,26 @@
+Steps to setup webserver (using node js)
+
+    1. check for node version
+        node --version
+    2. Install express and express-generator node modules globally
+
+           npm install express -g 
+
+           npm install express-generator -g
+    3. Redirect to the directory where you want to create a webserver 
+        create webserver through 'express' command 
+
+            express <webservername>
+            eg:
+                express webApplication 
+
+    4. get inside the folder, run command 'npm install'
+
+    5. Open app.js file, add below lines of code at line 24
+
+            app.listen(8081, () => {
+                console.log("Server is listing at 8081");
+            });
+    6. Redirect to the webserverfolder, and run below command to start the server 
+
+            npm start 

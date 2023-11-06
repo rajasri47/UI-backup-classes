@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Student Regestration Page</title>
+    <title>Demonstrating for loop with display table 1 to 100</title>
+    </head>
+    ><body>
+        <script>
+            /*var FirstNum=prompt("Enter First Number");
+            var SecondNum=prompt("Enter Second Number");
+            FirstNum=parseInt(FirstNum);
+            SecondNum=parseInt(SecondNum);*/
+            var RangeNum=prompt("Enter First Number");
+            RangeNum=parseInt(RangeNum);
+            var evenresult =0;
+            var oddresult =0;
+            console.log("List of the all Odd numbers between 1 to 1000");
+            for(count=1;count<=RangeNum;count++)
+            {
+                if(count%2==0){
+
+                    //console.log( count);
+                    var evensum=evenresult+count;
+               
+                console.log("Even sum" +" "+ count + "+" + evenresult + "=" + evensum);
+               evenresult=evensum;
+                }
+                else{
+
+                   // console.log( count);
+                    var oddsum=oddresult+count;
+               
+                console.log("odd sum" +" "+ count + "+" + oddresult + "=" + oddsum);
+                oddresult=oddsum;
+                }
+                
+               
+               
+              
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finding no of words in String</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">
+            This page shows String Length of given array of elements.. <br>
+            Go to console tab for result...
+        </h1>
+        <script>
+            var msg = prompt("Enter string of characters..");
+            var sum = 0;
+            for(var i = 0; i < msg.length; i++){
+
+                if(msg[i] == " "){
+                    sum++;
+                }
+            }
+            sum++;
+            console.log("There are "+sum+" words in the given string");
+            console.log([99]);
+        </script>
+    </body>
+</html>

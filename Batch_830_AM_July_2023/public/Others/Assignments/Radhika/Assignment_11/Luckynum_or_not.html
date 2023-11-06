@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>To find whether the given num is Lucky </title>
+    </head>
+    <body>
+        <h3>To find whether the given num is Lucky</h3>
+        <script>
+            var n=prompt("enter a number");
+            n=parseInt(n);
+            sum=0;
+            while(n!=0){
+                var rem=n%10;
+                n=n/10;
+                n=parseInt(n);
+                sum=sum+rem;
+            if(n==0 && sum>9){
+                n=sum;
+                sum=0;
+                
+            }
+            }
+            console.log('Lucky no is'+ sum);
+
+        </script>
+    </body>
+</html>

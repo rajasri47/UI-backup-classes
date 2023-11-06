@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of all digit with the given number</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Code in console</h2>
+
+    <script>
+        var fNum,sNum, sum=0;
+        fNum=prompt("Enter First Number from which sum starts ");
+        sNum=prompt("Enter second Number to which sum ends");
+        fNum=parseInt(fNum);
+        sNum=parseInt(sNum);
+        for (var i = fNum; i <= sNum; i++) {
+            sum=sum+i;
+        }
+        console.log("The sum of "+fNum +" to "+sNum+" is "+sum);
+    </script>
+</body>
+</html>

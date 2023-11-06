@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assignment3.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <h2>Student Registration Form</h2>
+    <form action="">
+        <ul>
+            <li class="l1">
+                <input type="text" name="FName" placeholder="Enter Student First Name" minlength="4" maxlength="14" required>
+            </li>
+            <li class="l1">
+                <input type="text" name="LName" placeholder="Enter Student Last Name" minlength="4" maxlength="14">
+            </li>
+            <li class="l1">
+                <input type="email" name="Email" placeholder="Enter Your Email">
+            </li>
+            <li class="l1">
+                <input type="password" name="password" placeholder="Enter Account Password" minlength="7" maxlength="14">
+            </li>
+            <li>
+                Gender :
+                <input type="radio" name="gender"checked value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </li>
+            <li>
+                Country :
+                <select name="Country">
+                    <option value="IND" selected>INDIA</option>
+                    <option value="USA">USA</option>
+                    <option value="CHINA">CHINA</option>
+                    <option value="JAPAN">JAPAN</option>
+                </select>
+            </li>
+            <li>
+                Languages You Know : 
+                <input type="checkbox" name="">English
+                <input type="checkbox" name="">Hindi
+                <input type="checkbox" name="">Telgu
+            </li>
+            <li>
+                <label for="abouturself">
+                    Tell About Yourself (min 200 char)
+                </label>
+                <textarea name="abouturself" minlength="20" cols="77" rows="5"></textarea>
+            </li>
+<li>
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="RESET">
+</li>
+        </ul>
+
+
+
+
+
+
+
+
+    </form>
+</div>
+</body>
+
+</html>

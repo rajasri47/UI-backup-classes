@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>demonstarte large&small values </title>
+        <body>
+            <h3>To find Large&small Values Using Array without using sorting...!</h3>
+            <script>
+                //using static array
+                var num=[99,24,89,67,76,100];
+                var maxvalue=num[0];
+                for (var i=1;i<num.length;i++){
+                    
+                    if(maxvalue<num[i]){
+                        maxvalue=num[i];
+                    }
+                }
+                console.log(maxvalue);
+                for (var i=1;i<num.length;i++){
+                    if(maxvalue>num[i]){
+                        maxvalue=num[i];
+                    }
+                }
+                console.log(maxvalue);
+            </script>
+        </body>
+    </head>
+</html>

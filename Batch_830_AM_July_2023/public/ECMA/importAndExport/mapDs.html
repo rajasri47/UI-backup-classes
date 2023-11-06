@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*var obj = new Object();
+            var obj = {}; */ 
+
+            var m1 = new Map();
+
+            m1.set("name", "Raj");
+            m1.set("age", "20");
+            m1.set("gender", "Male");
+            m1.set("Location", "Hyderabad");
+
+            console.log(m1);
+            
+
+            for (var [key, value] of m1) {
+                console.log(key)
+                console.log(value)
+            }
+            //m1.clear
+            m1.delete("age")
+            console.log("keys")
+            for (var key of m1.keys()) {
+                console.log(key)
+            }
+
+            console.log(m1.size)
+            // console.log(m1)
+            // for , while, dowhile, for in, for of, foEach
+
+            // delete obj.key -> json
+        </script>
+    </body>
+</html>

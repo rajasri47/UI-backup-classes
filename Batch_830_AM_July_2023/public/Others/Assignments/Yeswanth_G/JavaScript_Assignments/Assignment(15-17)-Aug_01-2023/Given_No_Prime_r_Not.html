@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Given Number Is Prime Or Not </title>
+        <style>
+            h1{
+                color: purple;
+                font-size: xx-large;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1> Given Number Is Prime Or Not </h1>
+        <script>
+            var n,count=0;
+            n = prompt("Enter a Number");
+            n = parseInt(n);
+            
+            for(i=2;i<=n;i++){
+                if(n%i==0)
+                count++;
+            }
+            if(count==1)
+                console.log("Given Number is Prime");
+            else
+                console.log("Given Number is Not Prime");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+Localstorage
+
+    Objects to store user preferences within browser cache.
+
+    localStorage
+    &
+    sessionStorage Objects

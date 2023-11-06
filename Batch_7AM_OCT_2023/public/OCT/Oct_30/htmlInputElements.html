@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML input elements</title>
+        <style>
+            h3 {
+                border: 1px solid;
+                text-align: center;
+                padding: 10px;
+            }
+            ul {
+                border: 1px solid;
+                width: 500px;
+                margin: 20px auto;
+                
+            }
+            li {
+                border: 1px solid #ccc;
+                margin: 10px;
+                padding: 5px;
+                list-style: none;
+            }
+            input[type=text] {
+                width: 200px;
+            }
+
+        </style>
+    </head>
+    <body>
+       
+        <h3>
+            Student registration page
+        </h3>
+        <form method="GET" action="http://abcsample.com/data/info/studentdetials">
+                <ul>
+                    <li>
+                        <label for="username" >Enter STudent name: </label>
+                        <input type="text" maxlength="15" name="username" required>
+                    </li>
+                    <li>
+                        <label>College Name:</label>
+                        <input type="text" value="ABC College" name="collegeName">
+                    </li>
+                    <li>
+                        
+                        <input type="text" placeholder="Enter Student Age" name="userAge">
+                    </li>
+                    <li>
+                        Enter account password:
+                        <input type="password" maxlength="8" name="accountPwd">
+                    </li>
+                    <li>
+                        Gender: 
+                        Male <input type="radio" name="gender" checked>
+                        Female <input type="radio" name="gender">
+                    </li>
+                    <li>
+                        Languages you know: 
+                        English <input type="checkbox" checked disabled name="lng_eng">
+                        Telugu <input type="checkbox" name="lng_tel">
+                        Hindi <input type="checkbox" name="lng_hin">
+                        Urdu <input type="checkbox" ame="lng_urd">
+                    </li>
+                    <li>
+                        Qualification:
+                            <select name="user_qualification" >
+                                <option value="mca">MCA</option>
+                                <option value="mba">MBA</option>
+                                <option value="mtech" selected>Mtech</option>
+                                <option value="btech">Btech</option>
+                            </select>
+                    </li>
+                    <li>
+                        Tell about youself:
+                        <textarea id="" cols="20" rows="5" maxlength="300" name="aboutUser"></textarea>
+                    </li>
+                    <li>
+                        
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Reset values">
+                    </li>
+                </ul>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+username  -> Prasad 
+
+
+var 1a = 90
+var a1 = 90
+var a_1 = 90
+var a-1 = 
+userAGe = 60 
+
+
+isFeepaid = true 
+
+JSON 
+
+var data = [];
+
+var data = {}; // Object | JSON 
+
+var data = new Object();
+
+----------
+
+JSON    
+    1. data gets stroed in the form of  Key and value pairs
+    2. key is always a string
+    3. the value could be any datatype what js supports 
+
+    Syntax:
+
+        var objname = {
+            "key1" : value1, // string, number, boolean, array, object , function
+            "key2" : value2,
+            "key3" : value3, 
+            ... 
+            ..
+            .
+        };
+
+        objname.<keyname>
+
+        objname.key2
+
+        --------------
+
+    var data = {
+        name: 'Teena',
+        age: 20,
+        "gender": 'Male'
+    }
+
+    var data = {};
+    data.name = 'Teena';
+    data.age = prompt("enter age");
+    data.gender = 'Male';

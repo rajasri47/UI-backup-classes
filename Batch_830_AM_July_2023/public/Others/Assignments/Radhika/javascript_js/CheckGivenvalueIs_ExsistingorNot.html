@@ -1,0 +1,27 @@
+<body>
+    <script>
+        var readData = () => {
+            var data = [ 24,56,76,45.32,13,25,89,90,79,56];
+            var len = data.length;
+            var n = parseInt(prompt(" Enter the number"));
+                
+            call(data,len,n);
+                
+        }
+        var call = (data, len,n) => {
+            var count = 0;
+            for ( i = 0; i < len; i++) {
+                if ( data[i] == n) {
+                    console.log(" yes " + n + " is in Array");
+                    count++;
+                    break;
+                } 
+            }
+            if ( count == 0 ) {
+                console.log(" no " + n + " is not in Array");
+            }
+            count = 0;
+        }
+        readData();
+    </script>
+</body>        

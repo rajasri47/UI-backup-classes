@@ -1,0 +1,41 @@
+body {
+    background: url(file:///D:/Avengers/1012509.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    color: rgb(13, 180, 236);
+}
+
+
+ul {
+    width: 600px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+::placeholder {
+    font-weight: bold;
+}
+
+.l1 input {
+    color:darkblue;
+    font-size: 20px;
+    width: 50%;
+}
+.container {
+    width: 700px;
+}

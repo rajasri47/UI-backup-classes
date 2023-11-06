@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block game</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid none;
+        color: rgb(207 15 49);
+        background-color: #d3d1eb;
+      }
+
+      .box {
+        display: flex;
+        height: 75px;
+        width: 91px;
+        margin: 5px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+      }
+
+      .blocks {
+        background-color: black;
+        height: 521px;
+        width: 100%;
+        border: 1px solid;
+      }
+
+      #box1,
+      #box12,
+      #box13,
+      #box14 {
+        float: left;
+        background-color: yellow;
+        border: 1px solid yellow;
+      }
+
+      #box4,
+      #box6,
+      #box7,
+      #box11,
+      #box15 {
+        float: left;
+        clear: both;
+        background-color: blue;
+        color: white;
+        border: 1px solid blue;
+      }
+
+      #box2,
+      #box3,
+      #box5,
+      #box8,
+      #box9,
+      #box10 {
+        float: right;
+        background-color: green;
+        color: white;
+        border: 1px solid green;
+      }
+
+      .footer {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid none;
+        color: rgb(217 177 217);
+        clear: both;
+        font-size: larger;
+        background-color: #1c1c1a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Block game</h2>
+    </div>
+    <div class="blocks">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+      <div class="box" id="box5">5</div>
+      <div class="box" id="box6">6</div>
+      <div class="box" id="box7">7</div>
+      <div class="box" id="box8">8</div>
+      <div class="box" id="box9">9</div>
+      <div class="box" id="box10">10</div>
+      <div class="box" id="box11">11</div>
+      <div class="box" id="box12">12</div>
+      <div class="box" id="box13">13</div>
+      <div class="box" id="box14">14</div>
+      <div class="box" id="box15">15</div>
+    </div>
+    <div class="footer">
+      <b>Copyright @ 2023</b>
+    </div>
+  </body>
+</html>

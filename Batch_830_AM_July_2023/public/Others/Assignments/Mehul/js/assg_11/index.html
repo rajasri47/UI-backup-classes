@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./in.css" />
+    <title>Pay Slip</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="blink">Employee Salary Details</h1>
+    </header>
+    <main>
+      <div class="psd">
+        <section>
+          <h2>Pay Slip Details</h2>
+
+          <ul>
+            <li>
+              <input
+                type="text"
+                id="firstusername"
+                name="firstusername"
+                placeholder="Your Name"
+              />
+            </li>
+            <li>
+              <input type="text" id="age" name="age" placeholder="Your Age" />
+            </li>
+            <li>
+              <label for="gender">Select Gender :</label>
+              <input
+                type="radio"
+                checked
+                class="gender"
+                id="gender1"
+                name="gender"
+                value="Male"
+              />Male
+              <input
+                type="radio"
+                class="gender"
+                id="gender2"
+                name="gender"
+                value="Female"
+              />Female
+            </li>
+            <li>
+              <input
+                type="text"
+                id="basicsal"
+                name="sal"
+                placeholder="Your Basic Salary"
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <select name="dept" id="dept">
+            <option value="" selected>Select Department</option>
+            <option value="IT">IT</option>
+            <option value="Sales">Sales</option>
+            <option value="HR">HR</option>
+            <option value="Other">Other</option>
+          </select>
+        </section>
+
+        <div class="button">
+          <input
+            type="button"
+            class="btn-filled"
+            value="Get Pay Slip"
+            onclick="empInfo();"
+          />
+        </div>
+      </div>
+
+
+      
+      <div class="ps">
+        <section>
+          <h2>Pay Slip Details</h2>
+
+          <ul>
+            <li class="inner">
+              <b>Employee Name : </b> <span id="rname"></span>
+            </li>
+            <li class="inner">
+              <b>Employee Age : </b> <span id="rage"></span>
+            </li>
+            <li class="inner">
+              <b>Employee Gender : </b> <span id="rgen"></span>
+            </li>
+            <li class="inner">
+              <b>Employee Department : </b> <span id="rdept"></span>
+            </li>
+            <li class="inner">
+              <b>Employee Basic Salary : </b> <span id="rbsal"></span>
+            </li>
+            <li class="inner"><b>Employee PF : </b> <span id="rpf"></span></li>
+            <li class="inner">
+              <b>Employee HRA : </b> <span id="rhra"></span>
+            </li>
+            <li class="inner">
+              <b>Employee Total Salary Before Tax : </b>
+              <span id="rtsal"></span>
+            </li>
+            <li class="inner">
+              <b>Employee Tax : </b> <span id="rtax"></span>
+            </li>
+            <li class="inner">
+              <b>Employee Total Salary After Tax : </b>
+              <span id="rtsal1"></span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <script src="./in.js"></script>
+  </body>
+</html>

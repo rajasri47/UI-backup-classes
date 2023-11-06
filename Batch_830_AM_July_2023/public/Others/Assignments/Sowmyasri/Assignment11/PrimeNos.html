@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displaying prime numbers</title>
+</head>
+<body>
+    <script>
+       for(i=2 ; i<=1000 ; i++){
+       count=0;
+          for(j=1 ; j<=i ; j++){
+            var rem=i%j;
+               if(rem==0){
+                count=count+1;
+               }
+            }
+            if(count==2){
+                console.log("it is a prime number " + i);
+            }else{
+                console.log("it is not prime number " + i)
+            }
+          }
+
+    </script>
+</body>
+</html>

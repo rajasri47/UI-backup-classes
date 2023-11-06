@@ -1,0 +1,40 @@
+ul, #d {
+    list-style: none;
+    /* text-align: center; */
+    border: 1px solid;
+    width: 500px;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: azure;
+
+}
+.error{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}
+u{
+    color: red;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    background-color: aqua;
+}
+
+.d1,
+.d2,
+.d3,
+.d4 {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    background-color: orange;
+    width: 450px;
+    margin: 20px auto;
+    padding: 10px;
+    display: none;
+}

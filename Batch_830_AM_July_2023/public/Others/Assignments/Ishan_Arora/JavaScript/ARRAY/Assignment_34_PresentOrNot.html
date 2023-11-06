@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment 34
+        </title>
+    </head>
+    <body>
+        <h1>
+            Check Number is Present in Array Or Not
+        </h1>
+        <script>
+            var takingInput = () => {
+                var lengthOfArray = prompt("Enter the number of elements: ");
+                lengthOfArray = parseInt(lengthOfArray);
+                var a = [];
+                for (var i = 0; i < lengthOfArray; i++) {
+                    a[i] = prompt("Enter " + i + " Value: ");
+                    a[i] = parseInt(a[i]);
+                }
+                IsThere(a);
+            }
+
+            var IsThere = (a) => {
+                var UserNumber = prompt("Enter Number to be Checked: ");
+                UserNumber = parseInt(UserNumber);
+                var len = a.length;
+                var there;
+                for (var i = 0; i < len; i++) {
+                    if (UserNumber == a[i]) {
+                        there = 1;
+                    } else {
+                        there = 0;
+                    }
+                }
+                if (there == 1) {
+                    console.log(UserNumber + " is present in the array.")
+                } else {
+                    console.log(UserNumber + " is not present in the array.")
+                }
+            }
+
+            takingInput();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Employee Details </title>
+</head>
+<style>
+    .main2{
+        border: 5px rgb(247, 9, 9) double;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div class="main2"> To see the details go to inspect then console</div>
+    <script>
+        var empname,gender,age,basicsalary;
+        var empname = "Shreya"
+        var gender = "Female"
+        var age = "23"
+        var basicsalary = 25000
+        var PF = 15/100*basicsalary;
+        var HRA = 22/100*basicsalary;
+        var TotalSalary = PF + HRA + basicsalary;
+        console.log("Employee name :" +empname);
+        console.log("Gender :" +gender);
+        console.log("Age :" +age);
+        console.log("Basic Salary :" +basicsalary);
+        console.log("PF :" +PF);
+        console.log("HRA :" +HRA);
+        console.log("Total Salary :" +TotalSalary);
+</script>
+</body>
+</html>

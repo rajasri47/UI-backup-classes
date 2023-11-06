@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Phone1",
+        "price": 3200,
+        "rating": 3.5,
+        "discountPercent": 0,
+        "manu": "Google Pixel Fold",
+        "image": "/images/productImages/smartPhones/phoneImg1.png",
+        "imageFlip": "/images/productImages/smartPhones/phoneImg1Flip.png",
+        "category": "phones"
+    },
+    {
+        "name": "Phone2",
+        "price": 4500,
+        "rating": 5.0,
+        "discountPercent": 0,
+        "manu": "Apple iPhone14",
+        "image": "/images/productImages/smartPhones/phoneImg2.png",
+        "imageFlip": "/images/productImages/smartPhones/phoneImg2Flip.png",
+        "category": "phones"
+    },
+    {
+        "name": "Phone4",
+        "price": 1400,
+        "rating": 4.5,
+        "discountPercent": 0,
+        "manu": "Motorola Razr",
+        "image": "/images/productImages/smartPhones/phoneImg3.png",
+        "imageFlip": "/images/productImages/smartPhones/phoneImg3Flip.png",
+        "category": "phones"
+    },
+    {
+        "name": "Phone5",
+        "price": 1670,
+        "rating": 5,
+        "discountPercent": 10,
+        "manu": "Samsung",
+        "image": "/images/productImages/smartPhones/phoneImg4.png",
+        "imageFlip": "/images/productImages/smartPhones/phoneImg4Flip.png",
+        "category": "phones"
+    },
+    
+    {
+        "name": "Phone6",
+        "price": 2300,
+        "rating": 1.5,
+        "discountPercent": 10,
+        "manu": "Apple iPhone14",
+        "image": "/images/productImages/smartPhones/phoneImg2.png",
+        "imageFlip": "/images/productImages/smartPhones/phoneImg2Flip.png",
+        "category": "phones"
+    }
+]

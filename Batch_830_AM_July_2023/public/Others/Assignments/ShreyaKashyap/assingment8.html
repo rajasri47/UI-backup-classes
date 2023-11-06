@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empname = prompt("Enter your name");
+        var age = prompt("Enter your age");
+        var gender = prompt("Enter your gender");
+        var basicSal = prompt("enter your basic salary");
+        basicSal = parseInt(basicSal);
+        var PF = (basicSal * 12) / 100;
+        var HRA = (basicSal * 24) / 100;
+        var totalsal = PF + HRA + basicSal;
+        console.log("Employee Details")
+        console.log("Employee Name " +empname);
+        console.log("Employee Age " +age);
+        console.log("Employee Gender " +gender);
+        console.log("Basic Salary " +basicSal);
+        console.log("PF " +PF);
+        console.log("HRA " +HRA);
+        console.log("Total Salary " +totalsal);
+    </script>
+</body>
+</html>

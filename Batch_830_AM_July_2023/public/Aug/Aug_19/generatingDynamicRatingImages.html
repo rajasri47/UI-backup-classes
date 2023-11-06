@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .ratingContainer {
+                height: 36px;
+            }
+            .ratingContainer div {
+                float: left;
+                background-image: url(images/rating.PNG);
+                width: 33px;
+                height: 36px;
+                background-repeat: no-repeat;
+            }
+            .halfStar {
+                background-position: -32px 0px;
+            }
+            .disableStar {
+                background-position: -64px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+        </div>
+        <script>
+            var rating = 1;
+
+            
+
+            var getRatingTemplate = (rating) => {
+                var halfStarsCount = 0;
+                var disabledStars =  0;
+                var fullStarsCount = parseInt(rating);
+                if (rating % 1 != 0) {
+                    halfStarsCount = 1;
+                }
+                disabledStars = 5 - (fullStarsCount + halfStarsCount);
+                
+                var divtag = document.createElement("div");
+                divtag.setAttribute("class", 'ratingContainer');
+                for (var i = 0; i < fullStarsCount; i++) {
+                    var div1 = document.createElement("div");
+                    divtag.append(div1);
+                }
+                if (halfStarsCount) {
+                    var div2 = document.createElement("div");
+                    div2.setAttribute("class", 'halfStar')
+                    divtag.append(div2);
+                }
+                for (var i = 0 ; i < disabledStars; i++) {
+                    var div3 = document.createElement("div");
+                    div3.setAttribute("class", 'disableStar')
+                    divtag.append(div3);
+                }
+
+                return divtag;
+            }
+            var ratingTemplate = getRatingTemplate(rating);
+            document.querySelector(".container").append(ratingTemplate);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+
+position Absolute:
+    1. it doesnt hold its own original position under x-y axis 
+    2. As its not holding its original position, while moving to a new position, it always moves relative to its parent position
+    3. whlie depending on the parent position, absolute element will only depend on the parent element whose position is non static.
+
+
+Opacity and Z-index:
+
+    z-index : through which we could control the rendering priority order of the elements which are rendering under z axis 
+    It always takes a numeric no as a value; 
+
+        z-index: 20; // z axis value
+
+    Opacity: through which we could control the transparency of any dom lement
+
+    it takes value between 0 to 1

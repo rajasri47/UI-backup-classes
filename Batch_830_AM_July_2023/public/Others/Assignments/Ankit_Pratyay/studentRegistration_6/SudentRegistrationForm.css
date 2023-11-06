@@ -1,0 +1,156 @@
+.header {
+    height: 30px;
+    background-color: beige;
+
+    text-align: center;
+    text-decoration: bold;
+    padding-top: 3px;
+
+}
+
+.tell,
+.add,
+.gend,
+.name {
+    color: brown;
+}
+
+.footer {
+    height: 30px;
+    text-align: center;
+    text-decoration: bold;
+    padding-top: 3px;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-hand-painted-form-plant-frame-image_22794.jpg");
+}
+
+.body {
+    height: 90%;
+    border: 1px solid;
+    margin: 2px 1px;
+    background-image: url("https://img.freepik.com/free-vector/modern-banner-with-abstract-low-poly-design_1048-14340.jpg?w=2000");
+    background-repeat: no-repeat;
+}
+
+.user {
+    width: 200px;
+    height: 30px;
+    padding-top: 3px;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    top: 41px;
+    background-color: white;
+
+}
+
+.userDetails {
+    width: 95%;
+    height: 120px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    margin-top: 20px;
+    padding-top: 45px;
+
+}
+
+.address {
+    padding-top: 5px;
+    list-style: none;
+    float: right;
+    position: absolute;
+    top: 90px;
+    right: 8%;
+}
+
+.education {
+    width: 200px;
+    height: 30px;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    top: 247px;
+    background-color: white;
+}
+
+.educationDetail {
+    width: 95%;
+    height: 120px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    margin-top: 20px;
+    padding-top: 45px;
+}
+
+.qualification {
+    position: absolute;
+    top: 326px;
+    right: 165px;
+}
+
+.about {
+    width: 200px;
+    height: 30px;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 10px;
+    position: absolute;
+    top: 453px;
+    background-color: white;
+}
+
+.tell {
+    position: absolute;
+    top: 560px;
+}
+
+.textarea {
+    position: absolute;
+    left: 345px;
+}
+
+.AboutUrs {
+    width: 95%;
+    height: 120px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    padding-top: 45px;
+
+}
+
+.btn {
+    position: absolute;
+    top: 629px;
+    right: 125px;
+}
+
+.opt,
+.btn:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+.a {
+    margin-left: 50px;
+}
+
+.b {
+    margin-left: 60px;
+}
+
+.c {
+    margin-left: 45px;
+}

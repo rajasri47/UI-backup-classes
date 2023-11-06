@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+  </head>
+  <body>
+    <script>
+      var userName = prompt("Enter your name : ");
+      var age = prompt("Enter your age : ");
+      var gender = prompt("Enter your gender : ");
+      var department = prompt("Enter your department : ");
+      var basicSalary = prompt("Enter your basic salary : ");
+
+      age = parseInt(age);
+      basicSalary = parseInt(basicSalary);
+
+      pf = basicSalary * (12 / 100);
+      hra = basicSalary * (24 / 100);
+
+      var totalSalary = basicSalary + pf + hra;
+
+      console.log("Name of employee : " + userName);
+      console.log("Age : " + age);
+      console.log("Gender : " + gender);
+      console.log("Department : " + department);
+      console.log("Basic salary : " + basicSalary);
+      console.log("PF : " + pf);
+      console.log("HRA : " + hra);
+      console.log("Total salary before tax : " + totalSalary);
+      var salaryAfterTax;
+      if (gender == "Male") {
+        if (totalSalary >= 300000) {
+          salaryAfterTax = totalSalary - totalSalary * (15 / 100);
+        } else if (totalSalary >= 200000) {
+          salaryAfterTax = totalSalary - totalSalary * (10 / 100);
+        } else if (totalSalary >= 200000) {
+          salaryAfterTax = totalSalary - totalSalary * (10 / 100);
+        } else if (totalSalary >= 100000) {
+          salaryAfterTax = totalSalary - totalSalary * (5 / 100);
+        } else {
+          salaryAfterTax = totalSalary;
+        }
+      } else if (gender == "Female") {
+        if (totalSalary >= 300000) {
+          salaryAfterTax = totalSalary - totalSalary * (10 / 100);
+        } else if (totalSalary >= 200000) {
+          salaryAfterTax = totalSalary - totalSalary * (5 / 100);
+        } else {
+          salaryAfterTax = totalSalary;
+        }
+      }
+      console.log("Total salary after tax : " + salaryAfterTax);
+    </script>
+  </body>
+</html>
